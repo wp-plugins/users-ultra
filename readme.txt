@@ -22,6 +22,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Protecting content based on Membership Package</strong>
 <p>The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.</p>
 
+
 <strong>Sync old users to make them work with Users Ultra?</strong>
 <p>Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.</p>
 
@@ -133,7 +134,7 @@ Yes, http://www.usersultra.com/support/
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.0 =
 Initial release.
 
 == Screenshots ==
@@ -143,7 +144,11 @@ Initial release.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.2 =
+* Private Messages System Improved.
+* Fixed - Members Directory.
+
+= 1.0.1 =
 * Initial Release.
 
 
