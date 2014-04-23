@@ -1,12 +1,11 @@
 === Users Ultra ===
 Contributors: usersultra
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, images, profiles, subscription, recurring, paypal, front end publisher
+Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 4.3
 License: GPLv2 or later
-Version: 1.0.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Users Ultra is the ideal tool for creating advanced user communities in few minutes. 
@@ -145,14 +144,17 @@ Initial release.
 == Changelog ==
 
 
-= 1.0.3 =
+= 1.0.12 =
+* Improvement - Admin Dashboard Improvement.
+
+= 1.0.11 =
 * Fixed upload folders permissions.
 
-= 1.0.2 =
+= 1.0.10 =
 * Private Messages System Improved.
 * Fixed - Members Directory.
 
-= 1.0.1 =
+= 1.0.9 =
 * Initial Release.
 
 
