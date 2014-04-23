@@ -1,11 +1,12 @@
 === Users Ultra ===
-Contributors: members, users, directory, payment, subscription, pricing table, profiles, management
+Contributors: usersultra
 Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, images, profiles, subscription, recurring, paypal
 Requires at least: 3.0.1
-Tested up to: 3.4
+Tested up to: 3.9
 Stable tag: 4.3
 License: GPLv2 or later
+Version: 1.0.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Users Ultra is the ideal tool for creating advanced user communities in few minutes. 
@@ -15,6 +16,95 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 Users Ultra is the ideal tool for creating advanced user communities in few minutes. Building a talents community, model agency websites, social communities and any kind of user websites is really fast. It can be intregrated in any WordPress Theme. You can add as many fields as you wish by using the Fields Customizer Tool.
 
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
+
+<p>Social Connects.  Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
+
+<strong>Protecting content based on Membership Package</strong>
+<p>The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.</p>
+
+<strong>Migrating to Users Ultra?</strong>
+<p>That can be done with just one click.<strong> Users Ultra allows you to import users from third-party users systems by importing a CVS file "Comma separated format"</strong>. You can notify users with the new access details or ask them to confirm their accounts again.</p>
+
+<strong>Sync old users to make them work with Users Ultra?</strong>
+<p>Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.</p>
+
+<h3>Key Features:</h3>
+<p><strong>Paid Membership Features</strong>.</p>
+<ul>
+  <li>Admin  has the capability to set free membership or paid memberships.</li>
+  <li>Admin  can create unlimited membership packages.</li>
+  <li>Admin  can set one-time or recurring payments.</li>
+  <li>Admin  can set the membership duration.</li>
+</ul>
+<p><strong>Social One-Click Connects</strong></p>
+<ul>
+  <li>Facebook</li>
+  <li>Google</li>
+  <li>Yahoo</li>
+  <li>LinkedIn</li>
+</ul>
+<p><strong>Private Messaging System</strong>:</p>
+<ul>
+  <li>Users  can send private messages to other members.</li>
+  <li>Users  can reply messages.</li>
+  <li>Users  can delete &amp; marks as read messages.</li>
+  <li>Users  can block &ldquo;senders&rdquo;.</li>
+</ul>
+<p><strong>Photos &amp; Galleries</strong>:</p>
+<ul>
+  <li>Users  can create Multiple Photo Galleries.</li>
+  <li>Users  can sort galleries and photos by &ldquo;drag&amp;drop&rdquo;.</li>
+  <li>Users  can set public, non-public and private photo galleries.</li>
+  <li>Users  can set a main picture to each gallery.</li>
+  <li>Users  can set a main picture to be used in the public profile.</li>
+</ul>
+<p><strong>Drag &amp; Drop Multi-Uploader</strong></p>
+<ul>
+  <li>Users  can upload either one or multiple photos.</li>
+</ul>
+<p><strong>Promotion Options</strong></p>
+<ul>
+  <li>Capability  to promote one or multiple users by using one of the Elegant Spotlights.</li>
+  <li>Capability  to promote one Photo/Work by using a shortcode.</li>
+</ul>
+<p><strong>5 Stars Rating System</strong>:</p>
+<ul>
+  <li>Users  can rate users.</li>
+  <li>Users  can rate individual photos.</li>
+  <li>Users  can rate galleries.</li>
+</ul>
+<p><strong>Detailed Stats</strong>:</p>
+<ul>
+  <li>Daily  User  Stats</li>
+  <li>Daily  Gallery  stats</li>
+  <li>Daily  Photo  stats</li>
+</ul>
+<p><strong>&nbsp;</strong><strong>Top Rated Features:</strong></p>
+<ul>
+  <li>Shortcode  to display top rated photos</li>
+  <li>Shortcode  to display top rated galleries</li>
+  <li>Shortcode  to display top rated users</li>
+</ul>
+<p><strong>Most Visited:</strong></p>
+<ul>
+  <li>Shortcode  to diplay most visited users.</li>
+  <li>Shortcode  to display most visited galleries</li>
+  <li>Shortcode  to display most visited photos.</li>
+</ul>
+<p><strong>Youtube &amp; Vimeo Videos</strong></p>
+<ul>
+  <li>Users  can include in their profile videos from Youtube.</li>
+  <li>Users  can include in their profile Vimeo Videos.</li>
+</ul>
+<p><strong>User&rsquo;s Avatar:</strong></p>
+<ul>
+  <li>Users  can upload a custom avatar.</li>
+  <li>Drag&amp;Drop  avatar uploader.</li>
+  <li>Users  can use Facebook Avatar</li>
+  <li>Users  can use Gravatar</li>
+  <li>Users  can use a main picture as avatar</li>
+</ul>
+
 
 == Installation ==
 
@@ -46,7 +136,7 @@ Yes, http://www.usersultra.com/support/
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0 =
 Initial release.
 
 == Screenshots ==
