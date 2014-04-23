@@ -2,7 +2,6 @@
 global $xoouserultra;
 $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
 ?>
-
         
         <div class="user-ultra-sect ">
         
@@ -16,7 +15,7 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
         
         <div class="user-ultra-sect-second user-ultra-rounded" id="uultra-add-package">
         
-         <h3>Add New Package</h3>
+         <h3>Add New Membership Package</h3>
          
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
            <tr>
