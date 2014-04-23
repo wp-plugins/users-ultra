@@ -60,6 +60,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			
 			'permalinks' => __('Permalinks','userultra'),
 			'gateway' => __('Payment Gateways','userultra'),
+			'donate' => __('Donate','userultra'),
 		);
 		
 		$this->default_tab = 'main';		
