@@ -947,17 +947,17 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 			$mediafolder=false;
 			
-			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0777 attribute.", 'xoousers').'</div></div>';
+			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute.", 'xoousers').'</div></div>';
 			
 		}else{
 		
 			$f_perm = substr(decoct(fileperms($path_pics)),2,4);
 			
-			if($f_perm !=777)
+			if($f_perm !=755)
 			{
 				$mediafolder=false;
 				
-				$html .= ' <div ><div class="user-ultra-warning">'.__("Change attributes TO 0777 for  '".$media_folder."' folder.", 'xoousers').'</div></div>';	
+				$html .= ' <div ><div class="user-ultra-warning">'.__("Change attributes TO 0755 for  '".$media_folder."' folder.", 'xoousers').'</div></div>';	
 			
 			}
 			
