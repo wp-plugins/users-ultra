@@ -3254,7 +3254,7 @@ class XooUserUser {
 
         $this->searched_users = $wpdb->get_results($this->search_query_string);
 		
-		echo $this->search_query_string;
+		//echo $this->search_query_string;
     }
 
     //  Function to check if user have enterred search criteria or not
