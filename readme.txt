@@ -22,9 +22,6 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Protecting content based on Membership Package</strong>
 <p>The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.</p>
 
-<strong>Migrating to Users Ultra?</strong>
-<p>That can be done with just one click.<strong> Users Ultra allows you to import users from third-party users systems by importing a CVS file "Comma separated format"</strong>. You can notify users with the new access details or ask them to confirm their accounts again.</p>
-
 <strong>Sync old users to make them work with Users Ultra?</strong>
 <p>Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.</p>
 
