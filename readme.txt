@@ -1,7 +1,7 @@
 === Users Ultra ===
 Contributors: usersultra
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher
+Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, page, post, shorcode, sortable, images, lightbox
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 4.3
