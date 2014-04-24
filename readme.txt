@@ -144,6 +144,9 @@ Initial release.
 
 1. Admin Backend
 2. Profile Fields
+3. Profile Fields Customizer
+4. Front Publisher
+5. Photo Uploading Module
 
 == Changelog ==
 
