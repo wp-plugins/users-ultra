@@ -26,7 +26,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 <h3>Help Keep This Plugin Free</h3>
 
-If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html">making a small donation</a> to help contribute to my time invested and to further development. Thanks for your kind support!
+If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
 
 <h3>Key Features:</h3>
 <p><strong>Paid Membership Features</strong>.</p>
