@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, page, post, shorcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -149,6 +149,10 @@ Initial release.
 5. Photo Uploading Module
 
 == Changelog ==
+
+
+= 1.0.14 (04-25-2014) =
+* Improvement - Search Box Shortcode added to WP post editor.
 
 = 1.0.13 (04-24-2014) =
 * Improvement - Lightbox added to users dashboard.

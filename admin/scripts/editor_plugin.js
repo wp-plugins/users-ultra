@@ -65,7 +65,29 @@
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
                             }       
-                        } 
+                        },
+						
+						 {
+                            text: 'Directory With Search Box',
+                            value: "[usersultra_searchbox filters='country,age' ] [usersultra_directory list_per_page=6 optional_fields_to_display='social,rating,country,description' display_country_flag='both' pic_boder_type='rounded']",
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        },
+						
+						
+						{
+                            text: 'Search Box',
+                            value: "[usersultra_searchbox filters='country,age' ]",
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        },
+						
+						
+						
                     ]
                 },
 				
