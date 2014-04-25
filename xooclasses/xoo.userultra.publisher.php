@@ -541,6 +541,8 @@ class XooPublisher
 	   require_once(ABSPATH . 'wp-includes/pluggable.php');
 
         $errors = array();
+		
+		$attach_id = "";
 
        // var_dump( $_POST );
 

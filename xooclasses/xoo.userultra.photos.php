@@ -2081,6 +2081,7 @@ class XooUserPhoto {
 					//get thumbnail
 					
 					$thumb = $site_url.$upload_folder."/".$user_id."/".$photo->photo_thumb;
+					$large = $site_url.$upload_folder."/".$user_id."/".$photo->photo_large;
 					
 					$main = "";
 					if($photo->photo_main==1)
@@ -2095,7 +2096,7 @@ class XooUserPhoto {
 					<a href='#resp_edit_photo' data-id='".$photo->photo_id."' class='edit' id='".$photo->photo_id."' alt='edit' title='".__( 'edit', 'xoousers' )."'></a>
 					</div>					
 					".$main."
-					<a href='#' class='' ><img src='".$thumb."' /> </a>
+					<a href='".$large."' class='' data-lightbox='example-1' ><img src='".$thumb."' /> </a>
 					
 					<div class='uultra-photo-edit' id='photo-edit-div-".$photo->photo_id."'>
 					</div>
