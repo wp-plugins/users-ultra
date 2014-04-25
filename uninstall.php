@@ -24,7 +24,7 @@ if ( !is_multisite() )
     //
 	
 	$xoouserultra = new XooUserUltra();	
-	$xoouserultra->xoouseradmin->uultra_uninstall();
+	$xoouserultra->uultra_uninstall();
 } 
 // For Multisite
 else 

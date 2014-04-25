@@ -86,58 +86,6 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 	}
 	
-	public function uultra_uninstall () 
-	{
-		
-		global $wpdb;
-
-		$thetable = $wpdb->prefix."usersultra_stats_raw";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_stats";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_friends";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_likes";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_ajaxrating_vote";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_ajaxrating_votesummary";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_galleries";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_photos";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_photo_categories";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_photo_cat_rel";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_videos";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_packages";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_orders";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");			
-		
-		$thetable = $wpdb->prefix."users_ultra_pm";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_activity";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");		
-		
-		
-	}
 	
 	public function update_default_option_ini () 
 	{
