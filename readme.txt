@@ -1,7 +1,7 @@
 === Users Ultra ===
 Contributors: usersultra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, page, post, shorcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access
+Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, page, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 1.0.14
