@@ -150,11 +150,11 @@ Initial release.
 
 == Changelog ==
 
-= 1.0.13 =
+= 1.0.13 (04-24-2014) =
 * Improvement - Lightbox added to users dashboard.
 * Bug Fix - Removed warning message when submiting a post through the users backend.
 
-= 1.0.12 =
+= 1.0.12 (04-23-2014) =
 * Improvement - Admin Dashboard Improvement.
 
 = 1.0.11 =
