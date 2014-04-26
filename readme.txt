@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.15
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -149,6 +149,9 @@ Initial release.
 5. Photo Uploading Module
 
 == Changelog ==
+
+= 1.0.16 (04-26-2014) =
+* Improvement - Content Protection Shortcodes have been added to the editor.
 
 = 1.0.15 (04-25-2014) =
 * Bug Fix - Uninstall has been fixed, now it removes all plugin's tables.

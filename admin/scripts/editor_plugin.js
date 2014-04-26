@@ -91,6 +91,34 @@
                     ]
                 },
 				
+				//content protection
+			   {
+                    text: 'Content Protection',
+                    value: '',
+                    onclick: function() {
+                        editor.insertContent(this.value());
+                    },
+                    menu: [
+                        {
+                            text: 'Logged in Protection',
+                            value: "[usersultra_protect_content display_rule='logged_in_based'  custom_message_loggedin='Only Logged in users can see the content']Your private content here [/usersultra_protect_content] ",
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } ,
+						
+						{
+                            text: 'Memership Protection',
+                            value: "[usersultra_protect_content display_rule='membership_based' membership_id='1'  custom_message_membership='Only Gold and Platinum Members can see this Video'] Private Content... [/usersultra_protect_content]   ",
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } 
+                    ]
+                },
+				
 				//image grids
 			   {
                     text: 'Image Grids',
