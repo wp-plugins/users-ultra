@@ -1,5 +1,5 @@
 === Users Ultra ===
-Contributors: usersultra, Dot07
+Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking
 Requires at least: 3.0.1
@@ -30,7 +30,9 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <p>Users are able to submit posts which will be reviewed by the admin.</p>
 
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> 
+
 <a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> 
+
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> 
 
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
