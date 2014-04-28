@@ -21,13 +21,12 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <p>Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
 
 <strong>Protecting content based on Membership Package</strong>
-<p>The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.</p>
+
+The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
 
 <strong>Sync old users to make them work with Users Ultra?</strong>
-<p>Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.</p>
 
-<h3>Front-end Publisher</h3>
-<p>Users are able to submit posts which will be reviewed by the admin.</p>
+Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
 
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> 
 
@@ -42,6 +41,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
 
 <h3>Key Features:</h3>
+
 <p><strong>Paid Membership Features</strong>.</p>
 <ul>
   <li>Admin  has the capability to set free membership or paid memberships.</li>
