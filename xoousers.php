@@ -13,7 +13,6 @@ define('xoousers_path',plugin_dir_path(__FILE__ ));
 define('xoousers_template','basic');
 
 
-
 // Get plugin version from header
 function xoousersultra_get_plugin_version()
 {
@@ -37,4 +36,3 @@ require_once (xoousers_path . 'xooclasses/xoo.userultra.class.php');
 
 $xoouserultra = new XooUserUltra();
 $xoouserultra->plugin_init();
-

@@ -16,13 +16,18 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
 
-<p>Social Connects.  Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
+
+<h3>Social Connects</h3>
+<p>Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
 
 <strong>Protecting content based on Membership Package</strong>
 <p>The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.</p>
 
 <strong>Sync old users to make them work with Users Ultra?</strong>
 <p>Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.</p>
+
+<h3>Front-end Publisher</h3>
+<p>Users are able to submit posts which will be reviewed by the admin.</p>
 
 <h3>Help Keep This Plugin Free</h3>
 
