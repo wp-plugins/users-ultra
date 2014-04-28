@@ -29,6 +29,12 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <h3>Front-end Publisher</h3>
 <p>Users are able to submit posts which will be reviewed by the admin.</p>
 
+<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> 
+<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> 
+<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> 
+
+<a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
+
 <h3>Help Keep This Plugin Free</h3>
 
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
