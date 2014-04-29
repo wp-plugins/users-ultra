@@ -615,6 +615,7 @@ class XooPublisher
         //if not any errors, proceed
         if ( $errors ) 
 		{
+			$display_error="";
            
            // return;
         }

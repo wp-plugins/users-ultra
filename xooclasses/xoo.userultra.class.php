@@ -452,7 +452,7 @@ class XooUserUltra
 			  'post_author' => 1
 			);
 			$new_page = wp_insert_post( $new, FALSE );
-			
+						
 			
 			if (isset($new_page))
 			{

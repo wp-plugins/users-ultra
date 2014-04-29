@@ -1,7 +1,7 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking
+Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 1.0.16
@@ -17,7 +17,7 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
 
 
-<h3>Social Connects</h3>
+<strong>Social Connects</strong>
 <p>Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
 
 <strong>Protecting content based on Membership Package</strong>
