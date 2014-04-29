@@ -163,6 +163,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.16 (04-29-2014) =
+* Bug Fix - 404 error when including the datapicker styles.
+
 = 1.0.16 (04-26-2014) =
 * Improvement - Content Protection Shortcodes have been added to the editor.
 

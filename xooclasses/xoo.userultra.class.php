@@ -934,7 +934,9 @@ class XooUserUltra
 	/* register styles */
 	public function add_front_end_styles()
 	{
-	
+		
+		
+		wp_enqueue_script( 'jquery-ui-datepicker' );
 		
 
 		/* Font Awesome */
@@ -960,11 +962,8 @@ class XooUserUltra
 		
 		
 		/* date_picker */
-		wp_register_style( 'xoouserultra_date_picker', xoousers_url.'css/xoouserultra-datepicker.css');
-		wp_enqueue_style('xoouserultra_date_picker');
 		
-		wp_register_script( 'xoouserultra_date_picker_js', xoousers_url.'js/xoouserultra-datepicker.js',array('jquery'));
-		wp_enqueue_script('xoouserultra_date_picker_js');
+		
 		
 		/*Expandible*/		
 		wp_register_script( 'xoouserultra_expandible_js', xoousers_url.'js/expandible.js',array('jquery'));
