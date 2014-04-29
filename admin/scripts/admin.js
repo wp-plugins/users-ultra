@@ -529,6 +529,34 @@ jQuery(document).ready(function($) {
 	});
 	
 	
+		//create upload folder
+	jQuery('#uultradmin-create-upload-folder').live('click',function(e){
+		e.preventDefault();
+		
+		 
+	
+		jQuery.ajax({
+						type: 'POST',
+						url: ajaxurl,
+						data: {"action": "create_uploader_folder" 
+						 },
+						
+						success: function(data){
+							
+							window.location.reload();
+								
+							
+							}
+					});
+			
+		 	
+		
+				
+		return false;
+	});
+
+	
+	
 	
 	
 	

@@ -37,6 +37,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		add_action( 'wp_ajax_sort_fileds_list', array( $this, 'sort_fileds_list' ));
 		add_action( 'wp_ajax_custom_fields_reset', array( $this, 'custom_fields_reset' ));
 		
+		add_action( 'wp_ajax_create_uploader_folder', array( &$this, 'create_uploader_folder' ));		
 		
 	
 		
@@ -879,6 +880,42 @@ class XooUserAdmin extends XooUserUltraCommon
 		}
 	}
 	
+	function create_uploader_folder ()
+	{
+		global $xoouserultra;
+		
+		$mediafolder = true;
+		
+		//get folder
+		$media_folder = $xoouserultra->get_option('media_uploading_folder');
+		$path_pics = ABSPATH.$xoouserultra->get_option('media_uploading_folder');
+		
+		if(!is_dir($path_pics)) 
+		{		
+			$this->CreateDir($path_pics);	
+			echo "create: ". $path_pics;							   
+		}
+		
+	}
+	
+	public function CreateDir($root)
+	{
+
+               if (is_dir($root))        {
+
+                        $ret = "0";
+                }else{
+
+                        $oldumask = umask(0);
+                        $valrRet = mkdir($root,0755);
+                        umask($oldumask);
+
+
+                        $re = "1";
+                }
+
+    }
+	
 	function checkUploadFolder()
 	{
 		global $xoouserultra;
@@ -896,7 +933,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 			$mediafolder=false;
 			
-			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute.", 'xoousers').'</div></div>';
+			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute. You can create it automatically by <a href='#' id='uultradmin-create-upload-folder'>clicking here</a>", 'xoousers').'</div></div>';
 			
 		}else{
 		
