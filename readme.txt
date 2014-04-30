@@ -166,10 +166,8 @@ Initial release.
 = 1.0.20 (04-30-2014) =
 * Improvement - After many researching we have implemented again the option to create the "upload" folder again. We think this is a good feature for people that don't have ftp credentials. Thanks
 
-
 = 1.0.19 (04-29-2014) =
 * Bug Fix - We have removed the option to create the "photos" folder automatically. You would need to use a ftp client and create it manually. The main reason is that wp-content needs to have 777 privileges. Since 777 privileges is not recommended we have removed this option. Please post a question in the forum if you need help to create the "photos" folder. Thanks
-
 
 = 1.0.18 (04-29-2014) =
 * Improvement - New option in the Users Ultra Dashboard to create the upload folder automatically.
