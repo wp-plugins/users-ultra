@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.17
+Stable tag: 1.0.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -162,6 +162,9 @@ Initial release.
 5. Photo Uploading Module
 
 == Changelog ==
+
+= 1.0.19 (04-29-2014) =
+* Bug Fix - We have removed the option to create the "photos" folder automatically. You would need to use a ftp client and create it manually. The main reason is that wp-content needs to have 777 privileges. Since 777 privileges is not recommended we have removed this option. Please post a question in the forum if you need help to create the "photos" folder. Thanks
 
 
 = 1.0.18 (04-29-2014) =

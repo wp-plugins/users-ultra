@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Users Ultra Lite
-Plugin URI: http://wordpress.org/plugins/users-ultra/
+Plugin URI: http://usersultra.com
 Description: This is a powerful user profiles plugin for WordPress.
-Version: 1.0.18
+Version: 1.0.19
 Author: Users Ultra
 Author URI: http://usersultra.com
 */

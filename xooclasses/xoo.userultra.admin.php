@@ -933,7 +933,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 			$mediafolder=false;
 			
-			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute. You can create it automatically by <a href='#' id='uultradmin-create-upload-folder'>clicking here</a>", 'xoousers').'</div></div>';
+			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute.", 'xoousers').'</div></div>';
 			
 		}else{
 		
