@@ -163,6 +163,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.21 (04-30-2014) =
+* Improvement - Yahoo and Google Connect use OpenID. Sometimes a warning message was being displayed at the screen when using the login and registration shortocodes. We've updated the code to sort that out.
+
 = 1.0.20 (04-30-2014) =
 * Improvement - After many researching we have implemented again the option to create the "upload" folder again. We think this is a good feature for people that don't have ftp credentials. Thanks
 

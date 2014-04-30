@@ -2208,34 +2208,9 @@ class XooUserUltra
 			$web_url = site_url()."/"; 
 			
 			
-			//Yahoo
-			require_once(xoousers_path."libs/openid/openid.php");
 			
-			$openid = new LightOpenID($web_url);
-			$openid_yahoo = new LightOpenID($web_url);
 			
-			//google
-			$openid->identity = 'https://www.google.com/accounts/o8/id';
-			$openid->required = array(
-			  'namePerson/first',
-			  'namePerson/last',
-			  'contact/email',
-			);
-			$openid->returnUrl = $web_url;
-			$auth_url_google = $openid->authUrl();
 			
-			//yahoo
-			
-			$openid_yahoo->identity = 'https://me.yahoo.com';
-			$openid_yahoo->required = array(
-			  'namePerson',
-			  'namePerson/first',
-			  'namePerson/last',
-			  'contact/email',
-			);
-			
-			$openid_yahoo->returnUrl = $web_url;
-			$auth_url_yahoo = $openid_yahoo->authUrl();
 			
 			$atleast_one = false;
 			
@@ -2267,6 +2242,23 @@ class XooUserUltra
 			
 			if($this->get_option('social_media_yahoo')==1)
 			{
+				require_once(xoousers_path."libs/openid/openid.php");				
+				$openid_yahoo = new LightOpenID($web_url);
+				
+				//yahoo
+				
+				$openid_yahoo->identity = 'https://me.yahoo.com';
+				$openid_yahoo->required = array(
+				  'namePerson',
+				  'namePerson/first',
+				  'namePerson/last',
+				  'contact/email',
+				);
+				
+				$openid_yahoo->returnUrl = $web_url;
+				$auth_url_yahoo = $openid_yahoo->authUrl();
+			
+				
 				$atleast_one = true;
 			
 				//Yahoo
@@ -2279,6 +2271,21 @@ class XooUserUltra
 			 
 			if($this->get_option('social_media_google')==1)
 			{
+				//google
+				require_once(xoousers_path."libs/openid/openid.php");			
+				$openid = new LightOpenID($web_url);
+			
+				
+				//google
+				$openid->identity = 'https://www.google.com/accounts/o8/id';
+				$openid->required = array(
+				  'namePerson/first',
+				  'namePerson/last',
+				  'contact/email',
+				);
+				$openid->returnUrl = $web_url;
+				$auth_url_google = $openid->authUrl();
+			
 				$atleast_one = true;
 			
 				//Google
@@ -2319,7 +2326,7 @@ class XooUserUltra
 	return $display;
 		
 	}
-	
+
 	public function get_linkein_auth_link ()
 	{
 		$requestlink ="";
