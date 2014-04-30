@@ -890,9 +890,33 @@ class XooUserAdmin extends XooUserUltraCommon
 		$media_folder = $xoouserultra->get_option('media_uploading_folder');
 		$path_pics = ABSPATH.$xoouserultra->get_option('media_uploading_folder');
 		
+		//wp-content path
+		
+		$wp_content_path  = ABSPATH."wp-content/";
+		echo $wp_content_path;
+		
 		if(!is_dir($path_pics)) 
-		{		
-			$this->CreateDir($path_pics);	
+		{
+			
+			$f_perm = substr(decoct(fileperms($wp_content_path)),2,4);
+			
+			if($f_perm == 777)
+			{
+				$this->CreateDir($path_pics);				
+				chmod($wp_content_path, 0755);
+								
+			
+			}else{
+				
+				chmod($wp_content_path, 0777);
+				$this->CreateDir($path_pics);				
+				chmod($wp_content_path, 0755);
+			
+			
+			}
+			
+					
+			
 			echo "create: ". $path_pics;							   
 		}
 		
@@ -933,7 +957,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 			$mediafolder=false;
 			
-			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute.", 'xoousers').'</div></div>';
+			$html .= ' <div ><div class="user-ultra-warning">'.__("Please create '".$media_folder."' folder with 0755 attribute. You can create it automatically by <a href='#' id='uultradmin-create-upload-folder'>clicking here</a>", 'xoousers').'</div></div>';
 			
 		}else{
 		
