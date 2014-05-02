@@ -315,7 +315,7 @@ class XooPaypalPayment
 		return $str;
 	}
 	
-	/*Get Package*/
+	/*Get IPN Link*/
 	public function get_ipn_link($order)
 	{
 		
@@ -384,8 +384,6 @@ class XooPaypalPayment
 			
 			$url = "https://".$mode.".paypal.com/webscr?cmd=".$type."&business=".$paypal_email."&currency_code=".$currency_code."&no_shipping=1&item_name=".$p_name."&return=".$sucess_url."&notify_url=".$notify_url."&custom=".$paypalcustom."&amount=".$amount."&p3=".$package_period."&t3=".$package_time_period."&src=1&sra=1";
 		}
-		
-		
 		
 		
 		return $url;
@@ -498,6 +496,8 @@ class XooPaypalPayment
 		return $html;
 		
 	}
+	
+	/*This feature get a package in the admin only*/
 	
 	public function get_packages_private ()
 	{
@@ -655,6 +655,8 @@ class XooPaypalPayment
 		
 	}
 	
+	/*This function get a package by using ajax*/
+	
 	public function get_packages_ajax()
 	{
 		global $wpdb,  $xoouserultra;
@@ -757,7 +759,7 @@ class XooPaypalPayment
 		
 		
 		
-		$query = "UPDATE " . $wpdb->prefix ."usersultra_packages SET package_name = '$package_name',package_desc = '$package_desc', package_type = '$package_type' , package_number_of_times = '$package_number_of_times' , package_time_period = '$package_time_period', package_amount = '$package_amount', package_approvation = '$p_moderation'  , package_limit_photos = '$p_max_photos' , package_limit_galleries = '$p_max_gallery'  WHERE  `package_id` = '$package_id' ";						
+		$query = "UPDATE ". $wpdb->prefix ."usersultra_packages SET package_name = '$package_name',package_desc = '$package_desc', package_type = '$package_type' , package_number_of_times = '$package_number_of_times' , package_time_period = '$package_time_period', package_amount = '$package_amount', package_approvation = '$p_moderation'  , package_limit_photos = '$p_max_photos' , package_limit_galleries = '$p_max_gallery'  WHERE  `package_id` = '$package_id' ";						
 		
 		$wpdb->query( $query );
 		
@@ -796,14 +798,6 @@ class XooPaypalPayment
 		 
 		
 	}
-	
-	
-	
-	
-		
-
-	
-	
 
 }
 $key = "paypal";

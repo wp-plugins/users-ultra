@@ -163,6 +163,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.22 (05-01-2014) =
+* Improvement - SQL queries improvements, comments to functions, coding cleaning up.
+
 = 1.0.21 (04-30-2014) =
 * Improvement - Yahoo and Google Connect use OpenID. Sometimes a warning message was being displayed at the screen when using the login and registration shortocodes. We've updated the code to sort that out.
 
