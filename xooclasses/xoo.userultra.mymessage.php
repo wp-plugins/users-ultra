@@ -53,13 +53,21 @@ class XooUserMyMessage {
 	{
 		global $wpdb;
 		
-		//2014-03-08 added fields photo_category, photo_desc, photo_tags
-				
+		//2014-03-08 			
 		$sql ='SHOW columns from ' . $wpdb->prefix . 'users_ultra_pm where field="parent" ';		
 		$rows = $wpdb->get_results($sql);		
 		if ( empty( $rows ) )
 		{	//photo_desc
 			$sql = 'Alter table  ' . $wpdb->prefix . 'users_ultra_pm add column parent bigint (20) default -1 ; ';
+			$wpdb->query($sql);
+		}
+		
+		//2014-05-02 			
+		$sql ='SHOW columns from ' . $wpdb->prefix . 'users_ultra_pm where field="deleted_sender" ';		
+		$rows = $wpdb->get_results($sql);		
+		if ( empty( $rows ) )
+		{	
+			$sql = 'Alter table  ' . $wpdb->prefix . 'users_ultra_pm add column deleted_sender tinyint (1) default 0 ; ';
 			$wpdb->query($sql);
 		}
 		
@@ -248,6 +256,26 @@ class XooUserMyMessage {
 	
 	}
 	
+	public function get_unread_messages_amount($user_id) 
+	{
+		global $wpdb, $xoouserultra;
+		
+		$total = 0;
+		
+
+		$messages = $wpdb->get_results( 'SELECT  count(*) as total  FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = '.$user_id.'  AND  `readed` ="0"  AND `deleted` <> "2" ' );
+		
+		foreach ( $messages as $message )
+		{
+			$total= $message->total;
+							
+		}
+		
+		return $total;
+		
+	
+	}
+	
 	public function get_one($id, $receiver_id) 
 	{
 		global $wpdb, $xoouserultra;
@@ -273,6 +301,8 @@ class XooUserMyMessage {
 		$message_id = $_POST["message_id"];
 		$logged_user_id = get_current_user_id();
 		
+		//$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `deleted` = '2' WHERE `id` = '$message_id' AND  `recipient` = '".$logged_user_id."' ";
+		
 		$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `deleted` = '2' WHERE `id` = '$message_id' AND  `recipient` = '".$logged_user_id."' ";
 		
 		$wpdb->query($sql);
@@ -296,12 +326,33 @@ class XooUserMyMessage {
 		
 		$wpdb->query($sql);
 		
+		$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `readed` = '".$message_status."' WHERE `parent` = '$message_id' AND  `recipient` = '".$logged_user_id."' ";
+		
+		$wpdb->query($sql);
+		
 		echo "<div class='uupublic-ultra-success'>".__(" Status has been changed", 'xoousers')."</div>";
 		die();
 	
 	
 	}
 	
+	//this mark as read parent and all replies	
+	function update_read_status($message_id)
+	{
+		
+		global $wpdb,  $xoouserultra;
+		
+		$logged_user_id = get_current_user_id();		
+				
+		$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `readed` = '1' WHERE `id` = '$message_id' AND  `recipient` = '".$logged_user_id."' ";		
+		$wpdb->query($sql);
+		
+		//update all replies		
+		$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `readed` = '1' WHERE `parent` = '$message_id' AND  `recipient` = '".$logged_user_id."'";		
+		$wpdb->query($sql);
+		
+		
+	}
 	
 	
 	/**
@@ -319,8 +370,7 @@ class XooUserMyMessage {
 		
 		$message_sender_id = $message->sender;
 		
-		//mark as read
-		
+				
 		
 		if($message != "")
 		{
@@ -338,6 +388,11 @@ class XooUserMyMessage {
 			
 			
 			}
+			
+			//mark as read
+		
+			$this->update_read_status($message_id);
+		
 			
 			//date
 			$orig_msg_date = date("F j, Y, g:i a", strtotime($message->date));
@@ -403,9 +458,8 @@ class XooUserMyMessage {
 					  <p><a class="uultra-btn-email" href="#" id="uu-close-private-message-box" data-id="'.$receiver_user_id.'"><span><i class="fa fa-chevron-left"></i></span>'. __("Back", 'xoousers').'</a>
 					   <a class="uultra-btn-email" href="#" id="uu-reply-private-message-confirm" message-id="'.$message->id.'"><span><i class="fa fa-reply"></i></span>'. __("Send Reply", 'xoousers').'</a>
 					   
-					  <a class="uultra-btn-email" href="#" id="uu-private-message-change-status" message-id="'.$message->id.'" message-status="'.$new_status.'"><span><i class="fa fa-check"></i></span>'. $message_status.'</a>
-					  
-					   <a class="uultra-btn-email" href="#" id="uu-private-message-delete" message-id="'.$message->id.'" ><span><i class="fa fa-times"></i></span>'. __("Delete", "xoousers").'</a> </p>
+					 					  
+			</p>
 					  ';
 					  
 					  
@@ -438,10 +492,9 @@ class XooUserMyMessage {
 		
 		//current user login
 		$user_id = get_current_user_id();
-		
-			
-		// show all messages which have not been deleted by this user (deleted status != 2)
-		$msgs = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `deleted` != "2" AND `parent` = "'.$message_id.'" ORDER BY `date` ASC' );
+					
+		// show all parent messages
+		$msgs = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE  `parent` = "'.$message_id.'" ORDER BY `date` ASC' );
 		
 		return $msgs;
 	
@@ -458,7 +511,7 @@ class XooUserMyMessage {
 		
 	
 		// show all messages which have not been deleted by this user (deleted status != 2)
-		$msgs = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2" AND `parent` = "-1"  ORDER BY `date` DESC' );
+		$msgs = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2"   GROUP BY `parent` ORDER BY `date` DESC' );
 		
 		?>
 	<div class="tablenav">
@@ -508,6 +561,7 @@ class XooUserMyMessage {
 						<th class="manage-column" ><?php _e( 'Sender', 'xoousers' ); ?></th>
 						<th class="manage-column"><?php _e( 'Subject', 'xoousers' ); ?></th>
 						<th class="manage-column" ><?php _e( 'Date', 'xoousers' ); ?></th>
+                        <th class="manage-column" ><?php _e( 'Action', 'xoousers' ); ?></th>
 					</tr>
 					</thead>
 					<tbody>
@@ -517,7 +571,9 @@ class XooUserMyMessage {
 							$user_id = $msg->sender;
 							
 							$msg->sender = $wpdb->get_var( "SELECT display_name FROM $wpdb->users WHERE ID = '$msg->sender'" );
-							//main conversation id							
+							//main conversation id		
+							
+							$message_id =		$msg->id;			
 							if($msg->parent=='-1')
 							{
 								$conversa_id = $msg->id;
@@ -529,6 +585,21 @@ class XooUserMyMessage {
 								
 								
 							}
+							
+							$message_status = "";
+			
+							if($msg->readed==1)
+							{
+								$message_status = __('Mark as Unread', 'xoousers');	
+								$new_status = 0;		
+							
+							}else{
+								
+								$message_status = __('Mark as Read', 'xoousers');	
+								$new_status = 1;
+							
+							
+							}
 						
 							
 							?>
@@ -536,7 +607,7 @@ class XooUserMyMessage {
 							<th ><input type="checkbox" name="id[]" value="<?php echo $msg->id; ?>" />
 							</th>
                             
-                            <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', $pic_boder_type, $pic_size_type) ?></td>
+                            <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
 							<td><?php echo $msg->sender; ?></td>
 							<td>
 								<?php
@@ -548,18 +619,7 @@ class XooUserMyMessage {
 								<span>
 									<a href="<?php echo $xoouserultra->userpanel->get_internal_pmb_links('messages','view',$conversa_id) ?>"><?php _e( 'View', 'xoousers' ); ?></a>
 								</span>
-									<?php
-									if ( !( $msg->readed ) )
-									{
-										?>
-										<span>
-									| <a href="<?php echo $xoouserultra->userpanel->get_internal_pmb_links('messages','view',$conversa_id) ?>"><?php _e( 'Mark As Read', 'xoousers' ); ?></a>
-								</span>
-										<?php
-	
-									}
-									?>
-									
+																		
 								<span class="reply">
 									| <a class="reply"
 									href="<?php echo $xoouserultra->userpanel->get_internal_pmb_links('messages','view',$conversa_id) ?>"><?php _e( 'Reply', 'xoousers' ); ?></a>
@@ -567,6 +627,8 @@ class XooUserMyMessage {
 								</div>
 							</td>
 							<td><?php echo $msg->date; ?></td>
+                            
+                            <td> <a class="uultra-btn-email uu-private-message-change-status" href="#" id="" message-id="<?php echo $message_id?>" message-status="<?php echo $new_status?>"><span><i class="fa fa-check"></i></span><?php echo $message_status?></a></td>
 						</tr>
 							<?php
 	
@@ -626,7 +688,7 @@ class XooUserMyMessage {
 			}
 			
 			
-			echo '<span style="float:right">', sprintf( _n( 'You have %d private message (%d unread).', 'You have %d private messages (%d unread)', $n, 'xoousers' ), $n, $num_unread ), '</span>'     ;    
+			echo '<span style="float:right">', sprintf( _n( 'You have sent %d private message(s) ', 'You have sent %d private messages ', $n, 'xoousers' ), $n, $num_unread ), '</span>'     ;    
 				
 				?>
 				</div>
@@ -639,7 +701,7 @@ class XooUserMyMessage {
 				<table class="widefat fixed" id="table-3" cellspacing="0">
 					<thead>
 					<tr>
-						<th class="manage-column "><input type="checkbox" /></th>
+						
                         <th class="manage-column check-column"><?php _e( 'Pic', 'xoousers' ); ?></th>
 						<th class="manage-column" ><?php _e( 'Receiver', 'xoousers' ); ?></th>
 						<th class="manage-column"><?php _e( 'Subject', 'xoousers' ); ?></th>
@@ -669,10 +731,8 @@ class XooUserMyMessage {
 							
 							?>
 						<tr>
-							<th ><input type="checkbox" name="id[]" value="<?php echo $conversa_id; ?>" />
-							</th>
-                            
-                            <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', $pic_boder_type, $pic_size_type) ?></td>
+							                            
+                            <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
 							<td><?php echo $msg->sender; ?></td>
 							<td>
 								<?php
@@ -696,10 +756,7 @@ class XooUserMyMessage {
 									}
 									?>
 									
-								<span class="reply">
-									| <a class="reply"
-									href="<?php echo $xoouserultra->userpanel->get_internal_pmb_links('messages','view',$conversa_id) ?>"><?php _e( 'Reply', 'xoousers' ); ?></a>
-								</span>
+								
 								</div>
 							</td>
 							<td><?php echo $msg->date; ?></td>
@@ -732,7 +789,7 @@ class XooUserMyMessage {
 		
 	
 		// show all messages which have not been deleted by this user (deleted status != 2)
-		$msgs = $wpdb->get_results( 'SELECT `id`, `sender`, `subject`, `readed`, `date` FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '" AND `deleted` != "2" AND `parent` = "-1"  ORDER BY `date` DESC LIMIT '.$howmany.''  );
+		$msgs = $wpdb->get_results( 'SELECT  * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2" AND `parent` <> "-1" GROUP BY `parent`  ORDER BY `date` DESC LIMIT  '.$howmany.'  '  );
 		
 		
 		
@@ -787,16 +844,30 @@ class XooUserMyMessage {
 						{
 							$user_id = $msg->sender;
 							$msg->sender = $wpdb->get_var( "SELECT display_name FROM $wpdb->users WHERE ID = '$msg->sender'" );
+							
+							//main conversation id							
+							if($msg->parent=='-1')
+							{
+								$conversa_id = $msg->id;
+							
+							
+							}else{
+								
+								$conversa_id = $msg->parent;
+								
+								
+							}
+							
 							?>
 						<tr>
 							
-                             <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', $pic_boder_type, $pic_size_type) ?></td>
+                             <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
                              
 							<td><?php echo $msg->sender; ?></td>
 							<td>
 								<?php
 								
-									echo '<a href="'. $xoouserultra->userpanel->get_internal_pmb_links("messages","view",$msg->id).'">'. stripcslashes( $msg->subject ). '</a>';
+									echo '<a href="'. $xoouserultra->userpanel->get_internal_pmb_links("messages","view",$conversa_id).'">'. stripcslashes( $msg->subject ). '</a>';
 								
 								?>
 								

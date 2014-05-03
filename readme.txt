@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.19
+Stable tag: 1.0.23
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -162,6 +162,13 @@ Initial release.
 5. Photo Uploading Module
 
 == Changelog ==
+
+= 1.0.23 (05-02-2014) =
+* Improvement - The Private Messaging system has been improved. Now, a red cyrcle is displayed in the navigator menu in the users dashboard. Also, the conversation has been organized in much more clear way.
+
+* Improvement - Now the user can mark a message as read and unread individualy.
+
+* Bug Fix - We've fixed a bug in the "Fields" tab, within the admin section. Please clean temp files and update.
 
 = 1.0.22 (05-01-2014) =
 * Improvement - SQL queries improvements, comments to functions, coding cleaning up.

@@ -459,6 +459,23 @@ a.uultra-btn-email:hover{
 }
 
 /*--------- Users Private Messaging*/
+.uultra-noti-bubble {
+    position:absolute;
+    top: -1px;
+    right:-2px;
+    padding:2px ;
+    background-color: #C30;
+    color:white;
+	line-height:15px;
+    font-weight:bold;
+    font-size:0.8em;
+	width:14px;
+	height:14px;
+    
+   border-radius: 14px;
+	-moz-border-radius:14px;
+   
+}
 .uu-private-messaging-backend{
 	width:97% !important;
 	
@@ -538,6 +555,13 @@ display: inline-block; width:85%; vertical-align:top
 	-moz-border-radius: 50%;
 		
 }
+
+	
+
+
+
+
+
 
 
 /*--------- Public Private Messaging*/

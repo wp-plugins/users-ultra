@@ -597,7 +597,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		}
 		
 		ksort($new_fields);		
-		
+		//print_r($new_fields);
 		
 		update_option('usersultra_profile_fields', $new_fields);
 		

@@ -1677,6 +1677,13 @@ class XooUserUser {
 		}elseif($slug=="messages"){ 
 			
 			
+			//check if unread replies or messages
+			
+			$user_id = get_current_user_id();
+			$total = $xoouserultra->mymessage->get_unread_messages_amount($user_id);		
+		
+			
+			
 			if(!isset($_GET["page_id"]))
 			{
 				$url = '<a class="uultra-btn-u-menu" href="?module=messages"><span><i class="fa fa-envelope-o fa-2x"></i></span>'.__('My Messages', 'xoousers').'</a>';	
@@ -1686,6 +1693,13 @@ class XooUserUser {
 				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=messages"><span><i class="fa fa-envelope-o fa-2x"></i></span>'.__('Messages', 'xoousers').'</a>';			
 			
 			}
+			
+			if($total>0)
+			{
+				$url .= '<div class="uultra-noti-bubble" title="'.__('Unread Messages', 'xoousers').'">'.$total.'</div>';
+			
+			}
+			
 		
 		}elseif($slug=="photos"){
 			

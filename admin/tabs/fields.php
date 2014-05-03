@@ -17,6 +17,7 @@ $meta_custom_value = "";
 	<?php _e('Organize profile fields, add custom fields to profiles, control privacy of each field, and more using the following customizer. You can drag and drop the fields to change the order in which they are displayed on profiles and the registration form.','xoousers'); ?>
 </p>
 
+
 <p >
 <div class='user-ultra-success uultra-notification' id="fields-mg-reset-conf"><?php _e('Profile fields have been restored','xoousers'); ?></div>
 
@@ -25,10 +26,10 @@ $meta_custom_value = "";
 	class="uultra-icon-plus"></i>&nbsp;&nbsp;<?php _e('Click here to add new field','xoousers'); ?>
 </a>
 
+
 <a href="#uultra-add-field-btn" class="button button-secondary user-ultra-btn-red"  id="uultra-restore-fields-btn"><i
 	class="uultra-icon-plus"></i>&nbsp;&nbsp;<?php _e('Click here to restore default fields','xoousers'); ?>
 </a> 
-
 
 <div class="user-ultra-sect-second user-ultra-rounded" id="uultra-add-new-custom-field-frm" >
 
@@ -54,9 +55,7 @@ $meta_custom_value = "";
 	<tr valign="top">
 		<th scope="row"><label for="uultra_field"><?php _e('Editor / Input Type','xoousers'); ?>
 		</label></th>
-	
-    
-    	<td><select name="uultra_field" id="uultra_field">
+		<td><select name="uultra_field" id="uultra_field">
 				<?php  foreach($xoouserultra->allowed_inputs as $input=>$label) { ?>
 				<option value="<?php echo $input; ?>">
 					<?php echo $label; ?>
@@ -239,7 +238,11 @@ $meta_custom_value = "";
 		</select> <i class="uultra-icon-question-sign uultra-tooltip2"
 			title="<?php _e('Show this field on the registration form? If you choose no, this field will be shown on edit profile only and not on the registration form. Most users prefer fewer fields when registering, so use this option with care.','xoousers'); ?>"></i>
 		</td>
+        
+        
 	</tr>
+    
+   
 
 	<tr valign="top" class="uultra-icons-holder">
 		<th scope="row"><label><?php _e('Icon for this field','xoousers'); ?> </label>
@@ -298,7 +301,7 @@ $meta_custom_value = "";
 		        $fonticon = '';
 				
 				
-			if ($type == 'separator') {
+			if ($type == 'seperator' || $type == 'separator') {
 			   
 				$class = "separator";
 				$class_title = "";
@@ -445,7 +448,7 @@ $meta_custom_value = "";
 						title="<?php _e('Enter the label / name of this field as you want it to appear in front-end (Profile edit/view)','xoousers'); ?>"></i>
 				</p>
 
-			<?php if ($type != 'separator') { ?>
+			<?php if ($type != 'separator' ) { ?>
 
 				<?php if ($social == 1) { ?>
 				<p>
@@ -568,6 +571,9 @@ $meta_custom_value = "";
 				{
 				    if(!isset($show_in_register))
 				        $show_in_register= 0;
+						
+					 if(!isset($show_in_widget))
+				        $show_in_widget= 0;
 				    ?>
 				<p>
 					<label for="uultra_<?php echo $pos; ?>_show_in_register"><?php _e('Show on Registration Form','xoousers'); ?>
@@ -581,8 +587,12 @@ $meta_custom_value = "";
 						</option>
 					</select> <i class="uultra-icon-question-sign uultra-tooltip2"
 						title="<?php _e('Show this profile field on the registration form','xoousers'); ?>"></i>
-				</p> <?php } ?>
-			<?php if ($type != 'separator') { ?>
+				</p>
+                
+              
+                
+                 <?php } ?>
+			<?php if ($type != 'seperator' || $type != 'separator') { ?>
 
 		  <?php if (in_array($field, array('select','radio','checkbox')))
 				 {
@@ -672,7 +682,7 @@ $meta_custom_value = "";
 		
 		      var custom_fields_del_confirmation ="<?php _e('Are you totally sure that you want to delete this field?','xoousers'); ?>";
 			  
-			    var custom_fields_reset_confirmation ="<?php _e('Are you totally sure that you want to restore the default fields?','xoousers'); ?>";
+			   var custom_fields_reset_confirmation ="<?php _e('Are you totally sure that you want to restore the default fields?','xoousers'); ?>";
 		 
 		 </script>
          

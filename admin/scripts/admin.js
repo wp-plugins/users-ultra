@@ -529,6 +529,45 @@ jQuery(document).ready(function($) {
 	});
 	
 	
+	jQuery('#uultradmin-confirm-rearrange').live('click',function(e){
+		e.preventDefault();
+		
+		
+		 var itemList = jQuery('#uu-fields-sortable');
+		
+		$('#loading-animation').show(); // Show the animate loading gif while waiting
+		
+		opts = {
+                url: ajaxurl, // ajaxurl is defined by WordPress and points to /wp-admin/admin-ajax.php
+                type: 'POST',
+                async: true,
+                cache: false,
+                dataType: 'json',
+                data:{
+                    action: 'sort_fileds_list', // Tell WordPress how to handle this ajax request
+                    order: itemList.sortable('toArray').toString() // Passes ID's of list items in  1,3,2 format
+                },
+                success: function(response) {
+                    $('#loading-animation').hide(); // Hide the loading animation
+                    return; 
+                },
+                error: function(xhr,textStatus,e) {  // This can be expanded to provide more information
+                    alert(e);
+                    // alert('There was an error saving the updates');
+                  //  $('#loading-animation').hide(); // Hide the loading animation
+                    return; 
+                }
+            };
+            jQuery.ajax(opts);
+		
+		 
+		
+			 	
+		
+				
+		return false;
+	});
+	
 		//create upload folder
 	jQuery('#uultradmin-create-upload-folder').live('click',function(e){
 		e.preventDefault();
@@ -645,6 +684,7 @@ function sortable_fields_list ()
 {
 	 var itemList = jQuery('#uu-fields-sortable');
 
+   /*
     itemList.sortable({
         update: function(event, ui) {
            // $('#loading-animation').show(); // Show the animate loading gif while waiting
@@ -673,6 +713,19 @@ function sortable_fields_list ()
             jQuery.ajax(opts);
         }
     }); 
+	
+	*/
+	
+
+    itemList.sortable({
+        update: function(event, ui) {
+           // $('#loading-animation').show(); // Show the animate loading gif while waiting
+
+           
+        }
+    }); 
+	
+	
 	
 }
 
