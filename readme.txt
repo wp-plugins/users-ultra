@@ -165,9 +165,7 @@ Initial release.
 
 = 1.0.23 (05-02-2014) =
 * Improvement - The Private Messaging system has been improved. Now, a red cyrcle is displayed in the navigator menu in the users dashboard. Also, the conversation has been organized in much more clear way.
-
 * Improvement - Now the user can mark a message as read and unread individualy.
-
 * Bug Fix - We've fixed a bug in the "Fields" tab, within the admin section. Please clean temp files and update.
 
 = 1.0.22 (05-01-2014) =
