@@ -17,10 +17,12 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
 
 <strong>CSV Users Import</strong>
+
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Also, you can set a default status for the imported users.
 
 <strong>Social Connects</strong>
-<p>Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
+
+Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.
 
 <strong>Protecting content based on Membership Package</strong>
 
