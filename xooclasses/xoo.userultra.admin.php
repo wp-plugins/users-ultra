@@ -55,7 +55,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			'membership' => __('Membership','userultra'),
 			'orders' => __('Orders','userultra'),
 			
-			'import' => __('Sync','userultra'),
+			'import' => __('Sync & Import','userultra'),
 			
 			'mail' => __('Notifications','userultra'),
 			

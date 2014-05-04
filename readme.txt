@@ -1,7 +1,7 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages
+Tags: users, password, community, directory, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 1.0.23
@@ -16,6 +16,8 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
 
+<strong>CSV Users Import</strong>
+This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Also, you can set a default status for the imported users.
 
 <strong>Social Connects</strong>
 <p>Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.</strong></p>
@@ -162,6 +164,10 @@ Initial release.
 5. Photo Uploading Module
 
 == Changelog ==
+
+= 1.0.24 (05-03-2014) =
+* New Feature - A new feature to import users by using CSV file has been added. You can set some nice actions that will be triggered as soon as the importing has been finished. Enjoy!
+
 
 = 1.0.23 (05-02-2014) =
 * Improvement - The Private Messaging system has been improved. Now, a red cyrcle is displayed in the navigator menu in the users dashboard. Also, the conversation has been organized in much more clear way.

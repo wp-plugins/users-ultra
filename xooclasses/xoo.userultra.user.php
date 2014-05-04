@@ -270,7 +270,7 @@ class XooUserUser {
 						$target_path = $path_f.'/import/';
 						// Checking for upload directory, if not exists then new created. 
 						if(!is_dir($target_path))
-						    mkdir($target_path, 0777);
+						    mkdir($target_path, 0755);
 						
 						$target_path = $target_path . time() . '_'. basename( $name );						
 						move_uploaded_file( $tmp_name, $target_path);
