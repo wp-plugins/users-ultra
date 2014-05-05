@@ -40,7 +40,7 @@ Users Ultra comes with a One-click sync tool that prepare your previous users to
 
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
 
-<strong>If you like this plugin, please don't forget to rate it  </strong>
+<strong>If you like this plugin, please don't forget to rate it "5/5" </strong>
 
 <strong>Online Preview</strong>
 
