@@ -20,6 +20,10 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
+<strong>MailChimp</strong>
+
+Users Ultra lets you add user emails to your MailChimp lists when registering.
+
 <strong>Social Connects</strong>
 
 Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.
@@ -43,6 +47,8 @@ Users Ultra comes with a One-click sync tool that prepare your previous users to
 <h3>Help Keep This Plugin Free</h3>
 
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
+
+<p>If you like this plugin, please don't forget to rate it <img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" />. </p>
 
 <strong>Redirection</strong>
 
