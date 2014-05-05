@@ -45,6 +45,7 @@ Users Ultra comes with a One-click sync tool that prepare your previous users to
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
 
 <strong>Redirection</strong>
+
 Redirection after user login, logout and registration.
 
 <strong>Admin approval, user activation or deactivation</strong>
@@ -52,9 +53,11 @@ Redirection after user login, logout and registration.
 Allow admin to approve user upon registration and activate or deactivate any user, any time.
 
 <strong>E-mail verification</strong>
+
 Verify user email in order to activate a new user.
 
 <strong>Customize Email Template</strong>
+
 Customize user registration, activation, deactivation, lostpassword etc emailsa.
 
 <h3>Key Features:</h3>
