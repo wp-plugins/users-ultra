@@ -36,6 +36,14 @@ The plugin comes with an easy to use shortcode that allows you to protect conten
 
 Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
 
+<h3>Help Keep This Plugin Free</h3>
+
+If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
+
+<strong>If you like this plugin, please don't forget to rate it  </strong>
+
+<strong>Online Preview</strong>
+
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> 
 
 <a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> 
@@ -44,11 +52,6 @@ Users Ultra comes with a One-click sync tool that prepare your previous users to
 
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
-<h3>Help Keep This Plugin Free</h3>
-
-If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
-
-<p>If you like this plugin, please don't forget to rate it <img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" /><img src="http://usersultra.com/star.png" width="20" height="20" />. </p>
 
 <strong>Redirection</strong>
 
