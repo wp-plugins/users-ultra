@@ -140,7 +140,7 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
 
 == Installation ==
 
-1. Upload `xoousersultra-wp` to the `/wp-content/plugins/` directory
+1. Upload `users-ultra` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
@@ -180,6 +180,9 @@ Initial release.
 5. Photo Uploading Module
 
 == Changelog ==
+
+= 1.0.25 (05-05-2014) =
+* New Feature - New Tab has been added with many helpful shortcodes.
 
 = 1.0.24 (05-03-2014) =
 * New Feature - A new feature to import users by using CSV file has been added. You can set some nice actions that will be triggered as soon as the importing has been finished. Enjoy!
