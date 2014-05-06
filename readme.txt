@@ -31,8 +31,7 @@ Optional you can let users sign up & login by using their<strong> Facebook, Twit
 <strong>Protecting content based on Membership Package</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
 
-<strong>Sync old users to make them work with Users Ultra?</strong>
-
+<strong>Sync old users to make them work with Users Ultra?</strong><br>
 Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
 
 <h3>Help Keep This Plugin Free</h3>
@@ -41,31 +40,22 @@ If you find this plugin useful to you, please consider <a href="http://usersultr
 
 <strong>If you like this plugin, please don't forget to rate it "5/5" </strong>
 
-<strong>Online Preview</strong>
-
-<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> 
-
-<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> 
-
-<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> 
-
+<strong>Online Preview</strong><br>
+<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
+<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
+<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
-
-<strong>Redirection</strong>
-
+<strong>Redirection</strong><br>
 Redirection after user login, logout and registration.
 
-<strong>Admin approval, user activation or deactivation</strong>
-
+<strong>Admin approval, user activation or deactivation</strong><br>
 Allow admin to approve user upon registration and activate or deactivate any user, any time.
 
-<strong>E-mail verification</strong>
-
+<strong>E-mail verification</strong><br>
 Verify user email in order to activate a new user.
 
-<strong>Customize Email Template</strong>
-
+<strong>Customize Email Template</strong><br>
 Customize user registration, activation, deactivation, lostpassword etc emailsa.
 
 <h3>Key Features:</h3>
