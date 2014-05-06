@@ -36,6 +36,13 @@ box-sizing: border-box;
 	
 }
 
+/*fix for WildCommunit theme*/
+
+.usersultra-front-directory-wrap .xoousers-prof-photo img.avatar{
+	float:none !important;	
+}
+
+
 .usersultra-front-directory-wrap .rounded {-moz-border-radius: 5px; border-radius:5px;}
 
 
@@ -58,6 +65,7 @@ box-sizing: border-box;
 	height:auto;
 	vertical-align:top;	
 }
+
 
 .usersultra-front-directory-wrap ul.usersultra-front-results li .avatar{
 	

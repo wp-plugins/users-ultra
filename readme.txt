@@ -181,6 +181,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.26 (05-05-2014) =
+* Bug Fix - Avatar alignment on WildCommunit theme.
+
 = 1.0.25 (05-05-2014) =
 * New Feature - New Tab has been added with many helpful shortcodes.
 
