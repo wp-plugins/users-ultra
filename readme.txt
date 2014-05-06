@@ -20,7 +20,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
 <strong>Front-end Publisher</strong><br>
-Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as ending until the admin has approved it. 
+Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
 
 <strong>MailChimp</strong><br>
 Users Ultra lets you add user emails to your MailChimp lists when registering.
