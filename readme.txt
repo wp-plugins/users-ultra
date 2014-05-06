@@ -16,20 +16,19 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
 
-<strong>CSV Users Import</strong>
-
+<strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
-<strong>MailChimp</strong>
+<strong>Front-end Publisher</strong><br>
+Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as ending until the admin has approved it. 
 
+<strong>MailChimp</strong><br>
 Users Ultra lets you add user emails to your MailChimp lists when registering.
 
-<strong>Social Connects</strong>
-
+<strong>Social Connects</strong><br>
 Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.
 
-<strong>Protecting content based on Membership Package</strong>
-
+<strong>Protecting content based on Membership Package</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
 
 <strong>Sync old users to make them work with Users Ultra?</strong>
