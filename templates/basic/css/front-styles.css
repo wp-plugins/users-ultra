@@ -36,8 +36,7 @@ box-sizing: border-box;
 	
 }
 
-/*fix for WildCommunit theme*/
-
+/*fix avatar alignment issue*/
 .usersultra-front-directory-wrap .xoousers-prof-photo img.avatar{
 	float:none !important;	
 }

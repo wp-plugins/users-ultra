@@ -3694,7 +3694,13 @@ class XooUserUser {
 				//get meta
 				$social_meta = get_user_meta($user_id, $field['meta'], true);
 				
+				
+				
+				if($social_meta!=""){
+				
 				$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
+				
+				}
 				
 				
 				
@@ -3832,8 +3838,11 @@ class XooUserUser {
 						//get meta
 						$social_meta = get_user_meta($user_id, $field['meta'], true);
 						
-						$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
-						
+						if($social_meta!="")
+						{
+							$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
+				
+						}
 						
 						
 					}
@@ -3906,7 +3915,13 @@ class XooUserUser {
 						//get meta
 						$social_meta = get_user_meta($user_id, $field['meta'], true);
 						
-						$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
+						if($social_meta!="")
+						{
+							$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
+						
+						}
+						
+						
 						
 						
 						
