@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.27
+Stable tag: 1.0.28
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -181,6 +181,8 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.28 (05-07-2014) =
+* Improvement - We have improved the social login and registration options. Also, we have updated Light OpenID library.  The new method we're implementing will save a lot of server resources.
 
 = 1.0.27 (05-05-2014) =
 * Bug Fix - Social icons in profile and directory issue has been sorted out. Please update

@@ -17,6 +17,14 @@ class XooUserUltra
 		$this->logged_in_user = 0;
 		$this->login_code_count = 0;
 		$this->current_page = $_SERVER['REQUEST_URI'];
+		
+		if (isset($_GET['uultrasocialsignup'])) 
+		{
+			/* get social links */
+			$this->social_login_links_openid();
+			
+		}
+		
 	  
     }
 	
@@ -2208,10 +2216,6 @@ class XooUserUltra
 			$web_url = site_url()."/"; 
 			
 			
-			
-			
-			
-			
 			$atleast_one = false;
 			
 			
@@ -2242,22 +2246,8 @@ class XooUserUltra
 			
 			if($this->get_option('social_media_yahoo')==1)
 			{
-				require_once(xoousers_path."libs/openid/openid.php");				
-				$openid_yahoo = new LightOpenID($web_url);
-				
-				//yahoo
-				
-				$openid_yahoo->identity = 'https://me.yahoo.com';
-				$openid_yahoo->required = array(
-				  'namePerson',
-				  'namePerson/first',
-				  'namePerson/last',
-				  'contact/email',
-				);
-				
-				$openid_yahoo->returnUrl = $web_url;
-				$auth_url_yahoo = $openid_yahoo->authUrl();
 			
+				$auth_url_yahoo = $web_url."?uultrasocialsignup=yahoo";			
 				
 				$atleast_one = true;
 			
@@ -2272,19 +2262,8 @@ class XooUserUltra
 			if($this->get_option('social_media_google')==1)
 			{
 				//google
-				require_once(xoousers_path."libs/openid/openid.php");			
-				$openid = new LightOpenID($web_url);
 			
-				
-				//google
-				$openid->identity = 'https://www.google.com/accounts/o8/id';
-				$openid->required = array(
-				  'namePerson/first',
-				  'namePerson/last',
-				  'contact/email',
-				);
-				$openid->returnUrl = $web_url;
-				$auth_url_google = $openid->authUrl();
+				$auth_url_google = $web_url."?uultrasocialsignup=google";
 			
 				$atleast_one = true;
 			
@@ -2324,6 +2303,52 @@ class XooUserUltra
 		
 		}
 	return $display;
+		
+	}
+	
+	//special feature for yahoo and google
+	
+	public function social_login_links_openid()
+	{
+		$web_url = site_url()."/";
+		
+		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="yahoo") 
+		{						
+				
+			require_once(xoousers_path."libs/openid/openid.php");				
+			$openid_yahoo = new LightOpenID($web_url);
+			//yahoo
+					
+			$openid_yahoo->identity = 'https://me.yahoo.com';
+			$openid_yahoo->required = array(
+					  'namePerson',
+					  'namePerson/first',
+					  'namePerson/last',
+					  'contact/email',
+					);
+					
+			$openid_yahoo->returnUrl = $web_url;
+			$auth_url_yahoo = $openid_yahoo->authUrl();
+			header("Location: ".$auth_url_yahoo."");
+		}
+		
+		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="google") 
+		{						
+				
+			//google
+			require_once(xoousers_path."libs/openid/openid.php");				
+			$openid = new LightOpenID($web_url);		
+			$openid->identity = 'https://www.google.com/accounts/o8/id';
+			$openid->required = array(
+				  'namePerson/first',
+				  'namePerson/last',
+				  'contact/email',
+				);
+			$openid->returnUrl = $web_url;
+			$auth_url_google = $openid->authUrl();
+			header("Location: ".$auth_url_google."");
+		}
+		
 		
 	}
 

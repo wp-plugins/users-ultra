@@ -785,6 +785,8 @@ class XooUserLogin {
 		require_once(xoousers_path."libs/openid/openid.php");
 		
 		
+		
+		
 		 
 		 //facebook libraries
 		 $web_url = site_url();
@@ -812,8 +814,7 @@ class XooUserLogin {
 				  
 				   $data = $openid->getAttributes();
 				   $email = $data['contact/email'];
-				   $first = $data['namePerson/first'];
-				   $last_n = $data['namePerson/last'];
+				  
 				   $a =  $openid->identity ;
 				   
 				   //validate
@@ -828,6 +829,9 @@ class XooUserLogin {
 											
 					
 					}else{
+						 $first = $data['namePerson/first'];
+				         $last_n = $data['namePerson/last'];
+				   
 						
 						$user_full_name = trim ($first." ".$last_n);
 						
