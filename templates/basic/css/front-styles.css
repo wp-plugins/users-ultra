@@ -488,6 +488,13 @@ a.uultra-btn-email:hover{
 	
 }
 
+
+.uultra-unread-message{
+	background:#FFFFCE !important;
+	 
+	
+}
+
 .uu-private-messaging-backend .uultra-msg-content-box{ 
 display: inline-block; width:85%; vertical-align:top
 	

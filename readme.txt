@@ -181,6 +181,11 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.29 (05-07-2014) =
+* Improvement - Private Messaging Sytem has been improved, undred messages are being highlighted and the conversation is being displayed in a organized way.
+
+* Bug Fix - We fixed the close button when editing a gallery in the user panel.
+
 = 1.0.28 (05-07-2014) =
 * Improvement - We have improved the social login and registration options. Also, we have updated Light OpenID library.  The new method we're implementing will save a lot of server resources.
 

@@ -1656,7 +1656,7 @@ class XooUserPhoto {
 				
 				
 				
-				$html .="<p><input type='button' class='xoouserultra-button' value='".__( 'Close', 'xoousers' )."' data-id= ".$gal->gallery_id."> <input type='button'  class='xoouserultra-button btn-gallery-conf' data-id= ".$gal->gallery_id." value='".__( 'Save', 'xoousers' )."'> </p>";
+				$html .="<p><input type='button' class='xoouserultra-button btn-gallery-close-conf' value='".__( 'Close', 'xoousers' )."' data-id= ".$gal->gallery_id."> <input type='button'  class='xoouserultra-button btn-gallery-conf' data-id= ".$gal->gallery_id." value='".__( 'Save', 'xoousers' )."'> </p>";
 				
 								
 			}		

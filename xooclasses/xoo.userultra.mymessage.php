@@ -369,8 +369,7 @@ class XooUserMyMessage {
 		$message = $this->get_one($message_id, $logged_user_id);
 		
 		$message_sender_id = $message->sender;
-		
-				
+		$pic_boder_type = "";
 		
 		if($message != "")
 		{
@@ -455,7 +454,7 @@ class XooUserMyMessage {
 					   
 					  
 					          
-					  <p><a class="uultra-btn-email" href="#" id="uu-close-private-message-box" data-id="'.$receiver_user_id.'"><span><i class="fa fa-chevron-left"></i></span>'. __("Back", 'xoousers').'</a>
+					  <p><a class="uultra-btn-email" href="#" id="uu-close-private-message-box" data-id="'.$receiver_id.'"><span><i class="fa fa-chevron-left"></i></span>'. __("Back", 'xoousers').'</a>
 					   <a class="uultra-btn-email" href="#" id="uu-reply-private-message-confirm" message-id="'.$message->id.'"><span><i class="fa fa-reply"></i></span>'. __("Send Reply", 'xoousers').'</a>
 					   
 					 					  
@@ -511,12 +510,13 @@ class XooUserMyMessage {
 		
 	
 		// show all messages which have not been deleted by this user (deleted status != 2)
-		$msgs = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2"   GROUP BY `parent` ORDER BY `date` DESC' );
+		$msgs = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2"   ORDER BY `date` DESC' );
+		
 		
 		?>
 	<div class="tablenav">
                 
-               <span style="float:left"><a href="myaccount/?module=messages">Inbox</a> | <a href="myaccount/?module=messages_sent">Outbox</a></span>
+               <span style="float:left"><a href="myaccount/?module=messages">Inbox</a> | <a href="myaccount/?module=messages_sent">Sent</a></span>
 					                    
                    
 		<?php
@@ -600,10 +600,18 @@ class XooUserMyMessage {
 							
 							
 							}
+							
+							$read_class="";
+							if($msg->readed==0)
+							{
+								
+								$read_class="class='uultra-unread-message'";
+								
+							}
 						
 							
 							?>
-						<tr>
+						<tr <?php echo $read_class?>>
 							<th ><input type="checkbox" name="id[]" value="<?php echo $msg->id; ?>" />
 							</th>
                             
@@ -744,18 +752,7 @@ class XooUserMyMessage {
 								<span>
 									<a href="<?php echo $xoouserultra->userpanel->get_internal_pmb_links('messages','view',$conversa_id) ?>"><?php _e( 'View', 'xoousers' ); ?></a>
 								</span>
-									<?php
-									if ( !( $msg->readed ) )
-									{
-										?>
-										<span>
-									| <a href="<?php echo $xoouserultra->userpanel->get_internal_pmb_links('messages','view',$conversa_id) ?>"><?php _e( 'Mark As Read', 'xoousers' ); ?></a>
-								</span>
-										<?php
-	
-									}
-									?>
-									
+																	
 								
 								</div>
 							</td>
@@ -789,7 +786,7 @@ class XooUserMyMessage {
 		
 	
 		// show all messages which have not been deleted by this user (deleted status != 2)
-		$msgs = $wpdb->get_results( 'SELECT  * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2" AND `parent` <> "-1" GROUP BY `parent`  ORDER BY `date` DESC LIMIT  '.$howmany.'  '  );
+		$msgs = $wpdb->get_results( 'SELECT  * FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `recipient` = "' . $user_id. '"  AND `deleted` != "2"  ORDER BY `date` DESC LIMIT  '.$howmany.'  '  );
 		
 		
 		
@@ -858,8 +855,16 @@ class XooUserMyMessage {
 								
 							}
 							
+							$read_class="";
+							if($msg->readed==0)
+							{
+								
+								$read_class="class='uultra-unread-message'";
+								
+							}
+							
 							?>
-						<tr>
+						<tr <?php echo $read_class?> >
 							
                              <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
                              

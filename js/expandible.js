@@ -519,6 +519,19 @@ if(typeof $ == 'undefined'){
 				
         });
 		
+		//close gallery edit box
+		$(document).on("click", ".btn-gallery-close-conf", function(e) {
+			
+			e.preventDefault();				
+			var p_id =  jQuery(this).attr("data-id");
+									
+			$( "#gallery-edit-div-"+p_id ).slideUp();			
+			return false;
+    		e.preventDefault();
+			 
+				
+        });
+		
 		
 		//edit gallery confirm					
 		$(document).on("click", ".btn-video-edit-conf", function(e) {
