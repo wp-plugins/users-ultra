@@ -2055,15 +2055,22 @@ class XooUserUltra
 	/**
 	 * Users Dashboard
 	 */
-	public function show_usersultra_my_account()
+	public function show_usersultra_my_account($atts )
 	{
 		global $wpdb, $current_user;		
 		$user_id = get_current_user_id();
 		
-		$display = $this->usersultra_get_template('dashboard');	
+		extract( shortcode_atts( array(	
+			
+			'disable' => ''	
+						
+			
+		), $atts ) );
 		
-		return $display;
-	
+		$modules = array();
+		$modules  = explode(',', $disable);
+		
+		require_once(xoousers_path.'/templates/'.xoousers_template."/dashboard.php");
 	}
 	
 	/**

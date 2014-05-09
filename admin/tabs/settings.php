@@ -26,29 +26,6 @@ $this->create_plugin_setting(
   
 </div>
 
-<div class="user-ultra-sect ">
-  <h3><?php _e('Private Messaging Settings','xoousers'); ?></h3>
-  
-  <p><?php _e('.','xoousers'); ?></p>
-  
-  
-  <table class="form-table">
-<?php 
-   
-$this->create_plugin_setting(
-                'checkbox',
-                'private_message_system',
-                __('Private Messages','xoousers'),
-                '1',
-                __('If checked, Allow users to message each other (PM). Like CMS Private messaging system and social websites.','xoousers'),
-                __('If checked, Allow users to message each other. Like CMS Private messaging system and social websites..','xoousers')
-        ); 
-		
-?>
-</table>
-
-  
-</div>
 
 <div class="user-ultra-sect ">
   <h3><?php _e('Media Settings','xoousers'); ?></h3>
@@ -58,15 +35,6 @@ $this->create_plugin_setting(
   
   <table class="form-table">
 <?php 
-   
-$this->create_plugin_setting(
-                'checkbox',
-                'media_allow_photo_uploading',
-                __('Photos Module','xoousers'),
-                '1',
-                __('If checked, Allow users to message each other (PM). Like CMS Private messaging system and social websites.','xoousers'),
-                __('If checked, Allow users to message each other. Like CMS Private messaging system and social websites..','xoousers')
-        ); 
 		
 $this->create_plugin_setting(
         'input',

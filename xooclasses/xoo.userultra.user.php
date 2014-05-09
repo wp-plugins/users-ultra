@@ -1270,8 +1270,14 @@ class XooUserUser {
 					/*User can hide this from public*/
 					if (isset($array[$key]['can_hide']) && $can_hide == 1) {
 						
+						//get meta
+						$check_va = "";
+						$ischecked = $this->get_user_meta("hide_".$meta);
+						 
+						 if($ischecked==1) $check_va = 'checked="checked"';
+						
 						$html .= '<div class="xoouserultra-hide-from-public">
-										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
+										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="1" '.$check_va.' /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
 									</div>';
 
 
@@ -1317,7 +1323,8 @@ class XooUserUser {
 				/* Now update all user meta */
 				foreach($this->usermeta as $key => $value) 
 				{
-					
+					//echo $key. " ";
+					update_user_meta($user_id, "hide_".$key, "");
 					update_user_meta($user_id, $key, esc_attr($value));
 						
 				}

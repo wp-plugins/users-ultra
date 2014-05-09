@@ -181,6 +181,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.31 (05-08-2014) =
+* Bug Fix - Option to hide fields in the users panel has been fixed. 
+
 = 1.0.30 (05-08-2014) =
 * Improvement - We have improved the CCS styling for checkbox and radio buttons. We hope you like it. Please update and refresh your browser. 
 

@@ -58,14 +58,31 @@ $howmany = 5;
            <ul class="main_menu">
            
               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('dashboard');?></li>
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li>
+               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li             
+                              
+                <?php if(!in_array("messages",$modules)){?>           
                 
                 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
+                
+                <?php }?>
+                
+				<?php if(!in_array("friends",$modules)){?>                 
                 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('friends');?></li>
+                <?php }?>
+                
+                <?php if(!in_array("posts",$modules)){?>                 
                 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('posts');?></li>
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></li>
+                <?php }?>
+                
+                <?php if(!in_array("photos",$modules)){?>                 
+                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></l             
+                <?php }?>
+                
+                <?php if(!in_array("videos",$modules)){?> 
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('videos');?></li>
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('logout');?></li>
+               
+               <?php }?>
+               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('logout');?></li>
            
            </ul>
     </div>
@@ -97,7 +114,10 @@ $howmany = 5;
             
                <h1>Hello <?php echo $current_user->display_name?>. <?php  _e('Welcome to your dashboard','xoousers');?></h1>     
                
-               <p style="text-align:right"><?php  _e('Account Status','xoousers');?>: 	<?php echo $xoouserultra->userpanel->get_status($current_user->ID);?></p>     
+               <p style="text-align:right"><?php  _e('Account Status','xoousers');?>: 	<?php echo $xoouserultra->userpanel->get_status($current_user->ID);?></p>    
+               
+               
+                 <?php if(!in_array("messages",$modules)){?>  
              
               <div class="expandable-panel xoousersultra-shadow-borers" id="cp-1">
                                 
@@ -114,6 +134,8 @@ $howmany = 5;
                      
                      
                </div>
+               
+               <?php }?>
 
    		 
          
@@ -142,7 +164,7 @@ $howmany = 5;
          <?php
 	   
 	   //my friends
-	   if($module=="friends") 
+	   if($module=="friends" && !in_array("friends",$modules)) 
 	   {
 		   
 		   
@@ -224,7 +246,7 @@ $howmany = 5;
         <?php
 	   
 	   //my posts
-	   if($module=="posts") 
+	   if($module=="posts" && !in_array("posts",$modules)) 
 	   {
 		   
 		   
@@ -273,7 +295,7 @@ $howmany = 5;
        <?php
 	   
 	   //my photos
-	   if($module=="photos") 
+	   if($module=="photos" && !in_array("photos",$modules)) 
 	   {
 		   
 		   
@@ -363,7 +385,7 @@ $howmany = 5;
         <?php
 	   
 	   //my photos
-	   if($module=="photos-files") 
+	   if($module=="photos-files" && !in_array("photos",$modules)) 
 	   {
 		   
 		   //get selected gallery
@@ -434,7 +456,7 @@ $howmany = 5;
        <?php
 	   
 	   
-	   if($module=="profile") 
+	   if($module=="profile" && !in_array("profile",$modules)) 
 	   {
 		   
 		  
@@ -462,37 +484,9 @@ $howmany = 5;
       <?php }?>
       
       
-      <?php
-	   
-	   
-	   if($module=="profile-customizer") 
-	   {
-		   
-		  
-	   
-	   ?>
-       
-       <div class="commons-panel xoousersultra-shadow-borers" >
-                                
-                      <div class="commons-panel-heading">
-                          <h2> <?php  _e('Profile Customizer','xoousers');?> </h2>
-                       </div>
-                     
-                      <div class="commons-panel-content">
-                      
-                       <?php echo $xoouserultra->userpanel->edit_profile_form();?>
-                                         
-                      </div>
-                     
-                     
-          </div>
-               
-                
-               
-                     
-      <?php }?>
+     
       
-            <?php if($module=="messages") 
+            <?php if($module=="messages" && !in_array("messages",$modules)) 
 	   {	  
 	   
 			   ?>
@@ -541,7 +535,7 @@ $howmany = 5;
                      
       <?php }?>
       
-      <?php if($module=="messages_sent") 
+      <?php if($module=="messages_sent" && !in_array("messages",$modules)) 
 	   {	  
 	   
 			   ?>
@@ -584,7 +578,7 @@ $howmany = 5;
       <?php
 	   
 	   
-	   if($module=="videos") 
+	   if($module=="videos" && !in_array("videos",$modules)) 
 	   {
 		   
 		  
