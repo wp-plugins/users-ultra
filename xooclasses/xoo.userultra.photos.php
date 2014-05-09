@@ -1188,13 +1188,13 @@ class XooUserPhoto {
 					
 					switch($video->video_type): case "youtube":
                         
-						$html .= '<iframe width="940" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+						$html .= '<iframe width="99%" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 							
 					 break; 
 					 
 					 case "vimeo": 
 					 
-							$html .= '<iframe src="http://player.vimeo.com/video/'.$video->video_unique_vid.'?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="940"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+							$html .= '<iframe src="http://player.vimeo.com/video/'.$video->video_unique_vid.'?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="99%"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 					 endswitch;
 						 
 						 
@@ -1253,7 +1253,7 @@ class XooUserPhoto {
 					
 					switch($video->video_type): case "youtube":
                         
-						$html .= '<iframe width="940" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+						$html .= '<iframe width="100%" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 						
 						 $html .= "<p class='social_v'><i class='fa fa-youtube-square fa-3x'></i></p> ";
 							
@@ -1261,7 +1261,7 @@ class XooUserPhoto {
 					 
 					 case "vimeo": 
 					 
-							$html .= '<iframe src="http://player.vimeo.com/video/'.$video->video_unique_vid.'?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="940"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+							$html .= '<iframe src="http://player.vimeo.com/video/'.$video->video_unique_vid.'?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 							
 							 $html .= "<p class='social_v'><i class='fa fa-vimeo-square fa-3x'></i></p> ";
 					 endswitch;
