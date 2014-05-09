@@ -1271,9 +1271,10 @@ class XooUserUser {
 					if (isset($array[$key]['can_hide']) && $can_hide == 1) {
 						
 						$html .= '<div class="xoouserultra-hide-from-public">
-										<i class="xoouserultra-icon-check-empty"></i>'.__('Hide from Public','xoousers').'
-										<input type="hidden" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" />
+										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
 									</div>';
+
+
 
 					} elseif ($can_hide == 0 && $private == 0) {
 					   

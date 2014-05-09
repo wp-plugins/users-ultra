@@ -181,6 +181,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.30 (05-08-2014) =
+* Improvement - We have improved the CCS styling for checkbox and radio buttons. We hope you like it. Please update and refresh your browser. 
+
 = 1.0.29 (05-07-2014) =
 * Improvement - Private Messaging Sytem has been improved, undred messages are being highlighted and the conversation is being displayed in a organized way.
 
