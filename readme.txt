@@ -19,6 +19,12 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
+<strong>Private Messages System For WordPress</strong><br>
+Users Ultra comes with a powerful private messaging system that allows user to send messages to other members of the user's community.<br>
+The user panel has a modern, easy to use messages board with "read bubble" notifications. Also, when viewing a message the users will see a well-organized conversation. Delete a message can be done with just a click. Mark messages as read/unread is done by using AJAX.<br>
+Besides, each message will display the user's avatar and there is an "inbox" and "sent" messages box that will help you to keep your messages organized.
+
+
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
 
