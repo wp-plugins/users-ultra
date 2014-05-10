@@ -744,7 +744,7 @@ class XooUserMyMessage {
 							?>
 						<tr>
 							                            
-                            <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
+                            <td><span class="uultra-u-avatar"><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></span></td>
 							<td><?php echo $msg->sender; ?></td>
 							<td>
 								<?php
@@ -870,7 +870,10 @@ class XooUserMyMessage {
 							?>
 						<tr <?php echo $read_class?> >
 							
-                             <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
+                             <td>
+							 
+							 <span class="uultra-u-avatar"><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></span>						 
+							</td>
                              
 							<td><?php echo $msg->sender; ?></td>
 							<td>
