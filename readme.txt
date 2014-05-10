@@ -30,6 +30,13 @@ Besides, each message will display the user's avatar and there is an "received" 
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
 
+
+<strong>Paypal Membership System:</strong><br>
+The plugin can be used to manage large communities of either free or paid subscribers. You can create as many packages as you wish with some limitations such as: how many photos, galleries to each package. The Users Ultra Membership module allows you to accept either one-time payments or recurring payment through Paypal.
+
+Since it uses Paypal, you could create almost any type of billing period such as: monthly, yearly, daily. We hope you enjoy this great feature to manage your Paid Membership Packages.
+
+
 <strong>MailChimp</strong><br>
 Users Ultra lets you add user emails to your MailChimp lists when registering.
 
