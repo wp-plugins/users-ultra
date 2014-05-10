@@ -17,21 +17,17 @@ class XooRating extends XooUserUltraCommon
 		$this->ini_module();
 		$this->mDateToday =  date("Y-m-d"); 
 		
-		if (is_user_logged_in() ) 
-		{
+		//if (is_user_logged_in() ) 
+	//	{
 			add_action( 'wp_ajax_rating_vote',  array( $this, 'rating_vote' ));
 					
-		}else{
-					
+		//}else{					
 			
 			add_action( 'wp_ajax_nopriv_rating_vote',  array( $this, 'rating_vote' ));
 					
-		}
+		//}
 	
-			
-	
-
-		
+				
 	}
 	
 	public function ini_module()

@@ -196,6 +196,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.37 (05-10-2014) =
+* Bug Fix -  bbPress 2.5.3 issue conflict with the admin menu has been fixed.
+
 = 1.0.36 (05-10-2014) =
 * Bug Fix -  bbPress menu conflict.
 * Bug Fix -  Conflict with WooCommerce and jQuery 1.9.

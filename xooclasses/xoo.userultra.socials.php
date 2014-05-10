@@ -22,25 +22,25 @@ class XooSocial
 	{
 		require_once( ABSPATH . "wp-includes/pluggable.php" );
 		
-		if (is_user_logged_in() ) 
-		{
+		//if (is_user_logged_in() ) 
+	//	{
 			add_action( 'wp_ajax_send_friend_request',  array( $this, 'send_friend_request' ));
 					
-		}else{
+	//	}else{
 			
 			add_action( 'wp_ajax_nopriv_send_friend_request',  array( $this, 'send_friend_request' ));			
 								
-		}
+		//}
 		
-		if (is_user_logged_in() ) 
-		{
+		//if (is_user_logged_in() ) 
+	//	{
 			add_action( 'wp_ajax_like_item',  array( $this, 'like_item' ));
 					
-		}else{
+		//}else{
 			
 			add_action( 'wp_ajax_nopriv_like_item',  array( $this, 'like_item' ));			
 								
-		}
+	//	}
 		
 		add_action( 'wp_ajax_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));
 		add_action( 'wp_ajax_friend_request_action',  array( $this, 'friend_request_action' ));

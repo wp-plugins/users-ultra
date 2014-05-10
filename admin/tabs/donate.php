@@ -21,6 +21,7 @@ global $xoouserultra;
 <input type="hidden" name="hosted_button_id" value="W29Q6HKFA7QKE">
 <table>
 <tr><td><input type="hidden" name="on0" value="sponsorship">Please select sponsorship level</td></tr><tr><td><select name="os0">
+    <option value="Contributor1">Contributor $2.00 USD</option>
 	<option value="Contributor">Contributor $5.00 USD</option>
 	<option value="Supporter">Supporter $10.00 USD</option>
 	<option value="Donor">Donor $40.00 USD</option>

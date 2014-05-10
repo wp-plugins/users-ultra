@@ -236,7 +236,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			$menu_label = __('Users Ultra','userultra');
 		}
 		
-		add_menu_page( __('Users Ultra','userultra'), $menu_label, 'manage_options', $this->slug, array(&$this, 'admin_page'), xoousers_url .'admin/images/small_logo_16x16.png', '199.1997796');
+		add_menu_page( __('Users Ultra','userultra'), $menu_label, 'manage_options', $this->slug, array(&$this, 'admin_page'), xoousers_url .'admin/images/small_logo_16x16.png', '159.140');
 		
 		do_action('userultra_admin_menu_hook');
 		
