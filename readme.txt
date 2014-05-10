@@ -173,11 +173,12 @@ Initial release.
 
 == Screenshots ==
 
-1. Admin Backend
+1. Powerful Private Messaging System
 2. Profile Fields
 3. Profile Fields Customizer
 4. Front Publisher
 5. Photo Uploading Module
+6. Admin Backend
 
 == Changelog ==
 
