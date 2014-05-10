@@ -196,6 +196,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.35 (05-09-2014) =
+* Bug Fix -  Shorcode to disable features has been improved.
+
 = 1.0.34 (05-09-2014) =
 * Bug Fix -  Issue with rounded avatars has been fixed.
 

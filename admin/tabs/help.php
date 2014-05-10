@@ -43,7 +43,7 @@ global $xoouserultra;
                  <pre> [usersultra_protect_content display_rule='membership_based' membership_id='1'  custom_message_membership='Only Gold and Platinum Members can see this Video'] Private Content... [/usersultra_protect_content] </pre>
                  
                    <strong>Excluding Modules From Members Panel</strong>
-                 <pre> [usersultra_my_account exclude='messages,photos']</pre>
+                 <pre> [usersultra_my_account disable='messages,photos']</pre>
                  
                  
                  
