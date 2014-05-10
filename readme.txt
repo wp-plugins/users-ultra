@@ -20,11 +20,11 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
 <strong>Private Messages System For WordPress</strong><br>
-Users Ultra comes with a powerful private messaging system that allows user to send messages to other members of the user's community.
+Users Ultra comes with a powerful private messaging system that allows users to send messages to other members of the user's community.
 
-The user panel has a modern, easy to use messages board with "read bubble" notifications. Also, when viewing a message the users will see a well-organized conversation. Delete a message can be done with just a click. Mark messages as read/unread is done by using AJAX.
+The users panel has a modern, easy to use messages board with "read bubble" notifications. Also, when viewing a message the users will see a well-organized conversation. Deleting a message can be done with just a click. Mark messages as read/unread is done by using AJAX.
 
-Besides, each message will display the user's avatar and there is an "inbox" and "sent" messages box that will help you to keep your messages organized.
+Besides, each message will display the user's avatar and there is an "received" and "sent" messages box that will help you to keep your messages organized easily.
 
 
 <strong>Front-end Publisher</strong><br>
@@ -34,7 +34,7 @@ Allows your users to add <strong>new posts within a category </strong>by using a
 Users Ultra lets you add user emails to your MailChimp lists when registering.
 
 <strong>Social Connects</strong><br>
-Optional you can let users sign up & login by using their<strong> Facebook, Twitter, Google, Yahoo or LinkedIn account.
+Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo or LinkedIn account.
 
 <strong>Protecting content based on Membership Package</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
@@ -189,6 +189,9 @@ Initial release.
 6. Admin Backend
 
 == Changelog ==
+
+= 1.0.34 (05-09-2014) =
+* Bug Fix -  Issue with rounded avatars has been fixed.
 
 = 1.0.33 (05-09-2014) =
 * Bug Fix -  jQuery Migration Issue.

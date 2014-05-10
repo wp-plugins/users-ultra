@@ -608,6 +608,7 @@ display: inline-block; width:85%; vertical-align:top
 .usersultra-dahsboard-cont  span.uultra-u-avatar img{
 	  border-radius: 50% ;
 	-moz-border-radius: 50%;
+	padding-left:0px !important;
 		
 }
 
