@@ -26,6 +26,11 @@ The users panel has a modern, easy to use messages board with "read bubble" noti
 
 Besides, each message will display the user's avatar and there is an "received" and "sent" messages box that will help you to keep your messages organized easily.
 
+<strong>Online Preview</strong><br>
+<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
+<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
+<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
+<a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
@@ -54,12 +59,6 @@ Users Ultra comes with a One-click sync tool that prepare your previous users to
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
 
 <strong>If you like this plugin, please don't forget to rate it "5/5" </strong>
-
-<strong>Online Preview</strong><br>
-<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
-<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
-<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
-<a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
 <strong>Redirection</strong><br>
 Redirection after user login, logout and registration.
