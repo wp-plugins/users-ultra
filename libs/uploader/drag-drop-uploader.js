@@ -4,12 +4,21 @@ jQuery(document).ready(function($){
 	var dgdUploaderButtonClicked = false;
 	
 	// Media button hook:
-	$('div.wp-media-buttons a.insert-media, div.wp-media-buttons a.add_media').live('click', function(){
+	//$('div.wp-media-buttons a.insert-media, div.wp-media-buttons a.add_media').live('click', function()
+	//{
+		//dgdUploaderButtonClicked = true;
+	//});
+	
+	$(document).on("click", "div.wp-media-buttons a.insert-media, div.wp-media-buttons a.add_media", function(e) {
+		
 		dgdUploaderButtonClicked = true;
+	
 	});
 	
 	// Media Library button hook (WP >= 3.5):
-	$('a#dgd_library_button').live('click', function(){
+	//$('a#dgd_library_button').live('click', function(){
+		
+	$(document).on("click", "a#dgd_library_button", function(e) {	
 		dgdUploaderButtonClicked = true;
 		$('div.media-frame div.media-menu a.media-menu-item').eq(2).click();
 		$('div.media-frame div.media-frame-router a.media-menu-item').eq(1).click();

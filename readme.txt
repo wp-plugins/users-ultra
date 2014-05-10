@@ -196,6 +196,10 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.36 (05-10-2014) =
+* Bug Fix -  bbPress menu conflict.
+* Bug Fix -  Conflict with WooCommerce and jQuery 1.9.
+
 = 1.0.35 (05-09-2014) =
 * Bug Fix -  Shorcode to disable features has been improved.
 
