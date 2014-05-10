@@ -164,8 +164,18 @@ class XooUserLogin {
 					// User is trying to login using username					
 					$user = get_user_by('login',$_POST['user_login']);
 					
-					// check if active and it's not an admin		
-					$user_id =$user->ID;							
+					// check if active and it's not an admin	
+					if(isset($user))	
+					{
+						$user_id =$user->ID;	
+						
+					
+					}else{
+						
+						$user_id ="";
+						
+					}
+											
 					
 					 		
 					if(!$this->is_active($user_id) && !is_super_admin($user_id))

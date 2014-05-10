@@ -464,7 +464,48 @@ a.uultra-btn-email:hover{
 		 color: #FFF;
 
 }
+/*--------- Users Private Messaging Options*/
+a.uultra-btn-deletemessage span{
+	
+	margin:0px 10px 0px 5px;
+	text-align:left;		
+}
 
+a.uultra-btn-deletemessage  i{
+	
+	margin:0px 0px 0px 5px;
+			
+}
+
+a.uultra-btn-deletemessage { 
+		display:inline-block; 
+		height:20px;
+		width:30px;
+		padding-top:5px;
+		text-align:left;
+		font-size:12px;
+		margin-right:2%;
+		
+			
+		
+		border:solid 1px #E8E8E8;
+		 background: #F0F0F0; 
+		-moz-border-radius: 5px; 
+	     border-radius:5px;
+		 color:#333;
+		 text-decoration:none;
+
+}
+
+a.uultra-btn-deletemessage:hover{ 
+				
+		
+		 background: #E2E2E2; 
+		-moz-border-radius: 5px; 
+	     border-radius:5px;
+		 color: #333 !important;
+
+}
 /*--------- Users Private Messaging*/
 .uultra-noti-bubble {
     position:absolute;
@@ -558,14 +599,14 @@ display: inline-block; width:85%; vertical-align:top
 	background-color:  #F3F3F3;
 }
 
-.uu-private-messaging-backend ul li span.uultra-u-avatar{
+.uu-private-messaging-backend span.uultra-u-avatar{
 	 display: inline-block; margin:0px 5px 5px 5px; padding:5px;
 	 vertical-align:top;
 		
 }
 
-.uu-private-messaging-backend ul li span.uultra-u-avatar img{
-	  border-radius: 50%;
+.usersultra-dahsboard-cont  span.uultra-u-avatar img{
+	  border-radius: 50% ;
 	-moz-border-radius: 50%;
 		
 }

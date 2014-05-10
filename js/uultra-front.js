@@ -169,7 +169,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('#uu-private-message-delete').click(function() {
+		$('.uu-private-message-delete').click(function() {
 			
 			
 			var message_id =  jQuery(this).attr("message-id");			
@@ -186,6 +186,7 @@ if(typeof $ == 'undefined'){
 					$("#uu-message-noti-id").html(data);
 					jQuery("#uu-message-noti-id").slideDown();
 					setTimeout("hidde_noti('uu-message-noti-id')", 3000)	;
+					window.location.reload();
 					
 					
 					}

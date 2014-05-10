@@ -83,7 +83,9 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('.display_gallery_pictures').live('click', function(event) {
+		//$('.display_gallery_pictures').live('click', function(event) {
+			
+		$('body').on('click', '.display_gallery_pictures', function() {
 			
 			
 			var gal_id =  jQuery(this).attr("data-id");

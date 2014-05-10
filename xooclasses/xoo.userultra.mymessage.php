@@ -369,7 +369,10 @@ class XooUserMyMessage {
 		$message = $this->get_one($message_id, $logged_user_id);
 		
 		$message_sender_id = $message->sender;
-		$pic_boder_type = "";
+		
+		 $pic_boder_type = "";
+		
+				
 		
 		if($message != "")
 		{
@@ -590,12 +593,14 @@ class XooUserMyMessage {
 			
 							if($msg->readed==1)
 							{
-								$message_status = __('Mark as Unread', 'xoousers');	
+								$message_status ='fa-eye';	
+								$message_status_text = __('Mark as Unread', 'xoousers');	
 								$new_status = 0;		
 							
 							}else{
 								
-								$message_status = __('Mark as Read', 'xoousers');	
+								$message_status ='fa-eye-slash';
+								$message_status_text = __('Mark as Read', 'xoousers');		
 								$new_status = 1;
 							
 							
@@ -612,10 +617,9 @@ class XooUserMyMessage {
 							
 							?>
 						<tr <?php echo $read_class?>>
-							<th ><input type="checkbox" name="id[]" value="<?php echo $msg->id; ?>" />
-							</th>
+							<td ><input type="checkbox" name="message_id[]" value="<?php echo $msg->id; ?>" />							<span></span></td>
                             
-                            <td><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></td>
+                            <td><span class="uultra-u-avatar"><?php echo $xoouserultra->userpanel->get_user_pic( $user_id, 50, 'avatar', null, null) ?></span></td>
 							<td><?php echo $msg->sender; ?></td>
 							<td>
 								<?php
@@ -636,7 +640,7 @@ class XooUserMyMessage {
 							</td>
 							<td><?php echo $msg->date; ?></td>
                             
-                            <td> <a class="uultra-btn-email uu-private-message-change-status" href="#" id="" message-id="<?php echo $message_id?>" message-status="<?php echo $new_status?>"><span><i class="fa fa-check"></i></span><?php echo $message_status?></a></td>
+                            <td> <a class="uultra-btn-deletemessage  uu-private-message-change-status" href="#" id="" title="<?php echo $message_status_text?>" message-id="<?php echo $message_id?>" message-status="<?php echo $new_status?>" ><span><i class="fa <?php echo $message_status?>"></i></span></a><a class="uultra-btn-deletemessage  uu-private-message-delete" href="#" id="" message-id="<?php echo $message_id?>" ><span><i class="fa fa-times"></i></span></a></td>
 						</tr>
 							<?php
 	
@@ -1151,14 +1155,6 @@ class XooUserMyMessage {
 	</div>
 	<?php
 	}
-	
-	
-	
-		
-	
-	
-		
-	
 	
 
 }

@@ -181,6 +181,11 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.33 (05-09-2014) =
+* Bug Fix -  jQuery Migration Issue.
+* Bug Fix -  We've removed some php "Notice" messages.
+* Improvement -  New option to delete messages.
+
 = 1.0.32 (05-09-2014) =
 * Improvement - New options has been added to the [usersultra_my_account] shortcode that will allow you to disable modules such as: Messaging, Photos, Posts etc. We ended up using Shortcodes rather than adding an option in the WP admin because Shortcodes won't touch the Database. Please check the help tab to see and example. Enjoy! 
 

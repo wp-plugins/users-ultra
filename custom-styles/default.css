@@ -702,14 +702,14 @@ width:90%
 }
 .usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu{
 	
-	 list-style:none;
+	 list-style:none;  position:relative !important;
 }
 
 .usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu li{
 	
 	margin:5px 0px 5px 0px;
 	width:98%;
-	text-align:center; position:relative;
+	text-align:center; position:relative !important;
 	
 	
 	
@@ -1338,7 +1338,7 @@ box-shadow: 0px ;
 	text-align: left;
 	line-height: 1.3em;
 	font-size: 14px;
-	background:#CFCFCF
+	background: #EFEFEF
 }
 #table-3 td {
 	font-size: 12px;
@@ -1346,8 +1346,14 @@ box-shadow: 0px ;
 	vertical-align: top;
 }
 
+#table-3 tr {
+/*background: #F2F2F2;*/
+background:  #FBFBFB;
+}
+
 #table-3 tr:nth-child(even) {
-background: #F2F2F2;
+/*background: #F2F2F2;*/
+background: #F9F9F9;
 }
 
 #table-3 .row-actions { margin:10px 0px 10px 0px;}

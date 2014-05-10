@@ -58,9 +58,9 @@ $howmany = 5;
            <ul class="main_menu">
            
               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('dashboard');?></li>
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li             
+               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li>             
                               
-                <?php if(!in_array("messages",$modules)){?>           
+               <?php if(!in_array("messages",$modules)){?>           
                 
                 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
                 
@@ -75,7 +75,7 @@ $howmany = 5;
                 <?php }?>
                 
                 <?php if(!in_array("photos",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></l             
+                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></li>           
                 <?php }?>
                 
                 <?php if(!in_array("videos",$modules)){?> 
