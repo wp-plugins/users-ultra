@@ -16,6 +16,12 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
 
+<strong>Online Preview</strong><br>
+<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
+<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
+<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
+<a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
+
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
@@ -25,12 +31,6 @@ Users Ultra comes with a powerful private messaging system that allows users to 
 The users panel has a modern, easy to use messages board with "read bubble" notifications. Also, when viewing a message the users will see a well-organized conversation. Deleting a message can be done with just a click. Mark messages as read/unread is done by using AJAX.
 
 Besides, each message will display the user's avatar and there is an "received" and "sent" messages box that will help you to keep your messages organized easily.
-
-<strong>Online Preview</strong><br>
-<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
-<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
-<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
-<a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
