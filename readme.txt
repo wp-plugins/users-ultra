@@ -196,6 +196,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.39 (05-11-2014) =
+* Bu Fix - Solid line in comments at dasshboard has been removed.
+
 = 1.0.38 (05-11-2014) =
 * Improvement -  We have tweaked the option to make profiles visible to guests and non-logged in users.
 
