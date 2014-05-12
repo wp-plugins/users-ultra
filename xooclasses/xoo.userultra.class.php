@@ -375,7 +375,9 @@ class XooUserUltra
 			  'post_title'    => __('Members Directory','xoousers'),
 			  'post_type'     => 'page',
 			  'post_name'     => $slug,			 
-			  'post_content'  =>"[usersultra_directory list_per_page=8 optional_fields_to_display='social,country,description' pic_boder_type='rounded']",
+			  'post_content'  =>"[usersultra_searchbox filters='country,age' ]
+
+[usersultra_directory list_per_page=8 optional_fields_to_display='friend,social,country,description' pic_boder_type='rounded']",
 			  'post_status'   => 'publish',
 			  'comment_status' => 'closed',
 			  'ping_status' => 'closed',
@@ -1389,6 +1391,7 @@ class XooUserUltra
 		if (isset($_POST['rememberme']) && $_POST['rememberme'] == 1)
 		 {
 		    $class = 'xoouserultra-icon-check';
+			
 		} else {
 			
 			 $class = 'xoouserultra-icon-check-empty';
@@ -1417,9 +1420,12 @@ class XooUserUltra
 		    
 		
 		$display .= '<div class="xoouserultra-rememberme'.$remember_me_class.'">
-		<i class="'.$class.'"></i>'.__('Remember me','xoousers').'
-		<input type="hidden" name="rememberme" id="rememberme-'.$this->login_code_count.'" value="0" />
-		</div><input type="submit" name="xoouserultra-login" class="xoouserultra-button xoouserultra-login'.$login_btn_class.'" value="'.__('Log In','xoousers').'" /><br />'.$forgot_pass.' | '.$register_link;
+		
+		<input type="checkbox" name="rememberme" id="rememberme-'.$this->login_code_count.'" value="0" /> <label for="checkbox1"><span></span>'.__('Remember me','xoousers').'</label>
+		
+		</div>
+		
+		<input type="submit" name="xoouserultra-login" class="xoouserultra-button xoouserultra-login'.$login_btn_class.'" value="'.__('Log In','xoousers').'" /><br />'.$forgot_pass.' | '.$register_link;
 		
 		
 		$display .= ' </div>
