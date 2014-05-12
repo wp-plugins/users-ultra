@@ -196,6 +196,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.38 (05-11-2014) =
+* Improvement -  We have tweaked the option to make profiles visible to guests and non-logged in users.
+
 = 1.0.37 (05-10-2014) =
 * Bug Fix -  bbPress 2.5.3 issue conflict with the admin menu has been fixed.
 

@@ -219,13 +219,19 @@ class XooShortCode {
 	}
 	
 	
-	
-	
-	
 	public function  usersultra_profile_function ($atts)
 	{
 		global $xoouserultra;
-		return $xoouserultra->show_pulic_profile( $atts );			
+		
+		if (!is_user_logged_in() &&  $xoouserultra->get_option( 'guests_can_view' )==0) 
+		{
+			return $xoouserultra->login( $atts );
+			
+		}else{
+			
+			return $xoouserultra->show_pulic_profile( $atts );
+		}
+		
 		
 	}
 	
