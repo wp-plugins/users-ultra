@@ -36,8 +36,10 @@ class XooUserUser {
 		
 		add_action( 'wp_ajax_refresh_avatar', array( $this, 'refresh_avatar' ));
 		add_action( 'wp_ajax_nopriv_send_reset_link', array( $this, 'send_reset_link' ));
-		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
 		
+		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
+     	add_action( 'wp_ajax_confirm_reset_password', array( $this, 'confirm_reset_password' ));
+
 		add_action( 'wp_ajax_get_pending_moderation_list', array( $this, 'get_pending_moderation_list' ));
 		add_action( 'wp_ajax_user_approve_pending_account', array( $this, 'user_approve_pending_account' ));
 		add_action( 'wp_ajax_user_delete_account', array( $this, 'user_delete_account' ));
@@ -897,9 +899,20 @@ class XooUserUser {
 	
 	public function confirm_reset_password()
 	{
-		global $wpdb,  $xoouserultra;
+		global $wpdb,  $xoouserultra, $wp_rewrite;
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/general-template.php');
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		
+		$wp_rewrite = new WP_Rewrite();
+		
+				
+		//check redir		
+		$account_page_id = get_option('xoousersultra_my_account_page');
+		$my_account_url = get_permalink($account_page_id);
+		
+		
 		
 		$PASSWORD_LENGHT =7;
 		
@@ -946,6 +959,9 @@ class XooUserUser {
 				
 				$html = "<div class='uupublic-ultra-success'>".__(" Sucess!! The new password has been sent to ".$user_email."  ", 'xoousers')."</div>";
 				
+				$html .= "<div class=''>".__('<a href="'.$my_account_url.'" title="Login">CLICK HERE TO LOGIN</a>', 'xoousers')."</div>";
+				
+								
 			}else{
 				
 				// we couldn't find the user			
@@ -959,7 +975,6 @@ class XooUserUser {
 		
 	
 	}
-	
 	public function send_reset_link()
 	{
 		session_start();

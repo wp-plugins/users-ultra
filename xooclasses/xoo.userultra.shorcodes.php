@@ -238,7 +238,19 @@ class XooShortCode {
 	public function  usersultra_registration_function ($atts)
 	{
 		global $xoouserultra;
-		return $xoouserultra->show_registration_form( $atts );
+		//return $xoouserultra->show_registration_form( $atts );
+		
+		if (!is_user_logged_in()) 
+		{
+			return $xoouserultra->show_registration_form( $atts );
+			
+		} else {
+			
+			//display mini profile
+			return $xoouserultra->show_minified_profile( $atts );		
+			
+			
+		}
 			
 		
 	}

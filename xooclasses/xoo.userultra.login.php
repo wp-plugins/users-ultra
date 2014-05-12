@@ -95,9 +95,15 @@ class XooUserLogin {
 	/*Handle commons sigun ups*/
 	function handle() 
 	{
-	    global $xoousersultra_captcha_loader, $xoouserultra;
+	    global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;;
 	    
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/user.php');
+		
+		if ( empty( $GLOBALS['wp_rewrite'] ) )
+		{
+			 $GLOBALS['wp_rewrite'] = new WP_Rewrite();
+	    }
 		
 		$noactive = false;
 		foreach($this->usermeta as $key => $value) 
@@ -164,7 +170,7 @@ class XooUserLogin {
 					// User is trying to login using username					
 					$user = get_user_by('login',$_POST['user_login']);
 					
-					// check if active and it's not an admin	
+					// check if active and it's not an admin		
 					if(isset($user))	
 					{
 						$user_id =$user->ID;	
@@ -174,8 +180,9 @@ class XooUserLogin {
 						
 						$user_id ="";
 						
-					}
-											
+					}		
+					
+								
 					
 					 		
 					if(!$this->is_active($user_id) && !is_super_admin($user_id))
@@ -195,11 +202,18 @@ class XooUserLogin {
 				
 				if(!$noactive)
 				{
+					
+					//echo "step e";
 				
 								
-					$user = wp_signon( $creds, false );
+					$user = wp_signon( $creds, false );					
+					
+						//print_r($user );	
 	
-					if ( is_wp_error($user) ) {
+					if ( is_wp_error($user) ) 
+					{
+						
+						//echo "TTEES here" ;
 						if ($user->get_error_code() == 'invalid_username') {
 							$this->errors[] = __('<strong>ERROR:</strong> Invalid Username was entered.','xoousers');
 						}
@@ -212,7 +226,16 @@ class XooUserLogin {
 						}
 						
 						
+											
+					}else{
+						
+						wp_set_auth_cookie($user->ID);
+						wp_set_current_user($user->ID);					
+						do_action( 'wp_login', $user->user_login );
+					
 					}
+					
+					//print_r($user );	
 				
 				}else{
 					

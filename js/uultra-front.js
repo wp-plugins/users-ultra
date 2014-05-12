@@ -244,6 +244,41 @@ if(typeof $ == 'undefined'){
 				
         });
 		
+				$(document).on("click", "#xoouserultra-reset-confirm-pass-btn", function(e) {		
+			
+			e.preventDefault();			
+		
+		
+				var p1= $("#preset_password").val()	;
+				var p2= $("#preset_password_2").val()	;
+				var u_key= $("#uultra_reset_key").val()	;
+				
+									
+				jQuery.ajax({
+					type: 'POST',
+					url: ajaxurl,
+					data: {"action": "confirm_reset_password", "p1": p1, "p2": p2, "key": u_key },
+					
+					success: function(data){
+						
+					
+						jQuery("#uultra-reset-p-noti-box").html(data);
+						jQuery("#uultra-reset-p-noti-box").slideDown();
+						//setTimeout("hidde_noti('uultra-reset-p-noti-box')", 3000)	;			
+												
+												
+						
+						}
+				});
+			
+			
+			
+			 return false;
+    		e.preventDefault();
+			 
+				
+        });
+		
 		$(document).on("click", "#xoouserultra-forgot-pass-btn-confirm", function(e) {		
 			
 			e.preventDefault();			

@@ -196,11 +196,15 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.41 (05-12-2014) =
+* Bug Fix - IMPORTANT SECURITY FIX. PLEASE UPDATE ASAP.
+* Improvement - Mini Profile is displayed when user is logged in and clicks on registration link.
+* Improvement -Password Reset has been Improved.
+
 = 1.0.40 (05-11-2014) =
 * Bug Fix - Remember Password checkbox wasn't being displayed. We've tweaked the CSS.
 * Improvement- Radio buttons displayed when using Paid Subscrition at Registration Page were improved, now they look much more moderns.
 * Improvement- Conditional Seach Box is being added the first time you install the plugin automatically.
-
 
 = 1.0.39 (05-11-2014) =
 * Bu Fix - Solid line in comments at dasshboard has been removed.
