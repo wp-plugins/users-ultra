@@ -1505,8 +1505,15 @@ class XooUserUltra
 		/* Password Stregth Checker Script */
 		if(!wp_script_is('form-validate'))
 		{
-		    wp_register_script('form-validate', xoousers_url.'js/form-validate.js', array('jquery') );
-		    wp_enqueue_script('form-validate');
+			/*Validation Engibne JS*/		
+			
+			wp_register_script( 'form-validate-lang', xoousers_url.'js/languages/jquery.validationEngine-en.js',array('jquery'));
+			
+			wp_enqueue_script('form-validate-lang');
+			
+			wp_register_script( 'form-validate', xoousers_url.'js/jquery.validationEngine.js',array('jquery'));
+			wp_enqueue_script('form-validate');
+			
 		    
         $validate_strings = array(
             'ajaxurl'  => admin_url( 'admin-ajax.php' ),
@@ -1598,8 +1605,7 @@ class XooUserUltra
 							$display .= '</div>';
 							
 							
-							$display .= '<div class="xoouserultra-right">';
-								
+							$display .= '<div class="xoouserultra-right">';								
 							$display .= '</div><div class="xoouserultra-clear"></div>
 							
 						</div>
@@ -1659,6 +1665,8 @@ class XooUserUltra
 		
 		$display .= '<form action="" method="post" id="xoouserultra-registration-form">';
 		
+		$display .= '<div class="xoouserultra-field xoouserultra-seperator-requiredfields xoouserultra-edit xoouserultra-edit-show">'.__('Fields with (*) are required','xoousers').'</div>';	
+		
 		
 		//get social sign up methods
 		$display .= $this->get_social_buttons(__("Sign up ",'xoousers'), $args);		
@@ -1698,7 +1706,7 @@ class XooUserUltra
 				
 				if($required == 1 && in_array($field, $this->include_for_validation))
 				{
-					$required_class = ' required';
+					$required_class = ' validate[required]';
 				}
 				
 				$display .= '<div class="xoouserultra-field-value">';
@@ -1706,11 +1714,11 @@ class XooUserUltra
 					switch($field) {
 						
 						case 'textarea':
-							$display .= '<textarea class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="reg_'.$meta.'" title="'.$name.'">'.$this->get_post_value($meta).'</textarea>';
+							$display .= '<textarea class="'.$required_class.' xoouserultra-input" name="'.$meta.'" id="reg_'.$meta.'" title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'">'.$this->get_post_value($meta).'</textarea>';
 							break;
 						
 						case 'text':
-							$display .= '<input type="text" class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="reg_'.$meta.'" value="'.$this->get_post_value($meta).'" title="'.$name.'" />';
+							$display .= '<input type="text" class="'.$required_class.' xoouserultra-input" name="'.$meta.'" id="reg_'.$meta.'" value="'.$this->get_post_value($meta).'" title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'"/>';
 							
 							if (isset($this->registration_fields[$key]['help']) && $help != '') {
 								$display .= '<div class="xoouserultra-help">'.$help.'</div><div class="xoouserultra-clear"></div>';
@@ -1720,7 +1728,7 @@ class XooUserUltra
 							
 							case 'datetime':
 							    
-							    $display .= '<input type="text" class="xoouserultra-input'.$required_class.' xoouserultra-datepicker" name="'.$meta.'" id="reg_'.$meta.'" value="'.$this->get_post_value($meta).'" title="'.$name.'" />';
+							    $display .= '<input type="text" class="'.$required_class.' xoouserultra-input xoouserultra-datepicker" name="'.$meta.'" id="reg_'.$meta.'" value="'.$this->get_post_value($meta).'" title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'"/>';
 							    
 							    if (isset($this->registration_fields[$key]['help']) && $help != '') {
 							        $display .= '<div class="xoouserultra-help">'.$help.'</div><div class="xoouserultra-clear"></div>';
@@ -1729,7 +1737,7 @@ class XooUserUltra
 							
 						case 'password':
 
-							$display .= '<input type="password" class="xoouserultra-input password'.$required_class.'" name="'.$meta.'" id="reg_'.$meta.'" value="" autocomplete="off" title="'.$name.'" />';
+							$display .= '<input type="password" class="'.$required_class.' xoouserultra-input password" name="'.$meta.'" id="reg_'.$meta.'" value="" autocomplete="off" title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'" />';
 							
 							if (isset($this->registration_fields[$key]['help']) && $help != '') {
 								$display .= '<div class="xoouserultra-help">'.$help.'</div><div class="xoouserultra-clear"></div>';
@@ -1747,9 +1755,12 @@ class XooUserUltra
 					if (isset($this->registration_fields[$key]['can_hide']) && $can_hide == 1) 
 					{
 						
-						$display .= '<div class="xoouserultra-hide-from-public">
+									$display .= '<div class="xoouserultra-hide-from-public">
 										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
 									</div>';
+
+									
+									
 
 					}
 					
@@ -1813,7 +1824,7 @@ class XooUserUltra
 			$required_class = '';
 			if($required == 1 && in_array($field, $this->include_for_validation))
 			{
-			    $required_class = ' required';
+			    $required_class = 'validate[required] ';
 			}
 			
 			
@@ -1834,11 +1845,6 @@ class XooUserUltra
 				   
             }
 				
-			
-			
-			//if ( $type == 'usermeta' && $deleted == 0 && $private == 0) // this is a meta
-			
-			//{
 				
 			if ($type == 'usermeta' && $deleted == 0 && $private == 0 && isset($array[$key]['show_in_register']) && $array[$key]['show_in_register'] == 1) 
 			{
@@ -1860,15 +1866,15 @@ class XooUserUltra
 					switch($field) {
 					
 						case 'textarea':
-							$display .= '<textarea class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'">'.$this->get_post_value($meta).'</textarea>';
+							$display .= '<textarea class="'.$required_class.' xoouserultra-input" name="'.$meta.'" id="'.$meta.'" title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'">'.$this->get_post_value($meta).'</textarea>';
 							break;
 							
 						case 'text':
-							$display .= '<input type="text" class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_post_value($meta).'"  title="'.$name.'" />';
+							$display .= '<input type="text" class="'.$required_class.'xoouserultra-input"  name="'.$meta.'" id="'.$meta.'" value="'.$this->get_post_value($meta).'"  title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'"/>';
 							break;							
 							
 						case 'datetime':
-						    $display .= '<input type="text" class="xoouserultra-input'.$required_class.' xoouserultra-datepicker" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_post_value($meta).'"  title="'.$name.'" />';
+						    $display .= '<input type="text" class="'.$required_class.' xoouserultra-input xoouserultra-datepicker" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_post_value($meta).'"  title="'.$name.'" />';
 						    break;
 							
 						case 'select':
@@ -1885,7 +1891,7 @@ class XooUserUltra
 							
 							if (isset($loop)) 
 							{
-								$display .= '<select class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'">';
+								$display .= '<select class=" xoouserultra-input '.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'">';
 								
 								foreach($loop as $option)
 								{
@@ -1901,6 +1907,8 @@ class XooUserUltra
 							
 						case 'radio':
 						
+						$required_class = "validate[required] radio ";
+						
 							if (isset($array[$key]['choices']))
 							{
 								$loop = explode(PHP_EOL, $choices);
@@ -1915,8 +1923,8 @@ class XooUserUltra
 								        $required_class = '';
 								    
 								    $option = trim($option);
-									$display .= '<label class="xoouserultra-radio"><input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" value="'.$option.'" '.checked( $this->get_post_value($meta), $option, 0 );
-									$display .= '/> '.$option.'</label>';
+									$display .= '<input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" value="'.$option.'" '.checked( $this->get_post_value($meta), $option, 0 );
+									$display .= '/> <label for="'.$meta.'"><span></span>'.$option.'</label>';
 									
 									$counter++;
 									
@@ -1926,6 +1934,8 @@ class XooUserUltra
 							break;
 							
 						case 'checkbox':
+						
+						$required_class = "validate[required] checkbox ";
 						
 							if (isset($array[$key]['choices'])) 
 							{
@@ -1947,7 +1957,9 @@ class XooUserUltra
 									if (is_array($this->get_post_value($meta)) && in_array($option, $this->get_post_value($meta) )) {
 									$display .= 'checked="checked"';
 									}
-									$display .= '/> '.$option.'</label>';
+									$display .= '/> <label for="checkbox1"><span></span> '.$option.'</label> </label>';
+									
+									//$displya .='<label for="checkbox1"><span></span>';
 									
 									$counter++;
 								}
@@ -1987,10 +1999,7 @@ class XooUserUltra
 					
 					//validation message
 					
-					$display .= '<div class="xoouserultra-warning-validation-message" id="uultra-val-message-'.$meta.'">
-										<div class="uupvalidation-ultra-warning">'.__('This field is required','xoousers').'</div>
-								</div>';
-					
+									
 					
 				$display .= '</div>';
 				$display .= '</div><div class="xoouserultra-clear"></div>';
@@ -2040,7 +2049,7 @@ class XooUserUltra
 						<label class="xoouserultra-field-type xoouserultra-field-type-'.$sidebar_class.'">&nbsp;</label>
 						<div class="xoouserultra-field-value">
 						    <input type="hidden" name="xoouserultra-register-form" value="xoouserultra-register-form" />
-							<input type="button" name="xoouserultra-register" id="xoouserultra-register-btn" class="xoouserultra-button" value="'.__('Register','xoousers').'" />
+							<input type="submit" name="xoouserultra-register" id="xoouserultra-register-btn" class="xoouserultra-button" value="'.__('Register','xoousers').'" />
 						</div>
 					</div><div class="xoouserultra-clear"></div>';
 					

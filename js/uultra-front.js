@@ -405,7 +405,8 @@ if(typeof $ == 'undefined'){
         });
 		
 		
-		
+		jQuery("#xoouserultra-registration-form").validationEngine({promptPosition: 'inline'});
+
 		
 		   
  

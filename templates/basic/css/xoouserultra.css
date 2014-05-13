@@ -439,7 +439,7 @@ textarea.xoouserultra-input {
 }
 
 .xoouserultra-hide-from-public, .xoouserultra-rememberme {
-	float: left;
+	/*loat: left;*/
 	cursor: pointer;
 	font-family: Tahoma;
 	font-size: 11px;
@@ -478,6 +478,12 @@ textarea.xoouserultra-input {
 	font-size: 11px;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.xoouserultra-seperator-requiredfields {
+	font-size: 11px;
+	font-style:italic;	
+	text-align:right;
 }
 
 a.xoouserultra-button-alt, .xoouserultra-button-alt, input.xoouserultra-button-alt {

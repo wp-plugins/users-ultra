@@ -196,6 +196,11 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.42 (05-12-2014) =
+* Bug Fix - Check box not displaying when using the Fields Customizer in Front-end Registration form.
+* Improvement - The "empty" fields validation has been improved, now it looks much more modern. Please don't forget to clean your temp files since there were changes on JS and CSS files.
+* Improvement - Required fields legend was added. That way users will know what fields are required before clicking the submit button.
+
 = 1.0.41 (05-12-2014) =
 * Bug Fix - IMPORTANT SECURITY FIX. PLEASE UPDATE ASAP.
 * Improvement - Mini Profile is displayed when user is logged in and clicks on registration link.
