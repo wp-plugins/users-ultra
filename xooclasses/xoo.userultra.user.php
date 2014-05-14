@@ -3436,7 +3436,7 @@ class XooUserUser {
 	/**
 	Display Members List
 	******************************************/
-public function show_users_directory($atts)
+	public function show_users_directory($atts)
 	{
 		global $xoouserultra;
 		extract( shortcode_atts( array(
@@ -3474,10 +3474,6 @@ public function show_users_directory($atts)
 		
 			
 		$users_list = $this->searched_users;
-		
-		//$total_items = $this->total_matching_user;
-		
-		//print_r($users_list);
 		
 		
 		//display pages

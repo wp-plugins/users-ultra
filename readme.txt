@@ -1,7 +1,7 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, authentication, password, restriction, access
+Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, authentication, password, restriction, access, conditional fields
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 1.0.28
@@ -50,6 +50,13 @@ Optional you can let users sign up & login by using their<strong> Facebook, Goog
 
 <strong>Protecting content based on Membership Package</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
+
+<strong>Conditional Search Fields:</strong><br>
+Users Ultra allows you to place a powerful search box to filter your users by using a simple shortocode. The searching form is fully responsive and can be placed anywhere in your WordPress Theme.
+
+You can filter your users by using any amount of conditional fields such as: country, age, gender, name etc. The Users Searching function was developed by using the "WP_User_Query" class, this avoid overloading the database. Also, we have implemented innovating cache methodology that makes browsers load faster.
+
+
 
 <strong>Sync old users to make them work with Users Ultra?</strong><br>
 Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
