@@ -1003,6 +1003,14 @@ class XooUserUltra
 		wp_register_script( 'xoouserultra_lightboxjs', xoousers_url.'js/lightbox/js/lightbox-2.6.min.js',array('jquery'));
 		wp_enqueue_script('xoouserultra_lightboxjs');
 		
+		/*Validation Engibne JS*/		
+			
+		wp_register_script( 'form-validate-lang', xoousers_url.'js/languages/jquery.validationEngine-en.js',array('jquery'));
+			
+		wp_enqueue_script('form-validate-lang');			
+		wp_register_script( 'form-validate', xoousers_url.'js/jquery.validationEngine.js',array('jquery'));
+		wp_enqueue_script('form-validate');
+		
 		
 		//front end style
 		
@@ -1507,13 +1515,7 @@ class XooUserUltra
 		{
 			/*Validation Engibne JS*/		
 			
-			wp_register_script( 'form-validate-lang', xoousers_url.'js/languages/jquery.validationEngine-en.js',array('jquery'));
-			
-			wp_enqueue_script('form-validate-lang');
-			
-			wp_register_script( 'form-validate', xoousers_url.'js/jquery.validationEngine.js',array('jquery'));
-			wp_enqueue_script('form-validate');
-			
+						
 		    
         $validate_strings = array(
             'ajaxurl'  => admin_url( 'admin-ajax.php' ),

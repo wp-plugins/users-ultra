@@ -203,6 +203,8 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.44 (05-14-2014) =
+* Bug Fix - PLEASE UPDATE ASAP. We have fixed a Javascript conflict with some popular themes that was affecting the galleries, photos and registration.
 
 = 1.0.43 (05-13-2014) =
 * Improvement - PLEASE UPDATE ASAP. The Conditional Search Form has been improved. Please update since there was a considerable change, the query performance is better now.

@@ -40,7 +40,7 @@ $this->create_plugin_setting(
         'input',
         'media_uploading_folder',
         __('Upload Folder:','xoousers'),array(),
-        __('This is the folder where the user photos will be stored in. Please make sure to assing 777 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers'),
+        __('This is the folder where the user photos will be stored in. Please make sure to assing 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers'),
         __('','xoousers')
 );
 
