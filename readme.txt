@@ -28,7 +28,7 @@ This great feature allows you to import users into the Users Ultra System easily
 <strong>Private Messages System For WordPress</strong><br>
 Users Ultra comes with a powerful private messaging system that allows users to send messages to other members of the user's community.
 
-The users panel has a modern, easy to use messages board with "read bubble" notifications. Also, when viewing a message the users will see a well-organized conversation. Deleting a message can be done with just a click. Mark messages as read/unread is done by using AJAX.
+The users panel has a modern, easy to use messages board with "read bubble" notifications. Also, when viewing a message the users will see a well-organized conversation. Deleting a message can be done with just a click. Marking messages as read/unread is done by using AJAX.
 
 Besides, each message will display the user's avatar and there is an "received" and "sent" messages box that will help you to keep your messages organized easily.
 
@@ -40,7 +40,6 @@ Allows your users to add <strong>new posts within a category </strong>by using a
 The plugin can be used to manage large communities of either free or paid subscribers. You can create as many packages as you wish with some limitations such as: how many photos, galleries to each package. The Users Ultra Membership module allows you to accept either one-time payments or recurring payment through Paypal.
 
 Since it uses Paypal, you could create almost any type of billing period such as: monthly, yearly, daily. We hope you enjoy this great feature to manage your Paid Membership Packages.
-
 
 <strong>MailChimp</strong><br>
 Users Ultra lets you add user emails to your MailChimp lists when registering.
@@ -55,8 +54,6 @@ The plugin comes with an easy to use shortcode that allows you to protect conten
 Users Ultra allows you to place a powerful search box to filter your users by using a simple shortocode. The searching form is fully responsive and can be placed anywhere in your WordPress Theme.
 
 You can filter your users by using any amount of conditional fields such as: country, age, gender, name etc. The Users Searching function was developed by using the "WP_User_Query" class, this avoid overloading the database. Also, we have implemented innovating cache methodology that makes browsers load faster.
-
-
 
 <strong>Sync old users to make them work with Users Ultra?</strong><br>
 Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
