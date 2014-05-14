@@ -196,9 +196,14 @@ Initial release.
 
 == Changelog ==
 
-= 1.0.42 (05-12-2014) =
+
+= 1.0.43 (05-13-2014) =
+* Improvement - PLEASE UPDATE ASAP. The Conditional Search Form has been improved. Please update since there was a considerable change, the query performance is better now.
+* Bug Fix - Checkbox issue on Users Backend has been fixed.
+
+= 1.0.42 (05-13-2014) =
 * Bug Fix - Check box not displaying when using the Fields Customizer in Front-end Registration form.
-* Improvement - The "empty" fields validation has been improved, now it looks much more modern. Please don't forget to clean your temp files since there were changes on JS and CSS files.
+* New Feature - The "empty" fields validation has been improved, now it looks much more modern. Please don't forget to clean your temp files since there were changes on JS and CSS files.
 * Improvement - Required fields legend was added. That way users will know what fields are required before clicking the submit button.
 
 = 1.0.41 (05-12-2014) =

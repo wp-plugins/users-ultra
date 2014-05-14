@@ -1245,7 +1245,7 @@ class XooUserUser {
 								    $option = trim($option);
 									
 									$html .= '<label class="xoouserultra-radio"><input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" value="'.$option.'" '.checked( $this->get_user_meta( $meta), $option, 0 );
-									$html .= '/> '.$option.'</label>';
+									$html .= '/> <label for="'.$meta.'"><span></span>'.$option.'</label> </label>';
 									
 									$counter++;
 									
@@ -1270,7 +1270,7 @@ class XooUserUser {
 									if (is_array($this->get_user_meta( $meta)) && in_array($option,$this->get_user_meta( $meta))) {
 									$html .= 'checked="checked"';
 									}
-									$html .= '/> '.$option.'</label>';
+									$html .= '/> <label for="'.$meta.'"><span></span> '.$option.'</label> </label>';
 									
 									$counter++;
 								}
@@ -3100,219 +3100,277 @@ class XooUserUser {
 
     /* Apply search params and Generate Results */
 
-    function search_result($args) {
+    function search_result($args) 
+	{
 
-        global $wpdb;
+        global $wpdb,$blog_id;
+		
+		extract($args);
+		
+		$memberlist_verified = 1;
+		
+		$blog_id = get_current_blog_id();
 
-        $this->search_query = array();
+		$page = (!empty($_GET['uultra-page'])) ? $_GET['uultra-page'] : 1;
+		$offset = ( ($page -1) * $per_page);
 
-        $this->search_user_argument = array();
+		/** QUERY ARGS BEGIN **/
+		
+		if (isset($args['exclude']))
+		{
+			$exclude = explode(',',$args['exclude']);
+			$query['exclude'] = $exclude;
+		}
+		
+		$query['meta_query'] = array('relation' => strtoupper($relation) );
+		
+		
+	
+	    if (isset($_GET['uultra_search'])) 
+		{
 
-        $this->search_query_string = "SELECT DISTINCT users.* FROM " . $wpdb->users . " as users";
-
-        $this->count_search_query_string = "SELECT COUNT(DISTINCT(users.ID)) FROM " . $wpdb->users . " as users";
-
-        $this->search_query_search_param = array();
-        $this->combined_search_query_search_param = array();
-
-//echo "search trigeredd 0";
-        if (is_get ()) 
+        foreach ($_GET['uultra_search'] as $key => $value)
 		{
 			
 			
-//echo "search trigeredd 1";
-            if (is_in_get('uultra_combined_search') && is_in_get('uultra_combined_search_fields')) 
-			
+			//echo $key ." val: " . $value;
+			$target =  $value;
+
+						
+						
+						/*if ($->field_type($key) == 'multiselect' ||
+							$->field_type($key) == 'checkbox' ||
+							$uspro->field_type($key) == 'checkbox-full'
+							) {
+							$like = 'like';
+						} else {
+							$like = '=';
+						}*/
+					
+			$like = 'like';
+			if (isset($target)  && $target != '' && $key != 'role' )
 			{
-				//echo "search trigeredd ";
-                if (get_value('uultra_combined_search_fields') != '' && get_value('uultra_combined_search') != '') {
-					//echo "search trigeredd 2";
-                    $fields = explode(',', get_value('uultra_combined_search_fields'));
+				if (substr( trim( htmlspecialchars_decode($args[$key])  ) , 0, 1) === '>')
+				{
+					$choices = explode('>', trim(  htmlspecialchars_decode($args[$key]) ));
+					$target = $choices[1];
+					$query['meta_query'][] = array(
+									'key' => $key,
+									'value' => $target,
+									'compare' => '>'
+						);
+				}elseif (substr( trim(  htmlspecialchars_decode($args[$key]) ) , 0, 1) === '<') {
+								$choices = explode('<', trim(  htmlspecialchars_decode($args[$key]) ));
+								$target = $choices[1];
+								$query['meta_query'][] = array(
+									'key' => $key,
+									'value' => $target,
+									'compare' => '<'
+								);
+							} elseif (strstr( esc_attr( trim(  $args[$key] ) ) , ':')){
+								$choices = explode(':', esc_attr( trim(  $args[$key] ) ));
+								$min = $choices[0];
+								$max = $choices[1];
+								$query['meta_query'][] = array(
+									'key' => $key,
+									'value' => array($min, $max),
+									'compare' => 'between'
+								);
+							} elseif (strstr( esc_attr( trim( $args[$key] ) ) , ',')){
+								$choices = explode(',', esc_attr( trim(  $args[$key] ) ));
+								foreach($choices as $choice){
+									$query['meta_query'][] = array(
+										'key' => $key,
+										'value' => $choice,
+										'compare' => $like
+									);
+								}
+							} else {
+								
+									$query['meta_query'][] = array(
+										'key' => $key,
+										'value' => esc_attr( trim( $target ) ),
+										'compare' => $like
+									);
+							}
+							
+						}
+				
+						
+						
+						
+                 } //end for each
+				 
+				 } //end if 
+	
+			 if ($memberlist_verified)
+			  {
+				$query['meta_query'][] = array(
+					'key' => 'usersultra_account_status',
+					'value' => 'active',
+					'compare' => 'LIKE'
+				);
+			}
+			
+			if (isset($memberlist_withavatar) && $memberlist_withavatar == 1){
+				$query['meta_query'][] = array(
+					'key' => 'profilepicture',
+					'value' => '',
+					'compare' => '!='
+				);
+			}
+			
+			
+		/**
+			CUSTOM SEARCH FILTERS 
+		**
+		**
+		**/
+		
+		if (isset($_GET['uultra_combined_search'])) 
+		{
+			 //echo "YES1";
+			
+			/* Searchuser query param */
+			$search_string = esc_attr( trim( get_value('uultra_combined_search') ) );
+			
+			if ($search_string != '') 
+			{
+				// echo "YES2";
+			
+				 if (get_value('uultra_combined_search_fields') != '' && get_value('uultra_combined_search') != '') 
+				 {
+					 
+					// echo "YES3";
+					//$customfilters = explode(',',$args['memberlist_filters']);
+					
+					$customfilters = explode(',', get_value('uultra_combined_search_fields'));
 
                     $combined_search_text = esc_sql(like_escape(get_value('uultra_combined_search')));
 
-                    foreach ($fields as $key => $value) 
+					
+					if ($customfilters)
 					{
-
-                        //$this->combined_search_query_search_param[] = "(mt.meta_key = '_uultra_search_cache' AND mt.meta_value LIKE '%" . $value . '::' . $combined_search_text . "%')";
+						if (count($customfilters) > 1) 
+						{
+							//$query['meta_query']['relation'] = 'or';
+						}
 						
-						$this->combined_search_query_search_param[] = "(mt.meta_key = '".$value."' AND mt.meta_value LIKE '%" . $combined_search_text . "%')";
-                    }
-
-                    $this->search_query_search_param[] = '( ' . implode(' OR ', $this->combined_search_query_search_param) . ' )';
-                }
-            }
-
-            if (is_in_get('uultra_search')) {
-                foreach ($_GET['uultra_search'] as $key => $value) {
-                    $process = false;
-
-                    if (is_array($value) && count($value) > 0)
-                        $process = true;
-                    else if ($value != '' && $value != '0')
-                        $process = true;
-                    else
-                        $process = false;
-
-                    if ($process === true) {
-                        if (is_array($value)) {
-
-                            foreach ($value as $k => $v)
-							{
-                               // $this->search_query_search_param[] = "(mt.meta_key = '_uultra_search_cache' AND mt.meta_value LIKE '%" . $key . '::' . esc_sql(trim($v)) . "%')";
-								
-								 $this->search_query_search_param[] = "(mt.meta_key = '".$key."' AND mt.meta_value LIKE '%" . esc_sql(trim($v)) . "%')";
-								
-								
-                            }
-							
-                        } else {
-
-                            $this->search_query_search_param[] = "(mt.meta_key = '$key' AND mt.meta_value LIKE '%" . esc_sql($value) . "%')";
-							
-							
-							//$this->search_query_search_param[] = "(mt.meta_key = '".$key."' AND mt.meta_value LIKE '%" . esc_sql(trim($v)) . "%')";
-							
-							
-                        }
-                    }
-                }
-            }
-        }
-
-        $this->search_query_role_param = '';
-
-        if ($this->profile_role) {
-
-            $this->profile_role = explode(',', $this->profile_role);
-
-            if (count($this->profile_role) > 0) {
-                foreach ($this->profile_role as $key => $value) {
-                    $this->search_query_role_param[] = "(mt.meta_key = '_uultra_search_cache' AND mt.meta_value LIKE '%role::" . $value . "%')";
-                }
-            }
-
-            $role_operator = 'WHERE';
-            if (count($this->search_query_search_param) > 0) 
-			{
-                $role_operator = 'AND';
-            }
-
-            $this->search_query_role_param = ' ' . $role_operator . ' ( ' . implode(' OR ', $this->search_query_role_param) . ' ) ';
-        }
-
-
-        // Setting up order data, This is required before adding search conditions
-        $post_count_sort = '';
-        if (in_array($this->profile_order_field, array('nicename', 'email', 'url', 'registered')))
-            $orderby = 'users.user_' . $this->profile_order_field;
-        elseif (in_array($this->profile_order_field, array('user_nicename', 'user_email', 'user_url', 'user_registered')))
-            $orderby = 'users.' . $this->profile_order_field;
-        elseif ('name' == $this->profile_order_field || 'display_name' == $this->profile_order_field)
-            $orderby = 'users.display_name';
-        elseif ('ID' == $this->profile_order_field || 'id' == $this->profile_order_field)
-            $orderby = 'users.ID';
-        else if ('post_count' == $this->profile_order_field) {
-
-            $where = get_posts_by_author_sql('get');
-
-            $post_count_sort = " LEFT OUTER JOIN (
-            SELECT post_author, COUNT(*) as post_count
-            FROM $wpdb->posts
-            $where
-            GROUP BY post_author
-            ) p ON (users.ID = p.post_author)
-            ";
-
-            $orderby = 'post_count';
-        }
-        else
-            $orderby = 'users.user_login';
-
-
-        if (count($this->search_query_search_param) > 0) 
-		{
-            $this->search_query_string.=' INNER JOIN ' . $wpdb->usermeta . ' as mt ON (users.ID = mt.user_id) ' . $post_count_sort . ' WHERE 1=1 AND ' . implode(' ' . $this->search_args['operator'] . ' ', $this->search_query_search_param);
-
-            $this->count_search_query_string.=' INNER JOIN ' . $wpdb->usermeta . ' as mt ON (users.ID = mt.user_id) ' . $post_count_sort . ' WHERE 1=1 AND ' . implode(' ' . $this->search_args['operator'] . ' ', $this->search_query_search_param);
-
-
-            if ($this->uultra_args['group_meta'] != '' && $this->uultra_args['group_meta_value'] != '') 
-			{
-                $this->search_query_string.=" AND (mt.meta_key = '".$this->uultra_args['group_meta']."' AND mt.meta_value LIKE '%" . $this->uultra_args['group_meta_value'] . "%')";
-
-                $this->count_search_query_string.=" AND (mt.meta_key = '".$this->uultra_args['group_meta']."' AND mt.meta_value LIKE '%" . $this->uultra_args['group_meta_value'] . "%')";
+						//print_r($customfilters);
+										
+						$query['meta_query'][] = array(
+							'key' => 'display_name',
+							'value' => $search_string,
+							'compare' => 'LIKE'
+						);
+						
+					}
+				}
 				
-            }
+				
+				}
 			
-        } else {
+			}
 			
-            if ($this->uultra_args['group_meta'] != '' && $this->uultra_args['group_meta_value'] != '')
-			{
-                $this->search_query_string.=" INNER JOIN " . $wpdb->usermeta . " as mt ON (users.ID = mt.user_id) ". $post_count_sort ." WHERE 1=1 AND (mt.meta_key = '". $this->uultra_args['group_meta']."' AND mt.meta_value LIKE '%" . $this->uultra_args['group_meta_value'] . "%')";
-
-                $this->count_search_query_string.=" INNER JOIN " . $wpdb->usermeta . " as mt ON (users.ID = mt.user_id) ". $post_count_sort ." WHERE 1=1 AND (mt.meta_key = '".$this->uultra_args['group_meta']."' AND mt.meta_value LIKE '%". $this->uultra_args['group_meta_value'] . "%')";
-				
-            } else {
-				
-                if ($this->search_query_role_param != '') 
-				{
-                    $this->search_query_string.=" INNER JOIN " . $wpdb->usermeta . " as mt ON (users.ID = mt.user_id) ";
-                    $this->count_search_query_string.=" INNER JOIN " . $wpdb->usermeta . " as mt ON (users.ID = mt.user_id)";
-                }
-
-                $this->search_query_string.= $post_count_sort;
-
-                $this->count_search_query_string.= $post_count_sort;
-            }
-        }
-
-        if ($this->search_query_role_param != '') {
-            $this->search_query_string.= $this->search_query_role_param;
-            $this->count_search_query_string.= $this->search_query_role_param;
-        }
-
-
-        $this->search_query_string.= ' ORDER BY ' . $orderby . ' ' . $this->profile_order;
-        $this->count_search_query_string.= ' ORDER BY ' . $orderby . ' ' . $this->profile_order;
-
-        // Setting Limit Data
-        if (isset($this->current_users_page) && $this->current_users_page > 1) 
+			
+			
+			
+			if ($sortby) $query['orderby'] = $sortby;			
+			if ($order) $query['order'] = strtoupper($order); // asc to ASC
+			
+			/** QUERY ARGS END **/
+			
+			$query['number'] = $per_page;
+			$query['offset'] = $offset;
+			
+			/* Search mode */
+		if ( ( isset($_GET['uultra_search']) && !empty($_GET['uultra_search']) ) || count($query['meta_query']) > 1 )
 		{
-            $offset = ($this->current_users_page - 1) * $args['per_page'];
-            $this->search_query_string.= ' LIMIT ' . $offset . ',' . $args['per_page'];
-        } else {
-            $this->search_query_string.= ' LIMIT ' . $args['per_page'];
-        }
+			$count_args = array_merge($query, array('number'=>10000));
+			unset($count_args['offset']);
+			//$user_count_query = $this->get_cached_query( $count_args );
+			
+			$user_count_query = new WP_User_Query($count_args);
+						
+		}
 
-        $this->count_search_query_string.= ' LIMIT 1';
-
-        $this->total_matching_user = $wpdb->get_var($this->count_search_query_string);
-
-        $this->searched_users = $wpdb->get_results($this->search_query_string);
+		if ($per_page) 
+		{
+			
 		
-		//echo $this->search_query_string;
-    }
-
-    //  Function to check if user have enterred search criteria or not
-    function check_search_input() {
-        if (is_post ()) {
-            if (is_in_post('uultra_combined_search') && post_value('uultra_combined_search') != '') {
-                return true;
-            }
-
-            if (is_in_post('uultra_search')) {
-                foreach ($_GET['uultra_search'] as $key => $value) {
-                    if (is_array($value) && count($value) > 0)
-                        return true;
-                    else if ($value != '' && $value != '0')
-                        return true;
-                }
-            }
-        }
-
-        return false;
-    }
+			/* Get Total Users */
+			if ( ( isset($_GET['uultra_search']) && !empty($_GET['uultra_search']) ) || count($query['meta_query']) > 1 )
+			{
+				$user_count = $user_count_query->get_results();		
+								
+				$total_users = $user_count ? count($user_count) : 1;
+				
+			} else {
+				
+				//echo "HEREE";
+				
+				$result = count_users();
+				$total_users = $result['total_users'];
+			}
+			
+			$total_pages = ceil($total_users / $per_page);
+		
+		}
+		
+		//$wp_user_query = $this->get_cached_query( $query );
+		$wp_user_query = new WP_User_Query($query);
+		
+		if (! empty( $wp_user_query->results )) 
+		{
+			$arr['total'] = $total_users;
+			$arr['paginate'] = paginate_links( array(
+					'base'         => @add_query_arg('uultra-page','%#%'),
+					'total'        => $total_pages,
+					'current'      => $page,
+					'show_all'     => false,
+					'end_size'     => 1,
+					'mid_size'     => 2,
+					'prev_next'    => true,
+					'prev_text'    => __('« Previous','xoousers'),
+					'next_text'    => __('Next »','xoousers'),
+					'type'         => 'plain',
+				));
+			$arr['users'] = $wp_user_query->results;
+		}
+		
+		//print_r($arr);
+		
+		$this->searched_users = $arr;
+		
+		//echo "<pre>";	
+		//print_r($query);
+		//echo "</pre>";	
+		
+			
+			
+				
+		
+     }
+	 
+	 /******************************************
+	Get a cached query
+	******************************************/
+	function get_cached_query($query)
+	{
+		$cached = $this->get_cached_results;
+		$testcache = serialize($query);
+		if ( !isset($cached["$testcache"]) ) 
+		{
+			$cached["$testcache"] = new WP_User_Query( unserialize($testcache) );
+			update_option('uultra_cached_results', $cached);
+			$query = $cached["$testcache"];
+		} else {
+			$query = $cached["$testcache"];
+		}
+		
+		return $query;
+	}
+	
 	
 	/**
 	Display Members List Minified
@@ -3378,7 +3436,7 @@ class XooUserUser {
 	/**
 	Display Members List
 	******************************************/
-	public function show_users_directory($atts)
+public function show_users_directory($atts)
 	{
 		global $xoouserultra;
 		extract( shortcode_atts( array(
@@ -3408,33 +3466,25 @@ class XooUserUser {
 		
 		$search_array = array('list_per_page' => $list_per_page, 'list_order' => $list_order);	
 		
-		$args= array('per_page' => $list_per_page);
+		$args= array('per_page' => $list_per_page, 'relation' => 'AND');
 		
 		$this->current_users_page = $page;
 		
 		$this->search_result($args);
 		
 			
-		//$users_list = $this->users($search_array);
 		$users_list = $this->searched_users;
 		
-		$total_items = $this->total_matching_user;
+		//$total_items = $this->total_matching_user;
 		
 		//print_r($users_list);
 		
 		
-		
-		$paginate =$this->get_result_pages($total_items, $page, $list_per_page) ;
-		
-		
-		
 		//display pages
-		$disp_array = array('total' => $total_items, 'text' => $display_total_found_text);
+		$disp_array = array('total' => $users_list['total'], 'text' => $display_total_found_text);
 		
 		$total_f = $this->get_total_found($disp_array);		
 		
-		//get template
-		//require(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");
 		
 		$html ='';
 		
@@ -3444,7 +3494,13 @@ class XooUserUser {
 			    </div>';
 
       
-        $html .='<div class="usersultra-paginate top_display">'.$paginate.'</div>';
+       // $html .='<div class="usersultra-paginate top_display">'.$paginate.'</div>';
+		
+		if (isset($users_list['paginate'])) {
+			
+        $html .=' <div class="usersultra-paginate top_display">'. $users_list['paginate'].'</div>';
+		
+		 } 
 	    
 		if ($display_total_found=='yes') 
 		{
@@ -3454,64 +3510,67 @@ class XooUserUser {
     
     	$html .='<ul class="usersultra-front-results">';
         
-        foreach($users_list as $user)
+        if(count($users_list['users'])>0)
 		{
+			foreach($users_list['users'] as $user)
+			{
+				
+				$user_id = $user->ID; 
+				
+				//echo "<pre>";
+				//print_r($user);
+				//echo "</pre>";
 			
-			$user_id = $user->ID; 
+			   if($pic_boder_type=="rounded")
+			   {
+				   $class_avatar = "avatar";
+				   
+				}
 			
-			//echo "<pre>";
-			//print_r($user);
-			//echo "</pre>";
-		
-		   if($pic_boder_type=="rounded")
-		   {
-			   $class_avatar = "avatar";
-			   
-			}
-		
-		
-            
-            
-            $html .='<li class="rounded" style="width:'.$item_width.'">';               
-            $html .='<div class="xoousers-prof-photo">';
-               
-            $html .= $xoouserultra->userpanel->get_user_pic( $user_id, $pic_size, $pic_type, $pic_boder_type, $pic_size_type);             
-               
-            $html .=' </div> ';
-               
-               
-               
-               
-                $html .=' <div class="info-div">';		
-				$html .='<p class="uu-direct-name">'.  $xoouserultra->userpanel->get_display_name($user_id).'</p>';
-                
-                
-                $html .=' <div class="social-icon-divider">                                       
-                 
-                  </div> ';
-                
-                if ($optional_fields_to_display!="") { 
-                 
-                 
-                   $html .= $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_fields_to_display)  ;
-                 
-                 
-                
-                   }
-                
-                $html .=' </div> 
-                 
-                  <div class="uultra-view-profile-bar">';
-                  
-                  $html .='  <a class="uultra-btn-profile" href="'.$xoouserultra->userpanel->get_user_profile_permalink( $user_id).'">See Profile</a>
-                  
-                  </div> ';
-            
-            
-            $html .='</li>';
-            
-            
-        }    
+			
+				
+				
+				$html .='<li class="rounded" style="width:'.$item_width.'">';               
+				$html .='<div class="xoousers-prof-photo">';
+				   
+				$html .= $xoouserultra->userpanel->get_user_pic( $user_id, $pic_size, $pic_type, $pic_boder_type, $pic_size_type);             
+				   
+				$html .=' </div> ';
+				   
+				   
+				   
+				   
+					$html .=' <div class="info-div">';		
+					$html .='<p class="uu-direct-name">'.  $xoouserultra->userpanel->get_display_name($user_id).'</p>';
+					
+					
+					$html .=' <div class="social-icon-divider">                                       
+					 
+					  </div> ';
+					
+					if ($optional_fields_to_display!="") { 
+					 
+					 
+					   $html .= $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_fields_to_display)  ;
+					 
+					 
+					
+					   }
+					
+					$html .=' </div> 
+					 
+					  <div class="uultra-view-profile-bar">';
+					  
+					  $html .='  <a class="uultra-btn-profile" href="'.$xoouserultra->userpanel->get_user_profile_permalink( $user_id).'">See Profile</a>
+					  
+					  </div> ';
+				
+				
+				$html .='</li>';
+				
+				
+			}    //end for each
+       }  
         
        $html .=' </ul>';
         
@@ -3668,6 +3727,9 @@ class XooUserUser {
 	public function get_total_found($users_list)
 	{
 		extract($users_list);
+		
+		if($total=="" ){$total=0;}
+		
 		$html = '<div class="uultra-search-results">
 			<h1>'.__('Total found: ','xoousers').''.$total .' '.$text.'</h1>
 			
