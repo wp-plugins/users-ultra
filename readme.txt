@@ -199,11 +199,12 @@ Initial release.
 == Screenshots ==
 
 1. Powerful Private Messaging System
-2. Profile Fields
-3. Profile Fields Customizer
-4. Front Publisher
-5. Photo Uploading Module
-6. Admin Backend
+2. Advanced Dashboard
+3. Front-End Post Publisher
+4. Profile Fields Customizer
+5. Add New Posts
+6. Drag&Drop Photo Uploading
+7. Dahsboard
 
 == Changelog ==
 
