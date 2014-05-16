@@ -18,9 +18,13 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
+<a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> <br>
+<a href="http://usersultra.com/userultra/login/"><strong>Users Login Form </strong></a> <br>
 <a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
+
+
 
 <strong>Recent New Features:</strong><br>
 <pre>
