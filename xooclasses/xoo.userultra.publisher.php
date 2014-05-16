@@ -24,6 +24,11 @@ class XooPublisher
 		
 		}
 		
+		add_action( 'wp_ajax_featured_post_img_upload', array($this, 'featured_img_upload') );
+		add_action( 'wp_ajax_featured_img_delete', array($this, 'featured_img_delete') );
+		
+		
+		
 		
 		
 	}
@@ -38,8 +43,6 @@ class XooPublisher
 		require_once(ABSPATH . 'wp-includes/general-template.php');
 		
 		$user_id = get_current_user_id();	
-		
-		
 		
 		$res = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND  `ID` = "'.$id.'" AND (`post_status` = "publish" OR `post_status` = "pending" ) ORDER BY `post_date` DESC' );
 		
@@ -63,7 +66,11 @@ class XooPublisher
 		
 		}
 		
+		
+		
 		$post_tags = wp_get_post_tags( $post->ID );
+		
+		$post_id =$post->ID;
 		
 		$tagsarray = array();
 		
@@ -167,6 +174,20 @@ class XooPublisher
                  </p>
                  </div>
                  
+                  <div class="field_row">
+                 <p><?php echo __('Post Photos:','xoousers')?></p>
+                 </div>
+                 
+                 <div class="pr_post_images">
+                 
+                 <?php echo $this->get_post_photo_uploader(); ?>
+                 
+                  <div id="uuultra_filelist_uploaded"  class="uultra-post-plist">
+                   <ul><?php echo $this->uultra_edit_attachment($post_id);?></ul>
+                   </div>
+                 
+                 </div>
+                 
                   <p><?php echo __('Description:','xoousers')?></p>
                  
                 <?php       
@@ -257,7 +278,7 @@ class XooPublisher
 				 ?>
                  
                  <form method="post" name="uultra-front-publisher-post">
-                 <input type="hidden" name="uultra-conf-publisher-post" value="ok" />
+                 <input type="hidden" name="uultra-conf-publisher-post" value="ok" enctype="multipart/form-data"/>
                  
                  <div class="tablenav_post">
                 
@@ -292,6 +313,21 @@ class XooPublisher
                 ?>
                  </p>
                  </div>
+                 
+                 <div class="field_row">
+                 <p><?php echo __('Post Photos:','xoousers')?></p>
+                 </div>
+                 
+                 <div class="pr_post_images">
+                 
+                 <?php echo $this->get_post_photo_uploader(); ?>
+                 
+                  <div id="uuultra_filelist_uploaded"  class="uultra-post-plist"> <ul></ul> </div>
+                 
+                 </div>
+                 
+                 
+                
                  
                   <p><?php echo __('Description:','xoousers')?></p>
                  
@@ -328,7 +364,23 @@ class XooPublisher
         
         <?php 
 		
-		//return $html;
+	
+	}
+	
+	
+	/**
+	 * My Posts Widget
+	 */
+	function show_my_posts_widget($user_id, $howmany)
+	{
+		global $wpdb, $current_user, $xoouserultra;	
+	
+	
+		$res = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_type`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND `post_status` ="publish" AND `post_type` = "post" ORDER BY `post_date` DESC' );
+		
+		return $res;
+		
+
 	
 	}
 	
@@ -345,13 +397,13 @@ class XooPublisher
 	
 		$msgs = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND (`post_status` ="publish" OR `post_status` ="pending" ) ORDER BY `post_date` DESC' );
 		
-		
+        
 		echo '<div class="tablenav_post">
                 
                 <p><a class="uultra-btn-commm" href="?module=posts&act=add" title="'. __('Add New Post','xoousers').'" ><span><i class="fa fa-plus  fa-lg"></i></span> '.__('Add New Post','xoousers').' </a></p>
 					                    
 				</div>';
-
+		
 		if ( !empty( $status ) )
 		{
 			echo '<div id="message" class="updated fade"><p>', $status, '</p></div>';
@@ -414,6 +466,55 @@ class XooPublisher
 	<?php
 	}
 	
+	function uultra_show_post_status( $status ) 
+	{
+
+		if ( $status == 'publish' ) {
+	
+			$title = __( 'Live', 'xoousers' );
+			$fontcolor = '#33CC33';
+		} else if ( $status == 'draft' ) {
+	
+			$title = __( 'Offline', 'xoousers' );
+			$fontcolor = '#bbbbbb';
+		} else if ( $status == 'pending' ) {
+	
+			$title = __( 'Awaiting Approval', 'xoousers' );
+			$fontcolor = '#C00202';
+		} else if ( $status == 'future' ) {
+			$title = __( 'Scheduled', 'xoousers' );
+			$fontcolor = '#bbbbbb';
+		}
+	
+		echo '<span style="color:' . $fontcolor . ';">' . $title . '</span>';
+	}
+	
+	function uultra_edit_attachment( $post_id )
+	{
+		$attach = $this->uultra_get_attachments( $post_id );
+	
+		if ( $attach ) {
+			$count = 1;
+			foreach ($attach as $a) 
+			{
+				$attach_id = $a['id'];
+				
+				//print_r( $a);	
+				
+				$html = sprintf( '<li class="uultra-featu-img-item" id="attachment-%d">', $attach_id );
+				$html .= sprintf( '<img src="%s" alt="%s" />', $a['url'], esc_attr($a['title'] ) );
+				$html .= '<a class="uultra-btn-delpostimg  uu-photopost-delete" href="#" id="" data-id="'. $attach_id.'" ><span><i class="fa fa-times"></i>'.__("Delete Image", 'xoousers').'</span></a>';
+				
+				$html .= '</li>';
+		
+				$count++;
+				
+				echo $html;
+			}
+		}
+	}
+	
+	
 	function uultra_clean_tags( $string )
 	{
 		$string = preg_replace( '/\s*,\s*/', ',', rtrim( trim( $string ), ' ,' ) );
@@ -430,11 +531,7 @@ class XooPublisher
 
         $errors = array();
 
-        //if there is some attachement, validate them
-        if ( !empty( $_FILES['wpuf_post_attachments'] ) )
-		{
-        }
-
+       
         $title = trim( $_POST['uultra_post_title'] );
         $content = trim( $_POST['uultra_post_content'] );
 
@@ -533,6 +630,54 @@ class XooPublisher
         }
     }
 	
+	function set_custom_post_photos ($post_id)
+	{
+		$images = $_POST["uultra_featured_img"];
+		$i = 1;
+		foreach ($images as $image)
+		{
+			
+			if($i==1)
+			{
+				set_post_thumbnail( $post_id, $image );			
+			}
+			
+			$my_post = array(
+				  'ID'           => $image,
+				  'post_parent' => $post_id
+			  );
+			
+			// Update the post into the database
+			 wp_update_post( $my_post );
+  
+			
+			$i++;
+		
+		}
+		
+	}
+	
+	  /**
+     * Delete a featured image via ajax
+     *
+     */
+    function featured_img_delete() 
+	{
+       // check_ajax_referer( 'uultra_nonce', 'nonce' );
+
+        $attach_id = isset( $_POST['attach_id'] ) ? intval( $_POST['attach_id'] ) : 0;
+        $attachment = get_post( $attach_id );
+
+        //post author or editor role
+        if ( get_current_user_id() == $attachment->post_author || current_user_can( 'delete_private_pages' ) ) 
+		{
+            wp_delete_attachment( $attach_id, true );
+            echo 'success';
+        }
+
+        exit;
+    }
+	
 	
 	function submit_post()
 	{
@@ -541,16 +686,6 @@ class XooPublisher
 	   require_once(ABSPATH . 'wp-includes/pluggable.php');
 
         $errors = array();
-		
-		$attach_id = "";
-
-       // var_dump( $_POST );
-
-        //if there is some attachement, validate them
-        if ( !empty( $_FILES['uultra_post_attachments'] ) )
-		{
-           
-        }
 
         $title = trim( $_POST['uultra_post_title'] );
         $content = trim( $_POST['uultra_post_content'] );
@@ -615,7 +750,6 @@ class XooPublisher
         //if not any errors, proceed
         if ( $errors ) 
 		{
-			$display_error="";
            
            // return;
         }
@@ -646,13 +780,15 @@ class XooPublisher
         if ( $post_id )
 		{
 
-            //upload attachment to the post
-
+		
             //send mail notification
                     
             //set post thumbnail if has any
-            if ( $attach_id ) {
-               // set_post_thumbnail( $post_id, $attach_id );
+            if ( isset($_POST["uultra_featured_img"]) && !empty($_POST["uultra_featured_img"])) 
+			{
+				$this->set_custom_post_photos($post_id);
+				
+               
             }
 
             //Set Post expiration date if has any
@@ -673,6 +809,372 @@ class XooPublisher
            
         }
     }
+	
+	/**
+	 * Displays attachment information upon upload as featured image
+	 *
+	 */
+	function uultra_feat_img_html( $attach_id ) 
+	{
+		$image = wp_get_attachment_image_src( $attach_id, 'thumbnail' );
+		$post = get_post( $attach_id );
+	
+		$html = sprintf( '<li class="uultra-featu-img-item" id="attachment-%d">', $attach_id );
+		$html .= sprintf( '<img src="%s" alt="%s" />', $image[0], esc_attr( $post->post_title ) );
+		$html .= '<a class="uultra-btn-delpostimg  uu-photopost-delete" href="#" id="" data-id="'. $attach_id.'" ><span><i class="fa fa-times"></i>'.__("Delete Image", 'xoousers').'</span></a>';
+		$html .= sprintf( '<input type="hidden" name="uultra_featured_img[]" value="%d" />', $attach_id );
+		$html .= '</li>';
+		
+		
+	
+		return $html;
+	}
+	
+	 /* Get the attachments of a post
+	 *
+	 * @param int $post_id
+	 * @return array attachment list
+	 */
+	function uultra_get_attachments( $post_id ) {
+		$att_list = array();
+	
+		$args = array(
+			'post_type' => 'attachment',
+			'numberposts' => -1,
+			'post_status' => null,
+			'post_parent' => $post_id,
+			'order' => 'ASC',
+			'orderby' => 'menu_order'
+		);
+	
+		$attachments = get_posts( $args );
+	
+		foreach ($attachments as $attachment) {
+			$att_list[] = array(
+				'id' => $attachment->ID,
+				'title' => $attachment->post_title,
+				'url' => wp_get_attachment_url( $attachment->ID ),
+				'mime' => $attachment->post_mime_type
+			);
+		}
+	
+		return $att_list;
+	}
+	
+	/**
+	 * Generic function to upload a file
+	 *
+	 * @since 0.8
+	 * @param string $field_name file input field name
+	 * @return bool|int attachment id on success, bool false instead
+	 */
+	function uultra_upload_file( $upload_data ) 
+	{
+	
+		$uploaded_file = wp_handle_upload( $upload_data, array('test_form' => false) );
+	
+		// If the wp_handle_upload call returned a local path for the image
+		if ( isset( $uploaded_file['file'] ) ) {
+			$file_loc = $uploaded_file['file'];
+			$file_name = basename( $upload_data['name'] );
+			$file_type = wp_check_filetype( $file_name );
+	
+			$attachment = array(
+				'post_mime_type' => $file_type['type'],
+				'post_title' => preg_replace( '/\.[^.]+$/', '', basename( $file_name ) ),
+				'post_content' => '',
+				'post_status' => 'inherit'
+			);
+	
+			$attach_id = wp_insert_attachment( $attachment, $file_loc );
+			$attach_data = wp_generate_attachment_metadata( $attach_id, $file_loc );
+			wp_update_attachment_metadata( $attach_id, $attach_data );
+	
+			return $attach_id;
+		}
+	
+		return false;
+	}
+	
+	/**
+     * Upload Featured image via ajax
+     */
+    function featured_img_upload() 
+	{
+        //check_ajax_referer( 'uultra_featured_img', 'nonce' );
+
+        $upload_data = array(
+            'name' => $_FILES['uultra_featured_img']['name'],
+            'type' => $_FILES['uultra_featured_img']['type'],
+            'tmp_name' => $_FILES['uultra_featured_img']['tmp_name'],
+            'error' => $_FILES['uultra_featured_img']['error'],
+            'size' => $_FILES['uultra_featured_img']['size']
+        );
+
+        $attach_id = $this->uultra_upload_file( $upload_data );
+		
+		//echo "Attach id: ". $attach_id;
+
+        if ( $attach_id ) {
+            $html = $this->uultra_feat_img_html( $attach_id );
+
+            $response = array(
+                'success' => true,
+                'html' => $html,
+            );
+
+            echo json_encode( $response );
+            exit;
+        }
+
+        $response = array('success' => false);
+        echo json_encode( $response );
+        exit;
+    }
+	
+	public function get_post_photo_uploader() 
+	{
+		
+	   // Uploading functionality trigger:
+	  // (Most of the code comes from media.php and handlers.js)
+	      $template_dir = get_template_directory_uri();
+		  
+		  $user_id = get_current_user_id();
+?>
+		
+		<div id="uploadContainer" style="margin-top: 10px;">
+			
+			
+			<!-- Uploader section -->
+			<div id="uploaderSection" style="position: relative;">
+				<div id="plupload-upload-ui-postphoto" class="hide-if-no-js">
+                
+					<div id="drag-drop-area-postphoto">
+						<div class="drag-drop-inside">
+                        
+                       
+							<p class="drag-drop-info"><?php	_e('Drop Images Here', 'xoousers') ; ?></p>
+                            <div style="display:none">
+							<p><?php _ex('or', 'Uploader: Drop files here - or - Select Files'); ?></p>
+							<p class="drag-drop-buttons"><input id="plupload-browse-button-postphoto" type="button" value="<?php esc_attr_e('Select Files'); ?>" class="button" /></p>
+								</div>						
+						</div>
+                        
+                        <div id="progressbar-postphoto"></div>                 
+                         <div id="uuultra_filelist_postphoto" class="cb"></div>
+                         
+                          
+					</div>
+				</div>
+                
+                 
+			
+			</div>
+            
+           
+		</div>
+        
+       
+
+		<?php
+			
+			$plupload_init = array(
+				'runtimes'            => 'html5,silverlight,flash,html4',
+				'browse_button'       => 'plupload-browse-button-postphoto',
+				'container'           => 'plupload-upload-ui-postphoto',
+				'drop_element'        => 'drag-drop-area-postphoto',
+				'file_data_name'      => 'uultra_featured_img',
+				'multiple_queues'     => true,
+				'multi_selection'	  => false,
+				'max_file_size'       => wp_max_upload_size().'b',
+				//'max_file_size'       => get_option('drag-drop-filesize').'b',
+				'url'                 => admin_url('admin-ajax.php'),
+				'flash_swf_url'       => includes_url('js/plupload/plupload.flash.swf'),
+				'silverlight_xap_url' => includes_url('js/plupload/plupload.silverlight.xap'),
+				//'filters'             => array(array('title' => __('Allowed Files', $this->text_domain), 'extensions' => "jpg,png,gif,bmp,mp4,avi")),
+				'filters'             => array(array('title' => __('Allowed Files', "xoousers"), 'extensions' => "jpg,png,gif,jpeg")),
+				'multipart'           => true,
+				'urlstream_upload'    => true,
+
+				// Additional parameters:
+				'multipart_params'    => array(
+					'_ajax_nonce' => wp_create_nonce('photo-upload'),
+					'action'      => 'featured_post_img_upload' // The AJAX action name
+					
+				),
+			);
+			
+
+			// Apply filters to initiate plupload:
+			$plupload_init = apply_filters('plupload_init', $plupload_init); ?>
+
+			<script type="text/javascript">
+			
+				jQuery(document).ready(function($){
+					
+					// Create uploader and pass configuration:
+					var uploader_postphoto = new plupload.Uploader(<?php echo json_encode($plupload_init); ?>);
+
+					// Check for drag'n'drop functionality:
+					uploader_postphoto.bind('Init', function(up){
+						
+						var uploaddiv_postphoto = $('#plupload-upload-ui-postphoto');
+						
+						// Add classes and bind actions:
+						if(up.features.dragdrop){
+							uploaddiv_postphoto.addClass('drag-drop');
+							
+							$('#drag-drop-area-postphoto')
+								.bind('dragover.wp-uploader', function(){ uploaddiv_postphoto.addClass('drag-over'); })
+								.bind('dragleave.wp-uploader, drop.wp-uploader', function(){ uploaddiv_postphoto.removeClass('drag-over'); });
+
+						} else{
+							uploaddiv_postphoto.removeClass('drag-drop');
+							$('#drag-drop-area').unbind('.wp-uploader');
+						}
+						
+						
+						
+            			
+
+					});
+
+					
+					// Init ////////////////////////////////////////////////////
+					uploader_postphoto.init(); 
+					
+					// Selected Files //////////////////////////////////////////
+					uploader_postphoto.bind('FilesAdded', function(up, files) {
+						
+						
+						var hundredmb = 100 * 1024 * 1024, max = parseInt(up.settings.max_file_size, 10);
+						
+						// Limit to one limit:
+						if (files.length > 1){
+							alert("<?php _e('You may only upload one image at a time!', 'xoousers'); ?>");
+							return false;
+						}
+						
+						// Remove extra files:
+						if (up.files.length > 1){
+							up.removeFile(uploader_postphoto.files[0]);
+							up.refresh();
+						}
+						
+						// Loop through files:
+						plupload.each(files, function(file){
+							
+							// Handle maximum size limit:
+							if (max > hundredmb && file.size > hundredmb && up.runtime != 'html5'){
+								alert("<?php _e('The file you selected exceeds the maximum filesize limit.', 'xoousers'); ?>");
+								return false;
+							}
+						
+						});
+						
+						jQuery.each(files, function(i, file) {
+							jQuery('#uuultra_filelist_postphoto').append('<div class="addedFile" id="' + file.id + '">' + file.name + '</div>');
+						});
+						
+						 						
+						up.refresh(); 
+						uploader_postphoto.start();
+						
+					});
+					
+					// A new file was uploaded:
+					uploader_postphoto.bind('FileUploaded', function(up, file, response) {
+							var resp = $.parseJSON(response.response);
+							$('#' + file.id).remove();
+							//console.log(resp);
+							if( resp.success ) {
+								window.wpufFileCount += 1;
+								$('#uuultra_filelist_uploaded ul').append(resp.html);
+								
+								
+			
+								
+							}
+					});
+				  
+				  // Error Alert /////////////////////////////////////////////
+					uploader_postphoto.bind('Error', function(up, err) {
+						alert("Error: " + err.code + ", Message: " + err.message + (err.file ? ", File: " + err.file.name : "") + "");
+						up.refresh(); 
+					});
+					
+					// Progress bar ////////////////////////////////////////////
+					uploader_postphoto.bind('UploadProgress', function(up, file) {
+						
+						var progressBarValue = up.total.percent;
+						
+						jQuery('#progressbar-postphoto').fadeIn().progressbar({
+							value: progressBarValue
+						});
+						
+						jQuery('#progressbar-postphoto').html('<span class="progressTooltip">' + up.total.percent + '%</span>');
+					});
+					
+					// Close window after upload ///////////////////////////////
+					uploader_postphoto.bind('UploadComplete', function() {
+						
+						//jQuery('.uploader').fadeOut('slow');						
+						jQuery('#progressbar-postphoto').fadeIn().progressbar({
+							value: 0
+						});
+						
+						$('#uuultra_filelist_uploaded ul').sortable({
+							cursor: 'crosshair'
+						});
+						
+						
+						
+						
+					});
+					
+					//
+					
+					$(document).on("click", "a.uu-photopost-delete", function(e) {						
+								
+						e.preventDefault();		
+											
+							var attach_id =  jQuery(this).attr("data-id");	
+																		
+							jQuery.ajax({
+								type: 'POST',
+								url: ajaxurl,
+								data: {"action": "featured_img_delete", "attach_id": attach_id },
+								
+								success: function(data){
+									
+									//remove from list	
+									$('#attachment-'+attach_id).fadeOut();								
+									$('#attachment-'+attach_id).remove();
+														
+									
+									}
+							});
+						
+						
+						 // Cancel the default action
+						 return false;
+						e.preventDefault();
+					 
+						
+					});
+					
+					
+			
+					
+				});
+				
+					
+			</script>
+			
+		<?php
+	
+	
+	}
 
 
 }

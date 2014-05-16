@@ -770,3 +770,94 @@ color: #fff;
 	width: 30px; float: left;
 }
 
+/*Post Images*/
+#drag-drop-area-postphoto {
+	position:relative;
+border: 3px dashed #bbb;
+padding:5px;
+margin:5px auto 5px auto;
+height: auto !important;
+width:90%
+}
+
+.commons-panel-content .pr_post_images{ clear:both; float:none; width:99%; min-height:99px; margin-top:10px; margin-bottom:10px; padding-bottom:15px;  border:solid 1px #E9E9E9; }
+
+.uu-upload-postphoto-sect{
+	position:relative;
+	display:none;
+
+	margin:5px auto 5px auto;
+	height: auto !important;
+	width:90%
+}
+
+.commons-panel-content .pr_post_images .uultra-post-plist{
+	position:relative ;
+}
+
+.commons-panel-content .pr_post_images .uultra-post-plist ul{
+	position:relative !important;
+	list-style:none !important; 
+	text-align:center !important;
+}
+
+.commons-panel-content .pr_post_images .uultra-post-plist li.uultra-featu-img-item{
+	position:relative !important;
+	display:inline-block !important;
+	width:110px !important;
+	height:auto !important;
+	max-height:120px !important; 
+	margin-top:5px !important; 
+	margin-left:5px !important;
+	top:0px !important;
+	 
+	
+}
+
+a.uultra-btn-delpostimg span{
+	
+	margin:0px 10px 0px 5px;
+	text-align:left;		
+}
+
+a.uultra-btn-delpostimg  i{
+	
+	margin:0px 5px 0px 2px;
+			
+}
+
+a.uultra-btn-delpostimg { 
+		display:inline-block; 
+		height:20px;
+		width:99%;
+		padding-top:5px;
+		text-align:left;
+		font-size:12px;
+		margin-right:2%;
+		
+			
+		
+		border:solid 1px #E8E8E8;
+		 background: #F0F0F0; 
+		-moz-border-radius: 5px; 
+	     border-radius:5px;
+		 color:#333;
+		 text-decoration:none;
+
+}
+
+a.uultra-btn-delpostimg:hover{ 
+				
+		
+		 background: #E2E2E2; 
+		-moz-border-radius: 5px; 
+	     border-radius:5px;
+		 color: #333 !important;
+
+}
+
+/* end post Images*/
+
+
+
+

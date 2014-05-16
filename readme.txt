@@ -22,6 +22,13 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
+<strong>Recent New Features:</strong><br>
+<pre>
+
+-- Front-End Publisher with Featured Image Uploading.
+
+</pre>
+
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
@@ -199,6 +206,11 @@ Initial release.
 6. Admin Backend
 
 == Changelog ==
+
+
+= 1.0.45 (05-15-2014) =
+* New Feature- We have added the capability to add a "featured image" when the user creates a post through the user dashboard.
+* Bug Fix- We have fixed the issue with translations. mo and po files path were updated.
 
 = 1.0.44 (05-14-2014) =
 * Bug Fix - PLEASE UPDATE ASAP. We have fixed a Javascript conflict with some popular themes that was affecting the galleries, photos and registration.

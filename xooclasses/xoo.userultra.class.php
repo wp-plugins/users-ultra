@@ -909,7 +909,7 @@ class XooUserUltra
 	
 	public function xoousers_load_textdomain() 
 	{
-		load_plugin_textdomain( 'xoousers', false, xoousers_path.'/languages/');
+		//load_plugin_textdomain( 'xoousers', false, xoousers_path.'/languages/');
     }
 	
 	function get_the_guid( $id = 0 )
