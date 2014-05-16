@@ -215,7 +215,7 @@ Initial release.
 
 = 1.0.45 (05-15-2014) =
 * New Feature- We have added the capability to add a "featured image" when the user creates a post through the user dashboard.
-* Bug Fix- We have fixed the issue with translations. mo and po files path were updated.
+* Bug Fix- We have fixed the issue with translations. mo and po files path were updated. The default language files in english are xoousers-en_EN.po and xoousers-en_EN.mo. Should you wish to add your translation for instance in spanish you should upload your files in languages folder with the following names xoousers-es_ES.po xoousers-es_ES.mo
 
 = 1.0.44 (05-14-2014) =
 * Bug Fix - PLEASE UPDATE ASAP. We have fixed a Javascript conflict with some popular themes that was affecting the galleries, photos and registration.
