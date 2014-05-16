@@ -21,7 +21,7 @@ require_once (xoousers_path . 'xooclasses/xoo.userultra.class.php');
 // For Single site
 if ( !is_multisite() ) 
 {
-    //
+	//
 	
 	$xoouserultra = new XooUserUltra();	
 	$xoouserultra->uultra_uninstall();

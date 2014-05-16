@@ -212,6 +212,8 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.46 (05-16-2014) =
+* Bug fix- Warning messages when activating plugin. Some people reported this issue. We've tweaked the code.
 
 = 1.0.45 (05-15-2014) =
 * New Feature- We have added the capability to add a "featured image" when the user creates a post through the user dashboard.

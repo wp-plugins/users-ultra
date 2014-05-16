@@ -63,7 +63,7 @@ class XooUserUltra
 		  "publisher" =>"xoo.userultra.publisher" ,
 		  "activity" =>"xoo.userultra.activity" ,
 		  "messaging" =>"xoo.userultra.messaging" ,  
-		  "recaptchalib" =>"xoo.ulserultra.recaptchalib",  
+		  /*"recaptchalib" =>"xoo.ulserultra.recaptchalib",  */
 		  "order" =>"xoo.userultra.order",
 		  "subscribe" =>"xoo.userultra.newslettertool",
 		  "paypal" =>"xoo.userultra.payment.paypal"  ,
