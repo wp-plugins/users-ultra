@@ -29,7 +29,9 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Recent New Features:</strong><br>
 <pre>
 
--- Front-End Publisher with Featured Image Uploading.
+05-16-2014 -- Admin can approve an account manually.
+05-16-2014 -- Admin can re-send activation link.
+05-14-2014 -- Front-End Publisher with Featured Image Uploading.
 
 </pre>
 
