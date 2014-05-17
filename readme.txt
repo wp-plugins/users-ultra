@@ -215,6 +215,8 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.51 (05-17-2014) =
+* Improvements - Please update. We have implemented some changes for the URL rewriting rules. Thanks
 
 = 1.0.50 (05-17-2014) =
 * Bug fix - We have tweaked the CSS style sheet to avoid css overlapping. 
