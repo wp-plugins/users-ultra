@@ -34,6 +34,13 @@ class XooUserUser {
 				
 		}
 		
+		if (isset($_POST['uultra-conf-close-account-post'])) 
+		{
+			/* Let's Close this Account */
+			add_action('init', array( $this, 'close_user_account' ));
+				
+		}
+		
 		add_action( 'wp_ajax_refresh_avatar', array( $this, 'refresh_avatar' ));
 		add_action( 'wp_ajax_nopriv_send_reset_link', array( $this, 'send_reset_link' ));
 		
@@ -68,6 +75,21 @@ class XooUserUser {
 		
 			
 
+	}
+	
+	public function close_user_account()
+	{
+		global $wpdb,  $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH. 'wp-admin/includes/user.php' );
+		
+		//close
+		$current_user = wp_get_current_user();
+		wp_delete_user( $current_user->ID );		
+		wp_clear_auth_cookie();		
+		
+	
 	}
 	
 	public function set_default_user_panel()
@@ -1721,6 +1743,20 @@ class XooUserUser {
 			}else{
 				
 				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=profile"><span><i class="fa fa-user fa-2x"></i></span>'.__('Profile Customizer', 'xoousers').'</a>';			
+			
+			}
+			
+		
+		}elseif($slug=="account"){
+			
+			
+			if(!isset($_GET["page_id"]))
+			{
+				$url = '<a class="uultra-btn-u-menu" href="?module=account"><span><i class="fa fa-wrench  fa-2x"></i></span>'.__('My Account', 'xoousers').'</a>';	
+				
+			}else{
+				
+				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=account"><span><i class="fa fa-wrench  fa-2x"></i></span>'.__('My Account', 'xoousers').'</a>';			
 			
 			}
 		

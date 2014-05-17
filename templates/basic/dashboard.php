@@ -58,6 +58,11 @@ $howmany = 5;
            <ul class="main_menu">
            
               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('dashboard');?></li>
+              
+               <?php if(!in_array("account",$modules)){?>  
+               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('account');?></li>
+               <?php }?>
+               
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li>             
                               
                <?php if(!in_array("messages",$modules)){?>           
@@ -573,6 +578,49 @@ $howmany = 5;
                
                      
       <?php }?>
+      
+      <?php
+     
+       //my account
+	   if($module=="account" && !in_array("account",$modules)) 
+	   {
+		   
+		   
+	   
+	   ?>
+       
+		<div class="commons-panel xoousersultra-shadow-borers" >
+                                
+                      <div class="commons-panel-heading">
+                              <h2> <?php  _e('Remove My Account','xoousers');?>  </h2>
+                     </div>
+                     
+                      <div class="commons-panel-content">
+                      
+                      <div class="uupublic-ultra-warning">WARNING! This action cannot be reverted.</div>
+                      
+                      <p><?php  _e('Here you can remove your account.','xoousers');?></p>
+                       <form method="post" name="uultra-close-account" id="uultra-close-account">
+                 			<input type="hidden" name="uultra-conf-close-account-post" value="ok" />
+                             <p><input type="button" name="xoouserultra-register" id="xoouserultra-close-acc-btn" class="xoouserultra-button" value="<?php  _e('YES, CLOSE MY ACCOUNT','xoousers');?>" /></p>
+               		  </form>
+                      
+                                           
+                     </div>
+                     
+                     
+                                          
+               </div>
+               
+               <script type="text/javascript">
+		
+				 
+				   var delete_account_confirmation_mesage = '<?php echo _e( 'Are you totally sure that you want to close your account. This action cannot be reverted?', 'xoousers' ) ?>';			
+                                   
+                    
+                 </script>
+       
+       <?php }?>
       
       
       <?php

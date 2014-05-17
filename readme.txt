@@ -29,6 +29,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Recent New Features:</strong><br>
 <pre>
 
+05-17-2014 -- Users can delete their accounts through the users dashboard.
 05-16-2014 -- Admin can approve an account manually.
 05-16-2014 -- Admin can re-send activation link.
 05-14-2014 -- Front-End Publisher with Featured Image Uploading.
@@ -213,6 +214,9 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.48 (05-17-2014) =
+* New Feature - We have added a new option within the user's dashboard that allows user to remove his/her account. 
 
 = 1.0.47 (05-16-2014) =
 * New Feature - Auto-login after the account activation link is clicked.

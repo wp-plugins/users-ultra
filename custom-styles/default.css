@@ -829,6 +829,7 @@ width:90%
 }
 .commons-panel-content p {
     padding:4px 0 6px 0;
+	text-align:left !important;
 }
 .commons-panel-content p:first-child  {
 	padding-top:10px;

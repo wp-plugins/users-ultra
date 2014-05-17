@@ -317,6 +317,33 @@ if(typeof $ == 'undefined'){
 				
         });
 		
+		//delete account
+		
+		$('body').on('click',"#xoouserultra-close-acc-btn", function(e) {
+		
+		   
+			e.preventDefault();
+			
+			var doIt = false;
+			
+			doIt=confirm(delete_account_confirmation_mesage);
+		  
+			if(doIt)
+			{
+				
+				$('#uultra-close-account').submit();
+				
+						
+			}
+			
+			 // Cancel the default action
+			 return false;
+    		e.preventDefault();
+			 
+				
+        });
+		
+		
 		//delete video
 		
 		$(document).on("click", "a[href='#resp_del_video']", function(e) {
