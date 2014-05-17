@@ -215,6 +215,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.49 (05-17-2014) =
+* Bug fix - PLESAE UPDATE. URL rewriting has been fixed. 
+
 = 1.0.48 (05-17-2014) =
 * New Feature - We have added a new option within the user's dashboard that allows user to remove his/her account. 
 

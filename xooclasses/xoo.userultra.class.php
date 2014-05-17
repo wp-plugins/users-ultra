@@ -353,12 +353,14 @@ class XooUserUltra
 					
 			$this->create_rewrite_rules();
 			
-			/* Setup query variables */
-			 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );	
-			 
+			
 			 //pages created
 			 update_option('xoousersultra_auto_page_creation',0);
 		}
+		
+		/* Setup query variables */
+		 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );	
+			 
 			
 		
 	
