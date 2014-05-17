@@ -665,6 +665,37 @@ class XooUserLogin {
 	
   }
   
+    /*---->> re send activation link ****/  
+  public function user_resend_activation_link($user_id, $u_email, $user_login) 
+  {
+	  global $xoouserultra;
+	  
+	  require_once(ABSPATH . 'wp-includes/pluggable.php');
+	  require_once(ABSPATH . 'wp-includes/link-template.php');
+	  
+	    //email activation link				  
+		  $web_url =$this->get_my_account_direct_link();			  
+		  $pos = strpos("page_id", $web_url);		  
+		  $unique_key = get_user_meta($user_id, 'xoouser_ultra_very_key', true);
+
+			  
+		  if ($pos === false) // this is a tweak that applies when not Friendly URL is set.
+		  {
+			    //
+				$activation_link = $web_url."?act_link=".$unique_key;
+					
+		  } else {
+				     
+			 // found then we're using seo links					 
+				 $activation_link = $web_url."&act_link=".$unique_key;
+					
+		  }
+		  
+		  //send link to user
+		  $xoouserultra->messaging->re_send_activation_link($u_email, $user_login, $activation_link);
+		  
+   }
+  
   
     /*---->> Notify User ****/  
   public function user_account_notify($user_id, $u_email, $user_login, $user_pass) 

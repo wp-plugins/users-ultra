@@ -88,6 +88,11 @@ class XooUserUltra
 	
 	public function intial_settings()
 	{
+		
+		add_action( 'admin_notices', array(&$this, 'uultra_display_custom_message'));
+		add_action( 'wp_ajax_create_default_pages_auto', array( $this, 'create_default_pages_auto' ));	
+				 
+				 
 		$this->include_for_validation = array('text','fileupload','textarea','select','radio','checkbox','password');	
 		add_action('init',  array(&$this, 'xoousers_load_textdomain'));		
 		add_action('wp_enqueue_scripts', array(&$this, 'add_front_end_styles'), 9); 
@@ -101,8 +106,49 @@ class XooUserUltra
 		/*Setup redirection*/
 		add_action( 'wp_loaded', array(&$this, 'xoousersultra_redirect'), 9);
 		add_action( 'wp_head', array(&$this, 'pluginname_ajaxurl'));
-			 
 		
+		
+	}
+	
+	
+	
+	public function create_default_pages_auto () 
+	{
+		update_option('xoousersultra_auto_page_creation',1);
+		
+	}
+	
+	public function uultra_display_custom_message () 
+	{
+				
+		//default pages created?
+		$my_account_page = get_option('xoousersultra_my_account_page');
+		$fresh_page_creation  = get_option( 'xoousersultra_auto_page_creation' );
+		
+		if($my_account_page=="" && $fresh_page_creation =="")
+		//if($fresh_page_creation =="")
+		{
+			$message = __('Thanks for installing Users Ultra. Do you need help?. Users Ultra can create the initial pages automatically. You just need to <a href="#"  id="uultradmin-create-basic-fields">CLICK HERE</a> to start using Users Ultra. ', 'xoousers');
+			$this->uultra_fresh_install_message($message);		
+		
+		}
+		
+	}
+	
+	//display message
+	public function uultra_fresh_install_message ($message) 
+	{
+		if ($errormsg) 
+		{
+			echo '<div id="message" class="error">';
+			
+		}else{
+			
+			echo '<div id="message" class="updated fade">';
+		}
+	
+		echo "<p><strong>$message</strong></p></div>";
+	
 	}
 	
 	public function uultra_uninstall () 
@@ -155,7 +201,15 @@ class XooUserUltra
 	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
 		
 		$thetable = $wpdb->prefix."usersultra_activity";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");		
+	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
+		
+		//delete meta info		
+		delete_option( 'usersultra_profile_fields' );
+		delete_option( 'userultra_default_user_tabs' );
+		delete_option( 'xoousersultra_my_account_page' );
+		delete_option( 'xoousersultra_auto_page_creation' );
+		delete_option( 'userultra_options' );
+			
 		
 		
 	}
@@ -276,27 +330,35 @@ class XooUserUltra
 	
 	public function create_initial_pages ()
 	{
-		//create profile page
-		$login_page_id  = $this->create_login_page();
+		$fresh_page_creation  = get_option( 'xoousersultra_auto_page_creation' );
 		
-		//create registration page		
-		$login_page_id  = $this->create_register_page();
-		
-		//Create Main Page
-		$main_page_id = $this->create_main_page();		
-
-		//create profile page
-		$profile_page_id  = $this->create_profile_page($main_page_id);	
-		
-		//directory page
-		$directory_page_id  = $this->create_directory_page($main_page_id);	
-		
-				
-		$this->create_rewrite_rules();
-		
-		/* Setup query variables */
-	     add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );	
-		
+		if($fresh_page_creation==1) //user wants to recreate pages
+		{			
+			
+			//create profile page
+			$login_page_id  = $this->create_login_page();
+			
+			//create registration page		
+			$login_page_id  = $this->create_register_page();
+			
+			//Create Main Page
+			$main_page_id = $this->create_main_page();		
+	
+			//create profile page
+			$profile_page_id  = $this->create_profile_page($main_page_id);	
+			
+			//directory page
+			$directory_page_id  = $this->create_directory_page($main_page_id);	
+			
+					
+			$this->create_rewrite_rules();
+			
+			/* Setup query variables */
+			 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );	
+			 
+			 //pages created
+			 update_option('xoousersultra_auto_page_creation',0);
+		}
 			
 		
 	

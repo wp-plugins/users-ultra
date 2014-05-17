@@ -212,12 +212,17 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.47 (05-16-2014) =
+* New Feature - Auto-login after the account activation link is clicked.
+* New Feature - Admin can Activate user when it's in "pending activation" section. IMPORTANT, please go to Notifications settings, scroll down and click "save". This is only for already users.
+* Bug Fix     - Re-send activation link button in dashboard has been fixed.
+
 = 1.0.46 (05-16-2014) =
-* Bug fix- Warning messages when activating plugin. Some people reported this issue. We've tweaked the code.
+* Improvement- We have improved the users experience when activating the Plugin the very first time. Now.. the plugin won't create the default pages automatically but will ask users to create them automatically. I hope that help you guys.
 
 = 1.0.45 (05-15-2014) =
-* New Feature- We have added the capability to add a "featured image" when the user creates a post through the user dashboard.
-* Bug Fix- We have fixed the issue with translations. mo and po files path were updated. The default language files in english are xoousers-en_EN.po and xoousers-en_EN.mo. Should you wish to add your translation for instance in spanish you should upload your files in languages folder with the following names xoousers-es_ES.po xoousers-es_ES.mo
+* New Feature - We have added the capability to add a "featured image" when the user creates a post through the user dashboard.
+* Bug Fix     - We have fixed the issue with translations. mo and po files path were updated. The default language files in english are xoousers-en_EN.po and xoousers-en_EN.mo. Should you wish to add your translation for instance in spanish you should upload your files in languages folder with the following names xoousers-es_ES.po xoousers-es_ES.mo
 
 = 1.0.44 (05-14-2014) =
 * Bug Fix - PLEASE UPDATE ASAP. We have fixed a Javascript conflict with some popular themes that was affecting the galleries, photos and registration.

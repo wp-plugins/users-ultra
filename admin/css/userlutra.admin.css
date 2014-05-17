@@ -81,10 +81,9 @@ samp {
 
 
 
-.user-ultra-sect .left_col_users{ display:inline-block; vertical-align:top; border:#EFEFEF solid 1px; width:41%; min-height:210px;  height:auto !important; margin-left:10px; ; padding-bottom:10px;}
+.user-ultra-sect .left_col_users{ display:inline-block; vertical-align:top; border:#EFEFEF solid 1px; width:20%; min-height:210px;  height:auto !important; margin-left:10px; ; padding-bottom:10px;}
 
-.user-ultra-sect .right_col_users{ display:inline-block; vertical-align:top; border:#EFEFEF solid 1px; width:55%;min-height:210px;  height:auto !important; margin-left:10px; padding:0px 5px 10px 5px}
-
+.user-ultra-sect .right_col_users{ display:inline-block; vertical-align:top; border:#EFEFEF solid 1px; width:75%;min-height:210px;  height:auto !important; margin-left:10px; padding:0px 5px 10px 5px}
 
 
 .user-ultra-sect .statblock{ display:inline-block; border:#EFEFEF solid 1px; width:22%;height:80px;  margin:10px 5px 10px 5px;}

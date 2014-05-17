@@ -69,6 +69,14 @@ $this->create_plugin_setting(
 
 $this->create_plugin_setting(
         'textarea',
+        'messaging_re_send_activation_link',
+        __('Resend Activation Link','xoousers'),array(),
+        __('This message will be sent to the user when clicking the re-send activation option.','xoousers'),
+        __('','xoousers')
+);
+
+$this->create_plugin_setting(
+        'textarea',
         'account_verified_sucess_message_body',
         __('Account Verified Message','xoousers'),array(),
         __('This message will be sent to the users when they verify their accounts.','xoousers'),

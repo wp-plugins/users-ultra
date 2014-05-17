@@ -110,6 +110,35 @@ class XooMessaging extends XooUserUltraCommon
 		
 	}
 	
+	//--- Link Activation Resend	
+	public function  re_send_activation_link($u_email, $user_login, $activation_link)
+	{
+		global $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		
+		$admin_email =get_option('admin_email'); 
+		
+		
+		$subject = __('Verify Your Account','xoousers');
+		
+		//get welcome email
+		$template_client =stripslashes($this->get_option('messaging_re_send_activation_link'));
+		
+		$login_url =site_url("/");
+		
+		$template_client = str_replace("{{user_ultra_activation_url}}", $activation_link,  $template_client);
+		$template_client = str_replace("{{userultra_user_email}}", $u_email,  $template_client);
+		$template_client = str_replace("{{userultra_user_name}}", $user_login,  $template_client);
+		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);
+		
+		
+		$this->send($u_email, $subject, $template_client);
+		
+	}
+	
+	
 	//--- Link Activation	
 	public function  welcome_email_with_activation($u_email, $user_login, $user_pass,  $activation_link)
 	{

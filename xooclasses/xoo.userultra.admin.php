@@ -380,6 +380,8 @@ class XooUserAdmin extends XooUserUltraCommon
 						
 						'messaging_welcome_email_with_activation_client' => $this->get_email_template('new_account_activation_link'),
 						
+						'messaging_re_send_activation_link' => $this->get_email_template('messaging_re_send_activation_link'),
+						
 						'messaging_welcome_email_with_activation_admin' => $this->get_email_template('new_account_activation_link_admin'),
 						
 						
@@ -467,6 +469,15 @@ class XooUserAdmin extends XooUserUltraCommon
 		$email_body .= __('If you have any problems, please contact us at {{userultra_admin_email}}.','xoousers') . $line_break.$line_break;
 		$email_body .= __('Best Regards!','xoousers');
 	    $this->notifications_email['new_account_activation_link'] = $email_body;
+		
+		$email_body = __('Hi,' ,"xoousers") . $line_break.$line_break;
+		$email_body .= __("We are re-sending you the activation link.","xoousers") .  $line_break.$line_break;
+		$email_body .= __("Please click on the link below to activate your account:","xoousers") .  $line_break.$line_break;
+		$email_body .= "{{user_ultra_activation_url}}" . $line_break.$line_break;
+	
+		$email_body .= __('If you have any problems, please contact us at {{userultra_admin_email}}.','xoousers') . $line_break.$line_break;
+		$email_body .= __('Best Regards!','xoousers');
+	    $this->notifications_email['messaging_re_send_activation_link'] = $email_body;
 		
 		//admin
 		$email_body = __('Hi Admin,' ,"xoousers") . $line_break.$line_break;

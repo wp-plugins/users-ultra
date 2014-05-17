@@ -197,7 +197,7 @@ $howmany_latest= 10;
                     <th><?php _e('Avatar', 'xoousers'); ?></th>
                     <th><?php _e('Username', 'xoousers'); ?></th>                 
                     
-                    <th><?php _e('Registered', 'xoousers'); ?></th>
+                   
                    
                 </tr>
             </thead>
@@ -215,7 +215,7 @@ $howmany_latest= 10;
                     <td><?php echo $user->user_login; ?></td>
                    
                    
-                     <td><?php echo $user->user_registered; ?></td>
+                    
                    
                 </tr>
                 

@@ -42,6 +42,8 @@ class XooUserUser {
 
 		add_action( 'wp_ajax_get_pending_moderation_list', array( $this, 'get_pending_moderation_list' ));
 		add_action( 'wp_ajax_user_approve_pending_account', array( $this, 'user_approve_pending_account' ));
+		add_action( 'wp_ajax_user_resend_activation_link', array( $this, 'user_resend_activation_link' ));
+		
 		add_action( 'wp_ajax_user_delete_account', array( $this, 'user_delete_account' ));
 		
 		add_action( 'wp_ajax_get_pending_activation_list', array( $this, 'get_pending_activation_list' ));
@@ -663,6 +665,7 @@ class XooUserUser {
 						 <td>'.$user->user_registered.'</td>
 					   <td> 
 					   <a href="#" class="button uultradmin-user-deny" user-id="'.$user_id.'">'.__('Delete','xoousers').'					   </a> <a href="#" class="button-primary uultradmin-user-resend-link" user-id="'.$user_id.'">'.__('Send Link','xoousers').'
+					   </a><a href="#" class="button-primary uultradmin-user-approve-2" user-id="'.$user_id.'">'.__('Confirm','xoousers').'
 					   </a></td></tr>';
 					
 					
@@ -714,6 +717,28 @@ class XooUserUser {
 	
 	}
 	
+	/*Resend link Account*/
+	public function user_resend_activation_link ()
+	{
+		global $wpdb,  $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
+		$user_id = $_POST["user_id"];
+		
+		$user = get_user_by( 'id', $user_id );
+		$u_email=$user->user_email;
+		$user_login= $user->user_login;
+		
+		//noti user		
+		$xoouserultra->login->user_resend_activation_link($user_id, $u_email, $user_login);
+		
+		echo "<div class='user-ultra-success uultra-notification'>".__("Activation link sent", 'xoousers')."</div>";
+		
+		die();
+	
+	
+	}
 	
 	
 	/*Activate Account*/
@@ -842,6 +867,8 @@ class XooUserUser {
 		
 	
 	}
+	
+	
 	
 	/*Get Pending Activation Count*/
 	public function get_pending_activation_count ()

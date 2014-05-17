@@ -497,6 +497,33 @@ jQuery(document).ready(function($) {
 	});
 	
 	
+	/* Verify user */
+	
+	jQuery('.uultradmin-user-approve-2').live('click',function(e){
+		e.preventDefault();
+		
+		 
+		 var user_id =  jQuery(this).attr("user-id");	
+		
+		jQuery.ajax({
+						type: 'POST',
+						url: ajaxurl,
+						data: {"action": "user_approve_pending_account", 
+						"user_id": user_id },
+						
+						success: function(data){					
+						
+								$("#uultra-user-acti-noti").html(data);
+								setTimeout("reload_pending_activation()", 2000);	
+														
+							
+							}
+					});
+		
+				
+		return false;
+	});
+	
 	/* Unverify user */
 	
 		jQuery('.uultradmin-user-deny').live('click',function(e){
@@ -593,18 +620,51 @@ jQuery(document).ready(function($) {
 				
 		return false;
 	});
-
 	
+	jQuery('#uultradmin-create-basic-fields').live('click',function(e){
+		e.preventDefault();
+		jQuery.ajax({
+						type: 'POST',
+						url: ajaxurl,
+						data: {"action": "create_default_pages_auto" 
+						 },
+						
+						success: function(data){
+							
+							window.location.reload();
+								
+							
+							}
+					});
+			
+		return false;
+	});
 	
-	
-	
-	
-	
-	
+	//user ultra re-send activation link
+	jQuery(document).on("click", ".uultradmin-user-resend-link", function(e) {
 		
+		e.preventDefault();	
+		 
+		 var user_id =  jQuery(this).attr("user-id");
+		jQuery.ajax({
+						type: 'POST',
+						url: ajaxurl,
+						data: {"action": "user_resend_activation_link", 
+						"user_id": user_id },
+						
+						success: function(data){			
+									
+						
+							//jQuery("#uu-edit-user-box-"+user_id).html(data);
+							//jQuery("#uu-edit-user-box-"+user_id).slideDown();							
+							
+							
+							}
+					});
+			
+		return false;
+	});
 	
-		
-
 	
 });
 
