@@ -215,6 +215,10 @@ Initial release.
 
 == Changelog ==
 
+
+= 1.0.50 (05-17-2014) =
+* Bug fix - We have tweaked the CSS style sheet to avoid css overlapping. 
+
 = 1.0.49 (05-17-2014) =
 * Bug fix - PLESAE UPDATE. URL rewriting has been fixed. 
 
