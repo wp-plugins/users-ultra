@@ -2105,7 +2105,7 @@ class XooUserUltra
 		{
 			$display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show"></div>';
 						
-			$display .= '<input type="checkbox"  title="Receive Daily Updates" name="uultra-mailchimp-confirmation" value="1" > '.$this->get_option('mailchimp_text').' ';
+			$display .= '<input type="checkbox"  title="Receive Daily Updates" name="uultra-mailchimp-confirmation" value="1" > <label for="checkbox1"><span></span>'.$this->get_option('mailchimp_text').'</label>' ;
 			
 			
 		

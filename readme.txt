@@ -215,6 +215,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.52 (05-17-2014) =
+* Improvements - Mailchimp checkbox has been fixed. Now, the checkbox looks much more modern. Please don't forget to input your API key otherwise the checkbox is not displayed. Thanks
+
 = 1.0.51 (05-17-2014) =
 * Improvements - Please update. We have implemented some changes for the URL rewriting rules. Thanks
 

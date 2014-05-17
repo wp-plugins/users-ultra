@@ -102,11 +102,14 @@ class XooUserPhoto {
 		
 		// Create photo rel
 		$query = 'CREATE TABLE IF NOT EXISTS ' . $wpdb->prefix . 'usersultra_photo_cat_rel (
+				`photo_rel_id` bigint(20) NOT NULL auto_increment,
 				`photo_rel_cat_id` bigint(20) NOT NULL ,						
-				`photo_rel_photo_id` bigint(20) NOT NULL
+				`photo_rel_photo_id` bigint(20) NOT NULL,
+				PRIMARY KEY (`photo_rel_id`)
 			) COLLATE utf8_general_ci;';
 	
 		$wpdb->query( $query );
+		
 		
 		// Create table videos
 		$query = 'CREATE TABLE IF NOT EXISTS ' . $wpdb->prefix . 'usersultra_videos (
@@ -145,6 +148,16 @@ class XooUserPhoto {
 		{	//photo_tags
 			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_photos add column photo_tags varchar (200) ; ';
 			$wpdb->query($sql);
+		}
+		
+		/*Tnhis has been added*/		
+		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_photo_cat_rel where field="photo_rel_id" ';		
+		$rows = $wpdb->get_results($sql);		
+		if ( empty( $rows ) )
+		{	//photo_gategories
+			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_photo_cat_rel add column photo_rel_id bigint(20) NOT NULL AUTO_INCREMENT,  ADD PRIMARY KEY (photo_rel_id) ; ';
+			$wpdb->query($sql);
+			
 		}
 	
 		
