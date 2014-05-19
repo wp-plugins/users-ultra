@@ -1300,7 +1300,7 @@ class XooUserPhoto {
 	}
 	
 	/*Reload Galleries*/
-	public function reload_galleries_public ($user_id)
+	public function reload_galleries_public ($user_id, $gallery_type=null)
 	{
 		global $wpdb , $xoouserultra;
 				
@@ -1609,6 +1609,56 @@ class XooUserPhoto {
 		
 		echo $html;
 		die();
+		
+	}
+	
+	
+	public function edit_photo_confirm ()
+	{
+		global $wpdb, $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/formatting.php');
+		
+				
+		$user_id = get_current_user_id();
+		
+		$photo_id = $_POST["photo_id"];
+		
+		$photo_name = sanitize_text_field($_POST["photo_name"]);
+		$photo_desc = sanitize_text_field($_POST["photo_desc"]);
+		$photo_tags = sanitize_text_field($_POST["photo_tags"]);
+		$photo_category = sanitize_text_field($_POST["photo_category"]);
+		
+			
+		
+		if($photo_id!="")
+		{
+			$query = "UPDATE " . $wpdb->prefix ."usersultra_photos SET `photo_name` = '$photo_name', `photo_desc` = '$photo_desc'  , `photo_tags` = '$photo_tags'  WHERE  `photo_id` = '$photo_id' ";
+			$wpdb->query( $query );		
+			
+			//update categories table
+			$query = "DELETE FROM " . $wpdb->prefix ."usersultra_photo_cat_rel   WHERE  `photo_rel_photo_id` = '$photo_id' ";
+			$wpdb->query( $query );
+			
+			//only one cate for free
+			$new_array = array(
+						'photo_rel_cat_id'     => $photo_category,
+						'photo_rel_photo_id'   => $photo_id						
+						
+						
+					);
+					
+			// insert into database
+			$wpdb->insert( $wpdb->prefix . 'usersultra_photo_cat_rel', $new_array, array( '%d', '%s'));
+					
+			
+			
+			
+					
+		}	
+		
+		die();
+		
 		
 	}
 	
@@ -1933,7 +1983,7 @@ class XooUserPhoto {
 	
 	
 	
-	public function get_photos_of_gal_public ($gal_id, $display_photo_rating)
+	public function get_photos_of_gal_public ($gal_id, $display_photo_rating, $gallery_type = null)
 	{
 		global $wpdb, $xoouserultra;
 		
@@ -1967,11 +2017,29 @@ class XooUserPhoto {
 					//get thumbnail
 					
 					$thumb = $site_url.$upload_folder."/".$user_id."/".$photo->photo_thumb;
-					
+					$large = $site_url.$upload_folder."/".$user_id."/".$photo->photo_large;
 								
-					$html.= "<li id='".$photo->photo_id."' >
+					$html.= "<li id='".$photo->photo_id."' >'";
+					
+					
+					
+					if($gallery_type=="lightbox")
+					{
+						
+						$html .="<a href='".$large."' class='' data-lightbox='example-1' data-title='".$photo->photo_desc."'><img src='".$thumb."' class='rounded'/> </a>";
+					
+				    
+					}else{
+						
+						$html .="<a href='".$xoouserultra->userpanel->public_profile_get_photo_link($photo->photo_id, $user_id)."' class='' ><img src='".$thumb."' class='rounded'/> </a>";
+					
+						
+						
+					}
 										
-					<a href='".$xoouserultra->userpanel->public_profile_get_photo_link($photo->photo_id, $user_id)."' class='' ><img src='".$thumb."' class='rounded'/> </a>";
+					
+					
+					
 					
 					if($display_photo_rating == "yes")	
 					{

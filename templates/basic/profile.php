@@ -94,7 +94,7 @@ global $xoouserultra;
                 <div class="photos">
              
                        <ul>
-                          <?php echo $xoouserultra->photogallery->get_photos_of_gal_public($gal_id, $display_photo_rating);?>
+                          <?php echo $xoouserultra->photogallery->get_photos_of_gal_public($gal_id, $display_photo_rating, $gallery_type);?>
                        
                        </ul>
             

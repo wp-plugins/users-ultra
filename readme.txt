@@ -29,6 +29,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Recent New Features:</strong><br>
 <pre>
 
+05-18-2014 -- Lightbox Photo Gallery.
 05-17-2014 -- Users can delete their accounts through the users dashboard.
 05-16-2014 -- Admin can approve an account manually.
 05-16-2014 -- Admin can re-send activation link.
@@ -214,6 +215,12 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+
+= 1.0.53 (05-18-2014) =
+* Bug Fix - Photo edition has been fixed.
+* New Feature - New shortcodes has been added to the Users Ultra Button in the WP editor.
+* New Feature - Lightbox for User's galleries. Now the users can choice to display either photos in a single page or by using fancy lightbox gallery.
 
 = 1.0.52 (05-17-2014) =
 * Improvements - Mailchimp checkbox has been fixed. Now, the checkbox looks much more modern. Please don't forget to input your API key otherwise the checkbox is not displayed. Thanks

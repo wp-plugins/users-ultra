@@ -90,7 +90,8 @@ class XooUserUltra
 	{
 		
 		add_action( 'admin_notices', array(&$this, 'uultra_display_custom_message'));
-		add_action( 'wp_ajax_create_default_pages_auto', array( $this, 'create_default_pages_auto' ));	
+		add_action( 'wp_ajax_create_default_pages_auto', array( $this, 'create_default_pages_auto' ));
+		add_action( 'wp_ajax_hide_rate_message', array( $this, 'hide_rate_message' ));	
 				 
 				 
 		$this->include_for_validation = array('text','fileupload','textarea','select','radio','checkbox','password');	
@@ -118,6 +119,12 @@ class XooUserUltra
 		
 	}
 	
+	public function hide_rate_message () 
+	{
+		update_option('xoousersultra_already_rated_ultra',1);
+		
+	}
+	
 	public function uultra_display_custom_message () 
 	{
 				
@@ -132,6 +139,16 @@ class XooUserUltra
 			$this->uultra_fresh_install_message($message);		
 		
 		}
+		
+		$rating_uultra = get_option( 'xoousersultra_already_rated_ultra' );	
+		if($rating_uultra=="" )
+		{
+			$message = __("Thanks for installing Users Ultra. Please help us to keep this plugin free by leaving a 5/5 review on WordPress. It takes only 5 minutes. <a href='http://wordpress.org/plugins/users-ultra/' target='_blank' >CLICK HERE</a> to leave a rating. If you've already left your rating or you don't wish to see this message anymore <a href='#'  id='uultradmin-remove-ratingmessage'>CLICK HERE</a>  ", "xoousers");
+			
+			$this->uultra_fresh_install_message($message);		
+		
+		}	
+		//
 		
 	}
 	
@@ -209,6 +226,9 @@ class XooUserUltra
 		delete_option( 'xoousersultra_my_account_page' );
 		delete_option( 'xoousersultra_auto_page_creation' );
 		delete_option( 'userultra_options' );
+		delete_option( 'xoousersultra_already_rated_ultra' );
+		
+		
 			
 		
 		

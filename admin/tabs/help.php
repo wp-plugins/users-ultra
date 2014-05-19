@@ -33,6 +33,12 @@ global $xoouserultra;
                   <strong>User Spotlight</strong>
                  <pre> [usersultra_users_promote optional_fields_to_display='rating,social' users_list='59'  display_country_flag='both']  </pre>
                  
+                   <strong>User Profile</strong>
+                 <pre>[usersultra_profile</pre>
+                 
+                   <strong>User Profile With Lightbox Gallery</strong>
+                 <pre>[usersultra_profile gallery_type='lightbox'] </pre>
+                 
                    <strong>Latest Users</strong>
                  <pre> [usersultra_users_latest optional_fields_to_display='social' ]   </pre>
                  

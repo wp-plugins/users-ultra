@@ -211,6 +211,16 @@
                             }       
                         } 
 						
+						,						
+						{
+                            text: 'User Profiles with Lightbox Gallery',
+                            value: "[usersultra_profile gallery_type='lightbox'] ",
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } 
+						
 						
                     ]
                 },
