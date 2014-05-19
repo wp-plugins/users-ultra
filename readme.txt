@@ -218,6 +218,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.57 (05-19-2014) =
+* Bug Fix - Help tab has been updated.
+
 = 1.0.56 (05-19-2014) =
 * New Feature - Logout Shortcode has been added, this shortcode gives you the capability to set a custom redirection.
 

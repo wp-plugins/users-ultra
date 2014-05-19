@@ -22,6 +22,9 @@ global $xoouserultra;
                  <strong>Login Form</strong>
                  <pre>[usersultra_login]</pre>
                  
+                  <strong>Logout</strong>
+                 <pre>[usersultra_logout]</pre>
+                 
                  <strong>Members Directory</strong>
                  <pre>[usersultra_directory]</pre>
                  
@@ -37,7 +40,7 @@ global $xoouserultra;
                  <pre> [usersultra_users_promote optional_fields_to_display='rating,social' users_list='59'  display_country_flag='both']  </pre>
                  
                    <strong>User Profile</strong>
-                 <pre>[usersultra_profile</pre>
+                 <pre>[usersultra_profile]</pre>
                  
                    <strong>User Profile With Lightbox Gallery</strong>
                  <pre>[usersultra_profile gallery_type='lightbox'] </pre>
