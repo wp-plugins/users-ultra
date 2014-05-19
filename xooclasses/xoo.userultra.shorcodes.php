@@ -18,6 +18,7 @@ class XooShortCode {
 	    add_filter( 'the_content', 'shortcode_unautop');
 			
 		add_shortcode( 'usersultra_login', array(&$this,'usersultra_login_function') );
+		add_shortcode( 'usersultra_logout', array(&$this,'usersultra_logout_function') );
 		add_shortcode( 'usersultra_registration', array(&$this,'usersultra_registration_function') );
 		add_shortcode( 'usersultra_my_messages', array(&$this,'usersultra_mymessages_function') );
 		add_shortcode( 'usersultra_my_account', array(&$this,'usersultra_my_account_function') );
@@ -108,6 +109,19 @@ class XooShortCode {
 			//display mini profile
 			return $xoouserultra->show_minified_profile( $atts );		
 			
+			
+		}
+	
+	}
+	
+	//logout
+	public function  usersultra_logout_function ($atts)
+	{
+		global $xoouserultra;
+				
+		if (is_user_logged_in()) 
+		{
+			return $xoouserultra->custom_logout_page( $atts );				
 			
 		}
 	

@@ -28,7 +28,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 <strong>Recent New Features:</strong><br>
 <pre>
-
+05-19-2014 -- Logout Shortcode with custom redirection.
 05-19-2014 -- Custom Redirection after login.
 05-19-2014 -- Filter Users by WP Roles.
 05-18-2014 -- Lightbox Photo Gallery.
@@ -217,6 +217,9 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.56 (05-19-2014) =
+* New Feature - Logout Shortcode has been added, this shortcode gives you the capability to set a custom redirection.
 
 = 1.0.55 (05-19-2014) =
 * New Feature - Custom redirection after login.

@@ -262,6 +262,28 @@ class XooUserUltra
 		return wp_logout_url($redirect_to);
 	}
 	
+	public function custom_logout_page ($atts)
+	{
+		
+		extract( shortcode_atts( array(	
+			
+			'redirect_to' => '', 		
+							
+			
+		), $atts ) );
+		
+		
+		if($redirect_to=="")
+		{
+				$redirect_to = $_SERVER['REQUEST_URI'];
+		
+		}
+		$logout_url = wp_logout_url($redirect_to);
+	
+		wp_redirect($logout_url);
+		
+	}
+	
 	public function get_redirection_link ($module)
 	{
 		$url ="";

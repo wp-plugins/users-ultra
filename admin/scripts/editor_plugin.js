@@ -29,6 +29,26 @@
                                 editor.insertContent(this.value());
                             }       
                         }
+						,
+                        {
+                            text: 'Logout',
+                            value: '[usersultra_logout ]',
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        }						
+						,
+                        {
+                            text: 'Logout with Custom Redirection',
+                            value: '[usersultra_logout redirect_to="http://google.com"]',
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        }
+						
+						
                     ]
                 },
                //registration form
