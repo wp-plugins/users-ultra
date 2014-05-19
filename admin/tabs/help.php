@@ -25,6 +25,9 @@ global $xoouserultra;
                  <strong>Members Directory</strong>
                  <pre>[usersultra_directory]</pre>
                  
+                   <strong>Filter Users By Role</strong>
+                 <pre>[usersultra_directory role='author']</pre>
+                 
                   <strong>Top Rated Users</strong>
                  <pre> [usersultra_users_top_rated optional_fields_to_display='friend,rating,social,country'  display_country_flag='both'] </pre>
                   <strong>Most Visited Users</strong>

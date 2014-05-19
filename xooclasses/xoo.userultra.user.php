@@ -3190,6 +3190,21 @@ class XooUserUser {
 		$query['meta_query'] = array('relation' => strtoupper($relation) );
 		
 		
+		/*This is applied only if we have to filder certain roles*/
+		if (isset($role)){
+			$roles = explode(',',$role);
+			if (count($roles) >= 2){
+				$query['meta_query']['relation'] = 'or';
+			}
+			foreach($roles as $subrole){
+			$query['meta_query'][] = array(
+				'key' => $wpdb->get_blog_prefix( $blog_id ) . 'capabilities',
+				'value' => $subrole,
+				'compare' => 'like'
+			);
+			}
+		}
+		
 	
 	    if (isset($_GET['uultra_search'])) 
 		{
@@ -3523,6 +3538,8 @@ class XooUserUser {
 			'display_total_found' => 'yes', // display total found
 			'display_total_found_text' => 'Users', // display total found			
 			'list_order' => 'DESC', // asc or desc ordering
+			'role' => '', // filter by role
+			'relation' => 'AND', // filter by role
 		), $atts ) );
 		
 		
@@ -3531,7 +3548,7 @@ class XooUserUser {
 		
 		$search_array = array('list_per_page' => $list_per_page, 'list_order' => $list_order);	
 		
-		$args= array('per_page' => $list_per_page, 'relation' => 'AND');
+		$args= array('per_page' => $list_per_page, 'relation' => $relation, 'role' => $role);
 		
 		$this->current_users_page = $page;
 		
