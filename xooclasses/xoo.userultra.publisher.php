@@ -192,7 +192,7 @@ class XooPublisher
                  
                 <?php       
 				
-				$editor_settings = array('media_buttons' => false); 
+				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15); 
 				
 				$content = $post->post_content;     
                 
@@ -333,7 +333,7 @@ class XooPublisher
                  
                 <?php       
 				
-				$editor_settings = array('media_buttons' => false);      
+				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15);      
                 
                  wp_editor( $content, $editor_id , $editor_settings);
                 
