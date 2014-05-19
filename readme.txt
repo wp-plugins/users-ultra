@@ -29,6 +29,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Recent New Features:</strong><br>
 <pre>
 
+05-19-2014 -- Custom Redirection after login.
 05-19-2014 -- Filter Users by WP Roles.
 05-18-2014 -- Lightbox Photo Gallery.
 05-17-2014 -- Users can delete their accounts through the users dashboard.
@@ -216,6 +217,9 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.55 (05-19-2014) =
+* New Feature - Custom redirection after login.
 
 = 1.0.54 (05-18-2014) =
 * New Feature - Option to Filter Users by WP Roles.
