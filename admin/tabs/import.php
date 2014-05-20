@@ -77,22 +77,28 @@ global $xoouserultra;
 
  <div class="user-ultra-sect ">
         
-        <h3><?php _e('Woocommerce Synchronize','xoousers'); ?></h3>
-        <p><?php _e('This feature allows you to sync Woocommerce user profiles and let them manage their personal information through Users Ultra'); ?></p>
+        <h3><?php _e('Auto Sync with WooCommerce','xoousers'); ?></h3>
+        
+ <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) { ?>
+        <p><?php _e('Syncing with WooCommerce will automatically add WooCommerce customer profile fields to your Users Ultra Plugin. A quick way to have a WooCommerce account page integrated with Users Ultra. Just click the following button and Users Ultra will do the work for you.','xoousers'); ?></p>
         
         
-        <p class="submit">
-	<input type="submit" name="submit" id="uultra-btn-sync-woo-btn" class="button button-primary " value="<?php _e('Start Woocommerce Sync Now','xoousers'); ?>"  />
-	
-       </p>
+              
+       <p><a href="<?php echo add_query_arg( array('sync' => 'woocommerce') ); ?>" class="button button-secondary"><?php _e('Sync and keep existing fields','xoousers'); ?></a> 
+<a href="<?php echo add_query_arg( array('sync' => 'woocommerce_clean') ); ?>" class="button button-secondary"><?php _e('Sync and delete existing fields','xoousers'); ?></a></p>
        
        <p id='uultra-sync-woo-results'>
        
        </p>
                      
-       
+ <?php } else { ?>
+
+<p><?php _e('Please install WooCommerce plugin first.','xoousers'); ?></p>
+
+<?php } ?>      
     
 </div> 
+ 
 
 <script>
 var message_sync_users = "<?php echo _e('Please wait, this process may take several minutes','xoousers')?>"

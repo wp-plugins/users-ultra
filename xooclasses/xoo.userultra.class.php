@@ -1043,7 +1043,10 @@ class XooUserUltra
 	public function set_admin_classes()
 	{
 		
-		 $this->classes_array = array("xooadmin" =>"xoo.userultra.admin", "adminshortcode" =>"xoo.userultra.adminshortcodes"); 		 
+		 $this->classes_array = array("xooadmin" =>"xoo.userultra.admin",
+		  "adminshortcode" =>"xoo.userultra.adminshortcodes",
+		  "woocommerce" =>"xoo.userultra.woocommerce"  
+		  ); 		 
 		 
 		
 	}

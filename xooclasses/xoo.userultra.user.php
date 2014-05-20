@@ -1176,7 +1176,7 @@ class XooUserUser {
 		if(isset($i_array_end['position']))
 		{
 		    $array_end = $i_array_end['position'];
-		    if ($array[$array_end]['type'] == 'seperator') {
+		    if ($array[$array_end]['type'] == 'separator') {
 		        unset($array[$array_end]);
 		    }
 		}
@@ -1206,7 +1206,7 @@ class XooUserUser {
 			
 			
 			/* Fieldset seperator */
-			if ( $type == 'seperator' && $deleted == 0 && $private == 0 ) 
+			if ( $type == 'separator' && $deleted == 0 && $private == 0 ) 
 			{
 				$html .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.$name.'</div>';
 			}

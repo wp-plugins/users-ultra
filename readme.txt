@@ -28,6 +28,8 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 <strong>Recent New Features:</strong><br>
 <pre>
+
+05-19-2014 -- Auto Sync with WooCommerce.
 05-19-2014 -- Logout Shortcode with custom redirection.
 05-19-2014 -- Custom Redirection after login.
 05-19-2014 -- Filter Users by WP Roles.
@@ -41,6 +43,9 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
+
+<strong>Auto Sync with WooCommerce</strong><br>
+Syncing with WooCommerce will automatically add WooCommerce customer profile fields to your Users Ultra Plugin. A quick way to have a WooCommerce account page integrated with Users Ultra. This great feature allows user to manage their Shipping Information through Users Ultra instead of using the default WooCommerce profile page. Users Ultra lets you sync your current WooCommerce users in just one click.
 
 <strong>Private Messages System For WordPress</strong><br>
 Users Ultra comes with a powerful private messaging system that allows users to send messages to other members of the user's community.
@@ -217,6 +222,10 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+
+= 1.0.58 (05-19-2014) =
+* New Feature - Auto Sync with WooCommerce. Syncing with WooCommerce will automatically add WooCommerce customer profile fields to your Users Ultra Plugin. A quick way to have a WooCommerce account page integrated with Users Ultra.
 
 = 1.0.57 (05-19-2014) =
 * Bug Fix - Help tab has been updated.
