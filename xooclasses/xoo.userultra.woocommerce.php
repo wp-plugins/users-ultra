@@ -57,7 +57,7 @@ class XooWooCommerce {
 						$woo_meta = woocommerce_get_customer_meta_fields();
 					}				
 				}else{
-					echo __('Woocommerce File Doesn\'t Exist','xoousers');exit;
+					//echo __('Woocommerce File Doesn\'t Exist','xoousers');exit;
 				}	
 				
 				$new_index = max(array_keys($fields));
@@ -161,7 +161,7 @@ class XooWooCommerce {
 				}
 				
 				update_option('usersultra_profile_fields', $fields);
-				echo '<div class="updated"><p><strong>'.__('WooCommerce customer fields have been added successfully.','xoousers').'</strong></p></div>';
+				//echo '<div class="updated"><p><strong>'.__('WooCommerce customer fields have been added successfully.','xoousers').'</strong></p></div>';
 				
 				}
 				
@@ -278,7 +278,7 @@ class XooWooCommerce {
 				}
 				
 				update_option('usersultra_profile_fields', $fields);
-				echo '<div class="updated"><p><strong>'.__('WooCommerce customer fields have been added successfully.','xoousers').'</strong></p></div>';
+				//echo '<div class="updated"><p><strong>'.__('WooCommerce customer fields have been added successfully.','xoousers').'</strong></p></div>';
 				
 				}
 					
