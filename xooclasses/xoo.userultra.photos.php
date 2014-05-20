@@ -1575,7 +1575,7 @@ class XooUserPhoto {
 				$html .="<p><input type='text' value='".$photo->photo_desc."' class='xoouserultra-input' id='uultra_photo_desc_edit_".$photo->photo_id."'></p>";
 				
 				$html .="<p>".__( 'Tags', 'xoousers' )."</p>";				
-				$html .="<p><input type='text' value='".$photo->photo_tags."' class='xoouserultra-input' id='uultra_photo_desc_edit_".$photo->photo_id."'></p>";
+				$html .="<p><input type='text' value='".$photo->photo_tags."' class='xoouserultra-input' id='uultra_photo_tags_edit_".$photo->photo_id."'></p>";
 				
 				$html .="<p>".__( 'Category', 'xoousers' )."</p>";
 				$html .="<p><select class='xoouserultra-input' id='uultra_photo_category_edit_".$photo->photo_id."'>	";

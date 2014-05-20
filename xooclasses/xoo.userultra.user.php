@@ -42,6 +42,8 @@ class XooUserUser {
 		}
 		
 		add_action( 'wp_ajax_refresh_avatar', array( $this, 'refresh_avatar' ));
+		add_action( 'wp_ajax_delete_user_avatar', array( $this, 'delete_user_avatar' ));	
+
 		add_action( 'wp_ajax_nopriv_send_reset_link', array( $this, 'send_reset_link' ));
 		
 		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
@@ -4108,6 +4110,15 @@ class XooUserUser {
 		die();
 	}
 	
+	/* delete avatar */
+	function delete_user_avatar() 
+	{
+		$user_id = get_current_user_id();
+		
+		update_user_meta($user_id, 'user_pic', '');
+		die();
+	}
+	
 	
 	
 	/* Get picture by ID */
@@ -4198,6 +4209,8 @@ class XooUserUser {
 							<p class="drag-drop-info"><?php	_e('Drop Avatar here', 'xoousers') ; ?></p>
 							<p><?php _ex('or', 'Uploader: Drop files here - or - Select Files'); ?></p>
 							<p class="drag-drop-buttons"><input id="plupload-browse-button-avatar" type="button" value="<?php esc_attr_e('Select Files'); ?>" class="button" /></p>
+                            
+                               <p class="drag-drop-buttons"><input id="btn-delete-user-avatar" type="button" value="<?php esc_attr_e('Remove Avatar'); ?>" class="button" /></p>
 														
 						</div>
                         

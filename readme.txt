@@ -29,6 +29,7 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 <strong>Recent New Features:</strong><br>
 <pre>
 
+05-20-2014 -- Users are able to delete their avatars through the user's backend.
 05-19-2014 -- Auto Sync with WooCommerce.
 05-19-2014 -- Logout Shortcode with custom redirection.
 05-19-2014 -- Custom Redirection after login.
@@ -222,6 +223,11 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.59 (05-20-2014) =
+* New Feature - Users Ultra creates the uploading folder with 0755 attributes automatically.
+* New Feature - Users are able to delete their avatars through the user's backend.
+* Bug Fix     - There was an issue when editing the photo description. this has been sorted out. Please do not forget to clean your temps files in your browser since we made some changes to JS files.
 
 
 = 1.0.58 (05-19-2014) =

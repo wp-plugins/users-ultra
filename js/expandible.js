@@ -398,6 +398,45 @@ if(typeof $ == 'undefined'){
 				
         });
 		
+		$("body").on("click", ".btn-photo-conf", function(e) {
+			
+			e.preventDefault();		
+			
+			
+				var photo_id =  jQuery(this).attr("data-id");	
+				var photo_name= $("#uultra_photo_name_edit_"+photo_id).val()	;
+				var photo_desc =  $("#uultra_photo_desc_edit_"+photo_id).val();
+				
+				var photo_tags =  $("#uultra_photo_tags_edit_"+photo_id).val();				
+				var photo_category =  $("#uultra_photo_category_edit_"+photo_id).val();
+				
+				
+				
+				
+									
+				jQuery.ajax({
+					type: 'POST',
+					url: ajaxurl,
+					data: {"action": "edit_photo_confirm", "photo_id": photo_id , "photo_name": photo_name , "photo_desc": photo_desc , "photo_tags": photo_tags , "photo_category": photo_category },
+					
+					success: function(data){					
+						
+												
+						$( "#photo-edit-div-"+photo_id ).slideUp();
+						//reload_gallery_list();
+						
+						
+						}
+				});
+			
+			
+			 // Cancel the default action
+			 return false;
+    		e.preventDefault();
+			 
+				
+        });
+		
 		//edit photo
 		$(document).on("click", "a[href='#resp_edit_photo']", function(e) {
 			
@@ -661,6 +700,49 @@ if(typeof $ == 'undefined'){
 			 
 				
         });
+		
+		
+		$(document).on("click", "#btn-delete-user-avatar", function(e) {
+			
+			e.preventDefault();
+			
+    		jQuery.ajax({
+					type: 'POST',
+					url: ajaxurl,
+					data: {"action": "delete_user_avatar" },
+					
+					success: function(data){
+												
+						refresh_my_avatar();
+						//$( "#uu-upload-avatar-box" ).slideUp("slow");
+						
+						
+						}
+				});
+			
+			
+			 // Cancel the default action
+			 return false;
+    		e.preventDefault();
+			 
+				
+        });
+		
+		function refresh_my_avatar ()
+		{
+			
+			 $.post(ajaxurl, {
+							action: 'refresh_avatar'}, function (response){									
+																
+							$("#uu-backend-avatar-section").html(response);
+							//$( "#uu-upload-avatar-box" ).slideUp("slow");
+									
+									
+					
+			});
+			
+		}
+		
 		
 		
 		
