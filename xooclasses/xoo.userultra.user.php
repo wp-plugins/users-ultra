@@ -293,7 +293,7 @@ class XooUserUser {
 					
 						/*Upload file*/
 									
-						$path_f = xoousers_path.$xoouserultra->get_option('media_uploading_folder');
+						$path_f = ABSPATH.$xoouserultra->get_option('media_uploading_folder');
 						
 						$target_path = $path_f.'/import/';
 						// Checking for upload directory, if not exists then new created. 

@@ -224,6 +224,10 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.61 (05-20-2014) =
+* Bug Fix - IMPORTANT: Please update ASAP Google Sign Up Plus OAuth tweaks.
+* Improvement - Users Importing Tool has been tweaked.
+
 = 1.0.60 (05-20-2014) =
 * Improvements - IMPORTANT: Due Google Sign won't work with LightOpenID anymore we have migrated the Google Authorization to OAuth 2.0. You will need to create your application at https://console.developers.google.com/project
 

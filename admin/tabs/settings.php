@@ -508,6 +508,7 @@ $this->create_plugin_setting(
         __('Paste the redirect URI where you given in APi Console. You will get the Access Token here during login success. Find more information here https://developers.google.com/console/help/new/#console.  <br><br> VERY IMPORTANT: Your URL should end with "?uultraplus=1". Example: http://yourdomain.com/?uultraplus=1','xoousers'),
         __('','xoousers')
 );
+
 		
 ?>
 </table>

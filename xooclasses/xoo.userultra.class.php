@@ -13,7 +13,7 @@ class XooUserUltra
 		
 	public function __construct()
 	{
-		$this->plugin_init();
+		//$this->plugin_init();
 		
 		$this->logged_in_user = 0;
 		$this->login_code_count = 0;
@@ -29,13 +29,7 @@ class XooUserUltra
 				
 		}
 		
-		if( isset( $_GET['code'] ) && isset($_REQUEST['uultraplus']) && $_REQUEST['uultraplus'] == '1' ) 
-		{
-			/* authorize */
-			$this->google_authorize();
-			
-				
-		}
+		
 	  
     }
 	
@@ -2858,13 +2852,7 @@ class XooUserUltra
 			header("Location: ".$auth_url_yahoo."");
 		}
 		
-		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="google") 
-		{						
 				
-			$auth_url_google = $this->get_google_auth_url();
-			header("Location: ".$auth_url_google."");
-		}
-		
 		
 	}
 
