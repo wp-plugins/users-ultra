@@ -25,7 +25,7 @@ class XooUserLogin {
 
 		}
 						
-		if (isset($_GET['code'])) 
+		if (isset($_GET['code']) && !isset($_REQUEST['uultraplus'])) 
 		{
 						
 			// Setting default to false;

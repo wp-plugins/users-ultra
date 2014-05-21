@@ -13,6 +13,7 @@ class XooUserUltra
 		
 	public function __construct()
 	{
+		$this->plugin_init();
 		
 		$this->logged_in_user = 0;
 		$this->login_code_count = 0;
@@ -20,11 +21,21 @@ class XooUserUltra
 		
 		if (isset($_GET['uultrasocialsignup'])) 
 		{
+			session_start();
+			$_SESSION['google_token']  = NULL;
 			/* get social links */
 			$this->social_login_links_openid();
 			
+				
 		}
 		
+		if( isset( $_GET['code'] ) && isset($_REQUEST['uultraplus']) && $_REQUEST['uultraplus'] == '1' ) 
+		{
+			/* authorize */
+			$this->google_authorize();
+			
+				
+		}
 	  
     }
 	
@@ -2438,6 +2449,389 @@ class XooUserUltra
 		
 	}
 	
+	/*This function loads basic google libraries*/
+	
+	public function load_google()
+	{
+		if ( $this->get_option('social_media_google') == 1 && $this->get_option('google_client_id') && $this->get_option('google_client_secret') && $this->get_option('google_redirect_uri') ) 
+		{
+			
+			require_once(xoousers_path."libs/google/src/Google/Client.php");
+			require_once(xoousers_path."libs/google/src/Google/Service/Plus.php");
+			require_once(xoousers_path."libs/google/src/Google/Service/Oauth2.php");		
+			session_start();
+			
+			$this->google = new Google_Client();
+			$this->google->setApplicationName("Authentication"); // Set your applicatio name
+			$this->google->setScopes('email'); // set scope during user login
+			
+			$this->google->setClientId($this->get_option('google_client_id')); // paste the client id which you get from google API Console
+			$this->google->setClientSecret($this->get_option('google_client_secret')); // set the client secret
+			$this->google->setRedirectUri($this->get_option('google_redirect_uri')); // paste the redirect URI where you given in APi Console. You will get the Access Token here during login success
+			
+			$this->google->setApprovalPrompt('auto');
+			
+			$this->googleplus       = new Google_Service_Plus($this->google);
+			$this->googleoauth2     = new Google_Service_Oauth2($this->google); // Call the OAuth2 class for get email address
+			
+			if (isset($_SESSION['google_token'])) 
+			{
+				$this->google->setAccessToken($_SESSION['google_token']);
+			}
+		}		
+		
+	}
+	
+	/*******************
+	Google auth url
+	********************/
+	public function get_google_auth_url()
+	{
+		//load google class
+		$google = $this->load_google();
+			
+		$url = $this->google->createAuthUrl();
+		$authurl = isset( $url ) ? $url : '';			
+		return $authurl;
+	}
+	
+	
+	/******************************************
+	Google auth 
+	******************************************/
+	function google_authorize()
+	{
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH. 'wp-admin/includes/user.php' );
+		
+		if ( $this->get_option('social_media_google') == 1 && $this->get_option('google_client_id') && $this->get_option('google_client_secret') && $this->get_option('google_redirect_uri') ) 
+		{
+			
+			if( isset( $_GET['code'] ) && isset($_REQUEST['uultraplus']) && $_REQUEST['uultraplus'] == '1' ) {
+			
+				//load google class
+				$google = $this->load_google();
+
+				if (isset($_SESSION['google_token'])) 
+				{
+					$gplus_access_token = $_SESSION['google_token'];
+					
+				} else {
+					
+					$google_token = $this->google->authenticate($_GET['code']);
+					$_SESSION['google_token'] = $google_token;
+					$gplus_access_token = $_SESSION['google_token'];
+					
+				}
+				
+				//check access token is set or not
+				if ( !empty( $gplus_access_token ) ) 
+				{
+				
+					// capture data
+					$user_info = $this->googleplus->people->get('me');
+					
+					//print_r($user_info );
+					$user_email = $this->googleoauth2->userinfo->get(); // to get email
+					$user_info['email'] = $user_email['email'];
+					
+					//if user data get successfully
+					if (isset($user_info['id'])){
+						
+						$data['user'] = $user_info;
+						
+						//all data will assign to a session
+						$_SESSION['google_user_cache'] = $data;
+						
+						//check if
+
+						$users = get_users(array(
+							'meta_key'     => 'xoouser_ultra_google_id',
+							'meta_value'   => $user_info['id'],
+							'meta_compare' => '='
+						));
+						
+						if (isset($users[0]->ID) && is_numeric($users[0]->ID) )
+						{
+							$returning = $users[0]->ID;
+							$returning_user_login = $users[0]->user_login;
+							
+						} else {
+							
+							$returning = '';
+						}
+						
+						// Authorize user
+						if (is_user_logged_in()) 
+						{
+														
+							update_user_meta ($user_id, 'xoouser_ultra_google_id', $user_info['id']);							
+							$this->login->login_registration_afterlogin();
+						
+						} else {
+							
+							//the user is NOT logged in							
+							if ( $returning != '' ) 
+							{
+								
+							
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$returning_user_login);
+								$user_id =$user->ID;
+								
+								if(!$this->login->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );			
+											
+								}
+						
+								//redirect user
+								$this->login->login_registration_afterlogin();
+							
+							} else if ($user_info['email'] != '' && email_exists($user_info['email'])) {
+								
+								//user email exists then we have to sync								
+								$user_id = email_exists( $user_info['email'] );
+								$user = get_userdata($user_id);
+								update_user_meta ($user_id, 'xoouser_ultra_google_id', $user_info['id']);
+								
+								$u_user = $user->user_login;
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$u_user);
+								$user_id =$user->ID;
+								
+								if(!$this->login->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );			
+											
+								}
+								
+								//redirect user
+								$this->login->login_registration_afterlogin();
+						
+							
+							} else {
+								
+								//this is a new client we have to create the account								
+								 $u_name = $this->get_social_services_name('google', $user_info);													
+								 $u_email = $user_info['email'];
+								 
+								//generat random password
+								 $user_pass = wp_generate_password( 12, false);								 
+								
+								 $user_login = $this->unique_user('google', $user_info);
+								 $user_login = sanitize_user ($user_login, true);	
+								
+								 //Build user data
+								 $user_data = array (
+												'user_login' => $user_login,
+												'display_name' => $u_name,
+												'user_email' => $u_email,																				
+												'user_pass' => $user_pass
+											);
+											
+														
+								// Create a new user
+								$user_id = wp_insert_user ($user_data);
+								
+								update_user_meta ($user_id, 'xoouser_ultra_social_signup', 4);
+								update_user_meta ($user_id, 'xoouser_ultra_google_id', $user_info['id']);
+								update_user_meta ($user_id, 'first_name', $u_name);
+								update_user_meta ($user_id, 'display_name', $u_name);
+								
+																
+								$verify_key = $this->login->get_unique_verify_account_id();					
+						        update_user_meta ($user_id, 'xoouser_ultra_very_key', $verify_key);	
+								
+								$this->user_account_status($user_id);	
+								
+								//notify client			
+								$this->messaging->welcome_email($u_email, $user_login, $user_pass);
+								
+								$creds['user_login'] = sanitize_user($user_login);				
+								$creds['user_password'] = $user_pass;
+								$creds['remember'] = 1;							
+								
+								$noactive = false;
+								if(!$this->login->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+									
+								}
+								
+								if(!$noactive)
+								{
+									$user = wp_signon( $creds, false );
+									
+								}
+																
+								//redirect user
+								$this->login->login_registration_afterlogin();
+								
+								
+							}
+						}
+					}
+					
+				}
+			
+			}
+		}
+	}
+	
+	function get_social_services_name($service=null,$form=null)
+	{
+		if ($service)
+		{
+			if ($service == 'google')
+			{
+				//print_r($form);
+				if (isset($form['name']) && is_array($form['name'])) 
+				{
+					$name = $form['name']['givenName'] . ' ' . $form['name']['familyName'];
+					$username = $name;
+					
+				} elseif ( isset($form['displayName']) && !empty($form['displayName']) ) {
+					
+					$username = $form['displayName'];
+					
+				} else {
+					
+					$username = $form['id'];
+				}
+			}
+			if ($service == 'twitter') {
+				if (isset($form['screen_name']) && !empty($form['screen_name']) ) {
+					$username = $form['screen_name'];
+				}
+			}
+			if ($service == 'vk') {
+				if (isset($form['screen_name']) && !empty($form['screen_name']) ) {
+					$username = $form['screen_name'];
+				} else {
+					$username = $form['uid'];
+				}
+			}
+		}
+		
+		return $username;	
+	
+	
+	}
+	
+	/******************************************
+	friendly username
+	******************************************/
+	function clean_user($string){
+		$string = strtolower($string);
+		$string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+		$string = preg_replace("/[\s-]+/", " ", $string);
+		$string = preg_replace("/[\s_]/", "_", $string);
+		return $string;
+	}
+	
+	/******************************************
+	Make display_name unique
+	******************************************/
+	function unique_display_name($display_name){
+		$r = str_shuffle("0123456789");
+		$r1 = (int) $r[0];
+		$r2 = (int) $r[1];
+		$display_name = $display_name . $r1 . $r2;
+		return $display_name;
+	}
+	
+	/******************************************
+	Make username unique
+	******************************************/
+	function unique_user($service=null,$form=null){
+		if ($service){
+			if ($service == 'google') {
+				if (isset($form['name']) && is_array($form['name'])) {
+					$name = $form['name']['givenName'] . ' ' . $form['name']['familyName'];
+					$username = $this->clean_user($name);
+				} elseif ( isset($form['displayName']) && !empty($form['displayName']) ) {
+					$username = $this->clean_user($form['displayName']);
+				} else {
+					$username = $form['id'];
+				}
+			}
+			if ($service == 'twitter') {
+				if (isset($form['screen_name']) && !empty($form['screen_name']) ) {
+					$username = $form['screen_name'];
+				}
+			}
+			if ($service == 'vk') {
+				if (isset($form['screen_name']) && !empty($form['screen_name']) ) {
+					$username = $form['screen_name'];
+				} else {
+					$username = $form['uid'];
+				}
+			}
+		}
+		
+		// make sure username is unique
+		if (username_exists($username)){
+			$r = str_shuffle("0123456789");
+			$r1 = (int) $r[0];
+			$r2 = (int) $r[1];
+			$username = $username . $r1 . $r2;
+		}
+		if (username_exists($username)){
+			$r = str_shuffle("0123456789");
+			$r1 = (int) $r[0];
+			$r2 = (int) $r[1];
+			$username = $username . $r1 . $r2;
+		}
+		return $username;
+	}
+	
+	 /*---->> Set Account Status  ****/  
+ 	 public function user_account_status($user_id) 
+  	{
+	 // global $xoouserultra;
+	  
+	  //check if login automatically
+	  $activation_type= $this->get_option('registration_rules');
+	  
+	  if($activation_type==1)
+	  {
+		  //automatic activation
+		  update_user_meta ($user_id, 'usersultra_account_status', 'active');							
+	  
+	  }elseif($activation_type==2){
+		  
+		  //email activation link
+		  update_user_meta ($user_id, 'usersultra_account_status', 'pending');	
+	  
+	  }elseif($activation_type==3){
+		  
+		  //manually approved
+		  update_user_meta ($user_id, 'usersultra_account_status', 'pending_admin');
+	  
+	  
+	  }
+	
+  }
+	
 	//special feature for yahoo and google
 	
 	public function social_login_links_openid()
@@ -2467,17 +2861,7 @@ class XooUserUltra
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="google") 
 		{						
 				
-			//google
-			require_once(xoousers_path."libs/openid/openid.php");				
-			$openid = new LightOpenID($web_url);		
-			$openid->identity = 'https://www.google.com/accounts/o8/id';
-			$openid->required = array(
-				  'namePerson/first',
-				  'namePerson/last',
-				  'contact/email',
-				);
-			$openid->returnUrl = $web_url;
-			$auth_url_google = $openid->authUrl();
+			$auth_url_google = $this->get_google_auth_url();
 			header("Location: ".$auth_url_google."");
 		}
 		

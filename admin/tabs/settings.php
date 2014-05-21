@@ -484,6 +484,30 @@ $this->create_plugin_setting(
                 __('If checked, User will be able to Sign up & Sign in through Google.','xoousers'),
                 __('If checked, User will be able to Sign up & Sign in through Google.','xoousers')
         ); 
+
+$this->create_plugin_setting(
+        'input',
+        'google_client_id',
+        __('Google Client ID','xoousers'),array(),
+        __('Paste the client id that you got from google API Console','xoousers'),
+        __('','xoousers')
+);  
+
+$this->create_plugin_setting(
+        'input',
+        'google_client_secret',
+        __('Google Client Secret','xoousers'),array(),
+        __('Set the client secret','xoousers'),
+        __('','xoousers')
+);
+
+$this->create_plugin_setting(
+        'input',
+        'google_redirect_uri',
+        __('Google Redirect URI','xoousers'),array(),
+        __('Paste the redirect URI where you given in APi Console. You will get the Access Token here during login success. Find more information here https://developers.google.com/console/help/new/#console.  <br><br> VERY IMPORTANT: Your URL should end with "?uultraplus=1". Example: http://yourdomain.com/?uultraplus=1','xoousers'),
+        __('','xoousers')
+);
 		
 ?>
 </table>
