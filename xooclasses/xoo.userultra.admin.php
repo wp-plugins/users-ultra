@@ -53,14 +53,11 @@ class XooUserAdmin extends XooUserUltraCommon
 			'fields' => __('Fields','userultra'),
 			'settings' => __('Settings','userultra'),			
 			'membership' => __('Membership','userultra'),
-			'orders' => __('Orders','userultra'),
-			
-			'import' => __('Sync & Import','userultra'),
-			
-			'mail' => __('Notifications','userultra'),
-			
+			'orders' => __('Orders','userultra'),			
+			'import' => __('Sync & Import','userultra'),			
+			'mail' => __('Notifications','userultra'),			
 			'permalinks' => __('Permalinks','userultra'),
-			'gateway' => __('Payment Gateways','userultra'),
+			'gateway' => __('Gateways','userultra'),
 			'donate' => __('Donate','userultra'),
 			'help' => __('Doc','userultra'),
 		);

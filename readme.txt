@@ -42,6 +42,12 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 </pre>
 
+<h3>Help Keep This Plugin Free</h3>
+
+If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
+
+<strong>If you like this plugin, please don't forget to rate it "5/5" </strong>
+
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
@@ -84,12 +90,6 @@ You can filter your users by using any amount of conditional fields such as: cou
 
 <strong>Sync old users to make them work with Users Ultra?</strong><br>
 Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
-
-<h3>Help Keep This Plugin Free</h3>
-
-If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
-
-<strong>If you like this plugin, please don't forget to rate it "5/5" </strong>
 
 <strong>Redirection</strong><br>
 Redirection after user login, logout and registration.
