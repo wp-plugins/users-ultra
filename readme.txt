@@ -69,7 +69,7 @@ The plugin can be used to manage large communities of either free or paid subscr
 Since it uses Paypal, you could create almost any type of billing period such as: monthly, yearly, daily. We hope you enjoy this great feature to manage your Paid Membership Packages.
 
 <strong>MailChimp</strong><br>
-Users Ultra lets you add user emails to your MailChimp lists when registering.
+The MailChimp feature allows you to quickly and easily add your new subscribers in your MailChimp list without any confirmation email. 
 
 <strong>Social Connects</strong><br>
 Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter or LinkedIn account.
