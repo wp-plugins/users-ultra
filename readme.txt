@@ -48,6 +48,11 @@ This great feature allows you to import users into the Users Ultra System easily
 <strong>Auto Sync with WooCommerce</strong><br>
 Syncing with WooCommerce will automatically add WooCommerce customer profile fields to your Users Ultra Plugin. A quick way to have a WooCommerce account page integrated with Users Ultra. This great feature allows users to manage their Shipping Information through Users Ultra instead of using the default WooCommerce profile page. Users Ultra lets you sync the user's shipping and contact information of WooCommerce in just one click.
 
+<strong>Twitter Login & Authentication with OAuth.</strong><br>
+Users Ultra lets your users sign in and sign up by using their Twitter accounts with just one click. Integrating Twitter Login will increase your sign in/sign up conversion. Also, you will be able to share user activities, drive traffic to your site from social network sites, and increase user engagement on your site.
+
+Besides, Users Ultra allows you to post an automated message right after the subscription.
+
 <strong>Private Messages System For WordPress</strong><br>
 Users Ultra comes with a powerful private messaging system that allows users to send messages to other members of the user's community.
 
@@ -58,11 +63,6 @@ Besides, each message will display the user's avatar and there is an "received" 
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
 
-<strong>Twitter Login & Authentication with OAuth.</strong><br>
-Users Ultra lets your users sign in and sign up by using their Twitter accounts with just one click. Integrating Twitter Login will increase your sign in/sign up conversion. Also, you will be able to share user activities, drive traffic to your site from social network sites, and increase user engagement on your site.
-
-Besides, Users Ultra allows you to post an automated message right after the subscription.
-
 <strong>Paypal Membership System:</strong><br>
 The plugin can be used to manage large communities of either free or paid subscribers. You can create as many packages as you wish with some limitations such as: how many photos, galleries to each package. The Users Ultra Membership module allows you to accept either one-time payments or recurring payment through Paypal.
 
@@ -72,7 +72,7 @@ Since it uses Paypal, you could create almost any type of billing period such as
 Users Ultra lets you add user emails to your MailChimp lists when registering.
 
 <strong>Social Connects</strong><br>
-Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo or LinkedIn account.
+Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter or LinkedIn account.
 
 <strong>Protecting content based on Membership Package</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
