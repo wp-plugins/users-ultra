@@ -14,7 +14,7 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 Users Ultra is the ideal tool for creating advanced user communities in few minute. Building a talents community, model agency websites, social communities and any kind of user websites is really fast. It can be intregrated in any WordPress Theme. You can add as many fields as you wish by using the Fields Customizer Tool.
 
-When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build<strong/>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
+When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
