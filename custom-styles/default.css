@@ -486,6 +486,35 @@ input.btn {
 .icon-linkedin { margin-right:10px;}
 .icon-linkedin img{ vertical-align:middle;}
 
+/*Twitter*/
+
+.btn-twitter {
+    background: none repeat scroll 0 0 #539ABE;
+    border: 1px solid #314D89;
+    box-shadow: 1px 1px 1px #8194B8 inset;
+	width:190px;
+}
+.btn-twitter:hover {
+    background-color: #314D89;
+    border: 1px solid #314D89;
+}
+.btn-twitter {
+    twitter: none repeat scroll 0 0 #539ABE;
+    border: 0 none;
+    box-shadow: none;
+    font-size: 1.5em;
+    padding: 2px 45px 0px  15px;
+}
+.btn-twitter:hover {
+    background-color: #83BFD8;
+    border: medium none;
+    box-shadow: none;
+}
+
+
+.icon-twitter { margin-right:10px;}
+.icon-twitter img{ vertical-align:middle;}
+
 
 .txt-center{ text-align:center; margin-top:5px;}
 

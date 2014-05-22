@@ -2412,6 +2412,22 @@ class XooUserUltra
 					</div>';
 			}
 			
+			if($this->get_option('twitter_connect')==1)
+			{
+				//google
+			
+				$auth_url_google = $web_url."?uultrasocialsignup=twitter";
+			
+				$atleast_one = true;
+			
+				//Google
+				$display .='<div class="txt-center TwitterSignIn">	               	
+						<a href="'.$auth_url_google.'" class="btn-twitter" >
+							<span class="icon-twitter"><img src="'.xoousers_url.'img/socialicons/twitter.png" ></span>'.$action_text.' with Twitter </a>
+					
+					</div>';
+			}
+			
 			if($this->get_option('social_media_linked_active')==1)
 			{
 				$atleast_one = true;

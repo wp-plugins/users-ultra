@@ -26,6 +26,12 @@ class XooUserLogin {
 				
 		}
 		
+		if ( isset( $_REQUEST['oauth_verifier'] ) && isset( $_REQUEST['oauth_token'] ) ) 
+		{
+			/* authorize twitter*/
+			$this->twitter_authorize();
+		}
+		
 		
 		/*Handle Paypal Login*/
 		if (isset($_GET['usersultraipncall'])) 
@@ -74,7 +80,7 @@ class XooUserLogin {
 		}
 		
 		//linkedin
-		if (isset($_GET['oauth_token']) ) 
+		if (isset($_GET['oauth_token']) && !isset($_REQUEST['oauth_verifier']) ) 
 		{
 						
 			// Setting default to false;
@@ -696,6 +702,310 @@ class XooUserLogin {
 		}
 		
 	
+	}
+	
+		 /******************************************
+	We Load twitter
+	******************************************/
+	function load_twitter()
+	{
+		global $xoouserultra, $blog_id;
+		
+		if ( $xoouserultra->get_option('twitter_connect') == 1 && $xoouserultra->get_option('twitter_consumer_key') && $xoouserultra->get_option('twitter_consumer_secret') ) 
+		
+		{
+		
+			if (!session_id()){
+				session_start();
+			}
+			if (!class_exists('TwitterOAuth'))
+			{
+				
+				require_once(xoousers_path."libs/twitterapi/twitteroauth.php");
+			}
+			
+			$this->twitter = new TwitterOAuth(  $xoouserultra->get_option('twitter_consumer_key') , $xoouserultra->get_option('twitter_consumer_secret') );
+			
+		}
+	}
+	
+	/******************************************
+	Twitter redirection url after connect
+	******************************************/
+	function twitter_redirect_url()
+	{
+		$curent_page_url = remove_query_arg( array( 'oauth_token', 'oauth_verifier', 'uultrasocialsignup' ), $this->get_current_page_url() );
+		return $curent_page_url;
+	}
+	
+	/******************************************
+	Get current page URL
+	******************************************/
+	function get_current_page_url()
+	{
+    	global $post;
+		if ( is_front_page() ) :
+			$page_url = home_url();
+			else :
+			$page_url = 'http';
+		if ( isset( $_SERVER["HTTPS"] ) && $_SERVER["HTTPS"] == "on" )
+			$page_url .= "s";
+				$page_url .= "://";
+				if ( $_SERVER["SERVER_PORT"] != "80" )
+			$page_url .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+				else
+			$page_url .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+			endif;
+			
+		return esc_url( $page_url ) ;
+	}
+	
+	/******************************************
+	Twitter auth url
+	******************************************/
+	function get_twitter_auth_url() {
+			
+		global $post;
+		
+		//if (!get_option('get_twitter_auth_url')){
+			
+			$this->load_twitter();
+			$red_url =  $this->twitter_redirect_url();
+			//echo "$red_url ";
+		
+			$request_token = $this->twitter->getRequestToken($red_url  ); // user will be redirected here
+			
+			switch( $this->twitter->http_code ) {
+				case 200:
+					$_SESSION['twt_oauth_token'] = $request_token['oauth_token'];
+					$_SESSION['twt_oauth_token_secret'] = $request_token['oauth_token_secret'];
+
+					$token = $request_token['oauth_token'];
+					$this->twitter_url = $this->twitter->getAuthorizeURL( $token, true );
+							
+					break;
+				default:
+					$this->twitter_url = '';
+			}
+			update_option('get_twitter_auth_url', $this->twitter_url);
+			return $this->twitter_url;
+		
+		//} else {
+		//<}
+	}
+	
+	/******************************************
+	Twitter auth ($_REQUEST)
+	******************************************/
+	function twitter_authorize()
+	{		
+		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-admin/includes/user.php' );
+		
+			
+		if ( $xoouserultra->get_option('twitter_connect') == 1 && $xoouserultra->get_option('twitter_consumer_key') && $xoouserultra->get_option('twitter_consumer_secret') )
+		{
+				
+			//when user is going to logged in in twitter and verified successfully session will create
+			if ( isset( $_REQUEST['oauth_verifier'] ) && isset( $_REQUEST['oauth_token'] ) ) 
+			{
+				
+				//load twitter class
+				$this->load_twitter();
+				
+				$oauth_token = $_SESSION['twt_oauth_token'];
+				$oauth_token_secret = $_SESSION['twt_oauth_token_secret'];
+
+				if( isset( $oauth_token )) {
+											
+
+					$this->twitter = new TwitterOAuth( $xoouserultra->get_option('twitter_consumer_key') , $xoouserultra->get_option('twitter_consumer_secret'), $oauth_token, $oauth_token_secret );
+					
+					// Request access tokens from twitter
+					$tw_access_token = $this->twitter->getAccessToken($_REQUEST['oauth_verifier']);
+					
+					//session create for access token & secrets		
+					$_SESSION['twt_oauth_token'] = $tw_access_token['oauth_token'];
+					$_SESSION['twt_oauth_token_secret'] = $tw_access_token['oauth_token_secret'];
+					$verifier['oauth_verifier'] = $_REQUEST['oauth_verifier'];
+					$_SESSION[ 'twt_user_cache' ] = $verifier;
+					
+					//getting user data from twitter
+					$user_info = $this->twitter->get('account/verify_credentials');
+					$user_info = (array)$user_info;
+					
+				//	print_r($user_info);
+					
+					//if user data get successfully
+					if (isset($user_info['id'])){
+						
+												
+						$data['user'] = $user_info;
+						
+						//all data will assign to a session
+						$_SESSION['twt_user_cache'] = $data;
+
+						$users = get_users(array(
+							'meta_key'     => 'xoouser_ultra_twitter_oauth_id',
+							'meta_value'   => $user_info['id'],
+							'meta_compare' => '='
+						));
+						if (isset($users[0]->ID) && is_numeric($users[0]->ID) ){
+							$returning = $users[0]->ID;
+							$returning_user_login = $users[0]->user_login;
+						} else {
+							$returning = '';
+						}
+						
+						// Authorize user
+						if (is_user_logged_in()) 
+						{
+							update_user_meta ($user_id, 'xoouser_ultra_twitter_oauth_id', $user_info['id']);							
+							$this->login_registration_afterlogin();
+							
+							
+						} else 
+						{
+							if ( $returning != '' ) 
+							{
+								
+								
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$returning_user_login);
+								$user_id =$user->ID;
+								
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );			
+											
+								}
+						
+								//redirect user
+								$this->login_registration_afterlogin();
+							
+							} else if ($user_info['screen_name'] != '' && username_exists($user_info['screen_name'])) {	
+								
+															
+								
+								///new
+								
+								//user email exists then we have to sync								
+								$user_id = username_exists( $user_info['screen_name'] );
+								$user = get_userdata($user_id);
+								update_user_meta ($user_id, 'xoouser_ultra_twitter_oauth_id', $user_info['id']);
+								
+								$u_user = $user->user_login;
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$u_user);
+								$user_id =$user->ID;
+								
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );			
+											
+								}
+								
+								//redirect user
+								$this->login_registration_afterlogin();
+								
+							
+							} else {
+
+								///new
+								//echo "new client";
+								
+								//this is a new client we have to create the account								
+								 $u_name = $this->get_social_services_name('twitter', $user_info);													
+								 $u_email = $user_info['id'];
+								 
+								//generat random password
+								 $user_pass = wp_generate_password( 12, false);								 
+								
+								 $user_login = $this->unique_user('twitter', $user_info);
+								 $user_login = sanitize_user ($user_login, true);	
+								
+								 //Build user data
+								 $user_data = array (
+												'user_login' => $user_login,
+												'display_name' => $u_name,
+												'user_email' => $u_email,																				
+												'user_pass' => $user_pass
+											);
+											
+														
+								// Create a new user
+								$user_id = wp_insert_user ($user_data);
+								
+																
+								update_user_meta ($user_id, 'xoouser_ultra_social_signup', 5);
+								update_user_meta ($user_id, 'xoouser_ultra_twitter_oauth_id', $user_info['id']);
+								
+								update_user_meta ($user_id, 'xoouser_ultra_twitter_oauth_token', $_SESSION['twt_oauth_token']);
+								update_user_meta ($user_id, 'xoouser_ultra_twitter_oauth_token_secret', $_SESSION['twt_oauth_token_secret']);
+								
+								update_user_meta ($user_id, 'first_name', $u_name);
+								update_user_meta ($user_id, 'display_name', $u_name);
+								
+																
+								$verify_key = $this->get_unique_verify_account_id();					
+						        update_user_meta ($user_id, 'xoouser_ultra_very_key', $verify_key);	
+								
+								$this->user_account_status($user_id);	
+								
+								//notify client			
+								$xoouserultra->messaging->welcome_email($u_email, $user_login, $user_pass);
+								
+								$creds['user_login'] = sanitize_user($user_login);				
+								$creds['user_password'] = $user_pass;
+								$creds['remember'] = 1;							
+								
+								$noactive = false;
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+									
+								}
+								
+								if(!$noactive)
+								{
+									$user = wp_signon( $creds, false );
+									
+								}
+								
+								if ($xoouserultra->get_option('twitter_autopost') && $xoouserultra->get_option('twitter_autopost_msg') ) 
+								{
+									$this->twitter->post('statuses/update', array('status' => $xoouserultra->get_option('twitter_autopost_msg') ) );
+								}
+																
+								//redirect user
+								$this->login_registration_afterlogin();
+								
+								
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	 /*Handle LinkedIn Sign up*/

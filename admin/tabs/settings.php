@@ -509,6 +509,52 @@ $this->create_plugin_setting(
         __('','xoousers')
 );
 
+
+/// add to array
+$this->create_plugin_setting(
+                'checkbox',
+                'twitter_connect',
+                __('Twitter Sign up','xoousers'),
+                '1',
+                __('If checked, User will be able to Sign up & Sign in through Twitter.','xoousers'),
+                __('If checked, User will be able to Sign up & Sign in through Twitter.','xoousers')
+        );
+		
+
+$this->create_plugin_setting(
+        'input',
+        'twitter_consumer_key',
+        __('Consumer Key','xoousers'),array(),
+        __('Paste the Consumer Key','xoousers'),
+        __('','xoousers')
+);  
+
+$this->create_plugin_setting(
+        'input',
+        'twitter_consumer_secret',
+        __('Consumer Secret','xoousers'),array(),
+        __('Paste the Consumer Secret','xoousers'),
+        __('','xoousers')
+);
+
+$this->create_plugin_setting(
+                'checkbox',
+                'twitter_autopost',
+                __('Twitter Auto Post','xoousers'),
+                '1',
+                __('If checked, Users Ultra will post a message automatically to the user twitter timeline when registering.','xoousers'),
+                __('If checked, Users Ultra will post a message automatically to the user twitter timeline when registering.','xoousers','xoousers')
+        );
+
+$this->create_plugin_setting(
+        'input',
+        'twitter_autopost_msg',
+        __('Message','xoousers'),array(),
+        __('Input the message that will be posted right after user registration','xoousers'),
+        __('','xoousers')
+);		
+
+
 		
 ?>
 </table>

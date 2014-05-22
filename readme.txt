@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.28
+Stable tag: 1.0.61
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,8 +28,8 @@ When it comes to ease of use, Users Ultra comes in first.  Users Communities are
 
 <strong>Recent New Features:</strong><br>
 <pre>
-
-05-20-2014 -- Users are able to delete their avatars through the user's backend.
+05-21-2014 -- Twitter Sign in/Sign up Authentication with Auto Post.
+05-20-2014 -- Users are able to delete their avatars .
 05-19-2014 -- Auto Sync with WooCommerce, Shipping and Billing Address.
 05-19-2014 -- Logout Shortcode with custom redirection.
 05-19-2014 -- Custom Redirection after login.
@@ -58,6 +58,10 @@ Besides, each message will display the user's avatar and there is an "received" 
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
 
+<strong>Twitter Login & Authentication with OAuth.</strong><br>
+Users Ultra lets your users sign in and sign up by using their Twitter accounts with just one click. Integrating Twitter Login will increase your sign in/sign up conversion. Also, you will be able to share user activities, drive traffic to your site from social network sites, and increase user engagement on your site.
+
+Besides, Users Ultra allows you to post an automated message right after the subscription.
 
 <strong>Paypal Membership System:</strong><br>
 The plugin can be used to manage large communities of either free or paid subscribers. You can create as many packages as you wish with some limitations such as: how many photos, galleries to each package. The Users Ultra Membership module allows you to accept either one-time payments or recurring payment through Paypal.
