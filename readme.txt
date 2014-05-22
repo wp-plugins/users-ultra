@@ -1,7 +1,7 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter sign in, twitter authentication, google sign up, google authentication, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, admin, member, members area, member registration, member access
+Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter sign in, twitter authentication, google sign up, google authentication, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, admin, member, members area, member registration, member access, auto tweek, user tweet,
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 1.0.62
@@ -28,7 +28,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <strong>Recent New Features:</strong><br>
 <pre>
-05-21-2014 -- Twitter Sign in/Sign up Authentication with Auto Post.
+05-21-2014 -- Twitter Sign in/Sign up Authentication with Auto Tweet.
 05-20-2014 -- Users are able to delete their avatars .
 05-19-2014 -- Auto Sync with WooCommerce, Shipping and Billing Address.
 05-19-2014 -- Logout Shortcode with custom redirection.
