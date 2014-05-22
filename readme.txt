@@ -12,9 +12,9 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 == Description ==
 
-Users Ultra is <strong>the ideal tool for creating advanced user communities in few minutes</strong>. Building a talents community, model agency websites, social communities and any kind of user websites is really fast. It can be intregrated in any WordPress Theme. You can add as many fields as you wish by using the Fields Customizer Tool.
+Users Ultra is the ideal tool for creating advanced user communities in few minute. Building a talents community, model agency websites, social communities and any kind of user websites is really fast. It can be intregrated in any WordPress Theme. You can add as many fields as you wish by using the Fields Customizer Tool.
 
-When it comes to ease of use, Users Ultra comes in first.  Users Communities are incredibly simple to build. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. Users Ultra handles One-Time and Recurrent Payments.
+When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build<strong/>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
@@ -48,8 +48,8 @@ This great feature allows you to import users into the Users Ultra System easily
 <strong>Auto Sync with WooCommerce</strong><br>
 Syncing with WooCommerce will automatically add WooCommerce customer profile fields to your Users Ultra Plugin. A quick way to have a WooCommerce account page integrated with Users Ultra. This great feature allows users to manage their Shipping Information through Users Ultra instead of using the default WooCommerce profile page. Users Ultra lets you sync the user's shipping and contact information of WooCommerce in just one click.
 
-<strong>Twitter Login & Authentication with OAuth.</strong><br>
-Users Ultra lets your users sign in and sign up by using their Twitter accounts with just one click. Integrating Twitter Login will increase your sign in/sign up conversion. Also, you will be able to share user activities, drive traffic to your site from social network sites, and increase user engagement on your site.
+<strong>Twitter Login & Authentication with OAuth</strong><br>
+Users Ultra lets your users sign in and sign up by using their <strong>Twitter</strong> accounts with just one click. Integrating Twitter Login will increase your sign in/sign up conversion. Also, you will be able to share user activities, drive traffic to your site from social network sites, and increase user engagement on your site.
 
 Besides, Users Ultra allows you to post an automated message right after the subscription.
 
