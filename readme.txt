@@ -8,7 +8,7 @@ Stable tag: 1.0.63
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Users Ultra is the ideal tool for creating advanced user communities in few minutes. 
+Users Ultra is the ideal tool for creating advanced user communities in few minutes. It works with Facebook, Twitter, LinkedIn, Yahoo, Google &  Yammer.
 
 == Description ==
 
@@ -235,6 +235,7 @@ Initial release.
 = 1.0.62 (05-21-2014) =
 * New Feature - Yammer Login and Registration method has been added to the Social Connections Options.
 * New Feature - WooCommerce Order Status. This new feature allows users to check their order's status through Users Ultra.
+* New Language - German Language mo and po files have bee included within the languages folder
 
 = 1.0.61 (05-20-2014) =
 * Bug Fix - IMPORTANT: Please update ASAP Google Sign Up Plus OAuth tweaks.
