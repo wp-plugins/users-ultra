@@ -4,7 +4,7 @@ class XooUserLogin {
 	function __construct() 
 	{
 		/*-----------Referece Social Users Types*/
-		/* 1 - Facebook, 2 - LinkedIn,  3- Yahoo, 4 - Google, 5 - Twitter */
+		/* 1 - Facebook, 2 - LinkedIn,  3- Yahoo, 4 - Google, 5 - Twitter , 6 - yammer */
 		/*------------------------------*/
 		
 		if (isset($_GET['uultrasocialsignup'])) 
@@ -32,6 +32,12 @@ class XooUserLogin {
 			$this->twitter_authorize();
 		}
 		
+		if( isset( $_GET['code'] ) && isset($_REQUEST['uultryammer']) && $_REQUEST['uultryammer'] == '1' ) 
+		{
+			/* authorize yammer*/
+			$this->yammer_authorize();
+		}
+		
 		
 		/*Handle Paypal Login*/
 		if (isset($_GET['usersultraipncall'])) 
@@ -51,7 +57,7 @@ class XooUserLogin {
 
 		}
 						
-		if (isset($_GET['code']) && !isset($_REQUEST['uultraplus'])) 
+		if (isset($_GET['code']) && !isset($_REQUEST['uultraplus']) && !isset($_REQUEST['uultryammer'])) 
 		{
 						
 			// Setting default to false;
@@ -297,6 +303,7 @@ class XooUserLogin {
 		//special feature for yahoo and google	
 	public function social_login_links_oauth()
 	{
+		global  $xoouserultra, $blog_id;
 		
 		$web_url = site_url()."/";
 		
@@ -315,6 +322,17 @@ class XooUserLogin {
 			
 			
 		}
+		
+		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="yammer") 
+		{
+			$client_id = 	$xoouserultra->get_option('yammer_client_id') ;	
+			$client_secret = 	$xoouserultra->get_option('yammer_client_secret') ;	
+			$redir_uri = 	$xoouserultra->get_option('yammer_redir_url') ;	
+			
+			$auth_yammer = "https://www.yammer.com/dialog/oauth?client_id=".$client_id."&redirect_uri=".$redir_uri."";
+			header("Location: ".$auth_yammer."");
+			
+		}
 	
 	}
 	
@@ -322,7 +340,7 @@ class XooUserLogin {
 	
 	public function load_google()
 	{
-		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
+		global  $xoouserultra, $blog_id;
 		
 		if ( $xoouserultra->get_option('social_media_google') == 1 && $xoouserultra->get_option('google_client_id') && $xoouserultra->get_option('google_client_secret') && $xoouserultra->get_option('google_redirect_uri') ) 
 		{
@@ -364,6 +382,218 @@ class XooUserLogin {
 		$url = $this->google->createAuthUrl();
 		$authurl = isset( $url ) ? $url : '';			
 		return $authurl;
+	}
+	
+	/******************************************
+	Yammer auth 
+	******************************************/
+	function yammer_authorize()
+	{
+		global  $xoouserultra, $blog_id;
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-admin/includes/user.php' );
+		
+		$client_id = 	$xoouserultra->get_option('yammer_client_id') ;	
+		$client_secret = 	$xoouserultra->get_option('yammer_client_secret') ;	
+		$redir_uri = 	$xoouserultra->get_option('yammer_redir_url') ;
+			
+		
+		if ( $xoouserultra->get_option('yammer_connect') == 1 && $client_id && $client_secret && $redir_uri ) 
+		{
+			
+			if( isset( $_GET['code'] ) && isset($_REQUEST['uultryammer']) && $_REQUEST['uultryammer'] == '1' ) 
+			{
+				//get auth token
+				$code =$_GET['code'];
+				
+				$url = "https://www.yammer.com/oauth2/access_token.json";		
+								
+				$response = wp_remote_get(
+					$url,
+					array(
+						'body' => array(
+							'client_id'   => $client_id,
+							'client_secret'     => $client_secret,
+							'code' => $code,
+														
+						)
+					)
+				);
+				
+				
+				$response = json_decode($response["body"]);
+				//print_r($response);
+				
+				//if user data get successfully
+				if (isset($response->{'access_token'}->{'user_id'}))
+				{
+					$id =$response->{'access_token'}->{'user_id'};					
+					$token =$response->{'access_token'}->{'token'}; 						
+					$fullname = $response->{'user'}->{'full_name'}; 
+					
+					$email = $response->{'user'}->{'contact'}->{'email_addresses'}; 
+					$email = $email->{'address'};
+					//echo "USER EMAIL: " . print_r($email );
+						
+						
+						//check if
+
+						$users = get_users(array(
+							'meta_key'     => 'xoouser_ultra_yammer',
+							'meta_value'   => $id,
+							'meta_compare' => '='
+						));
+						
+						if (isset($users[0]->ID) && is_numeric($users[0]->ID) )
+						{
+							$returning = $users[0]->ID;
+							$returning_user_login = $users[0]->user_login;
+							
+						} else {
+							
+							$returning = '';
+						}
+						
+						// Authorize user
+						if (is_user_logged_in()) 
+						{
+														
+							update_user_meta ($user_id, 'xoouser_ultra_yammer', $id );							
+							$this->login_registration_afterlogin();
+						
+						} else {
+							
+							//the user is NOT logged in							
+							if ( $returning != '' ) 
+							{
+								
+							
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$returning_user_login);
+								$user_id =$user->ID;
+								
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );			
+											
+								}
+						
+								//redirect user
+								$this->login_registration_afterlogin();
+							
+							} else if ($user_info['email'] != '' && email_exists($user_info['email'])) {
+								
+								//user email exists then we have to sync								
+								$user_id = email_exists( $user_info['email'] );
+								$user = get_userdata($user_id);
+								update_user_meta ($user_id, 'xoouser_ultra_yammer', $id);
+								
+								$u_user = $user->user_login;
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$u_user);
+								$user_id =$user->ID;
+								
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );			
+											
+								}
+								
+								//redirect user
+								$this->login_registration_afterlogin();
+						
+							
+							} else {
+								
+																
+								//this is a new client we have to create the account								
+								 $u_name = $this->get_social_services_name('yammer', $fullname);													
+								 $u_email = $user_info['email'];
+								 
+								//generat random password
+								 $user_pass = wp_generate_password( 12, false);								 
+								
+								 $user_login = $this->unique_user('yammer', $fullname);
+								 $user_login = sanitize_user ($user_login, true);	
+								
+								 //Build user data
+								 $user_data = array (
+												'user_login' => $user_login,
+												'display_name' => $u_name,
+												'user_email' => $u_email,																				
+												'user_pass' => $user_pass
+											);
+											
+																						
+														
+								// Create a new user
+								$user_id = wp_insert_user ($user_data);
+								
+								update_user_meta ($user_id, 'xoouser_ultra_social_signup', 6);
+								update_user_meta ($user_id, 'xoouser_ultra_yammer', $id);
+								update_user_meta ($user_id, 'first_name', $u_name);
+								update_user_meta ($user_id, 'display_name', $u_name);
+								
+																
+								$verify_key = $this->get_unique_verify_account_id();					
+						        update_user_meta ($user_id, 'xoouser_ultra_very_key', $verify_key);	
+								
+								$this->user_account_status($user_id);	
+								
+								//notify client			
+								$xoouserultra->messaging->welcome_email($u_email, $user_login, $user_pass);
+								
+								$creds['user_login'] = sanitize_user($user_login);				
+								$creds['user_password'] = $user_pass;
+								$creds['remember'] = 1;							
+								
+								$noactive = false;
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+									
+								}
+								
+								if(!$noactive)
+								{
+									$user = wp_signon( $creds, false );
+									
+								}
+																
+								//redirect user
+								$this->login_registration_afterlogin();
+								
+								
+							}
+						}
+					}
+				
+				
+			
+			}
+		
+		
+		}
+		
+		
 	}
 	
 	

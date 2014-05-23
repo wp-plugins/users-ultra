@@ -286,6 +286,109 @@ class XooWooCommerce {
 		}
 		
 	}
+	
+	/**
+	 * My Orders 
+	 */
+	function show_my_latest_orders($howmany, $status=null)
+	{
+		global $wpdb, $current_user, $xoouserultra, $woocommerce; 
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH. 'wp-admin/includes/user.php' );
+		require_once(ABSPATH.  'wp-includes/query.php' );	
+		
+		
+		$user_id = get_current_user_id();
+		
+		$args = array(
+         'numberposts' => -1,
+         'meta_key' => '_customer_user',
+         'meta_value' => $user_id,
+         'post_type' => 'shop_order',
+         'post_status' => 'publish',
+         'tax_query'=>array(
+                     array(
+                     'taxonomy' =>'shop_order_status',
+                     'field' => 'slug',
+					 'terms' => array('processing','pending','completed','cancelled')
+                    
+                     )
+         )
+        );
+ 
+		
+        $loop = new WP_Query( $args );
+		
+		//print_r($loop );
+				
+		if ( !empty( $status ) )
+		{
+			echo '<div id="message" class="updated fade"><p>', $status, '</p></div>';
+		}
+		if (  !$loop->have_posts() )
+		{
+			echo '<p>', __( 'You have no orders.', 'xoousers' ), '</p>';
+		}
+		else
+		{
+			$n = count( $msgs );
+			
+			
+			?>
+			<form action="" method="get">
+				<?php wp_nonce_field( 'usersultra-bulk-action_inbox' ); ?>
+				<input type="hidden" name="page" value="usersultra_inbox" />
+	
+				
+	
+				<table class="widefat fixed" id="table-3" cellspacing="0">
+					<thead>
+					<tr>
+						
+                       
+						<th class="manage-column" ><?php _e( 'Order #', 'xoousers' ); ?></th>
+                        <th class="manage-column"><?php _e( 'Total', 'xoousers' ); ?></th>
+						<th class="manage-column"><?php _e( 'Date', 'xoousers' ); ?></th>
+						<th class="manage-column" ><?php _e( 'Modified Date', 'xoousers' ); ?></th>
+                        <th class="manage-column" ><?php _e( 'Status', 'xoousers' ); ?></th>
+					</tr>
+					</thead>
+					<tbody>
+						<?php
+							
+							while ( $loop->have_posts() ) : $loop->the_post();
+							$order_id = $loop->post->ID;
+							$order = new WC_Order($order_id);
+							
+							//print_r($order );
+							
+							?>
+						<tr>
+							                         
+                            
+							<td>#<?php echo $order_id; ?></td>
+                            <td><?php echo woocommerce_price($order->order_total);?></td>
+							<td> <?php echo $order->order_date; ?></td>
+							<td><?php echo $order->modified_date; ?></td>
+                            <td><?php echo $order->status; ?></td>
+                            
+                            
+							<?php
+	
+						endwhile;
+						?>
+					</tbody>
+					
+				</table>
+			</form>
+			<?php
+	
+		}
+		?>
+
+	<?php
+	}
 
 }
 $key = "woocommerce";

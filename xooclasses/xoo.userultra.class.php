@@ -80,6 +80,7 @@ class XooUserUltra
 		  "rating" =>"xoo.userultra.rating" , 
 		  "statistc" =>"xoo.userultra.stat" ,		  
 		  "photogallery" =>"xoo.userultra.photos"  , 
+		  "woocommerce" =>"xoo.userultra.woocommerce"  ,  
 		  "userpanel" =>"xoo.userultra.user"  );  	
 	
 	}
@@ -1077,7 +1078,7 @@ class XooUserUltra
 		wp_enqueue_style('buttonize3_css');
 		
 		/* Custom style */		
-		wp_register_style( 'xoouserultra_style', xoousers_url.'custom-styles/default.css');
+		wp_register_style( 'xoouserultra_style', xoousers_url.'templates/'.xoousers_template.'/css/default.css');
 		wp_enqueue_style('xoouserultra_style');
 		
 		
@@ -2326,9 +2327,7 @@ class XooUserUltra
 	}
 	
 	
-
-	
-	public function get_social_buttons ($action_text, $atts)
+public function get_social_buttons ($action_text, $atts)
 	{
 		require_once(xoousers_path."libs/fbapi/src/facebook.php");
 		
@@ -2375,7 +2374,7 @@ class XooUserUltra
 				
 				       	               	
 						<a href="'.$loginUrl.'" class="btn-facebook" >
-							<span class="icon-facebook"> <img src="'.xoousers_url.'img/socialicons/facebook.png" ></span>'.$action_text.' with Facebook </a>
+							<span class="icon-facebook"> <img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/facebook.png" ></span>'.$action_text.' with Facebook </a>
 					
 					</div>';
 					
@@ -2391,7 +2390,7 @@ class XooUserUltra
 				//Yahoo
 				$display .='<div class="txt-center YahooSignIn">	               	
 							<a href="'.$auth_url_yahoo.'" class="btn-yahoo" >
-							<span class="icon-yahoo"><img src="'.xoousers_url.'img/socialicons/yahoo.png" ></span>'.$action_text.' with Yahoo </a>
+							<span class="icon-yahoo"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yahoo.png" ></span>'.$action_text.' with Yahoo </a>
 					
 					</div>';
 		     }
@@ -2406,8 +2405,8 @@ class XooUserUltra
 			
 				//Google
 				$display .='<div class="txt-center GoogleSignIn">	               	
-						<a href="'.$auth_url_google.'" class="btn-google" ">
-							<span class="icon-google"><img src="'.xoousers_url.'img/socialicons/googleplus.png" ></span>'.$action_text.' with Google </a>
+						<a href="'.$auth_url_google.'" class="btn-google" >
+							<span class="icon-google"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/googleplus.png" ></span>'.$action_text.' with Google </a>
 					
 					</div>';
 			}
@@ -2423,7 +2422,23 @@ class XooUserUltra
 				//Google
 				$display .='<div class="txt-center TwitterSignIn">	               	
 						<a href="'.$auth_url_google.'" class="btn-twitter" >
-							<span class="icon-twitter"><img src="'.xoousers_url.'img/socialicons/twitter.png" ></span>'.$action_text.' with Twitter </a>
+							<span class="icon-twitter"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/twitter.png" ></span>'.$action_text.' with Twitter </a>
+					
+					</div>';
+			}
+			
+			if($this->get_option('yammer_connect')==1)
+			{
+				//google
+			
+				$auth_url_google = $web_url."?uultrasocialsignup=yammer";
+			
+				$atleast_one = true;
+			
+				//Google
+				$display .='<div class="txt-center YammerSignIn">	               	
+						<a href="'.$auth_url_google.'" class="btn-yammer" >
+							<span class="icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' with Yammer </a>
 					
 					</div>';
 			}
@@ -2442,7 +2457,7 @@ class XooUserUltra
 				//LinkedIn
 				$display .='<div class="txt-center LinkedSignIn">	               	
 							<a href="'.$requestlink.'" class="btn-linkedin" >
-								<span class="icon-linkedin"><img src="'.xoousers_url.'img/socialicons/linkedin.png" ></span>'.$action_text.' with LinkedIn </a>
+								<span class="icon-linkedin"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/linkedin.png" ></span>'.$action_text.' with LinkedIn </a>
 					
 					</div>';
 			}	
@@ -2458,6 +2473,7 @@ class XooUserUltra
 	return $display;
 		
 	}
+	
 	
 	/*This function loads basic google libraries*/
 	

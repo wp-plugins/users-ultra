@@ -804,7 +804,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 	
 		
-		 $special_with_check = array('hide_admin_bar', 'private_message_system','redirect_backend_profile','redirect_backend_registration','redirect_backend_login', 'social_media_fb_active', 'social_media_linked_active', 'social_media_yahoo', 'social_media_google', 'twitter_connect', 'twitter_autopost', 'mailchimp_active', 'media_allow_photo_uploading');
+		 $special_with_check = array('hide_admin_bar', 'private_message_system','redirect_backend_profile','redirect_backend_registration','redirect_backend_login', 'social_media_fb_active', 'social_media_linked_active', 'social_media_yahoo', 'social_media_google', 'twitter_connect', 'yammer_connect', 'twitter_autopost', 'mailchimp_active', 'media_allow_photo_uploading');
 		 
 		}elseif($tab=="gateway"){
 			

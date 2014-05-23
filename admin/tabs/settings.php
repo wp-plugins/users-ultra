@@ -553,6 +553,40 @@ $this->create_plugin_setting(
         __('Input the message that will be posted right after user registration','xoousers'),
         __('','xoousers')
 );		
+/// yammer
+$this->create_plugin_setting(
+                'checkbox',
+                'yammer_connect',
+                __('Yammer Sign up','xoousers'),
+                '1',
+                __('If checked, User will be able to Sign up & Sign in through Yammer.','xoousers'),
+                __('If checked, User will be able to Sign up & Sign in through Yammer.','xoousers')
+        );
+		
+
+$this->create_plugin_setting(
+        'input',
+        'yammer_client_id',
+        __('Client Id','xoousers'),array(),
+        __('Paste the Yammer Client ID','xoousers'),
+        __('','xoousers')
+);  
+
+$this->create_plugin_setting(
+        'input',
+        'yammer_client_secret',
+        __('Client Secret','xoousers'),array(),
+        __('Paste the Yammer Client Secret','xoousers'),
+        __('','xoousers')
+);
+
+$this->create_plugin_setting(
+        'input',
+        'yammer_redir_url',
+        __('Redirect URL','xoousers'),array(),
+        __('Paste the Yammer Client Secret','xoousers'),
+        __('<br><br> VERY IMPORTANT: Your URL should end with "?uultryammer=1". Example: http://yourdomain.com/?uultryammer=1','xoousers')
+);
 
 
 		

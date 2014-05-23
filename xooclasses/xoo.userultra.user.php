@@ -1761,6 +1761,20 @@ class XooUserUser {
 				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=account"><span><i class="fa fa-wrench  fa-2x"></i></span>'.__('My Account', 'xoousers').'</a>';			
 			
 			}
+			
+		
+		}elseif($slug=="wootracker"){
+			
+			
+			if(!isset($_GET["page_id"]))
+			{
+				$url = '<a class="uultra-btn-u-menu" href="?module=wootracker"><span><i class="fa fa-truck   fa-2x"></i></span>'.__('My Orders', 'xoousers').'</a>';	
+				
+			}else{
+				
+				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=wootracker"><span><i class="fa fa-truck   fa-2x"></i></span>'.__('My Orders', 'xoousers').'</a>';			
+			
+			}
 		
 		}elseif($slug=="messages"){ 
 			

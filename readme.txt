@@ -1,10 +1,10 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, admin, member, members area, member registration, member access, auto tweek, user tweet, email newsletter subscribers, mailchimp newsletter
+Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, admin, member, yammer, member registration, member access, auto tweek, user tweet, email newsletter subscribers, mailchimp newsletter
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.62
+Stable tag: 1.0.63
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,9 +25,10 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
 
-
 <strong>Recent New Features:</strong><br>
 <pre>
+05-22-2014 -- WooCommerce Client Orders Status.
+05-22-2014 -- Yammer Sign in/Sign up Authentication.
 05-21-2014 -- Twitter Sign in/Sign up Authentication with Auto Tweet.
 05-20-2014 -- Users are able to delete their avatars .
 05-19-2014 -- Auto Sync with WooCommerce, Shipping and Billing Address.
@@ -54,6 +55,9 @@ This great feature allows you to import users into the Users Ultra System easily
 <strong>Auto Sync with WooCommerce</strong><br>
 Syncing with WooCommerce will automatically add WooCommerce customer profile fields to your Users Ultra Plugin. A quick way to have a WooCommerce account page integrated with Users Ultra. This great feature allows users to manage their Shipping Information through Users Ultra instead of using the default WooCommerce profile page. Users Ultra lets you sync the user's shipping and contact information of WooCommerce in just one click.
 
+<strong>WooCommerce Order Status Module.</strong><br>
+Users Ultra allows your clients to check the status of their orders online through the elegant user's backend.  This is an easy and professional way to let your customer know about the status of their purchases.  Your clients will be able to check the last modified data, order total, creation date and order's status.
+
 <strong>Twitter Login & Authentication with OAuth</strong><br>
 Users Ultra lets your users sign in and sign up by using their <strong>Twitter</strong> accounts with just one click. Integrating Twitter Login will increase your sign in/sign up conversion. Also, you will be able to share user activities, drive traffic to your site from social network sites, and increase user engagement on your site.
 
@@ -78,7 +82,7 @@ Since it uses Paypal, you could create almost any type of billing period such as
 The MailChimp feature allows you to quickly and easily add your new subscribers in your MailChimp list without any confirmation email. 
 
 <strong>Social Connects</strong><br>
-Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter or LinkedIn account.
+Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter, Yammer or LinkedIn account.
 
 <strong>Protecting content based on Membership Package</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
@@ -227,6 +231,10 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.62 (05-21-2014) =
+* New Feature - Yammer Login and Registration method has been added to the Social Connections Options.
+* New Feature - WooCommerce Order Status. This new feature allows users to check their order's status through Users Ultra.
 
 = 1.0.61 (05-20-2014) =
 * Bug Fix - IMPORTANT: Please update ASAP Google Sign Up Plus OAuth tweaks.

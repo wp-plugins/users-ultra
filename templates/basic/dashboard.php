@@ -63,6 +63,10 @@ $howmany = 5;
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('account');?></li>
                <?php }?>
                
+                 <?php if(!in_array("wootracker",$modules)){?>  
+               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('wootracker');?></li>
+               <?php }?>
+               
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li>             
                               
                <?php if(!in_array("messages",$modules)){?>           
@@ -295,6 +299,42 @@ $howmany = 5;
                
               
        <?php }?>
+       
+       <?php    
+	    if($module=="wootracker" && !in_array("wootracker",$modules)) 
+	   {
+		   
+		   
+	   
+	   ?>
+       
+             <?php  if($act=="") {?> 
+       
+                    <div class="commons-panel xoousersultra-shadow-borers" >
+                              <div class="commons-panel-heading">
+                                      <h2> <?php  _e('My Orders','xoousers');?> </h2>
+                               </div>
+                               
+                               
+                               <p class="paneldesc"><?php echo _e('Here you can track your orders. ','xoousers')?></p>
+                             
+                              <div class="commons-panel-content" >  
+                              
+                              <?php echo $xoouserultra->woocommerce->show_my_latest_orders(10);?>
+                              
+                               </div>
+                                              
+                      
+                           
+                       </div>
+               
+                <?php }?>
+               
+                                 
+               
+              
+       <?php }?>
+       
        
        
        <?php
