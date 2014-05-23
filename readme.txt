@@ -43,6 +43,10 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 </pre>
 
+<strong>FREE SUPPORT FORUM:</strong><br>
+<a href="http://usersultra.com/support/"><strong>Do you need help?</strong></a> <br>
+
+
 <h3>Help Keep This Plugin Free</h3>
 
 If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
