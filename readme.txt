@@ -100,6 +100,9 @@ You can filter your users by using any amount of conditional fields such as: cou
 <strong>Sync old users to make them work with Users Ultra?</strong><br>
 Users Ultra comes with a One-click sync tool that prepare your previous users to make them work with this Users Plugin.
 
+<strong>Amazing Pricing Tables with Shortcodes:</strong><br>
+Users Ultra gives you an easy way to generate pricing and/or comparison tables. You may choice multiple colors and they look very elegant. Generating Pricing Tables for your membership packages can be done by using shortocodes. You just need to input the Plan's ID and everything will be filled out automatically. You don't need to write the package's name or the price, everything happens automatically and handled by Users Ultra.
+
 <strong>Redirection</strong><br>
 Redirection after user login, logout and registration.
 
