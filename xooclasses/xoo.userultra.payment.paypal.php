@@ -392,6 +392,22 @@ class XooPaypalPayment
 		
 	}
 	
+	function get_package_url()
+	{
+		global $wpdb,  $xoouserultra, $wp_rewrite;		
+		$wp_rewrite = new WP_Rewrite();		
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		
+		
+		$page_id = $xoouserultra->get_option('registration_page_id');
+		$subscrition_url = get_permalink($page_id);
+		$web_url = site_url();
+		$url = $subscrition_url;
+		
+		return $url;
+	
+	}
+	
 	
 	
 	public function package_delete ()
@@ -457,11 +473,19 @@ class XooPaypalPayment
 				
 				$default_checked = 0;
 				
+				$plan_id = "";
+				
+				if(isset($_GET["plan_id"]) && $_GET["plan_id"]>0)
+				{
+					$plan_id =$_GET["plan_id"];
+				
+				}
+				
 				foreach ( $packages as $package )
 				{
 					$checked = '';
 					
-					if($default_checked==0)
+					if($default_checked==0 || $plan_id= $package->package_id)
 					{
 						$checked = 'checked="checked"';
 						

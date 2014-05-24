@@ -345,14 +345,15 @@ class XooShortCode {
 	 *
 	 */
 	 
-	 function respo_pricing_shortcode( $atts, $content = null  ) {
+	 function respo_pricing_shortcode( $atts, $content = null  ) 
+	 {
+		 global $xoouserultra;
 
 		extract( shortcode_atts( array(
 			'color' => 'black',
 			'position' => '',
 			'featured' => 'no',
-			'plan' => 'Basic',
-			'cost' => '$20',
+			'plan_id' => '',
 			'per' => 'month',
 			'button_url' => '',
 			'button_text' => 'Sign up',
@@ -364,14 +365,29 @@ class XooShortCode {
 
 		//set variables
 		$featured_pricing = ( $featured == 'yes' ) ? 'featured' : NULL;
+		
+		//get package
+		$package = $xoouserultra->paypal->get_package($plan_id);
+		
+		$amount = $package->package_amount;
+		$p_name = $package->package_name;
+		$package_id = $package->package_id;
+		
+		//get currency
+		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
+		
+		//generate url
+		
+		$package_url = $xoouserultra->paypal->get_package_url();
+		$button_url = $package_url."?plan_id=".$plan_id;		
 
 		//start content
 		$pricing_content ='';
 		$pricing_content .= '<div class="respo-sc-pricing-table ' . $class . '">';
 		$pricing_content .= '<div class="respo-sc-pricing ' . $featured_pricing . ' respo-sc-column-' . $position . ' ' . $class . '">';
 			$pricing_content .= '<div class="respo-sc-pricing-header '. $color .'">';
-				$pricing_content .= '<h5>' . $plan . '</h5>';
-				$pricing_content .= '<div class="respo-sc-pricing-cost">' . $cost . '</div><div class="respo-sc-pricing-per">' . $per . '</div>';
+				$pricing_content .= '<h5>' .$p_name . '</h5>';
+				$pricing_content .= '<div class="respo-sc-pricing-cost">' .$currency_symbol. $amount . '</div><div class="respo-sc-pricing-per">' . $per . '</div>';
 			$pricing_content .= '</div>';
 			$pricing_content .= '<div class="respo-sc-pricing-content">';
 				$pricing_content .= '' . $content . '';

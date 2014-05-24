@@ -292,6 +292,53 @@
                     ]
                 },
 				
+				//pricing tables
+			   {
+                    text: 'Pricing Tables',
+                    value: 'Text from menu item II',
+                    onclick: function() {
+                        editor.insertContent(this.value());
+                    },
+                    menu: [
+                        {
+                            text: 'One Column',
+                            value: pricing_one_col,
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } ,
+						
+						{
+                            text: 'Two Columns',
+                            value: pricing_two_col,
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        }						
+						,						
+						{
+                            text: 'Three Columns',
+                            value: pricing_three_col,
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } 
+						
+						,						
+						{
+                            text: 'Four Columns',
+                            value: pricing_four_col,
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } 
+                    ]
+                },
+				
 				
 			   
 				
