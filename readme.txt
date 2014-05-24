@@ -240,8 +240,12 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.65 (05-23-2014) =
+* New Feature - Example of usage of Pricing Table Shortcode in the Help Tab. 
+
 = 1.0.64 (05-23-2014) =
 * New Feature - Dynamic Pricing Tables. 
+* New Feature - Pricing Table Shortcode within the WP editor button. 
 
 = 1.0.63 (05-21-2014) =
 * Improvements - We have improved the templates structure, that way we will be able to provide more templates in the future.

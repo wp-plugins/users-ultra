@@ -57,11 +57,9 @@ global $xoouserultra;
                    <strong>Excluding Modules From Members Panel</strong>
                  <pre> [usersultra_my_account disable='messages,photos']</pre>
                  
+                   <strong>Pricing Table</strong>
+                 <pre> [respo_pricing plan_id='input the plan id here' per='per month' button_text='Sign Up' button_color='blue' color='blue' button_target='self' button_rel='nofollow' ]<ul>	<li>Write Something here</li>	<li>Write Something here</li>	<li>Write Something here</li>	<li>Write Something here</li></ul>[/respo_pricing]</pre>
                  
-                 
-                 
-                
-          
                           
     
 </div>
