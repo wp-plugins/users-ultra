@@ -240,6 +240,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.66 (05-23-2014) =
+* Tweaks - Tweaks to the photos module. 
+
 = 1.0.65 (05-23-2014) =
 * New Feature - Example of usage of Pricing Table Shortcode in the Help Tab. 
 

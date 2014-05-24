@@ -480,12 +480,11 @@ class XooPaypalPayment
 					$plan_id =$_GET["plan_id"];
 				
 				}
-				
 				foreach ( $packages as $package )
 				{
 					$checked = '';
 					
-					if($default_checked==0 || $plan_id= $package->package_id)
+					if( $plan_id== $package->package_id)
 					{
 						$checked = 'checked="checked"';
 						

@@ -1494,7 +1494,7 @@ class XooUserPhoto {
 		
 		if ( empty( $photos ) )
 			{
-				$thumb = xoousers_url."/img/no-photo.png";
+				$thumb = xoousers_url."templates/".xoousers_template."/img/no-photo.png";
 			
 			}else{
 				
@@ -1531,7 +1531,7 @@ class XooUserPhoto {
 		
 		if ( empty( $photos ) )
 			{
-				$thumb = xoousers_url."/img/no-photo.png";
+				$thumb = xoousers_url."templates/".xoousers_template."/img/no-photo.png";
 			
 			}else{
 				

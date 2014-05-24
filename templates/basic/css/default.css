@@ -1006,7 +1006,7 @@ width:90%
 }
 
 .usersultra-dahsboard-cont .gallery-list .pe_icons_gal a {
-	background: url(../admin/images/favorite_1616.png) no-repeat 0 0;
+	background: url(../img/favorite_1616.png) no-repeat 0 0;
 	display: block;
 	height: 16px;
 	width: 16px;
@@ -1017,16 +1017,16 @@ width:90%
 }
 
 .usersultra-dahsboard-cont .gallery-list .pe_icons_gal a.delete {
-	background-image: url(../admin/images/remove_1616.png);
+	background-image: url(../img/remove_1616.png);
 }
 
 .usersultra-dahsboard-cont .gallery-list .pe_icons_gal a.edit {
-	background-image: url(../admin/images/edit_1616.png);
+	background-image: url(../img/edit_1616.png);
 }
 
 
 .usersultra-dahsboard-cont .pe_icons_gal a.edit {
-	background-image: url(../admin/images/edit_1616.png);
+	background-image: url(../img/edit_1616.png);
 }
 .usersultra-dahsboard-cont .gallery-list ul{
 	
@@ -1085,7 +1085,7 @@ position: absolute; width:200px; min-height:30px; height:auto; background: #F5F5
 }
 
 .usersultra-dahsboard-cont .uultra-photo-edit .pe_icons_gal a.edit {
-	background-image: url(../admin/images/edit_1616.png);
+	background-image: url(../img/edit_1616.png);
 }
  
 .usersultra-dahsboard-cont .uultra-photo-edit p{
@@ -1161,7 +1161,7 @@ box-shadow: 0px ;
 }
 
 .usersultra-dahsboard-cont .video-list .pe_icons_gal a {
-	background: url(../admin/images/favorite_1616.png) no-repeat 0 0;
+	background: url(../img/favorite_1616.png) no-repeat 0 0;
 	display: block;
 	height: 16px;
 	width: 16px;
@@ -1172,11 +1172,11 @@ box-shadow: 0px ;
 }
 
 .usersultra-dahsboard-cont .video-list .pe_icons_gal a.delete {
-	background-image: url(../admin/images/remove_1616.png);
+	background-image: url(../img/remove_1616.png);
 }
 
 .usersultra-dahsboard-cont .video-list .pe_icons_gal a.edit {
-	background-image: url(../admin/images/edit_1616.png);
+	background-image: url(../img/edit_1616.png);
 }
 
 .usersultra-dahsboard-cont .video-list ul{
@@ -1296,7 +1296,7 @@ box-shadow: 0px ;
 }
 
 .usersultra-dahsboard-cont ul.usersultra-photolist-private .pe_icons a {
-	background: url(../admin/images/favorite_1616.png) no-repeat 0 0;
+	background: url(../img/favorite_1616.png) no-repeat 0 0;
 	display: block;
 	height: 16px;
 	width: 16px;
@@ -1308,11 +1308,11 @@ box-shadow: 0px ;
 
 
 .usersultra-dahsboard-cont ul.usersultra-photolist-private .pe_icons a.delete {
-	background-image: url(../admin/images/remove_1616.png);
+	background-image: url(../img/remove_1616.png);
 }
 
 .usersultra-dahsboard-cont ul.usersultra-photolist-private .pe_icons a.edit {
-	background-image: url(../admin/images/edit_1616.png);
+	background-image: url(../img/edit_1616.png);
 }
 
 .usersultra-dahsboard-cont .ui-progressbar-value{
