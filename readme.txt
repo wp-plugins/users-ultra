@@ -236,6 +236,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.63 (05-21-2014) =
+* Improvements - We have improved the templates structure, that way we will be able to provide more templates in the future.
+
 = 1.0.62 (05-21-2014) =
 * New Feature - Yammer Login and Registration method has been added to the Social Connections Options.
 * New Feature - WooCommerce Order Status. This new feature allows users to check their order's status through Users Ultra.
