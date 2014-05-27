@@ -26,6 +26,35 @@ $this->create_plugin_setting(
   
 </div>
 
+<div class="user-ultra-sect ">
+  <h3><?php _e('Membership  Settings','xoousers'); ?></h3>
+  
+  <p><?php _e('.','xoousers'); ?></p>
+  
+  
+  <table class="form-table">
+<?php 
+   
+$this->create_plugin_setting(
+                'checkbox',
+                'membership_display_selected_only',
+                __('Display Only Selected Package','xoousers'),
+                '1',
+                __('If checked, Only the Selected package will be displayed in the payment form','xoousers'),
+                __('If checked, Only the Selected package will be displayed in the payment form','xoousers')
+        ); 
+$this->create_plugin_setting(
+        'input',
+        'membership_display_zero',
+        __('Text for free membership:','xoousers'),array(),
+        __('This text will be displayed for the free membership rather than showing <strong>"$0.00"<strong>. Please input some text like: "Free"','xoousers'),
+        __('','xoousers')
+);		
+?>
+</table>
+
+  
+</div>
 
 <div class="user-ultra-sect ">
   <h3><?php _e('Media Settings','xoousers'); ?></h3>

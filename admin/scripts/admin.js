@@ -315,6 +315,7 @@ jQuery(document).ready(function($) {
 						success: function(data){					
 						
 							 $("#uu-edit-package-box-"+p_id).html(data);
+							 $('.color-picker').wpColorPicker();
 							jQuery("#uu-edit-package-box-"+p_id).slideDown();							
 							
 							
@@ -379,6 +380,13 @@ jQuery(document).ready(function($) {
 		var p_moderation = $('#p_moderation').val();
 		var p_max_photos = $('#p_max_photos').val();
 		var p_max_gallery = $('#p_max_gallery').val();	
+		
+		
+		var p_price_color = $('#p_price_color').val();
+		var p_price_bg_color = $('#p_price_bg_color').val();
+		
+		var p_signup_color = $('#p_signup_color').val();
+		var p_signup_bg_color = $('#p_signup_bg_color').val();
 				
 		
 		if(p_name==""){alert(package_error_message_name);return}
@@ -390,7 +398,7 @@ jQuery(document).ready(function($) {
 		jQuery.ajax({
 				type: 'POST',
 				url: ajaxurl,
-				data: {"action": "package_add_new", "p_name": p_name , "p_desc": p_desc , 				"p_price": p_price, "p_period": p_period  , "p_every": p_every ,  "p_type": p_type ,  "p_moderation": p_moderation ,  "p_max_photos": p_max_photos ,  "p_max_gallery": p_max_gallery},
+				data: {"action": "package_add_new", "p_name": p_name , "p_desc": p_desc , 				"p_price": p_price, "p_period": p_period  , "p_every": p_every ,  "p_type": p_type ,  "p_moderation": p_moderation ,  "p_max_photos": p_max_photos ,  "p_max_gallery": p_max_gallery ,  "p_price_color": p_price_color ,  "p_price_bg_color": p_price_bg_color ,  "p_signup_color": p_signup_color ,  "p_signup_bg_color": p_signup_bg_color},
 				
 				success: function(data){	
 				
@@ -431,6 +439,13 @@ jQuery(document).ready(function($) {
 		var p_moderation = $('#p_moderation_'+p_id).val();
 		var p_max_photos = $('#p_max_photos_'+p_id).val();
 		var p_max_gallery = $('#p_max_gallery_'+p_id).val();	
+		
+		
+		var p_price_color = $('#p_price_color_'+p_id).val();
+		var p_price_bg_color = $('#p_price_bg_color_'+p_id).val();
+		
+		var p_signup_color = $('#p_signup_color_'+p_id).val();
+		var p_signup_bg_color = $('#p_signup_bg_color_'+p_id).val();
 				
 		
 		if(p_name==""){alert(package_error_message_name);return}
@@ -442,7 +457,7 @@ jQuery(document).ready(function($) {
 		jQuery.ajax({
 				type: 'POST',
 				url: ajaxurl,
-				data: {"action": "package_edit_confirm", "p_id":p_id,  "p_name": p_name , "p_desc": p_desc , 				"p_price": p_price, "p_period": p_period  , "p_every": p_every ,  "p_type": p_type ,  "p_moderation": p_moderation ,  "p_max_photos": p_max_photos ,  "p_max_gallery": p_max_gallery},
+				data: {"action": "package_edit_confirm", "p_id":p_id,  "p_name": p_name , "p_desc": p_desc , 				"p_price": p_price, "p_period": p_period  , "p_every": p_every ,  "p_type": p_type ,  "p_moderation": p_moderation ,  "p_max_photos": p_max_photos ,  "p_max_gallery": p_max_gallery ,  "p_price_color": p_price_color ,  "p_price_bg_color": p_price_bg_color ,  "p_signup_color": p_signup_color ,  "p_signup_bg_color": p_signup_bg_color},
 				
 				success: function(data){
 					
@@ -695,6 +710,7 @@ function reload_packages ()
 							}, function (response){									
 																
 							jQuery("#usersultra-data_list").html(response);
+							jQuery('.color-picker').wpColorPicker();
 							jQuery(".user-ultra-success").slideDown();
 							setTimeout("hidde_package_noti('user-ultra-success')", 3000);
 									

@@ -16,14 +16,22 @@ global $xoouserultra;
            
                <?php echo $xoouserultra->userpanel->get_user_pic( $user_id, $pic_size, $pic_type, $pic_boder_type,  $pic_size_type)?>   
                
-                                           
-               
-                 <?php if ($optional_fields_to_display!="") { ?>                 
                  
-                   <?php echo $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_fields_to_display)?>                
                  
+                   <?php if ($optional_fields_to_display!="") { ?>                 
+                 
+                   <?php echo $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_fields_to_display)?>                 
                 
                   <?php } ?>        
+                 
+                  <?php if ($profile_fields_to_display=="all") { ?>                 
+                 
+                   <?php echo $xoouserultra->userpanel->get_profile_info( $user_id)?>                 
+                
+                  <?php } ?>   
+                      
+               
+                
             
            
            </div>

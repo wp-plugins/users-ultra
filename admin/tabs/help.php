@@ -40,7 +40,12 @@ global $xoouserultra;
                  <pre> [usersultra_users_promote optional_fields_to_display='rating,social' users_list='59'  display_country_flag='both']  </pre>
                  
                    <strong>User Profile</strong>
-                 <pre>[usersultra_profile]</pre>
+                 <pre>[usersultra_profile optional_fields_to_display='age,country,social']</pre>
+                 
+                  <strong>User Profile, displaying all fields</strong>
+                 <pre>[usersultra_profile profile_fields_to_display='all']</pre>
+                 
+                 
                  
                    <strong>User Profile With Lightbox Gallery</strong>
                  <pre>[usersultra_profile gallery_type='lightbox'] </pre>

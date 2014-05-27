@@ -1973,11 +1973,22 @@ class XooUserUltra
 				/* Show the label */
 				if (isset($array[$key]['name']) && $name)
 				 {
-					$display .= '<label class="xoouserultra-field-type" for="'.$meta.'">';						
+					$display .= '<label class="xoouserultra-field-type" for="'.$meta.'">';	
+					
+					if (isset($array[$key]['icon']) && $icon) {
+                            $display .= '<i class="fa fa-' . $icon . '"></i>';
+                    } else {
+                            $display .= '<i class="fa fa-icon-none"></i>';
+                    }
+											
 					$display .= '<span>'.$name.'</span></label>';
+					
+					
 				} else {
 					$display .= '<label class="xoouserultra-field-type">&nbsp;</label>';
 				}
+				
+				
 				
 				$display .= '<div class="xoouserultra-field-value">';
 					
@@ -2327,7 +2338,7 @@ class XooUserUltra
 	}
 	
 	
-public function get_social_buttons ($action_text, $atts)
+	public function get_social_buttons ($action_text, $atts)
 	{
 		require_once(xoousers_path."libs/fbapi/src/facebook.php");
 		

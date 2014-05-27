@@ -199,6 +199,14 @@ class XooUserAdmin extends XooUserUltraCommon
 		wp_register_script('userultra_chosen', xoousers_url . 'admin/scripts/admin-chosen.js');
 		wp_enqueue_script('userultra_chosen');
 		
+		
+		//color picker		
+		 wp_enqueue_style( 'wp-color-picker' );		 
+		 wp_register_script( 'userultra_color_picker', xoousers_url.'admin/scripts/color-picker-js.js', array( 
+			'wp-color-picker'
+		) );
+		wp_enqueue_script( 'userultra_color_picker' );
+		
 		wp_register_script( 'userultra_admin', xoousers_url.'admin/scripts/admin.js', array( 
 			'jquery','jquery-ui-core','jquery-ui-draggable','jquery-ui-droppable',	'jquery-ui-sortable'
 		) );
@@ -804,7 +812,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 	
 		
-		 $special_with_check = array('hide_admin_bar', 'private_message_system','redirect_backend_profile','redirect_backend_registration','redirect_backend_login', 'social_media_fb_active', 'social_media_linked_active', 'social_media_yahoo', 'social_media_google', 'twitter_connect', 'yammer_connect', 'twitter_autopost', 'mailchimp_active', 'media_allow_photo_uploading');
+		 $special_with_check = array('hide_admin_bar', 'private_message_system','redirect_backend_profile','redirect_backend_registration','redirect_backend_login', 'social_media_fb_active', 'social_media_linked_active', 'social_media_yahoo', 'social_media_google', 'twitter_connect', 'yammer_connect', 'twitter_autopost', 'mailchimp_active', 'media_allow_photo_uploading', 'membership_display_selected_only');
 		 
 		}elseif($tab=="gateway"){
 			

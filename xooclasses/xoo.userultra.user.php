@@ -1223,9 +1223,17 @@ class XooUserUser {
 				/* Show the label */
 				if (isset($array[$key]['name']) && $name)
 				 {
-					$html .= '<label class="xoouserultra-field-type" for="'.$meta.'">';					
+					$html .= '<label class="xoouserultra-field-type" for="'.$meta.'">';	
 					
+					if (isset($array[$key]['icon']) && $icon) {
+                            $html .= '<i class="fa fa-' . $icon . '"></i>';
+                    } else {
+                            $html .= '<i class="fa fa-icon-none"></i>';
+                    }
+											
 					$html .= '<span>'.$name.'</span></label>';
+					
+					
 				} else {
 					$html .= '<label class="xoouserultra-field-type">&nbsp;</label>';
 				}
@@ -1890,9 +1898,9 @@ class XooUserUser {
 			'pic_size_type' => 'dynamic', // dynamic or fixed	
 			'pic_size' => 230, // size in pixels of the user's picture	
 			
-			'gallery_type' => '', // lightbox or single page for each photo
-			
+			'gallery_type' => '', // lightbox or single page for each photo			
 			'optional_fields_to_display' => '', // size in pixels of the user's picture
+			'profile_fields_to_display' => '', // all or empty
 			
 			'display_country_flag' => 'name', // display flag, no,yes,only, both. Only won't display name
 			'display_social' => 'yes', // display social
@@ -4735,6 +4743,82 @@ class XooUserUser {
 			$user = $this->get_member_by( $arg );
 			return $user->ID;
 		}
+	}
+	
+	public function get_custom_user_meta ($meta, $user_id)
+	{
+		return get_user_meta( $user_id, $meta, true);
+		
+	}
+	
+	
+	public function  get_profile_info ($user_id)	
+	{
+		
+		$array = get_option('usersultra_profile_fields');
+
+		foreach($array as $key=>$field) 
+		{
+		    // Optimized condition and added strict conditions 
+		    $exclude_array = array('user_pass', 'user_pass_confirm', 'user_email');
+		    if(isset($field['meta']) && in_array($field['meta'], $exclude_array))
+		    {
+		        unset($array[$key]);
+		    }
+		}
+		
+		
+		$i_array_end = end($array);
+		
+		if(isset($i_array_end['position']))
+		{
+		    $array_end = $i_array_end['position'];
+		    if ($array[$array_end]['type'] == 'separator') {
+		        unset($array[$array_end]);
+		    }
+		}
+		
+		
+		$html .= '';
+		
+	
+		foreach($array as $key => $field) 
+		{
+
+			extract($field);
+			
+			
+			if(!isset($private))
+			    $private = 0;
+			
+			if(!isset($show_in_widget))
+			    $show_in_widget = 1;
+				
+			
+			
+			/* Fieldset seperator */
+			if ( $type == 'separator' && $deleted == 0 && $private == 0  && isset($array[$key]['show_in_register']) && $array[$key]['show_in_register'] == 1) 
+			{
+				$html .= '<div class="uultra-profile-seperator">'.$name.'</div>';
+			}
+			
+			if ( $type == 'usermeta' && $deleted == 0 && $private == 0  && isset($array[$key]['show_in_register']) && $array[$key]['show_in_register'] == 1)			
+			{				
+				/* Show the label */
+				if (isset($array[$key]['name']) && $name)
+				{
+					$html .= ' <span class="data-a">'.$name.':</span><span class="data-b">'.$this->get_custom_user_meta( $meta, $user_id).'</span> ';
+				}
+			
+			}
+				 	
+				
+			
+		}
+		
+		$html .= '';
+		return $html;
+		
 	}
 	
 	

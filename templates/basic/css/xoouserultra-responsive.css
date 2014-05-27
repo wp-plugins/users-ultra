@@ -23,16 +23,41 @@ MEDIA QUERIES
 /* for 980px or less */
 @media screen and (max-width: 980px) {
 	
+	
+}
 
+/* for 750px or less */
+@media screen and (max-width: 750px) {
+	
+		   span.data-a {
+	width:100% !important;
+	display: block !important	
+	}
+	
+	span.data-b {
+	width:!important;
+	display:block !important; 
+	margin-top:5px; 
+	}
 	
 	
 }
+
 
 /* for 600px or less */
 @media screen and (max-width: 600px) {
 	
 
+   span.data-a {
+	width:100% !important;
+	display: block !important	
+	}
 	
+	span.data-b {
+	width:!important;
+	display:block !important; 
+	margin-top:5px; 
+	}	
 	
 	
 

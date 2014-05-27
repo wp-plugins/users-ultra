@@ -373,30 +373,50 @@ class XooShortCode {
 		$p_name = $package->package_name;
 		$package_id = $package->package_id;
 		
+		//customization
+		$customization = $package->package_customization;
+		$customization = unserialize($customization);
+		  
+		if(is_array($customization))
+		{
+			  $p_price_color = $customization["p_price_color"];
+			  $p_price_bg_color = $customization["p_price_bg_color"];
+			  
+			  $p_signup_color = $customization["p_signup_color"];
+			  $p_signup_bg_color = $customization["p_signup_bg_color"];
+			  
+			  //customization string 			  
+			  $custom_s = 'style="background-color:'.$p_price_bg_color.' !important; color:'.$p_price_color.' !important"';
+			  
+			  $custom_signup_color = 'style="color:'.$p_signup_color.' !important"';			  
+			  $custom_signup_bg_color= 'style="background-color:'.$p_signup_bg_color.' !important; border-color:'.$p_signup_bg_color.' !important; "';
+			
+		}
+		
 		//get currency
 		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
 		
-		//generate url
-		
+		//generate url		
 		$package_url = $xoouserultra->paypal->get_package_url();
 		$button_url = $package_url."?plan_id=".$plan_id;		
 
 		//start content
 		$pricing_content ='';
-		$pricing_content .= '<div class="respo-sc-pricing-table ' . $class . '">';
+		$pricing_content .= '<div class="respo-sc-pricing-table ' . $class . '" >';
 		$pricing_content .= '<div class="respo-sc-pricing ' . $featured_pricing . ' respo-sc-column-' . $position . ' ' . $class . '">';
-			$pricing_content .= '<div class="respo-sc-pricing-header '. $color .'">';
-				$pricing_content .= '<h5>' .$p_name . '</h5>';
-				$pricing_content .= '<div class="respo-sc-pricing-cost">' .$currency_symbol. $amount . '</div><div class="respo-sc-pricing-per">' . $per . '</div>';
+			$pricing_content .= '<div class="respo-sc-pricing-header '. $color .'" '. $custom_s.'>';
+				$pricing_content .= '<h5 '. $custom_s.'>' .$p_name . '</h5>';
+				$pricing_content .= '<div class="respo-sc-pricing-cost" '. $custom_s.'>' .$currency_symbol. $amount . '</div><div class="respo-sc-pricing-per">' . $per . '</div>';
 			$pricing_content .= '</div>';
 			$pricing_content .= '<div class="respo-sc-pricing-content">';
 				$pricing_content .= '' . $content . '';
 			$pricing_content .= '</div>';
 			if( $button_url ) {
-				$pricing_content .= '<div class="respo-sc-pricing-button"><a href="' . $button_url . '" class="respo-sc-button ' . $button_color . '" target="_' . $button_target . '" rel="' . $button_rel . '"><span class="respo-sc-button-inner">' . $button_text . '</span></a></div>';
+				$pricing_content .= '<div class="respo-sc-pricing-button"><a href="' . $button_url . '" class="respo-sc-button ' . $button_color . '" target="_' . $button_target . '" rel="' . $button_rel . '" '.$custom_signup_bg_color.'><span class="respo-sc-button-inner" '.$custom_signup_color.'>' . $button_text . '</span></a></div>';
 			}
 		$pricing_content .= '</div>';
 		$pricing_content .= '</div><div class="respo-sc-clear-floats"></div>';
+		
 		return $pricing_content;
 	}
 	

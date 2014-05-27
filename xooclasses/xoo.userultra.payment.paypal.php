@@ -42,6 +42,7 @@ class XooPaypalPayment
 				`package_limit_photos` int(11)  NULL,
 				`package_limit_galleries` int(11) NULL,
 				`package_limit_posts` int(11) NULL,
+				`package_customization` text NOT NULL,
 				
 				`package_type` varchar(60) NOT NULL,
 				`package_number_of_times` varchar(60) NOT NULL,
@@ -94,6 +95,15 @@ class XooPaypalPayment
 			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_packages add column package_approvation varchar (5) ; ';
 			$wpdb->query($sql);
 		}
+		
+		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_packages where field="package_customization" ';		
+		$rows = $wpdb->get_results($sql);		
+		if ( empty( $rows ) )
+		{	
+			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_packages add column package_customization text ; ';
+			$wpdb->query($sql);
+		}
+		
 		
 		
 		
@@ -662,10 +672,52 @@ class XooPaypalPayment
 		   
 		   
            
-          </table>
+          </table>';
+		  
+		   //customization
+		  $customization = $package->package_customization;
+		  $customization = unserialize($customization);
+		  
+		  if(is_array($customization))
+		  {
+			  $p_price_color = $customization["p_price_color"];
+			  $p_price_bg_color = $customization["p_price_bg_color"];
+			  
+			  $p_signup_color = $customization["p_signup_color"];
+			  $p_signup_bg_color = $customization["p_signup_bg_color"];
+			 
+			
+		  }
+		  
+		  $html .='  <h3>'.__('Pricing Table Customization','xoousers').'</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+                <td width="24%"> '. __('Name/Price Font Color','xoousers').'</td>
+                <td width="76%"><input name="p_price_color" type="text" id="p_price_color_'.$package->package_id.'" value="'.$p_price_color.'" class="color-picker" data-default-color=""/> 
+         </td>
+              </tr>
+              <tr>
+                <td> '.__('Name/Price Background Color','xoousers').'</td>
+                <td><input name="p_price_bg_color" type="text" id="p_price_bg_color_'.$package->package_id.'" value="'. $p_price_bg_color.'" class="color-picker"  data-default-color="" /> 
+               </td>
+              </tr>
+			  
+			   <tr>
+                <td> '.__('Sign Up Button Text Color','xoousers').'</td>
+                <td><input name="p_signup_color" type="text" id="p_signup_color_'.$package->package_id.'" value="'. $p_signup_color.'" class="color-picker"  data-default-color="" /> 
+               </td>
+              </tr>
+			  
+			   <tr>
+                <td> '.__('Sign Up Button Brackground Color','xoousers').'</td>
+                <td><input name="p_signup_bg_color" type="text" id="p_signup_bg_color_'.$package->package_id.'" value="'. $p_signup_bg_color.'" class="color-picker"  data-default-color="" /> 
+               </td>
+              </tr>
+            
+            </table>';
 		  
 		          
-         <p>
+         $html .='<p>
           <a href="#" class="button uultra-close-edit-package" >'. __("Cancel","xoousers").'</a>
            <a href="#" class="button-primary uultra-edit-package-confirm" data-package="'.$package->package_id.'">'.__('Confirm','xoousers').'</a>
         </p>';
@@ -782,9 +834,19 @@ class XooPaypalPayment
 		$p_max_photos   =  $_POST['p_max_photos'];
 		$p_max_gallery   =  $_POST['p_max_gallery'];
 		
+		$p_price_color   =  $_POST['p_price_color']; //font color
+		$p_price_bg_color   =  $_POST['p_price_bg_color'];
+		
+		 $p_signup_color = $_POST["p_signup_color"];
+		 $p_signup_bg_color = $_POST["p_signup_bg_color"];
+		
+		//prepare customization array
+		$package_customization = array();				
+		$package_customization = array('p_price_color' =>$p_price_color, 'p_price_bg_color' =>$p_price_bg_color ,'p_signup_color' =>$p_signup_color, 'p_signup_bg_color' =>$p_signup_bg_color );
+		$package_customization = serialize($package_customization);		
 		
 		
-		$query = "UPDATE ". $wpdb->prefix ."usersultra_packages SET package_name = '$package_name',package_desc = '$package_desc', package_type = '$package_type' , package_number_of_times = '$package_number_of_times' , package_time_period = '$package_time_period', package_amount = '$package_amount', package_approvation = '$p_moderation'  , package_limit_photos = '$p_max_photos' , package_limit_galleries = '$p_max_gallery'  WHERE  `package_id` = '$package_id' ";						
+		$query = "UPDATE ". $wpdb->prefix ."usersultra_packages SET package_name = '$package_name',package_desc = '$package_desc', package_type = '$package_type' , package_number_of_times = '$package_number_of_times' , package_time_period = '$package_time_period', package_amount = '$package_amount', package_approvation = '$p_moderation'  , package_limit_photos = '$p_max_photos' , package_limit_galleries = '$p_max_gallery', package_customization = '$package_customization'  WHERE  `package_id` = '$package_id' ";						
 		
 		$wpdb->query( $query );
 		
@@ -799,6 +861,17 @@ class XooPaypalPayment
 	public function package_add_new ()
 	{
 		global $wpdb,  $xoouserultra;
+		
+		$p_price_color   =  $_POST['p_price_color']; //font color
+		$p_price_bg_color   =  $_POST['p_price_bg_color'];
+		
+		$p_signup_color = $_POST["p_signup_color"];
+		$p_signup_bg_color = $_POST["p_signup_bg_color"];
+		
+		//prepare customization array
+		$package_customization = array();				
+		$package_customization = array('p_price_color' =>$p_price_color, 'p_price_bg_color' =>$p_price_bg_color, 'p_signup_color' =>$p_signup_color, 'p_signup_bg_color' =>$p_signup_bg_color );
+		$package_customization = serialize($package_customization);	
 	
 		
 		$new_message = array(
@@ -812,13 +885,14 @@ class XooPaypalPayment
 						
 						'package_approvation'   =>  $_POST['p_moderation'],
 						'package_limit_photos'   =>  $_POST['p_max_photos'],
-						'package_limit_galleries'   =>  $_POST['p_max_gallery']
+						'package_limit_galleries'   =>  $_POST['p_max_gallery'],
+						'package_customization'   =>  $package_customization
 						
 					);	
 		
 		
 		 $wpdb->insert( $wpdb->prefix . 'usersultra_packages', 
-		 $new_message, array( '%d', '%s', '%s', '%s' , '%s', '%s', '%s' ,'%s', '%s', '%s' ) ) ;	
+		 $new_message, array( '%d', '%s', '%s', '%s' , '%s', '%s', '%s' ,'%s', '%s', '%s' , '%s' ) ) ;	
 		 
 		 
 		

@@ -76,7 +76,32 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
            </tr>
           </table>
           
-          
+            <h3><?php echo _e('Pricing Table Customization','xoousers')?></h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+                <td width="24%"> <?php echo _e('Name/Price Font Color','xoousers')?></td>
+                <td width="76%"><input name="p_price_color" type="text" id="p_price_color" value="" class="color-picker" data-default-color=""/> 
+         </td>
+              </tr>
+              <tr>
+                <td> <?php echo _e('Name/Price Background Color','xoousers')?></td>
+                <td><input name="p_price_bg_color" type="text" id="p_price_bg_color" value="" class="color-picker"  data-default-color="" /> 
+               </td>
+              </tr>
+              
+               <tr>
+                <td> <?php echo _e('Sign Up Button Text Color','xoousers')?></td>
+                <td><input name="p_signup_color" type="text" id="p_signup_color" value="" class="color-picker"  data-default-color="" /> 
+               </td>
+              </tr>
+              
+              <tr>
+                <td> <?php echo _e('Sign Up Button Brackground Color','xoousers')?></td>
+                <td><input name="p_signup_bg_color" type="text" id="p_signup_bg_color" value="" class="color-picker"  data-default-color="" /> 
+               </td>
+              </tr>
+            
+            </table>
           
           <p>
           <a href="#" class="button uultra-close-new-package" ><?php _e('Cancel','xoousers'); ?></a>
