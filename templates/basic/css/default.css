@@ -574,6 +574,7 @@ input.btn {
 	font-family: Open Sans;
 	margin-left: auto !important;
 	margin-right: auto !important;
+	background-color:#FFF;
 }
 
 .uusersultra-dahsboard-cont .rounded {-moz-border-radius: 5px; border-radius:5px;}
