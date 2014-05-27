@@ -567,7 +567,7 @@ input.btn {
 
 .usersultra-dahsboard-cont{
 	float: none;
-	display:inline;
+	display:inline-block;	
 	position:relative;
 	width: 100%;
 	max-width: 1190px !important;
@@ -575,6 +575,7 @@ input.btn {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	background-color:#FFF;
+	padding-top:10px;
 }
 
 .uusersultra-dahsboard-cont .rounded {-moz-border-radius: 5px; border-radius:5px;}

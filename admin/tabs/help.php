@@ -43,8 +43,7 @@ global $xoouserultra;
                  <pre>[usersultra_profile optional_fields_to_display='age,country,social']</pre>
                  
                   <strong>User Profile, displaying all fields</strong>
-                 <pre>[usersultra_profile profile_fields_to_display='all']</pre>
-                 
+                 <pre>[usersultra_profile profile_fields_to_display='all']</pre>               
                  
                  
                    <strong>User Profile With Lightbox Gallery</strong>
