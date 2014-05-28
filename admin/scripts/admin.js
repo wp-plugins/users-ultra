@@ -316,7 +316,7 @@ jQuery(document).ready(function($) {
 						
 							 $("#uu-edit-package-box-"+p_id).html(data);
 							 $('.color-picker').wpColorPicker();
-							jQuery("#uu-edit-package-box-"+p_id).slideDown();							
+							 jQuery("#uu-edit-package-box-"+p_id).slideDown();							
 							
 							
 							}

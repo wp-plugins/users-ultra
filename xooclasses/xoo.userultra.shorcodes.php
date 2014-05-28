@@ -398,7 +398,18 @@ class XooShortCode {
 		
 		//generate url		
 		$package_url = $xoouserultra->paypal->get_package_url();
-		$button_url = $package_url."?plan_id=".$plan_id;		
+		$button_url = $package_url."?plan_id=".$plan_id;	
+		
+		
+		//custom text for free packages		
+		$free_text =  $xoouserultra->get_option('membership_display_zero');
+		$amount_text = $currency_symbol. $amount;
+		
+		if($free_text!="" &&  $amount==0)
+		{
+			$amount_text =$free_text ;
+		
+		}	
 
 		//start content
 		$pricing_content ='';
@@ -406,7 +417,7 @@ class XooShortCode {
 		$pricing_content .= '<div class="respo-sc-pricing ' . $featured_pricing . ' respo-sc-column-' . $position . ' ' . $class . '">';
 			$pricing_content .= '<div class="respo-sc-pricing-header '. $color .'" '. $custom_s.'>';
 				$pricing_content .= '<h5 '. $custom_s.'>' .$p_name . '</h5>';
-				$pricing_content .= '<div class="respo-sc-pricing-cost" '. $custom_s.'>' .$currency_symbol. $amount . '</div><div class="respo-sc-pricing-per">' . $per . '</div>';
+				$pricing_content .= '<div class="respo-sc-pricing-cost" '. $custom_s.'>' .$amount_text . '</div><div class="respo-sc-pricing-per">' . $per . '</div>';
 			$pricing_content .= '</div>';
 			$pricing_content .= '<div class="respo-sc-pricing-content">';
 				$pricing_content .= '' . $content . '';

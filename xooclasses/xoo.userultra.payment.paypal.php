@@ -490,6 +490,17 @@ class XooPaypalPayment
 					$plan_id =$_GET["plan_id"];
 				
 				}
+				
+				//display only selected
+				
+				$display_only_selected =  $xoouserultra->get_option('membership_display_selected_only');
+				$only_selected = false;
+				if( $display_only_selected== 1)
+				{
+					$only_selected = true;
+						
+				}
+				
 				foreach ( $packages as $package )
 				{
 					$checked = '';
@@ -500,25 +511,49 @@ class XooPaypalPayment
 						
 					}
 					
+					$amount = $currency_symbol.$package->package_amount;
 					
 					
-					$html.= '<li> 
+					if($only_selected )
+					{
+						
+						if($package->package_id==$plan_id)
+						{							
+							
+							$html.= '<li> 
+							
+							<div class="uultra-package-opt">
+							
+							<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
+							
+							<span class="uultra-package-cost">'.$amount.' </span></div>
+							<div class="uultra-package-desc">
+							<p>'.$package->package_desc.'</p>
+							</div>		
+								
+							</li>';
+						
+						}else{
+							
+						}
+					
+					}else{
+						
+						
+						$html.= '<li> 
 					
 					<div class="uultra-package-opt">
 					
-					<span class="uultra-package-title">
-					<input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  '.$checked.'/> <label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label>
+					<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
 					
-   </span>
-					
-					<span class="uultra-package-cost">'.$currency_symbol.$package->package_amount.' </span></div>
+					<span class="uultra-package-cost">'.$amount.' </span></div>
 					<div class="uultra-package-desc">
 					<p>'.$package->package_desc.'</p>
-					</div>
-					
-					
+					</div>		
 						
-	     </li>';
+	     			</li>';
+						
+					}
 		 
 		 $default_checked++;
 				
@@ -531,7 +566,6 @@ class XooPaypalPayment
 		return $html;
 		
 	}
-	
 	/*This feature get a package in the admin only*/
 	
 	public function get_packages_private ()

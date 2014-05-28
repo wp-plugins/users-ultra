@@ -209,7 +209,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		wp_register_script( 'userultra_admin', xoousers_url.'admin/scripts/admin.js', array( 
 			'jquery','jquery-ui-core','jquery-ui-draggable','jquery-ui-droppable',	'jquery-ui-sortable'
-		) );
+		), null );
 		wp_enqueue_script( 'userultra_admin' );
 		
 		
