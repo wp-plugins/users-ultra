@@ -3186,6 +3186,13 @@ class XooUserUser {
 
         return $display;
     }
+	
+	/* Search user by more criteria */
+	function uultra_query_search_displayname( $query ) {
+		global $wpdb;
+		$search_string = esc_attr( trim( get_query_var('searchuser') ) );
+		$query->query_where .= $wpdb->prepare( " OR $wpdb->users.display_name LIKE %s", '%' . like_escape( $search_string ) . '%' );
+	}
 
     /* Apply search params and Generate Results */
 
