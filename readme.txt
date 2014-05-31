@@ -27,6 +27,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <strong>Recent New Features:</strong><br>
 <pre>
+05-30-2014 -- Photo Categories, now you can categorize photos.
 05-27-2014 -- New look for the users profile has been implemented.
 05-26-2014 -- Pricing Tables are customizable through the Membership Tab.
 05-23-2014 -- Pricing Tables for your Paid Packages.
