@@ -60,9 +60,9 @@ $categories = $uultra_photo_category->get_photo_categories();
 			?>
               
 
-                <tr>
+                <tr  id="uu-edit-cate-row-<?php echo $c->photo_cat_id; ?>">
                     <td><?php echo $c->photo_cat_id; ?></td>
-                    <td><?php echo $c->photo_cat_name; ?></td>
+                    <td  id="uu-edit-cate-row-name-<?php echo $c->photo_cat_id; ?>"><?php echo $c->photo_cat_name; ?></td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -73,7 +73,7 @@ $categories = $uultra_photo_category->get_photo_categories();
                 </tr>
                 
                 
-                <tr >
+                <tr>
                 
                  <td colspan="7" ><div id='uu-edit-cate-box-<?php echo $c->photo_cat_id; ?>'></div> </td>
                 

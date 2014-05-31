@@ -35,11 +35,12 @@ jQuery(document).ready(function($) {
 						data: {"action": "edit_photo_cate_conf", "cate_id": cate_id, 
 						"cate_name": cate_name },
 						
-						success: function(data){
-							
+						success: function(data){									
 							//refresh
-							window.location.reload();					
-						
+							//window.location.reload();	
+							
+							$("#uu-edit-cate-row-name-"+cate_id).html(data);
+							 jQuery("#uu-edit-cate-box-"+cate_id).slideUp();								
 													
 							
 							
@@ -62,7 +63,9 @@ jQuery(document).ready(function($) {
 						success: function(data){
 							
 							//refresh
-							window.location.reload();					
+							//window.location.reload();	
+							
+							jQuery("#uu-edit-cate-row-"+cate_id).slideUp();						
 						
 													
 							
