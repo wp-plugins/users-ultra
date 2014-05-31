@@ -1898,13 +1898,18 @@ class XooUserUser {
 			'pic_size_type' => 'dynamic', // dynamic or fixed	
 			'pic_size' => 230, // size in pixels of the user's picture	
 			
-			'gallery_type' => '', // lightbox or single page for each photo			
+			'gallery_type' => '', // lightbox or single page for each photo	
+			
+			'media_options_exclude' => '', // rating, description, tags, category
+			
+					
 			'optional_fields_to_display' => '', // size in pixels of the user's picture
 			'profile_fields_to_display' => '', // all or empty
 			
 			'display_country_flag' => 'name', // display flag, no,yes,only, both. Only won't display name
 			'display_social' => 'yes', // display social
 			'display_photo_rating' => 'yes', // display social	
+			'display_photo_description' => 'yes', //yes or no
 			'display_gallery_rating' => 'yes', // display social
 			'display_private_message' => 'yes', // display social
 			

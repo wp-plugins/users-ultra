@@ -137,7 +137,7 @@ global $xoouserultra;
                   <div class="photo_single">
                  
                           
-                       <?php echo $xoouserultra->photogallery->get_single_photo($photo_id, $user_id, $display_photo_rating);?>
+                       <?php echo $xoouserultra->photogallery->get_single_photo($photo_id, $user_id, $display_photo_rating, $display_photo_description);?>
                            
                 
                   </div>

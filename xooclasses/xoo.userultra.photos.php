@@ -2071,7 +2071,7 @@ class XooUserPhoto {
 		
 	}
 	
-	public function get_single_photo($photo_id, $user_id, $display_photo_rating)
+	public function get_single_photo($photo_id, $user_id, $display_photo_rating, $display_photo_description)
 	{
 		global $wpdb, $xoouserultra;
 		
@@ -2115,6 +2115,15 @@ class XooUserPhoto {
 			$thumb = $site_url.$upload_folder."/".$user_id."/".$current_photo->photo_large;								
 			$html.= "<a href='#' class='' ><img src='".$thumb."' class='rounded'/> </a>";
 			
+			
+			if($display_photo_description == "yes")	
+			{
+				
+				$html.= "<div class='uutra-photo-desc'>";
+				$html.= $current_photo->photo_desc;
+				$html.= "</div>";
+			}	
+			
 			//add rating?
 			
 			if($display_photo_rating == "yes")	
@@ -2125,7 +2134,9 @@ class XooUserPhoto {
 				$html.= "</div>";
 			
 			
-			}	
+			}
+			
+			
 				   
 		} 
 		
