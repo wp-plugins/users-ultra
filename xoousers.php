@@ -3,7 +3,7 @@
 Plugin Name: Users Ultra Lite
 Plugin URI: http://usersultra.com
 Description: This is a powerful user profiles plugin for WordPress.
-Version: 1.0.71
+Version: 1.0.72
 Author: Users Ultra
 Author URI: http://usersultra.com
 */
@@ -34,3 +34,6 @@ require_once (xoousers_path . 'xooclasses/xoo.userultra.class.php');
 
 $xoouserultra = new XooUserUltra();
 $xoouserultra->plugin_init();
+
+/* load addons */
+require_once xoousers_path . 'addons/photocategories/index.php';

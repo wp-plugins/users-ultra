@@ -1580,18 +1580,27 @@ class XooUserPhoto {
 				$html .="<p>".__( 'Category', 'xoousers' )."</p>";
 				$html .="<p><select class='xoouserultra-input' id='uultra_photo_category_edit_".$photo->photo_id."'>	";
 				
+				//get all categories of this photo				
+				$res = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'usersultra_photo_cat_rel WHERE  `photo_rel_photo_id` = ' . $photo_id . ' ' );
+				
+				$array_rel = array();
+				foreach ( $res as $crel )
+				{
+					$array_rel[]=$crel->photo_rel_cat_id;
+				
+				}
+				
 				//loop categories
 				$categories = $this->get_photo_categories();
 				foreach ( $categories as $c )
 				{
 					$selected = "";
 					
-					if($this->check_if_photo_cat($c->photo_cat_id, $photo->photo_id)>0) $selected= 'checked="checked" ';
+					if(in_array($c->photo_cat_id, $array_rel)) $selected= ' selected="selected" ';
 					
-					$html .= "<option value='".$c->photo_cat_id."' ".$selected." >".$c->photo_cat_id."</option>";
+					$html .= "<option value='".$c->photo_cat_id."' ".$selected." >".$c->photo_cat_name."</option>";
 				 
 				}
-
   
   $html .="</select>
 				
@@ -1651,8 +1660,6 @@ class XooUserPhoto {
 			// insert into database
 			$wpdb->insert( $wpdb->prefix . 'usersultra_photo_cat_rel', $new_array, array( '%d', '%s'));
 					
-			
-			
 			
 					
 		}	

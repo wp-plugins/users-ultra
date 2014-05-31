@@ -209,7 +209,8 @@ box-sizing: border-box;
 .usersultra-front-directory-wrap ul.usersultra-front-results .info-div .uultra-prof-social-icon i{
 	
 	margin:5px 0x 0px 0px;
-	padding-top:5px;
+	padding:5px;
+	/*padding-left:4px;*/
 	
 	
 		
@@ -371,7 +372,8 @@ line-height: 19px !important;
 .uultra-prof-social-icon i{
 	
 	margin:5px 0x 0px 0px;
-	padding-top:5px;
+	padding:5px;
+	/*padding-left:4px;*/
 	
 }
 
@@ -686,6 +688,7 @@ display: inline-block; width:85%; vertical-align:top
 	 text-align:left;
 	 padding:0px 10px 0px 10px;
 	 font-size:12px;
+	 white-space: pre-wrap;
 	
 	
 }

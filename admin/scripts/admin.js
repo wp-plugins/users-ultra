@@ -250,6 +250,8 @@ jQuery(document).ready(function($) {
 						jQuery("#uultra-sucess-add-field").slideDown();
 						setTimeout("hidde_noti('uultra-sucess-add-field')", 3000)		
 						//alert("done");
+						
+						window.location.reload();
 							 							
 							
 							
