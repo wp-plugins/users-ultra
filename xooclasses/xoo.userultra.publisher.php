@@ -230,7 +230,16 @@ class XooPublisher
 		//return $html;
 	
 	}
+	
+	function get_max_allowed_posts()		
+	{
+		global $wpdb, $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/general-template.php');			
+		$max_allowed_posts = $xoouserultra->get_option( 'uultra_front_publisher_default_amount' );		
+		return $max_allowed_posts;
 
+	}
 	
 	
 	function show_front_publisher($atts)		
@@ -246,6 +255,12 @@ class XooPublisher
 		$content = '';
 		
 		$html = "";		
+		
+		//control total amount of posts
+		$user_id = get_current_user_id();		
+		$max_allowed_posts = $this->get_max_allowed_posts();
+		$user_post_count = $this->count_user_posts_by_type( $user_id );		
+
 		
 		
 		
@@ -267,6 +282,8 @@ class XooPublisher
              
                  <div class="uultra-post-publish">
                  
+                 <div class='uupublic-ultra-info'><?php echo  __('Max Allowed Posts: ','xoousers');?> <?php echo $max_allowed_posts?>, <?php echo  __('You have posted: '.$user_post_count.' already ','xoousers');?></div> 
+                 
                  <?php
                  
 				 if($this->act_message!="")
@@ -274,7 +291,14 @@ class XooPublisher
 					 echo "<div class='uupublic-ultra-success'>".$this->act_message."</div>";
 					 
 					 
-				}
+				 }
+				 
+				  if($this->act_limits!="")
+				 {
+					 echo "<div class='uupublic-ultra-error'>".$this->act_limits."</div>";
+					 
+					 
+				 }
 				 ?>
                  
                  <form method="post" name="uultra-front-publisher-post">
@@ -292,6 +316,8 @@ class XooPublisher
                          <p><input name="uultra_post_title" type="text" class="xoouserultra-input" /></p>
                      
                      </div>
+                     
+                      <?php if($xoouserultra->get_option( 'uultra_front_publisher_allows_category' )!='no'){?>
                      
                      <div class="field_row">
                        <p><?php echo __('Category:','xoousers')?></p>
@@ -313,6 +339,8 @@ class XooPublisher
                 ?>
                  </p>
                  </div>
+                 
+                   <?php }?>
                  
                  <div class="field_row">
                  <p><?php echo __('Post Photos:','xoousers')?></p>
@@ -606,7 +634,7 @@ class XooPublisher
 			
         } else {
 			
-            $post_category = $xoouserultra->get_option( 'uultra_front_publisher_default_category' );
+            $post_category = array($xoouserultra->get_option( 'uultra_front_publisher_default_category') );
         }
 
        $post_update = array(
@@ -678,6 +706,48 @@ class XooPublisher
         exit;
     }
 	
+	function count_user_posts_by_type( $userid) 
+	{
+		global $wpdb;
+
+		//$where = get_posts_by_author_sql( $post_type, true, $userid );
+		
+		$where = " WHERE post_author = '$userid' ";
+	
+		$count = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts $where" );
+	
+		return apply_filters( 'get_usernumposts', $count, $userid );
+	}
+	
+	
+	
+	function check_if_reached_limit()
+	{
+	   global $wpdb, $xoouserultra;
+	   
+	   require_once(ABSPATH . 'wp-includes/pluggable.php');
+	   require_once(ABSPATH . 'wp-includes/user.php');
+	   
+	   $max_post_per_user = $this->get_max_allowed_posts();
+	   
+	   $res = true; //can post;
+	   
+	   //get total user_posts
+	   
+	   $post_author =  get_current_user_id();	   
+	   $user_post_count = $this->count_user_posts_by_type( $post_author );
+	   
+	   if($max_post_per_user<$user_post_count+1)
+	   {
+		    $res = false; //can't post;
+					   
+	   }
+	   
+	   return $res;
+		
+	
+	}
+	
 	
 	function submit_post()
 	{
@@ -707,8 +777,10 @@ class XooPublisher
 		
 		$cat_type = 'normal';
 
-        //validate cat
-     		
+       //validate cat
+		
+		if($xoouserultra->get_option( 'uultra_front_publisher_allows_category' )=='yes')
+	    {
 			
             if ( !isset( $_POST['category'] ) ) 
 			{
@@ -725,6 +797,8 @@ class XooPublisher
                     $errors[] = __( 'Please choose a category', 'xoousers' );
                 }
             }
+		
+		}
         
         //validate post content
         if ( empty( $content ) )
@@ -758,10 +832,12 @@ class XooPublisher
         $post_author =  get_current_user_id();
 
         //users are allowed to choose category
-        if ( $xoouserultra->get_option( 'uultra_front_publisher_allows_category' )== 'yes' ) {
+        if ( $xoouserultra->get_option( 'uultra_front_publisher_allows_category' )== 'yes' )
+		 {
             $post_category = $_POST['category'];
         } else {
-            $post_category = $xoouserultra->get_option( 'uultra_front_publisher_default_category' );
+			//set default category			
+            $post_category = array($xoouserultra->get_option( 'uultra_front_publisher_default_category' ));
         }
 
         $my_post = array(
@@ -774,10 +850,19 @@ class XooPublisher
             'tags_input' => $tags
         );
 
-        //insert the post
-        $post_id = wp_insert_post( $my_post );
+       //check pacakge limits		
+		if(!$this->check_if_reached_limit()){
+		
+			$this->act_limits= __('You cannot add more posts ', 'xoousers') ;
+			
+		}else{			
+			 //insert the post
+       		 $post_id = wp_insert_post( $my_post );
+		
+		}
+		
 
-        if ( $post_id )
+        if ( $post_id  &&  $this->act_message=="" &&  $this->act_limits=="")
 		{
 
 		
