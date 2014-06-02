@@ -2578,4 +2578,15 @@ span.data-a {
 	display:inline-block; color: #999; text-align:left}	
 
 
+input[type='file'], .uultra-fileupload-field {
+	padding:3px !important; /*Fix for Bootstrap themes*/
+	line-height:25px; /*Fix for Bootstrap themes*/
+	height:auto !important; /*Fix for Bootstrap themes*/
+	color:#666;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CFCFCF;
+    display: block;
+    border-radius:3px;
+	font-weight:normal;
+}
 

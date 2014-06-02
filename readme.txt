@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, auto tweek, user tweet, email newsletter subscribers, mailchimp newsletter
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.75
+Stable tag: 1.0.76
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -239,6 +239,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.0.76 (05-31-2014) =
+* Improvements - CSS tweaks for mobile devices, now galleries are displayed in a nicely way.
+* Bug Fix      - Profile Picture uploader in front-end registration form has been fixed.
 
 = 1.0.75 (05-31-2014) =
 * Improvements - Admin can set how many posts per user and block category selection.

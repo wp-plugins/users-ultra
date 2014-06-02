@@ -40,6 +40,13 @@ MEDIA QUERIES
 	margin-top:5px; 
 	}
 	
+	.uultra-profile-basic-wrap .uu-right .photos ul li{	
+		width:45% !important;	
+	
+
+	}
+	
+	
 	
 }
 
@@ -57,7 +64,14 @@ MEDIA QUERIES
 	width:!important;
 	display:block !important; 
 	margin-top:5px; 
-	}	
+	}
+	
+	
+	.uultra-profile-basic-wrap .uu-right .photos ul li{	
+		width:45% !important;	
+	
+
+	}
 	
 	
 
@@ -68,8 +82,10 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 480px) {
 	
+	.uultra-profile-basic-wrap .uu-right .photos ul li{	
+		width:99% !important;		
 
-	
+	}
 
 }
 

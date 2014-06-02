@@ -1781,7 +1781,7 @@ class XooUserUltra
 		if (!isset($xoousers_register->registered) || $xoousers_register->registered != 1)
 		{
 		
-		$display .= '<form action="" method="post" id="xoouserultra-registration-form">';
+		$display .= '<form action="" method="post" id="xoouserultra-registration-form" enctype="multipart/form-data">';
 		
 		$display .= '<div class="xoouserultra-field xoouserultra-seperator-requiredfields xoouserultra-edit xoouserultra-edit-show">'.__('Fields with (*) are required','xoousers').'</div>';	
 		
@@ -2094,6 +2094,18 @@ class XooUserUltra
 								}
 							}
 							$display .= '<div class="xoouserultra-clear"></div>';
+							break;
+							
+						case 'fileupload':
+						
+						    if ($meta == 'user_pic')
+							{
+								
+									
+								$display .= '<input type="file" class="'.$required_class.'xoouserultra-input uultra-fileupload-field"  name="'.$meta.'" style="display:block;" id="'.$meta.'" value="'.$this->get_post_value($meta).'"  title="'.$name.'" data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'"/>';
+							
+							} //end if meta
+
 							break;
 							
 						case 'password':

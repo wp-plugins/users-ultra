@@ -85,6 +85,248 @@ class XooUserRegister {
 		
 	}
 	
+	// File upload handler:
+	function upload_front_avatar($o_id)
+	{
+		global $xoouserultra;
+		global $wpdb;
+		
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		$site_url = site_url()."/";
+		
+				
+		/// Upload file using Wordpress functions:
+		$file = $_FILES['user_pic'];
+		
+		
+		$original_max_width = $xoouserultra->get_option('media_avatar_width'); 
+        $original_max_height =$xoouserultra->get_option('media_avatar_height'); 
+		
+		if($original_max_width=="" || $original_max_height==80)
+		{			
+			$original_max_width = 100;			
+			$original_max_height = 100;
+			
+		}
+		
+				
+		$info = pathinfo($file['name']);
+		$real_name = $file['name'];
+        $ext = $info['extension'];
+		$ext=strtolower($ext);
+		
+		$rand = $this->genRandomString();
+		
+		$rand_name = "avatar_".$rand."_".session_id()."_".time(); 		
+		$path_pics = ABSPATH.$xoouserultra->get_option('media_uploading_folder');
+			
+			
+		if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'gif') 
+		{
+			if($o_id != '')
+			{
+				
+				   if(!is_dir($path_pics."/".$o_id."")) {
+						$this->CreateDir($path_pics."/".$o_id);								   
+					}					
+										
+					$pathBig = $path_pics."/".$o_id."/".$rand_name.".".$ext;
+					
+					if (copy($file['tmp_name'], $pathBig)) 
+					{
+						$upload_folder = $xoouserultra->get_option('media_uploading_folder');				
+						$path = $site_url.$upload_folder."/".$o_id."/";
+						
+						//check max width
+												
+						list( $source_width, $source_height, $source_type ) = getimagesize($pathBig);
+						
+						if($source_width > $original_max_width) 
+						{
+							//resize
+							if ($this->createthumb($pathBig, $pathBig, $original_max_width, $original_max_height,$ext)) 
+							{
+								$old = umask(0);
+								chmod($pathBig, 0755);
+								umask($old);
+														
+							}
+						
+						
+						}
+						
+						
+						
+						$new_avatar = $rand_name.".".$ext;						
+						$new_avatar_url = $path.$rand_name.".".$ext;					
+						
+						//check if there is another avatar						
+						$user_pic = get_user_meta($o_id, 'user_pic', true);						
+						
+						if ( $user_pic!="" )
+			            {
+							//there is a pending avatar - delete avatar																					
+									
+							$path_pics = $site_url.$xoouserultra->get_option('media_uploading_folder');							
+							$path_avatar = $path_pics."/".$o_id."/".$user_pic;					
+														
+							//delete								
+							if(file_exists($path_avatar))
+							{
+								unlink($path_avatar);
+							}
+							
+							//update meta
+							update_user_meta($o_id, 'user_pic', $new_avatar);
+							
+						}else{
+							
+							//update meta
+							update_user_meta($o_id, 'user_pic', $new_avatar);
+												
+						
+						}
+						
+						//update user meta
+						
+						
+						
+					}
+									
+					
+			     }  		
+			
+			  
+			
+        } // image type
+		
+		// Create response array:
+		$uploadResponse = array('image' => $new_avatar_url);
+		
+	}
+	
+	 public function createthumb($imagen,$newImage,$toWidth, $toHeight,$extorig)
+	{             				
+				
+                 $ext=strtolower($extorig);
+                 switch($ext)
+                  {
+                   case 'png' : $img = imagecreatefrompng($imagen);
+                   break;
+                   case 'jpg' : $img = imagecreatefromjpeg($imagen);
+                   break;
+                   case 'jpeg' : $img = imagecreatefromjpeg($imagen);
+                   break;
+                   case 'gif' : $img = imagecreatefromgif($imagen);
+                   break;
+                  }
+
+               
+                $width = imagesx($img);
+                $height = imagesy($img);  
+				
+
+				
+				$xscale=$width/$toWidth;
+				$yscale=$height/$toHeight;
+				
+				// Recalculate new size with default ratio
+				if ($yscale>$xscale){
+					$new_w = round($width * (1/$yscale));
+					$new_h = round($height * (1/$yscale));
+				}
+				else {
+					$new_w = round($width * (1/$xscale));
+					$new_h = round($height * (1/$xscale));
+				}
+				
+				
+				
+				if($width < $toWidth)  {
+					
+					$new_w = $width;	
+				
+				//}else {					
+					//$new_w = $current_w;			
+				
+				}
+				
+				if($height < $toHeight)  {
+					
+					$new_h = $height;	
+				
+				//}else {					
+					//$new_h = $current_h;			
+				
+				}
+			
+				
+				
+				
+                $dst_img = imagecreatetruecolor($new_w,$new_h);
+				
+				/* fix PNG transparency issues */                       
+				imagefill($dst_img, 0, 0, IMG_COLOR_TRANSPARENT);         
+				imagesavealpha($dst_img, true);      
+				imagealphablending($dst_img, true); 				
+                imagecopyresampled($dst_img,$img,0,0,0,0,$new_w,$new_h,imagesx($img),imagesy($img));
+               
+                
+				
+				 switch($ext)
+                  {
+                   case 'png' : $img = imagepng($dst_img,"$newImage",9);
+                   break;
+                   case 'jpg' : $img = imagejpeg($dst_img,"$newImage",100);
+                   break;
+                   case 'jpeg' : $img = imagejpeg($dst_img,"$newImage",100);
+                   break;
+                   case 'gif' : $img = imagegif($dst_img,"$newImage");
+                   break;
+                  }
+				  
+				   imagedestroy($dst_img);	
+				
+				
+				
+                return true;
+
+        }
+	
+	public function CreateDir($root){
+
+               if (is_dir($root))        {
+
+                        $retorno = "0";
+                }else{
+
+                        $oldumask = umask(0);
+                        $valrRet = mkdir($root,0777);
+                        umask($oldumask);
+
+
+                        $retorno = "1";
+                }
+
+    }
+	
+	public function genRandomString() 
+	{
+		$length = 5;
+		$characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWZYZ";
+		
+		$real_string_legnth = strlen($characters) ;
+		//$real_string_legnth = $real_string_legnth– 1;
+		$string="ID";
+		
+		for ($p = 0; $p < $length; $p++)
+		{
+			$string .= $characters[mt_rand(0, $real_string_legnth-1)];
+		}
+		
+		return strtolower($string);
+	}
+	
 	
 	/*Create user*/
 	function uultra_create_account() 
@@ -130,6 +372,13 @@ class XooUserRegister {
 							wp_update_user( array('ID' => $user_id, $key => esc_attr($value)) );
 						}
 						
+					}
+					
+					//update user pic
+					if(isset($_FILES['user_pic']))
+					{
+						$this->upload_front_avatar($user_id );
+							
 					}
 					
 					//set account status					

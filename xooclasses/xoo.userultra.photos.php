@@ -2026,7 +2026,7 @@ class XooUserPhoto {
 					$thumb = $site_url.$upload_folder."/".$user_id."/".$photo->photo_thumb;
 					$large = $site_url.$upload_folder."/".$user_id."/".$photo->photo_large;
 								
-					$html.= "<li id='".$photo->photo_id."' >'";
+					$html.= "<li id='".$photo->photo_id."' >";
 					
 					
 					
