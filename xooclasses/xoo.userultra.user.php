@@ -1902,8 +1902,10 @@ class XooUserUser {
 			
 			'media_options_exclude' => '', // rating, description, tags, category
 			
+			'disable' => '', // photos, videos, messages	
 					
-			'optional_fields_to_display' => '', // size in pixels of the user's picture
+			'optional_fields_to_display' => '', // 
+			'optional_right_col_fields_to_display' => '', 
 			'profile_fields_to_display' => '', // all or empty
 			
 			'display_country_flag' => 'name', // display flag, no,yes,only, both. Only won't display name
@@ -1915,6 +1917,9 @@ class XooUserUser {
 			
 		), $atts ) );
 		
+		//exclude modules	
+		$modules = array();
+		$modules  = explode(',', $disable);		
 		
 		$display_gallery = false;
 		if(isset($_GET["gal_id"]))

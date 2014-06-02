@@ -79,6 +79,9 @@ global $xoouserultra;
              </div>
          
           <?php }?>
+          
+          
+      <?php if(!in_array("photos",$modules)){?> 
         
        <?php if($photos_available){?>       
               
@@ -148,6 +151,8 @@ global $xoouserultra;
         
         <?php }?>
         
+       
+        
          <?php if(!$display_gallery && !$display_photo){?>
         
          <div class="photolist">
@@ -161,28 +166,46 @@ global $xoouserultra;
         
          </div>
          
-         <div class="videolist">
+       
          
-          <h2><?php echo _e("My Videos", 'xoousers')?></h2>
          
-           <ul> 
-              <?php echo $xoouserultra->photogallery->reload_videos_public($user_id);?>
-           
-           </ul>
-        
-         </div>
          
          
           <?php }?>
           
-          
-           <?php }else{?>
-           
+                   
+           <?php }else{?>           
                  
-                 <?php echo _e("Photos available only for registered users", 'xoousers');?>
-           
+                 <?php echo _e("Photos available only for registered users", 'xoousers');?>           
            
             <?php }?>
+            
+            
+           <?php } //end exclude?>
+           
+          
+             <?php if(!in_array("videos",$modules)){?> 
+          
+                 <div class="videolist">
+                 
+                  <h2><?php echo _e("My Videos", 'xoousers')?></h2>
+                 
+                   <ul> 
+                      <?php echo $xoouserultra->photogallery->reload_videos_public($user_id);?>
+                   
+                   </ul>
+                
+                 </div>
+         
+             <?php }?>
+          
+            
+            
+            <?php if ($optional_right_col_fields_to_display!="") { ?>                 
+                 
+                   <?php echo $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_right_col_fields_to_display)?>                 
+                
+           <?php } ?>   
               
              
     
