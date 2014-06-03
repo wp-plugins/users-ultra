@@ -166,7 +166,21 @@ global $xoouserultra;
         
          </div>
          
-       
+         
+             <?php if(!in_array("videos",$modules)){?> 
+          
+                 <div class="videolist">
+                 
+                  <h2><?php echo _e("My Videos", 'xoousers')?></h2>
+                 
+                   <ul> 
+                      <?php echo $xoouserultra->photogallery->reload_videos_public($user_id);?>
+                   
+                   </ul>
+                
+                 </div>
+         
+             <?php }?>  
          
          
          
@@ -184,20 +198,6 @@ global $xoouserultra;
            <?php } //end exclude?>
            
           
-             <?php if(!in_array("videos",$modules)){?> 
-          
-                 <div class="videolist">
-                 
-                  <h2><?php echo _e("My Videos", 'xoousers')?></h2>
-                 
-                   <ul> 
-                      <?php echo $xoouserultra->photogallery->reload_videos_public($user_id);?>
-                   
-                   </ul>
-                
-                 </div>
-         
-             <?php }?>
           
             
             
