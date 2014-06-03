@@ -2066,7 +2066,7 @@ class XooUserPhoto {
 				}
 			}
 		   
-		    die ($html);
+		    return $html;
 		} //end user loged in
 		
 	}
