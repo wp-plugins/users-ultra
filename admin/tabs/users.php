@@ -45,7 +45,7 @@ if(isset($_GET["year"]))
         
         <div class="user-ultra-sect-second user-ultra-rounded" >
         
-         <h3>Search Users</h3>
+         <h3> <?php _e('Search User','xoousers'); ?>s</h3>
          
         
          

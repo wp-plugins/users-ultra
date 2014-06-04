@@ -593,6 +593,7 @@ jQuery(document).ready(function($) {
                 },
                 success: function(response) {
                     $('#loading-animation').hide(); // Hide the loading animation
+					window.location.reload();
                     return; 
                 },
                 error: function(xhr,textStatus,e) {  // This can be expanded to provide more information
