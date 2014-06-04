@@ -1314,8 +1314,10 @@ class XooUserUser {
 							break;
 							
 						case 'checkbox':
-							if (isset($array[$key]['choices'])) {
-							$loop = explode(PHP_EOL, $choices);
+							if (isset($array[$key]['choices']))
+							{
+								
+							   $loop = explode(PHP_EOL, $choices);
 							}
 							if (isset($loop) && $loop[0] != '') {
 							  $counter =0;
@@ -1326,7 +1328,10 @@ class XooUserUser {
 								  
 								  $option = trim($option);
 									$html .= '<label class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" value="'.$option.'" ';
-									if (is_array($this->get_user_meta( $meta)) && in_array($option,$this->get_user_meta( $meta))) {
+									
+									 $values = explode(', ', $this->get_user_meta($meta));
+									
+									if (in_array($option, $values)) {
 									$html .= 'checked="checked"';
 									}
 									$html .= '/> <label for="'.$meta.'"><span></span> '.$option.'</label> </label>';
@@ -1390,6 +1395,28 @@ class XooUserUser {
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 	
 		$user_id = get_current_user_id();
+		
+		 // empty checkboxes
+        $array = get_option('usersultra_profile_fields');
+		
+		 // Get list of dattime fields
+        $date_time_fields = array();
+
+        foreach ($array as $key => $field) {
+            extract($field);
+
+            if (isset($array[$key]['field']) && $array[$key]['field'] == 'checkbox') 
+			{
+				//echo "is meta field: " .$meta;
+                update_user_meta($user_id, $meta, null);
+            }
+
+            // Filter date/time custom fields
+            if (isset($array[$key]['field']) && $array[$key]['field'] == 'datetime') {
+                array_push($date_time_fields, $array[$key]['meta']);
+            }
+        }
+		
 			
 			/* Check if the were errors before updating the profile */
 			if (!isset($this->errors)) 
@@ -1397,6 +1424,11 @@ class XooUserUser {
 				/* Now update all user meta */
 				foreach($this->usermeta as $key => $value) 
 				{
+					// save checkboxes
+                    if (is_array($value)) { // checkboxes
+                        $value = implode(', ', $value);
+                    }
+					
 					//echo $key. " ";
 					update_user_meta($user_id, "hide_".$key, "");
 					update_user_meta($user_id, $key, esc_attr($value));
