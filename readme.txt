@@ -16,6 +16,9 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
+<strong>FREE SUPPORT FORUM:</strong><br>
+<a href="http://usersultra.com/support/"><strong>Do you need help?</strong></a> <br>
+
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> <br>
@@ -42,10 +45,6 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 05-19-2014 -- Filter Users by WP Roles.
 
 </pre>
-
-<strong>FREE SUPPORT FORUM:</strong><br>
-<a href="http://usersultra.com/support/"><strong>Do you need help?</strong></a> <br>
-
 
 <h3>Help Keep This Plugin Free</h3>
 
