@@ -56,7 +56,8 @@ class XooUserLogin {
 			$this->handle_account_conf_link();
 
 		}
-						
+		
+		//facebook						
 		if (isset($_GET['code']) && !isset($_REQUEST['uultraplus']) && !isset($_REQUEST['uultryammer'])) 
 		{
 						
@@ -1519,8 +1520,24 @@ class XooUserLogin {
 						//notify depending on status
 						$this->user_account_notify($user_id, $u_email, $user_login, $user_pass);
 						
+						//login						
+						if(!$this->is_active($user_id) && !is_super_admin($user_id))
+						{
+							$noactive = true;
+									
+						}
 						
+						if(!$noactive)
+						{
+							 $secure = "";		
+							//already exists then we log in
+							wp_set_auth_cookie( $user_id, true, $secure );			
+									
+						}
 						
+						//redirect user
+						$this->login_registration_afterlogin();
+				
 				}
 				
 				

@@ -28,8 +28,8 @@ body:after {
 }
 /* line 28, ../sass/lightbox.sass */
 .lightbox .lb-image {
-  display: block;
-  height: auto;
+  display: block !important;
+  height: auto !important;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
