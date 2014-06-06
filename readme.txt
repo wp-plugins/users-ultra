@@ -19,7 +19,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <strong>FREE SUPPORT FORUM:</strong><br>
 <a href="http://usersultra.com/support/"><strong>Do you need help?</strong></a> <br>
 <pre>
-Please visit the Users Ultra Forum if you have any questions or if you have issues with the plugin. We like to help! :)
+Please visit the Users Ultra Forum if you have any questions. We like to help! :)
 </pre>
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
