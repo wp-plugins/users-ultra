@@ -866,7 +866,8 @@ class XooUserLogin {
 	Make username unique
 	******************************************/
 	function unique_user($service=null,$form=null){
-		if ($service){
+		if ($service)
+		{
 			if ($service == 'google') {
 				if (isset($form['name']) && is_array($form['name'])) {
 					$name = $form['name']['givenName'] . ' ' . $form['name']['familyName'];
@@ -877,6 +878,18 @@ class XooUserLogin {
 					$username = $form['id'];
 				}
 			}
+			
+			if ($service == 'facebook') {
+				if (isset($form['name'])) {
+					$name = $form['name'];
+					$username = $this->clean_user($name);
+				} elseif ( isset($form['display_name']) ) {
+					$username = $this->clean_user($form['display_name']);
+				} else {
+					$username = $form['id'];
+				}
+			}
+			
 			if ($service == 'twitter') {
 				if (isset($form['screen_name']) && !empty($form['screen_name']) ) {
 					$username = $form['screen_name'];
@@ -1470,14 +1483,13 @@ class XooUserLogin {
 			 $fbid = $user_profile['id'];
 			// $user_picture = $facebook->api('/'.$fbid.'/picture','GET');
 			
-			 $u_user = $user_profile['username'];
+			 $u_user = $this->unique_user('facebook', $user_profile);
 		     $u_name = $user_profile['name'];
 		     $u_email = $user_profile['email'];
 		     $u_fb_id = $user_profile['id'];
 			 
 			 //Sanitize Login
-			 $user_login = str_replace ('.', '-', $u_user);
-			 $user_login = sanitize_user ($user_login, true);	
+			 $user_login = sanitize_user ($u_user, true);	
 			 
 			 
 			 //check if already registered
@@ -1520,7 +1532,11 @@ class XooUserLogin {
 						//notify depending on status
 						$this->user_account_notify($user_id, $u_email, $user_login, $user_pass);
 						
-						//login						
+						$creds['user_login'] = sanitize_user($user_login);				
+						$creds['user_password'] = $user_pass;
+						$creds['remember'] = 1;							
+								
+						$noactive = false;
 						if(!$this->is_active($user_id) && !is_super_admin($user_id))
 						{
 							$noactive = true;
@@ -1529,26 +1545,37 @@ class XooUserLogin {
 						
 						if(!$noactive)
 						{
-							 $secure = "";		
-							//already exists then we log in
-							wp_set_auth_cookie( $user_id, true, $secure );			
+							$user = wp_signon( $creds, false );
 									
 						}
 						
 						//redirect user
 						$this->login_registration_afterlogin();
-				
+						
+						
+						
 				}
 				
 				
 			}else{
 				
-				//if user already created then try to login automatically
+				//if user already created then try to login automatically				
+				$users = get_users(array(
+							'meta_key'     => 'xoouser_ultra_facebook_id',
+							'meta_value'   => $u_fb_id,
+							'meta_compare' => '='
+				));
+				if (isset($users[0]->ID) && is_numeric($users[0]->ID) ){
+					$returning = $users[0]->ID;
+					$user_login = $users[0]->user_login;
+				} else {
+					$returning = '';
+				}
 				
 				$user = get_user_by('login',$user_login);				
 				$user_id =$user->ID;
 				
-				if(is_active($user_id))
+				if($this->is_active($user_id))
 				{
 					//is active then login
 					wp_set_auth_cookie( $user_id, true, $secure );			
@@ -1558,6 +1585,9 @@ class XooUserLogin {
 					$this->errors[] = __('<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET.','xoousers');
 					
 				}
+				
+				//redirect user
+				$this->login_registration_afterlogin();
 				
 			
 			
