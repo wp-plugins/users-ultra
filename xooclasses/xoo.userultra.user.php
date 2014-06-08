@@ -1808,11 +1808,24 @@ class XooUserUser {
 			
 			if(!isset($_GET["page_id"]))
 			{
-				$url = '<a class="uultra-btn-u-menu" href="?module=wootracker"><span><i class="fa fa-truck   fa-2x"></i></span>'.__('My Orders', 'xoousers').'</a>';	
+				$url = '<a class="uultra-btn-u-menu" href="?module=wootracker"><span><i class="fa fa-truck   fa-2x"></i></span>'.__('My Purchases', 'xoousers').'</a>';	
 				
 			}else{
 				
-				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=wootracker"><span><i class="fa fa-truck   fa-2x"></i></span>'.__('My Orders', 'xoousers').'</a>';			
+				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=wootracker"><span><i class="fa fa-truck   fa-2x"></i></span>'.__('My Purchases', 'xoousers').'</a>';			
+			
+			}
+		
+		}elseif($slug=="myorders"){
+			
+			
+			if(!isset($_GET["page_id"]))
+			{
+				$url = '<a class="uultra-btn-u-menu" href="?module=myorders"><span><i class="fa fa-list   fa-2x"></i></span>'.__('My Orders', 'xoousers').'</a>';	
+				
+			}else{
+				
+				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=myorders"><span><i class="fa fa-list   fa-2x"></i></span>'.__('My Orders', 'xoousers').'</a>';			
 			
 			}
 		
@@ -3206,13 +3219,13 @@ class XooUserUser {
         // Submit Button
         $display.='<div class="uultra-searchbtn-div">';
         $display.=$xoouserultra->htmlbuilder->button('submit', array(
-                    'class' => 'uultra-button-alt uultra-search-submit',
+                    'class' => 'uultra-button-alt xoouserultra-button uultra-search-submit',
                     'name' => 'uultra-search',
                     'value' => $this->search_args['button_text']
                 ));
         $display.='&nbsp;';
         $display.=$xoouserultra->htmlbuilder->button('button', array(
-                    'class' => 'uultra-button-alt uultra-search-reset',
+                    'class' => 'uultra-button-alt xoouserultra-button uultra-search-reset',
                     'name' => 'uultra-search-reset',
                     'value' => $this->search_args['reset_button_text'],
                     'id' => 'uultra-reset-search'

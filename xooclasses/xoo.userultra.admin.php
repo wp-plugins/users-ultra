@@ -340,15 +340,15 @@ class XooUserAdmin extends XooUserUltraCommon
 						'hide_admin_bar' => '1',
 						'registration_rules' => '1',
 						
-						'media_avatar_width' => '100',
-						'media_avatar_height' => '100',
+						'media_avatar_width' => '190',
+						'media_avatar_height' => '190',
 						
 						
 						
 						'media_photo_mini_width' => '80',
 						'media_photo_mini_height' => '80',
-						'media_photo_thumb_width' => '120',
-						'media_photo_thumb_height' => '120',
+						'media_photo_thumb_width' => '190',
+						'media_photo_thumb_height' => '180',
 						'media_photo_large_width' => '700',
 						'media_photo_large_height' => '800',
 						'media_uploading_folder' => 'wp-content/usersultramedia',
@@ -405,10 +405,6 @@ class XooUserAdmin extends XooUserUltraCommon
 						
 						'admin_account_active_message_body' => __($this->get_email_template('admin_account_active_message_body'),'xoouser'),
 						'admin_account_deny_message_body' => $this->get_email_template('admin_account_deny_message_body'),
-						
-						
-						
-						
 						
 						'messaging_send_from_name' => __('Users Ultra Plugin','xoouser'),
 						

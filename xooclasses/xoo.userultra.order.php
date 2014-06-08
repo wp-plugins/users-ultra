@@ -329,6 +329,115 @@ class XooOrder
 	
 	}
 	
+	/*Get Latest*/
+	public function get_latest_user ($user_id, $howmany)
+	{
+		global $wpdb,  $xoouserultra;
+		
+		$sql = 'SELECT ord.*, usu.*	 FROM ' . $wpdb->prefix . 'usersultra_orders ord  ' ;		
+		$sql .= " RIGHT JOIN ".$wpdb->users ." usu ON (usu.ID = ord.order_user_id)";		
+		$sql .= " WHERE ord.order_id <> 0 AND usu.ID = '".$user_id."' ORDER BY ord.order_id desc  LIMIT $howmany";	
+			
+		$orders = $wpdb->get_results($sql );
+		
+		return $orders ;		
+	
+	}
+	
+	/**
+	 * My Orders 
+	 */
+	function show_my_latest_orders($howmany, $status=null)
+	{
+		global $wpdb, $current_user, $xoouserultra; 
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH. 'wp-admin/includes/user.php' );
+		require_once(ABSPATH.  'wp-includes/query.php' );	
+		
+		
+		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
+		
+		
+		$user_id = get_current_user_id();
+		
+		
+		
+		 
+		
+        $drOr = $this->get_latest_user($user_id,30);
+		
+		//print_r($loop );
+				
+		
+		if (  empty( $drOr) )
+		{
+			echo '<p>', __( 'You have no orders.', 'xoousers' ), '</p>';
+		}
+		else
+		{
+			$n = count( $drOr );
+			
+			
+			?>
+			<form action="" method="get">
+				<?php wp_nonce_field( 'usersultra-bulk-action_inbox' ); ?>
+				<input type="hidden" name="page" value="usersultra_inbox" />
+	
+				
+	
+				<table class="widefat fixed" id="table-3" cellspacing="0">
+					<thead>
+					<tr>
+						
+                       
+						<th class="manage-column" ><?php _e( 'Order #', 'xoousers' ); ?></th>
+                        <th class="manage-column"><?php _e( 'Total', 'xoousers' ); ?></th>
+						<th class="manage-column"><?php _e( 'Date', 'xoousers' ); ?></th>
+						<th class="manage-column" ><?php _e( 'Package', 'xoousers' ); ?></th>
+                        <th class="manage-column" ><?php _e( 'Status', 'xoousers' ); ?></th>
+					</tr>
+					</thead>
+					<tbody>
+						<?php
+							
+							foreach ( $drOr as $order){
+							$order_id = $order->order_id;
+							
+							//get package
+							
+							$package = $xoouserultra->paypal->get_package($order->order_package_id);
+							
+							
+							//print_r($order );
+							
+							?>
+						<tr>
+							                         
+                            
+							<td>#<?php echo $order_id; ?></td>
+                            <td><?php echo  $currency_symbol.$order->order_amount?></td>
+							<td> <?php echo $order->order_date; ?></td>
+							<td><?php echo $package->package_name; ?></td>
+                            <td><?php echo $order->order_status; ?></td>
+                            
+                            
+							<?php
+	
+							}
+						?>
+					</tbody>
+					
+				</table>
+			</form>
+			<?php
+	
+		}
+		?>
+
+	<?php
+	}
+	
 	
 	
 

@@ -570,7 +570,7 @@ input.btn {
 	display:inline-block;	
 	position:relative;
 	width: 100%;
-	max-width: 1190px !important;
+	
 	font-family: Open Sans;
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -585,8 +585,8 @@ input.btn {
 	line-height:13px !important;
 }	
 .usersultra-dahsboard-cont .usersultra-dahsboard-left{
-	float: left;
-	width: 18%;	
+	display:inline-block;
+	vertical-align:top;
 	font-family: Open Sans;
 	margin: 0px 2% 20px auto;
 	padding:0px 10px 0px 5px;
@@ -782,8 +782,10 @@ width:90%
 }
 
 .usersultra-dahsboard-cont .usersultra-dahsboard-center{
-	float: left;
-	width: 65%;	
+	display:inline-block;
+	vertical-align:top;
+	
+	width: 78%;
 	font-family: Open Sans;
 	margin: 0px auto 20px auto;
 	

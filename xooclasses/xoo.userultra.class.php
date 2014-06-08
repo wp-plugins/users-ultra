@@ -226,6 +226,7 @@ class XooUserUltra
 		$thetable = $wpdb->prefix."usersultra_activity";		
 	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
 		
+				
 		//delete meta info		
 		delete_option( 'usersultra_profile_fields' );
 		delete_option( 'userultra_default_user_tabs' );

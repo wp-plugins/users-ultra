@@ -1,10 +1,10 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, community, directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, easy, simple, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, model, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, tweek, user tweet, email newsletter subscribers, mailchimp newsletter
+Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post, shortcode, sortable, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.84
+Stable tag: 1.0.85
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,8 @@ Please visit the Users Ultra Forum. We like to help! :)
 
 <strong>Recent New Features:</strong><br>
 <pre>
+
+06-08-2014 -- Users can check their orders through their dashboard.
 05-31-2014 -- Admin can set how many posts and block category selection.
 05-30-2014 -- Photo Categories, now you can categorize photos.
 05-27-2014 -- New look for the users profile has been implemented.
@@ -44,8 +46,6 @@ Please visit the Users Ultra Forum. We like to help! :)
 05-19-2014 -- Auto Sync with WooCommerce, Shipping and Billing Address.
 05-19-2014 -- Logout Shortcode with custom redirection.
 05-19-2014 -- Custom Redirection after login.
-05-19-2014 -- Filter Users by WP Roles.
-
 </pre>
 
 <h3>Help Keep This Plugin Free</h3>
@@ -239,6 +239,13 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.85 (06-08-2014) =
+* New Feature  - Users can check their orders through their dashboard.
+* Improvements - CSS We fixed clash CSS on Search box.
+* Improvements - CSS Users Dashboard is wider now.
+* Bug Fix      - Latest Photos in My Account can be disabled now.
+
 
 = 1.0.84 (06-05-2014) =
 * Improvements - FB API updates.
