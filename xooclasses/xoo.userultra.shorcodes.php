@@ -121,7 +121,7 @@ class XooShortCode {
 				
 		if (is_user_logged_in()) 
 		{
-			return $xoouserultra->custom_logout_page( $atts );				
+			//return $xoouserultra->custom_logout_page( $atts );				
 			
 		}
 	

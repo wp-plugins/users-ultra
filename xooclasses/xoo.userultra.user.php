@@ -2249,7 +2249,8 @@ class XooUserUser {
                 
                   }
 				  
-				  $html .= '<div class="tool-div-bar"><a class="uultra-btn-profile" href="'.$this->get_user_profile_permalink( $user_id).'" '.__('See Profile','xoousers').'><i class="fa fa-eye fa-lg"></i> </a> <a class="uultra-btn-profile" href="'.$xoouserultra->get_logout_url().' '.__('Logout','xoousers').'"><i class="fa fa-power-off fa-lg"></i> </a>  </div> ';
+				  $html .= '<div class="tool-div-bar"><a class="uultra-btn-profile" href="'.$this->get_user_profile_permalink( $user_id).'" '.__('See Profile','xoousers').'><i class="fa fa-eye fa-lg"></i> </a> 
+				  <a class="uultra-btn-profile" href="'.$xoouserultra->get_logout_url().'" title="'.__('Logout','xoousers').'"> <i class="fa fa-power-off fa-lg"></i> </a>  </div> ';
                 
                   $html .= '</div> ';
             

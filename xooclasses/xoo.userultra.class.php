@@ -271,6 +271,12 @@ class XooUserUltra
 	
 	public function custom_logout_page ($atts)
 	{
+		global $xoouserultra, $wp_rewrite ;
+		
+		$wp_rewrite = new WP_Rewrite();
+		
+		require_once(ABSPATH . 'wp-includes/link-template.php');		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		extract( shortcode_atts( array(	
 			
@@ -280,14 +286,30 @@ class XooUserUltra
 		), $atts ) );
 		
 		
+		/*$defaults = array(
+		            'redirect_to' => $this->current_page
+		    );
+		$args = wp_parse_args( $args, $defaults );
+		
+		extract( $args, EXTR_SKIP );*/
+		
+		//check redir		
+		$account_page_id = get_option('xoousersultra_my_account_page');
+		$my_account_url = get_permalink($account_page_id);
+		
 		if($redirect_to=="")
 		{
-				$redirect_to = $_SERVER['REQUEST_URI'];
+				$redirect_to =$my_account_url;
 		
 		}
 		$logout_url = wp_logout_url($redirect_to);
+		
+		//quick patch =
+		
+		$logout_url = str_replace("amp;","",$logout_url);
 	
 		wp_redirect($logout_url);
+		//exit;
 		
 	}
 	
