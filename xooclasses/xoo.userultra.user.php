@@ -48,6 +48,9 @@ class XooUserUser {
 		
 		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
      	add_action( 'wp_ajax_confirm_reset_password', array( $this, 'confirm_reset_password' ));
+		add_action( 'wp_ajax_confirm_reset_password_user', array( $this, 'confirm_reset_password_user' ));
+		
+		
 
 		add_action( 'wp_ajax_get_pending_moderation_list', array( $this, 'get_pending_moderation_list' ));
 		add_action( 'wp_ajax_user_approve_pending_account', array( $this, 'user_approve_pending_account' ));
@@ -945,6 +948,87 @@ class XooUserUser {
 		return $total;
 		// Output results
 	
+	
+	}
+	
+	public function confirm_reset_password_user()
+	{
+		global $wpdb,  $xoouserultra, $wp_rewrite;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/general-template.php');
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		require_once(ABSPATH . 'wp-includes/user.php');
+		
+		$wp_rewrite = new WP_Rewrite();
+		
+		$user_id = get_current_user_id();
+		
+				
+		//check redir		
+		$account_page_id = get_option('xoousersultra_my_account_page');
+		$my_account_url = get_permalink($account_page_id);
+		
+		
+		
+		$PASSWORD_LENGHT =7;
+		
+		$password1 = $_POST['p1'];
+		$password2 = $_POST['p2'];
+		
+		$html = '';
+		$validation = '';
+		
+		//check password
+		
+		if($password1!=$password2)
+		{
+			$validation .= "<div class='uupublic-ultra-error'>".__(" ERROR! Password must be identical ", 'xoousers')."</div>";
+			$html = $validation;			
+		}
+		
+		if(strlen($password1)<$PASSWORD_LENGHT)
+		{
+			$validation .= "<div class='uupublic-ultra-error'>".__(" ERROR! Password should contain at least 7 alphanumeric characters ", 'xoousers')."</div>";
+			$html = $validation;		
+		}
+		
+		
+		if($validation=="" )
+		{
+		
+			if($user_id >0 )
+			{
+					//echo "user id: ". $user_id;
+					$user = get_userdata($user_id);
+					//print_r($user);
+					$user_id = $user->ID;
+					$user_email = $user->user_email;
+					$user_login = $user->user_login;			
+					
+					wp_set_password( $password1, $user_id ) ;
+					
+					//notify user					
+					$xoouserultra->messaging->send_new_password_to_user($user_email, $user_login, $password1);
+					
+					$html = "<div class='uupublic-ultra-success'>".__(" Success!! The new password has been sent to ".$user_email."  ", 'xoousers')."</div>";
+					
+					// Here is the magic:
+					wp_cache_delete($user_id, 'users');
+					wp_cache_delete($username, 'userlogins'); // This might be an issue for how you are doing it. Presumably you'd need to run this for the ORIGINAL user login name, not the new one.
+					wp_logout();
+					wp_signon(array('user_login' => $user_login, 'user_password' => $password1));
+					
+														
+				}else{
+					
+									
+				}
+					
+			}
+		 echo $html;
+		 die();
+		
 	
 	}
 	
@@ -3486,6 +3570,8 @@ class XooUserUser {
 		
 		//$wp_user_query = $this->get_cached_query( $query );
 		$wp_user_query = new WP_User_Query($query);
+		
+		remove_action( 'pre_user_query', 'uultra_query_search_displayname' );
 		
 		if (! empty( $wp_user_query->results )) 
 		{

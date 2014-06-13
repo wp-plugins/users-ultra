@@ -404,6 +404,34 @@ if(typeof $ == 'undefined'){
 				
         });
 		
+		//reset password				
+		$(document).on("click", "#xoouserultra-backenedb-eset-password", function(e) {			
+			
+			var p1 =   $('#p1').val();
+			var p2 =   $('#p2').val();		
+			
+			jQuery.ajax({
+				type: 'POST',
+				url: ajaxurl,
+				data: {"action": "confirm_reset_password_user", "p1": p1 , "p2": p2 },
+				
+				success: function(data){					
+										
+					$("#uultra-p-reset-msg").html(data);
+					
+					
+					
+					}
+			});
+			
+			 // Cancel the default action
+			 return false;
+    		e.preventDefault();			 
+
+				
+        });
+		
+		
 		
 		jQuery("#xoouserultra-registration-form").validationEngine({promptPosition: 'inline'});
 

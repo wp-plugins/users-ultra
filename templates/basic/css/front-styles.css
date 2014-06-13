@@ -2315,6 +2315,8 @@ vertical-align: middle;}
 .uultra-profile-basic-wrap .commons-panel-content p {
     padding:4px 0 6px 0;
 	text-align:left !important;
+	margin-top:2px !important;
+	margin-bottom:2px !important;
 }
 
 .usersultra-dahsboard-cont .usersultra-dahsboard-center h3 {

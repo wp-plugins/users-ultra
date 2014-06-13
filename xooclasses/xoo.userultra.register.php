@@ -67,6 +67,19 @@ class XooUserRegister {
 		        }
 		    
 		    }
+			
+			/* Validate passowrd */
+		     if ($this->usermeta["user_pass"]=="") 
+			 {
+				 //$this->errors[] = __('<strong>ERROR:</strong> Please type your password.','xoousers');           
+				
+		     }
+			 
+			 if ($this->usermeta["user_pass"]!= $this->usermeta["user_pass_confirm"]) 
+			 {
+				 $this->errors[] = __('<strong>ERROR:</strong> The passwords must be identical','xoousers');           
+				
+		     }
 		    
 		    if(!is_in_post('no_captcha','yes'))
 		    {

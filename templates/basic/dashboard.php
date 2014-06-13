@@ -667,12 +667,35 @@ $howmany = 5;
 	   ?>
        
 		<div class="commons-panel xoousersultra-shadow-borers" >
-                                
-                      <div class="commons-panel-heading">
-                              <h2> <?php  _e('Remove My Account','xoousers');?>  </h2>
+        
+        
+<div class="commons-panel-heading">
+                              <h2> <?php  _e('My Account','xoousers');?>  </h2>
+                     </div>
+                     
+                     
+                      <div class="commons-panel-content">
+                       <h2> <?php  _e('Update Password','xoousers');?>  </h2>
+                      
+                                           
+                      <p><?php  _e('Here you can update your email and password.','xoousers');?></p>
+                       <form method="post" name="uultra-close-account" >
+                       <p><?php  _e('Type your New Password','xoousers');?></p>
+                 			 <p><input type="password" name="p1" id="p1" /></p>
+                            
+                             <p><?php  _e('Re-type your New Password','xoousers');?></p>
+                 			 <p><input type="password"  name="p2" id="p2" /></p>
+                            
+                         <p><input type="button" name="xoouserultra-backenedb-eset-password" id="xoouserultra-backenedb-eset-password" class="xoouserultra-button" value="<?php  _e('CLICK HERE TO RESET PASSWORD','xoousers');?>" /></p>
+                         
+                         <p id="uultra-p-reset-msg"></p>
+               		  </form>
+                      
+                                           
                      </div>
                      
                       <div class="commons-panel-content">
+                       <h2> <?php  _e('Remove My Account','xoousers');?>  </h2>
                       
                       <div class="uupublic-ultra-warning">WARNING! This action cannot be reverted.</div>
                       
