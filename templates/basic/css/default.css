@@ -402,8 +402,8 @@ input.btn {
     box-shadow: none;
 }
 
-.icon-facebook { margin-right:10px;}
-.icon-facebook img{ vertical-align:middle;}
+.uultra-icon-facebook { margin-right:10px;}
+.uultra-icon-facebook img{ vertical-align:middle;}
 
 /*Button Yahoo*/
 .btn-yahoo {
@@ -431,8 +431,8 @@ input.btn {
 }
 
 
-.icon-yahoo { margin-right:10px;}
-.icon-yahoo img{ vertical-align:middle;}
+.uultra-icon-yahoo { margin-right:10px;}
+.uultra-icon-yahoo img{ vertical-align:middle;}
 /*Button Google*/
 .btn-google {
     background: none repeat scroll 0 0 #D55707;
@@ -458,8 +458,8 @@ input.btn {
     box-shadow: none;
 }
 
-.icon-google { margin-right:10px;}
-.icon-google img{ vertical-align:middle;}
+.uultra-icon-google { margin-right:10px;}
+.uultra-icon-google img{ vertical-align:middle;}
 
 /*Button LinkedIn*/
 .btn-linkedin {
@@ -487,8 +487,8 @@ input.btn {
 }
 
 
-.icon-linkedin { margin-right:10px;}
-.icon-linkedin img{ vertical-align:middle;}
+.uultra-icon-linkedin { margin-right:10px;}
+.uultra-icon-linkedin img{ vertical-align:middle;}
 
 /*Twitter*/
 
@@ -517,8 +517,8 @@ input.btn {
 }
 
 
-.icon-twitter { margin-right:10px;}
-.icon-twitter img{ vertical-align:middle;}
+.uultra-icon-twitter { margin-right:10px;}
+.uultra-icon-twitter img{ vertical-align:middle;}
 
 /*Yammer*/
 
@@ -547,8 +547,8 @@ input.btn {
 }
 
 
-.icon-yammer { margin-right:10px;}
-.icon-yammer img{ vertical-align:middle;}
+.uultra-icon-yammer { margin-right:10px;}
+.uultra-icon-yammer img{ vertical-align:middle;}
 
 
 .txt-center{ text-align:center; margin-top:5px;}
@@ -785,7 +785,7 @@ width:90%
 	display:inline-block;
 	vertical-align:top;
 	
-	width: 78%;
+	width: 76%;
 	font-family: Open Sans;
 	margin: 0px auto 20px auto;
 	

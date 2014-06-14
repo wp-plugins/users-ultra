@@ -94,7 +94,9 @@ $howmany = 5;
                 <?php if(!in_array("videos",$modules)){?> 
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('videos');?></li>
                
+               
                <?php }?>
+               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('settings');?></li>
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('logout');?></li>
            
            </ul>
@@ -668,9 +670,52 @@ $howmany = 5;
        
 		<div class="commons-panel xoousersultra-shadow-borers" >
         
-        
-<div class="commons-panel-heading">
+        <div class="commons-panel-heading">
                               <h2> <?php  _e('My Account','xoousers');?>  </h2>
+                     </div>
+        
+                    
+                      <div class="commons-panel-content">
+                       <h2> <?php  _e('Remove Account','xoousers');?>  </h2>
+                      
+                      <div class="uupublic-ultra-warning">WARNING! This action cannot be reverted.</div>
+                      
+                      <p><?php  _e('Here you can remove your account.','xoousers');?></p>
+                       <form method="post" name="uultra-close-account" id="uultra-close-account">
+                 			<input type="hidden" name="uultra-conf-close-account-post" value="ok" />
+                             <p><input type="button" name="xoouserultra-register" id="xoouserultra-close-acc-btn" class="xoouserultra-button" value="<?php  _e('YES, CLOSE MY ACCOUNT','xoousers');?>" /></p>
+               		  </form>
+                      
+                                           
+                     </div>
+                     
+                     
+                                          
+               </div>
+               
+               <script type="text/javascript">
+		
+				 
+				   var delete_account_confirmation_mesage = '<?php echo _e( 'Are you totally sure that you want to close your account. This action cannot be reverted?', 'xoousers' ) ?>';			
+                                   
+                    
+                 </script>
+       
+       <?php }?>
+       
+       
+        
+	  <?php
+	  //my settings
+	   if($module=="settings") 
+	   {
+	   
+	   ?>
+       
+		<div class="commons-panel xoousersultra-shadow-borers" >
+                                
+                      <div class="commons-panel-heading">
+                              <h2> <?php  _e('Settings','xoousers');?>  </h2>
                      </div>
                      
                      
@@ -693,21 +738,6 @@ $howmany = 5;
                       
                                            
                      </div>
-                     
-                      <div class="commons-panel-content">
-                       <h2> <?php  _e('Remove My Account','xoousers');?>  </h2>
-                      
-                      <div class="uupublic-ultra-warning">WARNING! This action cannot be reverted.</div>
-                      
-                      <p><?php  _e('Here you can remove your account.','xoousers');?></p>
-                       <form method="post" name="uultra-close-account" id="uultra-close-account">
-                 			<input type="hidden" name="uultra-conf-close-account-post" value="ok" />
-                             <p><input type="button" name="xoouserultra-register" id="xoouserultra-close-acc-btn" class="xoouserultra-button" value="<?php  _e('YES, CLOSE MY ACCOUNT','xoousers');?>" /></p>
-               		  </form>
-                      
-                                           
-                     </div>
-                     
                      
                                           
                </div>

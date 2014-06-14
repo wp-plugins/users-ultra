@@ -1887,6 +1887,20 @@ class XooUserUser {
 			}
 			
 		
+		}elseif($slug=="settings"){
+			
+			
+			if(!isset($_GET["page_id"]))
+			{
+				$url = '<a class="uultra-btn-u-menu" href="?module=settings"><span><i class="fa fa-gear  fa-2x"></i></span>'.__('Settings', 'xoousers').'</a>';	
+				
+			}else{
+				
+				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=settings"><span><i class="fa fa-gear  fa-2x"></i></span>'.__('Settings', 'xoousers').'</a>';			
+			
+			}
+			
+		
 		}elseif($slug=="wootracker"){
 			
 			
