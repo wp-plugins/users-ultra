@@ -445,11 +445,11 @@ class XooUserUser {
 		
 	}
 	
-	public function sync_users ()
+		public function sync_users ()
 	{
 		global $wpdb,  $xoouserultra;
 		
-		$sql = 'SELECT ID FROM ' . $wpdb->prefix . 'users  ' ;
+		$sql = 'SELECT ID,display_name FROM ' . $wpdb->prefix . 'users  ' ;
 		$users = $wpdb->get_results($sql );
 		
 		$count = 0;
@@ -462,6 +462,7 @@ class XooUserUser {
 				$count++;
 				$user_id = $user->ID;
 				update_user_meta ($user_id, 'usersultra_account_status', 'active');
+				update_user_meta ($user_id, 'display_name', $user->display_name);
 				
 				
 			}
@@ -472,8 +473,6 @@ class XooUserUser {
 		echo "<div class='user-ultra-success'>".__(" SUCESS! The sync process has been finished. ".$count." users were updated ", 'xoousers')."</div>";
 		
 		die();
-		
-		
 	}
 	
 	/*Get Stats*/
@@ -3376,7 +3375,8 @@ class XooUserUser {
 		
 		
 		/*This is applied only if we have to filder certain roles*/
-		if (isset($role)){
+		if (isset($role) &&  $role!=""){
+			
 			$roles = explode(',',$role);
 			if (count($roles) >= 2){
 				$query['meta_query']['relation'] = 'or';
