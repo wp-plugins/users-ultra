@@ -317,7 +317,7 @@ color: #888;
 
 /* Social*/
 
-.btn, .button, [class^="btn-"], [class*=" btn-"] {
+.btn, .button, [class^="btn-"], [class=" btn-"] {
     background: none repeat scroll 0 0 #92D400;
     border: 1px solid #55B100;
     border-radius: 4px;
