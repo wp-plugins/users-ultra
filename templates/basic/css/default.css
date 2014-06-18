@@ -317,7 +317,7 @@ color: #888;
 
 /* Social*/
 
-.btn, .button, [class^="btn-"], [class=" btn-"] {
+.btn, .button, [class^="btn-"], [class="btn-"] {
     background: none repeat scroll 0 0 #92D400;
     border: 1px solid #55B100;
     border-radius: 4px;
@@ -336,15 +336,15 @@ color: #888;
     white-space: nowrap;
     width: auto;
 }
-.btn:hover, .button:hover, [class^="btn-"]:hover, [class*=" btn-"]:hover {
+.btn:hover, .button:hover, [class^="btn-"]:hover{
     background: none repeat scroll 0 0 #6DC602;
     border: 1px solid #55B100;
     color: #FFFFFF;
 }
-.btn.active, .button.active, .active[class^="btn-"], .active[class*=" btn-"] {
+.btn.active, .button.active, .active[class^="btn-"] {
     background: none repeat scroll 0 0 #CCCCCC;
 }
-.btn span, .button span, [class^="btn-"] span, [class*=" btn-"] span {
+.btn span, .button span, [class^="btn-"] span,  {
     font-weight: 600;
 }
 input.btn {
