@@ -317,7 +317,7 @@ color: #888;
 
 /* Social*/
 
-.btn, .button, [class^="btn-"], [class="btn-"] {
+.btnuultra, .button, [class^="btnuultra-"], [class="btnuultra-"] {
     background: none repeat scroll 0 0 #92D400;
     border: 1px solid #55B100;
     border-radius: 4px;
@@ -336,59 +336,59 @@ color: #888;
     white-space: nowrap;
     width: auto;
 }
-.btn:hover, .button:hover, [class^="btn-"]:hover{
+.btnuultra:hover, .button:hover, [class^="btnuultra-"]:hover{
     background: none repeat scroll 0 0 #6DC602;
     border: 1px solid #55B100;
     color: #FFFFFF;
 }
-.btn.active, .button.active, .active[class^="btn-"] {
+.btnuultra.active, .button.active, .active[class^="btnuultra-"] {
     background: none repeat scroll 0 0 #CCCCCC;
 }
-.btn span, .button span, [class^="btn-"] span,  {
+.btnuultra span, .button span, [class^="btnuultra-"] span,  {
     font-weight: 600;
 }
-input.btn {
+input.btnuultra {
     line-height: 40px;
     min-height: 40px;
     white-space: normal;
 }
 @media only screen and (max-width: 600px) {
-input.btn {
+input.btnuultra {
     white-space: nowrap;
 }
 }
-.locale-fr .btn, .locale-fr [class^="btn-"] {
+.locale-fr .btnuultra, .locale-fr [class^="btnuultra-"] {
     font-size: 16px;
 }
-.locale-de .btn, .locale-de [class^="btn-"] {
+.locale-de .btnuultra, .locale-de [class^="btnuultra-"] {
     font-size: 16px;
 }
-.btn-large {
+.btnuultra-large {
     font-size: 1.4em;
     padding: 0 30px;
 }
-.btn-small {
+.btnuultra-small {
     font-size: 1em;
     padding: 0 15px;
 }
-.btn-tiny {
+.btnuultra-tiny {
     font-size: 14px;
     line-height: 1.8em;
     padding: 0 8px;
 }
 
-.btn-facebook {
+.btnuultra-facebook {
     background: none repeat scroll 0 0 #6481BE;
     border: 1px solid #314D89;
     box-shadow: 1px 1px 1px #8194B8 inset;
 	width:190px;
 	
 }
-.btn-facebook:hover {
+.btnuultra-facebook:hover {
     background-color: #314D89;
     border: 1px solid #314D89;
 }
-.btn-facebook {
+.btnuultra-facebook {
     background: none repeat scroll 0 0 #00689B;
     border: 0 none;
     box-shadow: none;
@@ -396,7 +396,7 @@ input.btn {
     padding: 2px 45px 0px  15px;
 	color:#FFF !important;
 }
-.btn-facebook:hover {
+.btnuultra-facebook:hover {
     background-color: #314D89;
     border: medium none;
     box-shadow: none;
@@ -406,17 +406,17 @@ input.btn {
 .uultra-icon-facebook img{ vertical-align:middle;}
 
 /*Button Yahoo*/
-.btn-yahoo {
+.btnuultra-yahoo {
     background: none repeat scroll 0 0 #782178;
     border: 1px solid #314D89;
     box-shadow: 1px 1px 1px #8194B8 inset;
 	width:190px;
 }
-.btn-yahoo:hover {
+.btnuultra-yahoo:hover {
     background-color: #314D89;
     border: 1px solid #314D89;
 }
-.btn-yahoo {
+.btnuultra-yahoo {
     background: none repeat scroll 0 0 #782178;
     border: 0 none;
     box-shadow: none;
@@ -424,7 +424,7 @@ input.btn {
     padding: 2px 45px 0px  15px;
 	color:#FFF !important;
 }
-.btn-yahoo:hover {
+.btnuultra-yahoo:hover {
     background-color: #A243A2;
     border: medium none;
     box-shadow: none;
@@ -434,17 +434,17 @@ input.btn {
 .uultra-icon-yahoo { margin-right:10px;}
 .uultra-icon-yahoo img{ vertical-align:middle;}
 /*Button Google*/
-.btn-google {
+.btnuultra-google {
     background: none repeat scroll 0 0 #D55707;
     border: 1px solid #314D89;
     box-shadow: 1px 1px 1px #8194B8 inset;
 	width:190px;
 }
-.btn-google:hover {
+.btnuultra-google:hover {
     background-color: #314D89;
     border: 1px solid #314D89;
 }
-.btn-google {
+.btnuultra-google {
     background: none repeat scroll 0 0 #D55707;
     border: 0 none;
     box-shadow: none;
@@ -452,7 +452,7 @@ input.btn {
     padding: 2px 45px 0px  15px;
 	color:#FFF !important;
 }
-.btn-google:hover {
+.btnuultra-google:hover {
     background-color: #EF7122;
     border: medium none;
     box-shadow: none;
@@ -462,17 +462,17 @@ input.btn {
 .uultra-icon-google img{ vertical-align:middle;}
 
 /*Button LinkedIn*/
-.btn-linkedin {
+.btnuultra-linkedin {
     background: none repeat scroll 0 0 #539ABE;
     border: 1px solid #314D89;
     box-shadow: 1px 1px 1px #8194B8 inset;
 	width:190px;
 }
-.btn-linkedin:hover {
+.btnuultra-linkedin:hover {
     background-color: #314D89;
     border: 1px solid #314D89;
 }
-.btn-linkedin {
+.btnuultra-linkedin {
     background: none repeat scroll 0 0 #539ABE;
     border: 0 none;
     box-shadow: none;
@@ -480,7 +480,7 @@ input.btn {
     padding: 2px 45px 0px  15px;
 	color:#FFF !important;
 }
-.btn-linkedin:hover {
+.btnuultra-linkedin:hover {
     background-color: #83BFD8;
     border: medium none;
     box-shadow: none;
@@ -492,17 +492,17 @@ input.btn {
 
 /*Twitter*/
 
-.btn-twitter {
+.btnuultra-twitter {
     background: none repeat scroll 0 0 #539ABE;
     border: 1px solid #314D89;
     box-shadow: 1px 1px 1px #8194B8 inset;
 	width:190px;
 }
-.btn-twitter:hover {
+.btnuultra-twitter:hover {
     background-color: #314D89;
     border: 1px solid #314D89;
 }
-.btn-twitter {
+.btnuultra-twitter {
     background: none repeat scroll 0 0 #539ABE;
     border: 0 none;
     box-shadow: none;
@@ -510,7 +510,7 @@ input.btn {
     padding: 2px 45px 0px  15px;
 	color:#FFF !important;
 }
-.btn-twitter:hover {
+.btnuultra-twitter:hover {
     background-color: #83BFD8;
     border: medium none;
     box-shadow: none;
@@ -522,17 +522,17 @@ input.btn {
 
 /*Yammer*/
 
-.btn-yammer {
+.btnuultra-yammer {
     background: none repeat scroll 0 0 #0098cf;
     border: 1px solid #314D89;
     box-shadow: 1px 1px 1px #8194B8 inset;
 	width:190px;
 }
-.btn-yammer:hover {
+.btnuultra-yammer:hover {
     background-color: #83BFD8 ;
     border: 1px solid #314D89;
 }
-.btn-yammer {
+.btnuultra-yammer {
     background: none repeat scroll 0 0 #0098cf;
     border: 0 none;
     box-shadow: none;
@@ -540,7 +540,7 @@ input.btn {
     padding: 2px 45px 0px  15px;
 	color:#FFF !important;
 }
-.btn-yammer:hover {
+.btnuultra-yammer:hover {
     background-color: #83BFD8;
     border: medium none;
     box-shadow: none;

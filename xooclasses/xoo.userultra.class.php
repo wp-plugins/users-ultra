@@ -2419,7 +2419,7 @@ class XooUserUltra
 				$display .='<div class="txt-center FacebookSignIn">
 				
 				       	               	
-						<a href="'.$loginUrl.'" class="btn-facebook" >
+						<a href="'.$loginUrl.'" class="btnuultra-facebook" >
 							<span class="uultra-icon-facebook"> <img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/facebook.png" ></span>'.$action_text.' with Facebook </a>
 					
 					</div>';
@@ -2435,7 +2435,7 @@ class XooUserUltra
 			
 				//Yahoo
 				$display .='<div class="txt-center YahooSignIn">	               	
-							<a href="'.$auth_url_yahoo.'" class="btn-yahoo" >
+							<a href="'.$auth_url_yahoo.'" class="btnuultra-yahoo" >
 							<span class="uultra-icon-yahoo"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yahoo.png" ></span>'.$action_text.' with Yahoo </a>
 					
 					</div>';
@@ -2451,7 +2451,7 @@ class XooUserUltra
 			
 				//Google
 				$display .='<div class="txt-center GoogleSignIn">	               	
-						<a href="'.$auth_url_google.'" class="btn-google" >
+						<a href="'.$auth_url_google.'" class="btnuultra-google" >
 							<span class="uultra-icon-google"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/googleplus.png" ></span>'.$action_text.' with Google </a>
 					
 					</div>';
@@ -2467,7 +2467,7 @@ class XooUserUltra
 			
 				//Google
 				$display .='<div class="txt-center TwitterSignIn">	               	
-						<a href="'.$auth_url_google.'" class="btn-twitter" >
+						<a href="'.$auth_url_google.'" class="btnuultra-twitter" >
 							<span class="uultra-icon-twitter"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/twitter.png" ></span>'.$action_text.' with Twitter </a>
 					
 					</div>';
@@ -2483,7 +2483,7 @@ class XooUserUltra
 			
 				//Google
 				$display .='<div class="txt-center YammerSignIn">	               	
-						<a href="'.$auth_url_google.'" class="btn-yammer" >
+						<a href="'.$auth_url_google.'" class="btnuultra-yammer" >
 							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' with Yammer </a>
 					
 					</div>';
@@ -2502,7 +2502,7 @@ class XooUserUltra
 				
 				//LinkedIn
 				$display .='<div class="txt-center LinkedSignIn">	               	
-							<a href="'.$requestlink.'" class="btn-linkedin" >
+							<a href="'.$requestlink.'" class="btnuultra-linkedin" >
 								<span class="uultra-icon-linkedin"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/linkedin.png" ></span>'.$action_text.' with LinkedIn </a>
 					
 					</div>';
