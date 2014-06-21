@@ -118,6 +118,24 @@ $this->create_plugin_setting(
 
 $this->create_plugin_setting(
         'textarea',
+        'messaging_admin_moderation_user',
+        __('Client Admin Approvation Email','xoousers'),array(),
+        __('This message will be sent to the user if the account needs to be approved by the admin.','xoousers'),
+        __('','xoousers')
+);
+$this->create_plugin_setting(
+        'textarea',
+        'messaging_admin_moderation_admin',
+        __('Admin New User Approvation Email','xoousers'),array(),
+        __('This message will be sent to the admin if an account needs to be approved manually.','xoousers'),
+        __('','xoousers')
+);
+
+
+
+
+$this->create_plugin_setting(
+        'textarea',
         'messaging_user_pm',
         __('User Private Message','xoousers'),array(),
         __('This message will be sent to users when other users send a private message.','xoousers'),

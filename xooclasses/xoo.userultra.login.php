@@ -1754,7 +1754,9 @@ class XooUserLogin {
 		  
 	  
 	  }elseif($activation_type==3){		  
-		  //manually approved
+		  
+		  //admin approvation
+		   $xoouserultra->messaging->welcome_email_with_admin_activation($u_email, $user_login, $user_pass, $activation_link);
 		 
 	  
 	  

@@ -387,6 +387,9 @@ class XooUserAdmin extends XooUserUltraCommon
 						
 						'messaging_re_send_activation_link' => $this->get_email_template('messaging_re_send_activation_link'),
 						
+						'messaging_admin_moderation_user' => $this->get_email_template('new_account_admin_moderation'),
+						'messaging_admin_moderation_admin' => $this->get_email_template('new_account_admin_moderation_admin'),
+						
 						'messaging_welcome_email_with_activation_admin' => $this->get_email_template('new_account_activation_link_admin'),
 						
 						

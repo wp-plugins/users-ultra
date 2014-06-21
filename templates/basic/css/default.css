@@ -317,7 +317,7 @@ color: #888;
 
 /* Social*/
 
-.btnuultra, .button, [class^="btnuultra-"], [class="btnuultra-"] {
+.btnuultra,  [class^="btnuultra-"], [class="btnuultra-"] {
     background: none repeat scroll 0 0 #92D400;
     border: 1px solid #55B100;
     border-radius: 4px;
@@ -336,15 +336,15 @@ color: #888;
     white-space: nowrap;
     width: auto;
 }
-.btnuultra:hover, .button:hover, [class^="btnuultra-"]:hover{
+.btnuultra:hover,  [class^="btnuultra-"]:hover{
     background: none repeat scroll 0 0 #6DC602;
     border: 1px solid #55B100;
     color: #FFFFFF;
 }
-.btnuultra.active, .button.active, .active[class^="btnuultra-"] {
+.btnuultra.active,  .active[class^="btnuultra-"] {
     background: none repeat scroll 0 0 #CCCCCC;
 }
-.btnuultra span, .button span, [class^="btnuultra-"] span,  {
+.btnuultra span, [class^="btnuultra-"] span,  {
     font-weight: 600;
 }
 input.btnuultra {

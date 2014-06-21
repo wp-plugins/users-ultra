@@ -138,6 +138,43 @@ class XooMessaging extends XooUserUltraCommon
 		
 	}
 	
+		//--- Admin Activation	
+	public function  welcome_email_with_admin_activation($u_email, $user_login, $user_pass,  $activation_link)
+	{
+		global $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		
+		$admin_email =get_option('admin_email'); 
+		
+		
+		$subject = __('Account Verification','xoousers');
+		$subject_admin = __('New Account To Approve','xoousers');
+		
+		//get welcome email
+		$template_client =stripslashes($this->get_option('messaging_admin_moderation_user'));
+		$template_admim = stripslashes($this->get_option('messaging_admin_moderation_admin'));
+		
+		$login_url =site_url("/");
+		
+		$template_client = str_replace("{{userultra_user_name}}", $user_login,  $template_client);
+		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);
+		
+		//admin
+		$template_admim = str_replace("{{userultra_user_email}}", $u_email,  $template_admim);
+		$template_admim = str_replace("{{userultra_user_name}}", $user_login,  $template_admim);
+		$template_admim = str_replace("{{userultra_admin_email}}", $admin_email,  $template_admim);	
+				
+		
+		//send user
+		$this->send($u_email, $subject, $template_client);
+		
+		//send to admin		
+		$this->send($admin_email, $subject_admin, $template_admim);
+		
+	}
+	
 	
 	//--- Link Activation	
 	public function  welcome_email_with_activation($u_email, $user_login, $user_pass,  $activation_link)
