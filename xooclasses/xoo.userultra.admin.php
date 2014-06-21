@@ -493,6 +493,21 @@ class XooUserAdmin extends XooUserUltraCommon
 		$email_body .= __('Best Regards!','xoousers');
 	    $this->notifications_email['new_account_activation_link_admin'] = $email_body;	
 		
+		//admin manually approved --06-20-2014
+		$email_body = __('Hi Admin,' ,"xoousers") . $line_break.$line_break;
+		$email_body .= __("An account needs approbation.","xoousers") .  $line_break.$line_break;		
+		$email_body .= __('Account e-mail: {{userultra_user_email}}','xoousers') . $line_break;
+		$email_body .= __('Account username: {{userultra_user_name}}','xoousers') . $line_break;
+		$email_body .= __('Please login to your admin to activate the account.','xoousers') . $line_break.$line_break;
+		$email_body .= __('Best Regards!','xoousers');
+	    $this->notifications_email['new_account_admin_moderation_admin'] = $email_body;
+		
+		//client manually approved --06-20-2014
+		$email_body = __('Hi {{userultra_user_name}},' ,"xoousers") . $line_break.$line_break;
+		$email_body .= __("Your account will be reviewed by the admin soon.","xoousers") .  $line_break.$line_break;		
+		$email_body .= __('Best Regards!','xoousers');
+	    $this->notifications_email['new_account_admin_moderation'] = $email_body;
+		
 		
 		$email_body = __('Hi,',"xoousers") . $line_break.$line_break;
 		$email_body .= __("{{userultra_user_name}} has just created a new account at {{user_ultra_blog_name}}.","xoousers") . $line_break.$line_break;

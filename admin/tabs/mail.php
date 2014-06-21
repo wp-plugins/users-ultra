@@ -119,14 +119,14 @@ $this->create_plugin_setting(
 $this->create_plugin_setting(
         'textarea',
         'messaging_admin_moderation_user',
-        __('Client Admin Approvation Email','xoousers'),array(),
+        __('Client Admin Approbation  Email','xoousers'),array(),
         __('This message will be sent to the user if the account needs to be approved by the admin.','xoousers'),
         __('','xoousers')
 );
 $this->create_plugin_setting(
         'textarea',
         'messaging_admin_moderation_admin',
-        __('Admin New User Approvation Email','xoousers'),array(),
+        __('Admin New User Approbation  Email','xoousers'),array(),
         __('This message will be sent to the admin if an account needs to be approved manually.','xoousers'),
         __('','xoousers')
 );
