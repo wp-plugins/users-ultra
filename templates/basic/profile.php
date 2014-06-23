@@ -183,12 +183,7 @@ global $xoouserultra;
              <?php }?>  
              
              
-             <?php if ($optional_right_col_fields_to_display!="") { ?>                 
-                 
-                   <?php echo $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_right_col_fields_to_display)?>                 
-                
-           <?php } ?>   
-         
+            
          
          
          
@@ -208,7 +203,12 @@ global $xoouserultra;
           
             
             
-            
+             <?php if ($optional_right_col_fields_to_display!="") { ?>                 
+                 
+                   <?php echo $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_right_col_fields_to_display)?>                 
+                
+           <?php } ?>   
+         
               
              
     

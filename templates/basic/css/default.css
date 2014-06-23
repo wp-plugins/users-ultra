@@ -377,174 +377,66 @@ input.btnuultra {
     padding: 0 8px;
 }
 
-.btnuultra-facebook {
-    background: none repeat scroll 0 0 #6481BE;
-    border: 1px solid #314D89;
-    box-shadow: 1px 1px 1px #8194B8 inset;
-	width:190px;
-	
-}
-.btnuultra-facebook:hover {
-    background-color: #314D89;
-    border: 1px solid #314D89;
-}
-.btnuultra-facebook {
-    background: none repeat scroll 0 0 #00689B;
+.btnuultra-facebook, .btnuultra-yahoo, .btnuultra-google, .btnuultra-linkedin, .btnuultra-twitter, .btnuultra-yammer {
     border: 0 none;
     box-shadow: none;
+    min-width:250px;
     font-size: 1.5em;
-    padding: 2px 45px 0px  15px;
-	color:#FFF !important;
+    font-weight: normal;
+    padding: 2px 15px 0  10px;
+    color:#FFF !important;
+}
+.btnuultra-facebook {
+    background: none repeat scroll 0 0 #6481BE;
 }
 .btnuultra-facebook:hover {
     background-color: #314D89;
     border: medium none;
     box-shadow: none;
 }
-
-.uultra-icon-facebook { margin-right:10px;}
-.uultra-icon-facebook img{ vertical-align:middle;}
-
-/*Button Yahoo*/
 .btnuultra-yahoo {
     background: none repeat scroll 0 0 #782178;
-    border: 1px solid #314D89;
-    box-shadow: 1px 1px 1px #8194B8 inset;
-	width:190px;
-}
-.btnuultra-yahoo:hover {
-    background-color: #314D89;
-    border: 1px solid #314D89;
-}
-.btnuultra-yahoo {
-    background: none repeat scroll 0 0 #782178;
-    border: 0 none;
-    box-shadow: none;
-    font-size: 1.5em;
-    padding: 2px 45px 0px  15px;
-	color:#FFF !important;
 }
 .btnuultra-yahoo:hover {
     background-color: #A243A2;
     border: medium none;
     box-shadow: none;
 }
-
-
-.uultra-icon-yahoo { margin-right:10px;}
-.uultra-icon-yahoo img{ vertical-align:middle;}
-/*Button Google*/
 .btnuultra-google {
     background: none repeat scroll 0 0 #D55707;
-    border: 1px solid #314D89;
-    box-shadow: 1px 1px 1px #8194B8 inset;
-	width:190px;
-}
-.btnuultra-google:hover {
-    background-color: #314D89;
-    border: 1px solid #314D89;
-}
-.btnuultra-google {
-    background: none repeat scroll 0 0 #D55707;
-    border: 0 none;
-    box-shadow: none;
-    font-size: 1.5em;
-    padding: 2px 45px 0px  15px;
-	color:#FFF !important;
 }
 .btnuultra-google:hover {
     background-color: #EF7122;
     border: medium none;
     box-shadow: none;
 }
-
-.uultra-icon-google { margin-right:10px;}
-.uultra-icon-google img{ vertical-align:middle;}
-
-/*Button LinkedIn*/
 .btnuultra-linkedin {
     background: none repeat scroll 0 0 #539ABE;
-    border: 1px solid #314D89;
-    box-shadow: 1px 1px 1px #8194B8 inset;
-	width:190px;
-}
-.btnuultra-linkedin:hover {
-    background-color: #314D89;
-    border: 1px solid #314D89;
-}
-.btnuultra-linkedin {
-    background: none repeat scroll 0 0 #539ABE;
-    border: 0 none;
-    box-shadow: none;
-    font-size: 1.5em;
-    padding: 2px 45px 0px  15px;
-	color:#FFF !important;
 }
 .btnuultra-linkedin:hover {
     background-color: #83BFD8;
     border: medium none;
     box-shadow: none;
 }
-
-
-.uultra-icon-linkedin { margin-right:10px;}
-.uultra-icon-linkedin img{ vertical-align:middle;}
-
-/*Twitter*/
-
 .btnuultra-twitter {
     background: none repeat scroll 0 0 #539ABE;
-    border: 1px solid #314D89;
-    box-shadow: 1px 1px 1px #8194B8 inset;
-	width:190px;
-}
-.btnuultra-twitter:hover {
-    background-color: #314D89;
-    border: 1px solid #314D89;
-}
-.btnuultra-twitter {
-    background: none repeat scroll 0 0 #539ABE;
-    border: 0 none;
-    box-shadow: none;
-    font-size: 1.5em;
-    padding: 2px 45px 0px  15px;
-	color:#FFF !important;
 }
 .btnuultra-twitter:hover {
     background-color: #83BFD8;
     border: medium none;
     box-shadow: none;
 }
-
-
-.uultra-icon-twitter { margin-right:10px;}
-.uultra-icon-twitter img{ vertical-align:middle;}
-
-/*Yammer*/
-
 .btnuultra-yammer {
     background: none repeat scroll 0 0 #0098cf;
-    border: 1px solid #314D89;
-    box-shadow: 1px 1px 1px #8194B8 inset;
-	width:190px;
-}
-.btnuultra-yammer:hover {
-    background-color: #83BFD8 ;
-    border: 1px solid #314D89;
-}
-.btnuultra-yammer {
-    background: none repeat scroll 0 0 #0098cf;
-    border: 0 none;
-    box-shadow: none;
-    font-size: 1.5em;
-    padding: 2px 45px 0px  15px;
-	color:#FFF !important;
 }
 .btnuultra-yammer:hover {
     background-color: #83BFD8;
     border: medium none;
     box-shadow: none;
 }
+.uultra-icon-facebook, .uultra-icon-yahoo, .uultra-icon-google, .uultra-icon-linkedin, .uultra-icon-twitter, .uultra-icon-yammer { margin-right:10px;}
+.uultra-icon-facebook img, .uultra-icon-yahoo img, .uultra-icon-google img, .uultra-icon-linkedin img, .uultra-icon-twitter img, .uultra-icon-yammer img{ vertical-align:middle;}
+
 
 
 .uultra-icon-yammer { margin-right:10px;}
@@ -764,7 +656,9 @@ width:90%
 
 .usersultra-dahsboard-cont .usersultra-dahsboard-left .myavatar .pic img{
 	
-	max-width:97%;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
 }
 .usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu{
 	
