@@ -49,7 +49,7 @@ class XooUserUser {
 		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
      	add_action( 'wp_ajax_confirm_reset_password', array( $this, 'confirm_reset_password' ));
 		add_action( 'wp_ajax_confirm_reset_password_user', array( $this, 'confirm_reset_password_user' ));
-		
+		add_action( 'wp_ajax_confirm_update_email_user', array( $this, 'confirm_update_email_user' ));	
 		
 
 		add_action( 'wp_ajax_get_pending_moderation_list', array( $this, 'get_pending_moderation_list' ));
@@ -947,6 +947,120 @@ class XooUserUser {
 		return $total;
 		// Output results
 	
+	
+	}
+	
+	function validate_valid_email ($myString)
+	{
+		$ret = true;
+		if (!filter_var($myString, FILTER_VALIDATE_EMAIL)) {
+    		// invalid e-mail address
+			$ret = false;
+		}
+					
+		return $ret;
+	
+	
+	}
+	
+	public function confirm_update_email_user()
+	{
+		global $wpdb,  $xoouserultra, $wp_rewrite;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/general-template.php');
+		require_once(ABSPATH . 'wp-includes/link-template.php');
+		require_once(ABSPATH . 'wp-includes/user.php');
+		
+		$wp_rewrite = new WP_Rewrite();
+		
+		$user_id = get_current_user_id();
+	
+	
+		$email = $_POST['email'];
+		$html = '';
+		$validation = '';
+		
+	
+		//validate if it's a valid email address	
+		$ret_validate_email = $this->validate_valid_email($email);
+		
+		if($email=="")
+		{
+			$validation .= "<div class='uupublic-ultra-error'>".__(" ERROR! Please type your new email ", 'xoousers')."</div>";
+			$html = $validation;			
+		}
+		
+		if(!$ret_validate_email)
+		{
+			$validation .= "<div class='uupublic-ultra-error'>".__(" ERROR! Please type a valid email address ", 'xoousers')."</div>";
+			$html = $validation;			
+		}
+		
+		$current_user = get_userdata($user_id);
+		//print_r($user);
+		$current_user_email = $current_user->user_email;
+		
+		//check if already used
+		
+		$check_user = get_user_by('email',$email);
+		$user_check_id = $check_user->ID;
+		$user_check_email = $check_user->ID;
+		
+		if($validation=="" )
+		{
+		
+			if($user_check_id==$user_id) //this is the same user then change email
+			{
+				$validation .= "<div class='uupublic-ultra-error'>".__(" ERROR! You haven't changed your email. ", 'xoousers')."</div>";
+				$html = $validation;
+				
+			
+			}else{ //email already used by another user
+			
+				if($user_check_email!="")
+				{
+			
+					$validation .= "<div class='uupublic-ultra-error'>".__(" ERROR! The email is in use already ", 'xoousers')."</div>";
+					$html = $validation;
+				
+				}else{
+					
+					//email available
+					
+				}
+				
+			
+			}
+		
+		}
+		
+		
+		
+		if($validation=="" )
+		{
+		
+			if($user_id >0 )
+			{
+					$user = get_userdata($user_id);
+					$user_id = $user->ID;
+					$user_email = $user->user_email;
+					$user_login = $user->user_login;	
+					
+					$user_id = wp_update_user( array( 'ID' => $user_id, 'user_email' => $email ) );											
+										
+					$html = "<div class='uupublic-ultra-success'>".__(" Success!! Your email account has been changed to : ".$email."  ", 'xoousers')."</div>";
+					
+																			
+				}else{
+					
+									
+				}
+					
+			}
+		 echo $html;
+		 die();
+		
 	
 	}
 	

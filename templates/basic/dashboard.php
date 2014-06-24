@@ -21,6 +21,8 @@ if(isset($_GET["post_id"])){	$post_id = $_GET["post_id"];}
 $current_user = $xoouserultra->userpanel->get_user_info();
 
 $user_id = $current_user->ID;
+$user_email = $current_user->user_email;
+
 
 $howmany = 5;
 
@@ -720,10 +722,9 @@ $howmany = 5;
                      
                      
                       <div class="commons-panel-content">
-                       <h2> <?php  _e('Update Password','xoousers');?>  </h2>
-                      
+                       <h2> <?php  _e('Update Password','xoousers');?>  </h2>                     
                                            
-                      <p><?php  _e('Here you can update your email and password.','xoousers');?></p>
+                     
                        <form method="post" name="uultra-close-account" >
                        <p><?php  _e('Type your New Password','xoousers');?></p>
                  			 <p><input type="password" name="p1" id="p1" /></p>
@@ -734,6 +735,18 @@ $howmany = 5;
                          <p><input type="button" name="xoouserultra-backenedb-eset-password" id="xoouserultra-backenedb-eset-password" class="xoouserultra-button" value="<?php  _e('CLICK HERE TO RESET PASSWORD','xoousers');?>" /></p>
                          
                          <p id="uultra-p-reset-msg"></p>
+               		  </form>
+                      
+                       <h2> <?php  _e('Update Email','xoousers');?>  </h2> 
+                                           
+                     
+                       <form method="post" name="uultra-change-email" >
+                       <p><?php  _e('Type your New Email','xoousers');?></p>
+                 			 <p><input type="text" name="email" id="email" value="<?php echo $user_email?>" /></p>
+                                                        
+                         <p><input type="button" name="xoouserultra-backenedb-update-email" id="xoouserultra-backenedb-update-email" class="xoouserultra-button" value="<?php  _e('CLICK HERE TO UPDATE YOUR EMAIL','xoousers');?>" /></p>
+                         
+                         <p id="uultra-p-changeemail-msg"></p>
                		  </form>
                       
                                            

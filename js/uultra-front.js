@@ -431,6 +431,32 @@ if(typeof $ == 'undefined'){
 				
         });
 		
+		//update email				
+		$(document).on("click", "#xoouserultra-backenedb-update-email", function(e) {			
+			
+			var email =   $('#email').val();			
+			
+			jQuery.ajax({
+				type: 'POST',
+				url: ajaxurl,
+				data: {"action": "confirm_update_email_user", "email": email },
+				
+				success: function(data){					
+										
+					$("#uultra-p-changeemail-msg").html(data);
+					
+					
+					
+					}
+			});
+			
+			 // Cancel the default action
+			 return false;
+    		e.preventDefault();			 
+
+				
+        });
+		
 		
 		
 		jQuery("#xoouserultra-registration-form").validationEngine({promptPosition: 'inline'});
