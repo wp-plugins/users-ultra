@@ -7,6 +7,8 @@ class OAuthException extends Exception {/*{{{*/
   // pass
 }/*}}}*/
 
+if (!class_exists('OAuthConsumer')) {
+
 class OAuthConsumer {/*{{{*/
   public $key;
   public $secret;
@@ -21,6 +23,9 @@ class OAuthConsumer {/*{{{*/
     return "OAuthConsumer[key=$this->key,secret=$this->secret]";
   }/*}}}*/
 }/*}}}*/
+}
+
+if (!class_exists('OAuthToken')) {
 
 class OAuthToken {/*{{{*/
   // access tokens and request tokens
@@ -49,6 +54,9 @@ class OAuthToken {/*{{{*/
     return $this->to_string();
   }/*}}}*/
 }/*}}}*/
+}
+
+if (!class_exists('OAuthSignatureMethod')) {
 
 class OAuthSignatureMethod {/*{{{*/
   public function check_signature(&$request, $consumer, $token, $signature) {
@@ -57,6 +65,7 @@ class OAuthSignatureMethod {/*{{{*/
   }
 }/*}}}*/
 
+}
 class OAuthSignatureMethod_HMAC_SHA1 extends OAuthSignatureMethod {/*{{{*/
   function get_name() {/*{{{*/
     return "HMAC-SHA1";

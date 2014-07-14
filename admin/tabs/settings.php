@@ -492,7 +492,7 @@ $this->create_plugin_setting(
         'input',
         'social_media_linkedin_api_private',
         __('LinkedIn API Key Private','xoousers'),array(),
-        __('Facebook settings','xoousers'),
+        __('<br><br> VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to "?uultralinkedin=1". Example: http://yourdomain.com/?uultralinkedin=1','xoousers'),
         __('','xoousers')
 );  
 

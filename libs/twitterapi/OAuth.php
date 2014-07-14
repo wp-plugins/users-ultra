@@ -8,6 +8,7 @@ if (!class_exists('OAuthException')) {
     // pass
   }
 }
+if (!class_exists('OAuthConsumer')) {
 
 class OAuthConsumer {
   public $key;
@@ -23,7 +24,7 @@ class OAuthConsumer {
     return "OAuthConsumer[key=$this->key,secret=$this->secret]";
   }
 }
-
+}
 class OAuthToken {
   // access tokens and request tokens
   public $key;
