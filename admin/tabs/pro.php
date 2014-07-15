@@ -50,6 +50,16 @@ global $xoouserultra;
              <h1><?php _e('Free Installation','xoousers'); ?></h1> 
              <p> <?php _e("If you would like assistance with installing and setting up the plugin, we are glad to help. However, due to the popularity of Users Ultra Pro, we will assist as soon as we can once we receive your request.",'xoousers'); ?></p>
             </div>
+            
+              <div class="uultra-col">
+             <h1><?php _e('Network Activation','xoousers'); ?></h1> 
+             <p> <?php _e("When running WordPress MultiSite, It allows you to activate Users Ultra Pro for the entire network of sites.",'xoousers'); ?></p>
+            </div>
+            
+             <div class="uultra-col">
+             <h1><?php _e('Users Management','xoousers'); ?></h1> 
+             <p> <?php _e("The Pro version includes a powerful users management module. Easily approve/deny users, upgrade and downgrade user's membership and more.",'xoousers'); ?></p>
+            </div>
          
          
          	
