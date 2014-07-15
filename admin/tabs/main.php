@@ -25,7 +25,7 @@ $howmany_latest= 10;
           <div class="statblock-social user-ultra-rounded">
                  
                                      
-                    <h3>Facebook</h3>
+                    <h3>Facebook </h3>
                  <img src="<?php echo xoousers_url?>/admin/images/facebook.png" width="35" height="38" />
             <p class="day_amount"><?php echo $total_facebook?></p>
                      

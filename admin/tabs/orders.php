@@ -45,7 +45,7 @@ if(isset($_GET["year"]))
         
         <div class="user-ultra-sect-second user-ultra-rounded" >
         
-         <h3>Search Transactions</h3>
+         <h3> <?php _e('Search Transactions ','xoousers'); ?></h3>
          
         
          
@@ -53,10 +53,10 @@ if(isset($_GET["year"]))
          
            <table width="100%" border="0" cellspacing="0" cellpadding="0">
            <tr>
-             <td width="17%">Keywords:</td>
-             <td width="5%">Month:</td>
-             <td width="5%">Day:</td>
-             <td width="52%">Year:</td>
+             <td width="17%"><?php _e('Keywords: ','xoousers'); ?></td>
+             <td width="5%"><?php _e('Month: ','xoousers'); ?></td>
+             <td width="5%"><?php _e('Day: ','xoousers'); ?></td>
+             <td width="52%"><?php _e('Year:','xoousers'); ?></td>
              <td width="21%">&nbsp;</td>
            </tr>
            <tr>

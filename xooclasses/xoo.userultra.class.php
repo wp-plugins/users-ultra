@@ -156,6 +156,11 @@ class XooUserUltra
 		}	
 		//
 		
+		//Pro message
+		
+		$message = __('Users Ultra Pro is Ready!. VIP Support 24/7, Amaizing Customizable Users Profile, Even more control over your users comunity and so much more. <a href="?page=userultra&tab=pro"  >CLICK HERE</a> to see why you need to go pro. ', 'xoousers');
+		$this->uultra_fresh_install_message($message);	
+		
 	}
 	
 	//display message

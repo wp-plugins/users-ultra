@@ -407,3 +407,22 @@ background: #F2F2F2;
 
 
 i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.png)!important;background-repeat:no-repeat!important;background-position:center!important}
+
+
+/*PRO*/
+.user-ultra-sect-pro { padding:10px; position:relative}
+.user-ultra-sect-pro p{  font-size:1.4em}
+.user-ultra-sect-pro .uultra-badge-pro{ position:absolute; top:20px; padding:10px; right:10px; width:200px; height:250px; background-color:#FFF}
+
+.user-ultra-sect-pro .uu-sect-p { width:75%;}
+.user-ultra-sect-pro .uultra-badge-pro  p{ text-align:center;}
+.user-ultra-sect-pro .uultra-badge-pro img.uultra-logo{ width:98%;}
+.user-ultra-sect-pro h1 { font-size:2.7em}
+
+.user-ultra-sect-pro .uultra-pro-col-features{ padding:10px; right:10px}
+
+.user-ultra-sect-pro .uultra-pro-col-features .uultra-col{ display: inline-block; width:25%; vertical-align: top; margin-right:10px;}
+
+.user-ultra-sect-pro .uultra-pro-col-features .uultra-col h1{ font-size:2.0em}
+
+

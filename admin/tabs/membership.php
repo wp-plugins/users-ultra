@@ -63,8 +63,8 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
            <tr>
              <td>Type:</td>
              <td><select name="p_type" id="p_type">
-               <option value="recurring" selected="selected">Recurring</option>
-               <option value="onetime">One-Time</option>
+               <option value="recurring" selected="selected"> <?php _e('Recurring','xoousers'); ?></option>
+               <option value="onetime"> <?php _e('One-Time','xoousers'); ?></option>
              </select></td>
            </tr>
            <tr>

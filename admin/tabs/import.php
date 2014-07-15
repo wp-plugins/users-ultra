@@ -40,21 +40,21 @@ global $xoouserultra;
 	
      </p>
        
-     <h4>Account Activation:</h4>
+     <h4><?php _e('Account Activation: ','xoousers'); ?></h4>
        
      <p>
-       <input name="uultra-send-welcome-email" type="checkbox" id="uultra-send-welcome-email" value="1" checked="checked" /> Send welcome email with new password. <br />
+       <input name="uultra-send-welcome-email" type="checkbox" id="uultra-send-welcome-email" value="1" checked="checked" />  <?php _e('Send welcome email with new password ','xoousers'); ?><br />
          
          
           <label>
            <input name="uultra-activate-account" type="radio" id="RadioGroup1_1" value="active" checked="checked" />
-           Activate account automatically.</label>
+           <?php _e(' Activate account automatically ','xoousers'); ?></label>
        
     <br />
        
        
  <input type="radio" name="uultra-activate-account" value="pending" id="RadioGroup1_0" />
-           Send Activation Link.</label>
+           <?php _e(' Send Activation Link.','xoousers'); ?></label>
           <strong> PLEASE NOTE</strong>: the account status will be &quot;pending&quot; until the user clicks on the activation link.<br />
      </p>
        

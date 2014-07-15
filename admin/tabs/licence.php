@@ -8,7 +8,7 @@ global $xoouserultra;
         <h3><?php _e('Validate your copy','xoousers'); ?></h3>
         <p><?php _e("Please fill out the form below with the serial number generated when you registered your domain through your account at UsersUltra.com",'xoousers'); ?></p>
         
-        <p>INPUT YOUR SERIAL KEY</p>
+        <p><?php _e('INPUT YOUR SERIAL KEY','xoousers'); ?></p>
          <p><input type="text" name="p_serial" id="p_serial" style="width:200px" /></p>
         
         

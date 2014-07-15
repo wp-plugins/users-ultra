@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post, shortcode, wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, woocommerce fields, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.0.97
+Stable tag: 1.0.98
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,17 @@ Users Ultra is the ideal plugin for creating advanced user communities in few mi
 Users Ultra is the ideal tool for creating advanced user communities in few minute. Building a talents community, model agency websites, social communities and any kind of user websites is really fast. It can be intregrated in any WordPress Theme. You can <strong>add as many fields as you wish by using the Fields Customizer Tool</strong>.
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
+
+<strong>USERS ULTRA PRO IS READY:</strong><br>
+<ul>
+  <li>Vip Support 24/7.</li>
+  <li>New Features Every Week.</li>
+  <li>Elegant Customizable Users Profile</li>
+  <li>Users Wall.</li>
+  <li>and so much more ...</li>
+</ul>
+
+<a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE</strong></a> <br>
 
 <strong>FREE SUPPORT FORUM:</strong><br>
 <a href="http://usersultra.com/support/"><strong>Do you need help?</strong></a> <br>
@@ -193,8 +204,6 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
   <li>Users  can use a main picture as avatar</li>
 </ul>
 
-<strong>Please note:</strong> This plugin is in Beta
-
 == Installation ==
 
 1. Upload `users-ultra` to the `/wp-content/plugins/` directory
@@ -239,6 +248,10 @@ Initial release.
 7. Dahsboard
 
 == Changelog ==
+
+= 1.0.98 (07-15-2014) =
+* PRO   - Pro version has been released.
+* Bug Fix   - Translation issues has been fixed.
 
 = 1.0.97 (07-14-2014) =
 * Bug Fix   - Issue with LinkedIn API. There was a conflict between the linkedin and twitter api. Now linkedin sign should work well.
