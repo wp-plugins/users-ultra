@@ -14,7 +14,7 @@ global $xoouserultra;
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
              <p>Version: 1.0.2</p>
-             <p><a href="http://usersultra.com/users-pro.html" target="_blank">UPGRADE NOW</a></p>
+             <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
         </div>
         
         
