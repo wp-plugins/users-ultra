@@ -18,7 +18,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <h3><strong>USERS ULTRA PRO IS READY:</strong></h3>
 <ul>
-  <li>Vip Support 24/7.</li>
+  <li>Priority Support 24/7.</li>
   <li>New Features Every Week.</li>
   <li>Elegant Customizable Users Profile</li>
   <li>Users Wall.</li>
@@ -27,11 +27,6 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE</strong></a> <br>
 
-<strong>FREE SUPPORT FORUM:</strong><br>
-<a href="http://usersultra.com/support/"><strong>Do you need help?</strong></a> <br>
-<pre>
-Please visit the Users Ultra Forum. We like to help! :)
-</pre>
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> <br>
