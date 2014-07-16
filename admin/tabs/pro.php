@@ -7,7 +7,9 @@ global $xoouserultra;
         
         <h1><?php _e('Why Go Users Ultra Pro?','xoousers'); ?></h1>
         <div class="uu-sect-p">
-        	<p><?php _e("Users Ultra Pro comes with tons of great features. Below there are just some reasons of why you should upgrade to the Pro version.",'xoousers'); ?></p>
+        	<p><?php _e("We realize we set a high standard for ourselves when we introduced the 'lite' free version of Users Ultra with features you have to pay for to get in most other places. We accept that some people believe we should continue to provide everything for free. And we are going to continue to provide updates and new features to the free version of Users Ultra.",'xoousers'); ?></p>
+            
+            <p><?php _e("What we are doing with Users Ultra Pro is adding some ground breaking features that nobody else, to this date, has offered. We are starting off with our EXCLUSIVE 'Profile Customizer'. This feature actually is a drag and drop, widgetized, profile customization for members of your site.",'xoousers'); ?></p>
         
         </div>
         
