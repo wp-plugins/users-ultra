@@ -53,7 +53,7 @@ global $xoouserultra;
             
               <div class="uultra-col">
              <h1><?php _e('Network Activation','xoousers'); ?></h1> 
-             <p> <?php _e("When running WordPress MultiSite, It allows you to activate Users Ultra Pro for the entire network of sites.",'xoousers'); ?></p>
+             <p> <?php _e("When running WordPress MultiSite, It allows you to activate Users Ultra Pro for the entire network of sites by just one click.",'xoousers'); ?></p>
             </div>
             
              <div class="uultra-col">

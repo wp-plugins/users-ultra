@@ -677,6 +677,25 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 	
+	jQuery('#uultradmin-remove-proversionmessage').live('click',function(e){
+		e.preventDefault();
+		jQuery.ajax({
+						type: 'POST',
+						url: ajaxurl,
+						data: {"action": "hide_proversion_message" 
+						 },
+						
+						success: function(data){
+							
+							window.location.reload();
+								
+							
+							}
+					});
+			
+		return false;
+	});
+	
 	//user ultra re-send activation link
 	jQuery(document).on("click", ".uultradmin-user-resend-link", function(e) {
 		

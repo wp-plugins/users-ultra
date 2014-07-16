@@ -97,7 +97,8 @@ class XooUserUltra
 		
 		add_action( 'admin_notices', array(&$this, 'uultra_display_custom_message'));
 		add_action( 'wp_ajax_create_default_pages_auto', array( $this, 'create_default_pages_auto' ));
-		add_action( 'wp_ajax_hide_rate_message', array( $this, 'hide_rate_message' ));	
+		add_action( 'wp_ajax_hide_rate_message', array( $this, 'hide_rate_message' ));
+		add_action( 'wp_ajax_hide_proversion_message', array( $this, 'hide_proversion_message' ));	
 				 
 				 
 		$this->include_for_validation = array('text','fileupload','textarea','select','radio','checkbox','password');	
@@ -131,6 +132,12 @@ class XooUserUltra
 		
 	}
 	
+	public function hide_proversion_message () 
+	{
+		update_option('xoousersultra_pro_annuncement',1);
+		
+	}
+	
 	public function uultra_display_custom_message () 
 	{
 				
@@ -158,8 +165,15 @@ class XooUserUltra
 		
 		//Pro message
 		
-		$message = __('Users Ultra Pro is Ready!. VIP Support 24/7, Amaizing Customizable Users Profile, Even more control over your users comunity and so much more. <a href="?page=userultra&tab=pro"  >CLICK HERE</a> to see why you need to go pro. ', 'xoousers');
-		$this->uultra_fresh_install_message($message);	
+		$uultra_pro_message  = get_option( 'xoousersultra_pro_annuncement' );
+		
+		if($uultra_pro_message=="" )
+		{
+		
+			$message = __("Users Ultra Pro is Ready!. VIP Support 24/7, Amaizing Customizable Users Profile, Even more control over your users comunity and so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why you need to go pro. <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
+			$this->uultra_fresh_install_message($message);	
+		
+		}
 		
 	}
 	

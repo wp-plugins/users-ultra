@@ -5,7 +5,7 @@ class XooUserAdminShortCode
 	public function __construct()
 	{
 				
-		add_filter('widget_text', array(&$this,'do_shortcode') );			
+		//add_filter('widget_text', array(&$this,'do_shortcode') );			
 		add_action( 'init',   array(&$this,'respo_add_shortcode_button') );
 	    add_filter( 'tiny_mce_version',  array(&$this,'respo_refresh_mce')  );	
 		
