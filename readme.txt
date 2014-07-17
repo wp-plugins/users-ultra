@@ -21,6 +21,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Priority Support 24/7.</li>
   <li>New Features Every Week.</li>
   <li>Advanced Users Management.</li>
+  <li>Minor Tweaks Support.</li>
   <li>Front End Publisher With Multiple Images.</li>
   <li>Elegant Customizable Users Profile</li>
   <li>Users Wall.</li>
