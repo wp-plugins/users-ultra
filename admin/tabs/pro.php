@@ -7,15 +7,14 @@ global $xoouserultra;
         
         <h1><?php _e('Why Go Users Ultra Pro?','xoousers'); ?></h1>
         <div class="uu-sect-p">
-        	<p><?php _e("We realize we set a high standard for ourselves when we introduced the 'lite' free version of Users Ultra with features you have to pay for to get in most other places. We accept that some people believe we should continue to provide everything for free. And we are going to continue to provide updates and new features to the free version of Users Ultra.",'xoousers'); ?></p>
-            
+        	            
             <p><?php _e("What we are doing with Users Ultra Pro is adding some ground breaking features that nobody else, to this date, has offered. We are starting off with our EXCLUSIVE 'Profile Customizer'. This feature actually is a drag and drop, widgetized, profile customization for members of your site.",'xoousers'); ?></p>
         
         </div>
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-             <p>Version: 1.0.2</p>
+             <p>Version: 1.0.3</p>
              <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
         </div>
         
@@ -62,7 +61,11 @@ global $xoouserultra;
              <h1><?php _e('Users Management','xoousers'); ?></h1> 
              <p> <?php _e("The Pro version includes a powerful users management module. Easily approve/deny users, upgrade and downgrade user's membership and more.",'xoousers'); ?></p>
             </div>
-         
+            
+             <div class="uultra-col">
+             <h1><?php _e('Advanced Front End Publisher','xoousers'); ?></h1> 
+             <p> <?php _e("Allows your user to post through their private area. It allows user to attach photos to the posts. This is useful for classified and real estate websites.",'xoousers'); ?></p>
+            </div>         
          
          	
         
