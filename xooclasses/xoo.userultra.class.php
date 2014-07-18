@@ -1504,7 +1504,7 @@ class XooUserUltra
 						}
 					
 						     
-				        $display .= '<span>'.$name.'</span></label>';
+				        $display .= '<span>'.$name. ' '.$required_text.'</span></label>';
 				    
 					} else {
 						
