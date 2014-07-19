@@ -153,14 +153,14 @@ class XooUserUltra
 		
 		}
 		
-		$rating_uultra = get_option( 'xoousersultra_already_rated_ultra' );	
+		/*$rating_uultra = get_option( 'xoousersultra_already_rated_ultra' );	
 		if($rating_uultra=="" )
 		{
 			$message = __("Thanks for installing Users Ultra. Please help us to keep this plugin free by leaving a 5/5 review on WordPress. It takes only 5 minutes. <a href='http://wordpress.org/plugins/users-ultra/' target='_blank' >CLICK HERE</a> to leave a rating. If you've already left your rating or you don't wish to see this message anymore <a href='#'  id='uultradmin-remove-ratingmessage'>CLICK HERE</a>  ", "xoousers");
 			
 			$this->uultra_fresh_install_message($message);		
 		
-		}	
+		}*/	
 		//
 		
 		//Pro message
@@ -170,7 +170,7 @@ class XooUserUltra
 		if($uultra_pro_message=="" )
 		{
 		
-			$message = __("Users Ultra Pro is Ready!. VIP Support 24/7, Amaizing Customizable Users Profile, Even more control over your users comunity and so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why you need to go pro. <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
+			$message = __("Users Ultra Pro is Ready!. VIP Support 24/7, Amazing Customizable User Profile, Even more control over your users community and so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why you need to go pro. <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
 			$this->uultra_fresh_install_message($message);	
 		
 		}
@@ -1915,9 +1915,9 @@ class XooUserUltra
 					if (isset($this->registration_fields[$key]['can_hide']) && $can_hide == 1) 
 					{
 						
-									$display .= '<div class="xoouserultra-hide-from-public">
+									/*$display .= '<div class="xoouserultra-hide-from-public">
 										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
-									</div>';
+									</div>';*/
 
 									
 									
