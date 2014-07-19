@@ -40,7 +40,7 @@ $this->create_plugin_setting(
                 'membership_display_selected_only',
                 __('Display Only Selected Package','xoousers'),
                 '1',
-                __('If checked, Only the Selected package will be displayed in the payment form','xoousers'),
+                __('If checked, Only the Selected package will be displayed in the payment form. <strong>PLEASE NOTE: </strong>This setting is used only if you are using the pricing tables feature.','xoousers'),
                 __('If checked, Only the Selected package will be displayed in the payment form','xoousers')
         ); 
 $this->create_plugin_setting(

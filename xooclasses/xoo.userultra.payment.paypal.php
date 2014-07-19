@@ -501,11 +501,13 @@ class XooPaypalPayment
 						
 				}
 				
+				$i_p = 1;
+				
 				foreach ( $packages as $package )
 				{
 					$checked = '';
 					
-					if( $plan_id== $package->package_id)
+					if( $plan_id== $package->package_id ||$default_checked==0 )
 					{
 						$checked = 'checked="checked"';
 						
@@ -524,7 +526,7 @@ class XooPaypalPayment
 							
 							<div class="uultra-package-opt">
 							
-							<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
+							<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" class="validate[required]" id="RadioGroup1_0"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
 							
 							<span class="uultra-package-cost">'.$amount.' </span></div>
 							<div class="uultra-package-desc">
@@ -544,7 +546,7 @@ class XooPaypalPayment
 					
 					<div class="uultra-package-opt">
 					
-					<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
+					<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  class="validate[required]"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
 					
 					<span class="uultra-package-cost">'.$amount.' </span></div>
 					<div class="uultra-package-desc">
@@ -557,8 +559,8 @@ class XooPaypalPayment
 		 
 		 $default_checked++;
 				
-				
-				}
+								
+				} //end for each
 				
 				$html .= "</ul>" ;
 		}
