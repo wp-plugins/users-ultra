@@ -1837,11 +1837,26 @@ class XooUserUltra
 		
 		foreach($this->registration_fields as $key=>$field) 
 		{
+			
+			
 			extract($field);
 			
 			if ( $type == 'usermeta') {
 				
 				$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
+				
+				if(!isset($required))
+				    $required = 0;
+				
+				$required_class = '';
+				
+				$required_text = '';
+				
+				if($required == 1 && in_array($field, $this->include_for_validation))
+				{
+					$required_class = ' validate[required]';
+					$required_text = '(*)';
+				}
 				
 				/* Show the label */
 				if (isset($this->registration_fields[$key]['name']) && $name) 
@@ -1854,20 +1869,11 @@ class XooUserUltra
 					} else {
 						$display .= '<i class="fa fa-none"></i>';
 					}
-					$display .= '<span>'.$name.'</span></label>';
+					$display .= '<span>'.$name.' '.$required_text.'</span></label>';
 				} else {
 					$display .= '<label class="xoouserultra-field-type">&nbsp;</label>';
 				}
 				
-				if(!isset($required))
-				    $required = 0;
-				
-				$required_class = '';
-				
-				if($required == 1 && in_array($field, $this->include_for_validation))
-				{
-					$required_class = ' validate[required]';
-				}
 				
 				$display .= '<div class="xoouserultra-field-value">';
 					
@@ -1982,9 +1988,11 @@ class XooUserUltra
 			    $required = 0;
 			
 			$required_class = '';
+			$required_text = '';
 			if($required == 1 && in_array($field, $this->include_for_validation))
 			{
 			    $required_class = 'validate[required] ';
+				$required_text = '(*)';
 			}
 			
 			
@@ -2023,7 +2031,7 @@ class XooUserUltra
                             $display .= '<i class="fa fa-icon-none"></i>';
                     }
 											
-					$display .= '<span>'.$name.'</span></label>';
+					$display .= '<span>'.$name. ' '.$required_text.'</span></label>';
 					
 					
 				} else {
