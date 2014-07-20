@@ -519,7 +519,7 @@ class XooPaypalPayment
 					if($only_selected )
 					{
 						
-						if($package->package_id==$plan_id)
+						if($package->package_id==$plan_id || $plan_id=="")
 						{							
 							
 							$html.= '<li> 
