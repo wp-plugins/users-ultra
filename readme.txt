@@ -16,7 +16,7 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
-<h3><strong>USERS ULTRA PRO IS READY:</strong></h3>
+<h3><strong>USERS ULTRA PRO - EVEN BETTER :) </strong></h3>
 <ul>
   <li>Priority Support.</li>
   <li>New Features Every Week.</li>
@@ -27,7 +27,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Front End Publisher With Multiple Images.</li>
   <li>Elegant Customizable Users Profile</li>
   <li>Custom Profile Background for every profile.</li>
-  Custom Profile Background
+ 
   <li>Users Wall.</li>
   <li>and so much more ...</li>
 </ul>
