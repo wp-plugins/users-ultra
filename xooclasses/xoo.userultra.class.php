@@ -170,7 +170,7 @@ class XooUserUltra
 		if($uultra_pro_message=="" )
 		{
 		
-			$message = __("Users Ultra Pro is Ready!. VIP Support 24/7, Amazing Customizable User Profile, Even more control over your users community and so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why you need to go pro. <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
+			$message = __("Users Ultra Pro is Ready!. VIP Support 24/7, Badges & Achievements, Amazing Customizable User Profile, Even more control over your users community and so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why you need to go pro. <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
 			$this->uultra_fresh_install_message($message);	
 		
 		}

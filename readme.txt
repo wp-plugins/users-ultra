@@ -249,7 +249,7 @@ Initial release.
 
 == Changelog ==
 
-= 1.1.9(07-18-2014) =
+= 1.1.9 (07-18-2014) =
 * Improvement   - WooCommerce sync, Billing and Shipping country sync issue on  2.1 version.
 * PRO   - New Features for the pro, badges achievements, offline/onine status.
 * PRO   - New Feature, capability to place social connect buttons at any place of your blog.
