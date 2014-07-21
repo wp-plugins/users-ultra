@@ -66,6 +66,11 @@ global $xoouserultra;
             <div class="uultra-col">
              <h1><?php _e('Online/Offline User Status','xoousers'); ?></h1> 
              <p> <?php _e("This feature is optional and you will have the capability to show the user's status to your visitors.",'xoousers'); ?></p>
+            </div>  
+            
+             <div class="uultra-col">
+             <h1><?php _e('Custom Profile Background ','xoousers'); ?></h1> 
+             <p> <?php _e("Let your users to customize their profiles by adding a custom full-screen background image easily.",'xoousers'); ?></p>
             </div>          
             
             

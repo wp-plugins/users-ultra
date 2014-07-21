@@ -26,6 +26,8 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Minor Tweaks Support.</li>
   <li>Front End Publisher With Multiple Images.</li>
   <li>Elegant Customizable Users Profile</li>
+  <li>Custom Profile Background for every profile.</li>
+  Custom Profile Background
   <li>Users Wall.</li>
   <li>and so much more ...</li>
 </ul>
