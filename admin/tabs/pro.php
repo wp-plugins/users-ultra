@@ -14,16 +14,32 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-             <p>Version: 1.0.3</p>
+             <p>Version: 1.0.4</p>
              <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
+             
+             
+               <strong>CHANGELOG</strong><br /><br />
+              <strong>Version 1.0.4 - 07-18-2014: </strong>
+<ul>
+    	
+      <li>New Feature - Badges & Achievements.</li>
+      <li>New Feature - Social Connect Buttons.</li>
+       <li>New Feature - Online/Offline User Status.</li>
+      
+      
+     
+    
+    </ul>
+    <p><a href="http://usersultra.com/users-pro-change-log.html" target="_blank">check full changelog</a></p>
+    
         </div>
         
         
          <div class="uultra-pro-col-features">
          
             <div class="uultra-col">
-             <h1><?php _e('Vip Support 24/7','xoousers'); ?></h1> 
-             <p> <?php _e('We usually reply within 2 hours to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
+             <h1><?php _e('Priority Support','xoousers'); ?></h1> 
+             <p> <?php _e('We usually reply within the same dady to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
             </div>
             
             
@@ -36,6 +52,22 @@ global $xoouserultra;
              <h1><?php _e('Customizable Profile','xoousers'); ?></h1> 
              <p> <?php _e("The Pro Version includes the unique and innovating Widgetized Users Profile. Let your user build their own profile by draging and droping elements.",'xoousers'); ?></p>
             </div>
+            
+              <div class="uultra-col">
+             <h1><?php _e('Badges & Achievement','xoousers'); ?></h1> 
+             <p> <?php _e("Create and award badges to your users manually, or based on what they accomplish.",'xoousers'); ?></p>
+            </div>
+            
+             <div class="uultra-col">
+             <h1><?php _e('Social Connect Buttons','xoousers'); ?></h1> 
+             <p> <?php _e("Now you can add one or more social connect buttons to any place of your blog.",'xoousers'); ?></p>
+            </div>
+            
+            <div class="uultra-col">
+             <h1><?php _e('Online/Offline User Status','xoousers'); ?></h1> 
+             <p> <?php _e("This feature is optional and you will have the capability to show the user's status to your visitors.",'xoousers'); ?></p>
+            </div>          
+            
             
             <div class="uultra-col">
              <h1><?php _e('Users Wall','xoousers'); ?></h1> 

@@ -115,7 +115,7 @@ class XooWooCommerce {
 								'name' => $label['label'],
 								'can_hide' => 1,
 								'can_edit' => 1,
-								'predefined_loop' => 'countries',
+								'predefined_options' => 'countries',
 								'private' => 0,
 								'social' => 0,
 								'deleted' => 0
@@ -131,7 +131,7 @@ class XooWooCommerce {
 								'name' => $label['label'],
 								'can_hide' => 1,
 								'can_edit' => 1,
-								'predefined_loop' => 'countries',
+								'predefined_options' => 'countries',
 								'private' => 0,
 								'social' => 0,
 								'deleted' => 0
@@ -233,7 +233,7 @@ class XooWooCommerce {
 								'name' => $label['label'],
 								'can_hide' => 1,
 								'can_edit' => 1,
-								'predefined_loop' => 'countries',
+								'predefined_options' => 'countries',
 								'private' => 0,
 								'social' => 0,
 								'deleted' => 0
@@ -249,7 +249,7 @@ class XooWooCommerce {
 								'name' => $label['label'],
 								'can_hide' => 1,
 								'can_edit' => 1,
-								'predefined_loop' => 'countries',
+								'predefined_options' => 'countries',
 								'private' => 0,
 								'social' => 0,
 								'deleted' => 0
