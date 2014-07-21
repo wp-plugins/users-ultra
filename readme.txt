@@ -33,7 +33,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>and so much more ...</li>
 </ul>
 
-<a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE</strong></a> <br>
+<a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
