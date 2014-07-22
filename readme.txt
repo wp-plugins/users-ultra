@@ -246,14 +246,15 @@ Initial release.
 
 == Screenshots ==
 
-1. Medallions and Fulfillments ONLY FOR PRO
-2. Powerful Private Messaging System
-3. Advanced Dashboard
-4. Front-End Post Publisher
-5. Profile Fields Customizer
-6. Add New Posts
-7. Drag&Drop Photo Uploading
-8. Dahsboard
+1. Widgetized Users Profile ONLY FOR PRO
+2. Medallions and Fulfillments ONLY FOR PRO
+3. Powerful Private Messaging System
+4. Advanced Dashboard
+5. Front-End Post Publisher
+6. Profile Fields Customizer
+7. Add New Posts
+8. Drag&Drop Photo Uploading
+9. Dahsboard
 
 == Changelog ==
 
