@@ -200,7 +200,7 @@ class XooUserUltra
 		
 		
 
-		$thetable = $wpdb->prefix."usersultra_stats_raw";		
+	/*	$thetable = $wpdb->prefix."usersultra_stats_raw";		
 	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
 		
 		$thetable = $wpdb->prefix."usersultra_stats";		
@@ -252,7 +252,7 @@ class XooUserUltra
 		delete_option( 'xoousersultra_my_account_page' );
 		delete_option( 'xoousersultra_auto_page_creation' );
 		delete_option( 'userultra_options' );
-		delete_option( 'xoousersultra_already_rated_ultra' );
+		delete_option( 'xoousersultra_already_rated_ultra' );*/
 		
 		
 			
