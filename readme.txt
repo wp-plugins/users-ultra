@@ -22,6 +22,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>New Features Every Week.</li>
    <li>Badges & Achievements.</li>
     <li>User Online/Offline Status.</li>
+    <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
 	 <li>Multisite Support.</li>
   <li>Advanced Users Management.</li>
   <li>Minor Tweaks Support.</li>
