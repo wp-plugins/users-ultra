@@ -86,7 +86,7 @@ global $xoouserultra;
             
              <div class="uultra-col">
              <h1><?php _e('Free Installation','xoousers'); ?></h1> 
-             <p> <?php _e("If you would like assistance with installing and setting up the plugin, we are glad to help. However, due to the popularity of Users Ultra Pro, we will assist as soon as we can once we receive your request.",'xoousers'); ?></p>
+             <p> <?php _e("If you would like assistance with installing and setting up the plugin, we are glad to help. ",'xoousers'); ?></p>
             </div>
             
               <div class="uultra-col">
