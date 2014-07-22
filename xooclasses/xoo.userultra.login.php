@@ -1442,12 +1442,11 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
-		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
-		
+				
 		return $my_account_url;
 	
 	}

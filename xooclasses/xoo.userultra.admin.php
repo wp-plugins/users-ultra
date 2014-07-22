@@ -98,8 +98,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			update_option('userultra_options', $this->userultra_default_options );
 		}
 		
-		
-		
+			
 		
 		
 	}
@@ -777,7 +776,13 @@ class XooUserAdmin extends XooUserUltraCommon
 					 // $this->userultra_default_options[$key] = esc_attr($value);
                     }  
 					
-					$this->userultra_set_option($key, $value) ;   
+					$this->userultra_set_option($key, $value) ;
+					//special setting for page
+					if($key=="xoousersultra_my_account_page")
+					{
+						//echo "Page : " . $value;
+						 update_option('xoousersultra_my_account_page',$value);
+					}     
 
             }
         }

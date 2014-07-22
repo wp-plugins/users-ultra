@@ -386,6 +386,17 @@ $this->create_plugin_setting(
   
   <table class="form-table">
 <?php 
+
+
+$this->create_plugin_setting(
+            'select',
+            'xoousersultra_my_account_page',
+            __('Users Ultra My Account','xoousers'),
+            $this->get_all_sytem_pages(),
+            __('Make sure you have the <code>[usersultra_my_account]</code> shortcode on this page.','xoousers'),
+            __('This page is where users will view their account.','xoousers')
+    );
+	
     $this->create_plugin_setting(
             'select',
             'profile_page_id',

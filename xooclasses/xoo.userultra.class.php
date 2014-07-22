@@ -163,8 +163,7 @@ class XooUserUltra
 		}*/	
 		//
 		
-		//Pro message
-		
+		//Pro message		
 		$uultra_pro_message  = get_option( 'xoousersultra_pro_annuncement' );
 		
 		if($uultra_pro_message=="" )
@@ -174,6 +173,17 @@ class XooUserUltra
 			$this->uultra_fresh_install_message($message);	
 		
 		}
+		
+		
+		//chekc my account link
+		$acc_link = $this->login->get_my_account_direct_link();
+		
+		if($my_account_page=="" )
+		{
+			echo '<div id="message" class="error"><p><strong>'.__("Users Ultra might be working wrong. We couldn't find the 'My Account' shortcode. Please click on settings tab and make sure that the My Account page has been set correctly. Then click on the 'save' button ","xoousers").'</strong></p></div>';		
+		
+		}
+		
 		
 	}
 	

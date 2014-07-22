@@ -408,6 +408,10 @@ class XooUserUser {
 						  $pos = strpos("page_id", $web_url);		  
 						  $unique_key = get_user_meta($user_id, 'xoouser_ultra_very_key', true);
 						  
+						  //patch when not set account
+						  
+						  
+						  
 						  if ($pos === false) // this is a tweak that applies when not Friendly URL is set.
 						  {
 								//
