@@ -14,17 +14,15 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-             <p>Version: 1.0.6</p>
+             <p>Version: 1.0.7</p>
              <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
                <strong>CHANGELOG</strong><br /><br />
-              <strong>Version 1.0.4 - 07-18-2014: </strong>
+              <strong>Version 1.0.7 - 07-20-2014: </strong>
 <ul>
     	
-      <li>New Feature - Badges & Achievements.</li>
-      <li>New Feature - Social Connect Buttons.</li>
-       <li>New Feature - Online/Offline User Status.</li>
+      <li>New Feature - bbPress Integration</li>
       
       
      
@@ -56,6 +54,11 @@ global $xoouserultra;
               <div class="uultra-col">
              <h1><?php _e('Badges & Achievement','xoousers'); ?></h1> 
              <p> <?php _e("Create and award badges to your users manually, or based on what they accomplish.",'xoousers'); ?></p>
+            </div>
+            
+             <div class="uultra-col">
+             <h1><?php _e('bbPress Integration','xoousers'); ?></h1> 
+             <p> <?php _e("Your forum may look much more elegant by using Users Ultra Pro. Display badges and achievements in your forum threads and much more.",'xoousers'); ?></p>
             </div>
             
              <div class="uultra-col">
