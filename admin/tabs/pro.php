@@ -14,7 +14,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-             <p>Version: 1.0.7</p>
+             <p>Version: 1.0.8</p>
              <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
@@ -22,8 +22,7 @@ global $xoouserultra;
               <strong>Version 1.0.7 - 07-20-2014: </strong>
 <ul>
     	
-      <li>New Feature - bbPress Integration</li>
-      
+      <li>Improvement - Users Module includes more filter options.</li>    
       
      
     
@@ -99,7 +98,7 @@ global $xoouserultra;
             
              <div class="uultra-col">
              <h1><?php _e('Users Management','xoousers'); ?></h1> 
-             <p> <?php _e("The Pro version includes a powerful users management module. Easily approve/deny users, upgrade and downgrade user's membership and more.",'xoousers'); ?></p>
+             <p> <?php _e("The Pro version includes a powerful users management module. Easily approve/deny users, upgrade and downgrade user's membership. Finding a user will be super easy by using this feature.",'xoousers'); ?></p>
             </div>
             
              <div class="uultra-col">

@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, achievement, medallions, bbpress
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +25,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
     <li>User Online/Offline Status.</li>
     <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
 	 <li>Multisite Support.</li>
-  <li>Advanced Users Management.</li>
+  <li>Advanced Users Management. Find your users easily. Send activation link, deny/approver users. Upgrade and Downgrade User's Membership and more. </li>
   <li>Minor Tweaks Support.</li>
   <li>Front End Publisher With Multiple Images.</li>
   <li>Elegant Customizable Users Profile</li>
@@ -37,6 +37,14 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 
+<strong>Recent Features added to the Pro Version: (Current Version: 1.0.9)</strong><br>
+<pre>
+07-23-2014 -- "My Topics" link has been added to the user's profile.
+07-23-2014 -- Users Module has been improved. Find users is easier now.
+07-22-2014 -- bbPress integration.
+07-20-2014 -- We've added lots of new Medallions.
+</pre>
+
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> <br>
@@ -44,25 +52,6 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
-
-
-<strong>Recent New Features:</strong><br>
-<pre>
-
-06-08-2014 -- Users can check their orders through their dashboard.
-05-31-2014 -- Admin can set how many posts and block category selection.
-05-30-2014 -- Photo Categories, now you can categorize photos.
-05-27-2014 -- New look for the users profile has been implemented.
-05-26-2014 -- Pricing Tables are customizable through the Membership Tab.
-05-23-2014 -- Pricing Tables for your Paid Packages.
-05-22-2014 -- WooCommerce Client Orders Status.
-05-22-2014 -- Yammer Sign in/Sign up Authentication.
-05-21-2014 -- Twitter Sign in/Sign up Authentication with Auto Tweet.
-05-20-2014 -- Users are able to delete their avatars .
-05-19-2014 -- Auto Sync with WooCommerce, Shipping and Billing Address.
-05-19-2014 -- Logout Shortcode with custom redirection.
-05-19-2014 -- Custom Redirection after login.
-</pre>
 
 <h3>Help Keep This Plugin Free</h3>
 
@@ -259,6 +248,11 @@ Initial release.
 9. Dahsboard
 
 == Changelog ==
+ 
+= 1.2.5 (07-22-2014) =
+* Improvements - Minor tweaks to the plugin and we've updated the readme description.
+* Bug Fix      - Issue with message displayed when not selecting user profile options. Array message has been resolved
+
 
 = 1.2.3 (07-20-2014) =
 * Improvement   - We have added a new setting to the settings page so you can choice your desired "My Account" page.

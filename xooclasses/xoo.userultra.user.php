@@ -4206,152 +4206,158 @@ class XooUserUser {
 	
 	}
 	
-	public  function display_optional_fields ($user_id, $display_country_flag, $fields) 
+	public  function display_optional_fields ($user_id, $display_country_flag, $fields_to_display) 
 	{
 		 global  $xoouserultra;
 		
 		$fields_list = "";
-		$fields  = explode(',', $fields);
+		$fields  = explode(',', $fields_to_display);
 		
-		foreach ($fields as $field) 
+		if($fields_to_display!="")
+		
 		{
-			//get meta
-			
-			$u_meta = get_user_meta($user_id, $field, true);
-			
-			if( $field =='country')
+		
+			foreach ($fields as $field) 
 			{
-				//rule applied to country only
-			
-				if($display_country_flag=='only') //only flag
+				//get meta
+				
+				$u_meta = get_user_meta($user_id, $field, true);
+				
+				if( $field =='country')
 				{
-					if($u_meta=="")				
-				    {
-						$fields_list .= __("Country not available", 'xoousers');						
-					
-					}else{
-						
-					//get country ISO code		
-											
-						$isocode = array_search($u_meta, $xoouserultra->commmonmethods->get_predifined('countries'));				
-						
-						$isocode  = xoousers_url."libs/flags/24/".$isocode.".png";					
-						$img = '<img src="'.$isocode.'"  alt="'.$u_meta.'" title="'.$u_meta.'" class="uultra-country-flag"/>';					
-						$fields_list .= "<p class='country_name'>".$img."</p>";
-					
-					
-					}					
-									
-				}elseif($display_country_flag=='both'){
-					
-					if($u_meta=="")				
-				    {
-						$fields_list .= __("Country not available", 'xoousers');;
-						
-					
-					}else{
-					
-						$isocode = array_search($u_meta, $xoouserultra->commmonmethods->get_predifined('countries'));				
-						if($isocode!="0")
+					//rule applied to country only
+				
+					if($display_country_flag=='only') //only flag
+					{
+						if($u_meta=="")				
 						{
+							$fields_list .= __("Country not available", 'xoousers');						
+						
+						}else{
+							
+						//get country ISO code		
+												
+							$isocode = array_search($u_meta, $xoouserultra->commmonmethods->get_predifined('countries'));				
+							
 							$isocode  = xoousers_url."libs/flags/24/".$isocode.".png";					
 							$img = '<img src="'.$isocode.'"  alt="'.$u_meta.'" title="'.$u_meta.'" class="uultra-country-flag"/>';					
-							$fields_list .= "<p class='country_name'>".$img."  ".$u_meta."</p>";
+							$fields_list .= "<p class='country_name'>".$img."</p>";
+						
+						
+						}					
+										
+					}elseif($display_country_flag=='both'){
+						
+						if($u_meta=="")				
+						{
+							$fields_list .= __("Country not available", 'xoousers');;
+							
+						
+						}else{
+						
+							$isocode = array_search($u_meta, $xoouserultra->commmonmethods->get_predifined('countries'));				
+							if($isocode!="0")
+							{
+								$isocode  = xoousers_url."libs/flags/24/".$isocode.".png";					
+								$img = '<img src="'.$isocode.'"  alt="'.$u_meta.'" title="'.$u_meta.'" class="uultra-country-flag"/>';					
+								$fields_list .= "<p class='country_name'>".$img."  ".$u_meta."</p>";
+							
+							}
 						
 						}
 					
+					}elseif($display_country_flag=='name'){					
+						
+						$fields_list .= "<p class='country_name'>".$u_meta."</p>";		
+							
+					
 					}
 				
-				}elseif($display_country_flag=='name'){					
+				}elseif($field =='description'){
 					
-					$fields_list .= "<p class='country_name'>".$u_meta."</p>";		
+					if($u_meta=="")				
+					{
+						$u_meta = __("This user hasn't a description yet", 'xoousers');
+					
+					
+					}
+					
+					$fields_list .= "<p class='desc'>".$u_meta."</p>";
+					
+					
+				}elseif($field =='social'){ //this rule applies only to social icons
+					
+									
+					$array = get_option('usersultra_profile_fields');			
+					$html_social ="<div class='uultra-prof-social-icon'>";
 						
+	
+					foreach($array as $key=>$field) 
+					{
+						$_fsocial = "";
+						
+						if(isset($field['social']))	
+						{
+							$_fsocial = $field['social'];					
+						}		
+					
+						
+						if($_fsocial==1)
+						{
+												
+							$icon = $field['icon'];
+							
+							//get meta
+							$social_meta = get_user_meta($user_id, $field['meta'], true);
+							
+							if($social_meta!="")
+							{
+								$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
+					
+							}
+							
+							
+						}
+						
+					}	
+					
+					$html_social .="</div>";			
+					
+					
+					$fields_list .= $html_social;
+					
+					
 				
-				}
-			
-			}elseif($field =='description'){
 				
-				if($u_meta=="")				
-				{
-					$u_meta = __("This user hasn't a description yet", 'xoousers');
-				
-				
-				}
-				
-				$fields_list .= "<p class='desc'>".$u_meta."</p>";
-				
-				
-			}elseif($field =='social'){ //this rule applies only to social icons
+				}elseif($field =='rating'){ //this rule applies only to rating
 				
 								
-				$array = get_option('usersultra_profile_fields');			
-				$html_social ="<div class='uultra-prof-social-icon'>";
+					$fields_list.= "<div class='ratebox'>";
+					$fields_list.= $xoouserultra->rating->get_rating($user_id,"user_id");
+					$fields_list.= "</div>";
+				
+				
+				}elseif($field =='like'){ //like rules			   				
 					
-
-				foreach($array as $key=>$field) 
-				{
-					$_fsocial = "";
+					$fields_list.= $xoouserultra->social->get_item_likes($user_id,"user");	
+				
+				}elseif($field =='friend'){ //like rules			   				
 					
-					if(isset($field['social']))	
-					{
-						$_fsocial = $field['social'];					
-					}		
+					$fields_list.= $xoouserultra->social->get_friends($user_id);		
+							
 				
-					
-					if($_fsocial==1)
-					{
-											
-						$icon = $field['icon'];
+				}else{
 						
-						//get meta
-						$social_meta = get_user_meta($user_id, $field['meta'], true);
-						
-						if($social_meta!="")
-						{
-							$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
-				
-						}
-						
-						
-					}
-					
-				}	
-				
-				$html_social .="</div>";			
+					$fields_list .= "<p>".$u_meta."</p>";
 				
 				
-				$fields_list .= $html_social;
+				
+				}
 				
 				
-			
-			
-			}elseif($field =='rating'){ //this rule applies only to rating
-			
-			   				
-				$fields_list.= "<div class='ratebox'>";
-				$fields_list.= $xoouserultra->rating->get_rating($user_id,"user_id");
-				$fields_list.= "</div>";
-			
-			
-			}elseif($field =='like'){ //like rules			   				
-				
-				$fields_list.= $xoouserultra->social->get_item_likes($user_id,"user");	
-			
-			}elseif($field =='friend'){ //like rules			   				
-				
-				$fields_list.= $xoouserultra->social->get_friends($user_id);		
-						
-			
-			}else{
-					
-				$fields_list .= "<p>".$u_meta."</p>";
-			
-			
 			
 			}
 			
-			
-		
 		}
 		
 		return $fields_list;
