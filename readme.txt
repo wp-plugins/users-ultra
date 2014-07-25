@@ -37,7 +37,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 
-<strong>Recent Features added to the Pro Version: (Current Version: 1.0.9)</strong><br>
+<strong>Recent Features added to the Pro Version: (Current Version: 1.0.9)</strong>
 <pre>
 07-23-2014 -- "My Topics" link has been added to the user's profile.
 07-23-2014 -- Users Module has been improved. Find users is easier now.
