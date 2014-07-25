@@ -253,12 +253,9 @@ Initial release.
 * Improvements - Minor tweaks to the plugin and we've updated the readme description.
 * Bug Fix      - Issue with message displayed when not selecting user profile options. Array message has been resolved
 
-
 = 1.2.3 (07-20-2014) =
 * Improvement   - We have added a new setting to the settings page so you can choice your desired "My Account" page.
 * PRO           - Minor CSS tweaks.
-
-== Changelog ==
 
 = 1.2.2 (07-20-2014) =
 * Improvement   - PLEASE UPDATE ASAP. We have fixed an issue when upgrading from free to pro version. It's very important you will need to upgrade to 1.2.1 version before upgrading from free version to pro.
