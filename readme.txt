@@ -40,8 +40,8 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <strong>Recent Features added to the Pro Version: (Current Version: 1.1.0)</strong>
 <pre>
-07-24-2014 -- Registration with Roles. Users can select a role when registering. 
-07-24-2014 -- Membership Packages with Roles. You can assign a role to a package now.
+07-24-2014 -- Registration with Roles.  
+07-24-2014 -- Membership Packages with Roles.
 07-23-2014 -- "My Topics" link has been added to the user's profile.
 07-23-2014 -- Users Module has been improved. Find users is easier now.
 07-22-2014 -- bbPress integration.
