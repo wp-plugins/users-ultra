@@ -252,7 +252,7 @@ class XooPaypalPayment
 				
 			}else{
 				
-				$xoouserultra->messaging->paypal_ipn_debug("IPN ERRORS: ".$errors);
+				//$xoouserultra->messaging->paypal_ipn_debug("IPN ERRORS: ".$errors);
 				
 			
 			}
@@ -603,26 +603,26 @@ class XooPaypalPayment
 								
         
         
-           $html .=' <h3>Edit Package</h3>
+           $html .=' <h3>'.__('Edit Package','xoousers').'</h3>
          
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
            <tr>
-             <td width="14%">Name:</td>
+             <td width="14%">'.__('Name:','xoousers').'</td>
              <td width="86%"><input type="text" name="p_name" id="p_name_'.$package->package_id.'" value="'.$package->package_name.'" /></td>
            </tr>
            <tr>
-             <td>Description:</td>
+             <td>'.__('Description','xoousers').'</td>
              <td>
 			 <textarea  cols=""  name="p_desc" id="p_desc_'.$package->package_id.'" style="height:80px; width:50%;">'.$package->package_desc.'</textarea>
 			</td>
            </tr>
            <tr>
-             <td>Price:</td>
+             <td>'.__('Price','xoousers').'</td>
              <td><input type="text" name="p_price" id="p_price_'.$package->package_id.'" value="'.$package->package_amount.'"/></td>
            </tr>
 
            <tr>
-             <td>Type:</td>
+             <td>'.__('Type','xoousers').'</td>
              <td><select name="p_type" id="p_type_'.$package->package_id.'">
 			 
 			 ';
@@ -642,7 +642,7 @@ class XooPaypalPayment
 		   
 		   		   
 		   <tr>
-             <td>Every:</td>
+             <td>'.__('Every','xoousers').'</td>
              <td>
              <select name="p_every" id="p_every_'.$package->package_id.'">
              <option value="1" >1</option>
@@ -664,7 +664,7 @@ class XooPaypalPayment
              $html .= '</select></td>
            </tr>
            <tr>
-             <td>Billing Period:</td>
+             <td>'.__('Billing Period','xoousers').'</td>
              <td><label for="p_period"></label>
                <select name="p_period" id="p_period_'.$package->package_id.'">';
 			   
@@ -688,7 +688,7 @@ class XooPaypalPayment
            </tr>
 		   
 		   <tr>
-             <td>Requires Admin Moderation:</td>
+             <td> '.__('Requires Admin Moderation:','xoousers').'</td>
              <td><label for="p_moderation"></label>
                <select name="p_moderation" id="p_moderation_'.$package->package_id.'">';
 			   

@@ -14,17 +14,16 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-             <p>Version: 1.0.8</p>
+             <p>Version: 1.1.0</p>
              <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
                <strong>CHANGELOG</strong><br /><br />
-              <strong>Version 1.0.7 - 07-20-2014: </strong>
-<ul>
+              <strong>Version 1.1.0 - 07-24-2014: </strong>
+	<ul>
     	
-      <li>Improvement - Users Module includes more filter options.</li>    
-      
-     
+      <li>New Feature - Registration with Roles.</li> 
+      <li>New Feature - Membership Packages with Roles.</li>   
     
     </ul>
     <p><a href="http://usersultra.com/users-pro-change-log.html" target="_blank">check full changelog</a></p>
