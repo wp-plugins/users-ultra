@@ -21,7 +21,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Priority Support.</li>
   <li>New Features Every Week.</li>
    <li>Medallions and Fulfillments.</li>
-    <li>Membership Registration with Roles.</li>
+    <li>Membership Packages & Registration Form with Roles. Users can select a role when registering.</li>
 	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
     <li>User Online/Offline Status.</li>
     <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
@@ -39,7 +39,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 
 <strong>Recent Features added to the Pro Version: (Current Version: 1.1.0)</strong>
-<pre>}
+<pre>
 07-24-2014 -- Registration with Roles. Users can select a role when registering. 
 07-24-2014 -- Membership Packages with Roles. You can assign a role to a package now.
 07-23-2014 -- "My Topics" link has been added to the user's profile.
