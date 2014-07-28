@@ -180,7 +180,7 @@ class XooUserUltra
 		
 		if($my_account_page=="" )
 		{
-			echo '<div id="message" class="error"><p><strong>'.__("Users Ultra might be working wrong. We couldn't find the 'My Account' shortcode. Please click on settings tab and make sure that the My Account page has been set correctly. Then click on the 'save' button ","xoousers").'</strong></p></div>';		
+			echo '<div id="uultra-message" class="error"><p><strong>'.__("Users Ultra might be working wrong. We couldn't find the 'My Account' shortcode. Please click on settings tab and make sure that the My Account page has been set correctly. Then click on the 'save' button ","xoousers").'</strong></p></div>';		
 		
 		}
 		
@@ -192,11 +192,11 @@ class XooUserUltra
 	{
 		if ($errormsg) 
 		{
-			echo '<div id="message" class="error">';
+			echo '<div id="uultra-message" class="error">';
 			
 		}else{
 			
-			echo '<div id="message" class="updated fade">';
+			echo '<div id="uultra-message" class="updated fade">';
 		}
 	
 		echo "<p><strong>$message</strong></p></div>";
