@@ -97,7 +97,7 @@ class XooRating extends XooUserUltraCommon
 	
 	public function rating_vote() 
 	{
-		global $wpdb;	
+		global $wpdb, $xoouserultra;	
 		
 		$user_id= "";
 		
@@ -130,12 +130,14 @@ class XooRating extends XooUserUltraCommon
 		
 		}
 		
+		$guest_allowed = $xoouserultra->get_option('uultra_allow_guest_rating');
+		
 		
 		
 		if(!$rate_itself)
 		{
 			
-			if (is_user_logged_in() ) 
+			if (is_user_logged_in() || $guest_allowed==1) 
 			{
 				if($check_vote) 
 				{

@@ -20,6 +20,17 @@ $this->create_plugin_setting(
                 __('If checked, User will not see the WP Admin Tool Bar.','xoousers')
         ); 
 		
+
+$this->create_plugin_setting(
+                'checkbox',
+                'uultra_allow_guest_rating',
+                __('Allow Guests to use the rating system','xoousers'),
+                '1',
+                __('If checked, users will be able to leave rates without being logged in','xoousers'),
+                __('If checked, User will not see the WP Admin Tool Bar.','xoousers')
+        ); 
+		
+		
 ?>
 </table>
 
