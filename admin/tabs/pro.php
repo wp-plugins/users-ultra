@@ -14,8 +14,9 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-             <p>Version: 1.1.0</p>
-             <p><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
+            <p>Promo code: PRO-7809</p>
+             <p class="uultra-off-message">15% off until August 1st</p>
+             <p class="btn-find"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
                <strong>CHANGELOG</strong><br /><br />
@@ -26,7 +27,7 @@ global $xoouserultra;
       <li>New Feature - Membership Packages with Roles.</li>   
     
     </ul>
-    <p><a href="http://usersultra.com/users-pro-change-log.html" target="_blank">check full changelog</a></p>
+    <p class="btn-full"><a href="http://usersultra.com/users-pro-change-log.html" target="_blank">Check Full Changelog</a></p>
     
         </div>
         

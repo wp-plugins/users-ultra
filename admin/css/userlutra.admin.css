@@ -830,7 +830,7 @@ i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.p
    
 
 
-    background-color: #C30;
+    background-color: #3e98a1;
 
     color:white;
 
@@ -842,19 +842,30 @@ i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.p
 
 .user-ultra-sect-pro { padding:10px; position:relative}
 
-.user-ultra-sect-pro p{  font-size:1.4em}
+.user-ultra-sect-pro p{  font-size:1.2em}
 
-.user-ultra-sect-pro .uultra-badge-pro{ position:absolute; top:20px; padding:10px; right:10px; width:200px; height:460px; background-color:#FFF}
-
-
+.user-ultra-sect-pro .uultra-badge-pro{ position:absolute; top:20px; padding:10px 15px 20px 15px; right:10px; width:200px; height:560px; background-color:#FFF; border:solid 1px #D3D3D3}
 
 .user-ultra-sect-pro .uu-sect-p { width:75%;}
 
+p.uultra-off-message{ font-size:12px !important}
+
 .user-ultra-sect-pro .uultra-badge-pro  p{ text-align:center;}
+
+
+.user-ultra-sect-pro .uultra-badge-pro p.btn-find { background:#3e98a1; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #267c85}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-find a{color:#FFF;text-decoration:none;}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-find a:hover{color: #000 ; text-decoration:none}
+
+.user-ultra-sect-pro .uultra-badge-pro p.btn-full { background:#f37936; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #d35c1a}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-full a{color:#FFF;text-decoration:none;}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-full a:hover{color: #000 ; text-decoration:none}
+
+
 
 .user-ultra-sect-pro .uultra-badge-pro img.uultra-logo{ width:98%;}
 
-.user-ultra-sect-pro h1 { font-size:2.7em}
+.user-ultra-sect-pro h1 { font-size:2.5em; color:#159387}
 
 
 
@@ -866,7 +877,7 @@ i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.p
 
 
 
-.user-ultra-sect-pro .uultra-pro-col-features .uultra-col h1{ font-size:1.7em}
+.user-ultra-sect-pro .uultra-pro-col-features .uultra-col h1{ font-size:1.7em; color: #333}
 
 
 

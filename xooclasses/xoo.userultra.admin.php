@@ -60,7 +60,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			'gateway' => __('Gateways','userultra'),
 			'donate' => __('Donate','userultra'),
 			'help' => __('Doc','userultra'),
-			'pro' => __('Go Pro!','userultra'),
+			'pro' => __('Go Pro! 15% Off','userultra'),
 		);
 		
 		$this->default_tab = 'main';		
