@@ -14,7 +14,16 @@ $howmany_latest= 10;
         
 ?>
 
-
+ <div class="user-ultra-sect-welcome-message ">
+ 
+ <h1><?php _e('Welcome to Users Ultra Lite!','xoousers'); ?></h1>
+        <div class="uu-sect-p">
+        	            
+            <p><?php _e("Thank you very much for installing Users Ultra Lite.  ",'xoousers'); ?></p>
+        
+        </div>
+ 
+ </div>
         <div class="user-ultra-sect ">      
         
         

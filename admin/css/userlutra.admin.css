@@ -840,6 +840,11 @@ i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.p
 }
 
 
+.user-ultra-sect-welcome-message { padding:10px; position:relative}
+.user-ultra-sect-welcome-message  .uu-sect-p { width:98%;}
+
+.user-ultra-sect-welcome-message p{  font-size:1.2em}
+
 .user-ultra-sect-pro { padding:10px; position:relative}
 
 .user-ultra-sect-pro p{  font-size:1.2em}

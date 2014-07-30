@@ -57,10 +57,9 @@ class XooUserAdmin extends XooUserUltraCommon
 			'import' => __('Sync & Import','userultra'),			
 			'mail' => __('Notifications','userultra'),			
 			'permalinks' => __('Permalinks','userultra'),
-			'gateway' => __('Gateways','userultra'),
-			'donate' => __('Donate','userultra'),
+			'gateway' => __('Gateways','userultra'),			
 			'help' => __('Doc','userultra'),
-			'pro' => __('Go Pro! 15% Off','userultra'),
+			'pro' => __('Go Pro!','userultra'),
 		);
 		
 		$this->default_tab = 'main';		

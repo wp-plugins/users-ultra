@@ -3523,7 +3523,7 @@ class XooUserUser {
 						
 						/*if ($->field_type($key) == 'multiselect' ||
 							$->field_type($key) == 'checkbox' ||
-							$uspro->field_type($key) == 'checkbox-full'
+							$uultra->field_type($key) == 'checkbox-full'
 							) {
 							$like = 'like';
 						} else {

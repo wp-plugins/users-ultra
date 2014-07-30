@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, achievement, medallions, bbpress
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.2.9
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,38 +16,6 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
-<h3><strong>USERS ULTRA PRO - EVEN BETTER :) </strong></h3>
-<ul>
-  <li>Priority Support.</li>
-  <li>New Features Every Week.</li>
-   <li>Medallions and Fulfillments.</li>
-    <li>Membership Packages & Registration Form with Roles. Users can select a role when registering.</li>
-	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
-    <li>User Online/Offline Status.</li>
-    <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
-	 <li>Multisite Support.</li>
-  <li>Advanced Users Management. Find your users easily. Send activation link, deny/approver users. Upgrade and Downgrade User's Membership and more. </li>
-  <li>Minor Tweaks Support.</li>
-  <li>Front End Publisher With Multiple Images.</li>
-  <li>Elegant Customizable Users Profile</li>
-  <li>Custom Profile Background for every profile.</li>
- 
-  <li>Users Wall.</li>
-  <li>and so much more ...</li>
-</ul>
-
-<a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
-
-<strong>Recent Features added to the Pro Version: (Current Version: 1.1.0)</strong>
-<pre>
-07-24-2014 -- Registration with Roles.  
-07-24-2014 -- Membership Packages with Roles.
-07-23-2014 -- "My Topics" link has been added to the user's profile.
-07-23-2014 -- Users Module has been improved. Find users is easier now.
-07-22-2014 -- bbPress integration.
-07-20-2014 -- We've added lots of new Medallions.
-</pre>
-
 <strong>Online Preview</strong><br>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> <br>
@@ -56,11 +24,19 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
 
-<h3>Help Keep This Plugin Free</h3>
+<h3><strong>USERS ULTRA PRO </strong></h3>
+<ul>
+  <li>Priority Support.</li>
+  <li>New Features Every Week.</li>
+  <li>Medallions and Fulfillments.</li>
+  <li>User Online/Offline Status.</li>   
+  <li>Custom Profile Background for every profile.</li> 
+  <li>Users Wall.</li>
+  <li>and so much more ...</li>
+</ul>
 
-If you find this plugin useful to you, please consider <a href="http://usersultra.com/donate.html"><strong>making a small donation</strong></a> to help contribute to my time invested and to further development. Thanks for your kind support!
+<a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 
-<strong>If you like this plugin, please don't forget to rate it "5/5" </strong>
 
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
@@ -233,6 +209,26 @@ Yes, http://www.usersultra.com/support/
 
 Yes, http://usersultra.com/users-pro.html
 
+These are just some of the features the pro includes:
+<ul>
+  <li>Priority Support.</li>
+  <li>New Features Every Week.</li>
+   <li>Medallions and Fulfillments.</li>
+    <li>Membership Packages & Registration Form with Roles. Users can select a role when registering.</li>
+	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
+    <li>User Online/Offline Status.</li>
+    <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
+	 <li>Multisite Support.</li>
+  <li>Advanced Users Management. Find your users easily. Send activation link, deny/approver users. Upgrade and Downgrade User's Membership and more. </li>
+  <li>Minor Tweaks Support.</li>
+  <li>Front End Publisher With Multiple Images.</li>
+  <li>Elegant Customizable Users Profile</li>
+  <li>Custom Profile Background for every profile.</li>
+ 
+  <li>Users Wall.</li>
+  <li>and so much more ...</li>
+</ul>
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -251,6 +247,9 @@ Initial release.
 9. Dahsboard
 
 == Changelog ==
+
+= 1.3.0 (07-28-2014) =
+* Improvements - Minor tweaks to the users module, we have added support for special characters within the emails.
 
 = 1.2.9 (07-27-2014) =
 * Improvements - Please upgrade, we have tweaked the plugin so it will be easier to upgrade from lite to pro.
