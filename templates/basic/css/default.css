@@ -324,7 +324,7 @@ color: #888;
     box-shadow: none;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
+    display: inline-block !important;
     font-family: "Open Sans Condensed",Calibri,Helvetica,sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -335,6 +335,7 @@ color: #888;
    
     white-space: nowrap;
     width: auto;
+	max-width:280px ;
 }
 .btnuultra:hover,  [class^="btnuultra-"]:hover{
     background: none repeat scroll 0 0 #6DC602;

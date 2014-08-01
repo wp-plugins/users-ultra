@@ -27,7 +27,7 @@ global $xoouserultra;
       <li>New Feature - Membership Packages with Roles.</li>   
     
     </ul>
-    <p class="btn-full"><a href="http://usersultra.com/users-pro-change-log.html" target="_blank">Check Full Changelog</a></p>
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">Check The New Profile</a></p>
     
         </div>
         
