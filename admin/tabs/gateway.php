@@ -25,7 +25,7 @@ $this->create_plugin_setting(
         'gateway_paypal_email',
         __('Paypal Email Address','xoousers'),array(),
         __('Enter email address associated to your paypal account.','xoousers'),
-        __('','xoousers')
+        __('Enter email address associated to your paypal account.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -33,7 +33,7 @@ $this->create_plugin_setting(
         'gateway_paypal_sandbox_email',
         __('Paypal Sandbox Email Address','xoousers'),array(),
         __('This is not used for production, you can use this email for testing.','xoousers'),
-        __('','xoousers')
+        __('This is not used for production, you can use this email for testing.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -41,7 +41,7 @@ $this->create_plugin_setting(
         'gateway_paypal_currency',
         __('Currency','xoousers'),array(),
         __('Please enter the currency, example USD.','xoousers'),
-        __('','xoousers')
+        __('Please enter the currency, example USD.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -53,8 +53,8 @@ $this->create_plugin_setting(
 		2 => __('Test Mode (Sandbox)','xoousers')
 		),
 		
-	__('','xoousers'),
-  __('','xoousers')
+	__('Select Mode','xoousers'),
+  __('Select Mode','xoousers')
        );
 
 

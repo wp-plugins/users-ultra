@@ -59,7 +59,7 @@ $this->create_plugin_setting(
         'membership_display_zero',
         __('Text for free membership:','xoousers'),array(),
         __('This text will be displayed for the free membership rather than showing <strong>"$0.00"<strong>. Please input some text like: "Free"','xoousers'),
-        __('','xoousers')
+        __('This text will be displayed for the free membership rather than showing <strong>"$0.00"<strong>. Please input some text like:','xoousers')
 );		
 ?>
 </table>
@@ -81,55 +81,55 @@ $this->create_plugin_setting(
         'media_uploading_folder',
         __('Upload Folder:','xoousers'),array(),
         __('This is the folder where the user photos will be stored in. Please make sure to assing 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers'),
-        __('','xoousers')
+        __('This is the folder where the user photos will be stored in. Please make sure to assing 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_photo_mini_width',
         __('Mini Thumbnail Width','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set width in pixels','xoousers'),
+        __('Set width in pixels','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_photo_mini_height',
         __('Mini Thumbnail Height','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set Height in pixels','xoousers'),
+        __('Set Height in pixels','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_photo_thumb_width',
         __('Thumbnail Width','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set Width in pixels','xoousers'),
+        __('Set Width in pixels','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_photo_thumb_height',
         __('Thumbnail Height','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set Height in pixels','xoousers'),
+        __('Set Height in pixels','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_photo_large_width',
         __('Large Photo Max Width','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set Width in pixels','xoousers'),
+        __('Set Width in pixels','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_photo_large_height',
         __('Large Photo Max Height','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set Height in pixels','xoousers'),
+        __('Set Height in pixels','xoousers')
 );
 		
 ?>
@@ -141,7 +141,7 @@ $this->create_plugin_setting(
 <div class="user-ultra-sect ">
   <h3><?php _e('Frontend Publishing  Settings','xoousers'); ?></h3>
   
-  <p><?php _e('','xoousers'); ?></p>
+  <p><?php _e('.','xoousers'); ?></p>
   
   
   <table class="form-table">
@@ -153,7 +153,7 @@ $this->create_plugin_setting(
         'uultra_front_publisher_default_amount',
         __('Max Posts Per User:','xoousers'),array(),
         __('Please set 9999 for unlimited posts. This value is used for free and general users','xoousers'),
-        __('','xoousers')
+        __('Please set 9999 for unlimited posts. This value is used for free and general users','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -166,7 +166,7 @@ $this->create_plugin_setting(
 		),
 		
 	__('This is the status of the post when the users submit new posts through Users Ultra.','xoousers'),
-  __('','xoousers')
+  __('This is the status of the post when the users submit new posts through Users Ultra.','xoousers')
        );
 	   
 $this->create_plugin_setting(
@@ -179,7 +179,7 @@ $this->create_plugin_setting(
 		),
 		
 	__('If "yes" authors will be able to select the category, if "no" is set the default category will be used to save the post.','xoousers'),
-  __('','xoousers')
+  __('If "yes" authors will be able to select the category, if "no" is set the default category will be used to save the post.','xoousers')
        );
 	   
    $this->create_plugin_setting(
@@ -187,7 +187,7 @@ $this->create_plugin_setting(
             'uultra_front_publisher_default_category',
             __('Default Category','xoousers'),
             $this->get_all_sytem_cagegories(),
-            __('','xoousers'),
+            __('The category if authors are not allowed to select a custom category.','xoousers'),
             __('The category if authors are not allowed to select a custom category.','xoousers')
     );
 
@@ -215,16 +215,16 @@ $this->create_plugin_setting(
         'input',
         'media_avatar_width',
         __('Avatar Width:','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set width in pixels','xoousers'),
+        __('Set width in pixels','xoousers')
 );
 
 $this->create_plugin_setting(
         'input',
         'media_avatar_height',
         __('Avatar Height','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Set Height in pixels','xoousers'),
+        __('Set Height in pixels','xoousers')
 );
 
 		
@@ -238,7 +238,7 @@ $this->create_plugin_setting(
 <div class="user-ultra-sect ">
   <h3><?php _e('Mailchimp Settings','xoousers'); ?></h3>
   
-  <p><?php _e('','xoousers'); ?></p>
+  <p><?php _e('.','xoousers'); ?></p>
   
   
   <table class="form-table">
@@ -250,7 +250,7 @@ $this->create_plugin_setting(
         'mailchimp_api',
         __('MailChimp API Key','xoousers'),array(),
         __('Fill out this field with your MailChimp API key here to allow integration with MailChimp subscription.','xoousers'),
-        __('','xoousers')
+        __('Fill out this field with your MailChimp API key here to allow integration with MailChimp subscription.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -258,7 +258,7 @@ $this->create_plugin_setting(
         'mailchimp_list_id',
         __('MailChimp List ID','xoousers'),array(),
         __('Fill out this field your list ID.','xoousers'),
-        __('','xoousers')
+        __('Fill out this field your list ID.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -274,7 +274,7 @@ $this->create_plugin_setting(
         'mailchimp_text',
         __('MailChimp Text','xoousers'),array(),
         __('Please input the text that will appear when asking users to get periodical updates.','xoousers'),
-        __('','xoousers')
+        __('Please input the text that will appear when asking users to get periodical updates.','xoousers')
 );
 
 		
@@ -286,7 +286,7 @@ $this->create_plugin_setting(
 <div class="user-ultra-sect ">
   <h3><?php _e('Registration Settings','xoousers'); ?></h3>
   
-  <p><?php _e('','xoousers'); ?></p>
+  <p><?php _e('.','xoousers'); ?></p>
   
   
   <table class="form-table">
@@ -303,7 +303,7 @@ $this->create_plugin_setting(
 		4 => __('Paid Activation - Enables the Membership Features','xoousers')),
 		
 	__('Please note: Paid Activation does not work with social connects at this moment.','xoousers'),
-  __('','xoousers')
+  __('Please note: Paid Activation does not work with social connects at this moment.','xoousers')
        );
     
     
@@ -316,7 +316,7 @@ $this->create_plugin_setting(
 <div class="user-ultra-sect ">
   <h3><?php _e('User Profiles Settings','xoousers'); ?></h3>
   
-  <p><?php _e('','xoousers'); ?></p>
+  <p><?php _e('.','xoousers'); ?></p>
   
   
   <table class="form-table">
@@ -330,8 +330,8 @@ $this->create_plugin_setting(
 		'username' => __('Display User Name','xoousers'), 
 		'display_name' => __('Use the Display Name set by the User in the Profile','xoousers')),
 		
-	__('','xoousers'),
-  __('','xoousers')
+	__('Set how the users ultra will make the user name.','xoousers'),
+  __('Set how the users ultra will make the user name.','xoousers')
        );
 
 $this->create_plugin_setting(
@@ -343,8 +343,8 @@ $this->create_plugin_setting(
 		'public' => __('All visitor can see the user photos without registration','xoousers')
 		),
 		
-	__('','xoousers'),
-  __('','xoousers')
+	__('Specify if the user photos are public or private','xoousers'),
+  __('Specify if the user photos are public or private','xoousers')
        );
     
     
@@ -368,7 +368,7 @@ $this->create_plugin_setting(
         'paid_membership_currency',
         __('Currency','xoousers'),array(),
         __('The default symbol for paypal payments is USD','xoousers'),
-        __('','xoousers')
+        __('The default symbol for paypal payments is USD','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -376,7 +376,7 @@ $this->create_plugin_setting(
         'paid_membership_symbol',
         __('Currency Symbol','xoousers'),array(),
         __('Input the currency symbol: Example: $','xoousers'),
-        __('','xoousers')
+        __('Input the currency symbol: Example: $','xoousers')
 );
 
 
@@ -479,8 +479,8 @@ $this->create_plugin_setting(
         'input',
         'social_media_facebook_app_id',
         __('Facebook App ID','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Obtained when you created the Facebook Application.','xoousers'),
+        __('Obtained when you created the Facebook Application.','xoousers')
 );
 
 
@@ -490,7 +490,7 @@ $this->create_plugin_setting(
         'social_media_facebook_secret',
         __('Facebook App Secret','xoousers'),array(),
         __('Facebook settings','xoousers'),
-        __('','xoousers')
+        __('Obtained when you created the Facebook Application.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -506,8 +506,8 @@ $this->create_plugin_setting(
         'input',
         'social_media_linkedin_api_public',
         __('LinkedIn API Key Public','xoousers'),array(),
-        __('','xoousers'),
-        __('','xoousers')
+        __('Obtained when you created your applicaton.','xoousers'),
+        __('Obtained when you created your applicaton.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -515,7 +515,7 @@ $this->create_plugin_setting(
         'social_media_linkedin_api_private',
         __('LinkedIn API Key Private','xoousers'),array(),
         __('<br><br> VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to "?uultralinkedin=1". Example: http://yourdomain.com/?uultralinkedin=1','xoousers'),
-        __('','xoousers')
+        __('VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to "?uultralinkedin=1','xoousers')
 );  
 
 
@@ -541,7 +541,7 @@ $this->create_plugin_setting(
         'google_client_id',
         __('Google Client ID','xoousers'),array(),
         __('Paste the client id that you got from google API Console','xoousers'),
-        __('','xoousers')
+        __('Paste the client id that you got from google API Console','xoousers')
 );  
 
 $this->create_plugin_setting(
@@ -549,7 +549,7 @@ $this->create_plugin_setting(
         'google_client_secret',
         __('Google Client Secret','xoousers'),array(),
         __('Set the client secret','xoousers'),
-        __('','xoousers')
+        __('Obtained when you created the Google Application.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -557,7 +557,7 @@ $this->create_plugin_setting(
         'google_redirect_uri',
         __('Google Redirect URI','xoousers'),array(),
         __('Paste the redirect URI where you given in APi Console. You will get the Access Token here during login success. Find more information here https://developers.google.com/console/help/new/#console.  <br><br> VERY IMPORTANT: Your URL should end with "?uultraplus=1". Example: http://yourdomain.com/?uultraplus=1','xoousers'),
-        __('','xoousers')
+        __('Your URL should end with "?uultraplus=1". Example: http://yourdomain.com/?uultraplus=1','xoousers')
 );
 
 
@@ -577,7 +577,7 @@ $this->create_plugin_setting(
         'twitter_consumer_key',
         __('Consumer Key','xoousers'),array(),
         __('Paste the Consumer Key','xoousers'),
-        __('','xoousers')
+        __('Obtained when you created your Applicatoin at Twitter Developer Center','xoousers')
 );  
 
 $this->create_plugin_setting(
@@ -585,7 +585,7 @@ $this->create_plugin_setting(
         'twitter_consumer_secret',
         __('Consumer Secret','xoousers'),array(),
         __('Paste the Consumer Secret','xoousers'),
-        __('','xoousers')
+        __('Obtained when you created your Applicatoin at Twitter Developer Center','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -602,7 +602,7 @@ $this->create_plugin_setting(
         'twitter_autopost_msg',
         __('Message','xoousers'),array(),
         __('Input the message that will be posted right after user registration','xoousers'),
-        __('','xoousers')
+        __('Input the message that will be posted right after user registration','xoousers')
 );		
 /// yammer
 $this->create_plugin_setting(
@@ -620,7 +620,7 @@ $this->create_plugin_setting(
         'yammer_client_id',
         __('Client Id','xoousers'),array(),
         __('Paste the Yammer Client ID','xoousers'),
-        __('','xoousers')
+        __('The same used when you signed up.','xoousers')
 );  
 
 $this->create_plugin_setting(
@@ -628,7 +628,7 @@ $this->create_plugin_setting(
         'yammer_client_secret',
         __('Client Secret','xoousers'),array(),
         __('Paste the Yammer Client Secret','xoousers'),
-        __('','xoousers')
+        __('Obtained at Yammer developer center.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -690,7 +690,7 @@ $this->create_plugin_setting(
             __('After Registration','xoousers'),
             $this->get_all_sytem_pages(),
             __('The user will be taken to this page after registration if the account activation is set to automatic ','xoousers'),
-            __('','xoousers')
+            __('The user will be taken to this page after registration if the account activation is set to automatic','xoousers')
     );
         
     ?>

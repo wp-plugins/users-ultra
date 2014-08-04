@@ -14,7 +14,7 @@ $this->create_plugin_setting(
         'usersultra_slug',
         __('Profile Slug','xoousers'),array(),
         __('Enter your custom Slug for the profile page.','xoousers'),
-        __('','xoousers')
+        __('Enter your custom Slug for the profile page.','xoousers')
 );
 
 
@@ -30,7 +30,7 @@ $this->create_plugin_setting(
 		),
 		
 	__('Please note: This option is used for permalinks. You can choice what field will be used in the Users Profile Link','xoousers'),
-  __('','xoousers')
+  __('Please note: This option is used for permalinks. You can choice what field will be used in the Users Profile Link','xoousers')
        );
     
 
@@ -39,7 +39,7 @@ $this->create_plugin_setting(
         'usersultra_login_slug',
         __('Login Slug','xoousers'),array(),
         __('Enter your custom Slug for the Login Page.','xoousers'),
-        __('','xoousers')
+        __('Enter your custom Slug for the Login Page.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -47,7 +47,7 @@ $this->create_plugin_setting(
         'usersultra_registration_slug',
         __('Registration Slug','xoousers'),array(),
         __('Enter your custom Slug for the Registration Page.','xoousers'),
-        __('','xoousers')
+        __('Enter your custom Slug for the Registration Page.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -55,7 +55,7 @@ $this->create_plugin_setting(
         'usersultra_my_account_slug',
         __('My Account Slug','xoousers'),array(),
         __('Enter your custom Slug for the "My Account" Page.','xoousers'),
-        __('','xoousers')
+        __('Enter your custom Slug for the "My Account" Page.','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -63,7 +63,7 @@ $this->create_plugin_setting(
         'usersultra_directory_slug',
         __('Users Directory Slug','xoousers'),array(),
         __('Enter your custom Slug for the Users Directory Page.','xoousers'),
-        __('','xoousers')
+        __('Enter your custom Slug for the Users Directory Page.','xoousers')
 );
 
 		
