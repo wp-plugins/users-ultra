@@ -97,8 +97,6 @@ class XooUserAdmin extends XooUserUltraCommon
 			update_option('userultra_options', $this->userultra_default_options );
 		}
 		
-			
-		
 		
 	}
 	

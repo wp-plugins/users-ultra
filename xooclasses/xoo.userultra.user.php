@@ -3766,7 +3766,7 @@ class XooUserUser {
 		
 			'template' => 'directory_mini', //this is the template file's name
 			'container_width' => '100%', // this is the main container dimension
-			'item_width' => '1o%', // this is the width of each item or user in the directory
+			'item_width' => '10%', // this is the width of each item or user in the directory
 			'item_height' => 'auto', // auto height
 			'list_per_page' => 10, // how many items per page
 			'pic_type' => 'avatar', // display either avatar or main picture of the user
@@ -3777,8 +3777,7 @@ class XooUserUser {
 			'display_social' => 'yes', // display social
 			'display_country_flag' => 'name', // display flag, no,yes,only, both. Only won't display name
 			'display_total_found' => 'yes', // display total found
-			'display_total_found_text' => 'Users', // display total found
-			
+			'display_total_found_text' => 'Users', // display total found			
 			'list_order' => 'DESC', // asc or desc ordering
 		), $atts ) );
 		

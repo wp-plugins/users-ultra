@@ -178,7 +178,7 @@ class XooUserUltra
 		//chekc my account link
 		$acc_link = $this->login->get_my_account_direct_link();
 		
-		if($my_account_page=="" )
+		if($acc_link=="" )
 		{
 			echo '<div id="uultra-message" class="error"><p><strong>'.__("Users Ultra might be working wrong. We couldn't find the 'My Account' shortcode. Please click on settings tab and make sure that the My Account page has been set correctly. Then click on the 'save' button ","xoousers").'</strong></p></div>';		
 		
