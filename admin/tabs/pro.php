@@ -39,6 +39,11 @@ global $xoouserultra;
              <p> <?php _e('We usually reply within the same dady to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
             </div>
             
+            <div class="uultra-col">
+             <h1><?php _e('Appearance & Customization','xoousers'); ?></h1> 
+             <p> <?php _e("Users Ultra PRO allows you to adapt the user's profile to any WordPress Theme through the admin section. Change the look of the profile in just few clicks.",'xoousers'); ?></p>
+            </div>
+            
             
             <div class="uultra-col">
              <h1><?php _e('New Features','xoousers'); ?></h1> 

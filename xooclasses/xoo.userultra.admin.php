@@ -49,17 +49,17 @@ class XooUserAdmin extends XooUserUltraCommon
 	{
 		
 		$this->tabs = array(
-		    'main' => __('Dashboard','userultra'),
-			'fields' => __('Fields','userultra'),
-			'settings' => __('Settings','userultra'),			
-			'membership' => __('Membership','userultra'),
-			'orders' => __('Orders','userultra'),			
-			'import' => __('Sync & Import','userultra'),			
-			'mail' => __('Notifications','userultra'),			
-			'permalinks' => __('Permalinks','userultra'),
-			'gateway' => __('Gateways','userultra'),			
-			'help' => __('Doc','userultra'),
-			'pro' => __('Go Pro!','userultra'),
+		    'main' => __('Dashboard','xoousers'),
+			'fields' => __('Fields','xoousers'),
+			'settings' => __('Settings','xoousers'),			
+			'membership' => __('Membership','xoousers'),
+			'orders' => __('Orders','xoousers'),			
+			'import' => __('Sync & Import','xoousers'),			
+			'mail' => __('Notifications','xoousers'),			
+			'permalinks' => __('Permalinks','xoousers'),
+			'gateway' => __('Gateways','xoousers'),			
+			'help' => __('Doc','xoousers'),
+			'pro' => __('Go Pro!','xoousers'),
 		);
 		
 		$this->default_tab = 'main';		

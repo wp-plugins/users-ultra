@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, achievement, medallions, bbpress
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,15 +28,21 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <ul>
   <li>Priority Support.</li>
   <li>New Features Every Week.</li>
-  <li>Medallions and Fulfillments.</li>
-  <li>User Online/Offline Status.</li>   
-  <li>Membership Packages & Registration Form with Roles. Users can select a role when registering.</li>
-  <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
-  <li>Custom Profile Background for every profile.</li> 
+   <li>Medallions and Fulfillments.</li>
+    <li>Membership Packages & Registration Form with Roles. Users can select a role when registering.</li>
+	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
+    <li>User Online/Offline Status.</li>
+    <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
+	 <li>Multisite Support.</li>
+  <li>Advanced Users Management. Find your users easily. Send activation link, deny/approver users. Upgrade and Downgrade User's Membership and more. </li>
+  <li>Minor Tweaks Support.</li>
+  <li>Front End Publisher With Multiple Images.</li>
+  <li>Elegant Customizable Users Profile</li>
+  <li>Custom Profile Background for every profile.</li>
+ 
   <li>Users Wall.</li>
   <li>and so much more ...</li>
 </ul>
-
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 
 
@@ -249,6 +255,9 @@ Initial release.
 9. Dahsboard
 
 == Changelog ==
+
+= 1.3.4 (08-05-2014) =
+* Improvements - The admin has been improved.
 
 = 1.3.3 (08-03-2014) =
 * Improvements - A warning message will be displayed when the "My account" page is not set. This page is very important because users are taken to this page when using a social authentication method.
