@@ -29,7 +29,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Priority Support.</li>
   <li>New Features Every Week.</li>
    <li>Medallions and Fulfillments.</li>
-    <li>Membership Packages & Registration Form with Roles. Users can select a role when registering.</li>
+    <li><strong>Membership Packages & Registration Form with Roles. Users can select a role when registering.</strong></li>
 	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
     <li>User Online/Offline Status.</li>
     <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
@@ -37,8 +37,9 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Advanced Users Management. Find your users easily. Send activation link, deny/approver users. Upgrade and Downgrade User's Membership and more. </li>
   <li>Minor Tweaks Support.</li>
   <li>Front End Publisher With Multiple Images.</li>
-  <li>Elegant Customizable Users Profile</li>
+  <li><strong>Elegant Customizable Users Profile.</strong></li>
   <li>Custom Profile Background for every profile.</li>
+  <li><strong>Multiple User's Profile.</strong></li>
  
   <li>Users Wall.</li>
   <li>and so much more ...</li>
