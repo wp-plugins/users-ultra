@@ -20,11 +20,11 @@ global $xoouserultra;
              
              
                <strong>CHANGELOG</strong><br /><br />
-              <strong>Version 1.1.0 - 07-24-2014: </strong>
+              <strong>Version 1.1.1 - 08-05-2014: </strong>
 	<ul>
     	
-      <li>New Feature - Registration with Roles.</li> 
-      <li>New Feature - Membership Packages with Roles.</li>   
+      <li>New Feature - Terms & Conditions Option</li> 
+      <li>New Feature - Advanced Appearance & Customization Tool.</li>   
     
     </ul>
     <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">Check The New Profile</a></p>
@@ -36,13 +36,18 @@ global $xoouserultra;
          
             <div class="uultra-col">
              <h1><?php _e('Priority Support','xoousers'); ?></h1> 
-             <p> <?php _e('We usually reply within the same dady to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
+             <p> <?php _e('We usually reply within the same day to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
             </div>
             
             <div class="uultra-col">
              <h1><?php _e('Appearance & Customization','xoousers'); ?></h1> 
              <p> <?php _e("Users Ultra PRO allows you to adapt the user's profile to any WordPress Theme through the admin section. Change the look of the profile in just few clicks.",'xoousers'); ?></p>
             </div>
+            
+            <div class="uultra-col">
+             <h1><?php _e('Roles Integration','xoousers'); ?></h1> 
+             <p> <?php _e("Users will be able to select a predefined role when registering and you will be able to assign a custom role to a membership package.",'xoousers'); ?></p>
+            </div>    
             
             
             <div class="uultra-col">
