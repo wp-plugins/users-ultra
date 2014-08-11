@@ -3,19 +3,13 @@
 
 
 #loading-animation{display:none}
-
 #uultra-sync-results{display:none}
 
 
-
 #uultra-validation-results{display:none}
-
 .user-ultra-sect h3{ margin-left:0px}
-
 .user-ultra-sect h3{ font-size:20px;}
-
 .user-ultra-btn-red{ background: #F00 !important;  color:#FFF !important}
-
 
 
 .uuultra-top-noti-admin {  margin:10px 0px 10px 0px; color:#FFF !important}
@@ -67,13 +61,9 @@ samp {
   padding: 2px 4px;
 
   font-size: 90%;
-
   color: #c7254e;
-
   white-space: nowrap;
-
   background-color: #f9f2f4;
-
   border-radius: 4px;
 
 }
@@ -95,11 +85,8 @@ samp {
   color: #333333;
 
   word-break: break-all;
-
   word-wrap: break-word;
-
   background-color: #f5f5f5;
-
   border: 1px solid #cccccc;
 
   border-radius: 4px;
