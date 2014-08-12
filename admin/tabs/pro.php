@@ -32,6 +32,8 @@ global $xoouserultra;
         </div>
         
         
+        <iframe width="70%" height="400" src="//www.youtube.com/embed/f01vuM9tp1U" frameborder="0" allowfullscreen></iframe>
+        
          <div class="uultra-pro-col-features">
          
             <div class="uultra-col">
@@ -47,6 +49,11 @@ global $xoouserultra;
             <div class="uultra-col">
              <h1><?php _e('Roles Integration','xoousers'); ?></h1> 
              <p> <?php _e("Users will be able to select a predefined role when registering and you will be able to assign a custom role to a membership package.",'xoousers'); ?></p>
+            </div>  
+            
+             <div class="uultra-col">
+             <h1><?php _e('Spam Protection','xoousers'); ?></h1> 
+             <p> <?php _e("Users Ultra PRO comes with a IP Blocking tool that will help you to protect your website against spam attacks. Simple way to stop fake account spam!",'xoousers'); ?></p>
             </div>    
             
             
