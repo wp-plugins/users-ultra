@@ -41,10 +41,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Custom Profile Background for every profile.</li>
   <li><strong>Multiple User's Profile.</strong></li>
   <li><strong>Spam Protection. IP Blocking. Simple way to stop fake account spam!</strong></li>
-  <li><strong>reCaptcha & FUNCAPTCHA. It protects your website from spam !</strong></li>
-  
-  
- 
+  <li><strong>reCaptcha & FUNCAPTCHA. It protects your website from spam !</strong></li> 
   <li>Users Wall.</li>
   <li>and so much more ...</li>
 </ul>
