@@ -25,7 +25,9 @@ class XooUserRegister {
 	{
 		foreach($array as $k => $v) 
 		{
-			if ($k == 'usersultra-register') continue;
+			if ($k == 'usersultra-register' || $k == 'user_pass_confirm' || $k == 'user_pass' || $k == 'xoouserultra-register-form') continue;
+			
+			
 			$this->usermeta[$k] = $v;
 		}
 		return $this->usermeta;
@@ -453,7 +455,7 @@ class XooUserRegister {
 					 update_user_meta ($user_id, 'usersultra_account_status', 'pending_payment');
 					 
 					 //store tempassword
-					 update_user_meta ($user_id, 'usersultra_temp_password', $user_pass);
+					 //update_user_meta ($user_id, 'usersultra_temp_password', $user_pass);
 					 
 					 //package 
 					 update_user_meta ($user_id, 'usersultra_user_package_id', $package_id);

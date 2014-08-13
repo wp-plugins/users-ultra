@@ -14,20 +14,14 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.0</p>
+            <p>Version: 1.1.4</p>
             
              <p class="btn-find"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
-               <strong>CHANGELOG</strong><br /><br />
-              <strong>Version 1.1.1 - 08-05-2014: </strong>
-	<ul>
-    	
-      <li>New Feature - Terms & Conditions Option</li> 
-      <li>New Feature - Advanced Appearance & Customization Tool.</li>   
-    
-    </ul>
-    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">Check The New Profile</a></p>
+                <p class="btn-changelog"><a href="http://www.usersultra.com/#amazing_features" target="_blank">FEATURES</a></p>
+                
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">NEW PROFILE</a></p>
     
         </div>
         
@@ -54,8 +48,9 @@ global $xoouserultra;
              <div class="uultra-col">
              <h1><?php _e('Spam Protection','xoousers'); ?></h1> 
              <p> <?php _e("Users Ultra PRO comes with a IP Blocking tool that will help you to protect your website against spam attacks. Simple way to stop fake account spam!",'xoousers'); ?></p>
-            </div>    
+            </div>  
             
+             
             
             <div class="uultra-col">
              <h1><?php _e('New Features','xoousers'); ?></h1> 
@@ -121,7 +116,14 @@ global $xoouserultra;
              <div class="uultra-col">
              <h1><?php _e('Advanced Front End Publisher','xoousers'); ?></h1> 
              <p> <?php _e("Allows your user to post through their private area. It allows user to attach photos to the posts. This is useful for classified and real estate websites.",'xoousers'); ?></p>
-            </div>         
+            </div>        
+            
+            
+             <div class="uultra-col">
+             <h1><?php _e('Maitenance Features','xoousers'); ?></h1> 
+             <p> <?php _e("Keep your Users and User Meta table clean.",'xoousers'); ?></p>
+            </div>    
+             
          
          	
         

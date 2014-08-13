@@ -854,6 +854,10 @@ p.uultra-off-message{ font-size:12px !important}
 .user-ultra-sect-pro .uultra-badge-pro p.btn-full a:hover{color: #000 ; text-decoration:none}
 
 
+.user-ultra-sect-pro .uultra-badge-pro p.btn-changelog { background: #093; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #093}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-changelog a{color:#FFF;text-decoration:none;}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-changelog a:hover{color: #000 ; text-decoration:none}
+
 
 .user-ultra-sect-pro .uultra-badge-pro img.uultra-logo{ width:98%;}
 
