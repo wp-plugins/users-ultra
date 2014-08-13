@@ -50,6 +50,12 @@ global $xoouserultra;
              <p> <?php _e("Users Ultra PRO comes with a IP Blocking tool that will help you to protect your website against spam attacks. Simple way to stop fake account spam!",'xoousers'); ?></p>
             </div>  
             
+            
+             <div class="uultra-col">
+             <h1><?php _e('reCaptcha & FUNCAPTCHA','xoousers'); ?></h1> 
+             <p> <?php _e("This is a great feature to protect your website from spam and abuse. reCAPTCHA uses an advanced risk analysis engine.",'xoousers'); ?></p>
+            </div>  
+            
              
             
             <div class="uultra-col">

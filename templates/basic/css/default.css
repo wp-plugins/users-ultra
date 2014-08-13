@@ -58,14 +58,14 @@ box-sizing: border-box;
 input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input {
 	background: #fff;
 	color: #444;
-	border: 1px solid #ccc;
+	border: 1px solid #ccc !important;
 	/*box-shadow: inset 0 -1px 2px #ddd;*/
 }
 
 input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouserultra-input:focus {
 	background: #fff;
 	color: #444;
-	border: 1px solid #aaa;
+	border: 1px solid #aaa !important;
 	/*box-shadow: inset 0 -1px 2px #ddd;*/
 }
 
@@ -381,6 +381,7 @@ input.btnuultra {
     border: 0 none;
     box-shadow: none;
     min-width:250px;
+	width:260px;
     font-size: 1.5em;
     font-weight: normal;
     padding: 2px 15px 0  10px;
