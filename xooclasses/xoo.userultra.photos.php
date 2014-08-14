@@ -24,24 +24,13 @@ class XooUserPhoto {
 		add_action( 'wp_ajax_edit_gallery_confirm', array( $this, 'edit_gallery_confirm' ));
 		
 		add_action( 'wp_ajax_edit_photo', array( $this, 'edit_photo' ));
-		add_action( 'wp_ajax_edit_photo_confirm', array( $this, 'edit_photo_confirm' ));
-		
-		add_action( 'wp_ajax_edit_video_confirm', array( $this, 'edit_video_confirm' ));
-		
-		
-		
-		add_action( 'wp_ajax_edit_video', array( $this, 'edit_video' ));
-		
-		
-		
-		
+		add_action( 'wp_ajax_edit_photo_confirm', array( $this, 'edit_photo_confirm' ));		
+		add_action( 'wp_ajax_edit_video_confirm', array( $this, 'edit_video_confirm' ));	
+		add_action( 'wp_ajax_edit_video', array( $this, 'edit_video' ));	
 		add_action( 'wp_ajax_set_as_main_photo', array( $this, 'set_as_main_photo' ));
 		add_action( 'wp_ajax_sort_photo_list', array( $this, 'sort_photo_list' ));
-		add_action( 'wp_ajax_sort_gallery_list', array( $this, 'sort_gallery_list' ));
-		
-		add_action( 'wp_ajax_reload_videos', array( $this, 'reload_videos' ));
-		
-		
+		add_action( 'wp_ajax_sort_gallery_list', array( $this, 'sort_gallery_list' ));		
+		add_action( 'wp_ajax_reload_videos', array( $this, 'reload_videos' ));			
 		 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );
 		
 		

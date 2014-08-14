@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 1.3.11
+Stable tag: 1.3.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -183,7 +183,6 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
 <ul>
   <li>Users  can upload a custom avatar.</li>
   <li>Drag&amp;Drop  avatar uploader.</li>
-  <li>Users  can use Facebook Avatar</li>
   <li>Users  can use Gravatar</li>
   <li>Users  can use a main picture as avatar</li>
 </ul>
@@ -247,19 +246,23 @@ Initial release.
 
 == Screenshots ==
 
-1. Widgetized Users Profile ONLY FOR PRO
-2. Medallions and Fulfillments ONLY FOR PRO
-3. Powerful Private Messaging System
-4. Advanced Dashboard
-5. Front-End Post Publisher
-6. Profile Fields Customizer
-7. Add New Posts
-8. Drag&Drop Photo Uploading
-9. Dahsboard
+1. Private Messaging Box With Emoticons ONLY FOR PRO
+2. Widgetized Users Profile ONLY FOR PRO
+3. Medallions and Fulfillments ONLY FOR PRO
+4. Powerful Private Messaging System
+5. Advanced Dashboard
+6. Front-End Post Publisher
+7. Profile Fields Customizer
+8. Add New Posts
+9. Drag&Drop Photo Uploading
+10. Dahsboard
 
 == Changelog ==
 
-= 1.3.10 (08-12-2014) =
+= 1.3.12 (08-13-2014) =
+* Improvements - Tweaks to readme text, tweask to css style sheet.
+
+= 1.3.11 (08-12-2014) =
 * Improvements - Social buttons width. Now all the social buttons have the same width.
 * Improvements - There was an issue with some WP themes. The fields were being displayed wrong. We've tweaked the CSS style sheet.
 

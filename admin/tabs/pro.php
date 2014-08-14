@@ -14,19 +14,17 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.4</p>
+            <p>Version: 1.1.5</p>
             
              <p class="btn-find"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
-                <p class="btn-changelog"><a href="http://www.usersultra.com/#amazing_features" target="_blank">FEATURES</a></p>
-                
+                               
     <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">NEW PROFILE</a></p>
     
-        </div>
+        </div>  
         
         
-        <iframe width="70%" height="400" src="//www.youtube.com/embed/f01vuM9tp1U" frameborder="0" allowfullscreen></iframe>
         
          <div class="uultra-pro-col-features">
          
