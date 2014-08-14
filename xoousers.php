@@ -3,7 +3,7 @@
 Plugin Name: Users Ultra Lite
 Plugin URI: http://usersultra.com
 Description: This is a powerful user profiles plugin for WordPress.
-Version: 1.3.11
+Version: 1.3.12
 Author: Users Ultra
 Author URI: http://usersultra.com
 */
