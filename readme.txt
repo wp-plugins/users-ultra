@@ -53,7 +53,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <br>
 </blockquote>
 <h3><strong>USERS ULTRA FREE VERSION INCLUDES: </strong></h3>
-
+<br>
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
