@@ -25,6 +25,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
+
 </blockquote>
 <blockquote>
 <h3><strong>USERS ULTRA PRO INCLUDES: </strong></h3>
@@ -49,6 +50,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>and so much more ...</li>
 </ul>
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
+
 </blockquote>
 <h3><strong>USERS ULTRA FREE VERSION INCLUDES: </strong></h3>
 
