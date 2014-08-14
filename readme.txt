@@ -8,7 +8,7 @@ Stable tag: 1.3.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Users Ultra is the ideal plugin for creating advanced user communities in few minutes. Facebook, Twitter, LinkedIn, Yahoo, Google &  Yammer.
+Users Ultra is the ideal plugin for creating advanced user communities & networks in few minutes. Facebook, Twitter, LinkedIn, Yahoo, Google.
 
 == Description ==
 
