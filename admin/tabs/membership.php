@@ -123,13 +123,11 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
         
         </div>
         
-         <script type="text/javascript">
-		  
+         <script type="text/javascript">		  
 		 var package_error_message_name = "<?php _e('Please, input a name ','xoousers'); ?>";
-		 var package_error_message_desc = "";
-		 var package_error_message_price = "";
-		  var package_confirmation = "";
-		 
+		 var package_error_message_desc = "<?php _e('Please, input a description ','xoousers'); ?>";
+		 var package_error_message_price = "<?php _e('Please, input a price ','xoousers'); ?>";
+		  var package_confirmation = "<?php _e('Are you totally sure? ','xoousers'); ?>";		 
 		 </script>
          
           <script type="text/javascript">
