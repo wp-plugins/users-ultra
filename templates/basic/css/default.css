@@ -10,7 +10,6 @@ box-sizing: border-box;
 	display: inline-block;
 }
 
-
 .xoouserultra-head {
 	background: #f5f5f5;
 }
@@ -59,14 +58,12 @@ input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input
 	background: #fff;
 	color: #444;
 	border: 1px solid #ccc !important;
-	/*box-shadow: inset 0 -1px 2px #ddd;*/
 }
 
 input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouserultra-input:focus {
 	background: #fff;
 	color: #444;
 	border: 1px solid #aaa !important;
-	/*box-shadow: inset 0 -1px 2px #ddd;*/
 }
 
 .xoouserultra-help {
@@ -938,8 +935,6 @@ width:90%
 .usersultra-dahsboard-cont .gallery-list ul{
 	
 	width:100%;
-	
-	
 }
 
 .usersultra-dahsboard-cont .gallery-list ul li{
@@ -960,7 +955,6 @@ width:90%
 	margin:5px 0px 5px 0px;
 	line-height:11px;
 	color:#999;
-
 }
 
 .usersultra-dahsboard-cont .gallery-list ul li p.usersultra-amount_pictures{ 
@@ -998,12 +992,8 @@ position: absolute; width:200px; min-height:30px; height:auto; background: #F5F5
 .usersultra-dahsboard-cont .uultra-photo-edit p{
 	margin:5px 0px 5px 0px;
 	text-align:left !important;
-
-
 	
 }
-
-
 
 .usersultra-dahsboard-cont .gallery-list ul li a{ 
 
@@ -1037,7 +1027,6 @@ box-shadow: 0px ;
 	
 	margin:15px 0px 0px 0px;
 	width:100%;
-	
 	
 }
 
@@ -1090,7 +1079,6 @@ box-shadow: 0px ;
 	
 	width:100%;
 	
-	
 }
 
 /*End Video List*/
@@ -1103,7 +1091,6 @@ box-shadow: 0px ;
 	padding-top:10px;
 	padding-bottom:30px;
 	position:relative;
-	
 	
 }
 

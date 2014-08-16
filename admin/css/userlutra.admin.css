@@ -812,17 +812,15 @@ i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.p
 .user-ultra-sect-pro-sub { padding:10px; position:relative}
 .user-ultra-sect-pro-sub p{ font-size:11px; text-align:right; margin:0px}
 
-.uultra-pro-tab-bubble {
+.uultra-pro-tab-bubble { 
+    background-color: #4AD6C8;
+    color:white;  
 
-   
+}
 
-
-    background-color: #3e98a1;
-
-    color:white;
-
-	
-   
+.uultra-pro-tab-bubble:hover { 
+    background-color: #45c6b9;
+    color:white;  
 
 }
 
@@ -845,13 +843,15 @@ p.uultra-off-message{ font-size:12px !important}
 .user-ultra-sect-pro .uultra-badge-pro  p{ text-align:center;}
 
 
-.user-ultra-sect-pro .uultra-badge-pro p.btn-find { background:#3e98a1; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #267c85}
-.user-ultra-sect-pro .uultra-badge-pro p.btn-find a{color:#FFF;text-decoration:none;}
-.user-ultra-sect-pro .uultra-badge-pro p.btn-find a:hover{color: #000 ; text-decoration:none}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-find { background:#F1C75E !important; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #F1C75E !important; border-radius:4px !important}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-find a{color:#000080;text-decoration:none;}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-find a:hover{color: #4169E1 !important; text-decoration:none}
 
-.user-ultra-sect-pro .uultra-badge-pro p.btn-full { background:#f37936; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #d35c1a}
+
+
+.user-ultra-sect-pro .uultra-badge-pro p.btn-full { background:#4AD6C8; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #4AD6C8; border-radius:4px !important}
 .user-ultra-sect-pro .uultra-badge-pro p.btn-full a{color:#FFF;text-decoration:none;}
-.user-ultra-sect-pro .uultra-badge-pro p.btn-full a:hover{color: #000 ; text-decoration:none}
+.user-ultra-sect-pro .uultra-badge-pro p.btn-full a:hover{color: #4169E1 ; text-decoration:none}
 
 
 .user-ultra-sect-pro .uultra-badge-pro p.btn-changelog { background: #093; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #093}
