@@ -3232,8 +3232,8 @@ class XooUserUser {
             'use_in_sidebar' => null,
             'users_are_called' => 'Users',
             'combined_search_text' => 'type user name here',
-            'button_text' => 'Search',
-            'reset_button_text' =>'Reset'
+            'button_text' => 'Search', 
+            'reset_button_text' =>'Reset' 
         );
 
         $this->search_args = wp_parse_args($args, $defaults);
