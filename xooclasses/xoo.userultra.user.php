@@ -2970,6 +2970,32 @@ class XooUserUser {
 	
 	}
 	
+	public function get_user_account_type_info($user_id)
+	{		
+		global $wpdb,  $xoouserultra;
+		
+		$result = array();
+		
+		$current_package_id = get_user_meta($user_id, 'usersultra_user_package_id', true);	
+		
+		$current_user_package = $xoouserultra->paypal->get_package($current_package_id);		
+		$amount = $current_user_package->package_amount;
+		
+		if($amount==0)
+		{
+			$result = array('id' =>0, 'name' => __('Free','xoousers'), 'price' => 0, 'creation' => 0 , 'expiraton' => 0);		
+		
+		}else{
+			
+			$result = array('id' => $current_package_id, 'name' => $current_user_package->package_name, 'price' =>$amount, 'creation' => 0 , 'expiraton' => 0);
+			
+		
+		}
+		
+		return $result;
+	
+	}
+	
 	
 	
 	/**

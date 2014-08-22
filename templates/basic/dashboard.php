@@ -672,8 +672,39 @@ $howmany = 5;
        
 		<div class="commons-panel xoousersultra-shadow-borers" >
         
-        <div class="commons-panel-heading">
+        
+        
+                        <div class="commons-panel-heading">
                               <h2> <?php  _e('My Account','xoousers');?>  </h2>
+                     </div>  
+                     
+                     <div class="commons-panel-content">
+                     
+                     <?php 
+					 
+					 $user_package_info = 	$xoouserultra->userpanel->get_user_account_type_info($user_id);
+					 
+					 $current_user = wp_get_current_user();					 
+					 $acc_creation_date = date("m/d/Y", strtotime($current_user->user_registered));
+					 
+					 $current_package_id = $user_package_info["id"];
+					 $current_package_name = $user_package_info["name"];
+					 $current_package_amount = $user_package_info["price"];	
+					 
+					 $html= '<div class="uultra-account-type"><p><span>'.__('Account ID: ').'</span> '.$user_id.' <span>'.__('Registered Date: ').'</span> '.$acc_creation_date.' <span>'.__('Account Type: ').'</span> '.$current_package_name.'</p></div>';
+					 
+					 echo $html;
+					 
+					 ?>
+                     
+                    
+                     
+                     
+                     </div> 
+                     
+        
+        <div class="commons-panel-heading">
+                              <h2> <?php  _e('Close Account','xoousers');?>  </h2>
                      </div>
         
                     
