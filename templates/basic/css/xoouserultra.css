@@ -1,4 +1,3 @@
-
 .xoouserultra-wrap {
 	float:none;
 	width: 100%;
@@ -8,8 +7,6 @@
 
 .fa-icon-none{ border-color: #FFF !important}
 .fa-none{ border-color: #FFF !important}
-
-
 /*Check box styles*/
 
 .xoouserultra-wrap input[type=checkbox]:not(old),
@@ -585,11 +582,7 @@ p.xoouserultra-login-spacer {
 
 	margin:15px auto 15px auto; height:auto; padding:5px;
 
-	
-	
 }
-
-
 
 .in_sidebar
 {
@@ -769,7 +762,3 @@ a.uultra-btn-delpostimg:hover{
 }
 
 /* end post Images*/
-
-
-
-
