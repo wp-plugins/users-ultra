@@ -68,6 +68,11 @@ global $xoouserultra;
             </div>
             
               <div class="uultra-col">
+             <h1><?php _e('One and Two Columns Profile','xoousers'); ?></h1> 
+             <p> <?php _e("The new user's profile template will let you create a beutiful user's profile with one, two or three columns with just one click.",'xoousers'); ?></p>
+            </div>
+            
+              <div class="uultra-col">
              <h1><?php _e('Badges & Achievement','xoousers'); ?></h1> 
              <p> <?php _e("Create and award badges to your users manually, or based on what they accomplish.",'xoousers'); ?></p>
             </div>
