@@ -2,8 +2,14 @@
 class XooUserLogin {
 	
 	var $mIsSocialLogin;
-
+	
 	function __construct() 
+	{
+		 add_action( 'init', array($this, 'handle_init' ) );
+		
+	}
+
+	function handle_init() 
 	{
 		/*-----------Referece Social Users Types*/
 		/* 1 - Facebook, 2 - LinkedIn,  3- Yahoo, 4 - Google, 5 - Twitter , 6 - yammer */
