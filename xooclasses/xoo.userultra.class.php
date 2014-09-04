@@ -1164,12 +1164,15 @@ class XooUserUltra
 		wp_register_style( 'xoouserultra_uploader_css', xoousers_url.'libs/uploader/drag-drop-uploader.css');
 		wp_enqueue_style('xoouserultra_uploader_css');
 		
-		//lightbox
-		wp_register_style( 'xoouserultra_lightbox_css', xoousers_url.'js/lightbox/css/lightbox.css');
-		wp_enqueue_style('xoouserultra_lightbox_css');
-		
-		wp_register_script( 'xoouserultra_lightboxjs', xoousers_url.'js/lightbox/js/lightbox-2.6.min.js',array('jquery'));
-		wp_enqueue_script('xoouserultra_lightboxjs');
+		if($this->get_option('disable_default_lightbox')!=1)
+		{
+			//lightbox
+			wp_register_style( 'xoouserultra_lightbox_css', xoousers_url.'js/lightbox/css/lightbox.css');
+			wp_enqueue_style('xoouserultra_lightbox_css');
+			
+			wp_register_script( 'xoouserultra_lightboxjs', xoousers_url.'js/lightbox/js/lightbox-2.6.min.js',array('jquery'));
+			wp_enqueue_script('xoouserultra_lightboxjs');
+		}
 		
 		/*Validation Engibne JS*/		
 			

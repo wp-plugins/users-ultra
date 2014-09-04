@@ -19,6 +19,15 @@ $this->create_plugin_setting(
                 __('If checked, User will not see the WP Admin Tool Bar','xoousers'),
                 __('If checked, User will not see the WP Admin Tool Bar.','xoousers')
         ); 
+
+$this->create_plugin_setting(
+                'checkbox',
+                'disable_default_lightbox',
+                __('Disable Default Ligthbox','xoousers'),
+                '1',
+                __("If checked, the default lightbox files included in the plugin won't be loaded",'xoousers'),
+                __("If checked, the default lightbox files included in the plugin won't be loaded",'xoousers')
+        ); 
 		
 
 $this->create_plugin_setting(
