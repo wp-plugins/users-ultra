@@ -679,7 +679,7 @@ class XooPaypalPayment
 				if($package->package_time_period=="Y"){$y = 'selected="selected"';} 
 			 
 			 
-                 $html .= '<option value="M" '.$m.'>Months</option>
+                 $html .= '<option value="M" '.$m.'>'.__('Months','xoousers').'</option>
 				  <option value="W" '.$w.'>Weeks</option>
                  <option value="D" '.$d.'>Days</option>
                   <option value="Y" '.$y.'>Years</option>
