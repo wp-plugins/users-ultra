@@ -134,7 +134,7 @@ class XooPublisher
                  
                  <div class="tablenav_post">
                 
-                <p><a class="uultra-btn-commm" href="?module=posts" title="<?php echo __('Back','xoousers')?>" ><span><i class="fa fa-angle-double-left  fa-lg"></i></span> Back </a></p>
+                <p><a class="uultra-btn-commm" href="?module=posts" title="<?php echo __('Back','xoousers')?>" ><span><i class="fa fa-angle-double-left  fa-lg"></i></span> <?php echo __('Back:','xoousers')?> </a></p>
 					                    
                                         
 				</div>
@@ -192,7 +192,7 @@ class XooPublisher
                  
                 <?php       
 				
-				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15); 
+				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15 , 'teeny' =>true); 
 				
 				$content = $post->post_content;     
                 
@@ -361,7 +361,7 @@ class XooPublisher
                  
                 <?php       
 				
-				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15);      
+				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15 , 'teeny' =>true);      
                 
                  wp_editor( $content, $editor_id , $editor_settings);
                 

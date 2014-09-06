@@ -680,9 +680,9 @@ class XooPaypalPayment
 			 
 			 
                  $html .= '<option value="M" '.$m.'>'.__('Months','xoousers').'</option>
-				  <option value="W" '.$w.'>Weeks</option>
-                 <option value="D" '.$d.'>Days</option>
-                  <option value="Y" '.$y.'>Years</option>
+				  <option value="W" '.$w.'>'.__('Weeks','xoousers').'</option>
+                 <option value="D" '.$d.'>'.__('Days','xoousers').'</option>
+                  <option value="Y" '.$y.'>'.__('Years','xoousers').'</option>
 				  
              </select></td>
            </tr>
@@ -699,8 +699,8 @@ class XooPaypalPayment
 			    if($package->package_approvation=="yes"){$m = 'selected="selected"';} 
 			    if($package->package_approvation=="no"){$w = 'selected="selected"';}
 							 
-                 $html .= '<option value="yes" '.$m.'>Yes</option>
-				  <option value="no" '.$w.'>No</option>
+                 $html .= '<option value="yes" '.$m.'>'.__('Yes','xoousers').'</option>
+				  <option value="no" '.$w.'>'.__('No','xoousers').'</option>
                
 				  
              </select></td>
@@ -774,19 +774,12 @@ class XooPaypalPayment
 	{
 		global $wpdb,  $xoouserultra;
 		
-		$html = "";
-		
-		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
-		
-		
-			
+		$html = "";		
+		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');			
 		$packages = $this->get_packages_private();
 				
 		if (!empty($packages)){
 				
-				
-				
-        
         
            $html .='<table class="wp-list-table widefat fixed posts">
             <thead>
