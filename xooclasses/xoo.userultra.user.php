@@ -1440,20 +1440,27 @@ class XooUserUser {
 				}
 				
 				$html .= '<div class="xoouserultra-field-value">';
+				
+				if ($can_edit == 0)
+				{
+                                $disabled = 'disabled="disabled"';
+			 	}else{
+                                $disabled = null;
+               }
 					
 					switch($field) {
 					
 						case 'textarea':
-							$html .= '<textarea class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'">'.$this->get_user_meta( $meta).'</textarea>';
+							$html .= '<textarea class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'" '.$disabled.'>'.$this->get_user_meta( $meta).'</textarea>';
 							break;
 							
 						case 'text':
-							$html .= '<input type="text" class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_user_meta( $meta).'"  title="'.$name.'" />';
+							$html .= '<input type="text" class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_user_meta( $meta).'"  title="'.$name.'" '.$disabled.' />';
 							break;
 							
 							
 						case 'datetime':
-						    $html .= '<input type="text" class="xoouserultra-input'.$required_class.' xoouserultra-datepicker" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_user_meta( $meta).'"  title="'.$name.'" />';
+						    $html .= '<input type="text" class="xoouserultra-input'.$required_class.' xoouserultra-datepicker" name="'.$meta.'" id="'.$meta.'" value="'.$this->get_user_meta( $meta).'"  title="'.$name.'" '.$disabled.' />';
 						    break;
 							
 						case 'select':
@@ -1469,7 +1476,7 @@ class XooUserUser {
 							
 							if (isset($loop)) 
 							{
-								$html .= '<select class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'">';							
+								$html .= '<select class="xoouserultra-input'.$required_class.'" name="'.$meta.'" id="'.$meta.'" title="'.$name.'" '.$disabled.'>';							
 								
 								
 								foreach($loop as $sh) 
@@ -1504,7 +1511,7 @@ class XooUserUser {
 								    
 								    $option = trim($option);
 									
-									$html .= '<label class="xoouserultra-radio"><input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" value="'.$option.'" '.checked( $this->get_user_meta( $meta), $option, 0 );
+									$html .= '<label class="xoouserultra-radio"><input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" '.$disabled.' value="'.$option.'" '.checked( $this->get_user_meta( $meta), $option, 0 );
 									$html .= '/> <label for="'.$meta.'"><span></span>'.$option.'</label> </label>';
 									
 									$counter++;
@@ -1528,7 +1535,7 @@ class XooUserUser {
 								        $required_class = '';
 								  
 								  $option = trim($option);
-									$html .= '<label class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" value="'.$option.'" ';
+									$html .= '<label class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" '.$disabled.' value="'.$option.'" ';
 									
 									 $values = explode(', ', $this->get_user_meta($meta));
 									
