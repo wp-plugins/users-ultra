@@ -962,8 +962,7 @@ class XooUserLogin {
 			wp_redirect($my_account_url);			
 			exit;
 			
-		}
-		
+		}		
 	
 	}
 	
@@ -985,8 +984,7 @@ class XooUserLogin {
 			{
 				
 				require_once(xoousers_path."libs/twitterapi/twitteroauth.php");
-			}
-			
+			}			
 			$this->twitter = new TwitterOAuth(  $xoouserultra->get_option('twitter_consumer_key') , $xoouserultra->get_option('twitter_consumer_secret') );
 			
 		}

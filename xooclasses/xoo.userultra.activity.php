@@ -77,10 +77,6 @@ class XooActivity
      }
 	
 	
-	
-	
-	
-	
 
 }
 $key = "activity";

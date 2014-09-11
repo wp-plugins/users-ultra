@@ -675,7 +675,7 @@ class XooUserMyMessage {
 	
   <div class="tablenav">
                 
-               <span style="float:left"><a href="?module=messages">Inbox</a> | <a href="?module=messages_sent">Outbox</a></span>
+               <span style="float:left"><a href="?module=messages"><?php _e( 'Inbox', 'xoousers' ); ?></a> | <a href="?module=messages_sent">Outbox</a></span>
 					                    
                    
 		<?php

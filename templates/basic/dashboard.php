@@ -861,9 +861,7 @@ $howmany = 5;
                                     
                                                                        
                                 <ul id="usersultra-videolist" class="usersultra-video-private">
-                                       <?php  _e('loading videos ...','xoousers');?>
-                                      
-                                     
+                                       <?php  _e('please wait, loading videos ...','xoousers');?>
                                  </ul>
                           
                           </div>
@@ -871,8 +869,7 @@ $howmany = 5;
                      
                            
                                          
-                      </div>         
-                     
+                      </div>                           
      
                
                <script type="text/javascript">
