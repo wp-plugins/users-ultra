@@ -176,6 +176,26 @@
                     ]
                 },
 				
+				//misc
+			   {
+                    text: 'Miscellaneous',
+                    value: 'Miscellaneous',
+                    onclick: function() {
+                        editor.insertContent(this.value());
+                    },
+                    menu: [
+                        {
+                            text: 'Front End Publisher',
+                            value: "[usersultra_front_publisher] ",
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } 
+						
+						
+                    ]
+                },
 				
 				//users
 			   {
