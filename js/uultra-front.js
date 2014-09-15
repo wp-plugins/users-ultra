@@ -264,10 +264,6 @@ if(typeof $ == 'undefined'){
 					
 						jQuery("#uultra-reset-p-noti-box").html(data);
 						jQuery("#uultra-reset-p-noti-box").slideDown();
-						//setTimeout("hidde_noti('uultra-reset-p-noti-box')", 3000)	;			
-												
-												
-						
 						}
 				});
 			
@@ -528,3 +524,9 @@ function hidde_noti (div_d)
 		
 }
 
+// Adding jQuery Datepicker
+jQuery(function() {
+	jQuery( ".xoouserultra-datepicker" ).datepicker({changeMonth:true,changeYear:true,yearRange:"1940:2014"});
+
+	jQuery("#ui-datepicker-div").wrap('<div class="ui-datepicker-wrapper" />');
+});

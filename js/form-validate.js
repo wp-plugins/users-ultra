@@ -4,15 +4,12 @@ if(typeof $ == 'undefined'){
 (function($) {
     $(document).ready(function () { 
 	
-	   "use strict";
-       
+	   "use strict";       
 		
 		$(document).on("click", "#xoouserultra-register-btn", function(e) {
 			
-			e.preventDefault();
-			
-			var validation = true;
-			
+			e.preventDefault();			
+			var validation = true;			
 			//get all with required class
 			
 			$( ".required" ).each(function( index ) {
@@ -34,9 +31,6 @@ if(typeof $ == 'undefined'){
 					
 				
 				}
-				//alert(jQuery(this).attr("id") + " "+field_txt);
-				
-				
 
 			
 			});
@@ -48,11 +42,6 @@ if(typeof $ == 'undefined'){
 			
 			}
 			
-			
-			
-			
-			
-			
 			 // Cancel the default action
 			 return false;
     		e.preventDefault();
@@ -61,14 +50,6 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		
-		
-		
-		
-		
-		   
- 
-       
     }); //END READY
 })(jQuery);
 

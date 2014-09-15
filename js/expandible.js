@@ -83,7 +83,6 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		//$('.display_gallery_pictures').live('click', function(event) {
 			
 		$('body').on('click', '.display_gallery_pictures', function() {
 			

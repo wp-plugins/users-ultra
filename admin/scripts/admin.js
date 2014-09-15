@@ -1,4 +1,3 @@
-
 var $ = jQuery;
 
 jQuery(document).ready(function($) {
@@ -49,7 +48,6 @@ jQuery(document).ready(function($) {
 	{
 		
 		e.preventDefault();
-			
 		jQuery("#uultra-add-new-custom-field-frm").slideDown();				
 		return false;
 	});
@@ -64,8 +62,6 @@ jQuery(document).ready(function($) {
 		  
 		  if(doIt)
 		  {
-			// jQuery("#uultra-sucess-delete-fields").slideDown();	
-			  
 				jQuery.ajax({
 						type: 'POST',
 						url: ajaxurl,
@@ -119,14 +115,10 @@ jQuery(document).ready(function($) {
 						
 						success: function(data){					
 						
-							//alert("a");	
-							
 							jQuery("#uultra-sucess-delete-fields-"+p_id).slideDown();
 						    setTimeout("hidde_noti('uultra-sucess-delete-fields-" + p_id +"')", 3000);
 							jQuery( "#"+p_id ).addClass( "uultra-deleted" );
 							setTimeout("hidde_noti('" + p_id +"')", 5000);
-							
-													
 							
 							
 							}
@@ -192,8 +184,6 @@ jQuery(document).ready(function($) {
 						jQuery("#uultra-sucess-fields-"+key_id).slideDown();
 						setTimeout("hidde_noti('uultra-sucess-fields-" + key_id +"')", 3000)		
 						
-							 							
-							
 							
 							}
 					});
@@ -208,9 +198,6 @@ jQuery(document).ready(function($) {
 	/* 	FIELDS CUSTOMIZER - Add New Field Data */
 	jQuery('#uultra-btn-add-field-submit').live('click',function(e){
 		e.preventDefault();
-		
-		
-		  
 		
 		var _position = $("#uultra_position").val();		
 		var _type =  $("#uultra_type").val();
@@ -293,14 +280,6 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 	
-	
-	
-	
-	
-	
-	
-
-
     /* close package form */
 	jQuery('.uultra-package-edit').live('click',function(e){
 		e.preventDefault();
@@ -499,7 +478,6 @@ jQuery(document).ready(function($) {
 						success: function(data){					
 						
 								$("#uultra-user-acti-noti").html(data);
-								//jQuery("#package-edit-noti-mess-"+p_id).slideDown();
 								setTimeout("reload_pending_moderation()", 2000);	
 								setTimeout("reload_pending_payment()", 2000);					
 							
@@ -558,7 +536,6 @@ jQuery(document).ready(function($) {
 						success: function(data){					
 						
 								$("#uultra-user-acti-noti").html(data);
-								//jQuery("#package-edit-noti-mess-"+p_id).slideDown();
 								setTimeout("reload_pending_moderation()", 2000);
 								setTimeout("reload_pending_payment()", 2000);						
 							
@@ -709,12 +686,6 @@ jQuery(document).ready(function($) {
 						"user_id": user_id },
 						
 						success: function(data){			
-									
-						
-							//jQuery("#uu-edit-user-box-"+user_id).html(data);
-							//jQuery("#uu-edit-user-box-"+user_id).slideDown();							
-							
-							
 							}
 					});
 			
