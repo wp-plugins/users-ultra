@@ -266,7 +266,7 @@ Initial release.
 == Changelog ==
 
 = 1.3.28 (09-11-2014) =
-* Bug Fix - Data Picker field has been improved since we have received some issues with some custom WP themes. Please update.
+* Bug Fix - Date Picker field has been improved since we have received some issues with some custom WP themes. Please update.
 
 = 1.3.27 (09-11-2014) =
 * New Feature - New Shortcode has been added that will allow you to include the Front-End Publisher in any page.
