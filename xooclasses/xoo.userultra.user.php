@@ -169,9 +169,13 @@ class XooUserUser {
 		 
 		 if($custom_message_loggedin == "")
 		 {
-				$custom_message_loggedin =  __('Content visible only for registered users. ','xoousers');
+			$custom_message_loggedin =  __('Content visible only for registered users. ','xoousers');
 					
-		 }
+		 }elseif($custom_message_loggedin == "_blank"){
+			 
+			 $custom_message_loggedin =  "";		 
+		
+		}
 		 
 		 if($membership_id != "")
 		 {
