@@ -314,6 +314,46 @@ $this->create_plugin_setting(
 	__('Please note: Paid Activation does not work with social connects at this moment.','xoousers'),
   __('Please note: Paid Activation does not work with social connects at this moment.','xoousers')
        );
+	   
+	   
+	    // Captcha Plugin Selection Start
+                $this->create_plugin_setting(
+                        'select',
+                        'captcha_plugin',
+                        __('Captcha Plugin', 'xoousers'),
+                        array(
+                            'none' => __('None', 'xoousers'),
+                           
+                            'recaptcha' => __('reCaptcha', 'xoousers')
+                        ),
+                        __('By activating this setting reCaptcha will be displayed in the registration form. <br /> ', 'xoousers'),
+                        __('If you are using a captcha that requires a plugin, you must install and activate the selected captcha plugin. Some captcha plugins require you to register a free account with them.', 'xoousers')
+                );
+// Captcha Plugin Selection End
+
+                $this->create_plugin_setting(
+                        'input',
+                        'captcha_label',
+                        __('CAPTCHA Field Label', 'xoousers'), array(),
+                        __('Enter text which you want to show in form in front of CAPTCHA.', 'xoousers'),
+                        __('Enter text which you want to show in form in front of CAPTCHA.', 'xoousers')
+                );
+
+                $this->create_plugin_setting(
+                        'input',
+                        'recaptcha_public_key',
+                        __('reCaptcha Public Key', 'xoousers'), array(),
+                        __('Enter your reCaptcha Public Key. You can sign up for a free reCaptcha account <a href="http://www.google.com/recaptcha" title="Get a reCaptcha Key" target="_blank">here</a>.', 'xoousers'),
+                        __('Your reCaptcha kays are required to use reCaptcha. You can register your site for a free key on the Google reCaptcha page.', 'xoousers')
+                );
+
+                $this->create_plugin_setting(
+                        'input',
+                        'recaptcha_private_key',
+                        __('reCaptcha Private Key', 'xoousers'), array(),
+                        __('Enter your reCaptcha Private Key.', 'xoousers'),
+                        __('Your reCaptcha kays are required to use reCaptcha. You can register your site for a free key on the Google reCaptcha page.', 'xoousers')
+                );
     
     
 ?>

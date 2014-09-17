@@ -36,7 +36,7 @@ class XooUserRegister {
 	/*Handle/return any errors*/
 	function uultra_handle_errors() 
 	{
-	    global $usersultra_captcha_loader;
+	    global $xoouserultra;
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
@@ -83,9 +83,9 @@ class XooUserRegister {
 				
 		     }
 		    
-		    if(!is_in_post('no_captcha','yes'))
+		   if(!is_in_post('no_captcha','yes'))
 		    {
-		        if(!$usersultra_captcha_loader->validate_captcha(post_value('captcha_plugin')))
+		        if(!$xoouserultra->captchamodule->validate_captcha(post_value('captcha_plugin')))
 		        {
 		            $this->errors[] = __('<strong>ERROR:</strong> Please complete Captcha Test first.','xoousers');
 		        }

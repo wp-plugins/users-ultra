@@ -62,13 +62,13 @@ class XooUserUltra
 	public function set_main_classes()
 	{
 		 $this->classes_array = array( "commmonmethods" =>"xoo.userultra.common" ,
-		/* "captchamodule" =>"xoo.userultra.captchamodules", */
 		
+		 "captchamodule" =>"xoo.userultra.captchamodules",		
 		  "htmlbuilder" =>"xoo.userultra.htmlbuilder" ,
 		  "publisher" =>"xoo.userultra.publisher" ,
 		  "activity" =>"xoo.userultra.activity" ,
 		  "messaging" =>"xoo.userultra.messaging" ,  
-		  /*"recaptchalib" =>"xoo.ulserultra.recaptchalib",  */
+		  "recaptchalib" =>"xoo.userultra.recaptchalib",  
 		  "order" =>"xoo.userultra.order",
 		  "subscribe" =>"xoo.userultra.newslettertool",
 		  "paypal" =>"xoo.userultra.payment.paypal"  ,
@@ -1732,11 +1732,13 @@ class XooUserUltra
 		$pic_class = 'xoouserultra-pic';
 		if(is_safari())
 		    $pic_class = 'xoouserultra-pic safari';
-		
+			
 		// Default set to blank
 		$this->captcha = '';
-		if(isset($captcha))
-		    $this->captcha = $captcha;
+		$captpcha_status = $this->get_option("captcha_plugin");
+		if($captpcha_status!=""){
+		    $this->captcha = $captpcha_status;
+		}
 		
 		$sidebar_class = null;
 		if ($use_in_sidebar) $sidebar_class = 'xoouserultra-sidebar';
@@ -2210,15 +2212,7 @@ class XooUserUltra
 			}
 		}
 		
-		//$display.=$xoousers_captcha_loader->load_captcha($this->captcha);
 		
-		if($this->use_captcha == 'yes')
-		{
-		    
-		}else{
-			
-		  $display.='<input type="hidden" name="no_captcha" value="yes" />';
-		}
 		
 		
 		/*If we are using Paid Registration*/		
@@ -2247,6 +2241,11 @@ class XooUserUltra
 			
 		
 		}
+		
+		
+		$display.=$this->captchamodule->load_captcha($this->captcha);
+		
+		$display .= '<div class="xoouserultra-clear">&nbsp;</div>';
 		
 		
 		$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">
