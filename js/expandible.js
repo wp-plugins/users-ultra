@@ -758,7 +758,7 @@ if(typeof $ == 'undefined'){
 
 function sortable_list ()
 {
-	 var itemList = $('#usersultra-photolist');
+	 var itemList = jQuery('#usersultra-photolist');
 
     itemList.sortable({
         update: function(event, ui) {
@@ -775,13 +775,13 @@ function sortable_list ()
                     order: itemList.sortable('toArray').toString() // Passes ID's of list items in  1,3,2 format
                 },
                 success: function(response) {
-                    $('#loading-animation').hide(); // Hide the loading animation
+                    jQuery('#loading-animation').hide(); // Hide the loading animation
                     return; 
                 },
                 error: function(xhr,textStatus,e) {  // This can be expanded to provide more information
                     alert(e);
                     // alert('There was an error saving the updates');
-                    $('#loading-animation').hide(); // Hide the loading animation
+                    jQuery('#loading-animation').hide(); // Hide the loading animation
                     return; 
                 }
             };
@@ -794,7 +794,7 @@ function sortable_list ()
 //-------USERS GALLERY SORTABLE
 function sortable_gallery_list ()
 {
-	 var itemList = $('#usersultra-gallerylist');
+	 var itemList = jQuery('#usersultra-gallerylist');
 
     itemList.sortable({
         update: function(event, ui) {
@@ -811,17 +811,17 @@ function sortable_gallery_list ()
                     order: itemList.sortable('toArray').toString() // Passes ID's of list items in  1,3,2 format
                 },
                 success: function(response) {
-                    $('#loading-animation').hide(); // Hide the loading animation
+                   jQuery('#loading-animation').hide(); // Hide the loading animation
                     return; 
                 },
                 error: function(xhr,textStatus,e) {  // This can be expanded to provide more information
                     alert(e);
                     // alert('There was an error saving the updates');
-                    $('#loading-animation').hide(); // Hide the loading animation
+                   jQuery('#loading-animation').hide(); // Hide the loading animation
                     return; 
                 }
             };
-            $.ajax(opts);
+            jQuery.ajax(opts);
         }
     }); 
 	
