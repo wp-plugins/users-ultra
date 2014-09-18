@@ -31,12 +31,14 @@ class XooUserAdminShortCode
 			add_filter('mce_external_plugins',  array(&$this,'respo_add_shortcode_tinymce_plugin') );
 			add_filter('mce_buttons',   array(&$this,'respo_register_shortcode_button'));
 			
+			wp_enqueue_script( 'editor_plugin_short_options', xoousers_url.'/admin/scripts/editor_plugin_short_options.js', array( 'jquery' ),'5.6.0',true);
+		
+			
 		endif;
 	}
 
 	function respo_register_shortcode_button($buttons) 
 	{
-		wp_enqueue_script( 'editor_plugin_short_options', xoousers_url.'/admin/scripts/editor_plugin_short_options.js', array( 'jquery' ),'5.6.0',true);
 		
 		array_push($buttons, "|", "uultra_shortcodes_button");
 		return $buttons;
