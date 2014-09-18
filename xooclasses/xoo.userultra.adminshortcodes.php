@@ -36,6 +36,7 @@ class XooUserAdminShortCode
 
 	function respo_register_shortcode_button($buttons) 
 	{
+		wp_enqueue_script( 'editor_plugin_short_options', xoousers_url.'/admin/scripts/editor_plugin_short_options.js', array( 'jquery' ),'5.6.0',true);
 		
 		array_push($buttons, "|", "uultra_shortcodes_button");
 		return $buttons;
@@ -43,7 +44,7 @@ class XooUserAdminShortCode
 
 	function respo_add_shortcode_tinymce_plugin($plugin_array) 
 	{
-			wp_enqueue_script( 'editor_plugin_short_options', xoousers_url.'/admin/scripts/editor_plugin_short_options.js', array( 'jquery' ),'5.6.0',true);
+			
 		
 		$plugin_array['USERSULTRAShortcodes'] = xoousers_url . '/admin/scripts/editor_plugin.js';
 		return $plugin_array;
