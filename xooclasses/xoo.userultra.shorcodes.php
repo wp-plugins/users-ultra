@@ -149,7 +149,13 @@ class XooShortCode {
 		global $xoouserultra;		
 			
 		//display publisher
-		return $xoouserultra->show_front_publisher( $atts );		
+			
+		
+		if (is_user_logged_in()) 
+		{
+			return $xoouserultra->show_front_publisher( $atts );		
+			
+		}	
 
 	
 	}
