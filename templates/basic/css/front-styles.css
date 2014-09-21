@@ -2179,13 +2179,13 @@ a.uultra-btn-friend:hover{
 .ratebox p{ font-size:12px !important; color: #000;padding:2px 0 0 5px; margin:5px 0px 5px 0px; height:12px; text-align:center !important}
 
 
-.ratebox .star-rating { margin:0 auto 0 auto; padding:0;	background: url(../img/star.png) left -1000px repeat-x;}
-.ratebox .star-rating a:hover {	background: url(../img/star.png) left -1000px repeat-x;}
-.ratebox .star-rating a:active {	background: url(../img/star.png) left -1000px repeat-x;}
-.ratebox .star-rating a:focus {	background: url(../img/star.png) left -1000px repeat-x;}
-.ratebox .star-rating .current-rating{margin:0; padding:0;background: url(../img/star.png) left -1000px repeat-x;}
+.ratebox .uultra-star-rating { margin:0 auto 0 auto; padding:0;	background: url(../img/star.png) left -1000px repeat-x;}
+.ratebox .uultra-star-rating a:hover {	background: url(../img/star.png) left -1000px repeat-x;}
+.ratebox .uultra-star-rating a:active {	background: url(../img/star.png) left -1000px repeat-x;}
+.ratebox .uultra-star-rating a:focus {	background: url(../img/star.png) left -1000px repeat-x;}
+.ratebox .uultra-star-rating .current-rating{margin:0; padding:0;background: url(../img/star.png) left -1000px repeat-x;}
 	
-.ratebox .star-rating{
+.ratebox .uultra-star-rating{
 	position:relative;
 	width:122px;
 	height:23px;
@@ -2195,10 +2195,10 @@ a.uultra-btn-friend:hover{
 	padding:0;
 	background-position: left top;  margin:5px auto 0 auto;
 }
-.ratebox .star-rating li{
+.ratebox .uultra-star-rating li{
 	display: inline !important ;border:none !important; margin:0x !important; height:25px !important; 
 }
-.ratebox .star-rating a {
+.ratebox .uultra-star-rating a {
 	position:absolute;
 	top:0;
 	left:0;
@@ -2209,7 +2209,7 @@ a.uultra-btn-friend:hover{
 	overflow:hidden;
 	border: none;
 } 
-.ratebox .star-rating .current-rating{
+.ratebox .uultra-star-rating .current-rating{
 	position:absolute;
 	top:0;
 	left:0;
@@ -2223,15 +2223,15 @@ a.uultra-btn-friend:hover{
 	margin:0 !important;
 	padding:0;
 }
-.ratebox .star-rating a:hover {	background-position: left bottom;}
-.ratebox .star-rating a:active {	background-position: left bottom;}
-.ratebox .star-rating a:focus{	background-position: left bottom;}
-.ratebox .star-rating a.one-star{width:20%;	z-index:6;}
-.ratebox .star-rating a.two-stars{	width:40%;	z-index:5;}
-.ratebox .star-rating a.three-stars{width:60%;z-index:4;}
-.ratebox .star-rating a.four-stars{	width:80%;	z-index:3;}
-.ratebox .star-rating a.five-stars{	width:100%;z-index:2;}
-.ratebox .star-rating .current-rating{z-index:1;background-position: left center; }	
+.ratebox .uultra-star-rating a:hover {	background-position: left bottom;}
+.ratebox .uultra-star-rating a:active {	background-position: left bottom;}
+.ratebox .uultra-star-rating a:focus{	background-position: left bottom;}
+.ratebox .uultra-star-rating a.one-star{width:20%;	z-index:6;}
+.ratebox .uultra-star-rating a.two-stars{	width:40%;	z-index:5;}
+.ratebox .uultra-star-rating a.three-stars{width:60%;z-index:4;}
+.ratebox .uultra-star-rating a.four-stars{	width:80%;	z-index:3;}
+.ratebox .uultra-star-rating a.five-stars{	width:100%;z-index:2;}
+.ratebox .uultra-star-rating .current-rating{z-index:1;background-position: left center; }	
 
 /* for an inline rater */
 .ratebox .inline-rating{

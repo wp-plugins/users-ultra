@@ -270,7 +270,7 @@ class XooRating extends XooUserUltraCommon
 		  $rating = "";		  	  
 		  $res = '
 		  
-		  <ul class="star-rating" >	
+		  <ul class="uultra-star-rating" >	
 		            <li class="current-rating" style="width:'.$current_rating_percentage.'%;"></li>
 					
 					<li><a href="#" title="1 star out of 5" class="one-star rating-s" data-id="'.$id.'" data-vote="1" data-target="'.$data_target.'">1</a></li>					
