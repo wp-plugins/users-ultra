@@ -1692,12 +1692,17 @@ class XooUserLogin {
 	  
 	  }
 	  
-	   //special rule for social registration added on 08-08-2014	  
-	  if($this->mIsSocialLogin)
-	  {
-		  //automatic activation
-		  update_user_meta ($user_id, 'usersultra_account_status', 'active');
-		  
+	 $activation_type_social_rule= $xoouserultra->get_option('social_login_activation_type');	  
+	  
+	 if($activation_type_social_rule=='yes' || $activation_type_social_rule=='')
+	 {		  
+		  //special rule for social registration added on 08-08-2014	  
+		  if($this->mIsSocialLogin)
+		  {
+			  //automatic activation
+			  update_user_meta ($user_id, 'usersultra_account_status', 'active');
+			  
+		  }
 	  }
 	
   }

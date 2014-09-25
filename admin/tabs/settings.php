@@ -316,6 +316,20 @@ $this->create_plugin_setting(
        );
 	   
 	   
+	     $this->create_plugin_setting(
+                        'select',
+                        'social_login_activation_type',
+                        __('Activate Accounts When Using Social', 'xoousers'),
+                        array(
+                            'yes' => __('YES', 'xoousers'),
+                            'no' => __('NO', 'xoousers'),
+                            
+                        ),
+                        __('If YES, the account will be activated automatically when using social login options. ', 'xoousers'),
+                        __('If YES, the account will be activated automatically when using social login options. ', 'xoousers')
+                );
+	   
+	   
 	    // Captcha Plugin Selection Start
                 $this->create_plugin_setting(
                         'select',
