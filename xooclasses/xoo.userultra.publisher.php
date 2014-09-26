@@ -10,26 +10,37 @@ class XooPublisher
 		
 		$this->mDateToday =  date("Y-m-d"); 
 		
-		if(isset($_POST['uultra-conf-publisher-post']))
-		{
-			//add new post
-			$this->submit_post();
-		
-		}
-		
-		if(isset($_POST['uultra-conf-edition-post']))
-		{
-			//edit post
-			$this->edit_conf_post();
-		
-		}
-		
+		add_action( 'init', array($this, 'handle_post') );		
 		add_action( 'wp_ajax_featured_post_img_upload', array($this, 'featured_img_upload') );
 		add_action( 'wp_ajax_featured_img_delete', array($this, 'featured_img_delete') );
 		
 		
 		
 		
+		
+	}
+	
+	function handle_post()		
+	{
+		if (is_user_logged_in()) 
+		{
+		
+			if(isset($_POST['uultra-conf-publisher-post']))
+			{			
+				//add new post
+				$this->submit_post();	
+				
+			
+			}
+			
+			if(isset($_POST['uultra-conf-edition-post']))
+			{
+				//edit post
+				$this->edit_conf_post();
+			
+			}
+		
+		}
 		
 	}
 	
