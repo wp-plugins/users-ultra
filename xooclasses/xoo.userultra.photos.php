@@ -1197,6 +1197,11 @@ class XooUserPhoto {
 					 case "vimeo": 
 					 
 							$html .= '<iframe src="http://player.vimeo.com/video/'.$video->video_unique_vid.'?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="99%"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+							
+					 case "embed": 
+					 
+							$html .= stripslashes($video->video_unique_vid);
+							
 					 endswitch;
 						 
 						 
@@ -1266,6 +1271,11 @@ class XooUserPhoto {
 							$html .= '<iframe src="http://player.vimeo.com/video/'.$video->video_unique_vid.'?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 							
 							 $html .= "<p class='social_v'><i class='fa fa-vimeo-square fa-3x'></i></p> ";
+							 
+					 case "embed": 
+					 
+							$html .= stripslashes($video->video_unique_vid);
+							
 					 endswitch;
 					 
 					 
