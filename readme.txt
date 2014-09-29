@@ -16,7 +16,7 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
-Now Users Ultra Lite includes reCaptcha spam protection. Yes, now with Users Ultra you can protect your website against robots for free.
+Now Users Ultra Lite includes <strong>reCaptcha spam protection</strong>. Yes, now with Users Ultra you can protect your website against robots for free.
 
 
 <h3><strong>Useful Links:</strong></h3>
