@@ -14,7 +14,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.12</p>
+            <p>Version: 1.1.13</p>
             
              <p class="btn-find"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
@@ -32,6 +32,16 @@ global $xoouserultra;
             <div class="uultra-col">
              <h1><?php _e('Priority Support','xoousers'); ?></h1> 
              <p> <?php _e('We usually reply within the same day to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
+            </div>
+            
+             <div class="uultra-col">
+             <h1><?php _e('Unlimited Widgets','xoousers'); ?></h1> 
+             <p> <?php _e("Yes, you can add as many widgets as you wish. Integrating with third-party plugins has never been easier. You can use other plugins with Users Ultra PRO.",'xoousers'); ?></p>
+            </div>
+            
+             <div class="uultra-col">
+             <h1><?php _e('Unlimited Links','xoousers'); ?></h1> 
+             <p> <?php _e("You can add unlimited links within the user's dashboard with HTML text or use a shortcode of another plugin to display custom information.",'xoousers'); ?></p>
             </div>
             
             <div class="uultra-col">
