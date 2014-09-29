@@ -13,19 +13,8 @@ class XooUserUser {
 	{
 		$this->set_default_user_panel();			    
 		
-		if (isset($_POST['xoouserultra-profile-edition-form'])) 
-		{
-			
-			/* This prepares the array taking values from the POST */
-			$this->prepare( $_POST );
-       			
-			/* We validate everthying before updateing the profile */
-			$this->handle();
-			
-			/* Let's Update the Profile */
-			$this->update_me();
 				
-		}
+		add_action('init', array( $this, 'handle_init' ));		
 		
 		if (isset($_POST['uultra-form-cvs-form-conf'])) 
 		{
@@ -80,6 +69,25 @@ class XooUserUser {
 		
 			
 
+	}
+	
+	function handle_init()
+	
+	{
+		if (isset($_POST['xoouserultra-profile-edition-form'])) 
+		{
+			
+			/* This prepares the array taking values from the POST */
+			$this->prepare( $_POST );
+       			
+			/* We validate everthying before updateing the profile */
+			$this->handle();
+			
+			/* Let's Update the Profile */
+			$this->update_me();
+				
+		}
+	
 	}
 	
 	public function close_user_account()

@@ -378,7 +378,11 @@ class XooUserRegister {
 					/*We've got a valid user id then let's create the meta informaion*/						
 					foreach($this->usermeta as $key => $value) 
 					{
-						
+						if (is_array($value))   // checkboxes
+						{
+							$value = implode(', ', $value);
+						}
+												
 						update_user_meta($user_id, $key, esc_attr($value));
 
 						/* update core fields - email, url, pass */
