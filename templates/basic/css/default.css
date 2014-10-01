@@ -496,11 +496,13 @@ a.uultra-btn-u-menu i{
 
 a.uultra-btn-u-menu{ 
 		display:inline-block; 
-		height:30px;
+		min-height:30px;
+		height:auto !important;
 		width:97%;
 		padding-top:5px;
 		text-align:left;
 		font-size:12px;
+		vertical-align:top;
 			
 		
 		border:solid 1px #E8E8E8;
