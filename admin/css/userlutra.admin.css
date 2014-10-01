@@ -12,6 +12,9 @@
 
 .user-ultra-sect { padding:10px;}
 
+.user-ultra-top-header-sect { width:100%; clear:both; background:#FFF; float:none !important; padding:0px; height:auto !important}
+.user-ultra-top-header-sect a{ text-decoration:none}
+
 /*START*/
 
 code,
