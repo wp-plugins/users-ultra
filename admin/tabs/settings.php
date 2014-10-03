@@ -345,6 +345,15 @@ $this->create_plugin_setting(
                 );
 // Captcha Plugin Selection End
 
+
+ $this->create_plugin_setting(
+                        'input',
+                        'captcha_heading',
+                        __('CAPTCHA Heading Text', 'xoousers'), array(),
+                        __("By default the following heading is displayed when the captcha is activate 'Prove you're not a robot'. You can set your custom heading here", 'xoousers'),
+                        __("By default the following heading is displayed when the captcha is activate 'Prove you're not a robot'. You can set your custom heading here", 'xoousers')
+                );
+
                 $this->create_plugin_setting(
                         'input',
                         'captcha_label',

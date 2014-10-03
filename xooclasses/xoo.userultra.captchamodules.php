@@ -83,13 +83,21 @@ class XooUserCaptchaModule
                     $form_text = $xoouserultra->get_option('captcha_label');
                     if($form_text == '')
                         $form_text = __('Human Check','xoousers');
+						
+						
+						//heading text					
+					$heading_text = '';
+                    $heading_text = $xoouserultra->get_option('captcha_heading');
+                    
+					if($heading_text == ''){
+                        $heading_text = __("Prove you're not a robot",'xoousers');}
                     
                     
                     $display = '';    
 					$display .= '<div class="xoouserultra-clear">&nbsp;</div>';
 					$display .= '<div class="xoouserultra-clear">&nbsp;</div>';	
 					
-					 $display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__("Prove you're not a robot", 'xoousers').'</div>';
+					 $display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.$heading_text.'</div>';
 					
 					
 					$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
