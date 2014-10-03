@@ -17,7 +17,9 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
 <strong>Creating Communities and Networking Websites: </strong><br>
-Users Ultra not only includes the common features to manage your users but it includes tons of features that will help you to build your users community in just few clicks. Users Ultra handles all the aspect of a powerful users website because it includes features such as: Private Messaging System, Friends, Like/Unlike, Photos, Galleries, Stars Rating and many more features for free.
+Users Ultra not only includes common features for managing members but it includes a lot of other features that will help you to build your member driven community with no need to know how to code. Users Ultra has been created to provide powerful tools to the website builder who may be beginning and may not be an expert with WordPress and for professionals who know how to code.
+
+Users Ultra can handle almost all aspects of a powerful membership driven website because it includes features such as: Private Messaging System, Friends, Like/Unlike, Photos, Galleries, Front End Posting (default posts), Stars Rating, basic Membership Management with PayPal integration and many more features for free.
 
 <strong>Mobile Devices Compatible: </strong><br>
 Users Ultra looks great on any mobile device. It has been developed by using the latest HTML5 and CSS standards in order to make Users Ultra look good at any resolution.  It doesn't matter what screen size your user is seeing your website, Users Ultra will look excellent and user friendly always.
