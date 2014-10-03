@@ -17,12 +17,11 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
 <strong>Creating Communities and Networking Websites: </strong><br>
-Users Ultra not only includes common features for managing members but it includes a lot of other features that will help you to build your member driven community with no need to know how to code. Users Ultra has been created to provide powerful tools to the website builder who may be beginning and may not be an expert with WordPress and for professionals who know how to code.
+Users Ultra not only includes common features for managing members but it includes a lot of other features that will help build member driven communities with no need to know how to code. Users Ultra has been created to provide powerful tools for the website builder who may be beginning and may not be an expert with WordPress and for professionals who know how to code.
 
-Users Ultra can handle almost all aspects of a powerful membership driven website because it includes features such as: Private Messaging System, Friends, Like/Unlike, Photos, Galleries, Front End Posting (default posts), Stars Rating, basic Membership Management with PayPal integration and many more features for free.
+Basic knowledge of how to set up WordPress and install, activate and set up plugins and themes is recommended.
 
-<strong>Mobile Devices Compatible: </strong><br>
-Users Ultra looks great on any mobile device. It has been developed by using the latest HTML5 and CSS standards in order to make Users Ultra look good at any resolution.  It doesn't matter what screen size your user is seeing your website, Users Ultra will look excellent and user friendly always.
+Users Ultra can handle almost all aspects of a powerful community website because it includes features such as: Private Messaging System, Friends, Like/Unlike, Photos, Galleries, Front End Posting (default posts), Stars Rating, basic Membership Management with PayPal integration and many more features for free.
 
 <strong>Spam and Robot Protection: </strong><br>
 Now Users Ultra Lite includes <strong>reCaptcha spam protection</strong>. Yes, now with Users Ultra you can protect your website against robots for free.
@@ -36,6 +35,7 @@ Now Users Ultra Lite includes <strong>reCaptcha spam protection</strong>. Yes, n
 <a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
 <a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
 <a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
+<br>
 <br>
 </blockquote>
 <blockquote>
@@ -64,6 +64,10 @@ Now Users Ultra Lite includes <strong>reCaptcha spam protection</strong>. Yes, n
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 <br>
 </blockquote>
+
+<strong>Mobile Devices Compatible: </strong><br>
+Users Ultra looks great on any mobile device. It has been developed by using the latest HTML5 and CSS standards in order to make Users Ultra look good at any resolution.  It doesn't matter what screen size your user is seeing your website, Users Ultra will look excellent and user friendly always.
+
 <h3><strong>USERS ULTRA FREE VERSION INCLUDES: </strong></h3>
 <br>
 <strong>CSV Users Import</strong><br>
