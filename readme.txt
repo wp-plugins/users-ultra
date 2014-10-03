@@ -16,6 +16,13 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
+<strong>Creating Communities and Networking Websites: </strong>
+Users Ultra not only includes the common features to manage your users but it includes tons of features that will help you to build your users community in just few clicks. Users Ultra handles all the aspect of a powerful users website because it includes features such as: Private Messaging System, Friends, Like/Unlike, Photos, Galleries, Stars Rating and many more features for free.
+
+<strong>Mobile Devices Compatible: </strong>
+Users Ultra looks great on any mobile device. It has been developed by using the latest HTML5 and CSS standards in order to make Users Ultra look good at any resolution.  It doesn't matter what screen size your user is seeing your website, Users Ultra will look excellent and user friendly always.
+
+<strong>Spam and Robot Protection: </strong>
 Now Users Ultra Lite includes <strong>reCaptcha spam protection</strong>. Yes, now with Users Ultra you can protect your website against robots for free.
 
 
