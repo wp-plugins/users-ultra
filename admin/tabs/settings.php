@@ -207,6 +207,49 @@ $this->create_plugin_setting(
   
 </div>
 
+<div class="user-ultra-sect ">
+  <h3><?php _e('Terms & Conditions','xoousers'); ?></h3>
+  
+  <p><?php _e('.','xoousers'); ?></p>
+  
+  
+  <table class="form-table">
+<?php 
+   
+		
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_terms_and_conditions',
+	__('Allows Terms & Conditions Text Before Registration','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__('If you select "yes", users will have to accept terms and conditions when registering.','xoousers'),
+  __('If you select "yes", users will have to accept terms and conditions when registering.','xoousers')
+       );
+	   
+	   
+	     $this->create_plugin_setting(
+                                        'textarea',
+                                        'uultra_terms_and_conditions_text',
+                                        __('Terms & Conditions Text/HTML', 'xoousers'), array(),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers'),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers')
+                                );
+
+                                                    
+
+                              
+
+		
+?>
+</table>
+
+  
+</div>
 
 
 

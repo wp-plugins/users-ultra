@@ -2251,6 +2251,26 @@ class XooUserUltra
 		
 		}
 		
+			//terms and conditions
+				
+		if($this->get_option('uultra_terms_and_conditions')=='yes')
+		{
+			$text_terms = stripslashes($this->get_option('uultra_terms_and_conditions_text'));
+			//
+			 $display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__('Terms & Conditions ', 'xoousers').'</div>';
+			 
+			$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
+			$display .= '<div class="xoouserultra-clear"></div>'; 
+			
+			$display .= '<label class="xoouserultra-field-type" for="'.$meta.'">';			
+			$display .= '<span>&nbsp;</span></label>';
+			$display .= '<div class="xoouserultra-field-value">';
+			$display .= '<input type="checkbox"  title="'.__('Terms & Conditions ', 'xoousers').'" name="uultra-mailchimp-confirmation" value="1" class="validate[required]" > <label for="checkbox1"><span></span>'.$text_terms.'</label></div>' ;
+			
+			$display .= '<div class="xoouserultra-clear"></div>';
+		
+		}
+		
 		
 		$display.=$this->captchamodule->load_captcha($this->captcha);
 		
