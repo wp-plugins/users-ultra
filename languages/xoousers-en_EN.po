@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-09-10 21:08-0300\n"
-"PO-Revision-Date: 2014-09-10 21:08-0300\n"
+"POT-Creation-Date: 2014-10-06 00:39-0300\n"
+"PO-Revision-Date: 2014-10-06 00:39-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -28,16 +28,16 @@ msgstr ""
 
 #: ../addons/photocategories/admin/admin.php:94
 #: ../xooclasses/xoo.userultra.mymessage.php:226
-#: ../xooclasses/xoo.userultra.photos.php:1600
-#: ../xooclasses/xoo.userultra.photos.php:1718
-#: ../xooclasses/xoo.userultra.photos.php:1839
+#: ../xooclasses/xoo.userultra.photos.php:1610
+#: ../xooclasses/xoo.userultra.photos.php:1728
+#: ../xooclasses/xoo.userultra.photos.php:1849
 msgid "Close"
 msgstr ""
 
 #: ../addons/photocategories/admin/admin.php:94
-#: ../xooclasses/xoo.userultra.photos.php:1600
-#: ../xooclasses/xoo.userultra.photos.php:1718
-#: ../xooclasses/xoo.userultra.photos.php:1839
+#: ../xooclasses/xoo.userultra.photos.php:1610
+#: ../xooclasses/xoo.userultra.photos.php:1728
+#: ../xooclasses/xoo.userultra.photos.php:1849
 msgid "Save"
 msgstr ""
 
@@ -54,9 +54,9 @@ msgstr ""
 #: ../addons/photocategories/admin/panels/manage.php:24
 #: ../admin/tabs/membership.php:108
 #: ../xooclasses/xoo.userultra.payment.paypal.php:758
-#: ../xooclasses/xoo.userultra.user.php:558
-#: ../xooclasses/xoo.userultra.user.php:629
-#: ../xooclasses/xoo.userultra.user.php:698
+#: ../xooclasses/xoo.userultra.user.php:570
+#: ../xooclasses/xoo.userultra.user.php:641
+#: ../xooclasses/xoo.userultra.user.php:710
 msgid "Confirm"
 msgstr ""
 
@@ -68,14 +68,14 @@ msgstr ""
 #: ../addons/photocategories/admin/panels/manage.php:44
 #: ../templates/basic/dashboard.php:406 ../templates/basic/dashboard.php:826
 #: ../xooclasses/xoo.userultra.payment.paypal.php:789
-#: ../xooclasses/xoo.userultra.photos.php:1559
-#: ../xooclasses/xoo.userultra.photos.php:1699
-#: ../xooclasses/xoo.userultra.photos.php:1820
+#: ../xooclasses/xoo.userultra.photos.php:1569
+#: ../xooclasses/xoo.userultra.photos.php:1709
+#: ../xooclasses/xoo.userultra.photos.php:1830
 msgid "Name"
 msgstr ""
 
 #: ../addons/photocategories/admin/panels/manage.php:49
-#: ../xooclasses/xoo.userultra.publisher.php:463
+#: ../xooclasses/xoo.userultra.publisher.php:474
 msgid "Actions"
 msgstr ""
 
@@ -84,14 +84,14 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:1077
 #: ../xooclasses/xoo.userultra.mymessage.php:1129
 #: ../xooclasses/xoo.userultra.payment.paypal.php:819
-#: ../xooclasses/xoo.userultra.user.php:697
+#: ../xooclasses/xoo.userultra.user.php:709
 msgid "Delete"
 msgstr ""
 
 #: ../addons/photocategories/admin/panels/manage.php:71
 #: ../admin/tabs/fields.php:348
 #: ../xooclasses/xoo.userultra.payment.paypal.php:819
-#: ../xooclasses/xoo.userultra.publisher.php:479
+#: ../xooclasses/xoo.userultra.publisher.php:490
 msgid "Edit"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 #: ../admin/tabs/fields.php:41 ../admin/tabs/membership.php:64
 #: ../xooclasses/xoo.userultra.payment.paypal.php:625
 #: ../xooclasses/xoo.userultra.payment.paypal.php:793
-#: ../xooclasses/xoo.userultra.photos.php:1827
+#: ../xooclasses/xoo.userultra.photos.php:1837
 msgid "Type"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgstr ""
 #: ../admin/tabs/fields.php:488 ../admin/tabs/fields.php:500
 #: ../admin/tabs/fields.php:520 ../admin/tabs/fields.php:533
 #: ../admin/tabs/fields.php:549 ../admin/tabs/fields.php:585
-#: ../admin/tabs/settings.php:187
+#: ../admin/tabs/settings.php:187 ../admin/tabs/settings.php:226
 #: ../xooclasses/xoo.userultra.payment.paypal.php:703
 msgid "No"
 msgstr ""
@@ -230,7 +230,7 @@ msgstr ""
 #: ../admin/tabs/fields.php:485 ../admin/tabs/fields.php:503
 #: ../admin/tabs/fields.php:517 ../admin/tabs/fields.php:536
 #: ../admin/tabs/fields.php:552 ../admin/tabs/fields.php:588
-#: ../admin/tabs/settings.php:186
+#: ../admin/tabs/settings.php:186 ../admin/tabs/settings.php:227
 #: ../xooclasses/xoo.userultra.payment.paypal.php:702
 msgid "Yes"
 msgstr ""
@@ -306,6 +306,7 @@ msgstr ""
 
 #: ../admin/tabs/fields.php:251 ../admin/tabs/fields.php:618
 #: ../admin/tabs/fields.php:635 ../admin/tabs/fields.php:641
+#: ../admin/tabs/settings.php:382
 msgid "None"
 msgstr ""
 
@@ -408,7 +409,7 @@ msgstr ""
 msgid "List of Countries"
 msgstr ""
 
-#: ../admin/tabs/fields.php:625 ../xooclasses/xoo.userultra.class.php:864
+#: ../admin/tabs/fields.php:625 ../xooclasses/xoo.userultra.class.php:873
 msgid "Age"
 msgstr ""
 
@@ -427,7 +428,7 @@ msgstr ""
 msgid "Change Icon"
 msgstr ""
 
-#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1586
+#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1598
 msgid "Update"
 msgstr ""
 
@@ -475,7 +476,7 @@ msgstr ""
 msgid "This is not used for production, you can use this email for testing."
 msgstr ""
 
-#: ../admin/tabs/gateway.php:42 ../admin/tabs/settings.php:378
+#: ../admin/tabs/gateway.php:42 ../admin/tabs/settings.php:484
 msgid "Currency"
 msgstr ""
 
@@ -500,7 +501,7 @@ msgid "Select Mode"
 msgstr ""
 
 #: ../admin/tabs/gateway.php:72 ../admin/tabs/mail.php:197
-#: ../admin/tabs/permalinks.php:78 ../admin/tabs/settings.php:764
+#: ../admin/tabs/permalinks.php:78 ../admin/tabs/settings.php:870
 msgid "Save Changes"
 msgstr ""
 
@@ -777,7 +778,7 @@ msgstr ""
 msgid "This message is sent to the users when a friend request is sent"
 msgstr ""
 
-#: ../admin/tabs/mail.php:161 ../xooclasses/xoo.userultra.class.php:1328
+#: ../admin/tabs/mail.php:161 ../xooclasses/xoo.userultra.class.php:1337
 msgid "Password Reset"
 msgstr ""
 
@@ -828,7 +829,7 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:1088
 #: ../xooclasses/xoo.userultra.mymessage.php:1149
 #: ../xooclasses/xoo.userultra.order.php:396
-#: ../xooclasses/xoo.userultra.publisher.php:461
+#: ../xooclasses/xoo.userultra.publisher.php:472
 #: ../xooclasses/xoo.userultra.socials.php:515
 #: ../xooclasses/xoo.userultra.socials.php:588
 #: ../xooclasses/xoo.userultra.woocommerce.php:352
@@ -845,7 +846,7 @@ msgstr ""
 
 #: ../admin/tabs/main.php:143 ../admin/tabs/orders.php:152
 #: ../xooclasses/xoo.userultra.order.php:398
-#: ../xooclasses/xoo.userultra.publisher.php:462
+#: ../xooclasses/xoo.userultra.publisher.php:473
 #: ../xooclasses/xoo.userultra.woocommerce.php:354
 msgid "Status"
 msgstr ""
@@ -862,17 +863,17 @@ msgstr ""
 msgid "Latest "
 msgstr ""
 
-#: ../admin/tabs/main.php:206 ../xooclasses/xoo.userultra.user.php:534
-#: ../xooclasses/xoo.userultra.user.php:605
-#: ../xooclasses/xoo.userultra.user.php:673
+#: ../admin/tabs/main.php:206 ../xooclasses/xoo.userultra.user.php:546
+#: ../xooclasses/xoo.userultra.user.php:617
+#: ../xooclasses/xoo.userultra.user.php:685
 msgid "Avatar"
 msgstr ""
 
-#: ../admin/tabs/main.php:207 ../xooclasses/xoo.userultra.class.php:736
-#: ../xooclasses/xoo.userultra.class.php:782
-#: ../xooclasses/xoo.userultra.user.php:535
-#: ../xooclasses/xoo.userultra.user.php:606
-#: ../xooclasses/xoo.userultra.user.php:674
+#: ../admin/tabs/main.php:207 ../xooclasses/xoo.userultra.class.php:745
+#: ../xooclasses/xoo.userultra.class.php:791
+#: ../xooclasses/xoo.userultra.user.php:547
+#: ../xooclasses/xoo.userultra.user.php:618
+#: ../xooclasses/xoo.userultra.user.php:686
 msgid "Username"
 msgstr ""
 
@@ -899,8 +900,8 @@ msgid "Add New Membership Package"
 msgstr ""
 
 #: ../admin/tabs/membership.php:26
-#: ../xooclasses/xoo.userultra.publisher.php:191
-#: ../xooclasses/xoo.userultra.publisher.php:360
+#: ../xooclasses/xoo.userultra.publisher.php:202
+#: ../xooclasses/xoo.userultra.publisher.php:371
 msgid "Description:"
 msgstr ""
 
@@ -1118,198 +1119,219 @@ msgid ""
 msgstr ""
 
 #: ../admin/tabs/pro.php:38
-msgid "Appearance & Customization"
+msgid "Unlimited Widgets"
 msgstr ""
 
 #: ../admin/tabs/pro.php:39
+msgid ""
+"Yes, you can add as many widgets as you wish. Integrating with third-party "
+"plugins has never been easier. You can use other plugins with Users Ultra "
+"PRO."
+msgstr ""
+
+#: ../admin/tabs/pro.php:43
+msgid "Unlimited Links"
+msgstr ""
+
+#: ../admin/tabs/pro.php:44
+msgid ""
+"You can add unlimited links within the user's dashboard with HTML text or "
+"use a shortcode of another plugin to display custom information."
+msgstr ""
+
+#: ../admin/tabs/pro.php:48
+msgid "Appearance & Customization"
+msgstr ""
+
+#: ../admin/tabs/pro.php:49
 msgid ""
 "Users Ultra PRO allows you to adapt the user's profile to any WordPress "
 "Theme through the admin section. Change the look of the profile in just few "
 "clicks."
 msgstr ""
 
-#: ../admin/tabs/pro.php:43
+#: ../admin/tabs/pro.php:53
 msgid "Roles Integration"
 msgstr ""
 
-#: ../admin/tabs/pro.php:44
+#: ../admin/tabs/pro.php:54
 msgid ""
 "Users will be able to select a predefined role when registering and you will "
 "be able to assign a custom role to a membership package."
 msgstr ""
 
-#: ../admin/tabs/pro.php:48
+#: ../admin/tabs/pro.php:58
 msgid "Spam Protection"
 msgstr ""
 
-#: ../admin/tabs/pro.php:49
+#: ../admin/tabs/pro.php:59
 msgid ""
 "Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
 "your website against spam attacks. Simple way to stop fake account spam!"
 msgstr ""
 
-#: ../admin/tabs/pro.php:53
+#: ../admin/tabs/pro.php:63
 msgid "Advanced Email Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:54
+#: ../admin/tabs/pro.php:64
 msgid "Send emails via SMTP and Mandrill API."
 msgstr ""
 
-#: ../admin/tabs/pro.php:59
+#: ../admin/tabs/pro.php:69
 msgid "reCaptcha & FUNCAPTCHA"
 msgstr ""
 
-#: ../admin/tabs/pro.php:60
+#: ../admin/tabs/pro.php:70
 msgid ""
 "This is a great feature to protect your website from spam and abuse. "
 "reCAPTCHA uses an advanced risk analysis engine."
 msgstr ""
 
-#: ../admin/tabs/pro.php:66
+#: ../admin/tabs/pro.php:76
 msgid "New Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:67
+#: ../admin/tabs/pro.php:77
 msgid ""
 "We add new features every week for the Pro version. You may alway let us "
 "know your suggestion and we will be glad to listen your opinions."
 msgstr ""
 
-#: ../admin/tabs/pro.php:71
+#: ../admin/tabs/pro.php:81
 msgid "Customizable Profile"
 msgstr ""
 
-#: ../admin/tabs/pro.php:72
+#: ../admin/tabs/pro.php:82
 msgid ""
 "The Pro Version includes the unique and innovating Widgetized Users Profile. "
 "Let your user build their own profile by draging and droping elements."
 msgstr ""
 
-#: ../admin/tabs/pro.php:76
+#: ../admin/tabs/pro.php:86
 msgid "One and Two Columns Profile"
 msgstr ""
 
-#: ../admin/tabs/pro.php:77
+#: ../admin/tabs/pro.php:87
 msgid ""
 "The new user's profile template will let you create a beutiful user's "
 "profile with one, two or three columns with just one click."
 msgstr ""
 
-#: ../admin/tabs/pro.php:81
+#: ../admin/tabs/pro.php:91
 msgid "Badges & Achievement"
 msgstr ""
 
-#: ../admin/tabs/pro.php:82
+#: ../admin/tabs/pro.php:92
 msgid ""
 "Create and award badges to your users manually, or based on what they "
 "accomplish."
 msgstr ""
 
-#: ../admin/tabs/pro.php:86
+#: ../admin/tabs/pro.php:96
 msgid "bbPress Integration"
 msgstr ""
 
-#: ../admin/tabs/pro.php:87
+#: ../admin/tabs/pro.php:97
 msgid ""
 "Your forum may look much more elegant by using Users Ultra Pro. Display "
 "badges and achievements in your forum threads and much more."
 msgstr ""
 
-#: ../admin/tabs/pro.php:91
+#: ../admin/tabs/pro.php:101
 msgid "Social Connect Buttons"
 msgstr ""
 
-#: ../admin/tabs/pro.php:92
+#: ../admin/tabs/pro.php:102
 msgid ""
 "Now you can add one or more social connect buttons to any place of your blog."
 msgstr ""
 
-#: ../admin/tabs/pro.php:96
+#: ../admin/tabs/pro.php:106
 msgid "Online/Offline User Status"
 msgstr ""
 
-#: ../admin/tabs/pro.php:97
+#: ../admin/tabs/pro.php:107
 msgid ""
 "This feature is optional and you will have the capability to show the user's "
 "status to your visitors."
 msgstr ""
 
-#: ../admin/tabs/pro.php:101
+#: ../admin/tabs/pro.php:111
 msgid "Custom Profile Background "
 msgstr ""
 
-#: ../admin/tabs/pro.php:102
+#: ../admin/tabs/pro.php:112
 msgid ""
 "Let your users to customize their profiles by adding a custom full-screen "
 "background image easily."
 msgstr ""
 
-#: ../admin/tabs/pro.php:107
+#: ../admin/tabs/pro.php:117
 msgid "Users Wall"
 msgstr ""
 
-#: ../admin/tabs/pro.php:108
+#: ../admin/tabs/pro.php:118
 msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
 msgstr ""
 
-#: ../admin/tabs/pro.php:112
+#: ../admin/tabs/pro.php:122
 msgid "Automatic Updates"
 msgstr ""
 
-#: ../admin/tabs/pro.php:113
+#: ../admin/tabs/pro.php:123
 msgid ""
 "Yes, Users Ultra Pro can be updated through the Plugins area in your "
 "Wordpress Admin Panel."
 msgstr ""
 
-#: ../admin/tabs/pro.php:117
+#: ../admin/tabs/pro.php:127
 msgid "Free Installation"
 msgstr ""
 
-#: ../admin/tabs/pro.php:118
+#: ../admin/tabs/pro.php:128
 msgid ""
 "If you would like assistance with installing and setting up the plugin, we "
 "are glad to help. "
 msgstr ""
 
-#: ../admin/tabs/pro.php:122
+#: ../admin/tabs/pro.php:132
 msgid "Network Activation"
 msgstr ""
 
-#: ../admin/tabs/pro.php:123
+#: ../admin/tabs/pro.php:133
 msgid ""
 "When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
 "for the entire network of sites by just one click."
 msgstr ""
 
-#: ../admin/tabs/pro.php:127
+#: ../admin/tabs/pro.php:137
 msgid "Users Management"
 msgstr ""
 
-#: ../admin/tabs/pro.php:128
+#: ../admin/tabs/pro.php:138
 msgid ""
 "The Pro version includes a powerful users management module. Easily approve/"
 "deny users, upgrade and downgrade user's membership. Finding a user will be "
 "super easy by using this feature."
 msgstr ""
 
-#: ../admin/tabs/pro.php:132
+#: ../admin/tabs/pro.php:142
 msgid "Advanced Front End Publisher"
 msgstr ""
 
-#: ../admin/tabs/pro.php:133
+#: ../admin/tabs/pro.php:143
 msgid ""
 "Allows your user to post through their private area. It allows user to "
 "attach photos to the posts. This is useful for classified and real estate "
 "websites."
 msgstr ""
 
-#: ../admin/tabs/pro.php:138
+#: ../admin/tabs/pro.php:148
 msgid "Maitenance Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:139
+#: ../admin/tabs/pro.php:149
 msgid "Keep your Users and User Meta table clean."
 msgstr ""
 
@@ -1323,10 +1345,10 @@ msgstr ""
 
 #: ../admin/tabs/settings.php:8 ../admin/tabs/settings.php:52
 #: ../admin/tabs/settings.php:82 ../admin/tabs/settings.php:153
-#: ../admin/tabs/settings.php:216 ../admin/tabs/settings.php:250
-#: ../admin/tabs/settings.php:298 ../admin/tabs/settings.php:328
-#: ../admin/tabs/settings.php:369 ../admin/tabs/settings.php:471
-#: ../admin/tabs/settings.php:662
+#: ../admin/tabs/settings.php:213 ../admin/tabs/settings.php:259
+#: ../admin/tabs/settings.php:293 ../admin/tabs/settings.php:341
+#: ../admin/tabs/settings.php:434 ../admin/tabs/settings.php:475
+#: ../admin/tabs/settings.php:577 ../admin/tabs/settings.php:768
 msgid "."
 msgstr ""
 
@@ -1415,7 +1437,7 @@ msgid "Mini Thumbnail Width"
 msgstr ""
 
 #: ../admin/tabs/settings.php:100 ../admin/tabs/settings.php:101
-#: ../admin/tabs/settings.php:227 ../admin/tabs/settings.php:228
+#: ../admin/tabs/settings.php:270 ../admin/tabs/settings.php:271
 msgid "Set width in pixels"
 msgstr ""
 
@@ -1426,7 +1448,7 @@ msgstr ""
 #: ../admin/tabs/settings.php:108 ../admin/tabs/settings.php:109
 #: ../admin/tabs/settings.php:124 ../admin/tabs/settings.php:125
 #: ../admin/tabs/settings.php:140 ../admin/tabs/settings.php:141
-#: ../admin/tabs/settings.php:235 ../admin/tabs/settings.php:236
+#: ../admin/tabs/settings.php:278 ../admin/tabs/settings.php:279
 msgid "Set Height in pixels"
 msgstr ""
 
@@ -1501,321 +1523,425 @@ msgstr ""
 msgid "The category if authors are not allowed to select a custom category."
 msgstr ""
 
-#: ../admin/tabs/settings.php:214
+#: ../admin/tabs/settings.php:211
+msgid "Terms & Conditions"
+msgstr ""
+
+#: ../admin/tabs/settings.php:224
+msgid "Allows Terms & Conditions Text Before Registration"
+msgstr ""
+
+#: ../admin/tabs/settings.php:230 ../admin/tabs/settings.php:231
+msgid ""
+"If you select \"yes\", users will have to accept terms and conditions when "
+"registering."
+msgstr ""
+
+#: ../admin/tabs/settings.php:238
+msgid "Terms & Conditions Text/HTML"
+msgstr ""
+
+#: ../admin/tabs/settings.php:239 ../admin/tabs/settings.php:240
+msgid "Enter text to display, example \"I agree to the Terms & Conditions\"."
+msgstr ""
+
+#: ../admin/tabs/settings.php:257
 msgid "Avatar Settings"
 msgstr ""
 
-#: ../admin/tabs/settings.php:226
+#: ../admin/tabs/settings.php:269
 msgid "Avatar Width:"
 msgstr ""
 
-#: ../admin/tabs/settings.php:234
+#: ../admin/tabs/settings.php:277
 msgid "Avatar Height"
 msgstr ""
 
-#: ../admin/tabs/settings.php:248
+#: ../admin/tabs/settings.php:291
 msgid "Mailchimp Settings"
 msgstr ""
 
-#: ../admin/tabs/settings.php:260
+#: ../admin/tabs/settings.php:303
 msgid "MailChimp API Key"
 msgstr ""
 
-#: ../admin/tabs/settings.php:261 ../admin/tabs/settings.php:262
+#: ../admin/tabs/settings.php:304 ../admin/tabs/settings.php:305
 msgid ""
 "Fill out this field with your MailChimp API key here to allow integration "
 "with MailChimp subscription."
 msgstr ""
 
-#: ../admin/tabs/settings.php:268
+#: ../admin/tabs/settings.php:311
 msgid "MailChimp List ID"
 msgstr ""
 
-#: ../admin/tabs/settings.php:269 ../admin/tabs/settings.php:270
+#: ../admin/tabs/settings.php:312 ../admin/tabs/settings.php:313
 msgid "Fill out this field your list ID."
 msgstr ""
 
-#: ../admin/tabs/settings.php:276
+#: ../admin/tabs/settings.php:319
 msgid "Activate/Deactivate Mailchimp"
 msgstr ""
 
-#: ../admin/tabs/settings.php:278 ../admin/tabs/settings.php:279
+#: ../admin/tabs/settings.php:321 ../admin/tabs/settings.php:322
 msgid "If checked, Users will be asked to subscribe through mailchimp"
 msgstr ""
 
-#: ../admin/tabs/settings.php:284
+#: ../admin/tabs/settings.php:327
 msgid "MailChimp Text"
 msgstr ""
 
-#: ../admin/tabs/settings.php:285 ../admin/tabs/settings.php:286
+#: ../admin/tabs/settings.php:328 ../admin/tabs/settings.php:329
 msgid ""
 "Please input the text that will appear when asking users to get periodical "
 "updates."
 msgstr ""
 
-#: ../admin/tabs/settings.php:296
+#: ../admin/tabs/settings.php:339
 msgid "Registration Settings"
 msgstr ""
 
-#: ../admin/tabs/settings.php:307
+#: ../admin/tabs/settings.php:350
 msgid "Registration Type"
 msgstr ""
 
-#: ../admin/tabs/settings.php:309
+#: ../admin/tabs/settings.php:352
 msgid "Login automatically after registration"
 msgstr ""
 
-#: ../admin/tabs/settings.php:310
+#: ../admin/tabs/settings.php:353
 msgid "E-mail Activation -  An confirmation link is sent to the user email"
 msgstr ""
 
-#: ../admin/tabs/settings.php:311
+#: ../admin/tabs/settings.php:354
 msgid "Manually Activation - The admin approves the accounts manually"
 msgstr ""
 
-#: ../admin/tabs/settings.php:312
+#: ../admin/tabs/settings.php:355
 msgid "Paid Activation - Enables the Membership Features"
 msgstr ""
 
-#: ../admin/tabs/settings.php:314 ../admin/tabs/settings.php:315
+#: ../admin/tabs/settings.php:357 ../admin/tabs/settings.php:358
 msgid ""
 "Please note: Paid Activation does not work with social connects at this "
 "moment."
 msgstr ""
 
-#: ../admin/tabs/settings.php:326
-msgid "User Profiles Settings"
-msgstr ""
-
-#: ../admin/tabs/settings.php:337
-msgid "Profile Display Name: "
-msgstr ""
-
-#: ../admin/tabs/settings.php:339
-msgid "Display User Name"
-msgstr ""
-
-#: ../admin/tabs/settings.php:340
-msgid "Use the Display Name set by the User in the Profile"
-msgstr ""
-
-#: ../admin/tabs/settings.php:342 ../admin/tabs/settings.php:343
-msgid "Set how the users ultra will make the user name."
-msgstr ""
-
-#: ../admin/tabs/settings.php:349
-msgid "Display Photos: "
-msgstr ""
-
-#: ../admin/tabs/settings.php:351
-msgid "Only for regitered/logged in users"
-msgstr ""
-
-#: ../admin/tabs/settings.php:352
-msgid "All visitor can see the user photos without registration"
-msgstr ""
-
-#: ../admin/tabs/settings.php:355 ../admin/tabs/settings.php:356
-msgid "Specify if the user photos are public or private"
+#: ../admin/tabs/settings.php:365
+msgid "Activate Accounts When Using Social"
 msgstr ""
 
 #: ../admin/tabs/settings.php:367
-msgid "Paid Membership Settings"
+msgid "YES"
 msgstr ""
 
-#: ../admin/tabs/settings.php:379 ../admin/tabs/settings.php:380
-msgid "The default symbol for paypal payments is USD"
+#: ../admin/tabs/settings.php:368
+msgid "NO"
+msgstr ""
+
+#: ../admin/tabs/settings.php:371 ../admin/tabs/settings.php:372
+msgid ""
+"If YES, the account will be activated automatically when using social login "
+"options. "
+msgstr ""
+
+#: ../admin/tabs/settings.php:380
+msgid "Captcha Plugin"
+msgstr ""
+
+#: ../admin/tabs/settings.php:384
+msgid "reCaptcha"
 msgstr ""
 
 #: ../admin/tabs/settings.php:386
-msgid "Currency Symbol"
+msgid ""
+"By activating this setting reCaptcha will be displayed in the registration "
+"form. <br /> "
 msgstr ""
 
-#: ../admin/tabs/settings.php:387 ../admin/tabs/settings.php:388
-msgid "Input the currency symbol: Example: $"
+#: ../admin/tabs/settings.php:387
+msgid ""
+"If you are using a captcha that requires a plugin, you must install and "
+"activate the selected captcha plugin. Some captcha plugins require you to "
+"register a free account with them."
 msgstr ""
 
-#: ../admin/tabs/settings.php:401
-msgid "Users Ultra Pages Setting"
+#: ../admin/tabs/settings.php:395
+msgid "CAPTCHA Heading Text"
+msgstr ""
+
+#: ../admin/tabs/settings.php:396 ../admin/tabs/settings.php:397
+msgid ""
+"By default the following heading is displayed when the captcha is activate "
+"'Prove you're not a robot'. You can set your custom heading here"
 msgstr ""
 
 #: ../admin/tabs/settings.php:403
+msgid "CAPTCHA Field Label"
+msgstr ""
+
+#: ../admin/tabs/settings.php:404 ../admin/tabs/settings.php:405
+msgid "Enter text which you want to show in form in front of CAPTCHA."
+msgstr ""
+
+#: ../admin/tabs/settings.php:411
+msgid "reCaptcha Public Key"
+msgstr ""
+
+#: ../admin/tabs/settings.php:412
+msgid ""
+"Enter your reCaptcha Public Key. You can sign up for a free reCaptcha "
+"account <a href=\"http://www.google.com/recaptcha\" title=\"Get a reCaptcha "
+"Key\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: ../admin/tabs/settings.php:413 ../admin/tabs/settings.php:421
+msgid ""
+"Your reCaptcha kays are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+
+#: ../admin/tabs/settings.php:419
+msgid "reCaptcha Private Key"
+msgstr ""
+
+#: ../admin/tabs/settings.php:420
+msgid "Enter your reCaptcha Private Key."
+msgstr ""
+
+#: ../admin/tabs/settings.php:432
+msgid "User Profiles Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:443
+msgid "Profile Display Name: "
+msgstr ""
+
+#: ../admin/tabs/settings.php:445
+msgid "Display User Name"
+msgstr ""
+
+#: ../admin/tabs/settings.php:446
+msgid "Use the Display Name set by the User in the Profile"
+msgstr ""
+
+#: ../admin/tabs/settings.php:448 ../admin/tabs/settings.php:449
+msgid "Set how the users ultra will make the user name."
+msgstr ""
+
+#: ../admin/tabs/settings.php:455
+msgid "Display Photos: "
+msgstr ""
+
+#: ../admin/tabs/settings.php:457
+msgid "Only for regitered/logged in users"
+msgstr ""
+
+#: ../admin/tabs/settings.php:458
+msgid "All visitor can see the user photos without registration"
+msgstr ""
+
+#: ../admin/tabs/settings.php:461 ../admin/tabs/settings.php:462
+msgid "Specify if the user photos are public or private"
+msgstr ""
+
+#: ../admin/tabs/settings.php:473
+msgid "Paid Membership Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:485 ../admin/tabs/settings.php:486
+msgid "The default symbol for paypal payments is USD"
+msgstr ""
+
+#: ../admin/tabs/settings.php:492
+msgid "Currency Symbol"
+msgstr ""
+
+#: ../admin/tabs/settings.php:493 ../admin/tabs/settings.php:494
+msgid "Input the currency symbol: Example: $"
+msgstr ""
+
+#: ../admin/tabs/settings.php:507
+msgid "Users Ultra Pages Setting"
+msgstr ""
+
+#: ../admin/tabs/settings.php:509
 msgid ""
 "The following pages are automatically created when Users Ultra Plugin\n"
 "   is activated. You can leave them as they are or change to custom pages "
 "here."
 msgstr ""
 
-#: ../admin/tabs/settings.php:414
+#: ../admin/tabs/settings.php:520
 msgid "Users Ultra My Account"
 msgstr ""
 
-#: ../admin/tabs/settings.php:416
+#: ../admin/tabs/settings.php:522
 msgid ""
 "Make sure you have the <code>[usersultra_my_account]</code> shortcode on "
 "this page."
 msgstr ""
 
-#: ../admin/tabs/settings.php:417
+#: ../admin/tabs/settings.php:523
 msgid "This page is where users will view their account."
 msgstr ""
 
-#: ../admin/tabs/settings.php:423
+#: ../admin/tabs/settings.php:529
 msgid "Users Ultra Profile Page"
 msgstr ""
 
-#: ../admin/tabs/settings.php:425
+#: ../admin/tabs/settings.php:531
 msgid ""
 "Make sure you have the <code>[usersultra_profile]</code> shortcode on this "
 "page."
 msgstr ""
 
-#: ../admin/tabs/settings.php:426
+#: ../admin/tabs/settings.php:532
 msgid ""
 "This page is where users will view their own profiles, or view other user "
 "profiles from the member directory if allowed."
 msgstr ""
 
-#: ../admin/tabs/settings.php:432
+#: ../admin/tabs/settings.php:538
 msgid "Users Ultra Login Page"
 msgstr ""
 
-#: ../admin/tabs/settings.php:434
+#: ../admin/tabs/settings.php:540
 msgid ""
 "If you wish to change default Users Ultra login page, you may set it here. "
 "Make sure you have the <code>[usersultra_login]</code> shortcode on this "
 "page."
 msgstr ""
 
-#: ../admin/tabs/settings.php:435
+#: ../admin/tabs/settings.php:541
 msgid "The default front-end login page."
 msgstr ""
 
-#: ../admin/tabs/settings.php:441
+#: ../admin/tabs/settings.php:547
 msgid "Users Ultra Registration Page"
 msgstr ""
 
-#: ../admin/tabs/settings.php:443
+#: ../admin/tabs/settings.php:549
 msgid ""
 "Make sure you have the <code>[usersultra_registration]</code> shortcode on "
 "this page."
 msgstr ""
 
-#: ../admin/tabs/settings.php:444 ../admin/tabs/settings.php:453
+#: ../admin/tabs/settings.php:550 ../admin/tabs/settings.php:559
 msgid "The default front-end Registration page where new users will sign up."
 msgstr ""
 
-#: ../admin/tabs/settings.php:450
+#: ../admin/tabs/settings.php:556
 msgid "Users Ultra Directory Page"
 msgstr ""
 
-#: ../admin/tabs/settings.php:452
+#: ../admin/tabs/settings.php:558
 msgid ""
 "Make sure you have the <code>[usersultra_directory]</code> shortcode on this "
 "page."
 msgstr ""
 
-#: ../admin/tabs/settings.php:469
+#: ../admin/tabs/settings.php:575
 msgid "Social Media Settings"
 msgstr ""
 
-#: ../admin/tabs/settings.php:481
+#: ../admin/tabs/settings.php:587
 msgid "Facebook Connect"
 msgstr ""
 
-#: ../admin/tabs/settings.php:483 ../admin/tabs/settings.php:484
+#: ../admin/tabs/settings.php:589 ../admin/tabs/settings.php:590
 msgid "If checked, User will be able to Sign up & Sign in through Facebook."
 msgstr ""
 
-#: ../admin/tabs/settings.php:490
+#: ../admin/tabs/settings.php:596
 msgid "Facebook App ID"
 msgstr ""
 
-#: ../admin/tabs/settings.php:491 ../admin/tabs/settings.php:492
-#: ../admin/tabs/settings.php:502
+#: ../admin/tabs/settings.php:597 ../admin/tabs/settings.php:598
+#: ../admin/tabs/settings.php:608
 msgid "Obtained when you created the Facebook Application."
 msgstr ""
 
-#: ../admin/tabs/settings.php:500
+#: ../admin/tabs/settings.php:606
 msgid "Facebook App Secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:501
+#: ../admin/tabs/settings.php:607
 msgid "Facebook settings"
 msgstr ""
 
-#: ../admin/tabs/settings.php:508
+#: ../admin/tabs/settings.php:614
 msgid "LinkedIn Connect"
 msgstr ""
 
-#: ../admin/tabs/settings.php:510 ../admin/tabs/settings.php:511
+#: ../admin/tabs/settings.php:616 ../admin/tabs/settings.php:617
 msgid "If checked, User will be able to Sign up & Sign in through LinkedIn."
 msgstr ""
 
-#: ../admin/tabs/settings.php:517
+#: ../admin/tabs/settings.php:623
 msgid "LinkedIn API Key Public"
 msgstr ""
 
-#: ../admin/tabs/settings.php:518 ../admin/tabs/settings.php:519
+#: ../admin/tabs/settings.php:624 ../admin/tabs/settings.php:625
 msgid "Obtained when you created your applicaton."
 msgstr ""
 
-#: ../admin/tabs/settings.php:525
+#: ../admin/tabs/settings.php:631
 msgid "LinkedIn API Key Private"
 msgstr ""
 
-#: ../admin/tabs/settings.php:526
+#: ../admin/tabs/settings.php:632
 msgid ""
 "<br><br> VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?"
 "uultralinkedin=1\". Example: http://yourdomain.com/?uultralinkedin=1"
 msgstr ""
 
-#: ../admin/tabs/settings.php:527
+#: ../admin/tabs/settings.php:633
 msgid ""
 "VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?uultralinkedin=1"
 msgstr ""
 
-#: ../admin/tabs/settings.php:534
+#: ../admin/tabs/settings.php:640
 msgid "Yahoo Sign up"
 msgstr ""
 
-#: ../admin/tabs/settings.php:536 ../admin/tabs/settings.php:537
+#: ../admin/tabs/settings.php:642 ../admin/tabs/settings.php:643
 msgid "If checked, User will be able to Sign up & Sign in through Yahoo."
 msgstr ""
 
-#: ../admin/tabs/settings.php:542
+#: ../admin/tabs/settings.php:648
 msgid "Google Sign up"
 msgstr ""
 
-#: ../admin/tabs/settings.php:544 ../admin/tabs/settings.php:545
+#: ../admin/tabs/settings.php:650 ../admin/tabs/settings.php:651
 msgid "If checked, User will be able to Sign up & Sign in through Google."
 msgstr ""
 
-#: ../admin/tabs/settings.php:551
+#: ../admin/tabs/settings.php:657
 msgid "Google Client ID"
 msgstr ""
 
-#: ../admin/tabs/settings.php:552 ../admin/tabs/settings.php:553
+#: ../admin/tabs/settings.php:658 ../admin/tabs/settings.php:659
 msgid "Paste the client id that you got from google API Console"
 msgstr ""
 
-#: ../admin/tabs/settings.php:559
+#: ../admin/tabs/settings.php:665
 msgid "Google Client Secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:560
+#: ../admin/tabs/settings.php:666
 msgid "Set the client secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:561
+#: ../admin/tabs/settings.php:667
 msgid "Obtained when you created the Google Application."
 msgstr ""
 
-#: ../admin/tabs/settings.php:567
+#: ../admin/tabs/settings.php:673
 msgid "Google Redirect URI"
 msgstr ""
 
-#: ../admin/tabs/settings.php:568
+#: ../admin/tabs/settings.php:674
 msgid ""
 "Paste the redirect URI where you given in APi Console. You will get the "
 "Access Token here during login success. Find more information here https://"
@@ -1824,244 +1950,244 @@ msgid ""
 "uultraplus=1"
 msgstr ""
 
-#: ../admin/tabs/settings.php:569
+#: ../admin/tabs/settings.php:675
 msgid ""
 "Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
 "uultraplus=1"
 msgstr ""
 
-#: ../admin/tabs/settings.php:577
+#: ../admin/tabs/settings.php:683
 msgid "Twitter Sign up"
 msgstr ""
 
-#: ../admin/tabs/settings.php:579 ../admin/tabs/settings.php:580
+#: ../admin/tabs/settings.php:685 ../admin/tabs/settings.php:686
 msgid "If checked, User will be able to Sign up & Sign in through Twitter."
 msgstr ""
 
-#: ../admin/tabs/settings.php:587
+#: ../admin/tabs/settings.php:693
 msgid "Consumer Key"
 msgstr ""
 
-#: ../admin/tabs/settings.php:588
+#: ../admin/tabs/settings.php:694
 msgid "Paste the Consumer Key"
 msgstr ""
 
-#: ../admin/tabs/settings.php:589 ../admin/tabs/settings.php:597
+#: ../admin/tabs/settings.php:695 ../admin/tabs/settings.php:703
 msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
 msgstr ""
 
-#: ../admin/tabs/settings.php:595
+#: ../admin/tabs/settings.php:701
 msgid "Consumer Secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:596
+#: ../admin/tabs/settings.php:702
 msgid "Paste the Consumer Secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:603
+#: ../admin/tabs/settings.php:709
 msgid "Twitter Auto Post"
 msgstr ""
 
-#: ../admin/tabs/settings.php:605 ../admin/tabs/settings.php:606
+#: ../admin/tabs/settings.php:711 ../admin/tabs/settings.php:712
 msgid ""
 "If checked, Users Ultra will post a message automatically to the user "
 "twitter timeline when registering."
 msgstr ""
 
-#: ../admin/tabs/settings.php:612
+#: ../admin/tabs/settings.php:718
 #: ../xooclasses/xoo.userultra.mymessage.php:936
 #: ../xooclasses/xoo.userultra.mymessage.php:959
 msgid "Message"
 msgstr ""
 
-#: ../admin/tabs/settings.php:613 ../admin/tabs/settings.php:614
+#: ../admin/tabs/settings.php:719 ../admin/tabs/settings.php:720
 msgid "Input the message that will be posted right after user registration"
 msgstr ""
 
-#: ../admin/tabs/settings.php:620
+#: ../admin/tabs/settings.php:726
 msgid "Yammer Sign up"
 msgstr ""
 
-#: ../admin/tabs/settings.php:622 ../admin/tabs/settings.php:623
+#: ../admin/tabs/settings.php:728 ../admin/tabs/settings.php:729
 msgid "If checked, User will be able to Sign up & Sign in through Yammer."
 msgstr ""
 
-#: ../admin/tabs/settings.php:630
+#: ../admin/tabs/settings.php:736
 msgid "Client Id"
 msgstr ""
 
-#: ../admin/tabs/settings.php:631
+#: ../admin/tabs/settings.php:737
 msgid "Paste the Yammer Client ID"
 msgstr ""
 
-#: ../admin/tabs/settings.php:632
+#: ../admin/tabs/settings.php:738
 msgid "The same used when you signed up."
 msgstr ""
 
-#: ../admin/tabs/settings.php:638
+#: ../admin/tabs/settings.php:744
 msgid "Client Secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:639 ../admin/tabs/settings.php:647
+#: ../admin/tabs/settings.php:745 ../admin/tabs/settings.php:753
 msgid "Paste the Yammer Client Secret"
 msgstr ""
 
-#: ../admin/tabs/settings.php:640
+#: ../admin/tabs/settings.php:746
 msgid "Obtained at Yammer developer center."
 msgstr ""
 
-#: ../admin/tabs/settings.php:646
+#: ../admin/tabs/settings.php:752
 msgid "Redirect URL"
 msgstr ""
 
-#: ../admin/tabs/settings.php:648
+#: ../admin/tabs/settings.php:754
 msgid ""
 "<br><br> VERY IMPORTANT: Your URL should end with \"?uultryammer=1\". "
 "Example: http://yourdomain.com/?uultryammer=1"
 msgstr ""
 
-#: ../admin/tabs/settings.php:660
+#: ../admin/tabs/settings.php:766
 msgid "Redirect Settings"
 msgstr ""
 
-#: ../admin/tabs/settings.php:671
+#: ../admin/tabs/settings.php:777
 msgid "Redirect Backend Profiles"
 msgstr ""
 
-#: ../admin/tabs/settings.php:673
+#: ../admin/tabs/settings.php:779
 msgid ""
 "If checked, non-admin users who try to access backend WP profiles will be "
 "redirected to Users Ultra Profile Page specified above."
 msgstr ""
 
-#: ../admin/tabs/settings.php:674
+#: ../admin/tabs/settings.php:780
 msgid ""
 "Checking this option will send all users to the front-end Users Ultra "
 "Profile Page if they try to access the default backend profile page in wp-"
 "admin. The page can be selected in the Users Ultra System Pages settings."
 msgstr ""
 
-#: ../admin/tabs/settings.php:680
+#: ../admin/tabs/settings.php:786
 msgid "Redirect Backend Login"
 msgstr ""
 
-#: ../admin/tabs/settings.php:682
+#: ../admin/tabs/settings.php:788
 msgid ""
 "If checked, non-admin users who try to access backend login form will be "
 "redirected to the front end Users Ultra Login Page specified above."
 msgstr ""
 
-#: ../admin/tabs/settings.php:683
+#: ../admin/tabs/settings.php:789
 msgid ""
 "Checking this option will send all users to the front-end Users Ultra Login "
 "Page if they try to access the default backend login form. The page can be "
 "selected in the Users Ultra System Pages settings."
 msgstr ""
 
-#: ../admin/tabs/settings.php:689
+#: ../admin/tabs/settings.php:795
 msgid "Redirect Backend Registrations"
 msgstr ""
 
-#: ../admin/tabs/settings.php:691
+#: ../admin/tabs/settings.php:797
 msgid ""
 "If checked, non-admin users who try to access backend registration form will "
 "be redirected to the front end Users Ultra Registration Page specified above."
 msgstr ""
 
-#: ../admin/tabs/settings.php:692
+#: ../admin/tabs/settings.php:798
 msgid ""
 "Checking this option will send all users to the front-end Users Ultra "
 "Registration Page if they try to access the default backend registraiton "
 "form. The page can be selected in the Users Ultra System Pages settings."
 msgstr ""
 
-#: ../admin/tabs/settings.php:699
+#: ../admin/tabs/settings.php:805
 msgid "After Registration"
 msgstr ""
 
-#: ../admin/tabs/settings.php:701
+#: ../admin/tabs/settings.php:807
 msgid ""
 "The user will be taken to this page after registration if the account "
 "activation is set to automatic "
 msgstr ""
 
-#: ../admin/tabs/settings.php:702
+#: ../admin/tabs/settings.php:808
 msgid ""
 "The user will be taken to this page after registration if the account "
 "activation is set to automatic"
 msgstr ""
 
-#: ../admin/tabs/settings.php:710
+#: ../admin/tabs/settings.php:816
 msgid "Registration Options"
 msgstr ""
 
-#: ../admin/tabs/settings.php:718
+#: ../admin/tabs/settings.php:824
 msgid "User Selected Passwords"
 msgstr ""
 
-#: ../admin/tabs/settings.php:720
+#: ../admin/tabs/settings.php:826
 msgid "Enabled, allow users to set password"
 msgstr ""
 
-#: ../admin/tabs/settings.php:721
+#: ../admin/tabs/settings.php:827
 msgid "Disabled, email a random password to users"
 msgstr ""
 
-#: ../admin/tabs/settings.php:722
+#: ../admin/tabs/settings.php:828
 msgid "Enable/disable setting a user selected password at registration"
 msgstr ""
 
-#: ../admin/tabs/settings.php:723
+#: ../admin/tabs/settings.php:829
 msgid ""
 "If enabled, users can choose their own password at registration. If "
 "disabled, WordPress will email users a random password when they register."
 msgstr ""
 
-#: ../admin/tabs/settings.php:731
+#: ../admin/tabs/settings.php:837
 msgid "Privacy Options"
 msgstr ""
 
-#: ../admin/tabs/settings.php:739
+#: ../admin/tabs/settings.php:845
 msgid "Logged-in user viewing of other profiles"
 msgstr ""
 
-#: ../admin/tabs/settings.php:741
+#: ../admin/tabs/settings.php:847
 msgid "Enabled, logged-in users may view other user profiles"
 msgstr ""
 
-#: ../admin/tabs/settings.php:742
+#: ../admin/tabs/settings.php:848
 msgid "Disabled, users may only view their own profile"
 msgstr ""
 
-#: ../admin/tabs/settings.php:743
+#: ../admin/tabs/settings.php:849
 msgid ""
 "Enable or disable logged-in user viewing of other user profiles. Admin users "
 "can always view all profiles."
 msgstr ""
 
-#: ../admin/tabs/settings.php:744
+#: ../admin/tabs/settings.php:850
 msgid ""
 "If enabled, logged-in users are allowed to view other user profiles. If "
 "disabled, logged-in users may only view theor own profile."
 msgstr ""
 
-#: ../admin/tabs/settings.php:750
+#: ../admin/tabs/settings.php:856
 msgid "Guests viewing of profiles"
 msgstr ""
 
-#: ../admin/tabs/settings.php:752
+#: ../admin/tabs/settings.php:858
 msgid "Enabled, make profiles publicly visible"
 msgstr ""
 
-#: ../admin/tabs/settings.php:753
+#: ../admin/tabs/settings.php:859
 msgid "Disabled, users must login to view profiles"
 msgstr ""
 
-#: ../admin/tabs/settings.php:754
+#: ../admin/tabs/settings.php:860
 msgid "Enable or disable guest and non-logged in user viewing of profiles."
 msgstr ""
 
-#: ../admin/tabs/settings.php:755
+#: ../admin/tabs/settings.php:861
 msgid ""
 "If enabled, profiles will be publicly visible to non-logged in users. If "
 "disabled, guests must log in to view profiles."
@@ -2084,8 +2210,8 @@ msgid "My Latest Messages"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:194
-#: ../xooclasses/xoo.userultra.user.php:2112
-#: ../xooclasses/xoo.userultra.user.php:2116
+#: ../xooclasses/xoo.userultra.user.php:2124
+#: ../xooclasses/xoo.userultra.user.php:2128
 msgid "My Friends"
 msgstr ""
 
@@ -2096,8 +2222,8 @@ msgid ""
 msgstr ""
 
 #: ../templates/basic/dashboard.php:277
-#: ../xooclasses/xoo.userultra.user.php:2126
-#: ../xooclasses/xoo.userultra.user.php:2130
+#: ../xooclasses/xoo.userultra.user.php:2138
+#: ../xooclasses/xoo.userultra.user.php:2142
 msgid "My Posts"
 msgstr ""
 
@@ -2106,8 +2232,8 @@ msgid "Here you can manage your posts. "
 msgstr ""
 
 #: ../templates/basic/dashboard.php:321 ../templates/basic/dashboard.php:356
-#: ../xooclasses/xoo.userultra.user.php:2046
-#: ../xooclasses/xoo.userultra.user.php:2050
+#: ../xooclasses/xoo.userultra.user.php:2058
+#: ../xooclasses/xoo.userultra.user.php:2062
 msgid "My Orders"
 msgstr ""
 
@@ -2120,7 +2246,7 @@ msgid "Here you can track your orders. "
 msgstr ""
 
 #: ../templates/basic/dashboard.php:394
-#: ../xooclasses/xoo.userultra.user.php:130
+#: ../xooclasses/xoo.userultra.user.php:138
 msgid "My Galleries"
 msgstr ""
 
@@ -2131,8 +2257,8 @@ msgstr ""
 #: ../templates/basic/dashboard.php:411
 #: ../xooclasses/xoo.userultra.payment.paypal.php:614
 #: ../xooclasses/xoo.userultra.payment.paypal.php:790
-#: ../xooclasses/xoo.userultra.photos.php:1563
-#: ../xooclasses/xoo.userultra.photos.php:1703
+#: ../xooclasses/xoo.userultra.photos.php:1573
+#: ../xooclasses/xoo.userultra.photos.php:1713
 msgid "Description"
 msgstr ""
 
@@ -2145,7 +2271,7 @@ msgid "Delete this gallery?"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:485
-#: ../xooclasses/xoo.userultra.user.php:123
+#: ../xooclasses/xoo.userultra.user.php:131
 msgid "My Photos"
 msgstr ""
 
@@ -2170,9 +2296,9 @@ msgid "Sent Messages"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:678
-#: ../xooclasses/xoo.userultra.class.php:660
-#: ../xooclasses/xoo.userultra.user.php:2005
-#: ../xooclasses/xoo.userultra.user.php:2009
+#: ../xooclasses/xoo.userultra.class.php:669
+#: ../xooclasses/xoo.userultra.user.php:2017
+#: ../xooclasses/xoo.userultra.user.php:2021
 msgid "My Account"
 msgstr ""
 
@@ -2212,8 +2338,8 @@ msgstr ""
 
 #: ../templates/basic/dashboard.php:751
 #: ../xooclasses/xoo.userultra.admin.php:54
-#: ../xooclasses/xoo.userultra.user.php:2019
-#: ../xooclasses/xoo.userultra.user.php:2023
+#: ../xooclasses/xoo.userultra.user.php:2031
+#: ../xooclasses/xoo.userultra.user.php:2035
 msgid "Settings"
 msgstr ""
 
@@ -2246,8 +2372,8 @@ msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:813 ../templates/basic/profile.php:174
-#: ../xooclasses/xoo.userultra.user.php:2099
-#: ../xooclasses/xoo.userultra.user.php:2103
+#: ../xooclasses/xoo.userultra.user.php:2111
+#: ../xooclasses/xoo.userultra.user.php:2115
 msgid "My Videos"
 msgstr ""
 
@@ -2256,7 +2382,7 @@ msgid "Here you can manage your videos."
 msgstr ""
 
 #: ../templates/basic/dashboard.php:835
-#: ../xooclasses/xoo.userultra.photos.php:1824
+#: ../xooclasses/xoo.userultra.photos.php:1834
 msgid "Video ID"
 msgstr ""
 
@@ -2308,8 +2434,8 @@ msgid "Photos available only for registered users"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.admin.php:52
-#: ../xooclasses/xoo.userultra.user.php:1965
-#: ../xooclasses/xoo.userultra.user.php:1969
+#: ../xooclasses/xoo.userultra.user.php:1977
+#: ../xooclasses/xoo.userultra.user.php:1981
 msgid "Dashboard"
 msgstr ""
 
@@ -2389,7 +2515,7 @@ msgid "Subscribe to receive our periodic email updates"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.admin.php:392
-#: ../xooclasses/xoo.userultra.class.php:1819
+#: ../xooclasses/xoo.userultra.class.php:1830
 msgid "User registration is currently not allowed."
 msgstr ""
 
@@ -2606,6 +2732,14 @@ msgstr ""
 msgid "Request rejected"
 msgstr ""
 
+#: ../xooclasses/xoo.userultra.captchamodules.php:85
+msgid "Human Check"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:93
+msgid "Prove you're not a robot"
+msgstr ""
+
 #: ../xooclasses/xoo.userultra.class.php:151
 msgid ""
 "Thanks for installing Users Ultra. Do you need help?. Users Ultra can create "
@@ -2614,324 +2748,331 @@ msgid ""
 "Ultra. "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:172
+#: ../xooclasses/xoo.userultra.class.php:181
 msgid ""
-"Users Ultra Pro is Ready!. VIP Support 24/7, Badges & Achievements, Amazing "
-"Customizable User Profile, Even more control over your users community and "
-"so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why "
-"you need to go pro. <a href='#'  id='uultradmin-remove-"
+"<h2>It's time to upgrade to Users Ultra Pro!. </h2> <p>Unique Widgetized "
+"user profile, add unlimited widgets, add unlimited links within the user's "
+"dashboard. Integrating with third-party plugins by using shortcodes, "
+"friends, followers, following, user's wall.</p> <p> <a href='http://"
+"usersultra.com/'  target='_blank' class='button button-secondary'  >CLICK "
+"HERE TO FIND OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-"
 "proversionmessage'>Remove this message</a>"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:183
+#: ../xooclasses/xoo.userultra.class.php:192
 msgid ""
 "Users Ultra might be working wrong. We couldn't find the 'My Account' "
 "shortcode. Please click on settings tab and make sure that the My Account "
 "page has been set correctly. Then click on the 'save' button "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:502
+#: ../xooclasses/xoo.userultra.class.php:511
 msgid "View Profile"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:540
+#: ../xooclasses/xoo.userultra.class.php:549
 msgid "Members Directory"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:581
-#: ../xooclasses/xoo.userultra.class.php:1454
+#: ../xooclasses/xoo.userultra.class.php:590
+#: ../xooclasses/xoo.userultra.class.php:1463
 msgid "Login"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:619
+#: ../xooclasses/xoo.userultra.class.php:628
 msgid "Sign up"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:716
+#: ../xooclasses/xoo.userultra.class.php:725
 msgid "Text"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:717
+#: ../xooclasses/xoo.userultra.class.php:726
 msgid "Image Upload"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:718
+#: ../xooclasses/xoo.userultra.class.php:727
 msgid "Textarea"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:719
+#: ../xooclasses/xoo.userultra.class.php:728
 msgid "Select Dropdown"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:720
+#: ../xooclasses/xoo.userultra.class.php:729
 msgid "Radio"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:721
+#: ../xooclasses/xoo.userultra.class.php:730
 msgid "Checkbox"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:722
-#: ../xooclasses/xoo.userultra.class.php:753
-#: ../xooclasses/xoo.userultra.class.php:813
+#: ../xooclasses/xoo.userultra.class.php:731
+#: ../xooclasses/xoo.userultra.class.php:762
+#: ../xooclasses/xoo.userultra.class.php:822
 msgid "Password"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:723
+#: ../xooclasses/xoo.userultra.class.php:732
 msgid "Date Picker"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:744
-#: ../xooclasses/xoo.userultra.class.php:790
+#: ../xooclasses/xoo.userultra.class.php:753
+#: ../xooclasses/xoo.userultra.class.php:799
 msgid "E-mail"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:756
+#: ../xooclasses/xoo.userultra.class.php:765
 msgid ""
 "Password must be at least 7 characters long. To make it stronger, use upper "
 "and lower case letters, numbers and symbols."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:763
+#: ../xooclasses/xoo.userultra.class.php:772
 msgid "Confirm Password"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:766
+#: ../xooclasses/xoo.userultra.class.php:775
 msgid "Type your password again."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:793
+#: ../xooclasses/xoo.userultra.class.php:802
 msgid "A password will be e-mailed to you."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:805
-#: ../xooclasses/xoo.userultra.class.php:1637
+#: ../xooclasses/xoo.userultra.class.php:814
+#: ../xooclasses/xoo.userultra.class.php:1646
 msgid "Username or Email"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:823
+#: ../xooclasses/xoo.userultra.class.php:832
 msgid "Profile Info"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:835
+#: ../xooclasses/xoo.userultra.class.php:844
 msgid "First Name"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:849
+#: ../xooclasses/xoo.userultra.class.php:858
 msgid "Last Name"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:882
+#: ../xooclasses/xoo.userultra.class.php:891
 msgid "Display Name"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:897
+#: ../xooclasses/xoo.userultra.class.php:906
 msgid "Brief Description"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:912
+#: ../xooclasses/xoo.userultra.class.php:921
 msgid "About / Bio"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:927
+#: ../xooclasses/xoo.userultra.class.php:936
 msgid "Country"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:942
+#: ../xooclasses/xoo.userultra.class.php:951
 msgid "Contact Info"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:955
+#: ../xooclasses/xoo.userultra.class.php:964
 msgid "Website"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:967
+#: ../xooclasses/xoo.userultra.class.php:976
 msgid "Social Profiles"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:978
+#: ../xooclasses/xoo.userultra.class.php:987
 msgid "Facebook"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:985
+#: ../xooclasses/xoo.userultra.class.php:994
 msgid "Connect via Facebook"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:994
+#: ../xooclasses/xoo.userultra.class.php:1003
 msgid "Twitter Username"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1001
+#: ../xooclasses/xoo.userultra.class.php:1010
 msgid "Connect via Twitter"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1010
+#: ../xooclasses/xoo.userultra.class.php:1019
 msgid "Google+"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1017
+#: ../xooclasses/xoo.userultra.class.php:1026
 msgid "Connect via Google+"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1023
-#: ../xooclasses/xoo.userultra.class.php:1847
+#: ../xooclasses/xoo.userultra.class.php:1032
+#: ../xooclasses/xoo.userultra.class.php:1858
 msgid "Account Info"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1034
+#: ../xooclasses/xoo.userultra.class.php:1043
 msgid "New Password"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1348
+#: ../xooclasses/xoo.userultra.class.php:1357
 msgid "Oops! The link is not correct! "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1387
+#: ../xooclasses/xoo.userultra.class.php:1396
 msgid "Type New Password:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1396
+#: ../xooclasses/xoo.userultra.class.php:1405
 msgid "Re-type Password:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1405
+#: ../xooclasses/xoo.userultra.class.php:1414
 msgid "Reset Password"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1488
+#: ../xooclasses/xoo.userultra.class.php:1497
 msgid "Sign in "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1581
+#: ../xooclasses/xoo.userultra.class.php:1590
 msgid "Forgot Password?"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1589
-#: ../xooclasses/xoo.userultra.class.php:2256
+#: ../xooclasses/xoo.userultra.class.php:1598
+#: ../xooclasses/xoo.userultra.class.php:2284
 msgid "Register"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1603
+#: ../xooclasses/xoo.userultra.class.php:1612
 msgid "Remember me"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1607
+#: ../xooclasses/xoo.userultra.class.php:1616
 msgid "Log In"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1628
+#: ../xooclasses/xoo.userultra.class.php:1637
 msgid ""
 " A quick access link will be sent to your email that will let you get in "
 "your account and change your password. "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1648
+#: ../xooclasses/xoo.userultra.class.php:1657
 msgid "Back to Login"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1654
+#: ../xooclasses/xoo.userultra.class.php:1663
 msgid "Send me Password"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1694
-#: ../xooclasses/xoo.userultra.class.php:1706
+#: ../xooclasses/xoo.userultra.class.php:1703
+#: ../xooclasses/xoo.userultra.class.php:1715
 msgid "Your password is too similar to your username."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1695
-#: ../xooclasses/xoo.userultra.class.php:1707
+#: ../xooclasses/xoo.userultra.class.php:1704
+#: ../xooclasses/xoo.userultra.class.php:1716
 msgid "Both passwords do not match."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1696
-#: ../xooclasses/xoo.userultra.class.php:1708
+#: ../xooclasses/xoo.userultra.class.php:1705
+#: ../xooclasses/xoo.userultra.class.php:1717
 msgid "Your password is too short."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1697
-#: ../xooclasses/xoo.userultra.class.php:1709
+#: ../xooclasses/xoo.userultra.class.php:1706
+#: ../xooclasses/xoo.userultra.class.php:1718
 msgid "Your password strength is too weak."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1698
-#: ../xooclasses/xoo.userultra.class.php:1710
+#: ../xooclasses/xoo.userultra.class.php:1707
+#: ../xooclasses/xoo.userultra.class.php:1719
 msgid "Your password strength weak."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1699
+#: ../xooclasses/xoo.userultra.class.php:1708
 msgid "Please provide username."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1700
+#: ../xooclasses/xoo.userultra.class.php:1709
 msgid "Please provide email address."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1701
+#: ../xooclasses/xoo.userultra.class.php:1710
 msgid "Please provide valid email address."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1702
+#: ../xooclasses/xoo.userultra.class.php:1711
 msgid "That username is already taken, please try a different one."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1703
+#: ../xooclasses/xoo.userultra.class.php:1712
 msgid ""
 "The email you entered is already registered. Please try a new email or log "
 "in to your existing account."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1711
+#: ../xooclasses/xoo.userultra.class.php:1720
 msgid "Good"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1712
+#: ../xooclasses/xoo.userultra.class.php:1721
 msgid "Strong"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1714
+#: ../xooclasses/xoo.userultra.class.php:1723
 msgid "ERROR"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1771
+#: ../xooclasses/xoo.userultra.class.php:1782
 msgid "Sign Up"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1841
+#: ../xooclasses/xoo.userultra.class.php:1852
 msgid "Fields with (*) are required"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1845
+#: ../xooclasses/xoo.userultra.class.php:1856
 msgid "Sign up "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:1896
-#: ../xooclasses/xoo.userultra.class.php:1900
-#: ../xooclasses/xoo.userultra.class.php:1910
-#: ../xooclasses/xoo.userultra.class.php:1919
-#: ../xooclasses/xoo.userultra.class.php:2061
-#: ../xooclasses/xoo.userultra.class.php:2065
-#: ../xooclasses/xoo.userultra.class.php:2086
-#: ../xooclasses/xoo.userultra.class.php:2168
+#: ../xooclasses/xoo.userultra.class.php:1907
+#: ../xooclasses/xoo.userultra.class.php:1911
+#: ../xooclasses/xoo.userultra.class.php:1921
+#: ../xooclasses/xoo.userultra.class.php:1930
+#: ../xooclasses/xoo.userultra.class.php:2072
+#: ../xooclasses/xoo.userultra.class.php:2076
+#: ../xooclasses/xoo.userultra.class.php:2097
+#: ../xooclasses/xoo.userultra.class.php:2179
 msgid " * This input is required!"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2181
+#: ../xooclasses/xoo.userultra.class.php:2192
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2185
+#: ../xooclasses/xoo.userultra.class.php:2196
 msgid "Type your new password again."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2197
-#: ../xooclasses/xoo.userultra.user.php:1567
+#: ../xooclasses/xoo.userultra.class.php:2208
+#: ../xooclasses/xoo.userultra.user.php:1579
 msgid "Hide from Public"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2227
+#: ../xooclasses/xoo.userultra.class.php:2230
 msgid "Payment Information"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.class.php:2260
+#: ../xooclasses/xoo.userultra.class.php:2268
+msgid "Terms & Conditions "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.login.php:168
@@ -3086,7 +3227,7 @@ msgid "Type your reply here..."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.mymessage.php:460
-#: ../xooclasses/xoo.userultra.publisher.php:137
+#: ../xooclasses/xoo.userultra.publisher.php:148
 msgid "Back"
 msgstr ""
 
@@ -3131,9 +3272,9 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.payment.paypal.php:795
 #: ../xooclasses/xoo.userultra.socials.php:516
 #: ../xooclasses/xoo.userultra.socials.php:589
-#: ../xooclasses/xoo.userultra.user.php:539
-#: ../xooclasses/xoo.userultra.user.php:610
-#: ../xooclasses/xoo.userultra.user.php:678
+#: ../xooclasses/xoo.userultra.user.php:551
+#: ../xooclasses/xoo.userultra.user.php:622
+#: ../xooclasses/xoo.userultra.user.php:690
 msgid "Action"
 msgstr ""
 
@@ -3304,43 +3445,43 @@ msgid "Filter by category: "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:379
-#: ../xooclasses/xoo.userultra.user.php:4149
+#: ../xooclasses/xoo.userultra.user.php:4161
 msgid "Total found: "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:657
-#: ../xooclasses/xoo.userultra.user.php:4024
-#: ../xooclasses/xoo.userultra.user.php:4853
-#: ../xooclasses/xoo.userultra.user.php:4926
+#: ../xooclasses/xoo.userultra.user.php:4036
+#: ../xooclasses/xoo.userultra.user.php:4865
+#: ../xooclasses/xoo.userultra.user.php:4938
 msgid "Previous"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:658
-#: ../xooclasses/xoo.userultra.user.php:4025
-#: ../xooclasses/xoo.userultra.user.php:4854
-#: ../xooclasses/xoo.userultra.user.php:4927
+#: ../xooclasses/xoo.userultra.user.php:4037
+#: ../xooclasses/xoo.userultra.user.php:4866
+#: ../xooclasses/xoo.userultra.user.php:4939
 msgid "Next"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:1108
-#: ../xooclasses/xoo.userultra.photos.php:1305
+#: ../xooclasses/xoo.userultra.photos.php:1315
 msgid "You have no galleries yet."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:1125
 #: ../xooclasses/xoo.userultra.photos.php:1185
-#: ../xooclasses/xoo.userultra.photos.php:1250
+#: ../xooclasses/xoo.userultra.photos.php:1255
 msgid "delete"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:1127
 #: ../xooclasses/xoo.userultra.photos.php:1185
-#: ../xooclasses/xoo.userultra.photos.php:2184
+#: ../xooclasses/xoo.userultra.photos.php:2194
 msgid "edit"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:1140
-#: ../xooclasses/xoo.userultra.photos.php:1332
+#: ../xooclasses/xoo.userultra.photos.php:1342
 msgid "Picture(s)"
 msgstr ""
 
@@ -3348,177 +3489,177 @@ msgstr ""
 msgid "You have no videos yet."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:1239
+#: ../xooclasses/xoo.userultra.photos.php:1244
 msgid "The user has not added videos yet."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:1566
+#: ../xooclasses/xoo.userultra.photos.php:1576
 msgid "Tags"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:1569
+#: ../xooclasses/xoo.userultra.photos.php:1579
 msgid "Category"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:1706
+#: ../xooclasses/xoo.userultra.photos.php:1716
 msgid "Visibility"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2006
-#: ../xooclasses/xoo.userultra.photos.php:2162
+#: ../xooclasses/xoo.userultra.photos.php:2016
+#: ../xooclasses/xoo.userultra.photos.php:2172
 msgid "You have no photos in this gallery yet."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2083
+#: ../xooclasses/xoo.userultra.photos.php:2093
 msgid "You have to be logged in to see this photo."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2090
+#: ../xooclasses/xoo.userultra.photos.php:2100
 msgid "This photo is accesible only for friends of the user."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2097
+#: ../xooclasses/xoo.userultra.photos.php:2107
 msgid "This photo could not be displayed."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2177
+#: ../xooclasses/xoo.userultra.photos.php:2187
 msgid "MAIN PHOTO"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2268
+#: ../xooclasses/xoo.userultra.photos.php:2278
 msgid "Drop files here"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.photos.php:2301
-#: ../xooclasses/xoo.userultra.publisher.php:1080
-#: ../xooclasses/xoo.userultra.user.php:4586
+#: ../xooclasses/xoo.userultra.photos.php:2311
+#: ../xooclasses/xoo.userultra.publisher.php:1091
+#: ../xooclasses/xoo.userultra.user.php:4598
 msgid "Allowed Files"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:63
+#: ../xooclasses/xoo.userultra.publisher.php:74
 msgid "Invalid Post"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:103
+#: ../xooclasses/xoo.userultra.publisher.php:114
 msgid "Edit Post"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:137
+#: ../xooclasses/xoo.userultra.publisher.php:148
 msgid "Back:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:143
-#: ../xooclasses/xoo.userultra.publisher.php:315
+#: ../xooclasses/xoo.userultra.publisher.php:154
+#: ../xooclasses/xoo.userultra.publisher.php:326
 msgid "Title:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:149
-#: ../xooclasses/xoo.userultra.publisher.php:323
+#: ../xooclasses/xoo.userultra.publisher.php:160
+#: ../xooclasses/xoo.userultra.publisher.php:334
 msgid "Category:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:165
-#: ../xooclasses/xoo.userultra.publisher.php:167
-#: ../xooclasses/xoo.userultra.publisher.php:331
-#: ../xooclasses/xoo.userultra.publisher.php:333
+#: ../xooclasses/xoo.userultra.publisher.php:176
+#: ../xooclasses/xoo.userultra.publisher.php:178
+#: ../xooclasses/xoo.userultra.publisher.php:342
+#: ../xooclasses/xoo.userultra.publisher.php:344
 msgid "-- Select --"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:178
-#: ../xooclasses/xoo.userultra.publisher.php:346
+#: ../xooclasses/xoo.userultra.publisher.php:189
+#: ../xooclasses/xoo.userultra.publisher.php:357
 msgid "Post Photos:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:204
-#: ../xooclasses/xoo.userultra.publisher.php:371
+#: ../xooclasses/xoo.userultra.publisher.php:215
+#: ../xooclasses/xoo.userultra.publisher.php:382
 msgid "Tags:"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:274
-#: ../xooclasses/xoo.userultra.publisher.php:309
-#: ../xooclasses/xoo.userultra.publisher.php:431
+#: ../xooclasses/xoo.userultra.publisher.php:285
+#: ../xooclasses/xoo.userultra.publisher.php:320
+#: ../xooclasses/xoo.userultra.publisher.php:442
 msgid "Add New Post"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:285
+#: ../xooclasses/xoo.userultra.publisher.php:296
 msgid "Max Allowed Posts: "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:285
+#: ../xooclasses/xoo.userultra.publisher.php:296
 msgid "You have posted: "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:441
+#: ../xooclasses/xoo.userultra.publisher.php:452
 msgid "You have no posts."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:460
+#: ../xooclasses/xoo.userultra.publisher.php:471
 msgid "Title"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:502
+#: ../xooclasses/xoo.userultra.publisher.php:513
 msgid "Live"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:506
+#: ../xooclasses/xoo.userultra.publisher.php:517
 msgid "Offline"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:510
+#: ../xooclasses/xoo.userultra.publisher.php:521
 msgid "Awaiting Approval"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:513
+#: ../xooclasses/xoo.userultra.publisher.php:524
 msgid "Scheduled"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:534
-#: ../xooclasses/xoo.userultra.publisher.php:909
+#: ../xooclasses/xoo.userultra.publisher.php:545
+#: ../xooclasses/xoo.userultra.publisher.php:920
 msgid "Delete Image"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:575
-#: ../xooclasses/xoo.userultra.publisher.php:772
+#: ../xooclasses/xoo.userultra.publisher.php:586
+#: ../xooclasses/xoo.userultra.publisher.php:783
 msgid "Empty post title"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:589
-#: ../xooclasses/xoo.userultra.publisher.php:593
-#: ../xooclasses/xoo.userultra.publisher.php:598
-#: ../xooclasses/xoo.userultra.publisher.php:788
-#: ../xooclasses/xoo.userultra.publisher.php:792
-#: ../xooclasses/xoo.userultra.publisher.php:797
+#: ../xooclasses/xoo.userultra.publisher.php:600
+#: ../xooclasses/xoo.userultra.publisher.php:604
+#: ../xooclasses/xoo.userultra.publisher.php:609
+#: ../xooclasses/xoo.userultra.publisher.php:799
+#: ../xooclasses/xoo.userultra.publisher.php:803
+#: ../xooclasses/xoo.userultra.publisher.php:808
 msgid "Please choose a category"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:605
-#: ../xooclasses/xoo.userultra.publisher.php:806
+#: ../xooclasses/xoo.userultra.publisher.php:616
+#: ../xooclasses/xoo.userultra.publisher.php:817
 msgid "Empty post content"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:656
+#: ../xooclasses/xoo.userultra.publisher.php:667
 msgid "Post updated successfully."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:856
+#: ../xooclasses/xoo.userultra.publisher.php:867
 msgid "You cannot add more posts "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:892
+#: ../xooclasses/xoo.userultra.publisher.php:903
 msgid "Post published successfully. The admin will review it soon"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:1041
+#: ../xooclasses/xoo.userultra.publisher.php:1052
 msgid "Drop Images Here"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:1139
-#: ../xooclasses/xoo.userultra.user.php:4642
+#: ../xooclasses/xoo.userultra.publisher.php:1150
+#: ../xooclasses/xoo.userultra.user.php:4654
 msgid "You may only upload one image at a time!"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.publisher.php:1154
-#: ../xooclasses/xoo.userultra.user.php:4657
+#: ../xooclasses/xoo.userultra.publisher.php:1165
+#: ../xooclasses/xoo.userultra.user.php:4669
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr ""
 
@@ -3574,7 +3715,7 @@ msgstr ""
 msgid "<strong>ERROR:</strong> Registration is disabled for this site."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:569
+#: ../xooclasses/xoo.userultra.register.php:573
 msgid "Registration successful. Please check your email."
 msgstr ""
 
@@ -3632,8 +3773,8 @@ msgid "Approve"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.socials.php:539
-#: ../xooclasses/xoo.userultra.user.php:558
-#: ../xooclasses/xoo.userultra.user.php:629
+#: ../xooclasses/xoo.userultra.user.php:570
+#: ../xooclasses/xoo.userultra.user.php:641
 msgid "Deny"
 msgstr ""
 
@@ -3645,219 +3786,219 @@ msgstr ""
 msgid "Block"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:109
+#: ../xooclasses/xoo.userultra.user.php:117
 msgid "Basic Information"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:116
+#: ../xooclasses/xoo.userultra.user.php:124
 msgid "My Cyrcle"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:137
+#: ../xooclasses/xoo.userultra.user.php:145
 msgid "My Latest Posts"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:172
+#: ../xooclasses/xoo.userultra.user.php:180
 msgid "Content visible only for registered users. "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:293
+#: ../xooclasses/xoo.userultra.user.php:305
 msgid "The file format is not allowed!"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:328
+#: ../xooclasses/xoo.userultra.user.php:340
 msgid "--- Finished ---  "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:477
+#: ../xooclasses/xoo.userultra.user.php:489
 msgid " SUCESS! The sync process has been finished. "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:524
+#: ../xooclasses/xoo.userultra.user.php:536
 msgid "Pending Payment"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:537
-#: ../xooclasses/xoo.userultra.user.php:608
-#: ../xooclasses/xoo.userultra.user.php:676
+#: ../xooclasses/xoo.userultra.user.php:549
+#: ../xooclasses/xoo.userultra.user.php:620
+#: ../xooclasses/xoo.userultra.user.php:688
 msgid "Email"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:538
-#: ../xooclasses/xoo.userultra.user.php:609
-#: ../xooclasses/xoo.userultra.user.php:677
+#: ../xooclasses/xoo.userultra.user.php:550
+#: ../xooclasses/xoo.userultra.user.php:621
+#: ../xooclasses/xoo.userultra.user.php:689
 msgid "Registered"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:571
+#: ../xooclasses/xoo.userultra.user.php:583
 msgid "There are no pending payment users."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:595
+#: ../xooclasses/xoo.userultra.user.php:607
 msgid "Pending Moderation"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:642
+#: ../xooclasses/xoo.userultra.user.php:654
 msgid "There are no pending moderation users."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:663
+#: ../xooclasses/xoo.userultra.user.php:675
 msgid "Pending Confirmation"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:697
+#: ../xooclasses/xoo.userultra.user.php:709
 msgid "Send Link"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:710
+#: ../xooclasses/xoo.userultra.user.php:722
 msgid "There are no pending confirmation users."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:743
-#: ../xooclasses/xoo.userultra.user.php:795
+#: ../xooclasses/xoo.userultra.user.php:755
+#: ../xooclasses/xoo.userultra.user.php:807
 msgid "User has been activated"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:766
+#: ../xooclasses/xoo.userultra.user.php:778
 msgid "Activation link sent"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:821
+#: ../xooclasses/xoo.userultra.user.php:833
 msgid "User has been deleted"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:994
+#: ../xooclasses/xoo.userultra.user.php:1006
 msgid " ERROR! Please type your new email "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1000
+#: ../xooclasses/xoo.userultra.user.php:1012
 msgid " ERROR! Please type a valid email address "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1019
+#: ../xooclasses/xoo.userultra.user.php:1031
 msgid " ERROR! You haven't changed your email. "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1028
+#: ../xooclasses/xoo.userultra.user.php:1040
 msgid " ERROR! The email is in use already "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1056
+#: ../xooclasses/xoo.userultra.user.php:1068
 msgid " Success!! Your email account has been changed to : "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1103
-#: ../xooclasses/xoo.userultra.user.php:1182
+#: ../xooclasses/xoo.userultra.user.php:1115
+#: ../xooclasses/xoo.userultra.user.php:1194
 msgid " ERROR! Password must be identical "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1109
-#: ../xooclasses/xoo.userultra.user.php:1188
+#: ../xooclasses/xoo.userultra.user.php:1121
+#: ../xooclasses/xoo.userultra.user.php:1200
 msgid " ERROR! Password should contain at least 7 alphanumeric characters "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1131
+#: ../xooclasses/xoo.userultra.user.php:1143
 msgid " Success!! The new password has been sent to "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1212
+#: ../xooclasses/xoo.userultra.user.php:1224
 msgid " Sucess!! The new password has been sent to "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1214
+#: ../xooclasses/xoo.userultra.user.php:1226
 msgid "<a href=\""
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1220
+#: ../xooclasses/xoo.userultra.user.php:1232
 msgid " ERROR! Invalid reset link "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1251
+#: ../xooclasses/xoo.userultra.user.php:1263
 msgid "Email not found"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1260
-#: ../xooclasses/xoo.userultra.user.php:1292
+#: ../xooclasses/xoo.userultra.user.php:1272
+#: ../xooclasses/xoo.userultra.user.php:1304
 msgid "Your account is not active yet."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1282
+#: ../xooclasses/xoo.userultra.user.php:1294
 msgid "User not found"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1336
+#: ../xooclasses/xoo.userultra.user.php:1348
 msgid " A reset link has been sent to your email "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1978
-#: ../xooclasses/xoo.userultra.user.php:1982
+#: ../xooclasses/xoo.userultra.user.php:1990
+#: ../xooclasses/xoo.userultra.user.php:1994
 msgid "Profile"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:1991
-#: ../xooclasses/xoo.userultra.user.php:1995
+#: ../xooclasses/xoo.userultra.user.php:2003
+#: ../xooclasses/xoo.userultra.user.php:2007
 msgid "Profile Customizer"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2033
-#: ../xooclasses/xoo.userultra.user.php:2037
+#: ../xooclasses/xoo.userultra.user.php:2045
+#: ../xooclasses/xoo.userultra.user.php:2049
 msgid "My Purchases"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2066
+#: ../xooclasses/xoo.userultra.user.php:2078
 msgid "My Messages"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2070
+#: ../xooclasses/xoo.userultra.user.php:2082
 msgid "Messages"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2076
+#: ../xooclasses/xoo.userultra.user.php:2088
 msgid "Unread Messages"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2086
-#: ../xooclasses/xoo.userultra.user.php:2090
+#: ../xooclasses/xoo.userultra.user.php:2098
+#: ../xooclasses/xoo.userultra.user.php:2102
 msgid "Photos"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2136
-#: ../xooclasses/xoo.userultra.user.php:2475
+#: ../xooclasses/xoo.userultra.user.php:2148
+#: ../xooclasses/xoo.userultra.user.php:2487
 msgid "Logout"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2474
-#: ../xooclasses/xoo.userultra.user.php:2579
+#: ../xooclasses/xoo.userultra.user.php:2486
+#: ../xooclasses/xoo.userultra.user.php:2591
 msgid "See Profile"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2993
+#: ../xooclasses/xoo.userultra.user.php:3005
 msgid "Free"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3291
+#: ../xooclasses/xoo.userultra.user.php:3303
 #, php-format
 msgid "Search %s"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3752
+#: ../xooclasses/xoo.userultra.user.php:3764
 msgid "« Previous"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3753
+#: ../xooclasses/xoo.userultra.user.php:3765
 msgid "Next »"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4266
-#: ../xooclasses/xoo.userultra.user.php:4285
+#: ../xooclasses/xoo.userultra.user.php:4278
+#: ../xooclasses/xoo.userultra.user.php:4297
 msgid "Country not available"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4312
+#: ../xooclasses/xoo.userultra.user.php:4324
 msgid "This user hasn't a description yet"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4550
+#: ../xooclasses/xoo.userultra.user.php:4562
 msgid "Drop Avatar here"
 msgstr ""
 

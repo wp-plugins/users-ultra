@@ -474,7 +474,7 @@ function get_total_likes (item_id, module)
 				
 				success: function(data){					
 										
-					$("#uu-like-sore-id-"+item_id).html(data);
+					jQuery("#uu-like-sore-id-"+item_id).html(data);
 					
 													
 					
@@ -493,7 +493,7 @@ function reload_my_friends ()
 				
 				success: function(data){					
 										
-								$("#uultra-my-friends-list").html(data);
+								jQuery("#uultra-my-friends-list").html(data);
 					
 					}
 			});
@@ -510,7 +510,7 @@ function reload_friend_request ()
 				
 				success: function(data){					
 										
-								$("#uultra-my-friends-request").html(data);
+								jQuery("#uultra-my-friends-request").html(data);
 					
 					}
 			});
