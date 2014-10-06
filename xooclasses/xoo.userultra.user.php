@@ -4352,10 +4352,12 @@ class XooUserUser {
 							$icon = $field['icon'];
 							
 							//get meta
-							$social_meta = get_user_meta($user_id, $field['meta'], true);
+							$social_meta = get_user_meta($user_id, $field['meta'], true);					
+							
 							
 							if($social_meta!="")
 							{
+								$social_meta = apply_filters('uultra_social_url_' .$field['meta'], $social_meta);								
 								$html_social .="<a href='".$social_meta."' target='_blank'><i class='uultra-social-ico fa fa-".$icon." '></i></a>";
 					
 							}

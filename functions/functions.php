@@ -45,6 +45,56 @@ if (!function_exists('is_get')) {
 }
 
 
+if(!function_exists('uultra_default_socail_links')) {
+	
+    function uultra_default_socail_links() 
+	{
+        add_filter('uultra_social_url_user_email', 'uultra_format_email_link');
+        add_filter('uultra_social_url_twitter', 'uultra_format_twitter_link');
+        add_filter('uultra_social_url_facebook', 'uultra_format_facebook_link');
+        add_filter('uultra_social_url_googleplus', 'uultra_format_google_link');		
+		add_filter('uultra_social_url_user_url', 'uultra_format_user_url_link');
+    }
+}
+
+// Hooking default social url
+uultra_default_socail_links();
+
+
+if(!function_exists('uultra_format_email_link')) {
+    function uultra_format_email_link($content){
+        return 'mailto:'.$content;
+    }
+}
+
+if(!function_exists('uultra_format_user_url_link')) 
+{
+    function uultra_format_user_url_link($content){
+        return $content;
+    }
+}
+
+if(!function_exists('uultra_format_twitter_link')) {
+    function uultra_format_twitter_link($content){
+        return 'http://twitter.com/'.$content;
+    }
+}
+
+if(!function_exists('uultra_format_facebook_link')) {
+    function uultra_format_facebook_link($content){
+        return 'http://www.facebook.com/'.$content;
+    }
+}
+
+if(!function_exists('uultra_format_google_link')) {
+    function uultra_format_google_link($content){
+        return 'https://plus.google.com/'.$content;
+    }
+}
+
+
+
+
 if (!function_exists('is_in_get')) {
 
     function is_in_get($key='', $val='') {

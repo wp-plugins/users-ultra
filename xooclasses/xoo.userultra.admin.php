@@ -697,7 +697,7 @@ class XooUserAdmin extends XooUserUltraCommon
 				'type' => filter_var($_POST['_type']),
 				'field' => filter_var($_POST['_field']),
 				'meta' => filter_var($meta),
-				'name' => filter_var($_POST['_name']),
+				'name' => stripslashes($_POST['_name']),
 				'tooltip' => filter_var($_POST['_tooltip']),
 				'social' =>  filter_var($_POST['_social']),
 				'can_edit' => filter_var($_POST['_can_edit']),
@@ -748,7 +748,7 @@ class XooUserAdmin extends XooUserUltraCommon
 				'type' => filter_var($_POST['_type']),
 				'field' => filter_var($_POST['_field']),
 				'meta' => filter_var($meta),
-				'name' => filter_var($_POST['_name']),
+				'name' => stripslashes($_POST['_name']),
 				'tooltip' => filter_var($_POST['_tooltip']),
 				'social' =>  filter_var($_POST['_social']),
 				'can_edit' => filter_var($_POST['_can_edit']),
@@ -758,8 +758,7 @@ class XooUserAdmin extends XooUserUltraCommon
 				'required' => filter_var($_POST['_required']),
 				'show_in_register' => filter_var($_POST['_show_in_register']),
 				'predefined_options' => filter_var($_POST['_predefined_options']),				
-				'choices' => filter_var($_POST['_choices']),	
-											
+				'choices' => filter_var($_POST['_choices']),												
 				'deleted' => 0
 			);
 			
