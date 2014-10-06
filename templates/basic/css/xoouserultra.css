@@ -244,6 +244,20 @@
 	top: auto;
 }
 
+.xoouserultra-field-type i.reg_tooltip {
+	float: none;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	margin: 0 14px 0 0;
+	
+	
+	border:none !important;
+	text-align: center;
+	position: relative;
+	top: auto;
+}
+
 .xoouserultra-field-type i.xoouserultra-icon-none {
 	background: none;
 }

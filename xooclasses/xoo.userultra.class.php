@@ -1121,9 +1121,24 @@ class XooUserUltra
 	/* register styles */
 	public function add_front_end_styles()
 	{
-		
+				
 		
 		wp_enqueue_script( 'jquery-ui-datepicker' );
+		
+		
+		 // Loading CSS and Script only when required
+        /* Tipsy script */
+        if (!wp_script_is('uultra_tipsy')) {
+			wp_register_script('uultra_tipsy', xoousers_url.'js/jquery.tipsy.js',array('jquery'));
+            wp_enqueue_script('uultra_tipsy');
+        }
+
+        /* Tipsy css */
+        if (!wp_style_is('uultra_tipsy')) {           
+			
+			wp_register_style( 'uultra_tipsy', xoousers_url.'templates/'.xoousers_template.'/css/tipsy.css');				
+            wp_enqueue_style('uultra_tipsy');
+        }
 		
 
 		/* Font Awesome */
@@ -1893,8 +1908,22 @@ class XooUserUltra
 					} else {
 						$display .= '<i class="fa fa-none"></i>';
 					}
-					$display .= '<span>'.$name.' '.$required_text.'</span></label>';
+					
+					
+						
+					$tooltipip_class = '';					
+					if (isset($array[$key]['tooltip']) && $tooltip)
+					{						
+						 $tooltipip_class = '<a href="#" class="uultra-tooltip" title="' . $tooltip . '" ><i class="fa fa-info-circle reg_tooltip"></i></a>';
+					} 
+					
+											
+					$display .= '<span>'.$name. ' '.$required_text.' '.$tooltipip_class.'</span></label>';
+					
+					
 				} else {
+					
+					
 					$display .= '<label class="xoouserultra-field-type">&nbsp;</label>';
 				}
 				
@@ -1969,8 +1998,7 @@ class XooUserUltra
 		$array = get_option('usersultra_profile_fields');
 
 		foreach($array as $key=>$field) 
-		{
-		     
+		{		     
 		    $exclude_array = array('user_pass', 'user_pass_confirm', 'user_email');
 		    if(isset($field['meta']) && in_array($field['meta'], $exclude_array))
 		    {
@@ -2039,8 +2067,7 @@ class XooUserUltra
 				
 				
 			if ($type == 'usermeta' && $deleted == 0 && $private == 0 && isset($array[$key]['show_in_register']) && $array[$key]['show_in_register'] == 1) 
-			{
-				
+			{				
 				
 				$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
 				
@@ -2054,8 +2081,17 @@ class XooUserUltra
                     } else {
                             $display .= '<i class="fa fa-icon-none"></i>';
                     }
+					
+					$tooltipip_class = '';
+					
+					if (isset($array[$key]['tooltip']) && $tooltip)
+					{
+						
+						 $tooltipip_class = '<a href="#" class="uultra-tooltip" title="' . $tooltip . '" ><i class="fa fa-info-circle reg_tooltip"></i></a>';
+					} 
+					
 											
-					$display .= '<span>'.$name. ' '.$required_text.'</span></label>';
+					$display .= '<span>'.$name. ' '.$required_text.' '.$tooltipip_class.'</span></label>';
 					
 					
 				} else {
@@ -2162,8 +2198,7 @@ class XooUserUltra
 									}
 									$display .= '/> <label for="checkbox1"><span></span> '.$option.'</label> </label>';
 									
-									//$displya .='<label for="checkbox1"><span></span>';
-									
+																		
 									$counter++;
 								}
 							}
@@ -2227,13 +2262,10 @@ class XooUserUltra
 		/*If we are using Paid Registration*/		
 		if($this->get_option('registration_rules')==4)
 		{
-			$display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__('Payment Information','xoousers').'</div>';
+			$display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__('Payment Information','xoousers').'</div>';	
 			
-			
-			$display .= '<div class="xoouserultra-package-list">';
-			
-			$display .= $this->paypal->get_packages();
-			
+			$display .= '<div class="xoouserultra-package-list">';			
+			$display .= $this->paypal->get_packages();			
 			$display .= '</div>';
 			
 			
@@ -3200,10 +3232,6 @@ class XooUserUltra
 		}
 	}
 	
-		
-
-	
-		
 		
 	
 }

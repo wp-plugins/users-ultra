@@ -5,7 +5,15 @@ if(typeof $ == 'undefined'){
     $(document).ready(function () { 
 	
 	   "use strict";
-       
+	   
+	    /* Tooltips */
+		if($('.uultra-tooltip').length > 0)
+		{
+			$('.uultra-tooltip').tipsy({
+				trigger: 'hover',
+				offset: 4
+			});
+		}     
 		
 				
 		$('.rating-s').click(function() {
