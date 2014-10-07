@@ -33,7 +33,12 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <ul>
   <li>Priority Support.</li>
   <li>New Features Every Week.</li>
+  <li><strong>Integrate with third-party plugins</strong></li>
+   <li><strong>Use any shortcodes in the user's profile</strong></li>
    <li>Medallions and Fulfillments.</li>
+   <li><strong>Use any shortcodes in the user's dashboard.</strong></li>
+    <li><strong>Create Unlimited Widgets.</strong></li>
+	 <li><strong>Add Unlimited Links to the User's Dashboard.</strong></li>
     <li><strong>Membership Packages & Registration Form with Roles. Users can select a role when registering.</strong></li>
 	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
     <li>User Online/Offline Status.</li>
@@ -64,7 +69,6 @@ Users Ultra can handle almost all aspects of a powerful community website becaus
 
 <strong>Spam and Robot Protection: </strong><br>
 Now Users Ultra Lite includes <strong>reCaptcha spam protection</strong>. Yes, now with Users Ultra you can protect your website against robots for free.
-
 
 <strong>Mobile Devices Compatible: </strong><br>
 Users Ultra looks great on any mobile device. It has been developed by using the latest HTML5 and CSS standards in order to make Users Ultra look good at any resolution.  It doesn't matter what screen size your user is seeing your website, Users Ultra will look excellent and user friendly always.
