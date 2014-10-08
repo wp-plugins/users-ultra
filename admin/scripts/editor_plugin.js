@@ -108,7 +108,7 @@
 						
 						{
                             text: 'Search Box',
-                            value: "[usersultra_searchbox filters='country,age' ]",
+                            value: "[usersultra_searchbox filters='country,age']",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -167,7 +167,7 @@
 						
 						{
                             text: 'Lightbox Gallery',
-                            value: "[usersultra_images_grid box_border='rounded' box_shadow='shadow' searcher_type='advanced' photo_open_type='lightbox']  ",
+                            value: "[usersultra_images_grid box_border='rounded' box_shadow='shadow' searcher_type='advanced' photo_open_type='lightbox'] ",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -224,7 +224,7 @@
                         },						
 						{
                             text: 'Most Visited Users',
-                            value: "[usersultra_users_most_visited optional_fields_to_display='friend,social' pic_size='80' ]",
+                            value: "[usersultra_users_most_visited optional_fields_to_display='friend,social' pic_size='80']",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -243,7 +243,7 @@
 						,						
 						{
                             text: 'Latest Users',
-                            value: "[usersultra_users_latest optional_fields_to_display='social' ]",
+                            value: "[usersultra_users_latest optional_fields_to_display='social']",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -253,7 +253,7 @@
 						,						
 						{
                             text: 'Custom Users Profiles',
-                            value: "[usersultra_profile template_width='80%' user_id= '59' pic_boder_type='rounded' pic_type='avatar' optional_fields_to_display='rating,social,country,description' display_country_flag='both' display_private_message='yes' ]",
+                            value: "[usersultra_profile template_width='80%' user_id= '59' pic_boder_type='rounded' pic_type='avatar' optional_fields_to_display='rating,social,country,description' display_country_flag='both' display_private_message='yes']",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -284,7 +284,7 @@
                     menu: [
                         {
                             text: 'Top Rated',
-                            value: "[usersultra_photo_top_rated ] ",
+                            value: "[usersultra_photo_top_rated] ",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
