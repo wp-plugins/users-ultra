@@ -1062,15 +1062,10 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 	?>
     
-     <div class="user-ultra-top-header-sect">
-           
-           <a href="http://usersultra.com/" target="_blank" title="Users Ultra" alt="Users Ultra"><img src="<?php echo xoousers_url."admin/images/usersultrapro-wordpress.jpg"?>" border="0" width="900" /></a>
-           
-           </div>
-	
+    	
 		<div class="wrap <?php echo $this->slug; ?>-admin">
         
-           
+               <h2>USERS ULTRA LITE</h2>
           
            
            
