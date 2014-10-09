@@ -40,6 +40,20 @@ $this->create_plugin_setting(
         ); 
 		
 		
+		  $this->create_plugin_setting(
+	'select',
+	'uultra_rotation_fixer',
+	__('Auto Rotation Fixer','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG images using PHP's EXIF extension, immediately after they are uploaded to the server. This is implemented for iPhone rotation issues",'xoousers'),
+  __("If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG images using PHP's EXIF extension, immediately after they are uploaded to the server. This is implemented for iPhone rotation issues",'xoousers')
+       );
+		
+		
 ?>
 </table>
 

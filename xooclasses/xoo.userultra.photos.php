@@ -2580,6 +2580,12 @@ class XooUserPhoto {
 					
 					if (copy($file['tmp_name'], $pathBig)) 
 					{
+						//check auto-rotation						
+						if($xoouserultra->get_option('uultra_rotation_fixer')=='yes')
+						{
+							$this->orient_image($pathBig);
+						
+						}
 						
 						//check max width
 												
@@ -2659,6 +2665,39 @@ class XooUserPhoto {
 		
 	}
 	
+	public function orient_image($file_path) 
+	{
+        if (!function_exists('exif_read_data')) {
+            return false;
+        }
+        $exif = @exif_read_data($file_path);
+        if ($exif === false) {
+            return false;
+        }
+        $orientation = intval(@$exif['Orientation']);
+        if (!in_array($orientation, array(3, 6, 8))) {
+            return false;
+        }
+        $image = @imagecreatefromjpeg($file_path);
+        switch ($orientation) {
+            case 3:
+                $image = @imagerotate($image, 180, 0);
+                break;
+            case 6:
+                $image = @imagerotate($image, 270, 0);
+                break;
+            case 8:
+                $image = @imagerotate($image, 90, 0);
+                break;
+            default:
+                return false;
+        }
+        $success = imagejpeg($image, $file_path);
+        // Free up memory (imagedestroy does not delete files):
+        @imagedestroy($image);
+        return $success;
+    }
+	
 	// File upload handler:
 	function ajax_upload_avatar()
 	{
@@ -2715,6 +2754,14 @@ class XooUserPhoto {
 					
 					if (copy($file['tmp_name'], $pathBig)) 
 					{
+						
+						//check auto-rotation						
+						if($xoouserultra->get_option('uultra_rotation_fixer')=='yes')
+						{
+							$this->orient_image($pathBig);
+						
+						}
+						
 						$upload_folder = $xoouserultra->get_option('media_uploading_folder');				
 						$path = $site_url.$upload_folder."/".$o_id."/";
 						

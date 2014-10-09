@@ -9,18 +9,22 @@ global $xoouserultra;
         <div class="uu-sect-p">
         	            
             <p><?php _e("What we are doing with Users Ultra Pro is adding some ground breaking features that nobody else, to this date, has offered. We are starting off with our EXCLUSIVE 'Profile Customizer'. This feature actually is a drag and drop, widgetized, profile customization for members of your site.",'xoousers'); ?></p>
+            
+            <p> <?php _e("Users Ultra Pro allows you to add unlimited widgets, add unlimited links within the user's dashboard. Integrating with third-party plugins by using shortcodes, friends, followers, following, user's wall.",'xoousers'); ?></p> 
         
         </div>
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.13</p>
+            <p>Version: 1.1.16</p>
             
-             <p class="btn-find"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
+             <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
                                
     <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">NEW PROFILE</a></p>
+    
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/changelog/" target="_blank">CHANGELOG</a></p>
     
          
         </div>  
