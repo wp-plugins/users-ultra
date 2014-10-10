@@ -43,7 +43,11 @@ define("RECAPTCHA_VERIFY_SERVER", "www.google.com");
  * Encodes the given data into a query string format
  * @param $data - array of string elements to be encoded
  * @return string - encoded request
+ 
+ 
  */
+ 
+if (!function_exists('_recaptcha_qsencode')) {
 function _recaptcha_qsencode ($data) {
         $req = "";
         foreach ( $data as $key => $value )
@@ -52,6 +56,7 @@ function _recaptcha_qsencode ($data) {
         // Cut the last '&'
         $req=substr($req,0,strlen($req)-1);
         return $req;
+}
 }
 
 
@@ -64,6 +69,9 @@ function _recaptcha_qsencode ($data) {
  * @param int port
  * @return array response
  */
+ 
+if (!function_exists('_recaptcha_http_post')) {
+
 function _recaptcha_http_post($host, $path, $data, $port = 80) {
 
         $req = _recaptcha_qsencode ($data);
@@ -91,6 +99,8 @@ function _recaptcha_http_post($host, $path, $data, $port = 80) {
         return $response;
 }
 
+}
+
 
 
 /**
@@ -103,6 +113,8 @@ function _recaptcha_http_post($host, $path, $data, $port = 80) {
 
  * @return string - The HTML to be embedded in the user's form.
  */
+
+if (!function_exists('recaptcha_get_html')) {
 function recaptcha_get_html ($pubkey, $error = null, $use_ssl = false)
 {
 	if ($pubkey == null || $pubkey == '') {
@@ -126,6 +138,8 @@ function recaptcha_get_html ($pubkey, $error = null, $use_ssl = false)
   		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
   		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
 	</noscript>';
+}
+
 }
 
 
