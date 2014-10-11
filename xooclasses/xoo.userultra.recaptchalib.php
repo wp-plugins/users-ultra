@@ -163,6 +163,8 @@ class ReCaptchaResponse {
   * @param array $extra_params an array of extra variables to post to the server
   * @return ReCaptchaResponse
   */
+if (!function_exists('recaptcha_check_answer')) {
+	
 function recaptcha_check_answer ($privkey, $remoteip, $challenge, $response, $extra_params = array())
 {
 	if ($privkey == null || $privkey == '') {
@@ -206,6 +208,8 @@ function recaptcha_check_answer ($privkey, $remoteip, $challenge, $response, $ex
 
 }
 
+}
+
 /**
  * gets a URL where the user can sign up for reCAPTCHA. If your application
  * has a configuration page where you enter a key, you should provide a link
@@ -213,9 +217,16 @@ function recaptcha_check_answer ($privkey, $remoteip, $challenge, $response, $ex
  * @param string $domain The domain where the page is hosted
  * @param string $appname The name of your application
  */
+
+if (!function_exists('recaptcha_get_signup_url')) {
 function recaptcha_get_signup_url ($domain = null, $appname = null) {
 	return "https://www.google.com/recaptcha/admin/create?" .  _recaptcha_qsencode (array ('domains' => $domain, 'app' => $appname));
 }
+}
+
+
+if (!function_exists('_recaptcha_aes_pad')) {
+
 
 function _recaptcha_aes_pad($val) {
 	$block_size = 16;
@@ -223,7 +234,12 @@ function _recaptcha_aes_pad($val) {
 	return str_pad($val, strlen ($val) + $numpad, chr($numpad));
 }
 
+}
+
 /* Mailhide related code */
+
+if (!function_exists('_recaptcha_aes_encrypt')) {
+
 
 function _recaptcha_aes_encrypt($val,$ky) {
 	if (! function_exists ("mcrypt_encrypt")) {
@@ -233,6 +249,8 @@ function _recaptcha_aes_encrypt($val,$ky) {
 	$enc=MCRYPT_RIJNDAEL_128;
 	$val=_recaptcha_aes_pad($val);
 	return mcrypt_encrypt($enc, $ky, $val, $mode, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+}
+
 }
 
 
