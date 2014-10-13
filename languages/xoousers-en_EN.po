@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-10-11 12:21-0300\n"
-"PO-Revision-Date: 2014-10-11 12:21-0300\n"
+"POT-Creation-Date: 2014-10-13 13:21-0300\n"
+"PO-Revision-Date: 2014-10-13 13:21-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -2229,6 +2229,10 @@ msgstr ""
 msgid "My Latest Messages"
 msgstr ""
 
+#: ../templates/basic/dashboard.php:163
+msgid "My Latest Photos:"
+msgstr ""
+
 #: ../templates/basic/dashboard.php:194
 #: ../xooclasses/xoo.userultra.user.php:2124
 #: ../xooclasses/xoo.userultra.user.php:2128
@@ -2399,6 +2403,10 @@ msgstr ""
 
 #: ../templates/basic/dashboard.php:820
 msgid "Here you can manage your videos."
+msgstr ""
+
+#: ../templates/basic/dashboard.php:822
+msgid "Add Video"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:835

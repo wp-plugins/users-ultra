@@ -160,7 +160,7 @@ $howmany = 5;
               <div class="expandable-panel xoousersultra-shadow-borers" id="cp-2">
                                 
                       <div class="expandable-panel-heading">
-                              <h2>My Latest Photos<span class="icon-close-open"></span></h2>
+                              <h2><?php  _e('My Latest Photos:','xoousers');?><span class="icon-close-open"></span></h2>
                      </div>
                      
                       <div class="expandable-panel-content">
@@ -819,7 +819,7 @@ $howmany = 5;
                       
                       <p><?php  _e('Here you can manage your videos.','xoousers');?></p>
                       
-                         <a  id="add_new_video"  href="#">Add Video</a>
+                         <a  id="add_new_video"  href="#"> <?php  _e('Add Video','xoousers');?></a>
                          
                           <div class="add-new-video" id="new_video_div">
                          
