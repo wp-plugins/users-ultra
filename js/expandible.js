@@ -105,9 +105,6 @@ if(typeof $ == 'undefined'){
 		});
 		
 		
-		
-
-		
 		$('#close_add_gallery').click(function() {
 			
 			
@@ -135,8 +132,6 @@ if(typeof $ == 'undefined'){
 
 				
         });
-		
-		
 		
 		$('#add_new_video').click(function() {			
 			
@@ -261,13 +256,8 @@ if(typeof $ == 'undefined'){
 							}, function (response){									
 																
 							$("#usersultra-photolist").html(response);
-									
-									
 					
 			});
-			
-			
-			
 		}
 		
 		
@@ -283,9 +273,6 @@ if(typeof $ == 'undefined'){
 									
 														
 							});
-			
-			
-			
 		}
 		
 			
@@ -408,11 +395,6 @@ if(typeof $ == 'undefined'){
 				
 				var photo_tags =  $("#uultra_photo_tags_edit_"+photo_id).val();				
 				var photo_category =  $("#uultra_photo_category_edit_"+photo_id).val();
-				
-				
-				
-				
-									
 				jQuery.ajax({
 					type: 'POST',
 					url: ajaxurl,
@@ -713,7 +695,6 @@ if(typeof $ == 'undefined'){
 					success: function(data){
 												
 						refresh_my_avatar();
-						//$( "#uu-upload-avatar-box" ).slideUp("slow");
 						
 						
 						}
@@ -734,7 +715,6 @@ if(typeof $ == 'undefined'){
 							action: 'refresh_avatar'}, function (response){									
 																
 							$("#uu-backend-avatar-section").html(response);
-							//$( "#uu-upload-avatar-box" ).slideUp("slow");
 									
 									
 					
@@ -742,11 +722,6 @@ if(typeof $ == 'undefined'){
 			
 		}
 		
-		
-		
-		
-				
-		   
  
         $(window).load(function() {
  			panelinit();

@@ -236,7 +236,6 @@ jQuery(document).ready(function($) {
 												
 						jQuery("#uultra-sucess-add-field").slideDown();
 						setTimeout("hidde_noti('uultra-sucess-add-field')", 3000)		
-						//alert("done");
 						
 						window.location.reload();
 							 							
@@ -385,9 +384,6 @@ jQuery(document).ready(function($) {
 				
 				
 				     reload_packages();
-								
-									
-					
 					
 					}
 			});
@@ -453,8 +449,6 @@ jQuery(document).ready(function($) {
 					}
 			});
 			
-		
-		
 		
 		e.preventDefault();
 				
@@ -582,20 +576,12 @@ jQuery(document).ready(function($) {
             };
             jQuery.ajax(opts);
 		
-		 
-		
-			 	
-		
-				
 		return false;
 	});
 	
 		//create upload folder
 	jQuery('#uultradmin-create-upload-folder').live('click',function(e){
 		e.preventDefault();
-		
-		 
-	
 		jQuery.ajax({
 						type: 'POST',
 						url: ajaxurl,

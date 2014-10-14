@@ -127,7 +127,7 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
 		 var package_error_message_name = "<?php _e('Please, input a name ','xoousers'); ?>";
 		 var package_error_message_desc = "<?php _e('Please, input a description ','xoousers'); ?>";
 		 var package_error_message_price = "<?php _e('Please, input a price ','xoousers'); ?>";
-		  var package_confirmation = "<?php _e('Are you totally sure? ','xoousers'); ?>";		 
+		  var package_confirmation = "<?php _e('Are you totally sure that you want to delete this package? ','xoousers'); ?>";		 
 		 </script>
          
           <script type="text/javascript">
@@ -150,4 +150,4 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
         
         
         
-         <h3>&nbsp;</h3>
+

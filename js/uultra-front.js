@@ -71,8 +71,6 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		
-		
 		$('#uu-send-private-message-confirm').click(function() {
 			
 			
@@ -112,11 +110,8 @@ if(typeof $ == 'undefined'){
 		
 		$('#uu-reply-private-message-confirm').click(function() {
 			
-			
 			var message_id =  jQuery(this).attr("message-id");			
-			
 			var uu_message =   $('#uu_message').val();
-			
 			if(uu_message==""){alert(uu_message_empty);  $('#uu_message').focus(); return;}
 
 			jQuery.ajax({
@@ -149,8 +144,6 @@ if(typeof $ == 'undefined'){
 			
 			var message_id =  jQuery(this).attr("message-id");			
 			var message_status =  jQuery(this).attr("message-status");			
-			
-			
 			
 			jQuery.ajax({
 				type: 'POST',
