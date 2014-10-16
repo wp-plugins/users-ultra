@@ -3,17 +3,10 @@ class XooBadge
 {
 	var $mBadgesArray =  array();
 	
-	
-	
-	
-	
 	function __construct() 
 	{
 		
-		
 		$this->ini_module();
-		
-		
 		
 	}
 
@@ -21,9 +14,6 @@ class XooBadge
 	public function ini_module()
 	{
 			
-		
-		
-		
 	
 	}
 	

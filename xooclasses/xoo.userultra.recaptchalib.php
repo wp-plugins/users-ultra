@@ -153,7 +153,6 @@ class ReCaptchaResponse {
         var $error;
 }
 
-
 /**
   * Calls an HTTP POST function to verify if the user's guess was correct
   * @param string $privkey
@@ -253,10 +252,18 @@ function _recaptcha_aes_encrypt($val,$ky) {
 
 }
 
+if (!function_exists('_recaptcha_mailhide_urlbase64')) {
+
+
 
 function _recaptcha_mailhide_urlbase64 ($x) {
 	return strtr(base64_encode ($x), '+/', '-_');
 }
+
+}
+
+if (!function_exists('recaptcha_mailhide_url')) {
+
 
 /* gets the reCAPTCHA Mailhide url for a given email, public key and private key */
 function recaptcha_mailhide_url($pubkey, $privkey, $email) {
@@ -270,6 +277,8 @@ function recaptcha_mailhide_url($pubkey, $privkey, $email) {
 	$cryptmail = _recaptcha_aes_encrypt ($email, $ky);
 	
 	return "http://www.google.com/recaptcha/mailhide/d?k=" . $pubkey . "&c=" . _recaptcha_mailhide_urlbase64 ($cryptmail);
+}
+
 }
 
 /**

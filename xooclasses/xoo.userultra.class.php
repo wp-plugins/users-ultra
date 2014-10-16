@@ -491,7 +491,6 @@ class XooUserUltra
 		add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
 		
 		//this rules is for photos
-		//add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_photokeyword=$matches[1]', 'top');
 		
 		flush_rewrite_rules();
 	
@@ -682,7 +681,6 @@ class XooUserUltra
 		}else{
 			
 			$new_page=get_option('xoousersultra_my_account_page');
-			
 			
 		
 		}
