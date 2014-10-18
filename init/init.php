@@ -5,13 +5,12 @@ add_action('init', 'xoousers_load_textdomain');
 
 function xoousers_load_textdomain() 
 {
-        $locale = apply_filters( 'uultra_locale', get_locale() );
-        $mofile = xoousers_path . "languages/xoousers-$locale.mo";
-		
-        if ( file_exists( $mofile ) ) 
-		{
-            load_plugin_textdomain( 'xoousers', false,  $mofile );
-        }
+         $locale = apply_filters( 'plugin_locale', get_locale(), 'users-ultra' );	   
+       $mofile = xoousers_path . "languages/xoousers-$locale.mo";
+			
+		// Global + Frontend Locale
+		load_textdomain( 'xoousers', $mofile );
+		load_plugin_textdomain( 'xoousers', false, plugin_basename( dirname( __FILE__ ) ) . "/languages"  );
 }
 	
 		

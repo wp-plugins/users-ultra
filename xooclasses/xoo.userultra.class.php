@@ -51,7 +51,7 @@ class XooUserUltra
 		}
 		
 		//create standard fields
-		$this->xoousers_create_standard_fields();
+		//$this->xoousers_create_standard_fields();
 		
 		//ini settings
 		$this->intial_settings();
@@ -108,6 +108,10 @@ class XooUserUltra
 		/* Remove bar except for admins */
 		add_action('init', array(&$this, 'userultra_remove_admin_bar'), 9);
 		
+		/* Create Standar Fields */		
+		add_action('init', array(&$this, 'xoousers_create_standard_fields'));
+		add_action('admin_init', array(&$this, 'xoousers_create_standard_fields'));	
+				
 		/*Create a generic profile page*/
 		add_action( 'wp_loaded', array(&$this, 'create_initial_pages'), 9);
 		
