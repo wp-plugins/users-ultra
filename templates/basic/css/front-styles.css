@@ -173,7 +173,7 @@ box-sizing: border-box;
 
 .uultra-view-profile-bar a.uultra-btn-profile{ 
 		display:inline-block; 
-		height:30px;
+		min-height:30px !important;
 		width:96%;
 		padding-top:5px;		
 		
@@ -2132,7 +2132,7 @@ a.uultra-btn-friend i{
 a.uultra-btn-friend{ 
 
 		display:inline-block; 
-		height:25px;
+		min-height:30px;
 		width:120px;
 		padding-top:5px;
 		text-align:center;
