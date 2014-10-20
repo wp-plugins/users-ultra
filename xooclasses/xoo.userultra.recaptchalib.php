@@ -286,6 +286,9 @@ function recaptcha_mailhide_url($pubkey, $privkey, $email) {
  * eg, given johndoe@example,com return ["john", "example.com"].
  * the email is then displayed as john...@example.com
  */
+ 
+if (!function_exists('_recaptcha_mailhide_email_parts')) {
+
 function _recaptcha_mailhide_email_parts ($email) {
 	$arr = preg_split("/@/", $email );
 
@@ -299,18 +302,28 @@ function _recaptcha_mailhide_email_parts ($email) {
 	return $arr;
 }
 
+}
+
+
 /**
  * Gets html to display an email address given a public an private key.
  * to get a key, go to:
  *
  * http://www.google.com/recaptcha/mailhide/apikey
+ 
+ 
  */
+ 
+if (!function_exists('recaptcha_mailhide_html')) {
+
 function recaptcha_mailhide_html($pubkey, $privkey, $email) {
 	$emailparts = _recaptcha_mailhide_email_parts ($email);
 	$url = recaptcha_mailhide_url ($pubkey, $privkey, $email);
 	
 	return htmlentities($emailparts[0]) . "<a href='" . htmlentities ($url) .
 		"' onclick=\"window.open('" . htmlentities ($url) . "', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;\" title=\"Reveal this e-mail address\">...</a>@" . htmlentities ($emailparts [1]);
+
+}
 
 }
 
