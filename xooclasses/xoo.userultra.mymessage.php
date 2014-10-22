@@ -281,9 +281,8 @@ class XooUserMyMessage {
 		global $wpdb, $xoouserultra;
 		
 
-		$messages = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `id` = ' . $id . ' AND (`recipient` = '.$receiver_id.' OR `sender` = '.$receiver_id.')  ' );
+		$messages = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `id` = ' . (int)$id . ' AND (`recipient` = '.$receiver_id.' OR `sender` = '.$receiver_id.')  ' );
 		
-	//	echo 'SELECT *  FROM ' . $wpdb->prefix . 'users_ultra_pm WHERE `id` = ' . $id . ' AND (`recipient` = '.$receiver_id.' OR `sender` = '.$receiver_id.')  ';
 		foreach ( $messages as $message )
 		{
 			return $message;
