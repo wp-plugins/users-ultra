@@ -218,7 +218,7 @@ class XooUserMyMessage {
 			
 			}else{
 				
-				$html .= ' <p>Subject:</p>          
+				$html .= ' <p>'.__("Subject", 'xoousers').':</p>          
 				  <p><input name="uu_subject"  id="uu_subject" type="text" /></p>
 				  
 				  <p>Message:</p>          

@@ -273,14 +273,14 @@ class XooRating extends XooUserUltraCommon
 		  <ul class="uultra-star-rating" >	
 		            <li class="current-rating" style="width:'.$current_rating_percentage.'%;"></li>
 					
-					<li><a href="#" title="1 star out of 5" class="one-star rating-s" data-id="'.$id.'" data-vote="1" data-target="'.$data_target.'">1</a></li>					
-					<li><a href="#" title="2 star out of 5" class="two-stars rating-s" data-id="'.$id.'" data-vote="2" data-target="'.$data_target.'">2</a></li>
-					<li><a href="#" title="3 star out of 5" class="three-stars rating-s" data-id="'.$id.'" data-vote="3" data-target="'.$data_target.'">3</a></li>
-					<li><a href="#" title="4 star out of 5" class="four-stars rating-s" data-id="'.$id.'" data-vote="4" data-target="'.$data_target.'">4</a></li>
-					<li><a href="#" title="5 star out of 5" class="five-stars rating-s" data-id="'.$id.'" data-vote="5" data-target="'.$data_target.'">5</a></li>
+					<li><a href="#" title=" '. __("1 star out of 5 ",'xoousers').'" class="one-star rating-s" data-id="'.$id.'" data-vote="1" data-target="'.$data_target.'">1</a></li>					
+					<li><a href="#" title="'. __("2 star out of 5  ",'xoousers').'" class="two-stars rating-s" data-id="'.$id.'" data-vote="2" data-target="'.$data_target.'">2</a></li>
+					<li><a href="#" title=" '. __("3 star out of 5  ",'xoousers').'" class="three-stars rating-s" data-id="'.$id.'" data-vote="3" data-target="'.$data_target.'">3</a></li>
+					<li><a href="#" title="'. __("4 star out of 5  ",'xoousers').'" class="four-stars rating-s" data-id="'.$id.'" data-vote="4" data-target="'.$data_target.'">4</a></li>
+					<li><a href="#" title="'. __("5 star out of 5  ",'xoousers').'" class="five-stars rating-s" data-id="'.$id.'" data-vote="5" data-target="'.$data_target.'">5</a></li>
 				</ul>
-				<p> Rating:  '.$rating1.'/10 </p>
-				<p>('.$total_votes.' votes cast)</p>';
+				<p>'. __("Rating: ",'xoousers').'  '.$rating1.'/10 </p>
+				<p>('.$total_votes.'  '. __(" votes cast ",'xoousers').')</p>';
 				
 		return $res;
 		  
