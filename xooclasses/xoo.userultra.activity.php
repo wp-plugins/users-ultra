@@ -2,7 +2,6 @@
 class XooActivity 
 {
 	
-	//-------- modules: (user,photo,gallery)
 	var $mDateToday ;
 
 

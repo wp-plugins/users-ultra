@@ -242,7 +242,7 @@ class XooSocial
 		
 		$html.= "<div class='uultra-friend-request-box'>";
 		$html.= "<p class='total_likes' id='uu-friends-total-id-".$user_id."'>". $total." ".__('Friends','xoousers')." </p>";	
-		$html .= '<a class="uultra-btn-friend" id="uu-send-friend-request" href="#" user-id="'.$user_id.'" title="'.__('Send Friend Request','xoousers').'"><span><i class="fa fa fa-users fa-lg"></i> Be a Friend</span> </a>';
+		$html .= '<a class="uultra-btn-friend" id="uu-send-friend-request" href="#" user-id="'.$user_id.'" title="'.__('Send Friend Request','xoousers').'"><span><i class="fa fa fa-users fa-lg"></i> '.__("Be a Friend ", 'xoousers').'</span> </a>';
 		
 		$html.= "</div>";
 		

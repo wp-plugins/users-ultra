@@ -332,6 +332,7 @@ input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 	margin: 0;
+	height:30px !important;
 }
 
 

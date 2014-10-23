@@ -183,7 +183,7 @@ class XooUserUltra
 		{
 		
 			$message = __("<h2>It's time to upgrade to Users Ultra Pro!. </h2> <p>Unique Widgetized user profile, add unlimited widgets, add unlimited links within the user's dashboard. Integrating with third-party plugins by using shortcodes, friends, followers, following, user's wall.</p> <p> <a href='http://usersultra.com/'  target='_blank' class='button button-secondary'  >CLICK HERE TO FIND OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
-			//$this->uultra_fresh_install_message($message);	
+			$this->uultra_fresh_install_message($message);	
 		
 		}
 		

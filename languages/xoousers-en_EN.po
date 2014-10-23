@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-10-23 00:54-0300\n"
-"PO-Revision-Date: 2014-10-23 00:54-0300\n"
+"POT-Creation-Date: 2014-10-23 15:04-0300\n"
+"PO-Revision-Date: 2014-10-23 15:04-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -3802,6 +3802,10 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.socials.php:245
 msgid "Send Friend Request"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.socials.php:245
+msgid "Be a Friend "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.socials.php:283

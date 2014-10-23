@@ -2194,7 +2194,7 @@ a.uultra-btn-friend:hover{
 	background-position: left top;  margin:5px auto 0 auto;
 }
 .ratebox .uultra-star-rating li{
-	display: inline !important ;border:none !important; margin:0x !important; height:25px !important; 
+	display: inline !important ;border:none !important; margin:0x !important; height:25px !important; background-image:none !important;
 }
 .ratebox .uultra-star-rating a {
 	position:absolute;
