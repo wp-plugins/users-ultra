@@ -1,7 +1,29 @@
 <?php
 class XooUserRegister {
 
-	function __construct() {
+	function __construct() 
+	{
+		add_action( 'init', array($this, 'uultra_handle_hooks_actions') );			
+		add_action( 'init', array($this, 'uultra_handle_post') );		
+		
+
+	}
+	
+	//this function handles the registration hook - 10-24-2014	
+	function uultra_handle_hooks_actions ()	
+	{
+		if (function_exists('uultra_registration_hook')) 
+		{
+		
+			add_action( 'user_register', 'uultra_registration_hook' );	
+		
+		}
+		
+	}
+	
+	function uultra_handle_post () 
+	{
+		
 		
 		/*Form is fired*/
 	    
@@ -17,7 +39,7 @@ class XooUserRegister {
 			$this->uultra_create_account();
 				
 		}
-
+		
 	}
 	
 	/*Prepare user meta*/

@@ -1065,11 +1065,27 @@ class XooUserAdmin extends XooUserUltraCommon
     	
 		<div class="wrap <?php echo $this->slug; ?>-admin">
         
+        
+         <div class="uultra-socialconnect"><!-- social connect--> 
+        
+        <div class="uultra-like"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FUsers-Ultra%2F1394873024112997%3Fref%3Dhl&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+        </div>
+        
+        <div class="uultra-tw">
+          <a href="https://twitter.com/usersultra" class="twitter-follow-button" data-show-count="false">Follow @usersultra</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>         
+      </div><!-- end social connect--> 	
+      
+        
                <h2>USERS ULTRA LITE</h2>
           
            
            
             <h2 class="nav-tab-wrapper"><?php $this->admin_tabs(); ?></h2>
+            
+            
+            
             
            
 			<div class="<?php echo $this->slug; ?>-admin-contain">
