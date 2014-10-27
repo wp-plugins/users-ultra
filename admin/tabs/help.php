@@ -22,6 +22,9 @@ global $xoouserultra;
                  <strong>Login Form</strong>
                  <pre>[usersultra_login]</pre>
                  
+                   <strong>My Account</strong>
+                 <pre>[usersultra_my_account]</pre>
+                 
                   <strong>Logout</strong>
                  <pre>[usersultra_logout]</pre>
                  
