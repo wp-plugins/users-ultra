@@ -8,6 +8,8 @@ class XooUserUser {
 	var $profile_role;	
 	var $profile_order;	
 	var $uultra_args;
+	
+	var $wp_users_fields = array("user_nicename", "user_url", "display_name", "nickname", "first_name", "last_name", "description", "jabber", "aim", "yim");
 
 	function __construct() 
 	{
@@ -256,7 +258,7 @@ class XooUserUser {
 	}
 	
 	
-		/*Process uploads*/
+/*Process uploads*/
 	function process_cvs($array) 
 	{
 		global $wpdb,  $xoouserultra;
@@ -321,15 +323,41 @@ class XooUserUser {
 										
 						//now that the files is up we have to start the uploading
 						
-						$row = 1;
+						$row = 0;
 						if (($handle = fopen($target_path, "r")) !== FALSE) 
-						{
+						{			
+							
+							
+	 								
 							while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
 							{
 								$num = count($data);
 								
-								$this->create_user_import ($data, $send_welcome_email, $account_status, $row);
+								if($row == 0) //these are the headers
+								{
+									$this->messages_process .='<h3>Imported Data</h3>';
+									$this->messages_process .=  '<table class="wp-list-table widefat">
+							<tr><th>Row</th>';
+							
+									foreach($data as $element)
+									{
+										$headers[] = $element;										
+										$this->messages_process .= '<th>' . $element . '</th>';
+									
+									}
+									
+									$this->messages_process .='</tr>';
+									
+									$columns = count($data);								
+									
 								
+								}
+								
+								if($row > 0) //this is not the header then we create the user
+								{
+																		
+									$this->create_user_import ($data, $headers, $send_welcome_email, $account_status, $row);
+								}
 								$row++;
 															
 								
@@ -337,7 +365,9 @@ class XooUserUser {
 							
 							fclose($handle);
 							
-							$this->messages_process .= __('--- Finished ---  ', 'xoousers');
+						
+							$this->messages_process .='</table>';
+							$this->messages_process .= '<p> <strong>'.__('--- Finished ---  ', 'xoousers').'</strong></p>';
 						}
 
 						
@@ -348,30 +378,35 @@ class XooUserUser {
 		
 	}
 	
-	public function create_user_import ($user, $send_welcome_email, $account_status, $count)
+	public function create_user_import ($user, $headers, $send_welcome_email, $account_status, $count)
 	{
 		global $wpdb,  $xoouserultra;
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
-		$user_name = $user[0];
-		$email = $user[1];
-		$display_name = $user[2];
-		$reg_date = $user[3];
+		//username, email, display name, first name and last name
 		
+		$user_name = $user[0]; 
+		$email = $user[1];
+		$display_name = $user[2];				
 		//metadata		
-		$f_name = $user[4];
-		$l_name = $user[5];
-		$age = $user[6];
-		$country = $user[7];
+		$f_name = $user[3];
+		$l_name = $user[4];
+		
+		$columns = count($user);		
+		
+		//print_r($headers);
 				
 		$user_pass = wp_generate_password( 12, false);
 		
 		/* Create account, update user meta */
 		$sanitized_user_login = sanitize_user($user_name);
 		
+		
+		
 		if(!email_exists($email))
-		{			
+		{
 			
+		
 			/* We create the New user */
 			$user_id = wp_create_user( $sanitized_user_login, $user_pass, $email);
 			
@@ -387,13 +422,35 @@ class XooUserUser {
 								
 				update_user_meta ($user_id, 'display_name', $display_name);
 				update_user_meta ($user_id, 'first_name', $f_name);
-				update_user_meta ($user_id, 'last_name', $l_name);
-				update_user_meta ($user_id, 'age', $age);
-				update_user_meta ($user_id, 'country', $country);
+				update_user_meta ($user_id, 'last_name', $l_name);								
 				update_user_meta ($user_id, 'xoouser_ultra_very_key', $verify_key);
 				
-				$this->messages_process .= $count." - User name: ". $user_name . " Email: ". $email."<br>";
+				///loop through all the extra meta data		
 				
+				if($columns > 5)
+				{
+					
+					for($i=5; $i<$columns; $i++):
+									if(in_array($headers[$i], $this->wp_users_fields))
+										wp_update_user( array( 'ID' => $user_id, $headers[$i] => $user[$i] ) );
+									else
+										update_user_meta($user_id, $headers[$i], $user[$i]);
+					endfor;
+					
+							$this->messages_process .=  "<tr><td>" . ($count ) . "</td>";
+							
+							foreach ($user as $element)
+								$this->messages_process .= "<td>$element</td>";
+
+							$this->messages_process .= "</tr>\n";
+
+							flush();
+				}		
+							
+				
+				
+				
+							
 							
 				if($send_welcome_email)
 				{
@@ -420,10 +477,6 @@ class XooUserUser {
 						  $pos = strpos("page_id", $web_url);		  
 						  $unique_key = get_user_meta($user_id, 'xoouser_ultra_very_key', true);
 						  
-						  //patch when not set account
-						  
-						  
-						  
 						  if ($pos === false) // this is a tweak that applies when not Friendly URL is set.
 						  {
 								//
@@ -448,7 +501,8 @@ class XooUserUser {
 		}else{
 			  //email exists
 		
-		}
+		} //end if
+		
 		
 	}
 	
