@@ -343,9 +343,9 @@ class XooUserAdmin extends XooUserUltraCommon
 	{
 	
 		$this->userultra_default_options = array(
-						'html_user_login_message' => __('Please log in to view / edit your profile.','xoouser'),
-						'html_login_to_view' => __('Please log in to view user profiles.','xoouser'),
-						'html_private_content' => __('This content is for members only. You must log in to view this content.','xoouser'),
+						'html_user_login_message' => __('Please log in to view / edit your profile.','xoousers'),
+						'html_login_to_view' => __('Please log in to view user profiles.','xoousers'),
+						'html_private_content' => __('This content is for members only. You must log in to view this content.','xoousers'),
 						'clickable_profile' => 1,
 						'set_password' => 1,
 						'guests_can_view' => 1,
@@ -393,7 +393,7 @@ class XooUserAdmin extends XooUserUltraCommon
 						'uurofile_setting_display_photos' => 'public',
 						
 						
-						'html_private_content' => __('User registration is currently not allowed.','xoouser'),
+						'html_private_content' => __('User registration is currently not allowed.','xoousers'),
 						'messaging_welcome_email_client' => $this->get_email_template('new_account'),
 						'messaging_welcome_email_client_admin' => $this->get_email_template('new_account_noti_admin'),
 						
@@ -416,15 +416,15 @@ class XooUserAdmin extends XooUserUltraCommon
 						
 						
 						
-						'messaging_welcome_email_admin' => __($this->get_email_template('new_account_admin'),'xoouser'),
-						'messaging_user_pm' => __($this->get_email_template('private_message_noti'),'xoouser'),
-						'reset_lik_message_body' => __($this->get_email_template('reset_lik_message_body'),'xoouser'),
+						'messaging_welcome_email_admin' => __($this->get_email_template('new_account_admin'),'xoousers'),
+						'messaging_user_pm' => __($this->get_email_template('private_message_noti'),'xoousers'),
+						'reset_lik_message_body' => __($this->get_email_template('reset_lik_message_body'),'xoousers'),
 						'password_reset_confirmation' => $this->get_email_template('password_reset_confirmation'),
 						
-						'admin_account_active_message_body' => __($this->get_email_template('admin_account_active_message_body'),'xoouser'),
+						'admin_account_active_message_body' => __($this->get_email_template('admin_account_active_message_body'),'xoousers'),
 						'admin_account_deny_message_body' => $this->get_email_template('admin_account_deny_message_body'),
 						
-						'messaging_send_from_name' => __('Users Ultra Plugin','xoouser'),
+						'messaging_send_from_name' => __('Users Ultra Plugin','xoousers'),
 						
 						
 						

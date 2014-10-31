@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.3.64
+Stable tag: 1.3.65
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,7 +68,6 @@ Basic knowledge of how to set up WordPress and install, activate and set up plug
 Users Ultra can handle almost all aspects of a powerful community website because it includes features such as: Private Messaging System, Friends, Like/Unlike, Photos, Galleries, Front End Posting (default posts), Stars Rating, basic Membership Management with PayPal integration and many more features for free.
 
 <strong>Importing users with custom meta from a CSV file: </strong><br>
-
 You can import users by using the powerful importing tool that comes with the plugin. It doesn't matter how many extra fields you would like to import, Users Ultra will import all of them automatically.
 
 The only thing you have to do is creating a CSV file separated by commas; this can be easily done by using any standard spreadsheet software.
@@ -295,6 +294,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.3.65(10-30-2014) =
+* Improvements - Textdomain improvement. There were some issues when translating the plugin. Now, everything should work well.
+* Improvements - PO and MO file were updated.
 
 = 1.3.64(10-29-2014) =
 * New Feature - Now You can import users by using the powerful importing tool that comes with the plugin. It doesn't matter how many extra fields you would like to import, Users Ultra will import all of them automatically.

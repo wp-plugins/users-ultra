@@ -11,11 +11,11 @@ $categories = $uultra_photo_category->get_photo_categories();
         
         <div class="user-ultra-success uultra-notification"><?php _e('Sucess ','xoousers'); ?></div>
         
-    <h3>Add New Category</h3>
+    <h3> <?php _e('Add New Category ','xoousers'); ?></h3>
          
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
            <tr>
-             <td width="6%">Name:</td>
+             <td width="6%"> <?php _e('Name: ','xoousers'); ?></td>
              <td width="94%"><input type="text" id="photo_cat_name"  name="photo_cat_name"  /></td>
            </tr>
           </table>

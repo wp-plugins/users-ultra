@@ -881,7 +881,7 @@ $this->create_plugin_setting(
 
 
 <p class="submit">
-	<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Save Changes','xoouser'); ?>"  />
+	<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Save Changes','xoousers'); ?>"  />
 </p>
 
 </form>

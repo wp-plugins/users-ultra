@@ -4748,8 +4748,6 @@ class XooUserUser {
 							success: function(data){
 								
 								$("#uu-backend-avatar-section").html(data);
-								//jQuery("#uu-message-noti-id").slideDown();
-								//setTimeout("hidde_noti('uu-message-noti-id')", 3000)	;
 								
 								
 								}
