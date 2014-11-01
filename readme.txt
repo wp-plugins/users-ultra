@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.3.65
+Stable tag: 1.3.66
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Custom Profile Background for every profile.</li>
   <li><strong>Multiple User's Profile.</strong></li>
   <li><strong>Spam Protection. IP Blocking. Simple way to stop fake account spam!</strong></li>
+  <li><strong>Advanced CSV Users Import Module.</strong></li>
   <li><strong>reCaptcha. It protects your website from spam !</strong></li> 
   <li>Users Wall.</li>
   <li>and so much more ...</li>
@@ -294,6 +295,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.3.66(10-31-2014) =
+* Improvements - Coding clean up.
+* Improvements - New shortcode added to the HTML editor..
 
 = 1.3.65(10-30-2014) =
 * Improvements - Textdomain improvement. There were some issues when translating the plugin. Now, everything should work well.

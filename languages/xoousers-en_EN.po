@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-10-30 23:55-0300\n"
-"PO-Revision-Date: 2014-10-30 23:55-0300\n"
+"POT-Creation-Date: 2014-11-01 01:18-0300\n"
+"PO-Revision-Date: 2014-11-01 01:18-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -541,6 +541,14 @@ msgstr ""
 msgid ""
 "<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>CLICK "
 "HERE TO RATE IT </a>"
+msgstr ""
+
+#: ../admin/tabs/help.php:18
+msgid "Common Shortcodes"
+msgstr ""
+
+#: ../admin/tabs/help.php:20
+msgid "Registration Form"
 msgstr ""
 
 #: ../admin/tabs/import.php:8

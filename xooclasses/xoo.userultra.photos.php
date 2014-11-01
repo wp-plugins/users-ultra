@@ -2775,7 +2775,7 @@ class XooUserPhoto {
 							if ($this->createthumb($pathBig, $pathBig, $original_max_width, $original_max_height,$ext)) 
 							{
 								$old = umask(0);
-								chmod($pathBig, 0777);
+								chmod($pathBig, 0755);
 								umask($old);
 														
 							}
@@ -2822,10 +2822,6 @@ class XooUserPhoto {
 						
 						}
 						
-						//update user meta
-						
-						
-						
 					}
 									
 					
@@ -2841,7 +2837,6 @@ class XooUserPhoto {
 		// Return response and exit:
 		echo json_encode($uploadResponse);
 		
-		//echo $new_avatar_url;
 		die();
 		
 	}
@@ -2852,7 +2847,6 @@ class XooUserPhoto {
 		$characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWZYZ";
 		
 		$real_string_legnth = strlen($characters) ;
-		//$real_string_legnth = $real_string_legnth– 1;
 		$string="ID";
 		
 		for ($p = 0; $p < $length; $p++)

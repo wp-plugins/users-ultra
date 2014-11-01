@@ -238,13 +238,10 @@ jQuery(document).ready(function($) {
 						setTimeout("hidde_noti('uultra-sucess-add-field')", 3000)		
 						
 						window.location.reload();
-							 							
 							
 							
 							}
 					});
-			
-		 
 		
 				
 		return false;
@@ -755,7 +752,6 @@ function sortable_fields_list ()
 
     itemList.sortable({
         update: function(event, ui) {
-           // $('#loading-animation').show(); // Show the animate loading gif while waiting
 
            
         }
