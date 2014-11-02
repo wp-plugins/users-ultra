@@ -19,7 +19,7 @@ global $xoouserultra;
          
           <strong>  <?php _e('Registration Form','xoousers'); ?></strong>
                   <pre>[usersultra_registration]</pre>
-                 <strong>Login Form</strong>
+                 <strong> <?php _e('Login Form','xoousers'); ?></strong>
                  <pre>[usersultra_login]</pre>
                  
                    <strong>My Account</strong>

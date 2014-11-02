@@ -459,10 +459,8 @@ class XooSocial
 			  $total = 0;  
 		  
 		  }		
-		
 				
 		return $total;	
-	
 	
 	}
 	
@@ -536,7 +534,6 @@ class XooSocial
 				
 				echo $html;
 				die();
-			
 	
 	}
 	
