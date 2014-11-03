@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-01 01:18-0300\n"
-"PO-Revision-Date: 2014-11-01 01:18-0300\n"
+"POT-Creation-Date: 2014-11-03 03:51-0300\n"
+"PO-Revision-Date: 2014-11-03 03:51-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -551,6 +551,10 @@ msgstr ""
 msgid "Registration Form"
 msgstr ""
 
+#: ../admin/tabs/help.php:22
+msgid "Login Form"
+msgstr ""
+
 #: ../admin/tabs/import.php:8
 msgid "Synchronize Already Users"
 msgstr ""
@@ -848,8 +852,8 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:1148
 #: ../xooclasses/xoo.userultra.order.php:396
 #: ../xooclasses/xoo.userultra.publisher.php:472
-#: ../xooclasses/xoo.userultra.socials.php:501
-#: ../xooclasses/xoo.userultra.socials.php:574
+#: ../xooclasses/xoo.userultra.socials.php:499
+#: ../xooclasses/xoo.userultra.socials.php:571
 #: ../xooclasses/xoo.userultra.woocommerce.php:352
 msgid "Date"
 msgstr ""
@@ -1143,220 +1147,230 @@ msgid ""
 "mile in order to give you a Top Quality Support."
 msgstr ""
 
-#: ../admin/tabs/pro.php:42
+#: ../admin/tabs/pro.php:43
+msgid "Advanced Profile Fields"
+msgstr ""
+
+#: ../admin/tabs/pro.php:44
+msgid ""
+"You can create fields that will only be displayed on users of the selected "
+"User Roles. Also, you can make a field editable based on User Roles."
+msgstr ""
+
+#: ../admin/tabs/pro.php:48
 msgid "Unlimited Widgets"
 msgstr ""
 
-#: ../admin/tabs/pro.php:43
+#: ../admin/tabs/pro.php:49
 msgid ""
 "Yes, you can add as many widgets as you wish. Integrating with third-party "
 "plugins has never been easier. You can use other plugins with Users Ultra "
 "PRO."
 msgstr ""
 
-#: ../admin/tabs/pro.php:47
+#: ../admin/tabs/pro.php:53
 msgid "Unlimited Links"
 msgstr ""
 
-#: ../admin/tabs/pro.php:48
+#: ../admin/tabs/pro.php:54
 msgid ""
 "You can add unlimited links within the user's dashboard with HTML text or "
 "use a shortcode of another plugin to display custom information."
 msgstr ""
 
-#: ../admin/tabs/pro.php:52
+#: ../admin/tabs/pro.php:58
 msgid "Appearance & Customization"
 msgstr ""
 
-#: ../admin/tabs/pro.php:53
+#: ../admin/tabs/pro.php:59
 msgid ""
 "Users Ultra PRO allows you to adapt the user's profile to any WordPress "
 "Theme through the admin section. Change the look of the profile in just few "
 "clicks."
 msgstr ""
 
-#: ../admin/tabs/pro.php:57
+#: ../admin/tabs/pro.php:63
 msgid "Roles Integration"
 msgstr ""
 
-#: ../admin/tabs/pro.php:58
+#: ../admin/tabs/pro.php:64
 msgid ""
 "Users will be able to select a predefined role when registering and you will "
 "be able to assign a custom role to a membership package."
 msgstr ""
 
-#: ../admin/tabs/pro.php:62
+#: ../admin/tabs/pro.php:68
 msgid "Spam Protection"
 msgstr ""
 
-#: ../admin/tabs/pro.php:63
+#: ../admin/tabs/pro.php:69
 msgid ""
 "Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
 "your website against spam attacks. Simple way to stop fake account spam!"
 msgstr ""
 
-#: ../admin/tabs/pro.php:67
+#: ../admin/tabs/pro.php:73
 msgid "Advanced Email Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:68
+#: ../admin/tabs/pro.php:74
 msgid "Send emails via SMTP and Mandrill API."
 msgstr ""
 
-#: ../admin/tabs/pro.php:73
+#: ../admin/tabs/pro.php:79
 msgid "reCaptcha & FUNCAPTCHA"
 msgstr ""
 
-#: ../admin/tabs/pro.php:74
+#: ../admin/tabs/pro.php:80
 msgid ""
 "This is a great feature to protect your website from spam and abuse. "
 "reCAPTCHA uses an advanced risk analysis engine."
 msgstr ""
 
-#: ../admin/tabs/pro.php:80
+#: ../admin/tabs/pro.php:86
 msgid "New Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:81
+#: ../admin/tabs/pro.php:87
 msgid ""
 "We add new features every week for the Pro version. You may alway let us "
 "know your suggestion and we will be glad to listen your opinions."
 msgstr ""
 
-#: ../admin/tabs/pro.php:85
+#: ../admin/tabs/pro.php:91
 msgid "Customizable Profile"
 msgstr ""
 
-#: ../admin/tabs/pro.php:86
+#: ../admin/tabs/pro.php:92
 msgid ""
 "The Pro Version includes the unique and innovating Widgetized Users Profile. "
 "Let your user build their own profile by draging and droping elements."
 msgstr ""
 
-#: ../admin/tabs/pro.php:90
+#: ../admin/tabs/pro.php:96
 msgid "One and Two Columns Profile"
 msgstr ""
 
-#: ../admin/tabs/pro.php:91
+#: ../admin/tabs/pro.php:97
 msgid ""
 "The new user's profile template will let you create a beutiful user's "
 "profile with one, two or three columns with just one click."
 msgstr ""
 
-#: ../admin/tabs/pro.php:95
+#: ../admin/tabs/pro.php:101
 msgid "Badges & Achievement"
 msgstr ""
 
-#: ../admin/tabs/pro.php:96
+#: ../admin/tabs/pro.php:102
 msgid ""
 "Create and award badges to your users manually, or based on what they "
 "accomplish."
 msgstr ""
 
-#: ../admin/tabs/pro.php:100
+#: ../admin/tabs/pro.php:106
 msgid "bbPress Integration"
 msgstr ""
 
-#: ../admin/tabs/pro.php:101
+#: ../admin/tabs/pro.php:107
 msgid ""
 "Your forum may look much more elegant by using Users Ultra Pro. Display "
 "badges and achievements in your forum threads and much more."
 msgstr ""
 
-#: ../admin/tabs/pro.php:105
+#: ../admin/tabs/pro.php:111
 msgid "Social Connect Buttons"
 msgstr ""
 
-#: ../admin/tabs/pro.php:106
+#: ../admin/tabs/pro.php:112
 msgid ""
 "Now you can add one or more social connect buttons to any place of your blog."
 msgstr ""
 
-#: ../admin/tabs/pro.php:110
+#: ../admin/tabs/pro.php:116
 msgid "Online/Offline User Status"
 msgstr ""
 
-#: ../admin/tabs/pro.php:111
+#: ../admin/tabs/pro.php:117
 msgid ""
 "This feature is optional and you will have the capability to show the user's "
 "status to your visitors."
 msgstr ""
 
-#: ../admin/tabs/pro.php:115
+#: ../admin/tabs/pro.php:121
 msgid "Custom Profile Background "
 msgstr ""
 
-#: ../admin/tabs/pro.php:116
+#: ../admin/tabs/pro.php:122
 msgid ""
 "Let your users to customize their profiles by adding a custom full-screen "
 "background image easily."
 msgstr ""
 
-#: ../admin/tabs/pro.php:121
+#: ../admin/tabs/pro.php:127
 msgid "Users Wall"
 msgstr ""
 
-#: ../admin/tabs/pro.php:122
+#: ../admin/tabs/pro.php:128
 msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
 msgstr ""
 
-#: ../admin/tabs/pro.php:126
+#: ../admin/tabs/pro.php:132
 msgid "Automatic Updates"
 msgstr ""
 
-#: ../admin/tabs/pro.php:127
+#: ../admin/tabs/pro.php:133
 msgid ""
 "Yes, Users Ultra Pro can be updated through the Plugins area in your "
 "Wordpress Admin Panel."
 msgstr ""
 
-#: ../admin/tabs/pro.php:131
+#: ../admin/tabs/pro.php:137
 msgid "Free Installation"
 msgstr ""
 
-#: ../admin/tabs/pro.php:132
+#: ../admin/tabs/pro.php:138
 msgid ""
 "If you would like assistance with installing and setting up the plugin, we "
 "are glad to help. "
 msgstr ""
 
-#: ../admin/tabs/pro.php:136
+#: ../admin/tabs/pro.php:142
 msgid "Network Activation"
 msgstr ""
 
-#: ../admin/tabs/pro.php:137
+#: ../admin/tabs/pro.php:143
 msgid ""
 "When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
 "for the entire network of sites by just one click."
 msgstr ""
 
-#: ../admin/tabs/pro.php:141
+#: ../admin/tabs/pro.php:147
 msgid "Users Management"
 msgstr ""
 
-#: ../admin/tabs/pro.php:142
+#: ../admin/tabs/pro.php:148
 msgid ""
 "The Pro version includes a powerful users management module. Easily approve/"
 "deny users, upgrade and downgrade user's membership. Finding a user will be "
 "super easy by using this feature."
 msgstr ""
 
-#: ../admin/tabs/pro.php:146
+#: ../admin/tabs/pro.php:152
 msgid "Advanced Front End Publisher"
 msgstr ""
 
-#: ../admin/tabs/pro.php:147
+#: ../admin/tabs/pro.php:153
 msgid ""
 "Allows your user to post through their private area. It allows user to "
 "attach photos to the posts. This is useful for classified and real estate "
 "websites."
 msgstr ""
 
-#: ../admin/tabs/pro.php:152
+#: ../admin/tabs/pro.php:158
 msgid "Maitenance Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:153
+#: ../admin/tabs/pro.php:159
 msgid "Keep your Users and User Meta table clean."
 msgstr ""
 
@@ -3293,8 +3307,8 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:562
 #: ../xooclasses/xoo.userultra.mymessage.php:716
 #: ../xooclasses/xoo.userultra.mymessage.php:835
-#: ../xooclasses/xoo.userultra.socials.php:499
-#: ../xooclasses/xoo.userultra.socials.php:572
+#: ../xooclasses/xoo.userultra.socials.php:497
+#: ../xooclasses/xoo.userultra.socials.php:569
 msgid "Pic"
 msgstr ""
 
@@ -3302,8 +3316,8 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:836
 #: ../xooclasses/xoo.userultra.mymessage.php:1085
 #: ../xooclasses/xoo.userultra.mymessage.php:1146
-#: ../xooclasses/xoo.userultra.socials.php:500
-#: ../xooclasses/xoo.userultra.socials.php:573
+#: ../xooclasses/xoo.userultra.socials.php:498
+#: ../xooclasses/xoo.userultra.socials.php:570
 msgid "Sender"
 msgstr ""
 
@@ -3311,8 +3325,8 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:936
 #: ../xooclasses/xoo.userultra.mymessage.php:959
 #: ../xooclasses/xoo.userultra.payment.paypal.php:795
-#: ../xooclasses/xoo.userultra.socials.php:502
-#: ../xooclasses/xoo.userultra.socials.php:575
+#: ../xooclasses/xoo.userultra.socials.php:500
+#: ../xooclasses/xoo.userultra.socials.php:572
 #: ../xooclasses/xoo.userultra.user.php:605
 #: ../xooclasses/xoo.userultra.user.php:676
 #: ../xooclasses/xoo.userultra.user.php:744
@@ -3772,6 +3786,10 @@ msgid ""
 "another one."
 msgstr ""
 
+#: ../xooclasses/xoo.userultra.register.php:98
+msgid "<strong>ERROR:</strong> Please type your password."
+msgstr ""
+
 #: ../xooclasses/xoo.userultra.register.php:104
 msgid "<strong>ERROR:</strong> The passwords must be identical"
 msgstr ""
@@ -3846,25 +3864,25 @@ msgstr ""
 msgid "Dislike"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.socials.php:490
+#: ../xooclasses/xoo.userultra.socials.php:488
 msgid "Latest Friend Requests"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.socials.php:525
+#: ../xooclasses/xoo.userultra.socials.php:523
 msgid "Approve"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.socials.php:525
+#: ../xooclasses/xoo.userultra.socials.php:523
 #: ../xooclasses/xoo.userultra.user.php:624
 #: ../xooclasses/xoo.userultra.user.php:695
 msgid "Deny"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.socials.php:563
+#: ../xooclasses/xoo.userultra.socials.php:560
 msgid "All My Friends"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.socials.php:598
+#: ../xooclasses/xoo.userultra.socials.php:595
 msgid "Block"
 msgstr ""
 

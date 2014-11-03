@@ -16,7 +16,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.26</p>
+            <p>Version: 1.1.27</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
@@ -36,6 +36,12 @@ global $xoouserultra;
             <div class="uultra-col">
              <h1><?php _e('Priority Support','xoousers'); ?></h1> 
              <p> <?php _e('We usually reply within the same day to pro users. We will go to the extra mile in order to give you a Top Quality Support.','xoousers'); ?></p>
+            </div>
+            
+            
+             <div class="uultra-col">
+             <h1><?php _e('Advanced Profile Fields','xoousers'); ?></h1> 
+             <p> <?php _e("You can create fields that will only be displayed on users of the selected User Roles. Also, you can make a field editable based on User Roles.",'xoousers'); ?></p>
             </div>
             
              <div class="uultra-col">

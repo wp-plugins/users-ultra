@@ -92,14 +92,14 @@ class XooUserRegister {
 		    
 		    }
 			
-			/* Validate passowrd */
-		     if ($this->usermeta["user_pass"]=="") 
+			 /* Validate passowrd */
+		     if ($_POST["user_pass"]=="") 
 			 {
-				 //$this->errors[] = __('<strong>ERROR:</strong> Please type your password.','xoousers');           
+				$this->errors[] = __('<strong>ERROR:</strong> Please type your password.','xoousers');           
 				
 		     }
 			 
-			 if ($this->usermeta["user_pass"]!= $this->usermeta["user_pass_confirm"]) 
+			 if ($_POST["user_pass"]!= $_POST["user_pass_confirm"]) 
 			 {
 				 $this->errors[] = __('<strong>ERROR:</strong> The passwords must be identical','xoousers');           
 				
