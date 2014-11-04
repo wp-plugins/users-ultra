@@ -16,7 +16,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.27</p>
+            <p>Version: 1.1.28</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
@@ -39,10 +39,6 @@ global $xoouserultra;
             </div>
             
             
-             <div class="uultra-col">
-             <h1><?php _e('Advanced Profile Fields','xoousers'); ?></h1> 
-             <p> <?php _e("You can create fields that will only be displayed on users of the selected User Roles. Also, you can make a field editable based on User Roles.",'xoousers'); ?></p>
-            </div>
             
              <div class="uultra-col">
              <h1><?php _e('Unlimited Widgets','xoousers'); ?></h1> 
@@ -73,6 +69,17 @@ global $xoouserultra;
              <h1><?php _e('Advanced Email Features','xoousers'); ?></h1> 
              <p> <?php _e("Send emails via SMTP and Mandrill API.",'xoousers'); ?></p>
             </div>  
+            
+             <div class="uultra-col">
+             <h1><?php _e('Advanced Profile Fields','xoousers'); ?></h1> 
+             <p> <?php _e("You can create fields that will only be displayed on users of the selected User Roles. Also, you can make a field editable based on User Roles.",'xoousers'); ?></p>
+            </div>
+            
+            <div class="uultra-col">
+             <h1><?php _e('Default Role on Registration','xoousers'); ?></h1> 
+             <p> <?php _e("Users Ultra Pro allows you to set a custom role for either the common or the social login features.",'xoousers'); ?></p>
+            </div>
+            
             
             
              <div class="uultra-col">

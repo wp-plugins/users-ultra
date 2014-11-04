@@ -224,8 +224,6 @@ class XooUserRegister {
 						
 						}
 						
-						//update user meta
-						
 						
 						
 					}
@@ -480,8 +478,6 @@ class XooUserRegister {
 					//update status
 					 update_user_meta ($user_id, 'usersultra_account_status', 'pending_payment');
 					 
-					 //store tempassword
-					 //update_user_meta ($user_id, 'usersultra_temp_password', $user_pass);
 					 
 					 //package 
 					 update_user_meta ($user_id, 'usersultra_user_package_id', $package_id);
@@ -568,8 +564,6 @@ class XooUserRegister {
 		              $xoouserultra->login->login_registration_afterlogin();						
 	  
 	              } 
-				
-				
 				
 				
 			} //end error link

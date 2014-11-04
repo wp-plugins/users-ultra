@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-03 03:51-0300\n"
-"PO-Revision-Date: 2014-11-03 03:51-0300\n"
+"POT-Creation-Date: 2014-11-04 00:51-0300\n"
+"PO-Revision-Date: 2014-11-04 00:51-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -1147,230 +1147,240 @@ msgid ""
 "mile in order to give you a Top Quality Support."
 msgstr ""
 
-#: ../admin/tabs/pro.php:43
-msgid "Advanced Profile Fields"
-msgstr ""
-
 #: ../admin/tabs/pro.php:44
-msgid ""
-"You can create fields that will only be displayed on users of the selected "
-"User Roles. Also, you can make a field editable based on User Roles."
-msgstr ""
-
-#: ../admin/tabs/pro.php:48
 msgid "Unlimited Widgets"
 msgstr ""
 
-#: ../admin/tabs/pro.php:49
+#: ../admin/tabs/pro.php:45
 msgid ""
 "Yes, you can add as many widgets as you wish. Integrating with third-party "
 "plugins has never been easier. You can use other plugins with Users Ultra "
 "PRO."
 msgstr ""
 
-#: ../admin/tabs/pro.php:53
+#: ../admin/tabs/pro.php:49
 msgid "Unlimited Links"
 msgstr ""
 
-#: ../admin/tabs/pro.php:54
+#: ../admin/tabs/pro.php:50
 msgid ""
 "You can add unlimited links within the user's dashboard with HTML text or "
 "use a shortcode of another plugin to display custom information."
 msgstr ""
 
-#: ../admin/tabs/pro.php:58
+#: ../admin/tabs/pro.php:54
 msgid "Appearance & Customization"
 msgstr ""
 
-#: ../admin/tabs/pro.php:59
+#: ../admin/tabs/pro.php:55
 msgid ""
 "Users Ultra PRO allows you to adapt the user's profile to any WordPress "
 "Theme through the admin section. Change the look of the profile in just few "
 "clicks."
 msgstr ""
 
-#: ../admin/tabs/pro.php:63
+#: ../admin/tabs/pro.php:59
 msgid "Roles Integration"
 msgstr ""
 
-#: ../admin/tabs/pro.php:64
+#: ../admin/tabs/pro.php:60
 msgid ""
 "Users will be able to select a predefined role when registering and you will "
 "be able to assign a custom role to a membership package."
 msgstr ""
 
-#: ../admin/tabs/pro.php:68
+#: ../admin/tabs/pro.php:64
 msgid "Spam Protection"
 msgstr ""
 
-#: ../admin/tabs/pro.php:69
+#: ../admin/tabs/pro.php:65
 msgid ""
 "Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
 "your website against spam attacks. Simple way to stop fake account spam!"
 msgstr ""
 
-#: ../admin/tabs/pro.php:73
+#: ../admin/tabs/pro.php:69
 msgid "Advanced Email Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:74
+#: ../admin/tabs/pro.php:70
 msgid "Send emails via SMTP and Mandrill API."
 msgstr ""
 
+#: ../admin/tabs/pro.php:74
+msgid "Advanced Profile Fields"
+msgstr ""
+
+#: ../admin/tabs/pro.php:75
+msgid ""
+"You can create fields that will only be displayed on users of the selected "
+"User Roles. Also, you can make a field editable based on User Roles."
+msgstr ""
+
 #: ../admin/tabs/pro.php:79
-msgid "reCaptcha & FUNCAPTCHA"
+msgid "Default Role on Registration"
 msgstr ""
 
 #: ../admin/tabs/pro.php:80
+msgid ""
+"Users Ultra Pro allows you to set a custom role for either the common or the "
+"social login features."
+msgstr ""
+
+#: ../admin/tabs/pro.php:86
+msgid "reCaptcha & FUNCAPTCHA"
+msgstr ""
+
+#: ../admin/tabs/pro.php:87
 msgid ""
 "This is a great feature to protect your website from spam and abuse. "
 "reCAPTCHA uses an advanced risk analysis engine."
 msgstr ""
 
-#: ../admin/tabs/pro.php:86
+#: ../admin/tabs/pro.php:93
 msgid "New Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:87
+#: ../admin/tabs/pro.php:94
 msgid ""
 "We add new features every week for the Pro version. You may alway let us "
 "know your suggestion and we will be glad to listen your opinions."
 msgstr ""
 
-#: ../admin/tabs/pro.php:91
+#: ../admin/tabs/pro.php:98
 msgid "Customizable Profile"
 msgstr ""
 
-#: ../admin/tabs/pro.php:92
+#: ../admin/tabs/pro.php:99
 msgid ""
 "The Pro Version includes the unique and innovating Widgetized Users Profile. "
 "Let your user build their own profile by draging and droping elements."
 msgstr ""
 
-#: ../admin/tabs/pro.php:96
+#: ../admin/tabs/pro.php:103
 msgid "One and Two Columns Profile"
 msgstr ""
 
-#: ../admin/tabs/pro.php:97
+#: ../admin/tabs/pro.php:104
 msgid ""
 "The new user's profile template will let you create a beutiful user's "
 "profile with one, two or three columns with just one click."
 msgstr ""
 
-#: ../admin/tabs/pro.php:101
+#: ../admin/tabs/pro.php:108
 msgid "Badges & Achievement"
 msgstr ""
 
-#: ../admin/tabs/pro.php:102
+#: ../admin/tabs/pro.php:109
 msgid ""
 "Create and award badges to your users manually, or based on what they "
 "accomplish."
 msgstr ""
 
-#: ../admin/tabs/pro.php:106
+#: ../admin/tabs/pro.php:113
 msgid "bbPress Integration"
 msgstr ""
 
-#: ../admin/tabs/pro.php:107
+#: ../admin/tabs/pro.php:114
 msgid ""
 "Your forum may look much more elegant by using Users Ultra Pro. Display "
 "badges and achievements in your forum threads and much more."
 msgstr ""
 
-#: ../admin/tabs/pro.php:111
+#: ../admin/tabs/pro.php:118
 msgid "Social Connect Buttons"
 msgstr ""
 
-#: ../admin/tabs/pro.php:112
+#: ../admin/tabs/pro.php:119
 msgid ""
 "Now you can add one or more social connect buttons to any place of your blog."
 msgstr ""
 
-#: ../admin/tabs/pro.php:116
+#: ../admin/tabs/pro.php:123
 msgid "Online/Offline User Status"
 msgstr ""
 
-#: ../admin/tabs/pro.php:117
+#: ../admin/tabs/pro.php:124
 msgid ""
 "This feature is optional and you will have the capability to show the user's "
 "status to your visitors."
 msgstr ""
 
-#: ../admin/tabs/pro.php:121
+#: ../admin/tabs/pro.php:128
 msgid "Custom Profile Background "
 msgstr ""
 
-#: ../admin/tabs/pro.php:122
+#: ../admin/tabs/pro.php:129
 msgid ""
 "Let your users to customize their profiles by adding a custom full-screen "
 "background image easily."
 msgstr ""
 
-#: ../admin/tabs/pro.php:127
+#: ../admin/tabs/pro.php:134
 msgid "Users Wall"
 msgstr ""
 
-#: ../admin/tabs/pro.php:128
+#: ../admin/tabs/pro.php:135
 msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
 msgstr ""
 
-#: ../admin/tabs/pro.php:132
+#: ../admin/tabs/pro.php:139
 msgid "Automatic Updates"
 msgstr ""
 
-#: ../admin/tabs/pro.php:133
+#: ../admin/tabs/pro.php:140
 msgid ""
 "Yes, Users Ultra Pro can be updated through the Plugins area in your "
 "Wordpress Admin Panel."
 msgstr ""
 
-#: ../admin/tabs/pro.php:137
+#: ../admin/tabs/pro.php:144
 msgid "Free Installation"
 msgstr ""
 
-#: ../admin/tabs/pro.php:138
+#: ../admin/tabs/pro.php:145
 msgid ""
 "If you would like assistance with installing and setting up the plugin, we "
 "are glad to help. "
 msgstr ""
 
-#: ../admin/tabs/pro.php:142
+#: ../admin/tabs/pro.php:149
 msgid "Network Activation"
 msgstr ""
 
-#: ../admin/tabs/pro.php:143
+#: ../admin/tabs/pro.php:150
 msgid ""
 "When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
 "for the entire network of sites by just one click."
 msgstr ""
 
-#: ../admin/tabs/pro.php:147
+#: ../admin/tabs/pro.php:154
 msgid "Users Management"
 msgstr ""
 
-#: ../admin/tabs/pro.php:148
+#: ../admin/tabs/pro.php:155
 msgid ""
 "The Pro version includes a powerful users management module. Easily approve/"
 "deny users, upgrade and downgrade user's membership. Finding a user will be "
 "super easy by using this feature."
 msgstr ""
 
-#: ../admin/tabs/pro.php:152
+#: ../admin/tabs/pro.php:159
 msgid "Advanced Front End Publisher"
 msgstr ""
 
-#: ../admin/tabs/pro.php:153
+#: ../admin/tabs/pro.php:160
 msgid ""
 "Allows your user to post through their private area. It allows user to "
 "attach photos to the posts. This is useful for classified and real estate "
 "websites."
 msgstr ""
 
-#: ../admin/tabs/pro.php:158
+#: ../admin/tabs/pro.php:165
 msgid "Maitenance Features"
 msgstr ""
 
-#: ../admin/tabs/pro.php:159
+#: ../admin/tabs/pro.php:166
 msgid "Keep your Users and User Meta table clean."
 msgstr ""
 
@@ -3802,7 +3812,7 @@ msgstr ""
 msgid "<strong>ERROR:</strong> Registration is disabled for this site."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:595
+#: ../xooclasses/xoo.userultra.register.php:589
 msgid "Registration successful. Please check your email."
 msgstr ""
 

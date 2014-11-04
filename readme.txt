@@ -1,10 +1,10 @@
 === Users Ultra ===
 Contributors: UsersUltra, Dot07
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing
+Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.3.68
+Stable tag: 1.3.69
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,8 +32,8 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <h3><strong>USERS ULTRA PRO INCLUDES: </strong></h3>
 <ul>
   <li>Priority Support.</li>
-   <li><strong>Display Fields by User Role Only. You can Select Roles that can See it.</strong></li>
-   <li><strong>Make Fields Editable by User Role Only. You can Select Roles that can Edit it.</strong></li>
+   <li><strong>Display Fields by User Role Only. You can Select Roles that can see it.</strong></li>
+   <li><strong>Make Fields Editable by User Role Only. You can Select Roles that can edit it.</strong></li>
   <li>New Features Every Week.</li>
   <li><strong>Integrate with third-party plugins</strong></li>
    <li><strong>Use any shortcodes in the user's profile</strong></li>
@@ -42,6 +42,9 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
     <li><strong>Create Unlimited Widgets.</strong></li>
 	 <li><strong>Add Unlimited Links to the User's Dashboard.</strong></li>
     <li><strong>Membership Packages & Registration Form with Roles. Users can select a role when registering.</strong></li>
+	<li>Set Custom Role on Registration.</li>
+	<li>Set Custom Role for Social Media Registration.</li>
+	
 	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
     <li>User Online/Offline Status.</li>
     <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
@@ -297,6 +300,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.3.69(11-03-2014) =
+* Improvements - CSS tweaks on User's Dashboard.
+* Improvements - Users Directory load speed has been improved.
 
 = 1.3.68(11-02-2014) =
 * Bug Fix - Password re-type issue. We fixed and issue in the registration form. Althoug, it was an strange issue it has been resolved. please update. 
