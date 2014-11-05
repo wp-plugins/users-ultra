@@ -35,7 +35,7 @@ class XooNewsLetter extends XooUserUltraCommon
 		$f_name = get_user_meta($user_id, 'first_name', true);
 	    $l_name = get_user_meta($user_id, 'last_name', true);
 		
-		$MailChimp = new MailChimp( $this->mail_chimp_api );
+		$MailChimp = new MailChimp_UUltra( $this->mail_chimp_api );
 		
 				
 		$MailChimp->call('lists/subscribe', array(
@@ -62,7 +62,7 @@ class XooNewsLetter extends XooUserUltraCommon
 		
 		$email = uultra_profile_data('user_email', $user_id);
 		
-		$MailChimp = new MailChimp( $this->mail_chimp_api );
+		$MailChimp = new MailChimp_UUltra( $this->mail_chimp_api );
 		$MailChimp->call('lists/unsubscribe', array(
                 'id'                => $list_id,
                 'email'             => array('email'=> $email)
@@ -80,7 +80,7 @@ class XooNewsLetter extends XooUserUltraCommon
 	
 		$email = uultra_profile_data('user_email', $user_id);
 	
-		$MailChimp = new MailChimp( $this->mail_chimp_api );
+		$MailChimp = new MailChimp_UUltra( $this->mail_chimp_api );
 		$results = $MailChimp->call('helper/lists-for-email', array(
 				'email'				=> array('email'=> $email)
 		));

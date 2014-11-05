@@ -3878,6 +3878,7 @@ class XooUserUser {
 			'display_total_found' => 'yes', // display total found
 			'display_total_found_text' => 'Users', // display total found			
 			'list_order' => 'DESC', // asc or desc ordering
+			'exclude' => '', // exclude from searching
 		), $atts ) );
 		
 		
@@ -3943,6 +3944,7 @@ class XooUserUser {
 			'list_order' => 'DESC', // asc or desc ordering
 			'role' => '', // filter by role
 			'relation' => 'AND', // filter by role
+			'exclude' => '', // exclude from search
 		), $atts ) );
 		
 		
@@ -3951,7 +3953,7 @@ class XooUserUser {
 		
 		$search_array = array('list_per_page' => $list_per_page, 'list_order' => $list_order);	
 		
-		$args= array('per_page' => $list_per_page, 'relation' => $relation, 'role' => $role);
+		$args= array('per_page' => $list_per_page, 'relation' => $relation, 'role' => $role, 'exclude' => $exclude);
 		
 		$this->current_users_page = $page;
 		
