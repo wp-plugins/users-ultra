@@ -5,6 +5,13 @@ jQuery(document).ready(function($) {
 	jQuery("#uultra-add-new-custom-field-frm").slideUp();
 	
 	
+	 $(function() {
+		$( "#tabs-uultra" ).tabs({
+		collapsible: false
+		});
+	});
+	
+	
 	/* open package form */
 	jQuery('.uultra-add-new-package').live('click',function(e){
 		e.preventDefault();

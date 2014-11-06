@@ -5,7 +5,7 @@ add_action('init', 'xoousers_load_textdomain');
 
 function xoousers_load_textdomain() 
 {
-         $locale = apply_filters( 'plugin_locale', get_locale(), 'users-ultra' );	   
+       $locale = apply_filters( 'plugin_locale', get_locale(), 'users-ultra' );	   
        $mofile = xoousers_path . "languages/xoousers-$locale.mo";
 			
 		// Global + Frontend Locale

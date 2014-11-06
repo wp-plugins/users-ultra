@@ -14,23 +14,16 @@ global $xoouserultra;
         
         </div>
         
-        <div class="uultra-badge-pro">
-        	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.28</p>
-                       
-             <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
-             
-             
-                               
-    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">NEW PROFILE</a></p>
-    
-    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/changelog/" target="_blank">CHANGELOG</a></p>
-    
-         
-        </div>  
         
-        
-        
+        <div id="tabs-uultra" class="uultra-multi-tab-options">
+<ul class="nav-tab-wrapper uultra-nav-pro-features">
+<li class="nav-tab uultra-pro-li"><a href="#tabs-1"><?php _e('Tons of Great Features','xoousers'); ?></a></li>
+<li class="nav-tab uultra-pro-li"><a href="#tabs-3"><?php _e('Changelog','xoousers'); ?> </a></li>
+</ul>
+
+<div id="tabs-1">
+
+
          <div class="uultra-pro-col-features">
          
             <div class="uultra-col">
@@ -173,6 +166,36 @@ global $xoouserultra;
         
                
        
+
+
+</div>
+
+<div id="tabs-3">
+<p><strong> <?php _e('Users Ultra Pro Changelog ','xoousers'); ?></strong></p>
+
+<div class="uu-sect-p">
+<?php echo $xoouserultra->get_pro_change_log();?>
+</div>
+</div>
+</div>
+        
+        <div class="uultra-badge-pro">
+        	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
+            <p>Version: 1.1.29</p>
+                       
+             <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
+             
+             
+                               
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">NEW PROFILE</a></p>
+    
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/changelog/" target="_blank">DAILY UPDATED</a></p>
+    
+         
+        </div>  
+        
+        
+        
   
                           
     

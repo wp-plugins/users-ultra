@@ -142,6 +142,42 @@ class XooUserUltra
 		
 	}
 	
+	
+	public function get_pro_change_log () 
+	{		
+		global $xoouserultra, $wpdb ;
+		
+		 
+		 require_once(ABSPATH . 'wp-includes/class-http.php');
+		 require_once(ABSPATH . 'wp-includes/ms-functions.php');
+
+		
+			
+		
+		$url = "http://usersultra.com/get_change_log_pro.php";	
+		
+		
+		$response = wp_remote_post(
+            $url,
+            array(
+                'body' => array(
+                    'd'   => $domain,
+                    'server_ip'     => $server_add,
+                    'sial_key' => $p,
+					'action' => 'validate',
+					
+                )
+            )
+        );
+
+		
+		
+		$response = $response["body"];
+		
+		return $response;
+		
+	}
+	
 	public function uultra_display_custom_message () 
 	{
 				

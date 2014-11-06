@@ -786,6 +786,15 @@ i.mce_uultra_shortcodes_button{background-image:url(../images/small_logo_16x16.p
 
 /*PRO*/
 
+ul.uultra-change-log-items{}
+ul.uultra-change-log-items li{ margin-bottom:15px; padding-top:5px; padding-bottom:5px; font-size:1.2em; }
+
+.uultra-nav-pro-features { text-align:right !important;  width:75%; margin-top:15px;  border-bottom:solid 1px #CCC }
+.uultra-multi-tab-options { margin-top:30px; }
+
+.uultra-nav-pro-features li.uultra-pro-li{ height:40px !important; padding-top:10px;}
+.uultra-nav-pro-features li.uultra-pro-li a{ text-decoration:none !important; color:#333; font-size:1.3em; display:block; height:100%; }
+
 .user-ultra-sect-pro-sub { padding:10px; position:relative}
 .user-ultra-sect-pro-sub p{ font-size:11px; text-align:right; margin:0px}
 

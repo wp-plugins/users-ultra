@@ -73,6 +73,8 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 	}
 	
+	
+	
 	public function custom_fields_reset () 
 	{
 		
@@ -205,11 +207,11 @@ class XooUserAdmin extends XooUserUltraCommon
 		wp_enqueue_script( 'userultra_color_picker' );
 		
 		wp_register_script( 'userultra_admin', xoousers_url.'admin/scripts/admin.js', array( 
-			'jquery','jquery-ui-core','jquery-ui-draggable','jquery-ui-droppable',	'jquery-ui-sortable'
+			'jquery','jquery-ui-core','jquery-ui-draggable','jquery-ui-droppable',	'jquery-ui-sortable','jquery-ui-tabs'
 		), null );
 		wp_enqueue_script( 'userultra_admin' );
 		
-		
+			
 		/* Font Awesome */
 		wp_register_style( 'xoouserultra_font_awesome', xoousers_url.'css/css/font-awesome.min.css');
 		wp_enqueue_style('xoouserultra_font_awesome');

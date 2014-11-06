@@ -114,8 +114,7 @@ class XooUserLogin {
 			/* */
 			$this->handle_linkedin_authorization();
 
-		}
-		
+		}	
 			
 		
 		/*Form is fired*/
@@ -176,8 +175,7 @@ class XooUserLogin {
 					$this->errors[] = __('<strong>ERROR:</strong> The password field is empty.','xoousers');
 				}
 			}
-		}
-		
+		}		
 		
 		// Check captcha first
 		if(!is_in_post('no_captcha','yes'))

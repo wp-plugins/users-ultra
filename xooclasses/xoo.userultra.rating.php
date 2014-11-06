@@ -217,11 +217,7 @@ class XooRating extends XooUserUltraCommon
 				   
 				   
 				   //user is not logged in
-					
-					
 					$html = __("You have to be logged in to leave your rate  ",'xoousers');			
-					
-				
 				}	
 		}else{
 			
@@ -302,8 +298,6 @@ class XooRating extends XooUserUltraCommon
 		}
 		
     }
-	
-	
 
 }
 $key = "rating";

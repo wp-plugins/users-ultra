@@ -25,6 +25,9 @@ class OAuthConsumer {
   }
 }
 }
+
+if (!class_exists('OAuthConsumer')) {
+
 class OAuthToken {
   // access tokens and request tokens
   public $key;
@@ -55,6 +58,7 @@ class OAuthToken {
   }
 }
 
+}
 /**
  * A class for implementing a Signature Method
  * See section 9 ("Signing Requests") in the spec
