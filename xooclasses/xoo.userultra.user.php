@@ -4044,7 +4044,7 @@ class XooUserUser {
 					 
 					  <div class="uultra-view-profile-bar">';
 					  
-					  $html .='  <a class="uultra-btn-profile" href="'.$xoouserultra->userpanel->get_user_profile_permalink( $user_id).'">See Profile</a>
+					  $html .='  <a class="uultra-btn-profile" href="'.$xoouserultra->userpanel->get_user_profile_permalink( $user_id).'">'.__("See Profile","xoousers").'</a>
 					  
 					  </div> ';
 				
@@ -4696,7 +4696,6 @@ class XooUserUser {
 						}
 
 					});
-
 					
 					// Init ////////////////////////////////////////////////////
 					uploader_avatar.init(); 
@@ -5070,15 +5069,15 @@ class XooUserUser {
 		
 		if ($checkuser == 'pending') 
 		{
-			$status = "Pending";
+			$status = __("Pending","xoousers");
 			
 		}elseif($checkuser == 'pending_admin'){
 			
-			$status = "Pending Admin";
+			$status = __("Pending Admin","xoousers");
 		
 		}elseif($checkuser == 'active' || $checkuser == ''){
 			
-			$status = "Active";
+			$status =  __("Active","xoousers");
 		
 		}
 		
@@ -5207,9 +5206,6 @@ class XooUserUser {
 		return $html;
 		
 	}
-	
-	
-	
 	
 }
 

@@ -31,8 +31,7 @@ $howmany_latest= 10;
             
               <h3><?php _e('Social Connects Stats', 'xoousers'); ?></h3>
               
-          <div class="statblock-social user-ultra-rounded">
-                 
+          <div class="statblock-social user-ultra-rounded">                 
                                      
                     <h3>Facebook </h3>
                  <img src="<?php echo xoousers_url?>/admin/images/facebook.png" width="35" height="38" />
@@ -92,28 +91,28 @@ $howmany_latest= 10;
                  <div class="statblock user-ultra-rounded">
                  
                                      
-                    <h3>Today</h3>
+                    <h3><?php _e('Today', 'xoousers'); ?></h3>
                      <p class="day_amount"><?php echo $xoouserultra->userpanel->get_amount_period(date("m"),date("d"), date("Y"))?></p>
                  
                  </div>
                  
                   <div class="statblock user-ultra-rounded">
                   
-                   <h3 >This Month</h3>
+                   <h3 > <?php _e('This Month', 'xoousers'); ?></h3>
                    <p class="month_amount"><?php echo $xoouserultra->userpanel->get_amount_period(date("m"),"", date("Y"))?></p>
                  
                  </div>
                  
                   <div class="statblock user-ultra-rounded">
                   
-                  <h3 >This Year</h3>
+                  <h3 > <?php _e('This Year', 'xoousers'); ?></h3>
                    <p class="year_amount"><?php echo $xoouserultra->userpanel->get_amount_period("","", date("Y"))?></p>
                  
                  </div>
                  
                  <div class="statblock user-ultra-rounded">
                   
-                  <h3 >All Time</h3>
+                  <h3 > <?php _e('All Time', 'xoousers'); ?></h3>
                    <p class="alltime_amount"><?php echo $xoouserultra->userpanel->get_amount_period("","", "")?></p>
                  
                  </div>

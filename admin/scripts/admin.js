@@ -9,8 +9,7 @@ jQuery(document).ready(function($) {
 		$( "#tabs-uultra" ).tabs({
 		collapsible: false
 		});
-	});
-	
+	});	
 	
 	/* open package form */
 	jQuery('.uultra-add-new-package').live('click',function(e){
@@ -135,7 +134,6 @@ jQuery(document).ready(function($) {
 		  else{
 			
 		  }		
-		
 				
 		return false;
 	});
