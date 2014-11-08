@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.3.72
+Stable tag: 1.3.73
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -229,6 +229,14 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
   <li>Users  can use a main picture as avatar</li>
 </ul>
 
+<h3>Translations Included:</h3>
+
+<ul>
+  <li>Swedish. Thanks to <a href='http://www.usersultra.com/support/forums/topic/custom-translations/'>€lger</a> </li>
+  <li>German.</li>  
+</ul>
+
+
 == Installation ==
 
 1. Upload `users-ultra` to the `/wp-content/plugins/` directory
@@ -300,6 +308,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.3.73(11-07-2014) =
+* Improvements - There was a css clash issue with the "stars rating" module. Some themes are using background-image:none !important; for the "li", this affects directly to some elements of Users Ultra. Please avoid using "!important" within your theme.
+* New Language - Users Ultra Lite has been translated to Swedish language. Thank you very much to €lger. Take a look at her profile here http://www.usersultra.com/support/profile/elger/.
 
 = 1.3.72(11-06-2014) =
 * Improvements - Some text changed and were improved within the admin dashboard. We've updated the languages files as well.
