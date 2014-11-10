@@ -8,7 +8,7 @@ global $xoouserultra;
         <h3><?php _e('Documentation and User Guide','xoousers'); ?></h3>
         <p><?php _e("Here there are some useful shortocodes that will help you to start your online community in minutes.",'xoousers'); ?></p>
         
-        <p><?php _e("<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE </a>to check the online documentation",'xoousers'); ?></p>
+        <p><?php _e("<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE  </a>to check the online documentation",'xoousers'); ?></p>
         
          <p><?php _e("<a href='http://www.usersultra.com/support/' target='_blank'>CLICK HERE </a>to visit Support Forum",'xoousers'); ?></p>
         
@@ -22,19 +22,19 @@ global $xoouserultra;
                  <strong> <?php _e('Login Form','xoousers'); ?></strong>
                  <pre>[usersultra_login]</pre>
                  
-                   <strong>My Account</strong>
+                   <strong> <?php _e('My Account','xoousers'); ?></strong>
                  <pre>[usersultra_my_account]</pre>
                  
-                  <strong>Logout</strong>
+                  <strong> <?php _e('Logout','xoousers'); ?></strong>
                  <pre>[usersultra_logout]</pre>
                  
-                 <strong>Members Directory</strong>
+                 <strong>  <?php _e('Members Directory','xoousers'); ?></strong>
                  <pre>[usersultra_directory]</pre>
                  
-                   <strong>Filter Users By Role</strong>
+                   <strong><?php _e('Filter Users By Role  ','xoousers'); ?></strong>
                  <pre>[usersultra_directory role='author']</pre>
                  
-                  <strong>Top Rated Users</strong>
+                  <strong> <?php _e('Top Rated Users ','xoousers'); ?></strong>
                  <pre> [usersultra_users_top_rated optional_fields_to_display='friend,rating,social,country'  display_country_flag='both'] </pre>
                   <strong>Most Visited Users</strong>
                  <pre> [usersultra_users_most_visited optional_fields_to_display='friend,social' pic_size='80' ] </pre>

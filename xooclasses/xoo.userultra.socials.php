@@ -520,7 +520,7 @@ class XooSocial
 							
 							<td>'.$msg->friend_date.'</td>
 							
-							<td><a class="uultra-btn-denyapprove" id="uu-approvedeny-friend" href="#" item-id="'.$request_id.'" action-id="approve" title="'.__('Approve','xoousers').'"><span><i class="fa fa fa-thumbs-o-up fa-lg"></i></span> Accept </a> <a class="uultra-btn-denyred" id="uu-approvedeny-friend" href="" title="'.__('Deny','xoousers').'" item-id="'.$request_id.'" action-id="deny"><span><i class="fa fa fa-thumbs-o-down fa-lg"></i></span> Deny </a></td>
+							<td><a class="uultra-btn-denyapprove" id="uu-approvedeny-friend" href="#" item-id="'.$request_id.'" action-id="approve" title="'.__('Approve','xoousers').'"><span><i class="fa fa fa-thumbs-o-up fa-lg"></i></span> Accept </a> <a class="uultra-btn-denyred" id="uu-approvedeny-friend" href="" title="'.__('Deny','xoousers').'" item-id="'.$request_id.'" action-id="deny"><span><i class="fa fa fa-thumbs-o-down fa-lg"></i></span> '.__( 'Deny', 'xoousers' ).' </a></td>
 						</tr>';
 							
 	

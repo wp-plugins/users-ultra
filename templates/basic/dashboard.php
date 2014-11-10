@@ -489,7 +489,7 @@ $howmany = 5;
                       
                       <p><?php  _e('Here you can manage your photos.','xoousers');?></p>
                       
-                         <a  id="add_new_files"  href="#">Upload Files</a>
+                         <a  id="add_new_files"  href="#"> <?php  _e('Upload Files','xoousers');?></a>
                         <div class="photo-list">                         
                         
                          <div class="res_sortable_container" id="resp_t_image_list">

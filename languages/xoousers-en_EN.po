@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-07 02:30-0300\n"
-"PO-Revision-Date: 2014-11-07 02:30-0300\n"
+"POT-Creation-Date: 2014-11-09 22:36-0300\n"
+"PO-Revision-Date: 2014-11-09 22:37-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -527,7 +527,7 @@ msgstr ""
 
 #: ../admin/tabs/help.php:11
 msgid ""
-"<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE </a>to "
+"<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE  </a>to "
 "check the online documentation"
 msgstr ""
 
@@ -553,6 +553,30 @@ msgstr ""
 
 #: ../admin/tabs/help.php:22
 msgid "Login Form"
+msgstr ""
+
+#: ../admin/tabs/help.php:25 ../templates/basic/dashboard.php:678
+#: ../xooclasses/xoo.userultra.class.php:708
+#: ../xooclasses/xoo.userultra.user.php:2071
+#: ../xooclasses/xoo.userultra.user.php:2075
+msgid "My Account"
+msgstr ""
+
+#: ../admin/tabs/help.php:28 ../xooclasses/xoo.userultra.user.php:2202
+#: ../xooclasses/xoo.userultra.user.php:2541
+msgid "Logout"
+msgstr ""
+
+#: ../admin/tabs/help.php:31 ../xooclasses/xoo.userultra.class.php:588
+msgid "Members Directory"
+msgstr ""
+
+#: ../admin/tabs/help.php:34
+msgid "Filter Users By Role  "
+msgstr ""
+
+#: ../admin/tabs/help.php:37
+msgid "Top Rated Users "
 msgstr ""
 
 #: ../admin/tabs/import.php:8
@@ -2387,13 +2411,6 @@ msgstr ""
 msgid "Sent Messages"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:678
-#: ../xooclasses/xoo.userultra.class.php:708
-#: ../xooclasses/xoo.userultra.user.php:2071
-#: ../xooclasses/xoo.userultra.user.php:2075
-msgid "My Account"
-msgstr ""
-
 #: ../templates/basic/dashboard.php:694
 msgid "Account ID: "
 msgstr ""
@@ -2860,10 +2877,6 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:550
 msgid "View Profile"
-msgstr ""
-
-#: ../xooclasses/xoo.userultra.class.php:588
-msgid "Members Directory"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:629
@@ -4098,11 +4111,6 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.user.php:2152
 #: ../xooclasses/xoo.userultra.user.php:2156
 msgid "Photos"
-msgstr ""
-
-#: ../xooclasses/xoo.userultra.user.php:2202
-#: ../xooclasses/xoo.userultra.user.php:2541
-msgid "Logout"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.user.php:2540

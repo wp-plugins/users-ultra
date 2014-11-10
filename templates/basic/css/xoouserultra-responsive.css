@@ -14,8 +14,7 @@ MEDIA QUERIES
 }
 
 /* Smaller than 960px */
-@media only screen and (max-width: 959px) {
-	
+@media only screen and (max-width: 959px) {	
 
 
 }
@@ -42,8 +41,6 @@ MEDIA QUERIES
 	
 	.uultra-profile-basic-wrap .uu-right .photos ul li{	
 		width:45% !important;	
-	
-
 	}
 	
 		.usersultra-dahsboard-cont .usersultra-dahsboard-left{
@@ -111,8 +108,7 @@ MEDIA QUERIES
 		width:98% !important;
 		margin-top:10px !important;	
 		
-	}
-	
+	}	
 	
 }
 
@@ -196,9 +192,6 @@ MEDIA QUERIES
 	}
 
 }
-
-
-
 
 /* =Content Styles
 -------------------------------------------------------------- */
