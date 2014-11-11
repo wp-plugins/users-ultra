@@ -537,6 +537,41 @@ class XooSocial
 	
 	}
 	
+	function get_total_friend_request($user_id)		
+	{
+		global $wpdb, $current_user, $xoouserultra;
+		
+		
+	
+		$sql = ' SELECT count(*) as total, friend.*, u.ID
+		  
+		  FROM ' . $wpdb->prefix . 'usersultra_friends friend  ' ;		
+		$sql .= " RIGHT JOIN ".$wpdb->prefix ."users u ON ( u.ID = friend.friend_receiver_id)";
+		
+		$sql .= " WHERE u.ID = friend.friend_receiver_id  AND  friend.friend_status = 0 AND friend.friend_receiver_id = '".$user_id."'  ORDER BY friend.friend_id DESC ";
+		
+		$res = $wpdb->get_results( $sql );
+		 
+		 if(!empty($res))
+		 {
+			  foreach ( $res as $item )
+			 {
+				$total = $item->total;				
+			 }
+			 
+		
+		  }else{
+			  
+			  $total = 0;  
+		  
+		  }		
+		  
+		  return  $total;
+		
+		
+	
+	}
+	
 	function show_all_my_friends()		
 	{
 		global $wpdb, $current_user, $xoouserultra;

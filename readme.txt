@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.3.74
+Stable tag: 1.3.75
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,12 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>Users Wall.</li>
   <li>and so much more ...</li>
 </ul>
+
+<h3><strong>MULTIPLE LAYOUTS: </strong></h3>
+<ul>
+  <li>Users Table With Custom Columns. <a href="http://usersultra.com/uultra-testing/directory-with-tables/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
+</ul>
+
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
 <br>
 </blockquote>
@@ -308,6 +314,9 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.3.75(11-10-2014) =
+* New Feature - Just like messages which have a little cute bubble to show how many messages you have, <strong>now users can see how many friends requests they have.</strong> Thanks for your suggestion Philly http://www.usersultra.com/support/forums/topic/how-many-friend-requests-do-i-have/#post-6847
 
 = 1.3.74(11-09-2014) =
 * Improvements - Social features updated.

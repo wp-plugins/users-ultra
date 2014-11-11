@@ -2120,8 +2120,7 @@ class XooUserUser {
 		}elseif($slug=="messages"){ 
 			
 			
-			//check if unread replies or messages
-			
+			//check if unread replies or messages			
 			$user_id = get_current_user_id();
 			$total = $xoouserultra->mymessage->get_unread_messages_amount($user_id);		
 		
@@ -2172,6 +2171,10 @@ class XooUserUser {
 		
 		}elseif($slug=="friends"){
 			
+			//check if unread replies or messages			
+			$user_id = get_current_user_id();
+			$total = $xoouserultra->social->get_total_friend_request($user_id);
+			
 			
 			if(!isset($_GET["page_id"]))
 			{
@@ -2180,6 +2183,12 @@ class XooUserUser {
 			}else{
 				
 				$url = '<a class="uultra-btn-u-menu" href="?page_id='.$_GET["page_id"].'&module=friends"><span><i class="fa fa-users fa-2x"></i></span>'.__('My Friends', 'xoousers').'</a>';			
+			
+			}
+			
+			if($total>0)
+			{
+				$url .= '<div class="uultra-noti-bubble" title="'.__('Friend Requests', 'xoousers').'">'.$total.'</div>';
 			
 			}
 		
