@@ -35,20 +35,15 @@ class XooUserUser {
 		add_action( 'wp_ajax_refresh_avatar', array( $this, 'refresh_avatar' ));
 		add_action( 'wp_ajax_delete_user_avatar', array( $this, 'delete_user_avatar' ));	
 
-		add_action( 'wp_ajax_nopriv_send_reset_link', array( $this, 'send_reset_link' ));
-		
+		add_action( 'wp_ajax_nopriv_send_reset_link', array( $this, 'send_reset_link' ));		
 		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
      	add_action( 'wp_ajax_confirm_reset_password', array( $this, 'confirm_reset_password' ));
 		add_action( 'wp_ajax_confirm_reset_password_user', array( $this, 'confirm_reset_password_user' ));
 		add_action( 'wp_ajax_confirm_update_email_user', array( $this, 'confirm_update_email_user' ));	
-		
-
 		add_action( 'wp_ajax_get_pending_moderation_list', array( $this, 'get_pending_moderation_list' ));
 		add_action( 'wp_ajax_user_approve_pending_account', array( $this, 'user_approve_pending_account' ));
-		add_action( 'wp_ajax_user_resend_activation_link', array( $this, 'user_resend_activation_link' ));
-		
-		add_action( 'wp_ajax_user_delete_account', array( $this, 'user_delete_account' ));
-		
+		add_action( 'wp_ajax_user_resend_activation_link', array( $this, 'user_resend_activation_link' ));		
+		add_action( 'wp_ajax_user_delete_account', array( $this, 'user_delete_account' ));		
 		add_action( 'wp_ajax_get_pending_activation_list', array( $this, 'get_pending_activation_list' ));
 		add_action( 'wp_ajax_get_pending_payment_list', array( $this, 'get_pending_payment_list' ));
 		

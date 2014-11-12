@@ -306,8 +306,8 @@ $howmany_latest= 10;
 
 
         var options = {
-          title: 'Sign up Stats',
-          hAxis: {title: 'Sign up Options', titleTextStyle: {color: 'red'}}
+          title: ' <?php echo  _e('Sign up Stats','xoousers'); ?>',
+          hAxis: {title: ' <?php echo  _e('Sign up Options ','xoousers'); ?>', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('piechart2'));

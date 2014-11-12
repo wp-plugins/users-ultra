@@ -36,13 +36,13 @@ global $xoouserultra;
                  
                   <strong> <?php _e('Top Rated Users ','xoousers'); ?></strong>
                  <pre> [usersultra_users_top_rated optional_fields_to_display='friend,rating,social,country'  display_country_flag='both'] </pre>
-                  <strong>Most Visited Users</strong>
+                  <strong> <?php _e('Most Visited Users ','xoousers'); ?></strong>
                  <pre> [usersultra_users_most_visited optional_fields_to_display='friend,social' pic_size='80' ] </pre>
                  
-                  <strong>User Spotlight</strong>
+                  <strong> <?php _e('User Spotlight  ','xoousers'); ?></strong>
                  <pre> [usersultra_users_promote optional_fields_to_display='rating,social' users_list='59'  display_country_flag='both']  </pre>
                  
-                   <strong>User Profile</strong>
+                   <strong> <?php _e('User Profile  ','xoousers'); ?></strong>
                  <pre>[usersultra_profile optional_fields_to_display='age,country,social']</pre>
                  
                   <strong>User Profile, displaying all fields</strong>

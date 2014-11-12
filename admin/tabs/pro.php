@@ -54,6 +54,11 @@ global $xoouserultra;
             </div>  
             
              <div class="uultra-col">
+             <h1><?php _e('Multiple Users Directory Templates','xoousers'); ?></h1> 
+             <p> <?php _e("The Pro version includes several views for the users directory such as <strong>User Tables with custom fields </strong>and instant messaging system. ",'xoousers'); ?></p>
+            </div>  
+            
+             <div class="uultra-col">
              <h1><?php _e('Spam Protection','xoousers'); ?></h1> 
              <p> <?php _e("Users Ultra PRO comes with a IP Blocking tool that will help you to protect your website against spam attacks. Simple way to stop fake account spam!",'xoousers'); ?></p>
             </div>  

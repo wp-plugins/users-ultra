@@ -15,12 +15,8 @@
 
 .uultra-like{display:inline-block; width:130px}
 .uultra-tw{display:inline-block;}
-
-
-
 .user-ultra-top-header-sect { width:100%; clear:both; background:#FFF; float:none !important; padding:0px; height:auto !important}
 .user-ultra-top-header-sect a{ text-decoration:none}
-
 /*START*/
 
 code,
@@ -842,7 +838,6 @@ p.uultra-off-message{ font-size:12px !important}
 .user-ultra-sect-pro .uultra-badge-pro p.btn-changelog { background: #093; padding-left:10px; padding-right:10px;line-height:50px; border:solid 1px #093}
 .user-ultra-sect-pro .uultra-badge-pro p.btn-changelog a{color:#FFF;text-decoration:none;}
 .user-ultra-sect-pro .uultra-badge-pro p.btn-changelog a:hover{color: #000 ; text-decoration:none}
-
 
 .user-ultra-sect-pro .uultra-badge-pro img.uultra-logo{ width:98%;}
 .user-ultra-sect-pro h1 { font-size:2.5em; color:#159387}
