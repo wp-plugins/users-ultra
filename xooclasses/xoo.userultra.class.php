@@ -1902,7 +1902,7 @@ class XooUserUltra
 		
 		$display .= '<form action="" method="post" id="xoouserultra-registration-form" enctype="multipart/form-data">';
 		
-		$display .= '<div class="xoouserultra-field xoouserultra-seperator-requiredfields xoouserultra-edit xoouserultra-edit-show">'.__('Fields with (*) are required','xoousers').'</div>';	
+		$display .= '<div class="xoouserultra-seperator-requiredfields xoouserultra-edit xoouserultra-edit-show">'.__('Fields with (*) are required','xoousers').'</div>';	
 		
 		
 		//get social sign up methods
