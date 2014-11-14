@@ -192,6 +192,19 @@ class XooUserAdmin extends XooUserUltraCommon
 
 	function add_styles()
 	{
+		 // Loading CSS and Script only when required
+        /* Tipsy script */
+        if (!wp_script_is('uultra_tipsy')) {
+			wp_register_script('uultra_tipsy', xoousers_url.'js/jquery.tipsy.js',array('jquery'));
+            wp_enqueue_script('uultra_tipsy');
+        }
+
+        /* Tipsy css */
+        if (!wp_style_is('uultra_tipsy')) {           
+			
+			wp_register_style( 'uultra_tipsy', xoousers_url.'templates/'.xoousers_template.'/css/tipsy.css');				
+            wp_enqueue_style('uultra_tipsy');
+        }
 	
 		wp_register_style('userultra_admin', xoousers_url.'admin/css/userlutra.admin.css');
 		wp_enqueue_style('userultra_admin');			

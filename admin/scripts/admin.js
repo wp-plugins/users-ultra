@@ -1,6 +1,17 @@
 var $ = jQuery;
 
 jQuery(document).ready(function($) {
+	
+	
+	    /* Tooltips */
+		if($('.uultra-tooltip').length > 0)
+		{
+			$('.uultra-tooltip').tipsy({
+				trigger: 'hover',
+				offset: 4
+			});
+		}     
+		
 
 	jQuery("#uultra-add-new-custom-field-frm").slideUp();
 	

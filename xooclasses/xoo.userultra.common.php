@@ -126,7 +126,7 @@ class XooUserUltraCommon
 
         if($inline_help!='')
         {
-            echo '<i class="uultra-icon-question-sign uultra-tooltip2 option-help" title="'.$inline_help.'"></i>';
+            echo '<a href="#" class="uultra-tooltip" title="' . $inline_help . '" ><i class="fa fa-info-circle reg_tooltip"></i></a>';
         }
 
 
