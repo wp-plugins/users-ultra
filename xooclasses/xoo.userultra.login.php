@@ -1715,7 +1715,9 @@ class XooUserLogin {
 	  
 	    //email activation link				  
 		  $web_url =$this->get_my_account_direct_link();			  
-		  $pos = strpos("page_id", $web_url);		  
+		  $current_url =$_SERVER['REQUEST_URI'];		  
+		  $pos = strpos($current_url, "page_id");
+		  	  
 		  $unique_key = get_user_meta($user_id, 'xoouser_ultra_very_key', true);
 
 			  
@@ -1758,8 +1760,11 @@ class XooUserLogin {
 		  
 		  //email activation link		  
 		  
-		  $web_url =$this->get_my_account_direct_link();			  
-		  $pos = strpos("page_id", $web_url);		  
+		  $web_url =$this->get_my_account_direct_link();	
+		  	 
+		  $current_url =$_SERVER['REQUEST_URI'];		  
+		  $pos = strpos($current_url, "page_id");
+		  		  
 		  $unique_key = get_user_meta($user_id, 'xoouser_ultra_very_key', true);
 
 			  

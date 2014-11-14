@@ -118,7 +118,26 @@ class XooUserUltra
 		/*Setup redirection*/
 		add_action( 'wp_loaded', array(&$this, 'xoousersultra_redirect'), 9);
 		add_action( 'wp_head', array(&$this, 'pluginname_ajaxurl'));
+		add_action( 'wp_head', array(&$this, 'add_custom_css_style'));	
 		
+		
+	}
+	
+	
+	public function add_custom_css_style () 
+	{
+		$custom_css = $this->get_option('xoousersultra_custom_css');
+		$html = "";
+		
+						
+		if($custom_css!="" )
+		{
+			$html .= ' <style type="text/css">';
+			$html .= $custom_css;
+			$html .= ' </style>';			
+		}
+		
+		echo $html;		
 		
 	}
 	

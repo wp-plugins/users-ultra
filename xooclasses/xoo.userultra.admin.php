@@ -51,7 +51,8 @@ class XooUserAdmin extends XooUserUltraCommon
 		$this->tabs = array(
 		    'main' => __('Dashboard','xoousers'),
 			'fields' => __('Fields','xoousers'),
-			'settings' => __('Settings','xoousers'),			
+			'settings' => __('Settings','xoousers'),
+			'customizer' => __('Css','xoousers'),			
 			'membership' => __('Membership','xoousers'),
 			'orders' => __('Orders','xoousers'),			
 			'import' => __('Sync & Import','xoousers'),			

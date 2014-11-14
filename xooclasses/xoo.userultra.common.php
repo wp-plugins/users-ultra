@@ -59,9 +59,9 @@ class XooUserUltraCommon
 	{
 
         if (isset($this->options[$option_id]) && $this->options[$option_id] != '' ) {
-            return $this->options[$option_id];
+            return stripslashes($this->options[$option_id]);
         } elseif (isset($this->userultra_default_options[$option_id]) && $this->userultra_default_options[$option_id] != '' ) {
-            return $this->userultra_default_options[$option_id];
+            return stripslashes($this->userultra_default_options[$option_id]);
         } else {
             return null;
         }

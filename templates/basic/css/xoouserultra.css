@@ -338,7 +338,7 @@ input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input
 
 textarea.xoouserultra-input {
 	line-height: 20px;
-	height: 80px;
+	height: 80px !important;
 	font-size: 13px;
 }
 
