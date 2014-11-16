@@ -14,6 +14,16 @@ global $xoouserultra;
         
         <p>If you like this plugin, please don't forget to rate it <img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" />. <?php _e("<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>CLICK HERE TO RATE IT </a>",'xoousers'); ?></p>
         
+   
+    
+     
+           <h3> <?php _e(' Looking for someone to customize Users Ultra ?','xoousers'); ?></h3>
+    
+    <p> <?php _e('We recommend the following Contributing Developers:','xoousers'); ?></p>
+    <p> <?php _e('Johan Wielsen:   ','xoousers'); ?> 
+    <a href="http://cee3.me" target="_blank">http://cee3.me</a></p>
+    
+   
        
    <h3> <?php _e('Common Shortcodes','xoousers'); ?></h3>
          

@@ -2,6 +2,46 @@
 global $xoouserultra;
 $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
 ?>
+
+<form method="post" action="">
+<input type="hidden" name="update_settings" />
+
+<div class="user-ultra-sect ">
+  <h3><?php _e('Paid Membership Settings','xoousers'); ?></h3>
+  
+  <p><?php _e('.','xoousers'); ?></p>
+  
+  
+  <table class="form-table">
+<?php 
+   
+$this->create_plugin_setting(
+        'input',
+        'paid_membership_currency',
+        __('Currency','xoousers'),array(),
+        __('The default symbol for PayPal payments is USD','xoousers'),
+        __('The default symbol for PayPal payments is USD','xoousers')
+);
+
+$this->create_plugin_setting(
+        'input',
+        'paid_membership_symbol',
+        __('Currency Symbol','xoousers'),array(),
+        __('Input the currency symbol: Example: $','xoousers'),
+        __('Input the currency symbol: Example: $','xoousers')
+);
+
+
+		
+?>
+</table>
+<p class="submit">
+	<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Save Changes','xoousers'); ?>"  />
+
+</p>
+</div>
+
+  </form> 
         
         <div class="user-ultra-sect ">
         
