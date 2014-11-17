@@ -256,7 +256,8 @@ class XooUserLogin {
 					//echo "step e";
 				
 								
-					$user = wp_signon( $creds, false );					
+					$user = wp_signon( $creds, false );		
+					do_action('wp_login', $user->user_login, $user);			
 					
 						//print_r($user );	
 	
@@ -501,7 +502,8 @@ class XooUserLogin {
 								{
 									 $secure = "";		
 									//already exists then we log in
-									wp_set_auth_cookie( $user_id, true, $secure );			
+									wp_set_auth_cookie( $user_id, true, $secure );
+									do_action('wp_login', $user->user_login, $user);			
 											
 								}
 						
@@ -531,7 +533,8 @@ class XooUserLogin {
 								{
 									 $secure = "";		
 									//already exists then we log in
-									wp_set_auth_cookie( $user_id, true, $secure );			
+									wp_set_auth_cookie( $user_id, true, $secure );
+									do_action('wp_login', $user->user_login, $user);			
 											
 								}
 								
@@ -593,6 +596,8 @@ class XooUserLogin {
 								if(!$noactive)
 								{
 									$user = wp_signon( $creds, false );
+									do_action('wp_login', $user->user_login, $user);
+									
 									
 								}
 																
@@ -710,7 +715,8 @@ class XooUserLogin {
 								{
 									 $secure = "";		
 									//already exists then we log in
-									wp_set_auth_cookie( $user_id, true, $secure );			
+									wp_set_auth_cookie( $user_id, true, $secure );
+									do_action('wp_login', $user->user_login, $user);		
 											
 								}
 						
@@ -740,7 +746,8 @@ class XooUserLogin {
 								{
 									 $secure = "";		
 									//already exists then we log in
-									wp_set_auth_cookie( $user_id, true, $secure );			
+									wp_set_auth_cookie( $user_id, true, $secure );
+									do_action('wp_login', $user->user_login, $user);			
 											
 								}
 								
@@ -800,6 +807,7 @@ class XooUserLogin {
 								if(!$noactive)
 								{
 									$user = wp_signon( $creds, false );
+									do_action('wp_login', $user->user_login, $user);
 									
 								}
 																
@@ -1145,7 +1153,8 @@ class XooUserLogin {
 								{
 									 $secure = "";		
 									//already exists then we log in
-									wp_set_auth_cookie( $user_id, true, $secure );			
+									wp_set_auth_cookie( $user_id, true, $secure );	
+									do_action('wp_login', $user->user_login, $user);		
 											
 								}
 						
@@ -1179,7 +1188,8 @@ class XooUserLogin {
 								{
 									 $secure = "";		
 									//already exists then we log in
-									wp_set_auth_cookie( $user_id, true, $secure );			
+									wp_set_auth_cookie( $user_id, true, $secure );	
+									do_action('wp_login', $user->user_login, $user);		
 											
 								}
 								
@@ -1247,6 +1257,7 @@ class XooUserLogin {
 								if(!$noactive)
 								{
 									$user = wp_signon( $creds, false );
+									do_action('wp_login', $user->user_login, $user);
 									
 								}
 								
@@ -1592,6 +1603,7 @@ class XooUserLogin {
 						if(!$noactive)
 						{
 							$user = wp_signon( $creds, false );
+							do_action('wp_login', $user->user_login, $user);
 									
 						}
 						
@@ -1624,7 +1636,8 @@ class XooUserLogin {
 				if($this->is_active($user_id))
 				{
 					//is active then login
-					wp_set_auth_cookie( $user_id, true, $secure );			
+					wp_set_auth_cookie( $user_id, true, $secure );	
+					do_action('wp_login', $user->user_login, $user);		
 				
 				}else{
 					
@@ -2045,6 +2058,8 @@ class XooUserLogin {
 								if(!$noactive)
 								{
 									$user = wp_signon( $creds, false );
+									do_action('wp_login', $user->user_login, $user);
+									
 									
 								}
 							
@@ -2069,7 +2084,8 @@ class XooUserLogin {
 						{
 							 $secure = "";		
 							//already exists then we log in
-							wp_set_auth_cookie( $user_id, true, $secure );			
+							wp_set_auth_cookie( $user_id, true, $secure );	
+							do_action('wp_login', $user->user_login, $user);		
 									
 						}
 									

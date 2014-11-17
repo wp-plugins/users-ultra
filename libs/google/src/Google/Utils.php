@@ -21,6 +21,9 @@
  *
  * @author Chirag Shah <chirags@google.com>
  */
+
+if (!class_exists('Google_Utils')) 
+{
 class Google_Utils
 {
   public static function urlSafeB64Encode($data)
@@ -132,4 +135,5 @@ class Google_Utils
     $value[0] = strtolower($value[0]);
     return $value;
   }
+}
 }

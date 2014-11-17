@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-16 22:06-0300\n"
-"PO-Revision-Date: 2014-11-16 22:06-0300\n"
+"POT-Creation-Date: 2014-11-17 18:28-0300\n"
+"PO-Revision-Date: 2014-11-17 18:29-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -925,7 +925,7 @@ msgstr ""
 msgid "Latest 5 Transactions"
 msgstr ""
 
-#: ../admin/tabs/main.php:139 ../admin/tabs/orders.php:146
+#: ../admin/tabs/main.php:138 ../admin/tabs/orders.php:146
 #: ../xooclasses/xoo.userultra.mymessage.php:565
 #: ../xooclasses/xoo.userultra.mymessage.php:719
 #: ../xooclasses/xoo.userultra.mymessage.php:838
@@ -939,40 +939,40 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: ../admin/tabs/main.php:140 ../admin/tabs/orders.php:147
+#: ../admin/tabs/main.php:139 ../admin/tabs/orders.php:147
 msgid "User"
 msgstr ""
 
-#: ../admin/tabs/main.php:141 ../admin/tabs/orders.php:149
+#: ../admin/tabs/main.php:140 ../admin/tabs/orders.php:149
 msgid "Transaction ID"
 msgstr ""
 
-#: ../admin/tabs/main.php:142 ../admin/tabs/orders.php:152
+#: ../admin/tabs/main.php:141 ../admin/tabs/orders.php:152
 #: ../xooclasses/xoo.userultra.order.php:398
 #: ../xooclasses/xoo.userultra.publisher.php:473
 #: ../xooclasses/xoo.userultra.woocommerce.php:354
 msgid "Status"
 msgstr ""
 
-#: ../admin/tabs/main.php:143 ../admin/tabs/orders.php:153
+#: ../admin/tabs/main.php:142 ../admin/tabs/orders.php:153
 msgid "Amount"
 msgstr ""
 
-#: ../admin/tabs/main.php:169 ../admin/tabs/orders.php:183
+#: ../admin/tabs/main.php:168 ../admin/tabs/orders.php:183
 msgid "There are no transactions yet."
 msgstr ""
 
-#: ../admin/tabs/main.php:190
+#: ../admin/tabs/main.php:189
 msgid "Latest "
 msgstr ""
 
-#: ../admin/tabs/main.php:205 ../xooclasses/xoo.userultra.user.php:595
+#: ../admin/tabs/main.php:204 ../xooclasses/xoo.userultra.user.php:595
 #: ../xooclasses/xoo.userultra.user.php:666
 #: ../xooclasses/xoo.userultra.user.php:734
 msgid "Avatar"
 msgstr ""
 
-#: ../admin/tabs/main.php:206 ../xooclasses/xoo.userultra.class.php:802
+#: ../admin/tabs/main.php:205 ../xooclasses/xoo.userultra.class.php:802
 #: ../xooclasses/xoo.userultra.class.php:848
 #: ../xooclasses/xoo.userultra.user.php:596
 #: ../xooclasses/xoo.userultra.user.php:667
@@ -980,21 +980,21 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: ../admin/tabs/main.php:236
+#: ../admin/tabs/main.php:235
 msgid "There are no pending activation users."
 msgstr ""
 
-#: ../admin/tabs/main.php:250 ../admin/tabs/main.php:257
-#: ../admin/tabs/main.php:263 ../admin/tabs/membership.php:154
+#: ../admin/tabs/main.php:249 ../admin/tabs/main.php:256
+#: ../admin/tabs/main.php:262 ../admin/tabs/membership.php:154
 #: ../templates/basic/dashboard.php:202 ../templates/basic/dashboard.php:210
 msgid "loading ..."
 msgstr ""
 
-#: ../admin/tabs/main.php:309
+#: ../admin/tabs/main.php:308
 msgid "Sign up Stats"
 msgstr ""
 
-#: ../admin/tabs/main.php:310
+#: ../admin/tabs/main.php:309
 msgid "Sign up Options "
 msgstr ""
 
@@ -3267,28 +3267,28 @@ msgstr ""
 msgid "<strong>ERROR:</strong> The password field is empty."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:268
+#: ../xooclasses/xoo.userultra.login.php:269
 msgid "<strong>ERROR:</strong> Invalid Username was entered."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:271
+#: ../xooclasses/xoo.userultra.login.php:272
 msgid "<strong>ERROR:</strong> Incorrect password was entered."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:275
+#: ../xooclasses/xoo.userultra.login.php:276
 msgid "<strong>ERROR:</strong> Please provide Password."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:294
+#: ../xooclasses/xoo.userultra.login.php:295
 msgid "<strong>ERROR:</strong> Your account is not active."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:1392
-#: ../xooclasses/xoo.userultra.login.php:1631
+#: ../xooclasses/xoo.userultra.login.php:1403
+#: ../xooclasses/xoo.userultra.login.php:1644
 msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:1648
+#: ../xooclasses/xoo.userultra.login.php:1661
 msgid ""
 "<strong>ERROR:</strong> SOME PROBLEM OCCOURED WHILE CONNECTING FACEBOOK "
 "PLEASE LOGIN AGAIN."
@@ -3892,47 +3892,47 @@ msgstr ""
 msgid " votes cast "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:72
+#: ../xooclasses/xoo.userultra.register.php:78
 msgid "<strong>ERROR:</strong> Please enter a username."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:74
+#: ../xooclasses/xoo.userultra.register.php:80
 msgid ""
 "<strong>ERROR:</strong> This username is already registered. Please choose "
 "another one."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:83
+#: ../xooclasses/xoo.userultra.register.php:89
 msgid "<strong>ERROR:</strong> Please type your e-mail address."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:86
+#: ../xooclasses/xoo.userultra.register.php:92
 msgid "<strong>ERROR:</strong> The email address isn't correct."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:89
+#: ../xooclasses/xoo.userultra.register.php:95
 msgid ""
 "<strong>ERROR:</strong> This email is already registered, please choose "
 "another one."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:98
+#: ../xooclasses/xoo.userultra.register.php:104
 msgid "<strong>ERROR:</strong> Please type your password."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:104
+#: ../xooclasses/xoo.userultra.register.php:110
 msgid "<strong>ERROR:</strong> The passwords must be identical"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:112
+#: ../xooclasses/xoo.userultra.register.php:118
 msgid "<strong>ERROR:</strong> Please complete Captcha Test first."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:118
+#: ../xooclasses/xoo.userultra.register.php:124
 msgid "<strong>ERROR:</strong> Registration is disabled for this site."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.register.php:589
+#: ../xooclasses/xoo.userultra.register.php:595
 msgid "Registration successful. Please check your email."
 msgstr ""
 

@@ -19,6 +19,12 @@ class XooUserRegister {
 		
 		}
 		
+		if (function_exists('uultra_after_login_hook')) 
+		{		
+			add_action( 'wp_login', 'uultra_after_login_hook' , 100,2);	
+		
+		}	
+		
 	}
 	
 	function uultra_handle_post () 

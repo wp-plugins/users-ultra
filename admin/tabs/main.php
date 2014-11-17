@@ -122,8 +122,7 @@ $howmany_latest= 10;
                   
                   <?php
 				  
-				  //get latest transactions
-				  
+				  //get latest transactions			  
 				  
 			    $orders = $xoouserultra->order->get_latest(5);
 			

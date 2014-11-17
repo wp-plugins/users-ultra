@@ -1532,7 +1532,7 @@ class XooUserUltra
 		
 		$display .= '<div class="xoouserultra-head">';
 		    $display .='<div class="xoouserultra-left">';
-		        $display .='<div class="xoouserultra-field-name xoouserultra-field-name-wide login-heading" id="login-heading-'.$this->login_code_count.'">'.__('Login','').'</div>';
+		        $display .='<div class="xoouserultra-field-name xoouserultra-field-name-wide login-heading" id="login-heading-'.$this->login_code_count.'">'.__('Login','xoousers').'</div>';
 		    $display .='</div>';
 		    $display .='<div class="xoouserultra-right"></div><div class="xoouserultra-clear"></div>';
 		$display .= '</div>';
