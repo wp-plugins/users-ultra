@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-15 23:14-0300\n"
-"PO-Revision-Date: 2014-11-15 23:14-0300\n"
+"POT-Creation-Date: 2014-11-16 22:06-0300\n"
+"PO-Revision-Date: 2014-11-16 22:06-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -2909,6 +2909,17 @@ msgstr ""
 msgid "Please create '"
 msgstr ""
 
+#: ../xooclasses/xoo.userultra.admin.php:1114
+msgid ""
+"Please make sure that you've set the right My Account Page. Users Ultra "
+"couldn't find it and some important features such as password reset, account "
+"confirmation won't work properly."
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.admin.php:1114
+msgid "Click here to set the My Account Page"
+msgstr ""
+
 #: ../xooclasses/xoo.userultra.captchamodules.php:85
 msgid "Human Check"
 msgstr ""
@@ -3273,11 +3284,11 @@ msgid "<strong>ERROR:</strong> Your account is not active."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.login.php:1392
-#: ../xooclasses/xoo.userultra.login.php:1599
+#: ../xooclasses/xoo.userultra.login.php:1631
 msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:1616
+#: ../xooclasses/xoo.userultra.login.php:1648
 msgid ""
 "<strong>ERROR:</strong> SOME PROBLEM OCCOURED WHILE CONNECTING FACEBOOK "
 "PLEASE LOGIN AGAIN."

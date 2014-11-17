@@ -1053,10 +1053,11 @@ class XooUserAdmin extends XooUserUltraCommon
 
 	function admin_page() 
 	{
+		global $xoouserultra;
+		
 		//handle actions
 		
-		
-		
+				
 		if (isset($_POST['update_settings'])) {
             $this->update_settings();
         }
@@ -1099,6 +1100,24 @@ class XooUserAdmin extends XooUserUltraCommon
            
            
             <h2 class="nav-tab-wrapper"><?php $this->admin_tabs(); ?></h2>
+            
+            
+             <?php
+            
+			//special settings check
+			
+			/*Check My Account  URL*/			
+			if($xoouserultra->login->get_my_account_direct_link_checking()=="")
+			{
+				?>
+                
+                 <div class="uuultra-top-noti-admin "><div class="user-ultra-warning"><?php echo __("Please make sure that you've set the right My Account Page. Users Ultra couldn't find it and some important features such as password reset, account confirmation won't work properly.", 'xoousers')?> <a href="?page=userultra&tab=permalinks"><?php echo __("Click here to set the My Account Page", 'xoousers')?></a></div></div>
+                
+                <?php	
+			
+			}	
+			
+			?>
             
             
             

@@ -1450,6 +1450,25 @@ class XooUserLogin {
 	
 	}
 	
+	public function get_my_account_direct_link_checking()
+	{
+		global $xoouserultra, $wp_rewrite ;
+		
+		$wp_rewrite = new WP_Rewrite();
+		
+		require_once(ABSPATH . 'wp-includes/link-template.php');		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
+		
+		$account_page_id = get_option('xoousersultra_my_account_page');
+		$my_account_url = get_permalink($account_page_id);
+		
+		//$my_account_url = "";	
+		
+		return $my_account_url;
+	
+	}
+	
 	public function get_my_account_direct_link()
 	{
 		global $xoouserultra, $wp_rewrite ;
@@ -1457,11 +1476,24 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
-				
+		
+		//tweak added on 11-16-2014		
+		//$my_account_url = "";
+		if($my_account_url =="")
+		{
+			$web_url = site_url()."/";
+			//get my account slug
+			$my_account_slug = 	$xoouserultra->get_option('usersultra_my_account_slug');
+			$my_account_url = $web_url.$my_account_slug ."/";
+		
+		}
+		
+		
 		return $my_account_url;
 	
 	}
