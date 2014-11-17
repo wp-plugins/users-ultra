@@ -63,12 +63,17 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
   <li>and so much more ...</li>
 </ul>
 
-<h3><strong>MULTIPLE LAYOUTS: </strong></h3>
+<h3><strong>MULTIPLE USERS DIRECTORY LAYOUTS: </strong></h3>
 <ul>
   <li>Users Table With Custom Columns. <a href="http://usersultra.com/uultra-testing/directory-with-tables/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
   
-  <li>Registration Form Minified <a href="http://usersultra.com/uultra-testing/login-minified/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
+</ul>
+
+<h3><strong>MULTIPLE REGISTRATION & LOGIN FORMS: </strong></h3>
+<ul>
   
+  <li>Registration Form Minified <a href="http://usersultra.com/uultra-testing/login-minified/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
+    
   <li>Registration Form Rounded Social Buttons <a href="http://usersultra.com/uultra-testing/login-minified-rounded-borders/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
 </ul>
 
