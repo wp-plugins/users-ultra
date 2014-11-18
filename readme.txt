@@ -72,9 +72,9 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <strong>MULTIPLE REGISTRATION & LOGIN FORMS: </strong>
 <ul>
   
-  <li>Registration Form With Minified Social Buttons<a href="http://usersultra.com/uultra-testing/login-minified/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
+  <li>Registration Form With Minified Social Buttons. <a href="http://usersultra.com/uultra-testing/login-minified/"><strong> CLICK HERE TO SEE EXAMPLES</strong></a></li>
     
-  <li>Registration Form With Rounded Social Buttons <a href="http://usersultra.com/uultra-testing/login-minified-rounded-borders/"><strong>CLICK HERE TO SEE EXAMPLES</strong></a></li>
+  <li>Registration Form With Rounded Social Buttons. <a href="http://usersultra.com/uultra-testing/login-minified-rounded-borders/"><strong> CLICK HERE TO SEE EXAMPLES</strong></a></li>
 </ul>
 
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
