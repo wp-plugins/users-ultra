@@ -254,6 +254,30 @@ $this->create_plugin_setting(
                                         __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers')
                                 );
 
+
+
+ $this->create_plugin_setting(
+                                        'textarea',
+                                        'uultra_terms_and_conditions_text_2',
+                                        __('Terms & Conditions Text/HTML 2', 'xoousers'), array(),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers'),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers')
+                                );
+		 $this->create_plugin_setting(
+                                        'textarea',
+                                        'uultra_terms_and_conditions_text_3',
+                                        __('Terms & Conditions Text/HTML 3', 'xoousers'), array(),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers'),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers')
+                                );
+		
+		 $this->create_plugin_setting(
+                                        'textarea',
+                                        'uultra_terms_and_conditions_text_4',
+                                        __('Terms & Conditions Text/HTML 4', 'xoousers'), array(),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers'),
+                                        __('Enter text to display, example "I agree to the Terms & Conditions".', 'xoousers')
+                                );
                                                     
 
                               
