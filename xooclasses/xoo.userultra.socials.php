@@ -3,19 +3,15 @@ class XooSocial
 {
 	
 	
-	var $mDateToday ;
-	
+	var $mDateToday ;	
 	
 	function __construct() 
 	{
 		
 		
 		$this->ini_module();
-		$this->mDateToday =  date("Y-m-d"); 
-		
-		$this->set_ajax();
-		
-		
+		$this->mDateToday =  date("Y-m-d");		
+		$this->set_ajax();		
 	}
 	
 	public function set_ajax()

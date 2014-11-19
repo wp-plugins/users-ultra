@@ -193,6 +193,5 @@
     
     $.fn.tipsy.autoWE = function() {
         return $(this).offset().left > ($(document).scrollLeft() + $(window).width() / 2) ? 'e' : 'w';
-    };
-    
+    };    
 })(jQuery);

@@ -391,9 +391,8 @@ class XooMessaging extends XooUserUltraCommon
 					
 		
 	}
-	
-	
-		//--- Send Friend Request	
+
+	//--- Send Friend Request	
 	public function  send_friend_request($receiver, $sender)
 	{
 		global $xoouserultra;
@@ -490,9 +489,6 @@ class XooMessaging extends XooUserUltraCommon
 		
 	}
 	
-	
-	
-
 }
 $key = "messaging";
 $this->{$key} = new XooMessaging();

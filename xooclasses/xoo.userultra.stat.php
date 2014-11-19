@@ -5,12 +5,10 @@ class XooStat extends XooUserUltraCommon
 	//-------- modules: (user,photo,gallery)
 	var $mDateToday ;
 
-
 	function __construct() 
 	{
 		$this->ini_module();
-		$this->mDateToday =  date("Y-m-d"); 
-		
+		$this->mDateToday =  date("Y-m-d"); 		
 		
 	}
 	
@@ -142,12 +140,6 @@ class XooStat extends XooUserUltraCommon
 				return false;
 		 }
      }
-	
-	
-	
-	
-	
-
 }
 $key = "statistc";
 $this->{$key} = new XooStat();

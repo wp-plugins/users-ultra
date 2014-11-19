@@ -20,9 +20,6 @@ class XooRating extends XooUserUltraCommon
 		
 		add_action( 'wp_ajax_rating_vote',  array( $this, 'rating_vote' ));			
 		add_action( 'wp_ajax_nopriv_rating_vote',  array( $this, 'rating_vote' ));
-					
-		
-	
 				
 	}
 	
@@ -232,8 +229,6 @@ class XooRating extends XooUserUltraCommon
 		die();
     }
 
-    	
-	
 	
 	
 	public function get_rating($id, $data_target) 

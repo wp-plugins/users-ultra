@@ -94,10 +94,10 @@ $this->create_plugin_setting(
              <td> <?php _e('Billing Period:','xoousers'); ?></td>
              <td><label for="p_period"></label>
                <select name="p_period" id="p_period">
-                 <option value="M">Months</option>
-                 <option value="W">Weeks</option>
-                 <option value="D">Days</option>
-                  <option value="Y">Years</option>
+                 <option value="M"> <?php _e('Months','xoousers'); ?></option>
+                 <option value="W"> <?php _e('Weeks','xoousers'); ?></option>
+                 <option value="D"><?php _e('Days','xoousers'); ?></option>
+                  <option value="Y"><?php _e('Years','xoousers'); ?></option>
                </select></td>
            </tr>
            <tr>
@@ -110,8 +110,8 @@ $this->create_plugin_setting(
            <tr>
              <td> <?php _e('Requires Admin Moderation:','xoousers'); ?></td>
              <td><select name="p_moderation" id="p_moderation">
-               <option value="yes">Yes</option>
-               <option value="no" selected="selected">No</option>
+               <option value="yes"><?php _e('Yes','xoousers'); ?></option>
+               <option value="no" selected="selected"><?php _e('No','xoousers'); ?></option>
              </select></td>
            </tr>
           </table>
@@ -187,7 +187,3 @@ $this->create_plugin_setting(
 				});
                     
                  </script>
-        
-        
-        
-

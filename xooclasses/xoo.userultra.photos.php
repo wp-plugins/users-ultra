@@ -33,11 +33,6 @@ class XooUserPhoto {
 		add_action( 'wp_ajax_reload_videos', array( $this, 'reload_videos' ));			
 		 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );
 		
-		
-		
-		
-		
-		
 	}
 	
 	

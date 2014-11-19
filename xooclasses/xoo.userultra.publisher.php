@@ -15,9 +15,6 @@ class XooPublisher
 		add_action( 'wp_ajax_featured_img_delete', array($this, 'featured_img_delete') );
 		
 		
-		
-		
-		
 	}
 	
 	function handle_post()		
@@ -77,12 +74,8 @@ class XooPublisher
 		
 		}
 		
-		
-		
 		$post_tags = wp_get_post_tags( $post->ID );
-		
 		$post_id =$post->ID;
-		
 		$tagsarray = array();
 		
 		foreach ($post_tags as $tag) {
@@ -101,8 +94,6 @@ class XooPublisher
 		$content = '';
 		
 		$html = "";		
-		
-		
 		
 		 ?> 
          
@@ -1269,9 +1260,7 @@ class XooPublisher
 			
 		<?php
 	
-	
 	}
-
 
 }
 $key = "publisher";

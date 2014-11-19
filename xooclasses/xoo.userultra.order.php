@@ -406,10 +406,9 @@ class XooOrder
 							
 							//get package
 							
-							$package = $xoouserultra->paypal->get_package($order->order_package_id);
+							$package = $xoouserultra->paypal->get_package($order->order_package_id);		
 							
-							
-							//print_r($order );
+						
 							
 							?>
 						<tr>
@@ -438,9 +437,6 @@ class XooOrder
 	<?php
 	}
 	
-	
-	
-
 }
 $key = "order";
 $this->{$key} = new XooOrder();

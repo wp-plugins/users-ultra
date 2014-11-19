@@ -95,10 +95,6 @@ class XooNewsLetter extends XooUserUltraCommon
 		return false;
 		
 	}
-	
-
-	
-	
 
 }
 $key = "subscribe";

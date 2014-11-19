@@ -85,8 +85,6 @@ class XooShortCode {
 		add_shortcode( 'respo_pricing',  array(&$this,'respo_pricing_shortcode') );
 
 		
-		
-		
 	}
 	
 	/**
@@ -160,12 +158,6 @@ class XooShortCode {
 	
 	}
 	
-	
-	
-	
-	
-	
-	
 	public function  usersultra_photo_top_rated ($atts)
 	{
 		global $xoouserultra;
@@ -186,10 +178,6 @@ class XooShortCode {
 		return $xoouserultra->show_photo_grid( $atts );			
 		
 	}
-	
-	
-	
-	
 	
 	public function  usersultra_featured_users ($atts)
 	{

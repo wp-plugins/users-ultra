@@ -21,8 +21,7 @@ class XooUserRegister {
 		
 		if (function_exists('uultra_after_login_hook')) 
 		{		
-			add_action( 'wp_login', 'uultra_after_login_hook' , 100,2);	
-		
+			add_action( 'wp_login', 'uultra_after_login_hook' , 100,2);		
 		}	
 		
 	}
@@ -501,8 +500,6 @@ class XooUserRegister {
 					 
 					 
 					 //set expiration date
-					 // update_user_meta ($user_id, 'usersultra_account_creation_date', 'pending_payment');
-					 // update_user_meta ($user_id, 'usersultra_account_expiration_date', 'pending_payment');
 					 
 					 if($payment_method=="paypal" && $amount > 0)
 					 {
@@ -603,6 +600,5 @@ class XooUserRegister {
 	}
 
 }
-
 $key = "register";
 $this->{$key} = new XooUserRegister();
