@@ -5,8 +5,25 @@ class XooUserLogin {
 	
 	function __construct() 
 	{
-		 add_action( 'init', array($this, 'handle_init' ) );
 		
+		add_action( 'wp_login', array($this, 'uultra_handle_after_login' ),99,2 );
+		add_action( 'init', array($this, 'handle_init' ) );
+		
+	}
+	
+	/*Handle after login actions*/
+	function uultra_handle_after_login($user_login, $user) 
+	{
+	    global $xoouserultra;
+	    
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/user.php');
+		
+		//update last login
+		$user = get_user_by( 'login', $user_login );
+		$current_time = date("Y-m-d H:i:s"); 
+		update_user_meta($user->ID, 'uultra_last_login', $current_time);				
+	
 	}
 
 	function handle_init() 
@@ -1747,6 +1764,12 @@ class XooUserLogin {
 			  
 		  }
 	  }
+	  
+	  //set visitor ip
+	  //update visitor ip 11/17/2014
+	  $visitor_ip = $_SERVER['REMOTE_ADDR'];
+	  update_user_meta($user_id, 'uultra_user_registered_ip', $visitor_ip);
+	  
 	
   }
   

@@ -48,7 +48,7 @@ $meta_custom_value = "";
 					<?php _e('Separator','xoousers'); ?>
 				</option>
 		</select> <i class="uultra-icon-question-sign uultra-tooltip2"
-			title="<?php _e('You can create a seperator or a usermeta (profile field)','xoousers'); ?>"></i>
+			title="<?php _e('You can create a separator or a usermeta (profile field)','xoousers'); ?>"></i>
 		</td>
 	</tr>
 

@@ -316,7 +316,7 @@ class XooMessaging extends XooUserUltraCommon
 		$login_url =site_url("/");
 		
 		$subject = __('Registration Information','xoousers');
-		$subject_admin = __('New Paid Subscrition','xoousers');
+		$subject_admin = __('New Paid Subscription','xoousers');
 		
 		$template_client = str_replace("{{userl_ultra_login_url}}", $login_url,  $template_client);				
 		$template_client = str_replace("{{userultra_user_email}}", $u_email,  $template_client);

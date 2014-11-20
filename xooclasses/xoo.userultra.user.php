@@ -50,6 +50,10 @@ class XooUserUser {
 		
 		add_action( 'wp_ajax_sync_users', array( $this, 'sync_users' ));
 		
+		add_action('manage_users_columns', array( $this, 'uultra_modify_user_table' ));
+		add_action('manage_users_custom_column', array( $this, 'uultra_modify_user_table_row' ),10,3);
+		
+		
 		
 		$this->method_dect = array(
             'text' => 'text_box',
@@ -62,11 +66,50 @@ class XooUserUser {
             'datetime' => 'text_box'
         );
 		
-		
-		
 			
 
 	}
+	
+	
+	function uultra_modify_user_table( $column )
+	{
+		$column['registered_ip'] = 'IP Number';
+		$column['last_login'] = 'Last Login';
+		
+   	 	return $column;
+	}
+	
+	function uultra_modify_user_table_row( $val, $column_name, $user_id ) 
+	{
+		$user = get_userdata( $user_id );
+	
+		switch ($column_name) {
+			case 'last_login' :
+			     
+				//get meta uultra_user_registered_ip
+				$uultra_last_login = get_user_meta($user_id, 'uultra_last_login', true);
+				
+				if($uultra_last_login==''){$uultra_last_login='N/A';}
+								
+				return $uultra_last_login;
+				break;
+				
+			case 'registered_ip' :
+			     
+				//get meta uultra_user_registered_ip
+				$registered_ip = get_user_meta($user_id, 'uultra_user_registered_ip', true);
+				if($registered_ip==''){$registered_ip='N/A';}	
+				
+				return $registered_ip;
+				break;
+				
+	
+			default:
+		}
+	
+		return $return;
+	}
+
 	
 	function handle_init()
 	
@@ -535,7 +578,7 @@ class XooUserUser {
 		
 		}
 		
-		echo "<div class='user-ultra-success'>".__(" SUCESS! The sync process has been finished. ".$count." users were updated ", 'xoousers')."</div>";
+		echo "<div class='user-ultra-success'>".__(" SUCCESS! The sync process has been finished. ".$count." users were updated ", 'xoousers')."</div>";
 		
 		die();
 	}
@@ -1270,7 +1313,7 @@ class XooUserUser {
 				
 				$xoouserultra->messaging->send_new_password_to_user($user_email, $user_login, $password1);
 				
-				$html = "<div class='uupublic-ultra-success'>".__(" Sucess!! The new password has been sent to ".$user_email."  ", 'xoousers')."</div>";
+				$html = "<div class='uupublic-ultra-success'>".__(" Success!! The new password has been sent to ".$user_email."  ", 'xoousers')."</div>";
 				
 				$html .= "<div class=''>".__('<a href="'.$my_account_url.'" title="Login">CLICK HERE TO LOGIN</a>', 'xoousers')."</div>";
 				
