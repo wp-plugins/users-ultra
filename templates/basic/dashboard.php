@@ -195,7 +195,7 @@ $howmany = 5;
                        </div>
                        
                        
-                       <p class="paneldesc"><?php echo _e('Here you can manage your friends. Your friends will be able to see private/restricted conent','xoousers')?></p>
+                       <p class="paneldesc"><?php echo _e('Here you can manage your friends. Your friends will be able to see private/restricted content','xoousers')?></p>
                      
                       <div class="commons-panel-content" id="uultra-my-friends-request">
                                             

@@ -1153,7 +1153,7 @@ class XooPublisher
 							
 							// Handle maximum size limit:
 							if (max > hundredmb && file.size > hundredmb && up.runtime != 'html5'){
-								alert("<?php _e('The file you selected exceeds the maximum filesize limit.', 'xoousers'); ?>");
+								alert("<?php _e('The file you selected exceeds the maximum file size limit.', 'xoousers'); ?>");
 								return false;
 							}
 						

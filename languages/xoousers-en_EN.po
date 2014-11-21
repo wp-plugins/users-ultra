@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-20 17:20-0300\n"
-"PO-Revision-Date: 2014-11-20 17:20-0300\n"
+"POT-Creation-Date: 2014-11-21 19:38-0300\n"
+"PO-Revision-Date: 2014-11-21 19:38-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -2425,7 +2425,7 @@ msgstr ""
 #: ../templates/basic/dashboard.php:198
 msgid ""
 "Here you can manage your friends. Your friends will be able to see private/"
-"restricted conent"
+"restricted content"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:277
@@ -2957,6 +2957,14 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.captchamodules.php:93
 msgid "Prove you're not a robot"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:288
+msgid "Enter Verification Words "
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:292
+msgid "Load Image"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:210
@@ -3859,8 +3867,7 @@ msgid "You may only upload one image at a time!"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.publisher.php:1156
-#: ../xooclasses/xoo.userultra.user.php:4773
-msgid "The file you selected exceeds the maximum filesize limit."
+msgid "The file you selected exceeds the maximum file size limit."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.rating.php:203
@@ -3972,7 +3979,7 @@ msgid "Please login to rate "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.socials.php:199
-msgid "You've alredy liked it "
+msgid "You've already liked it "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.socials.php:240
@@ -4242,6 +4249,10 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.user.php:4667
 msgid "Drop Avatar here"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.user.php:4773
+msgid "The file you selected exceeds the maximum filesize limit."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.user.php:5123
