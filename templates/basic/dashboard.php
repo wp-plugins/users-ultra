@@ -891,8 +891,8 @@ $howmany = 5;
 				
 				 
 				   var video_delete_confirmation_message = '<?php echo _e( 'Delete this video?', 'xoousers' ) ?>';			
-				  var video_empy_field_name= '<?php echo _e( 'Pelase input a name', 'xoousers' ) ?>';
-				  var video_empy_field_id= '<?php echo _e( 'Pelase input video ID', 'xoousers' ) ?>';			
+				  var video_empy_field_name= '<?php echo _e( 'Please input a name', 'xoousers' ) ?>';
+				  var video_empy_field_id= '<?php echo _e( 'Please input video ID', 'xoousers' ) ?>';			
                                    
                     
                  </script>  
