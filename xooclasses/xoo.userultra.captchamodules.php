@@ -90,8 +90,7 @@ class XooUserCaptchaModule
                     $heading_text = $xoouserultra->get_option('captcha_heading');
                     
 					if($heading_text == ''){
-                        $heading_text = __("Prove you're not a robot",'xoousers');}
-                    
+                        $heading_text = __("Prove you're not a robot",'xoousers');}                    
                     
                     $display = '';    
 					$display .= '<div class="xoouserultra-clear">&nbsp;</div>';
@@ -286,11 +285,11 @@ class XooUserCaptchaModule
                         <div id="recaptcha_image_holder">
                             <div id="recaptcha_image" class="uultra-captcha-img"></div>
                             <div class="recaptcha_text_box">
-                                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="text" placeholder="Enter Verification Words" />
+                                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="text" placeholder="'.__("Enter Verification Words ",'xoousers').'" />
                             </div>
                         </div>
                         <div id="recaptcha_control_holder">
-                            <a href="javascript:Recaptcha.switch_type(\'image\');" title="Load Image"><i class="fa fa-camera"></i></a>
+                            <a href="javascript:Recaptcha.switch_type(\'image\');" title="'.__("Load Image",'xoousers').'" ><i class="fa fa-camera"></i></a>
                             <a href="javascript:Recaptcha.switch_type(\'audio\');" title="Load Audio"><i class="fa fa-volume-up"></i></a>
                             <a href="javascript:void(0);" id="recaptcha_reload_btn" onclick="Recaptcha.reload();" title="Refresh Image"><i class="fa fa-refresh"></i></a>
                         </div> 

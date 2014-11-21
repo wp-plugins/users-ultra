@@ -196,7 +196,7 @@ class XooSocial
 			}
 		}else{
 			
-			echo __("You've alredy liked it ", 'xoousers');
+			echo __("You've already liked it ", 'xoousers');
 		
 		
 		}
