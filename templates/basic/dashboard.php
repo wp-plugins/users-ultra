@@ -17,9 +17,7 @@ if(isset($_GET["page_id"])){	$page_id = $_GET["page_id"];}
 if(isset($_GET["view"])){	$view = $_GET["view"];}
 if(isset($_GET["reply"])){	$reply = $_GET["reply"];}
 if(isset($_GET["post_id"])){	$post_id = $_GET["post_id"];}
-
 $current_user = $xoouserultra->userpanel->get_user_info();
-
 $user_id = $current_user->ID;
 $user_email = $current_user->user_email;
 
@@ -129,7 +127,7 @@ $howmany = 5;
 			   {
 			?> 
             
-               <h1>Hello <?php echo $current_user->display_name?>. <?php  _e('Welcome to your dashboard','xoousers');?></h1>     
+               <h1> <?php  _e('Hello','xoousers');?> <?php echo $current_user->display_name?>. <?php  _e('Welcome to your dashboard','xoousers');?></h1>     
                
                <p style="text-align:right"><?php  _e('Account Status','xoousers');?>: 	<?php echo $xoouserultra->userpanel->get_status($current_user->ID);?></p>    
                
@@ -398,7 +396,7 @@ $howmany = 5;
                       
                       <p><?php  _e('Here you can manage your galleries and photos.','xoousers');?></p>
                       
-                         <a  id="add_gallery"  href="#">Add Gallery</a>
+                         <a  id="add_gallery"  href="#"> <?php  _e('Add Gallery','xoousers');?></a>
                         <div class="gallery-list">
                         
                          <div class="add-new-gallery" id="new_gallery_div">

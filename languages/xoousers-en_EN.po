@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-21 19:38-0300\n"
-"PO-Revision-Date: 2014-11-21 19:38-0300\n"
+"POT-Creation-Date: 2014-11-23 02:15-0300\n"
+"PO-Revision-Date: 2014-11-23 02:15-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -74,7 +74,7 @@ msgid "#"
 msgstr ""
 
 #: ../addons/photocategories/admin/panels/manage.php:44
-#: ../templates/basic/dashboard.php:406 ../templates/basic/dashboard.php:826
+#: ../templates/basic/dashboard.php:404 ../templates/basic/dashboard.php:824
 #: ../xooclasses/xoo.userultra.payment.paypal.php:789
 #: ../xooclasses/xoo.userultra.photos.php:1564
 #: ../xooclasses/xoo.userultra.photos.php:1704
@@ -347,8 +347,8 @@ msgid "Submit New Field"
 msgstr ""
 
 #: ../admin/tabs/fields.php:265 ../admin/tabs/fields.php:664
-#: ../admin/tabs/membership.php:147 ../templates/basic/dashboard.php:417
-#: ../templates/basic/dashboard.php:852
+#: ../admin/tabs/membership.php:147 ../templates/basic/dashboard.php:415
+#: ../templates/basic/dashboard.php:850
 #: ../xooclasses/xoo.userultra.payment.paypal.php:757
 msgid "Cancel"
 msgstr ""
@@ -580,7 +580,7 @@ msgstr ""
 msgid "Login Form"
 msgstr ""
 
-#: ../admin/tabs/help.php:35 ../templates/basic/dashboard.php:678
+#: ../admin/tabs/help.php:35 ../templates/basic/dashboard.php:676
 #: ../xooclasses/xoo.userultra.class.php:727
 #: ../xooclasses/xoo.userultra.user.php:2109
 #: ../xooclasses/xoo.userultra.user.php:2113
@@ -982,7 +982,7 @@ msgstr ""
 
 #: ../admin/tabs/main.php:249 ../admin/tabs/main.php:256
 #: ../admin/tabs/main.php:262 ../admin/tabs/membership.php:154
-#: ../templates/basic/dashboard.php:202 ../templates/basic/dashboard.php:210
+#: ../templates/basic/dashboard.php:200 ../templates/basic/dashboard.php:208
 msgid "loading ..."
 msgstr ""
 
@@ -2396,72 +2396,80 @@ msgid ""
 "disabled, guests must log in to view profiles."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:46
+#: ../templates/basic/dashboard.php:44
 msgid "Update Profile Image"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:132
+#: ../templates/basic/dashboard.php:130
+msgid "Hello"
+msgstr ""
+
+#: ../templates/basic/dashboard.php:130
 msgid "Welcome to your dashboard"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:134
+#: ../templates/basic/dashboard.php:132
 msgid "Account Status"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:142
+#: ../templates/basic/dashboard.php:140
 msgid "My Latest Messages"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:163
+#: ../templates/basic/dashboard.php:161
 msgid "My Latest Photos:"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:194
+#: ../templates/basic/dashboard.php:192
 #: ../xooclasses/xoo.userultra.user.php:2219
 #: ../xooclasses/xoo.userultra.user.php:2223
 msgid "My Friends"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:198
+#: ../templates/basic/dashboard.php:196
 msgid ""
 "Here you can manage your friends. Your friends will be able to see private/"
 "restricted content"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:277
+#: ../templates/basic/dashboard.php:275
 #: ../xooclasses/xoo.userultra.user.php:2239
 #: ../xooclasses/xoo.userultra.user.php:2243
 msgid "My Posts"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:281
+#: ../templates/basic/dashboard.php:279
 msgid "Here you can manage your posts. "
 msgstr ""
 
-#: ../templates/basic/dashboard.php:321 ../templates/basic/dashboard.php:356
+#: ../templates/basic/dashboard.php:319 ../templates/basic/dashboard.php:354
 #: ../xooclasses/xoo.userultra.user.php:2150
 #: ../xooclasses/xoo.userultra.user.php:2154
 msgid "My Orders"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:325
+#: ../templates/basic/dashboard.php:323
 msgid "Here you can check your orders. "
 msgstr ""
 
-#: ../templates/basic/dashboard.php:360
+#: ../templates/basic/dashboard.php:358
 msgid "Here you can track your orders. "
 msgstr ""
 
-#: ../templates/basic/dashboard.php:394
+#: ../templates/basic/dashboard.php:392
 #: ../xooclasses/xoo.userultra.user.php:178
 msgid "My Galleries"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:399
+#: ../templates/basic/dashboard.php:397
 msgid "Here you can manage your galleries and photos."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:411
+#: ../templates/basic/dashboard.php:399
+msgid "Add Gallery"
+msgstr ""
+
+#: ../templates/basic/dashboard.php:409
 #: ../xooclasses/xoo.userultra.payment.paypal.php:614
 #: ../xooclasses/xoo.userultra.payment.paypal.php:790
 #: ../xooclasses/xoo.userultra.photos.php:1568
@@ -2469,149 +2477,149 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:418 ../templates/basic/dashboard.php:853
+#: ../templates/basic/dashboard.php:416 ../templates/basic/dashboard.php:851
 msgid "Submit"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:461
+#: ../templates/basic/dashboard.php:459
 msgid "Delete this gallery?"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:485
+#: ../templates/basic/dashboard.php:483
 #: ../xooclasses/xoo.userultra.user.php:171
 msgid "My Photos"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:490
+#: ../templates/basic/dashboard.php:488
 msgid "Here you can manage your photos."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:492
+#: ../templates/basic/dashboard.php:490
 msgid "Upload Files"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:502
+#: ../templates/basic/dashboard.php:500
 msgid "loading photos ..."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:555
+#: ../templates/basic/dashboard.php:553
 msgid "My Profile"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:585
+#: ../templates/basic/dashboard.php:583
 msgid "Received Messages"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:634
+#: ../templates/basic/dashboard.php:632
 msgid "Sent Messages"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:694
+#: ../templates/basic/dashboard.php:692
 msgid "Account ID: "
 msgstr ""
 
-#: ../templates/basic/dashboard.php:694
+#: ../templates/basic/dashboard.php:692
 msgid "Registered Date: "
 msgstr ""
 
-#: ../templates/basic/dashboard.php:694
+#: ../templates/basic/dashboard.php:692
 msgid "Account Type: "
 msgstr ""
 
-#: ../templates/basic/dashboard.php:707
+#: ../templates/basic/dashboard.php:705
 msgid "Close Account"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:712
+#: ../templates/basic/dashboard.php:710
 msgid "Remove Account"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:716
+#: ../templates/basic/dashboard.php:714
 msgid "Here you can remove your account."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:719
+#: ../templates/basic/dashboard.php:717
 msgid "YES, CLOSE MY ACCOUNT"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:732 ../templates/basic/dashboard.php:792
+#: ../templates/basic/dashboard.php:730 ../templates/basic/dashboard.php:790
 msgid ""
 "Are you totally sure that you want to close your account. This action cannot "
 "be reverted?"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:751
+#: ../templates/basic/dashboard.php:749
 #: ../xooclasses/xoo.userultra.admin.php:54
 #: ../xooclasses/xoo.userultra.user.php:2123
 #: ../xooclasses/xoo.userultra.user.php:2127
 msgid "Settings"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:756
+#: ../templates/basic/dashboard.php:754
 msgid "Update Password"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:760
+#: ../templates/basic/dashboard.php:758
 msgid "Type your New Password"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:763
+#: ../templates/basic/dashboard.php:761
 msgid "Re-type your New Password"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:766
+#: ../templates/basic/dashboard.php:764
 msgid "CLICK HERE TO RESET PASSWORD"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:771
+#: ../templates/basic/dashboard.php:769
 msgid "Update Email"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:775
+#: ../templates/basic/dashboard.php:773
 msgid "Type your New Email"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:778
+#: ../templates/basic/dashboard.php:776
 msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:813 ../templates/basic/profile.php:174
+#: ../templates/basic/dashboard.php:811 ../templates/basic/profile.php:174
 #: ../xooclasses/xoo.userultra.user.php:2202
 #: ../xooclasses/xoo.userultra.user.php:2206
 msgid "My Videos"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:820
+#: ../templates/basic/dashboard.php:818
 msgid "Here you can manage your videos."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:822
+#: ../templates/basic/dashboard.php:820
 msgid "Add Video"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:835
+#: ../templates/basic/dashboard.php:833
 #: ../xooclasses/xoo.userultra.photos.php:1829
 msgid "Video ID"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:843
+#: ../templates/basic/dashboard.php:841
 msgid "Video Type"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:864
+#: ../templates/basic/dashboard.php:862
 msgid "please wait, loading videos ..."
 msgstr ""
 
-#: ../templates/basic/dashboard.php:893
+#: ../templates/basic/dashboard.php:891
 msgid "Delete this video?"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:894
-msgid "Pelase input a name"
+#: ../templates/basic/dashboard.php:892
+msgid "Please input a name"
 msgstr ""
 
-#: ../templates/basic/dashboard.php:895
-msgid "Pelase input video ID"
+#: ../templates/basic/dashboard.php:893
+msgid "Please input video ID"
 msgstr ""
 
 #: ../templates/basic/directory_default.php:42
