@@ -33,8 +33,7 @@ class XooUserUser {
 		}
 		
 		add_action( 'wp_ajax_refresh_avatar', array( $this, 'refresh_avatar' ));
-		add_action( 'wp_ajax_delete_user_avatar', array( $this, 'delete_user_avatar' ));	
-
+		add_action( 'wp_ajax_delete_user_avatar', array( $this, 'delete_user_avatar' ));
 		add_action( 'wp_ajax_nopriv_send_reset_link', array( $this, 'send_reset_link' ));		
 		add_action( 'wp_ajax_nopriv_confirm_reset_password', array( $this, 'confirm_reset_password' ));
      	add_action( 'wp_ajax_confirm_reset_password', array( $this, 'confirm_reset_password' ));

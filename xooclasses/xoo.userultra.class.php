@@ -1268,10 +1268,10 @@ class XooUserUltra
 		
 		if (!is_admin()) 
 		{		
-			wp_register_style( 'xoouserultra_frontend_css', xoousers_url.'/templates/'.xoousers_template."/css/".'front-styles.css');
+			wp_register_style( 'xoouserultra_frontend_css', xoousers_url.'templates/'.xoousers_template."/css/".'front-styles.css');
 			wp_enqueue_style('xoouserultra_frontend_css');
 			
-			wp_register_style( 'xoouserultra_shortcoddes_css', xoousers_url.'/templates/'.xoousers_template."/css/".'resp-shortcodes.css');
+			wp_register_style( 'xoouserultra_shortcoddes_css', xoousers_url.'templates/'.xoousers_template."/css/".'resp-shortcodes.css');
 			wp_enqueue_style('xoouserultra_shortcoddes_css');
 		}
 		
