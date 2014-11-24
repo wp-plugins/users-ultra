@@ -74,12 +74,15 @@ class XooUserUser {
 	{
 		$column['registered_ip'] = 'IP Number';
 		$column['last_login'] = 'Last Login';
+		$column['package'] = 'Package';
 		
    	 	return $column;
 	}
 	
 	function uultra_modify_user_table_row( $val, $column_name, $user_id ) 
 	{
+		global  $xoouserultra;
+		
 		$user = get_userdata( $user_id );
 	
 		switch ($column_name) {
@@ -100,6 +103,26 @@ class XooUserUser {
 				if($registered_ip==''){$registered_ip='N/A';}	
 				
 				return $registered_ip;
+				break;
+				
+			case 'package' :
+			     
+				//get meta uultra_user_registered_ip
+				$package_id = get_user_meta($user_id, 'usersultra_user_package_id', true);
+				$package_name = '';				
+				
+				if($package_id=='')
+				{
+					$package_name='N/A';
+				
+				}else{
+					
+					$package = $xoouserultra->paypal->get_package($package_id );
+					$package_name=$package->package_name;				
+				
+				}	
+				
+				return $package_name;
 				break;
 				
 	

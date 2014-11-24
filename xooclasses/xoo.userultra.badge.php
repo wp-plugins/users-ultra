@@ -1,10 +1,7 @@
 <?php
 class XooBadge
 {
-	var $mBadgesArray =  array();
-	
-	
-	
+	var $mBadgesArray =  array();	
 
 }
 $key = "badge";

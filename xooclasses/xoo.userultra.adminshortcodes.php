@@ -7,8 +7,7 @@ class XooUserAdminShortCode
 				
 		add_action( 'init',   array(&$this,'respo_add_shortcode_button') );
 	    add_filter( 'tiny_mce_version',  array(&$this,'respo_refresh_mce')  );	
-		
-			
+					
 		
     }
 
@@ -44,12 +43,10 @@ class XooUserAdminShortCode
 	}
 
 	function respo_add_shortcode_tinymce_plugin($plugin_array) 
-	{
-			
+	{			
 		
 		$plugin_array['USERSULTRAShortcodes'] = xoousers_url . '/admin/scripts/editor_plugin.js';
 		return $plugin_array;
-			
 		
 		
 	}

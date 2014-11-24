@@ -1860,8 +1860,7 @@ class XooUserPhoto {
 		
 		$user_id = get_current_user_id();
 		$gal_id = $_POST["gal_id"];
-		
-		
+				
 		//get photo
 		
 		if($gal_id!="")

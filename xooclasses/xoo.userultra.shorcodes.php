@@ -24,9 +24,7 @@ class XooShortCode {
 		add_shortcode( 'usersultra_my_account', array(&$this,'usersultra_my_account_function') );
 		add_shortcode( 'usersultra_directory', array(&$this,'usersultra_directory_function') );
 		add_shortcode( 'usersultra_directory_mini', array(&$this,'usersultra_directory_mini_function') );
-		add_shortcode( 'usersultra_searchbox', array(&$this,'usersultra_searchbox') );
-		
-				
+		add_shortcode( 'usersultra_searchbox', array(&$this,'usersultra_searchbox') );				
 		
 		add_shortcode( 'usersultra_profile', array(&$this,'usersultra_profile_function') );
 		

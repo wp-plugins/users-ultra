@@ -9,7 +9,6 @@ class XooRating extends XooUserUltraCommon
     var $mTotalScore = 2;	
 	var $mDateToday ;
 
-
 	function __construct() 
 	{
 		require_once( ABSPATH . "wp-includes/pluggable.php" );
@@ -205,8 +204,7 @@ class XooRating extends XooUserUltraCommon
 				}else{
 					
 					
-					$html = __("You've already left your rate ",'xoousers');			
-					
+					$html = __("You've already left your rate ",'xoousers');					
 				
 				}
 			
@@ -219,8 +217,7 @@ class XooRating extends XooUserUltraCommon
 		}else{
 			
 			   //is trying to rate itlsef				   
-     			$html = __("You cannot rate yourself  ",'xoousers');			
-					
+     			$html = __("You cannot rate yourself  ",'xoousers');						
 				
 		}		
 		
