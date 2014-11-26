@@ -1637,8 +1637,8 @@ class XooUserUser {
 								    
 								    $option = trim($option);
 									
-									$html .= '<label class="xoouserultra-radio"><input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" '.$disabled.' value="'.$option.'" '.checked( $this->get_user_meta( $meta), $option, 0 );
-									$html .= '/> <label for="'.$meta.'"><span></span>'.$option.'</label> </label>';
+									$html .= '<label class="xoouserultra-radio"><input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" id="uultra_multi_radio_'.$meta.'_'.$counter.'" '.$disabled.' value="'.$option.'" '.checked( $this->get_user_meta( $meta), $option, 0 );
+									$html .= '/> <label for="uultra_multi_radio_'.$meta.'_'.$counter.'"><span></span>'.$option.'</label> </label>';
 									
 									$counter++;
 									
@@ -1661,14 +1661,14 @@ class XooUserUser {
 								        $required_class = '';
 								  
 								  $option = trim($option);
-									$html .= '<label class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" '.$disabled.' value="'.$option.'" ';
+									$html .= '<div class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" '.$disabled.' id="uultra_multi_box_'.$meta.'_'.$counter.'" value="'.$option.'" ';
 									
 									 $values = explode(', ', $this->get_user_meta($meta));
 									
 									if (in_array($option, $values)) {
 									$html .= 'checked="checked"';
 									}
-									$html .= '/> <label for="'.$meta.'"><span></span> '.$option.'</label> </label>';
+									$html .= '/> <label for="uultra_multi_box_'.$meta.'_'.$counter.'"><span></span> '.$option.'</label> </div>';
 									
 									$counter++;
 								}
@@ -1690,7 +1690,7 @@ class XooUserUser {
 						 if($ischecked==1) $check_va = 'checked="checked"';
 						
 						$html .= '<div class="xoouserultra-hide-from-public">
-										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="1" '.$check_va.' /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
+										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="1" '.$check_va.' /> <label for="hide_'.$meta.'"><span></span>'.__('Hide from Public','xoousers').'</label>
 									</div>';
 
 

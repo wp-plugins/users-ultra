@@ -2091,7 +2091,7 @@ class XooUserPhoto {
 		if ($current_photo->gallery_only_friends == 1) 
 		{
 			$error=true;			
-			$html.= '<p>' .__( 'This photo is accesible only for friends of the user.', 'xoousers' ). '</p>';
+			$html.= '<p>' .__( 'This photo is accessible only for friends of the user.', 'xoousers' ). '</p>';
 		
 		}
 		

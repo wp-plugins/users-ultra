@@ -6,7 +6,7 @@ global $xoouserultra;
  <div class="user-ultra-sect ">
         
         <h3><?php _e('Synchronize Already Users','xoousers'); ?></h3>
-        <p><?php _e('This feature allows you to synchronize the alreay users in you Wordpress website so they can be recognized by Users Ultra ','xoousers'); ?></p>
+        <p><?php _e('This feature allows you to synchronize the already users in your Wordpress website so they can be recognized by Users Ultra ','xoousers'); ?></p>
         
         
         <p class="submit">
@@ -36,7 +36,7 @@ global $xoouserultra;
                    
           
            <p class="submit">
-	<input type="file" name="file_csv" class="" value="<?php _e('Chose File','xoousers'); ?>"  /><?php _e(' <b>ONLY CSV EXTENSIONS ALLOWED: </b>  ','xoousers'); ?>
+	<input type="file" name="file_csv" class="" value="<?php _e('Choose File','xoousers'); ?>"  /><?php _e(' <b>ONLY CSV EXTENSIONS ALLOWED: </b>  ','xoousers'); ?>
 	
      </p>
        

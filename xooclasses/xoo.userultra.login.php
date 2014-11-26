@@ -1675,7 +1675,7 @@ class XooUserLogin {
 			
 			//error from facebook side
 			
-			$this->errors[] = __('<strong>ERROR:</strong> SOME PROBLEM OCCOURED WHILE CONNECTING FACEBOOK PLEASE LOGIN AGAIN.','xoousers');
+			$this->errors[] = __('<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK PLEASE LOGIN AGAIN.','xoousers');
 		
 		}
 		

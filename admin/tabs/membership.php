@@ -136,7 +136,7 @@ $this->create_plugin_setting(
               </tr>
               
               <tr>
-                <td> <?php echo _e('Sign Up Button Brackground Color','xoousers')?></td>
+                <td> <?php echo _e('Sign Up Button Background Color','xoousers')?></td>
                 <td><input name="p_signup_bg_color" type="text" id="p_signup_bg_color" value="" class="color-picker"  data-default-color="" /> 
                </td>
               </tr>

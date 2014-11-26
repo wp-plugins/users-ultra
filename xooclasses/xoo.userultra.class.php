@@ -1681,7 +1681,7 @@ class XooUserUltra
 		
 		$display .= '<div class="xoouserultra-rememberme'.$remember_me_class.'">
 		
-		<input type="checkbox" name="rememberme" id="rememberme-'.$this->login_code_count.'" value="0" /> <label for="checkbox1"><span></span>'.__('Remember me','xoousers').'</label>
+		<input type="checkbox" name="rememberme" id="rememberme-'.$this->login_code_count.'" value="0" /> <label for="rememberme-'.$this->login_code_count.'"><span></span>'.__('Remember me','xoousers').'</label>
 		
 		</div>
 		
@@ -2219,8 +2219,8 @@ class XooUserUltra
 								        $required_class = '';
 								    
 								    $option = trim($option);
-									$display .= '<input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" value="'.$option.'" '.checked( $this->get_post_value($meta), $option, 0 );
-									$display .= '/> <label for="'.$meta.'"><span></span>'.$option.'</label>';
+									$display .= '<input type="radio" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'" id="uultra_multi_radio_'.$meta.'_'.$counter.'"  value="'.$option.'" '.checked( $this->get_post_value($meta), $option, 0 );
+									$display .= '/> <label for="uultra_multi_radio_'.$meta.'_'.$counter.'"><span></span>'.$option.'</label>';
 									
 									$counter++;
 									
@@ -2249,11 +2249,11 @@ class XooUserUltra
 								        $required_class = '';
 								  
 								  $option = trim($option);
-									$display .= '<label class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" value="'.$option.'" ';
+									$display .= '<div class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]"  id="uultra_multi_box_'.$meta.'_'.$counter.'" value="'.$option.'" ';
 									if (is_array($this->get_post_value($meta)) && in_array($option, $this->get_post_value($meta) )) {
 									$display .= 'checked="checked"';
 									}
-									$display .= '/> <label for="checkbox1"><span></span> '.$option.'</label> </label>';
+									$display .= '/> <label for="uultra_multi_box_'.$meta.'_'.$counter.'"><span></span> '.$option.'</label> </div>';
 									
 																		
 									$counter++;
@@ -2297,7 +2297,7 @@ class XooUserUltra
 					{
 						
 						$display .= '<div class="xoouserultra-hide-from-public">
-										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" /> <label for="checkbox1"><span></span>'.__('Hide from Public','xoousers').'</label>
+										<input type="checkbox" name="hide_'.$meta.'" id="hide_'.$meta.'" value="" /> <label for="hide_'.$meta.'"><span></span>'.__('Hide from Public','xoousers').'</label>
 									</div>';
 
 					} elseif ($can_hide == 0 && $private == 0) {
@@ -2334,7 +2334,7 @@ class XooUserUltra
 		{
 			$display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show"></div>';
 						
-			$display .= '<input type="checkbox"  title="Receive Daily Updates" name="uultra-mailchimp-confirmation" value="1" > <label for="checkbox1"><span></span>'.$this->get_option('mailchimp_text').'</label>' ;
+			$display .= '<input type="checkbox"  title="Receive Daily Updates" name="uultra-mailchimp-confirmation"  id="uultra-mailchimp-confirmation" value="1" > <label for="uultra-mailchimp-confirmation"><span></span>'.$this->get_option('mailchimp_text').'</label>' ;
 			
 			
 		
@@ -2354,7 +2354,7 @@ class XooUserUltra
 			$display .= '<label class="xoouserultra-field-type" for="'.$meta.'">';			
 			$display .= '<span>&nbsp;</span></label>';
 			$display .= '<div class="xoouserultra-field-value">';
-			$display .= '<input type="checkbox"  title="'.__('Terms & Conditions ', 'xoousers').'" name="uultra-mailchimp-confirmation" value="1" class="validate[required]" > <label for="checkbox1"><span></span>'.$text_terms.'</label></div>' ;
+			$display .= '<input type="checkbox"  title="'.__('Terms & Conditions ', 'xoousers').'" name="uultra-mailchimp-confirmation" id="uultra-mailchimp-confirmation" value="1" class="validate[required]" > <label for="uultra-mailchimp-confirmation"><span></span>'.$text_terms.'</label></div>' ;
 			
 			$display .= '<div class="xoouserultra-clear"></div>';
 		

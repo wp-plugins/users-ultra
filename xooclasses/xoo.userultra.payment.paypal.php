@@ -745,7 +745,7 @@ class XooPaypalPayment
               </tr>
 			  
 			   <tr>
-                <td> '.__('Sign Up Button Brackground Color','xoousers').'</td>
+                <td> '.__('Sign Up Button Background Color','xoousers').'</td>
                 <td><input name="p_signup_bg_color" type="text" id="p_signup_bg_color_'.$package->package_id.'" value="'. $p_signup_bg_color.'" class="color-picker"  data-default-color="" /> 
                </td>
               </tr>

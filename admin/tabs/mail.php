@@ -39,8 +39,8 @@ $this->create_plugin_setting(
         'input',
         'messaging_send_from_name',
         __('Send From Name','xoousers'),array(),
-        __('Enter the your name or companay name here.','xoousers'),
-        __('Enter the your name or companay name here.','xoousers')
+        __('Enter the your name or company name here.','xoousers'),
+        __('Enter the your name or company name here.','xoousers')
 );
 
 $this->create_plugin_setting(

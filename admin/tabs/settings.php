@@ -492,7 +492,7 @@ $this->create_plugin_setting(
 	'uurofile_setting_display_photos',
 	__('Display Photos: ','xoousers'),
 	array(
-		'private' => __('Only for regitered/logged in users','xoousers'), 
+		'private' => __('Only for registered/logged in users','xoousers'), 
 		'public' => __('All visitor can see the user photos without registration','xoousers')
 		),
 		

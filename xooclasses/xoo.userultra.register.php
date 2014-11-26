@@ -5,7 +5,6 @@ class XooUserRegister {
 	{
 		add_action( 'init', array($this, 'uultra_handle_hooks_actions') );			
 		add_action( 'init', array($this, 'uultra_handle_post') );		
-		
 
 	}
 	
