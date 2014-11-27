@@ -12,8 +12,7 @@ class XooNewsLetter extends XooUserUltraCommon
 	}
 	
 	public function set_malichimp_api () 
-	{
-		
+	{	
 		
 	
 	}
@@ -35,8 +34,7 @@ class XooNewsLetter extends XooUserUltraCommon
 		$f_name = get_user_meta($user_id, 'first_name', true);
 	    $l_name = get_user_meta($user_id, 'last_name', true);
 		
-		$MailChimp = new MailChimp_UUltra( $this->mail_chimp_api );
-		
+		$MailChimp = new MailChimp_UUltra( $this->mail_chimp_api );		
 				
 		$MailChimp->call('lists/subscribe', array(
                 'id'                => $list_id,
@@ -58,8 +56,7 @@ class XooNewsLetter extends XooUserUltraCommon
 		
 		global  $xoouserultra;
 		
-		$this->mail_chimp_api =  $xoouserultra->get_option('mailchimp_api');
-		
+		$this->mail_chimp_api =  $xoouserultra->get_option('mailchimp_api');		
 		$email = uultra_profile_data('user_email', $user_id);
 		
 		$MailChimp = new MailChimp_UUltra( $this->mail_chimp_api );

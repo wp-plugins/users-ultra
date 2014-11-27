@@ -66,7 +66,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		$this->default_tab = 'main';		
 		
 		$this->tabs_membership = array(
-		    'main' => __('Membership Plans','userultra'),
+		    'main' => __('Membership Plans','xoousers'),
 			
 		);
 		$this->default_tab_membership = 'main';
@@ -251,10 +251,10 @@ class XooUserAdmin extends XooUserUltraCommon
 			
 		} else {
 			
-			$menu_label = __('Users Ultra','userultra');
+			$menu_label = __('Users Ultra','xoousers');
 		}
 		
-		add_menu_page( __('Users Ultra','userultra'), $menu_label, 'manage_options', $this->slug, array(&$this, 'admin_page'), xoousers_url .'admin/images/small_logo_16x16.png', '159.140');
+		add_menu_page( __('Users Ultra','xoousers'), $menu_label, 'manage_options', $this->slug, array(&$this, 'admin_page'), xoousers_url .'admin/images/small_logo_16x16.png', '159.140');
 		
 		
 		add_submenu_page( 'userultra', __('GO PRO!','xoousers'), __('GO PRO !!! ','xoousers'), 'manage_options', 'userultra&tab=pro', array(&$this, 'admin_page') );
@@ -330,7 +330,7 @@ class XooUserAdmin extends XooUserUltraCommon
 	function reset() {
 		update_option('userultra', $this->userultra_default_options() );
 		$this->options = array_merge( $this->options, $his->userultra_default_options() );
-		echo '<div class="updated"><p><strong>'.__('Settings are reset to default.','userultra').'</strong></p></div>';
+		echo '<div class="updated"><p><strong>'.__('Settings are reset to default.','xoousers').'</strong></p></div>';
 	}
 	
 	

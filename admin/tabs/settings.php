@@ -561,8 +561,8 @@ $this->create_plugin_setting(
         'input',
         'social_media_linkedin_api_public',
         __('LinkedIn API Key Public','xoousers'),array(),
-        __('Obtained when you created your applicaton.','xoousers'),
-        __('Obtained when you created your applicaton.','xoousers')
+        __('Obtained when you created your application.','xoousers'),
+        __('Obtained when you created your application.','xoousers')
 );
 
 $this->create_plugin_setting(

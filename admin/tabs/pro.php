@@ -99,7 +99,7 @@ global $xoouserultra;
             
               <div class="uultra-col">
              <h1><?php _e('One and Two Columns Profile','xoousers'); ?></h1> 
-             <p> <?php _e("The new user's profile template will let you create a beutiful user's profile with one, two or three columns with just one click.",'xoousers'); ?></p>
+             <p> <?php _e("The new user's profile template will let you create a beautiful user's profile with one, two or three columns with just one click.",'xoousers'); ?></p>
             </div>
             
               <div class="uultra-col">

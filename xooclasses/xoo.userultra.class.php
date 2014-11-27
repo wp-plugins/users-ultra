@@ -2332,14 +2332,26 @@ class XooUserUltra
 		/*If mailchimp*/		
 		if($this->get_option('mailchimp_active')==1 && $this->get_option('mailchimp_api')!="")
 		{
-			$display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show"></div>';
-						
-			$display .= '<input type="checkbox"  title="Receive Daily Updates" name="uultra-mailchimp-confirmation"  id="uultra-mailchimp-confirmation" value="1" > <label for="uultra-mailchimp-confirmation"><span></span>'.$this->get_option('mailchimp_text').'</label>' ;
 			
+			//new mailchimp field			
+			
+			$mailchimp_text = stripslashes($this->get_option('mailchimp_text'));			
+			//
+			 $display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__('Receive Daily Updates', 'xoousers').'</div>';
+			 
+			$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
+			$display .= '<div class="xoouserultra-clear"></div>'; 
+			
+			$display .= '<label class="xoouserultra-field-type" for="'.$meta.'">';			
+			$display .= '<span>&nbsp;</span></label>';
+			//$display .= '</label>';
+			$display .= '<div class="xoouserultra-field-value">';
+			$display .= '<input type="checkbox"  title="'.__('Receive Daily Updates ', 'xoousers').'" name="uultra-mailchimp-confirmation"  id="uultra-mailchimp-confirmation" value="1"  > <label for="uultra-mailchimp-confirmation"><span></span>'.$mailchimp_text.'</label></div>' ;
+			
+			$display .= '<div class="xoouserultra-clear"></div>';	
 			
 		
 		}
-		
 			//terms and conditions
 				
 		if($this->get_option('uultra_terms_and_conditions')=='yes')
@@ -2354,7 +2366,7 @@ class XooUserUltra
 			$display .= '<label class="xoouserultra-field-type" for="'.$meta.'">';			
 			$display .= '<span>&nbsp;</span></label>';
 			$display .= '<div class="xoouserultra-field-value">';
-			$display .= '<input type="checkbox"  title="'.__('Terms & Conditions ', 'xoousers').'" name="uultra-mailchimp-confirmation" id="uultra-mailchimp-confirmation" value="1" class="validate[required]" > <label for="uultra-mailchimp-confirmation"><span></span>'.$text_terms.'</label></div>' ;
+			$display .= '<input type="checkbox"  title="'.__('Terms & Conditions ', 'xoousers').'" name="uultra-terms-and-conditions-confirmation" id="uultra-terms-and-conditions-confirmation" value="1" class="validate[required]" > <label for="uultra-terms-and-conditions-confirmation"><span></span>'.$text_terms.'</label></div>' ;
 			
 			$display .= '<div class="xoouserultra-clear"></div>';
 		
@@ -2362,6 +2374,7 @@ class XooUserUltra
 		
 		
 		$display.=$this->captchamodule->load_captcha($this->captcha);
+		
 		
 		$display .= '<div class="xoouserultra-clear">&nbsp;</div>';
 		
