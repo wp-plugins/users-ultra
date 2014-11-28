@@ -108,7 +108,9 @@ class XooUserCaptchaModule
 					$display .='<input type="hidden" name="captcha_plugin" value="'.$this->captcha_plugin.'" />';					
 					$display .= '</div>';	
 					
-					$display .= '<div class="xoouserultra-clear"></div>';					
+					$display .= '<div class="xoouserultra-clear"></div>';	
+					
+					$display .= '</div>';				
 					
                     
                     return $display;

@@ -1681,7 +1681,7 @@ class XooUserUltra
 		
 		$display .= '<div class="xoouserultra-rememberme'.$remember_me_class.'">
 		
-		<input type="checkbox" name="rememberme" id="rememberme-'.$this->login_code_count.'" value="0" /> <label for="rememberme-'.$this->login_code_count.'"><span></span>'.__('Remember me','xoousers').'</label>
+		<input type="checkbox" name="rememberme" id="rememberme_'.$this->login_code_count.'" value="0" /> <label for="rememberme_'.$this->login_code_count.'"><span></span>'.__('Remember me','xoousers').'</label>
 		
 		</div>
 		
@@ -1732,7 +1732,7 @@ class XooUserUltra
 		
 	
 		            
-		            $forgot_pass.='<input type="button" name="xoouserultra-forgot-pass" id="xoouserultra-forgot-pass-btn-confirm" class="xoouserultra-button xoouserultra-login" value="'.__('Send me Password','xoousers').'">';
+		           $forgot_pass.='<input type="button" name="xoouserultra-forgot-pass" id="xoouserultra-forgot-pass-btn-confirm" class="xoouserultra-button xoouserultra-login" value="'.__('Send me Password','xoousers').'">';
 					
 					$forgot_pass.='<div class="xoouserultra-signin-noti-block" id="uultra-signin-ajax-noti-box"> ';
 		
@@ -2580,6 +2580,7 @@ class XooUserUltra
 				
 				$params = array(
 						  'scope' => 'read_stream, email, friends_likes',
+						  'display' => 'popup',
 						  'redirect_uri' => $web_url
 						);
 						
