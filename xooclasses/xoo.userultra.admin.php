@@ -336,12 +336,12 @@ class XooUserAdmin extends XooUserUltraCommon
 	
 	function woo_sync() {
 		userultra_admin_woo_sync();
-		echo '<div class="updated"><p><strong>'.__('WooCommerce fields have been added.','userultra').'</strong></p></div>';
+		echo '<div class="updated"><p><strong>'.__('WooCommerce fields have been added.','xoousers').'</strong></p></div>';
 	}
 	
 	function woo_sync_del(){
 		userultra_admin_woo_sync_erase();
-		echo '<div class="updated"><p><strong>'.__('WooCommerce fields have been removed.','userultra').'</strong></p></div>';
+		echo '<div class="updated"><p><strong>'.__('WooCommerce fields have been removed.','xoousers').'</strong></p></div>';
 	}
 	
 	

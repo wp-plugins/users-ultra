@@ -1177,7 +1177,19 @@ class XooUserUser {
 					$user_email = $user->user_email;
 					$user_login = $user->user_login;	
 					
-					$user_id = wp_update_user( array( 'ID' => $user_id, 'user_email' => $email ) );											
+					$user_id = wp_update_user( array( 'ID' => $user_id, 'user_email' => $email ) );		
+					
+					//update mailchimp?
+					$mail_chimp = get_user_meta( $user_id, 'xoouser_mailchimp', true);
+					
+					if($mail_chimp==1) //the user has a mailchip accoun, then we have to sync
+					{
+						if($xoouserultra->get_option('mailchimp_api'))
+						{
+							$list_id =  $xoouserultra->get_option('mailchimp_list_id');					 
+							$xoouserultra->subscribe->mailchimp_subscribe($user_id, $list_id);
+						}
+					}									
 										
 					$html = "<div class='uupublic-ultra-success'>".__(" Success!! Your email account has been changed to : ".$email."  ", 'xoousers')."</div>";
 					

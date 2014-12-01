@@ -526,7 +526,7 @@ class XooPaypalPayment
 							
 							<div class="uultra-package-opt">
 							
-							<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" class="validate[required]" id="RadioGroup1_0"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
+							<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" class="validate[required]" id="RadioGroup1_'.$package->package_id.'"  '.$checked.'/><label for="RadioGroup1_'.$package->package_id.'"><span><span></span></span>  - '.$package->package_name.' </label></span>
 							
 							<span class="uultra-package-cost">'.$amount.' </span></div>
 							<div class="uultra-package-desc">
@@ -546,7 +546,7 @@ class XooPaypalPayment
 					
 					<div class="uultra-package-opt">
 					
-					<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_0"  class="validate[required]"  '.$checked.'/><label for="radio1"><span><span></span></span>  - '.$package->package_name.' </label></span>
+					<span class="uultra-package-title"><input type="radio" name="usersultra_package_id" value="'.$package->package_id.'" id="RadioGroup1_'.$package->package_id.'"  class="validate[required]"  '.$checked.'/><label for="RadioGroup1_'.$package->package_id.'"><span><span></span></span>  - '.$package->package_name.' </label></span>
 					
 					<span class="uultra-package-cost">'.$amount.' </span></div>
 					<div class="uultra-package-desc">
