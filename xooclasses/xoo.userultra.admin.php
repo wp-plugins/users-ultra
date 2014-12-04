@@ -247,7 +247,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		$pending_title = esc_attr( sprintf(__( '%d new manual activation requests','xoousers'), $pending_count ) );
 		if ($pending_count > 0)
 		{
-			$menu_label = sprintf( __( 'Users Ultra %s','userultra' ), "<span class='update-plugins count-$pending_count' title='$pending_title'><span class='update-count'>" . number_format_i18n($pending_count) . "</span></span>" );
+			$menu_label = sprintf( __( 'Users Ultra %s','xoousers' ), "<span class='update-plugins count-$pending_count' title='$pending_title'><span class='update-count'>" . number_format_i18n($pending_count) . "</span></span>" );
 			
 		} else {
 			

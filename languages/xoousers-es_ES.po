@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-11-26 15:54-0300\n"
-"PO-Revision-Date: 2014-11-26 15:54-0300\n"
+"POT-Creation-Date: 2014-12-04 01:07-0300\n"
+"PO-Revision-Date: 2014-12-04 01:08-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -478,7 +478,7 @@ msgstr "Campo Icono:"
 msgid "Change Icon"
 msgstr "Cambiar Icono"
 
-#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1712
+#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1724
 msgid "Update"
 msgstr "Actualización"
 
@@ -608,13 +608,13 @@ msgstr "Formulario de Acceso"
 
 #: ../admin/tabs/help.php:35 ../templates/basic/dashboard.php:676
 #: ../xooclasses/xoo.userultra.class.php:727
-#: ../xooclasses/xoo.userultra.user.php:2131
-#: ../xooclasses/xoo.userultra.user.php:2135
+#: ../xooclasses/xoo.userultra.user.php:2143
+#: ../xooclasses/xoo.userultra.user.php:2147
 msgid "My Account"
 msgstr "Mi Cuenta"
 
-#: ../admin/tabs/help.php:38 ../xooclasses/xoo.userultra.user.php:2271
-#: ../xooclasses/xoo.userultra.user.php:2610
+#: ../admin/tabs/help.php:38 ../xooclasses/xoo.userultra.user.php:2283
+#: ../xooclasses/xoo.userultra.user.php:2622
 msgid "Logout"
 msgstr "Cerrar Sesión"
 
@@ -1878,7 +1878,7 @@ msgstr ""
 msgid "Default Status"
 msgstr "Estado por Defecto"
 
-#: ../admin/tabs/settings.php:187 ../xooclasses/xoo.userultra.user.php:5141
+#: ../admin/tabs/settings.php:187 ../xooclasses/xoo.userultra.user.php:5153
 msgid "Pending"
 msgstr "Pendiente"
 
@@ -2221,7 +2221,7 @@ msgid "LinkedIn API Key Public"
 msgstr ""
 
 #: ../admin/tabs/settings.php:564 ../admin/tabs/settings.php:565
-msgid "Obtained when you created your applicaton."
+msgid "Obtained when you created your application."
 msgstr ""
 
 #: ../admin/tabs/settings.php:571
@@ -2587,8 +2587,8 @@ msgid "My Latest Photos:"
 msgstr "Mis Fotos:"
 
 #: ../templates/basic/dashboard.php:192
-#: ../xooclasses/xoo.userultra.user.php:2241
-#: ../xooclasses/xoo.userultra.user.php:2245
+#: ../xooclasses/xoo.userultra.user.php:2253
+#: ../xooclasses/xoo.userultra.user.php:2257
 msgid "My Friends"
 msgstr "Mis amigos"
 
@@ -2602,8 +2602,8 @@ msgstr ""
 "privado / restringido"
 
 #: ../templates/basic/dashboard.php:275
-#: ../xooclasses/xoo.userultra.user.php:2261
-#: ../xooclasses/xoo.userultra.user.php:2265
+#: ../xooclasses/xoo.userultra.user.php:2273
+#: ../xooclasses/xoo.userultra.user.php:2277
 msgid "My Posts"
 msgstr "Mis Mensajes"
 
@@ -2612,8 +2612,8 @@ msgid "Here you can manage your posts. "
 msgstr "Aquí usted puede administrar sus mensajes."
 
 #: ../templates/basic/dashboard.php:319 ../templates/basic/dashboard.php:354
-#: ../xooclasses/xoo.userultra.user.php:2172
-#: ../xooclasses/xoo.userultra.user.php:2176
+#: ../xooclasses/xoo.userultra.user.php:2184
+#: ../xooclasses/xoo.userultra.user.php:2188
 msgid "My Orders"
 msgstr "Mis pedidos"
 
@@ -2722,8 +2722,8 @@ msgstr ""
 
 #: ../templates/basic/dashboard.php:749
 #: ../xooclasses/xoo.userultra.admin.php:54
-#: ../xooclasses/xoo.userultra.user.php:2145
-#: ../xooclasses/xoo.userultra.user.php:2149
+#: ../xooclasses/xoo.userultra.user.php:2157
+#: ../xooclasses/xoo.userultra.user.php:2161
 msgid "Settings"
 msgstr "Ajustes"
 
@@ -2756,8 +2756,8 @@ msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr "HAGA CLIC AQUÍ PARA ACTUALIZAR SU EMAIL"
 
 #: ../templates/basic/dashboard.php:811 ../templates/basic/profile.php:174
-#: ../xooclasses/xoo.userultra.user.php:2224
-#: ../xooclasses/xoo.userultra.user.php:2228
+#: ../xooclasses/xoo.userultra.user.php:2236
+#: ../xooclasses/xoo.userultra.user.php:2240
 msgid "My Videos"
 msgstr "Mis videos"
 
@@ -2824,8 +2824,8 @@ msgid "Photos available only for registered users"
 msgstr "Fotos disponibles sólo para usuarios registrados"
 
 #: ../xooclasses/xoo.userultra.admin.php:52
-#: ../xooclasses/xoo.userultra.user.php:2091
-#: ../xooclasses/xoo.userultra.user.php:2095
+#: ../xooclasses/xoo.userultra.user.php:2103
+#: ../xooclasses/xoo.userultra.user.php:2107
 msgid "Dashboard"
 msgstr "Principal"
 
@@ -3158,12 +3158,12 @@ msgstr ""
 msgid "Prove you're not a robot"
 msgstr "Demuestra que no eres un robot"
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:288
+#: ../xooclasses/xoo.userultra.captchamodules.php:290
 #, fuzzy
 msgid "Enter Verification Words "
 msgstr "verificación de la Cuenta"
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:292
+#: ../xooclasses/xoo.userultra.captchamodules.php:294
 #, fuzzy
 msgid "Load Image"
 msgstr "Subir Imagen"
@@ -3496,7 +3496,7 @@ msgid "Type your new password again."
 msgstr "Escriba la nueva contraseña de nuevo."
 
 #: ../xooclasses/xoo.userultra.class.php:2300
-#: ../xooclasses/xoo.userultra.user.php:1693
+#: ../xooclasses/xoo.userultra.user.php:1705
 msgid "Hide from Public"
 msgstr "Ocultar al Público"
 
@@ -3877,21 +3877,21 @@ msgid "Filter by category: "
 msgstr "Filtrar por categoría:"
 
 #: ../xooclasses/xoo.userultra.photos.php:374
-#: ../xooclasses/xoo.userultra.user.php:4286
+#: ../xooclasses/xoo.userultra.user.php:4298
 msgid "Total found: "
 msgstr "Número de resultados:"
 
 #: ../xooclasses/xoo.userultra.photos.php:652
-#: ../xooclasses/xoo.userultra.user.php:4161
-#: ../xooclasses/xoo.userultra.user.php:4989
-#: ../xooclasses/xoo.userultra.user.php:5062
+#: ../xooclasses/xoo.userultra.user.php:4173
+#: ../xooclasses/xoo.userultra.user.php:5001
+#: ../xooclasses/xoo.userultra.user.php:5074
 msgid "Previous"
 msgstr "Anterior"
 
 #: ../xooclasses/xoo.userultra.photos.php:653
-#: ../xooclasses/xoo.userultra.user.php:4162
-#: ../xooclasses/xoo.userultra.user.php:4990
-#: ../xooclasses/xoo.userultra.user.php:5063
+#: ../xooclasses/xoo.userultra.user.php:4174
+#: ../xooclasses/xoo.userultra.user.php:5002
+#: ../xooclasses/xoo.userultra.user.php:5075
 msgid "Next"
 msgstr "Siguiente"
 
@@ -3965,7 +3965,7 @@ msgstr "Suelte archivos aquí"
 
 #: ../xooclasses/xoo.userultra.photos.php:2305
 #: ../xooclasses/xoo.userultra.publisher.php:1082
-#: ../xooclasses/xoo.userultra.user.php:4725
+#: ../xooclasses/xoo.userultra.user.php:4737
 msgid "Allowed Files"
 msgstr "Permitir Archivos"
 
@@ -4087,7 +4087,7 @@ msgid "Drop Images Here"
 msgstr "Soltar Imágenes Aquí"
 
 #: ../xooclasses/xoo.userultra.publisher.php:1141
-#: ../xooclasses/xoo.userultra.user.php:4780
+#: ../xooclasses/xoo.userultra.user.php:4792
 msgid "You may only upload one image at a time!"
 msgstr "Usted sólo puede subir una imagen a la vez!"
 
@@ -4373,133 +4373,133 @@ msgstr "ERROR! No has cambiado tu correo electrónico."
 msgid " ERROR! The email is in use already "
 msgstr "ERROR! El correo electrónico ya fue utilizando"
 
-#: ../xooclasses/xoo.userultra.user.php:1182
+#: ../xooclasses/xoo.userultra.user.php:1194
 msgid " Success!! Your email account has been changed to : "
 msgstr "Éxito !! Su cuenta de correo electrónico se ha cambiado a:"
 
-#: ../xooclasses/xoo.userultra.user.php:1229
-#: ../xooclasses/xoo.userultra.user.php:1308
+#: ../xooclasses/xoo.userultra.user.php:1241
+#: ../xooclasses/xoo.userultra.user.php:1320
 msgid " ERROR! Password must be identical "
 msgstr "ERROR! La contraseña debe ser idéntica"
 
-#: ../xooclasses/xoo.userultra.user.php:1235
-#: ../xooclasses/xoo.userultra.user.php:1314
+#: ../xooclasses/xoo.userultra.user.php:1247
+#: ../xooclasses/xoo.userultra.user.php:1326
 msgid " ERROR! Password should contain at least 7 alphanumeric characters "
 msgstr "ERROR! La contraseña debe contener al menos 7 caracteres alfanuméricos"
 
-#: ../xooclasses/xoo.userultra.user.php:1257
-#: ../xooclasses/xoo.userultra.user.php:1338
+#: ../xooclasses/xoo.userultra.user.php:1269
+#: ../xooclasses/xoo.userultra.user.php:1350
 msgid " Success!! The new password has been sent to "
 msgstr "Éxito !! La nueva contraseña ha sido enviada a"
 
-#: ../xooclasses/xoo.userultra.user.php:1340
+#: ../xooclasses/xoo.userultra.user.php:1352
 msgid "<a href=\""
 msgstr "<a href=\""
 
-#: ../xooclasses/xoo.userultra.user.php:1346
+#: ../xooclasses/xoo.userultra.user.php:1358
 msgid " ERROR! Invalid reset link "
 msgstr "ERROR! Enlace de restablecimiento no válido"
 
-#: ../xooclasses/xoo.userultra.user.php:1377
+#: ../xooclasses/xoo.userultra.user.php:1389
 msgid "Email not found"
 msgstr "Email no encontrado"
 
-#: ../xooclasses/xoo.userultra.user.php:1386
-#: ../xooclasses/xoo.userultra.user.php:1418
+#: ../xooclasses/xoo.userultra.user.php:1398
+#: ../xooclasses/xoo.userultra.user.php:1430
 msgid "Your account is not active yet."
 msgstr "Su cuenta aún no está activa."
 
-#: ../xooclasses/xoo.userultra.user.php:1408
+#: ../xooclasses/xoo.userultra.user.php:1420
 msgid "User not found"
 msgstr "Usuario no encontrado"
 
-#: ../xooclasses/xoo.userultra.user.php:1462
+#: ../xooclasses/xoo.userultra.user.php:1474
 msgid " A reset link has been sent to your email "
 msgstr "Enlace de reinicio ha sido enviado a su correo electrónico"
 
-#: ../xooclasses/xoo.userultra.user.php:2104
-#: ../xooclasses/xoo.userultra.user.php:2108
+#: ../xooclasses/xoo.userultra.user.php:2116
+#: ../xooclasses/xoo.userultra.user.php:2120
 msgid "Profile"
 msgstr "Perfil"
 
-#: ../xooclasses/xoo.userultra.user.php:2117
-#: ../xooclasses/xoo.userultra.user.php:2121
+#: ../xooclasses/xoo.userultra.user.php:2129
+#: ../xooclasses/xoo.userultra.user.php:2133
 msgid "Profile Customizer"
 msgstr "Personalizar Perfil"
 
-#: ../xooclasses/xoo.userultra.user.php:2159
-#: ../xooclasses/xoo.userultra.user.php:2163
+#: ../xooclasses/xoo.userultra.user.php:2171
+#: ../xooclasses/xoo.userultra.user.php:2175
 msgid "My Purchases"
 msgstr "Mis Compras"
 
-#: ../xooclasses/xoo.userultra.user.php:2191
+#: ../xooclasses/xoo.userultra.user.php:2203
 msgid "My Messages"
 msgstr "Mis Mensajes"
 
-#: ../xooclasses/xoo.userultra.user.php:2195
+#: ../xooclasses/xoo.userultra.user.php:2207
 msgid "Messages"
 msgstr "Mensajes"
 
-#: ../xooclasses/xoo.userultra.user.php:2201
+#: ../xooclasses/xoo.userultra.user.php:2213
 msgid "Unread Messages"
 msgstr "Mensajes no Leídos"
 
-#: ../xooclasses/xoo.userultra.user.php:2211
-#: ../xooclasses/xoo.userultra.user.php:2215
+#: ../xooclasses/xoo.userultra.user.php:2223
+#: ../xooclasses/xoo.userultra.user.php:2227
 msgid "Photos"
 msgstr "Fotos"
 
-#: ../xooclasses/xoo.userultra.user.php:2251
+#: ../xooclasses/xoo.userultra.user.php:2263
 msgid "Friend Requests"
 msgstr "Solicitudes de Amistad"
 
-#: ../xooclasses/xoo.userultra.user.php:2609
-#: ../xooclasses/xoo.userultra.user.php:2714
-#: ../xooclasses/xoo.userultra.user.php:4116
+#: ../xooclasses/xoo.userultra.user.php:2621
+#: ../xooclasses/xoo.userultra.user.php:2726
+#: ../xooclasses/xoo.userultra.user.php:4128
 msgid "See Profile"
 msgstr "Ver Perfil"
 
-#: ../xooclasses/xoo.userultra.user.php:3128
+#: ../xooclasses/xoo.userultra.user.php:3140
 msgid "Free"
 msgstr "Gratis"
 
-#: ../xooclasses/xoo.userultra.user.php:3426
+#: ../xooclasses/xoo.userultra.user.php:3438
 #, php-format
 msgid "Search %s"
 msgstr "Buscar %s"
 
-#: ../xooclasses/xoo.userultra.user.php:3887
+#: ../xooclasses/xoo.userultra.user.php:3899
 msgid "« Previous"
 msgstr "« Anterior"
 
-#: ../xooclasses/xoo.userultra.user.php:3888
+#: ../xooclasses/xoo.userultra.user.php:3900
 msgid "Next »"
 msgstr "Siguiente »"
 
-#: ../xooclasses/xoo.userultra.user.php:4403
-#: ../xooclasses/xoo.userultra.user.php:4422
+#: ../xooclasses/xoo.userultra.user.php:4415
+#: ../xooclasses/xoo.userultra.user.php:4434
 msgid "Country not available"
 msgstr "País no disponible"
 
-#: ../xooclasses/xoo.userultra.user.php:4449
+#: ../xooclasses/xoo.userultra.user.php:4461
 msgid "This user hasn't a description yet"
 msgstr "Este usuario aún no tiene una descripción"
 
-#: ../xooclasses/xoo.userultra.user.php:4689
+#: ../xooclasses/xoo.userultra.user.php:4701
 msgid "Drop Avatar here"
 msgstr "Desplazar Avatar Aquí"
 
-#: ../xooclasses/xoo.userultra.user.php:4795
+#: ../xooclasses/xoo.userultra.user.php:4807
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr ""
 "El archivo que ha seleccionado se supera el límite de tamaño máximo de "
 "archivo."
 
-#: ../xooclasses/xoo.userultra.user.php:5145
+#: ../xooclasses/xoo.userultra.user.php:5157
 msgid "Pending Admin"
 msgstr "Pendiente de Administrador"
 
-#: ../xooclasses/xoo.userultra.user.php:5149
+#: ../xooclasses/xoo.userultra.user.php:5161
 msgid "Active"
 msgstr "Activo"
 
