@@ -19,6 +19,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 
 <blockquote>
 <h3><strong>IMPORTANT PLEASE READ: </strong></h3>
+
 We have changed our Website's IP number. The forums and the website may be may down for some locations until it has been propagated.
 
 We apologize for any inconvenience this may have caused you.
