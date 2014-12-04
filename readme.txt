@@ -16,16 +16,6 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
-
-<blockquote>
-<h3><strong>IMPORTANT PLEASE READ: </strong></h3>
-
-We have changed our Website's IP number. The forums and the website may be may down for some locations until it has been propagated.
-
-We apologize for any inconvenience this may have caused you.
-
-</blockquote>
-
 <h3><strong>Useful Links:</strong></h3>
 <blockquote>
 <a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
