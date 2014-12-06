@@ -292,8 +292,8 @@ class XooUserCaptchaModule
                         </div>
                         <div id="recaptcha_control_holder">
                             <a href="javascript:Recaptcha.switch_type(\'image\');" title="'.__("Load Image",'xoousers').'" ><i class="fa fa-camera"></i></a>
-                            <a href="javascript:Recaptcha.switch_type(\'audio\');" title="Load Audio"><i class="fa fa-volume-up"></i></a>
-                            <a href="javascript:void(0);" id="recaptcha_reload_btn" onclick="Recaptcha.reload();" title="Refresh Image"><i class="fa fa-refresh"></i></a>
+                            <a href="javascript:Recaptcha.switch_type(\'audio\');" title="'.__("Load Audio",'xoousers').'"><i class="fa fa-volume-up"></i></a>
+                            <a href="javascript:void(0);" id="recaptcha_reload_btn" onclick="Recaptcha.reload();" title="'.__("Refresh Image",'xoousers').'"><i class="fa fa-refresh"></i></a>
                         </div> 
                 </div>
 

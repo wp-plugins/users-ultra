@@ -13,8 +13,7 @@ class XooPaypalPayment
 			
 			$this->handle_paypal_ipn($_POST);		
 		
-		}	
-		
+		}			
 		add_action( 'wp_ajax_package_add_new', array( $this, 'package_add_new' ));	
 		add_action( 'wp_ajax_get_packages_ajax', array( $this, 'get_packages_ajax' ));
 		add_action( 'wp_ajax_package_delete', array( $this, 'package_delete' ));

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-04 01:07-0300\n"
-"PO-Revision-Date: 2014-12-04 01:07-0300\n"
+"POT-Creation-Date: 2014-12-06 17:08-0300\n"
+"PO-Revision-Date: 2014-12-06 17:08-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../addons/photocategories/admin/admin.php:89
 #: ../admin/tabs/membership.php:62
-#: ../xooclasses/xoo.userultra.payment.paypal.php:610
+#: ../xooclasses/xoo.userultra.payment.paypal.php:609
 msgid "Name:"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../addons/photocategories/admin/panels/manage.php:24
 #: ../admin/tabs/membership.php:148
-#: ../xooclasses/xoo.userultra.payment.paypal.php:758
+#: ../xooclasses/xoo.userultra.payment.paypal.php:757
 #: ../xooclasses/xoo.userultra.user.php:684
 #: ../xooclasses/xoo.userultra.user.php:755
 #: ../xooclasses/xoo.userultra.user.php:824
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../addons/photocategories/admin/panels/manage.php:44
 #: ../templates/basic/dashboard.php:404 ../templates/basic/dashboard.php:824
-#: ../xooclasses/xoo.userultra.payment.paypal.php:789
+#: ../xooclasses/xoo.userultra.payment.paypal.php:788
 #: ../xooclasses/xoo.userultra.photos.php:1564
 #: ../xooclasses/xoo.userultra.photos.php:1704
 #: ../xooclasses/xoo.userultra.photos.php:1825
@@ -91,14 +91,14 @@ msgstr ""
 #: ../admin/tabs/fields.php:348 ../xooclasses/xoo.userultra.mymessage.php:946
 #: ../xooclasses/xoo.userultra.mymessage.php:1076
 #: ../xooclasses/xoo.userultra.mymessage.php:1128
-#: ../xooclasses/xoo.userultra.payment.paypal.php:819
+#: ../xooclasses/xoo.userultra.payment.paypal.php:818
 #: ../xooclasses/xoo.userultra.user.php:823
 msgid "Delete"
 msgstr ""
 
 #: ../addons/photocategories/admin/panels/manage.php:71
 #: ../admin/tabs/fields.php:348
-#: ../xooclasses/xoo.userultra.payment.paypal.php:819
+#: ../xooclasses/xoo.userultra.payment.paypal.php:818
 #: ../xooclasses/xoo.userultra.publisher.php:481
 msgid "Edit"
 msgstr ""
@@ -166,8 +166,8 @@ msgid "Click here to restore default fields"
 msgstr ""
 
 #: ../admin/tabs/fields.php:41 ../admin/tabs/membership.php:104
-#: ../xooclasses/xoo.userultra.payment.paypal.php:625
-#: ../xooclasses/xoo.userultra.payment.paypal.php:793
+#: ../xooclasses/xoo.userultra.payment.paypal.php:624
+#: ../xooclasses/xoo.userultra.payment.paypal.php:792
 #: ../xooclasses/xoo.userultra.photos.php:1832
 msgid "Type"
 msgstr ""
@@ -250,7 +250,7 @@ msgstr ""
 #: ../admin/tabs/fields.php:549 ../admin/tabs/fields.php:585
 #: ../admin/tabs/membership.php:114 ../admin/tabs/settings.php:48
 #: ../admin/tabs/settings.php:201 ../admin/tabs/settings.php:240
-#: ../xooclasses/xoo.userultra.payment.paypal.php:703
+#: ../xooclasses/xoo.userultra.payment.paypal.php:702
 msgid "No"
 msgstr ""
 
@@ -263,7 +263,7 @@ msgstr ""
 #: ../admin/tabs/fields.php:552 ../admin/tabs/fields.php:588
 #: ../admin/tabs/membership.php:113 ../admin/tabs/settings.php:49
 #: ../admin/tabs/settings.php:200 ../admin/tabs/settings.php:241
-#: ../xooclasses/xoo.userultra.payment.paypal.php:702
+#: ../xooclasses/xoo.userultra.payment.paypal.php:701
 msgid "Yes"
 msgstr ""
 
@@ -349,7 +349,7 @@ msgstr ""
 #: ../admin/tabs/fields.php:265 ../admin/tabs/fields.php:664
 #: ../admin/tabs/membership.php:147 ../templates/basic/dashboard.php:415
 #: ../templates/basic/dashboard.php:850
-#: ../xooclasses/xoo.userultra.payment.paypal.php:757
+#: ../xooclasses/xoo.userultra.payment.paypal.php:756
 msgid "Cancel"
 msgstr ""
 
@@ -1050,22 +1050,22 @@ msgid "Billing Period:"
 msgstr ""
 
 #: ../admin/tabs/membership.php:97
-#: ../xooclasses/xoo.userultra.payment.paypal.php:682
+#: ../xooclasses/xoo.userultra.payment.paypal.php:681
 msgid "Months"
 msgstr ""
 
 #: ../admin/tabs/membership.php:98
-#: ../xooclasses/xoo.userultra.payment.paypal.php:683
+#: ../xooclasses/xoo.userultra.payment.paypal.php:682
 msgid "Weeks"
 msgstr ""
 
 #: ../admin/tabs/membership.php:99
-#: ../xooclasses/xoo.userultra.payment.paypal.php:684
+#: ../xooclasses/xoo.userultra.payment.paypal.php:683
 msgid "Days"
 msgstr ""
 
 #: ../admin/tabs/membership.php:100
-#: ../xooclasses/xoo.userultra.payment.paypal.php:685
+#: ../xooclasses/xoo.userultra.payment.paypal.php:684
 msgid "Years"
 msgstr ""
 
@@ -1078,32 +1078,32 @@ msgid "One-Time"
 msgstr ""
 
 #: ../admin/tabs/membership.php:111
-#: ../xooclasses/xoo.userultra.payment.paypal.php:691
+#: ../xooclasses/xoo.userultra.payment.paypal.php:690
 msgid "Requires Admin Moderation:"
 msgstr ""
 
 #: ../admin/tabs/membership.php:119
-#: ../xooclasses/xoo.userultra.payment.paypal.php:728
+#: ../xooclasses/xoo.userultra.payment.paypal.php:727
 msgid "Pricing Table Customization"
 msgstr ""
 
 #: ../admin/tabs/membership.php:122
-#: ../xooclasses/xoo.userultra.payment.paypal.php:731
+#: ../xooclasses/xoo.userultra.payment.paypal.php:730
 msgid "Name/Price Font Color"
 msgstr ""
 
 #: ../admin/tabs/membership.php:127
-#: ../xooclasses/xoo.userultra.payment.paypal.php:736
+#: ../xooclasses/xoo.userultra.payment.paypal.php:735
 msgid "Name/Price Background Color"
 msgstr ""
 
 #: ../admin/tabs/membership.php:133
-#: ../xooclasses/xoo.userultra.payment.paypal.php:742
+#: ../xooclasses/xoo.userultra.payment.paypal.php:741
 msgid "Sign Up Button Text Color"
 msgstr ""
 
 #: ../admin/tabs/membership.php:139
-#: ../xooclasses/xoo.userultra.payment.paypal.php:748
+#: ../xooclasses/xoo.userultra.payment.paypal.php:747
 msgid "Sign Up Button Background Color"
 msgstr ""
 
@@ -2470,8 +2470,8 @@ msgid "Add Gallery"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:409
-#: ../xooclasses/xoo.userultra.payment.paypal.php:614
-#: ../xooclasses/xoo.userultra.payment.paypal.php:790
+#: ../xooclasses/xoo.userultra.payment.paypal.php:613
+#: ../xooclasses/xoo.userultra.payment.paypal.php:789
 #: ../xooclasses/xoo.userultra.photos.php:1568
 #: ../xooclasses/xoo.userultra.photos.php:1708
 msgid "Description"
@@ -2973,6 +2973,14 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.captchamodules.php:294
 msgid "Load Image"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:295
+msgid "Load Audio"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:296
+msgid "Refresh Image"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:210
@@ -3509,7 +3517,7 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.mymessage.php:566
 #: ../xooclasses/xoo.userultra.mymessage.php:936
 #: ../xooclasses/xoo.userultra.mymessage.php:959
-#: ../xooclasses/xoo.userultra.payment.paypal.php:795
+#: ../xooclasses/xoo.userultra.payment.paypal.php:794
 #: ../xooclasses/xoo.userultra.socials.php:496
 #: ../xooclasses/xoo.userultra.socials.php:603
 #: ../xooclasses/xoo.userultra.user.php:665
@@ -3603,60 +3611,60 @@ msgstr ""
 msgid "Package"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:475
+#: ../xooclasses/xoo.userultra.payment.paypal.php:474
 msgid "You have no packages yet."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:606
+#: ../xooclasses/xoo.userultra.payment.paypal.php:605
 msgid "Edit Package"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:620
-#: ../xooclasses/xoo.userultra.payment.paypal.php:791
+#: ../xooclasses/xoo.userultra.payment.paypal.php:619
+#: ../xooclasses/xoo.userultra.payment.paypal.php:790
 msgid "Price"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:645
+#: ../xooclasses/xoo.userultra.payment.paypal.php:644
 msgid "Every"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:667
+#: ../xooclasses/xoo.userultra.payment.paypal.php:666
 msgid "Billing Period"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:788
+#: ../xooclasses/xoo.userultra.payment.paypal.php:787
 msgid "ID"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:792
+#: ../xooclasses/xoo.userultra.payment.paypal.php:791
 msgid "Period"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:805
+#: ../xooclasses/xoo.userultra.payment.paypal.php:804
 msgid " month(s)"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:806
+#: ../xooclasses/xoo.userultra.payment.paypal.php:805
 msgid " week(s)"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:807
+#: ../xooclasses/xoo.userultra.payment.paypal.php:806
 msgid " day(s)"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:808
+#: ../xooclasses/xoo.userultra.payment.paypal.php:807
 msgid " year(s)"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:816
+#: ../xooclasses/xoo.userultra.payment.paypal.php:815
 msgid "every "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:836
+#: ../xooclasses/xoo.userultra.payment.paypal.php:835
 msgid "There are no packages yet."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:882
+#: ../xooclasses/xoo.userultra.payment.paypal.php:881
 msgid "The Package has been updated"
 msgstr ""
 
