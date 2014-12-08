@@ -103,8 +103,8 @@ $this->create_plugin_setting(
         'input',
         'media_uploading_folder',
         __('Upload Folder:','xoousers'),array(),
-        __('This is the folder where the user photos will be stored in. Please make sure to assing 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers'),
-        __('This is the folder where the user photos will be stored in. Please make sure to assing 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers')
+        __('This is the folder where the user photos will be stored in. Please make sure to assign 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers'),
+        __('This is the folder where the user photos will be stored in. Please make sure to assign 755 privileges to it. The default folder is <strong>wp-content/usersultramedia</strong>','xoousers')
 );
 
 $this->create_plugin_setting(
@@ -632,7 +632,7 @@ $this->create_plugin_setting(
         'twitter_consumer_key',
         __('Consumer Key','xoousers'),array(),
         __('Paste the Consumer Key','xoousers'),
-        __('Obtained when you created your Applicatoin at Twitter Developer Center','xoousers')
+        __('Obtained when you created your Application at Twitter Developer Center','xoousers')
 );  
 
 $this->create_plugin_setting(

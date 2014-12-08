@@ -145,7 +145,6 @@ class XooUserPhoto {
 		}
 	
 		
-		
 	}
 	
 	public function userultra_uid_query_var( $query_vars )
@@ -175,8 +174,7 @@ class XooUserPhoto {
 		$video_type= sanitize_text_field($_POST['video_type']);
 		
 		if (is_user_logged_in() && isset($user_id) && isset($video_name)) 
-		{
-			
+		{			
 			
 			$new_message = array(
 						'video_id'        => NULL,

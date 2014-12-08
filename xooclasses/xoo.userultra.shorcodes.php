@@ -48,9 +48,6 @@ class XooShortCode {
 		
 		add_shortcode( 'usersultra_front_publisher', array(&$this,'funnction_front_publisher') );
 		
-		
-		
-		
 		//
 		add_shortcode( 'one_third_first', array(&$this,'respo_base_grid_4_first') );
 		add_shortcode( 'one_third',  array(&$this,'respo_base_grid_4'));

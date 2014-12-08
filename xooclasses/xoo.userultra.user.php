@@ -51,8 +51,7 @@ class XooUserUser {
 		
 		add_action('manage_users_columns', array( $this, 'uultra_modify_user_table' ));
 		add_action('manage_users_custom_column', array( $this, 'uultra_modify_user_table_row' ),10,3);
-		
-		
+			
 		
 		$this->method_dect = array(
             'text' => 'text_box',
@@ -1667,6 +1666,7 @@ class XooUserUser {
 							}
 							if (isset($loop) && $loop[0] != '') {
 							  $counter =0;
+							  
 								foreach($loop as $option) {
 								   
 								   if($counter >0)
@@ -1675,7 +1675,10 @@ class XooUserUser {
 								  $option = trim($option);
 									$html .= '<div class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" '.$disabled.' id="uultra_multi_box_'.$meta.'_'.$counter.'" value="'.$option.'" ';
 									
-									 $values = explode(', ', $this->get_user_meta($meta));
+							       // if(is_array($this->get_user_meta($meta)))
+								   
+								   
+									$values = explode(', ', $this->get_user_meta($meta));
 									
 									if (in_array($option, $values)) {
 									$html .= 'checked="checked"';

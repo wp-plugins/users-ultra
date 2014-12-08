@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-06 17:08-0300\n"
-"PO-Revision-Date: 2014-12-06 17:08-0300\n"
+"POT-Creation-Date: 2014-12-08 02:22-0300\n"
+"PO-Revision-Date: 2014-12-08 02:22-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -456,7 +456,7 @@ msgstr ""
 msgid "Change Icon"
 msgstr ""
 
-#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1724
+#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1728
 msgid "Update"
 msgstr ""
 
@@ -582,13 +582,13 @@ msgstr ""
 
 #: ../admin/tabs/help.php:35 ../templates/basic/dashboard.php:676
 #: ../xooclasses/xoo.userultra.class.php:727
-#: ../xooclasses/xoo.userultra.user.php:2143
 #: ../xooclasses/xoo.userultra.user.php:2147
+#: ../xooclasses/xoo.userultra.user.php:2151
 msgid "My Account"
 msgstr ""
 
-#: ../admin/tabs/help.php:38 ../xooclasses/xoo.userultra.user.php:2283
-#: ../xooclasses/xoo.userultra.user.php:2622
+#: ../admin/tabs/help.php:38 ../xooclasses/xoo.userultra.user.php:2287
+#: ../xooclasses/xoo.userultra.user.php:2626
 msgid "Logout"
 msgstr ""
 
@@ -1712,7 +1712,7 @@ msgstr ""
 #: ../admin/tabs/settings.php:106 ../admin/tabs/settings.php:107
 msgid ""
 "This is the folder where the user photos will be stored in. Please make sure "
-"to assing 755 privileges to it. The default folder is <strong>wp-content/"
+"to assign 755 privileges to it. The default folder is <strong>wp-content/"
 "usersultramedia</strong>"
 msgstr ""
 
@@ -1775,7 +1775,7 @@ msgstr ""
 msgid "Default Status"
 msgstr ""
 
-#: ../admin/tabs/settings.php:187 ../xooclasses/xoo.userultra.user.php:5153
+#: ../admin/tabs/settings.php:187 ../xooclasses/xoo.userultra.user.php:5157
 msgid "Pending"
 msgstr ""
 
@@ -2175,8 +2175,8 @@ msgstr ""
 msgid "Paste the Consumer Key"
 msgstr ""
 
-#: ../admin/tabs/settings.php:635 ../admin/tabs/settings.php:643
-msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
+#: ../admin/tabs/settings.php:635
+msgid "Obtained when you created your Application at Twitter Developer Center"
 msgstr ""
 
 #: ../admin/tabs/settings.php:641
@@ -2185,6 +2185,10 @@ msgstr ""
 
 #: ../admin/tabs/settings.php:642
 msgid "Paste the Consumer Secret"
+msgstr ""
+
+#: ../admin/tabs/settings.php:643
+msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
 msgstr ""
 
 #: ../admin/tabs/settings.php:649
@@ -2421,8 +2425,8 @@ msgid "My Latest Photos:"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:192
-#: ../xooclasses/xoo.userultra.user.php:2253
 #: ../xooclasses/xoo.userultra.user.php:2257
+#: ../xooclasses/xoo.userultra.user.php:2261
 msgid "My Friends"
 msgstr ""
 
@@ -2433,8 +2437,8 @@ msgid ""
 msgstr ""
 
 #: ../templates/basic/dashboard.php:275
-#: ../xooclasses/xoo.userultra.user.php:2273
 #: ../xooclasses/xoo.userultra.user.php:2277
+#: ../xooclasses/xoo.userultra.user.php:2281
 msgid "My Posts"
 msgstr ""
 
@@ -2443,8 +2447,8 @@ msgid "Here you can manage your posts. "
 msgstr ""
 
 #: ../templates/basic/dashboard.php:319 ../templates/basic/dashboard.php:354
-#: ../xooclasses/xoo.userultra.user.php:2184
 #: ../xooclasses/xoo.userultra.user.php:2188
+#: ../xooclasses/xoo.userultra.user.php:2192
 msgid "My Orders"
 msgstr ""
 
@@ -2550,8 +2554,8 @@ msgstr ""
 
 #: ../templates/basic/dashboard.php:749
 #: ../xooclasses/xoo.userultra.admin.php:54
-#: ../xooclasses/xoo.userultra.user.php:2157
 #: ../xooclasses/xoo.userultra.user.php:2161
+#: ../xooclasses/xoo.userultra.user.php:2165
 msgid "Settings"
 msgstr ""
 
@@ -2584,8 +2588,8 @@ msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:811 ../templates/basic/profile.php:174
-#: ../xooclasses/xoo.userultra.user.php:2236
 #: ../xooclasses/xoo.userultra.user.php:2240
+#: ../xooclasses/xoo.userultra.user.php:2244
 msgid "My Videos"
 msgstr ""
 
@@ -2650,8 +2654,8 @@ msgid "Photos available only for registered users"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.admin.php:52
-#: ../xooclasses/xoo.userultra.user.php:2103
 #: ../xooclasses/xoo.userultra.user.php:2107
+#: ../xooclasses/xoo.userultra.user.php:2111
 msgid "Dashboard"
 msgstr ""
 
@@ -3301,7 +3305,7 @@ msgid "Type your new password again."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:2300
-#: ../xooclasses/xoo.userultra.user.php:1705
+#: ../xooclasses/xoo.userultra.user.php:1709
 msgid "Hide from Public"
 msgstr ""
 
@@ -3677,21 +3681,21 @@ msgid "Filter by category: "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:374
-#: ../xooclasses/xoo.userultra.user.php:4298
+#: ../xooclasses/xoo.userultra.user.php:4302
 msgid "Total found: "
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:652
-#: ../xooclasses/xoo.userultra.user.php:4173
-#: ../xooclasses/xoo.userultra.user.php:5001
-#: ../xooclasses/xoo.userultra.user.php:5074
+#: ../xooclasses/xoo.userultra.user.php:4177
+#: ../xooclasses/xoo.userultra.user.php:5005
+#: ../xooclasses/xoo.userultra.user.php:5078
 msgid "Previous"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:653
-#: ../xooclasses/xoo.userultra.user.php:4174
-#: ../xooclasses/xoo.userultra.user.php:5002
-#: ../xooclasses/xoo.userultra.user.php:5075
+#: ../xooclasses/xoo.userultra.user.php:4178
+#: ../xooclasses/xoo.userultra.user.php:5006
+#: ../xooclasses/xoo.userultra.user.php:5079
 msgid "Next"
 msgstr ""
 
@@ -3764,7 +3768,7 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.photos.php:2305
 #: ../xooclasses/xoo.userultra.publisher.php:1082
-#: ../xooclasses/xoo.userultra.user.php:4737
+#: ../xooclasses/xoo.userultra.user.php:4741
 msgid "Allowed Files"
 msgstr ""
 
@@ -3886,7 +3890,7 @@ msgid "Drop Images Here"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.publisher.php:1141
-#: ../xooclasses/xoo.userultra.user.php:4792
+#: ../xooclasses/xoo.userultra.user.php:4796
 msgid "You may only upload one image at a time!"
 msgstr ""
 
@@ -4203,87 +4207,87 @@ msgstr ""
 msgid " A reset link has been sent to your email "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2116
 #: ../xooclasses/xoo.userultra.user.php:2120
+#: ../xooclasses/xoo.userultra.user.php:2124
 msgid "Profile"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2129
 #: ../xooclasses/xoo.userultra.user.php:2133
+#: ../xooclasses/xoo.userultra.user.php:2137
 msgid "Profile Customizer"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2171
 #: ../xooclasses/xoo.userultra.user.php:2175
+#: ../xooclasses/xoo.userultra.user.php:2179
 msgid "My Purchases"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2203
+#: ../xooclasses/xoo.userultra.user.php:2207
 msgid "My Messages"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2207
+#: ../xooclasses/xoo.userultra.user.php:2211
 msgid "Messages"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2213
+#: ../xooclasses/xoo.userultra.user.php:2217
 msgid "Unread Messages"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2223
 #: ../xooclasses/xoo.userultra.user.php:2227
+#: ../xooclasses/xoo.userultra.user.php:2231
 msgid "Photos"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2263
+#: ../xooclasses/xoo.userultra.user.php:2267
 msgid "Friend Requests"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:2621
-#: ../xooclasses/xoo.userultra.user.php:2726
-#: ../xooclasses/xoo.userultra.user.php:4128
+#: ../xooclasses/xoo.userultra.user.php:2625
+#: ../xooclasses/xoo.userultra.user.php:2730
+#: ../xooclasses/xoo.userultra.user.php:4132
 msgid "See Profile"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3140
+#: ../xooclasses/xoo.userultra.user.php:3144
 msgid "Free"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3438
+#: ../xooclasses/xoo.userultra.user.php:3442
 #, php-format
 msgid "Search %s"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3899
+#: ../xooclasses/xoo.userultra.user.php:3903
 msgid "« Previous"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:3900
+#: ../xooclasses/xoo.userultra.user.php:3904
 msgid "Next »"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4415
-#: ../xooclasses/xoo.userultra.user.php:4434
+#: ../xooclasses/xoo.userultra.user.php:4419
+#: ../xooclasses/xoo.userultra.user.php:4438
 msgid "Country not available"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4461
+#: ../xooclasses/xoo.userultra.user.php:4465
 msgid "This user hasn't a description yet"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4701
+#: ../xooclasses/xoo.userultra.user.php:4705
 msgid "Drop Avatar here"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:4807
+#: ../xooclasses/xoo.userultra.user.php:4811
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:5157
+#: ../xooclasses/xoo.userultra.user.php:5161
 msgid "Pending Admin"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.user.php:5161
+#: ../xooclasses/xoo.userultra.user.php:5165
 msgid "Active"
 msgstr ""
 
