@@ -448,7 +448,7 @@ $this->create_plugin_setting(
                         'recaptcha_public_key',
                         __('reCaptcha Public Key', 'xoousers'), array(),
                         __('Enter your reCaptcha Public Key. You can sign up for a free reCaptcha account <a href="http://www.google.com/recaptcha" title="Get a reCaptcha Key" target="_blank">here</a>.', 'xoousers'),
-                        __('Your reCaptcha kays are required to use reCaptcha. You can register your site for a free key on the Google reCaptcha page.', 'xoousers')
+                        __('Your reCaptcha keys are required to use reCaptcha. You can register your site for a free key on the Google reCaptcha page.', 'xoousers')
                 );
 
                 $this->create_plugin_setting(
@@ -787,7 +787,7 @@ $this->create_plugin_setting(
 		1 => __('Enabled, logged-in users may view other user profiles','xoousers'), 
 		0 => __('Disabled, users may only view their own profile','xoousers')),
 	__('Enable or disable logged-in user viewing of other user profiles. Admin users can always view all profiles.','xoousers'),
-  __('If enabled, logged-in users are allowed to view other user profiles. If disabled, logged-in users may only view theor own profile.','xoousers')
+  __('If enabled, logged-in users are allowed to view other user profiles. If disabled, logged-in users may only view their own profile.','xoousers')
         );
 
 $this->create_plugin_setting(
