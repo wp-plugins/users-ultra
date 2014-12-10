@@ -2269,7 +2269,7 @@ class XooUserPhoto {
 						<div class="drag-drop-inside">
 							<p class="drag-drop-info"><?php	_e('Drop files here', 'xoousers') ; ?></p>
 							<p><?php _ex('or', 'Uploader: Drop files here - or - Select Files'); ?></p>
-							<p class="drag-drop-buttons"><input id="plupload-browse-button" type="button" value="<?php esc_attr_e('Select Files'); ?>" class="button" /></p>
+							<p class="drag-drop-buttons"><input id="plupload-browse-button" type="button" value=" <?php	_e('Select files', 'xoousers') ; ?>" class="button" /></p>
 														
 						</div>
                         

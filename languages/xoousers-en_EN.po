@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-09 01:16-0300\n"
-"PO-Revision-Date: 2014-12-09 01:16-0300\n"
+"POT-Creation-Date: 2014-12-10 02:30-0300\n"
+"PO-Revision-Date: 2014-12-10 02:30-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -456,7 +456,8 @@ msgstr ""
 msgid "Change Icon"
 msgstr ""
 
-#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.user.php:1727
+#: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.publisher.php:213
+#: ../xooclasses/xoo.userultra.user.php:1727
 msgid "Update"
 msgstr ""
 
@@ -2488,6 +2489,7 @@ msgid "Description"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:416 ../templates/basic/dashboard.php:851
+#: ../xooclasses/xoo.userultra.publisher.php:380
 msgid "Submit"
 msgstr ""
 
@@ -3772,6 +3774,10 @@ msgstr ""
 msgid "Drop files here"
 msgstr ""
 
+#: ../xooclasses/xoo.userultra.photos.php:2272
+msgid "Select files"
+msgstr ""
+
 #: ../xooclasses/xoo.userultra.photos.php:2303
 #: ../xooclasses/xoo.userultra.publisher.php:1082
 #: ../xooclasses/xoo.userultra.user.php:4740
@@ -3893,6 +3899,10 @@ msgstr ""
 
 #: ../xooclasses/xoo.userultra.publisher.php:1043
 msgid "Drop Images Here"
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.publisher.php:1046
+msgid "Select Files"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.publisher.php:1141

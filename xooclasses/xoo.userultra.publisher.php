@@ -210,7 +210,7 @@ class XooPublisher
                 
                 <div class="field_row">
                     
-                     <p><input type="submit" name="xoouserultra-submit-post"  class="xoouserultra-button" value="Update"></p>
+                     <p><input type="submit" name="xoouserultra-submit-post"  class="xoouserultra-button" value="<?php echo __('Update','xoousers')?>"></p>
                  
                  </div>
                  
@@ -377,7 +377,7 @@ class XooPublisher
                 
                 <div class="field_row">
                     
-                     <p><input type="submit" name="xoouserultra-submit-post"  class="xoouserultra-button" value="Submit"></p>
+                     <p><input type="submit" name="xoouserultra-submit-post"  class="xoouserultra-button" value="<?php echo __('Submit','xoousers')?>"></p>
                  
                  </div>
                  
@@ -1043,7 +1043,7 @@ class XooPublisher
 							<p class="drag-drop-info"><?php	_e('Drop Images Here', 'xoousers') ; ?></p>
                             <div style="display:">
 							<p><?php _ex('or', 'Uploader: Drop files here - or - Select Files'); ?></p>
-							<p class="drag-drop-buttons"><input id="plupload-browse-button-postphoto" type="button" value="<?php esc_attr_e('Select Files'); ?>" class="button" /></p>
+							<p class="drag-drop-buttons"><input id="plupload-browse-button-postphoto" type="button" value="<?php	_e('Select Files', 'xoousers') ; ?>" class="button" /></p>
 								</div>						
 						</div>
                         
