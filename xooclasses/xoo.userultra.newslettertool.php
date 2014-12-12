@@ -12,8 +12,7 @@ class XooNewsLetter extends XooUserUltraCommon
 	}
 	
 	public function set_malichimp_api () 
-	{	
-		
+	{			
 	
 	}
 	
@@ -65,8 +64,7 @@ class XooNewsLetter extends XooUserUltraCommon
                 'email'             => array('email'=> $email)
 		));
 		
-	}
-	
+	}	
 	/*Subscription Status*/
 	function mailchimp_is_subscriber($user_id, $list_id=null)
 	{
@@ -92,7 +90,6 @@ class XooNewsLetter extends XooUserUltraCommon
 		return false;
 		
 	}
-
 }
 $key = "subscribe";
 $this->{$key} = new XooNewsLetter();

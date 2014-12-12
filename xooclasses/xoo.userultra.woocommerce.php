@@ -44,8 +44,7 @@ class XooWooCommerce {
 					}else if('separator' == $field['type']){
 						array_push($separator_array, $field['name']);
 					}				
-				}
-				
+				}				
 				/* Add WooCommerce profile fields */
 				$woo_meta  = array();
 				if(file_exists($this->woocommerce_file_path)){
@@ -63,7 +62,6 @@ class XooWooCommerce {
 				$new_index = max(array_keys($fields));
 
 				foreach($woo_meta as $group => $array) {
-
 					
 					if(!in_array($array['title'], $separator_array)){
 						$fields[$new_index+=10] = array( 
@@ -161,7 +159,7 @@ class XooWooCommerce {
 				}
 				
 				update_option('usersultra_profile_fields', $fields);
-				//echo '<div class="updated"><p><strong>'.__('WooCommerce customer fields have been added successfully.','xoousers').'</strong></p></div>';
+			
 				
 				}
 				
@@ -278,7 +276,7 @@ class XooWooCommerce {
 				}
 				
 				update_option('usersultra_profile_fields', $fields);
-				//echo '<div class="updated"><p><strong>'.__('WooCommerce customer fields have been added successfully.','xoousers').'</strong></p></div>';
+				
 				
 				}
 					

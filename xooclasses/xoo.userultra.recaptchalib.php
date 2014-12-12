@@ -141,6 +141,7 @@ function recaptcha_get_html ($pubkey, $error = null, $use_ssl = false)
 
 
 
+if (!class_exists('ReCaptchaResponse')) {
 
 /**
  * A ReCaptchaResponse is returned from recaptcha_check_answer()
@@ -148,6 +149,8 @@ function recaptcha_get_html ($pubkey, $error = null, $use_ssl = false)
 class ReCaptchaResponse {
         var $is_valid;
         var $error;
+}
+
 }
 
 /**
