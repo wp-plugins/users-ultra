@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite v1.3.72\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-10 02:30-0300\n"
-"PO-Revision-Date: 2014-12-10 02:30-0300\n"
+"POT-Creation-Date: 2014-12-14 15:03-0300\n"
+"PO-Revision-Date: 2014-12-14 15:03-0300\n"
 "Last-Translator: \n"
 "Language-Team: Elger Lindgren <elger@20x.se>\n"
 "Language: sv_SE\n"
@@ -1211,7 +1211,7 @@ msgstr "5 senaste transaktionenra"
 #: xooclasses/xoo.userultra.publisher.php:463
 #: xooclasses/xoo.userultra.socials.php:495
 #: xooclasses/xoo.userultra.socials.php:602
-#: xooclasses/xoo.userultra.woocommerce.php:352
+#: xooclasses/xoo.userultra.woocommerce.php:350
 msgid "Date"
 msgstr "Datum"
 
@@ -1229,7 +1229,7 @@ msgstr "Transaktions ID"
 #: admin/tabs/main.php:141 admin/tabs/orders.php:152
 #: xooclasses/xoo.userultra.order.php:398
 #: xooclasses/xoo.userultra.publisher.php:464
-#: xooclasses/xoo.userultra.woocommerce.php:354
+#: xooclasses/xoo.userultra.woocommerce.php:352
 msgid "Status"
 msgstr "Status"
 
@@ -4728,19 +4728,19 @@ msgstr "Tillämpa"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.order.php:375
-#: xooclasses/xoo.userultra.woocommerce.php:331
+#: xooclasses/xoo.userultra.woocommerce.php:329
 msgid "You have no orders."
 msgstr "Du har inga beställningar."
 
 # @ xoousers
 #: xooclasses/xoo.userultra.order.php:394
-#: xooclasses/xoo.userultra.woocommerce.php:350
+#: xooclasses/xoo.userultra.woocommerce.php:348
 msgid "Order #"
 msgstr "Sorteringsordning #"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.order.php:395
-#: xooclasses/xoo.userultra.woocommerce.php:351
+#: xooclasses/xoo.userultra.woocommerce.php:349
 msgid "Total"
 msgstr "Total"
 
@@ -5613,11 +5613,11 @@ msgid "Active"
 msgstr "Aktivera"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.woocommerce.php:182
+#: xooclasses/xoo.userultra.woocommerce.php:180
 msgid "Woocommerce File Doesn't Exist"
 msgstr "Woocommerce-filen finns inte"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.woocommerce.php:353
+#: xooclasses/xoo.userultra.woocommerce.php:351
 msgid "Modified Date"
 msgstr "Modifierat datum"

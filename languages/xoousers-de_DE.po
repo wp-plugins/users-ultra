@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-10 02:30-0300\n"
-"PO-Revision-Date: 2014-12-10 02:30-0300\n"
+"POT-Creation-Date: 2014-12-14 15:03-0300\n"
+"PO-Revision-Date: 2014-12-14 15:03-0300\n"
 "Last-Translator: \n"
 "Language-Team: wdbase.de <kontakt@wdbase.de>\n"
 "Language: de_DE\n"
@@ -1061,7 +1061,7 @@ msgstr "5 letzten Transaktionen"
 #: ../xooclasses/xoo.userultra.publisher.php:463
 #: ../xooclasses/xoo.userultra.socials.php:495
 #: ../xooclasses/xoo.userultra.socials.php:602
-#: ../xooclasses/xoo.userultra.woocommerce.php:352
+#: ../xooclasses/xoo.userultra.woocommerce.php:350
 msgid "Date"
 msgstr "Datum"
 
@@ -1076,7 +1076,7 @@ msgstr "Transaktions-ID"
 #: ../admin/tabs/main.php:141 ../admin/tabs/orders.php:152
 #: ../xooclasses/xoo.userultra.order.php:398
 #: ../xooclasses/xoo.userultra.publisher.php:464
-#: ../xooclasses/xoo.userultra.woocommerce.php:354
+#: ../xooclasses/xoo.userultra.woocommerce.php:352
 msgid "Status"
 msgstr "Status"
 
@@ -3993,13 +3993,13 @@ msgid "Apply"
 msgstr "Anwenden"
 
 #: ../xooclasses/xoo.userultra.order.php:375
-#: ../xooclasses/xoo.userultra.woocommerce.php:331
+#: ../xooclasses/xoo.userultra.woocommerce.php:329
 #, fuzzy
 msgid "You have no orders."
 msgstr "Bestellungen"
 
 #: ../xooclasses/xoo.userultra.order.php:394
-#: ../xooclasses/xoo.userultra.woocommerce.php:350
+#: ../xooclasses/xoo.userultra.woocommerce.php:348
 #, fuzzy
 msgid "Order #"
 msgstr ""
@@ -4009,7 +4009,7 @@ msgstr ""
 "wie diese auf der Seite angezeigt werden sollen."
 
 #: ../xooclasses/xoo.userultra.order.php:395
-#: ../xooclasses/xoo.userultra.woocommerce.php:351
+#: ../xooclasses/xoo.userultra.woocommerce.php:349
 #, fuzzy
 msgid "Total"
 msgstr "Gesamt: "
@@ -4749,11 +4749,11 @@ msgstr "Admin -  Nachricht bei ausstehender Aktivierung"
 msgid "Active"
 msgstr "Ihr Account wurde bis jetzt noch nicht aktiviert."
 
-#: ../xooclasses/xoo.userultra.woocommerce.php:182
+#: ../xooclasses/xoo.userultra.woocommerce.php:180
 msgid "Woocommerce File Doesn't Exist"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.woocommerce.php:353
+#: ../xooclasses/xoo.userultra.woocommerce.php:351
 #, fuzzy
 msgid "Modified Date"
 msgstr "Datum"

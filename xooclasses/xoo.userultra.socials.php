@@ -273,8 +273,7 @@ class XooSocial
 			
 			//auto friend			
 			
-			$this->auto_friend($item_id);	
-			
+			$this->auto_friend($item_id);				
 			
 			$message = __('Request approved','xoousers'); 	
 		}
@@ -290,8 +289,7 @@ class XooSocial
 		{
 			$sql = "DELETE FROM " . $wpdb->prefix . "usersultra_friends  WHERE friend_id  = '$item_id' AND friend_receiver_id = '$logged_user_id'";
 			
-			$message = __('Request rejected','xoousers'); 	
-		}	
+			$message = __('Request rejected','xoousers'); 			}	
 		
 		echo $message;	 
 		 
@@ -323,8 +321,7 @@ class XooSocial
 				$friend_receiver_id =	$friend->friend_receiver_id;
 				$friend_sender_user_id =	$friend->friend_sender_user_id;					
 					
-			 } 
-		
+			 } 		
 		  }	 
 		
 		$data = array(
@@ -447,8 +444,7 @@ class XooSocial
 			  foreach ( $res as $like )
 			 {
 				$total = $like->total;				
-			 }
-			 
+			 }			 
 		
 		  }else{
 			  
@@ -476,8 +472,7 @@ class XooSocial
 		
 		//echo $sql;
 			
-		$rows = $wpdb->get_results($sql);
-		
+		$rows = $wpdb->get_results($sql);		
 		$html = " ";
 		$html .='<div class="tablenav">	';	
 		
@@ -572,8 +567,7 @@ class XooSocial
 	{
 		global $wpdb, $current_user, $xoouserultra;
 		
-		$user_id = get_current_user_id();		
-	
+		$user_id = get_current_user_id();			
 		$sql = ' SELECT friend.*, u.ID
 		  
 		  FROM ' . $wpdb->prefix . 'usersultra_friends friend  ' ;		

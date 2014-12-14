@@ -18,9 +18,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		$this->version = $this->plugin_data['Version'];
 		
 		$this->set_default_email_messages();		
-		
-		$this->update_default_option_ini();
-		
+		$this->update_default_option_ini();		
 		$this->set_font_awesome();
 		
 		
@@ -906,23 +904,7 @@ class XooUserAdmin extends XooUserUltraCommon
            
            <h2>XOO USERS </h2>
            
-           <div id="icon-users" class="icon32"></div>
-			
-		            
-            
-            <h2 class="nav-tab-wrapper"><?php $this->admin_tabs(); ?></h2>
-            
-            
-			<div class="<?php echo $this->slug; ?>-admin-contain">
-            
-           
-				
-				<?php $this->include_tab_content(); ?>
-				
-				<div class="clear"></div>
-				
-			</div>
-			
+          			
 		</div>
 
 	<?php }
