@@ -135,14 +135,14 @@ class XooUserPhoto {
 		}
 		
 		/*Tnhis has been added*/		
-		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_photo_cat_rel where field="photo_rel_id" ';		
-		$rows = $wpdb->get_results($sql);		
-		if ( empty( $rows ) )
-		{	//photo_gategories
-			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_photo_cat_rel add column photo_rel_id bigint(20) NOT NULL AUTO_INCREMENT,  ADD PRIMARY KEY (photo_rel_id) ; ';
-			$wpdb->query($sql);
+	//	$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_photo_cat_rel where field="photo_rel_id" ';		
+	//	$rows = $wpdb->get_results($sql);		
+	//	if ( empty( $rows ) )
+	//	{	//photo_gategories
+		//	$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_photo_cat_rel add column photo_rel_id bigint(20) NOT NULL AUTO_INCREMENT,  ADD PRIMARY KEY (photo_rel_id) ; ';
+			//$wpdb->query($sql);
 			
-		}
+	//	}
 	
 		
 	}
@@ -2606,8 +2606,7 @@ class XooUserPhoto {
 							
 							$old = umask(0);
 							chmod($pathMini, 0777);
-							umask($old);
-							
+							umask($old);					
 												
 						
 						}
@@ -2659,11 +2658,13 @@ class XooUserPhoto {
 	
 	public function orient_image($file_path) 
 	{
-        if (!function_exists('exif_read_data')) {
+        if (!function_exists('exif_read_data')) 
+		{
             return false;
         }
         $exif = @exif_read_data($file_path);
-        if ($exif === false) {
+        if ($exif === false) 
+		{
             return false;
         }
         $orientation = intval(@$exif['Orientation']);
@@ -2671,6 +2672,7 @@ class XooUserPhoto {
             return false;
         }
         $image = @imagecreatefromjpeg($file_path);
+		
         switch ($orientation) {
             case 3:
                 $image = @imagerotate($image, 180, 0);
@@ -2685,6 +2687,7 @@ class XooUserPhoto {
                 return false;
         }
         $success = imagejpeg($image, $file_path);
+		
         // Free up memory (imagedestroy does not delete files):
         @imagedestroy($image);
         return $success;
