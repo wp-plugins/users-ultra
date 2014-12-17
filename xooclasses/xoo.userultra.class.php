@@ -2182,7 +2182,9 @@ class XooUserUltra
 								
 							}elseif (isset($array[$key]['choices']) && $array[$key]['choices'] != '') {
 								
-								$loop = explode(PHP_EOL, $choices);
+								//$loop = explode(PHP_EOL, $choices);
+								
+								 $loop = $this->uultra_one_line_checkbox_on_window_fix($choices);
 							}
 							
 							if (isset($loop)) 
@@ -2207,7 +2209,8 @@ class XooUserUltra
 						
 							if (isset($array[$key]['choices']))
 							{
-								$loop = explode(PHP_EOL, $choices);
+								//$loop = explode(PHP_EOL, $choices);
+								 $loop = $this->uultra_one_line_checkbox_on_window_fix($choices);
 							}
 							if (isset($loop) && $loop[0] != '') 
 							{
@@ -2235,7 +2238,9 @@ class XooUserUltra
 						
 							if (isset($array[$key]['choices'])) 
 							{
-								$loop = explode(PHP_EOL, $choices);
+								//$loop = explode(PHP_EOL, $choices);
+								 $loop = $this->uultra_one_line_checkbox_on_window_fix($choices);
+								
 							}
 							
 							if (isset($loop) && $loop[0] != '') 
@@ -2305,8 +2310,7 @@ class XooUserUltra
 					}
 					
 					//validation message
-					
-									
+														
 					
 				$display .= '</div>';
 				$display .= '</div><div class="xoouserultra-clear"></div>';
@@ -2399,6 +2403,50 @@ class XooUserUltra
 		
 		
 		return $display;
+	}
+	
+	
+	
+	/**
+	 * This has been added to avoid the window server issues
+	 */
+	public function uultra_one_line_checkbox_on_window_fix($choices)
+	{		
+		
+		if($this->uultra_if_windows_server()) //is window
+		{
+			$loop = array();		
+			$loop = explode(",", $choices);
+		
+		}else{ //not window
+		
+			$loop = array();		
+			$loop = explode(PHP_EOL, $choices);	
+			
+		}	
+		
+		
+		return $loop;
+	
+	}
+	
+	public function uultra_if_windows_server()
+	{
+		$os = PHP_OS;
+		$os = strtolower($os);			
+		$pos = strpos($os, "win");
+		
+		
+		
+		if ($pos === false) {
+			
+			//echo "NO, It's not windows";
+			return false;
+		} else {
+			//echo "YES, It's windows";
+			return true;
+		}			
+	
 	}
 	
 	/**

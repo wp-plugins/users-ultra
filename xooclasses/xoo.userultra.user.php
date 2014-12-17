@@ -1607,7 +1607,8 @@ class XooUserUser {
 								$loop = $xoouserultra->commmonmethods->get_predifined( $array[$key]['predefined_options'] );
 							}elseif(isset($array[$key]['choices']) && $array[$key]['choices'] != '') {
 								
-								$loop = explode(PHP_EOL, $choices);
+								//$loop = explode(PHP_EOL, $choices);
+								$loop = $xoouserultra->uultra_one_line_checkbox_on_window_fix($choices);
 							
 							}
 							
@@ -1634,7 +1635,8 @@ class XooUserUser {
 						
 							if (isset($array[$key]['choices']))
 							{
-								$loop = explode(PHP_EOL, $choices);
+								//$loop = explode(PHP_EOL, $choices);
+								$loop = $xoouserultra->uultra_one_line_checkbox_on_window_fix($choices);
 							}
 							
 							if (isset($loop) && $loop[0] != '') 
@@ -1662,7 +1664,8 @@ class XooUserUser {
 							if (isset($array[$key]['choices']))
 							{
 								
-							   $loop = explode(PHP_EOL, $choices);
+							  //$loop = explode(PHP_EOL, $choices);
+							   $loop = $xoouserultra->uultra_one_line_checkbox_on_window_fix($choices);
 							}
 							if (isset($loop) && $loop[0] != '') {
 							  $counter =0;
