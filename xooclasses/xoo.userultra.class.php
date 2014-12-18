@@ -516,24 +516,51 @@ class XooUserUltra
 			$profile_page_id  = $this->create_profile_page($main_page_id);	
 			
 			//directory page
-			$directory_page_id  = $this->create_directory_page($main_page_id);	
-			
-					
-		
+			$directory_page_id  = $this->create_directory_page($main_page_id);			
 			
 			
 			 //pages created
 			 update_option('xoousersultra_auto_page_creation',0);
+			 
+			 $slug = $this->get_option("usersultra_slug"); // Profile Slug
+			 $slug_login = $this->get_option("usersultra_login_slug"); //Login Slug		
+			 $slug_registration = $this->get_option("usersultra_registration_slug"); //Registration Slug		
+			 $slug_my_account = $this->get_option("usersultra_my_account_slug"); //My Account Slug
+			
+			 // this rule is used to display the registration page
+			 add_rewrite_rule("$slug/$slug_registration",'index.php?pagename='.$slug.'/'.$slug_registration, 'top');		
+			 //this rules is for displaying the user's profiles
+			 add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
+			
+			 flush_rewrite_rules();
+			
+		}else{
+			
+			
+			$slug = $this->get_option("usersultra_slug"); // Profile Slug
+			$slug_login = $this->get_option("usersultra_login_slug"); //Login Slug		
+			$slug_registration = $this->get_option("usersultra_registration_slug"); //Registration Slug		
+			$slug_my_account = $this->get_option("usersultra_my_account_slug"); //My Account Slug
+			
+			// this rule is used to display the registration page
+			add_rewrite_rule("$slug/$slug_registration",'index.php?pagename='.$slug.'/'.$slug_registration, 'top');		
+			//this rules is for displaying the user's profiles
+			add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
+		
+		
+		
 		}
 		
-		$this->create_rewrite_rules();
+		
+		
+	//	$this->create_rewrite_rules();
 		/* Setup query variables */
 		 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );	
-			 
-			
-		
+					
 	
 	}
+	
+	//to be removed soon
 	
 	public function create_rewrite_rules() 
 	{
@@ -549,8 +576,7 @@ class XooUserUltra
 		//this rules is for displaying the user's profiles
 		add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
 		
-		//this rules is for photos
-		
+		//this rules is for photos		
 		flush_rewrite_rules();
 	
 	
@@ -1568,7 +1594,7 @@ class XooUserUltra
 		//get social sign up methods
 		$display .= $this->get_social_buttons(__("Sign in ",'xoousers' ),$args);
 		
-		$display .='<h2>Sign in with email</h2>';	
+		$display .='<h2>'.__("Sign in ",'xoousers' ).'</h2>';	
 
 		foreach($this->login_fields as $key=>$field) 
 		{
@@ -2628,7 +2654,7 @@ class XooUserUltra
 				
 				$params = array(
 						  'scope' => 'read_stream, email, friends_likes',
-						  'display' => 'popup',
+						 
 						  'redirect_uri' => $web_url
 						);
 						

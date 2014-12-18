@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-14 15:03-0300\n"
-"PO-Revision-Date: 2014-12-14 15:03-0300\n"
+"POT-Creation-Date: 2014-12-18 01:51-0300\n"
+"PO-Revision-Date: 2014-12-18 01:51-0300\n"
 "Last-Translator: \n"
 "Language-Team: wdbase.de <kontakt@wdbase.de>\n"
 "Language: de_DE\n"
@@ -514,7 +514,7 @@ msgid "Change Icon"
 msgstr "Icon ändern"
 
 #: ../admin/tabs/fields.php:663 ../xooclasses/xoo.userultra.publisher.php:213
-#: ../xooclasses/xoo.userultra.user.php:1727
+#: ../xooclasses/xoo.userultra.user.php:1730
 msgid "Update"
 msgstr "Aktualisierung"
 
@@ -652,13 +652,13 @@ msgstr ""
 
 #: ../admin/tabs/help.php:35 ../templates/basic/dashboard.php:676
 #: ../xooclasses/xoo.userultra.class.php:727
-#: ../xooclasses/xoo.userultra.user.php:2146
-#: ../xooclasses/xoo.userultra.user.php:2150
+#: ../xooclasses/xoo.userultra.user.php:2149
+#: ../xooclasses/xoo.userultra.user.php:2153
 msgid "My Account"
 msgstr "Mein Account"
 
-#: ../admin/tabs/help.php:38 ../xooclasses/xoo.userultra.user.php:2286
-#: ../xooclasses/xoo.userultra.user.php:2625
+#: ../admin/tabs/help.php:38 ../xooclasses/xoo.userultra.user.php:2289
+#: ../xooclasses/xoo.userultra.user.php:2628
 msgid "Logout"
 msgstr "Abmelden"
 
@@ -1059,8 +1059,8 @@ msgstr "5 letzten Transaktionen"
 #: ../xooclasses/xoo.userultra.mymessage.php:1148
 #: ../xooclasses/xoo.userultra.order.php:396
 #: ../xooclasses/xoo.userultra.publisher.php:463
-#: ../xooclasses/xoo.userultra.socials.php:495
-#: ../xooclasses/xoo.userultra.socials.php:602
+#: ../xooclasses/xoo.userultra.socials.php:490
+#: ../xooclasses/xoo.userultra.socials.php:596
 #: ../xooclasses/xoo.userultra.woocommerce.php:350
 msgid "Date"
 msgstr "Datum"
@@ -1267,7 +1267,7 @@ msgstr "Geben Sie bitte einen Namen an"
 msgid "Are you totally sure that you want to delete this package? "
 msgstr "Sind Sie sich absolut sicher, dass Sie dieses Feld löschen wollen?"
 
-#: ../admin/tabs/orders.php:36 ../xooclasses/xoo.userultra.admin.php:57
+#: ../admin/tabs/orders.php:36 ../xooclasses/xoo.userultra.admin.php:55
 msgid "Orders"
 msgstr "Bestellungen"
 
@@ -1328,7 +1328,7 @@ msgstr "Plan"
 msgid "Method"
 msgstr "Methode"
 
-#: ../admin/tabs/permalinks.php:1 ../xooclasses/xoo.userultra.admin.php:60
+#: ../admin/tabs/permalinks.php:1 ../xooclasses/xoo.userultra.admin.php:58
 msgid "Permalinks"
 msgstr "Link"
 
@@ -1984,7 +1984,7 @@ msgstr ""
 msgid "Default Status"
 msgstr "Standard-Status"
 
-#: ../admin/tabs/settings.php:187 ../xooclasses/xoo.userultra.user.php:5156
+#: ../admin/tabs/settings.php:187 ../xooclasses/xoo.userultra.user.php:5159
 msgid "Pending"
 msgstr "Ausstehend"
 
@@ -2743,8 +2743,8 @@ msgid "My Latest Photos:"
 msgstr "Meine Fotos"
 
 #: ../templates/basic/dashboard.php:192
-#: ../xooclasses/xoo.userultra.user.php:2256
-#: ../xooclasses/xoo.userultra.user.php:2260
+#: ../xooclasses/xoo.userultra.user.php:2259
+#: ../xooclasses/xoo.userultra.user.php:2263
 msgid "My Friends"
 msgstr "Meine Freunde"
 
@@ -2758,8 +2758,8 @@ msgstr ""
 "privaten/beschränkten Inhalt zu sehen."
 
 #: ../templates/basic/dashboard.php:275
-#: ../xooclasses/xoo.userultra.user.php:2276
-#: ../xooclasses/xoo.userultra.user.php:2280
+#: ../xooclasses/xoo.userultra.user.php:2279
+#: ../xooclasses/xoo.userultra.user.php:2283
 msgid "My Posts"
 msgstr "Meine Beiträge"
 
@@ -2768,8 +2768,8 @@ msgid "Here you can manage your posts. "
 msgstr "Hier können Sie Ihre Beiträge verwalten"
 
 #: ../templates/basic/dashboard.php:319 ../templates/basic/dashboard.php:354
-#: ../xooclasses/xoo.userultra.user.php:2187
-#: ../xooclasses/xoo.userultra.user.php:2191
+#: ../xooclasses/xoo.userultra.user.php:2190
+#: ../xooclasses/xoo.userultra.user.php:2194
 #, fuzzy
 msgid "My Orders"
 msgstr "Bestellungen"
@@ -2888,9 +2888,9 @@ msgid ""
 msgstr "Sind Sie sich absolut sicher, dass Sie dieses Feld löschen wollen?"
 
 #: ../templates/basic/dashboard.php:749
-#: ../xooclasses/xoo.userultra.admin.php:54
-#: ../xooclasses/xoo.userultra.user.php:2160
-#: ../xooclasses/xoo.userultra.user.php:2164
+#: ../xooclasses/xoo.userultra.admin.php:52
+#: ../xooclasses/xoo.userultra.user.php:2163
+#: ../xooclasses/xoo.userultra.user.php:2167
 msgid "Settings"
 msgstr "Einstellungen"
 
@@ -2930,8 +2930,8 @@ msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr "Klicken Sie hier, um Ihr Plugin zu verifizieren."
 
 #: ../templates/basic/dashboard.php:811 ../templates/basic/profile.php:174
-#: ../xooclasses/xoo.userultra.user.php:2239
-#: ../xooclasses/xoo.userultra.user.php:2243
+#: ../xooclasses/xoo.userultra.user.php:2242
+#: ../xooclasses/xoo.userultra.user.php:2246
 msgid "My Videos"
 msgstr "Meine Videos"
 
@@ -2999,261 +2999,261 @@ msgstr "Meine Galerien"
 msgid "Photos available only for registered users"
 msgstr "Fotos sind nur für registrierte Mitglieder verfügbar."
 
-#: ../xooclasses/xoo.userultra.admin.php:52
-#: ../xooclasses/xoo.userultra.user.php:2106
-#: ../xooclasses/xoo.userultra.user.php:2110
+#: ../xooclasses/xoo.userultra.admin.php:50
+#: ../xooclasses/xoo.userultra.user.php:2109
+#: ../xooclasses/xoo.userultra.user.php:2113
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: ../xooclasses/xoo.userultra.admin.php:53
+#: ../xooclasses/xoo.userultra.admin.php:51
 msgid "Fields"
 msgstr "Felder"
 
-#: ../xooclasses/xoo.userultra.admin.php:55
+#: ../xooclasses/xoo.userultra.admin.php:53
 msgid "Css"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:56
+#: ../xooclasses/xoo.userultra.admin.php:54
 msgid "Membership"
 msgstr "Mitgliedschaft"
 
-#: ../xooclasses/xoo.userultra.admin.php:58
+#: ../xooclasses/xoo.userultra.admin.php:56
 #, fuzzy
 msgid "Sync & Import"
 msgstr "Sync jetzt starten"
 
-#: ../xooclasses/xoo.userultra.admin.php:59
+#: ../xooclasses/xoo.userultra.admin.php:57
 msgid "Notifications"
 msgstr "Benachrichtigungen"
 
-#: ../xooclasses/xoo.userultra.admin.php:61
+#: ../xooclasses/xoo.userultra.admin.php:59
 #, fuzzy
 msgid "Gateways"
 msgstr "Zahlungs-Gateways - Einstellungen"
 
-#: ../xooclasses/xoo.userultra.admin.php:62
+#: ../xooclasses/xoo.userultra.admin.php:60
 msgid "Doc"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:63
+#: ../xooclasses/xoo.userultra.admin.php:61
 msgid "Go Pro!"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:69
+#: ../xooclasses/xoo.userultra.admin.php:67
 msgid "Membership Plans"
 msgstr "Mitgliedschaften - Pläne"
 
-#: ../xooclasses/xoo.userultra.admin.php:247
+#: ../xooclasses/xoo.userultra.admin.php:245
 #, php-format
 msgid "%d new manual activation requests"
 msgstr "%d neue manuelle Aktivierungsanfragen."
 
-#: ../xooclasses/xoo.userultra.admin.php:250
+#: ../xooclasses/xoo.userultra.admin.php:248
 #, php-format
 msgid "Users Ultra %s"
 msgstr "Users Ultra %s"
 
-#: ../xooclasses/xoo.userultra.admin.php:254
-#: ../xooclasses/xoo.userultra.admin.php:257
+#: ../xooclasses/xoo.userultra.admin.php:252
+#: ../xooclasses/xoo.userultra.admin.php:255
 msgid "Users Ultra"
 msgstr "Users Ultra"
 
-#: ../xooclasses/xoo.userultra.admin.php:260
+#: ../xooclasses/xoo.userultra.admin.php:258
 msgid "GO PRO!"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:260
+#: ../xooclasses/xoo.userultra.admin.php:258
 msgid "GO PRO !!! "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:333
+#: ../xooclasses/xoo.userultra.admin.php:331
 msgid "Settings are reset to default."
 msgstr "Die Einstellungen werden auf Standardwerte zurückgesetzt."
 
-#: ../xooclasses/xoo.userultra.admin.php:339
+#: ../xooclasses/xoo.userultra.admin.php:337
 msgid "WooCommerce fields have been added."
 msgstr "WooCommerce Felder wurden hinzugefügt."
 
-#: ../xooclasses/xoo.userultra.admin.php:344
+#: ../xooclasses/xoo.userultra.admin.php:342
 msgid "WooCommerce fields have been removed."
 msgstr "WooCommerce Felder wurden entfernt."
 
-#: ../xooclasses/xoo.userultra.admin.php:362
+#: ../xooclasses/xoo.userultra.admin.php:360
 msgid "Please log in to view / edit your profile."
 msgstr "Bitte melden Sie sich an, um Ihr Profil zu sehen / bearbeiten."
 
-#: ../xooclasses/xoo.userultra.admin.php:363
+#: ../xooclasses/xoo.userultra.admin.php:361
 msgid "Please log in to view user profiles."
 msgstr "Bitte melden Sie sich an, um Profile von Mitglieder einzusehen."
 
-#: ../xooclasses/xoo.userultra.admin.php:364
+#: ../xooclasses/xoo.userultra.admin.php:362
 msgid "This content is for members only. You must log in to view this content."
 msgstr ""
 "Dieser Inhalt ist nur für Mitglieder. Sie müssen sich einloggen um den "
 "Inhalt zu sehen."
 
-#: ../xooclasses/xoo.userultra.admin.php:398
+#: ../xooclasses/xoo.userultra.admin.php:396
 msgid "Subscribe to receive our periodic email updates"
 msgstr "Abonnieren um Updates per E-Mail zu erhalten."
 
-#: ../xooclasses/xoo.userultra.admin.php:412
+#: ../xooclasses/xoo.userultra.admin.php:410
 #: ../xooclasses/xoo.userultra.class.php:1902
 msgid "User registration is currently not allowed."
 msgstr "Die Registrierung ist aktuell deaktiviert."
 
-#: ../xooclasses/xoo.userultra.admin.php:443
+#: ../xooclasses/xoo.userultra.admin.php:441
 msgid "Users Ultra Plugin"
 msgstr "Users Ultra Plugin"
 
-#: ../xooclasses/xoo.userultra.admin.php:457
-#: ../xooclasses/xoo.userultra.admin.php:468
-#: ../xooclasses/xoo.userultra.admin.php:484
-#: ../xooclasses/xoo.userultra.admin.php:496
-#: ../xooclasses/xoo.userultra.admin.php:508
-#: ../xooclasses/xoo.userultra.admin.php:543
-#: ../xooclasses/xoo.userultra.admin.php:551
-#: ../xooclasses/xoo.userultra.admin.php:560
-#: ../xooclasses/xoo.userultra.admin.php:566
-#: ../xooclasses/xoo.userultra.admin.php:572
-#: ../xooclasses/xoo.userultra.admin.php:579
-#: ../xooclasses/xoo.userultra.admin.php:586
+#: ../xooclasses/xoo.userultra.admin.php:455
+#: ../xooclasses/xoo.userultra.admin.php:466
+#: ../xooclasses/xoo.userultra.admin.php:482
+#: ../xooclasses/xoo.userultra.admin.php:494
+#: ../xooclasses/xoo.userultra.admin.php:506
+#: ../xooclasses/xoo.userultra.admin.php:541
+#: ../xooclasses/xoo.userultra.admin.php:549
+#: ../xooclasses/xoo.userultra.admin.php:558
+#: ../xooclasses/xoo.userultra.admin.php:564
+#: ../xooclasses/xoo.userultra.admin.php:570
+#: ../xooclasses/xoo.userultra.admin.php:577
+#: ../xooclasses/xoo.userultra.admin.php:584
 msgid "Hi,"
 msgstr "Hallo,"
 
-#: ../xooclasses/xoo.userultra.admin.php:458
+#: ../xooclasses/xoo.userultra.admin.php:456
 msgid "Thanks for registering. Your account is now active."
 msgstr "Vielen Dank für Ihre Registrierung. Ihr Account ist nun aktiv."
 
-#: ../xooclasses/xoo.userultra.admin.php:459
-#: ../xooclasses/xoo.userultra.admin.php:470
+#: ../xooclasses/xoo.userultra.admin.php:457
+#: ../xooclasses/xoo.userultra.admin.php:468
 msgid "To login please visit the following URL:"
 msgstr "Um sich anzumelden besuchen Sie bitte folgenden Link: "
 
-#: ../xooclasses/xoo.userultra.admin.php:461
-#: ../xooclasses/xoo.userultra.admin.php:472
-#: ../xooclasses/xoo.userultra.admin.php:500
+#: ../xooclasses/xoo.userultra.admin.php:459
+#: ../xooclasses/xoo.userultra.admin.php:470
+#: ../xooclasses/xoo.userultra.admin.php:498
 msgid "Your account e-mail: {{userultra_user_email}}"
 msgstr "Ihre E-Mail: {{userultra_user_email}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:462
-#: ../xooclasses/xoo.userultra.admin.php:473
-#: ../xooclasses/xoo.userultra.admin.php:501
+#: ../xooclasses/xoo.userultra.admin.php:460
+#: ../xooclasses/xoo.userultra.admin.php:471
+#: ../xooclasses/xoo.userultra.admin.php:499
 msgid "Your account username: {{userultra_user_name}}"
 msgstr "Ihr Benutzername: {{userultra_user_name}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:463
+#: ../xooclasses/xoo.userultra.admin.php:461
 #, fuzzy
 msgid "Your account password: (same used when registering)"
 msgstr "Ihr Passwort: {{userultra_pass}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:464
-#: ../xooclasses/xoo.userultra.admin.php:475
-#: ../xooclasses/xoo.userultra.admin.php:504
-#: ../xooclasses/xoo.userultra.admin.php:513
+#: ../xooclasses/xoo.userultra.admin.php:462
+#: ../xooclasses/xoo.userultra.admin.php:473
+#: ../xooclasses/xoo.userultra.admin.php:502
+#: ../xooclasses/xoo.userultra.admin.php:511
 msgid ""
 "If you have any problems, please contact us at {{userultra_admin_email}}."
 msgstr ""
 "Sollten Sie irgendwelche Probleme haben, kontatkieren Sie bitte eine Admin "
 "{{userultra_admin_email}}."
 
-#: ../xooclasses/xoo.userultra.admin.php:465
-#: ../xooclasses/xoo.userultra.admin.php:476
-#: ../xooclasses/xoo.userultra.admin.php:490
-#: ../xooclasses/xoo.userultra.admin.php:505
-#: ../xooclasses/xoo.userultra.admin.php:514
-#: ../xooclasses/xoo.userultra.admin.php:524
-#: ../xooclasses/xoo.userultra.admin.php:533
-#: ../xooclasses/xoo.userultra.admin.php:539
-#: ../xooclasses/xoo.userultra.admin.php:548
-#: ../xooclasses/xoo.userultra.admin.php:557
-#: ../xooclasses/xoo.userultra.admin.php:563
-#: ../xooclasses/xoo.userultra.admin.php:569
-#: ../xooclasses/xoo.userultra.admin.php:576
-#: ../xooclasses/xoo.userultra.admin.php:583
-#: ../xooclasses/xoo.userultra.admin.php:589
+#: ../xooclasses/xoo.userultra.admin.php:463
+#: ../xooclasses/xoo.userultra.admin.php:474
+#: ../xooclasses/xoo.userultra.admin.php:488
+#: ../xooclasses/xoo.userultra.admin.php:503
+#: ../xooclasses/xoo.userultra.admin.php:512
+#: ../xooclasses/xoo.userultra.admin.php:522
+#: ../xooclasses/xoo.userultra.admin.php:531
+#: ../xooclasses/xoo.userultra.admin.php:537
+#: ../xooclasses/xoo.userultra.admin.php:546
+#: ../xooclasses/xoo.userultra.admin.php:555
+#: ../xooclasses/xoo.userultra.admin.php:561
+#: ../xooclasses/xoo.userultra.admin.php:567
+#: ../xooclasses/xoo.userultra.admin.php:574
+#: ../xooclasses/xoo.userultra.admin.php:581
+#: ../xooclasses/xoo.userultra.admin.php:587
 msgid "Best Regards!"
 msgstr "Mit besten Grüßen!"
 
-#: ../xooclasses/xoo.userultra.admin.php:469
+#: ../xooclasses/xoo.userultra.admin.php:467
 msgid "Your password has been reset."
 msgstr "Ihr Passwort wurde zurückgesetzt."
 
-#: ../xooclasses/xoo.userultra.admin.php:485
+#: ../xooclasses/xoo.userultra.admin.php:483
 msgid "A new user has been registered."
 msgstr "Ein neues Mitglied hat sich registriert."
 
-#: ../xooclasses/xoo.userultra.admin.php:487
-#: ../xooclasses/xoo.userultra.admin.php:521
-#: ../xooclasses/xoo.userultra.admin.php:530
+#: ../xooclasses/xoo.userultra.admin.php:485
+#: ../xooclasses/xoo.userultra.admin.php:519
+#: ../xooclasses/xoo.userultra.admin.php:528
 msgid "Account e-mail: {{userultra_user_email}}"
 msgstr "E-Mail: {{userultra_user_email}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:488
-#: ../xooclasses/xoo.userultra.admin.php:522
-#: ../xooclasses/xoo.userultra.admin.php:531
+#: ../xooclasses/xoo.userultra.admin.php:486
+#: ../xooclasses/xoo.userultra.admin.php:520
+#: ../xooclasses/xoo.userultra.admin.php:529
 msgid "Account username: {{userultra_user_name}}"
 msgstr "Benutzername: {{userultra_user_name}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:489
-#: ../xooclasses/xoo.userultra.admin.php:547
-#: ../xooclasses/xoo.userultra.admin.php:556
-#: ../xooclasses/xoo.userultra.admin.php:588
+#: ../xooclasses/xoo.userultra.admin.php:487
+#: ../xooclasses/xoo.userultra.admin.php:545
+#: ../xooclasses/xoo.userultra.admin.php:554
+#: ../xooclasses/xoo.userultra.admin.php:586
 msgid "This is an automated notification. No further action is needed."
 msgstr ""
 "Dies ist eine automatische Benachrichtiung. Es ist von Ihrer Seite aus keine "
 "weitere Aktion nötig."
 
-#: ../xooclasses/xoo.userultra.admin.php:497
+#: ../xooclasses/xoo.userultra.admin.php:495
 msgid "Thanks for registering. Your account needs activation."
 msgstr ""
 "Vielen Dank für Ihre Registrierung. Ihr Account muss jedoch noch aktiviert "
 "werden."
 
-#: ../xooclasses/xoo.userultra.admin.php:498
-#: ../xooclasses/xoo.userultra.admin.php:510
+#: ../xooclasses/xoo.userultra.admin.php:496
+#: ../xooclasses/xoo.userultra.admin.php:508
 msgid "Please click on the link below to activate your account:"
 msgstr ""
 "Bitte klicken Sie auf den unteren Link um Ihren Account zu aktivieren: "
 
-#: ../xooclasses/xoo.userultra.admin.php:502
+#: ../xooclasses/xoo.userultra.admin.php:500
 msgid "Your account password: {{userultra_pass}}"
 msgstr "Ihr Passwort: {{userultra_pass}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:509
+#: ../xooclasses/xoo.userultra.admin.php:507
 #, fuzzy
 msgid "We are re-sending you the activation link."
 msgstr "Es gibt keine ausstehenden Mitglieder zur Aktivierung."
 
-#: ../xooclasses/xoo.userultra.admin.php:518
-#: ../xooclasses/xoo.userultra.admin.php:528
+#: ../xooclasses/xoo.userultra.admin.php:516
+#: ../xooclasses/xoo.userultra.admin.php:526
 msgid "Hi Admin,"
 msgstr "Hallo Admin,"
 
-#: ../xooclasses/xoo.userultra.admin.php:519
+#: ../xooclasses/xoo.userultra.admin.php:517
 msgid "An account needs activation."
 msgstr "Ihr Account muss zuerst aktiviert werden."
 
-#: ../xooclasses/xoo.userultra.admin.php:523
-#: ../xooclasses/xoo.userultra.admin.php:532
+#: ../xooclasses/xoo.userultra.admin.php:521
+#: ../xooclasses/xoo.userultra.admin.php:530
 msgid "Please login to your admin to activate the account."
 msgstr "Bitte melden Sie sich als Admin an um den Account zu aktivieren."
 
-#: ../xooclasses/xoo.userultra.admin.php:529
+#: ../xooclasses/xoo.userultra.admin.php:527
 #, fuzzy
 msgid "An account needs approbation."
 msgstr "Ihr Account muss zuerst aktiviert werden."
 
-#: ../xooclasses/xoo.userultra.admin.php:537
+#: ../xooclasses/xoo.userultra.admin.php:535
 #, fuzzy
 msgid "Hi {{userultra_user_name}},"
 msgstr "Benutzername: {{userultra_user_name}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:538
+#: ../xooclasses/xoo.userultra.admin.php:536
 #, fuzzy
 msgid "Your account will be reviewed by the admin soon."
 msgstr "Bitte melden Sie sich als Admin an um den Account zu aktivieren."
 
-#: ../xooclasses/xoo.userultra.admin.php:544
+#: ../xooclasses/xoo.userultra.admin.php:542
 msgid ""
 "{{userultra_user_name}} has just created a new account at "
 "{{user_ultra_blog_name}}."
@@ -3261,11 +3261,11 @@ msgstr ""
 "{{userultra_user_name}} hat soeben einen neuen Account auf "
 "{{user_ultra_blog_name}} erstellt."
 
-#: ../xooclasses/xoo.userultra.admin.php:545
+#: ../xooclasses/xoo.userultra.admin.php:543
 msgid "You can check his profile via the following link:"
 msgstr "Sie können sein/ihr Profil mit folgenden Link ansehen: "
 
-#: ../xooclasses/xoo.userultra.admin.php:552
+#: ../xooclasses/xoo.userultra.admin.php:550
 msgid ""
 "{{userultra_user_name}} has just sent you a new private message at "
 "{{user_ultra_blog_name}}."
@@ -3273,62 +3273,62 @@ msgstr ""
 "{{userultra_user_name}} hat Ihnen soeben eine neue Private Nachricht auf "
 "{{user_ultra_blog_name}} gesendet."
 
-#: ../xooclasses/xoo.userultra.admin.php:554
+#: ../xooclasses/xoo.userultra.admin.php:552
 msgid "Subject: {{userultra_pm_subject}}"
 msgstr "Betreff: {{userultra_pm_subject}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:555
+#: ../xooclasses/xoo.userultra.admin.php:553
 msgid "Message: {{userultra_pm_message}}"
 msgstr "Nachricht: {{userultra_pm_message}}"
 
-#: ../xooclasses/xoo.userultra.admin.php:561
+#: ../xooclasses/xoo.userultra.admin.php:559
 msgid "You have a new friend request at {{user_ultra_blog_name}}."
 msgstr ""
 "Sie haben eine neue Freundschaftsanfrage auf {{user_ultra_blog_name}} "
 "erhalten."
 
-#: ../xooclasses/xoo.userultra.admin.php:567
+#: ../xooclasses/xoo.userultra.admin.php:565
 msgid "Please use the following link to reset your password."
 msgstr "Bitte nutzen Sie folgenden Link um Ihr Passwort zurück zu setzen."
 
-#: ../xooclasses/xoo.userultra.admin.php:569
+#: ../xooclasses/xoo.userultra.admin.php:567
 msgid "If you did not request a new password delete this email."
 msgstr "Wenn Sie kein neues Passwort beantragt haben, löschen Sie diese Mail."
 
-#: ../xooclasses/xoo.userultra.admin.php:573
+#: ../xooclasses/xoo.userultra.admin.php:571
 msgid "Your account has been activated."
 msgstr "Ihr Account wurde aktiviert."
 
-#: ../xooclasses/xoo.userultra.admin.php:574
-#: ../xooclasses/xoo.userultra.admin.php:581
+#: ../xooclasses/xoo.userultra.admin.php:572
+#: ../xooclasses/xoo.userultra.admin.php:579
 msgid "Please use the link below to get in your account."
 msgstr ""
 "Bitte nutzen Sie den unten stehenden Link um in Ihren Account zu gelangen."
 
-#: ../xooclasses/xoo.userultra.admin.php:580
+#: ../xooclasses/xoo.userultra.admin.php:578
 msgid "Your account has been verified."
 msgstr "Ihr Account wurde verifiziert."
 
-#: ../xooclasses/xoo.userultra.admin.php:587
+#: ../xooclasses/xoo.userultra.admin.php:585
 msgid "We're sorry but your account has not been approved."
 msgstr "Es tut uns Leid, aber Ihr Account wurde nicht genehmigt."
 
-#: ../xooclasses/xoo.userultra.admin.php:854
+#: ../xooclasses/xoo.userultra.admin.php:852
 msgid "Settings saved."
 msgstr "Einstellungen gespeichert."
 
-#: ../xooclasses/xoo.userultra.admin.php:1027
+#: ../xooclasses/xoo.userultra.admin.php:1009
 msgid "Please create '"
 msgstr "Bitte erstelle '"
 
-#: ../xooclasses/xoo.userultra.admin.php:1114
+#: ../xooclasses/xoo.userultra.admin.php:1096
 msgid ""
 "Please make sure that you've set the right My Account Page. Users Ultra "
 "couldn't find it and some important features such as password reset, account "
 "confirmation won't work properly."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:1114
+#: ../xooclasses/xoo.userultra.admin.php:1096
 #, fuzzy
 msgid "Click here to set the My Account Page"
 msgstr "Geben Sie Ihren eigenen Slug für die  \"Mein  Account\" Seite an."
@@ -3371,12 +3371,12 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.class.php:240
 msgid ""
 "<h2>It's time to upgrade to Users Ultra Pro!. </h2> <p>Unique Widgetized "
-"user profile, add unlimited widgets, add unlimited links within the user's "
-"dashboard. Integrating with third-party plugins by using shortcodes, "
-"friends, followers, following, user's wall.</p> <p> <a href='http://"
-"usersultra.com/'  target='_blank' class='button button-secondary'  >CLICK "
-"HERE TO FIND OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-"
-"proversionmessage'>Remove this message</a>"
+"user profile, add unlimited widgets, site-wide activity wall, add unlimited "
+"links within the user's dashboard. Integrating with third-party plugins by "
+"using shortcodes, friends, followers, following, user's wall.</p> <p> <a "
+"href='http://usersultra.com/'  target='_blank' class='button button-"
+"secondary'  >CLICK HERE TO FIND OUT MORE</a> </p> <a href='#'  "
+"id='uultradmin-remove-proversionmessage'>Remove this message</a>"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:251
@@ -3553,6 +3553,7 @@ msgid "Reset Password"
 msgstr "Passwort zurücksetzen"
 
 #: ../xooclasses/xoo.userultra.class.php:1569
+#: ../xooclasses/xoo.userultra.class.php:1571
 msgid "Sign in "
 msgstr "Registrieren"
 
@@ -3561,7 +3562,7 @@ msgid "Forgot Password?"
 msgstr "Passwort vergessen?"
 
 #: ../xooclasses/xoo.userultra.class.php:1670
-#: ../xooclasses/xoo.userultra.class.php:2386
+#: ../xooclasses/xoo.userultra.class.php:2390
 msgid "Register"
 msgstr "Registrieren"
 
@@ -3670,13 +3671,13 @@ msgstr "Registrieren"
 #: ../xooclasses/xoo.userultra.class.php:2016
 #: ../xooclasses/xoo.userultra.class.php:2165
 #: ../xooclasses/xoo.userultra.class.php:2169
-#: ../xooclasses/xoo.userultra.class.php:2190
-#: ../xooclasses/xoo.userultra.class.php:2271
+#: ../xooclasses/xoo.userultra.class.php:2192
+#: ../xooclasses/xoo.userultra.class.php:2276
 #, fuzzy
 msgid " * This input is required!"
 msgstr "Dieses Feld wird benötigt."
 
-#: ../xooclasses/xoo.userultra.class.php:2284
+#: ../xooclasses/xoo.userultra.class.php:2289
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
@@ -3684,29 +3685,29 @@ msgstr ""
 "Wenn Sie Ihr Passwort ändern wollen, geben Sie hier ein neues ein. Ansonsten "
 "können Sie das Feld leer lassen."
 
-#: ../xooclasses/xoo.userultra.class.php:2288
+#: ../xooclasses/xoo.userultra.class.php:2293
 msgid "Type your new password again."
 msgstr "Geben Sie Ihr Passwort nochmals ein."
 
-#: ../xooclasses/xoo.userultra.class.php:2300
-#: ../xooclasses/xoo.userultra.user.php:1708
+#: ../xooclasses/xoo.userultra.class.php:2305
+#: ../xooclasses/xoo.userultra.user.php:1711
 msgid "Hide from Public"
 msgstr "Für Öffentlichkeit verbergen"
 
-#: ../xooclasses/xoo.userultra.class.php:2322
+#: ../xooclasses/xoo.userultra.class.php:2326
 msgid "Payment Information"
 msgstr "Zahlungsinformationen"
 
-#: ../xooclasses/xoo.userultra.class.php:2340
+#: ../xooclasses/xoo.userultra.class.php:2344
 msgid "Receive Daily Updates"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2349
+#: ../xooclasses/xoo.userultra.class.php:2353
 msgid "Receive Daily Updates "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2361
-#: ../xooclasses/xoo.userultra.class.php:2369
+#: ../xooclasses/xoo.userultra.class.php:2365
+#: ../xooclasses/xoo.userultra.class.php:2373
 msgid "Terms & Conditions "
 msgstr ""
 
@@ -3900,8 +3901,8 @@ msgstr "Sie haben keine Items im Posteingang."
 #: ../xooclasses/xoo.userultra.mymessage.php:562
 #: ../xooclasses/xoo.userultra.mymessage.php:716
 #: ../xooclasses/xoo.userultra.mymessage.php:835
-#: ../xooclasses/xoo.userultra.socials.php:493
-#: ../xooclasses/xoo.userultra.socials.php:600
+#: ../xooclasses/xoo.userultra.socials.php:488
+#: ../xooclasses/xoo.userultra.socials.php:594
 msgid "Pic"
 msgstr "Bild"
 
@@ -3909,8 +3910,8 @@ msgstr "Bild"
 #: ../xooclasses/xoo.userultra.mymessage.php:836
 #: ../xooclasses/xoo.userultra.mymessage.php:1085
 #: ../xooclasses/xoo.userultra.mymessage.php:1146
-#: ../xooclasses/xoo.userultra.socials.php:494
-#: ../xooclasses/xoo.userultra.socials.php:601
+#: ../xooclasses/xoo.userultra.socials.php:489
+#: ../xooclasses/xoo.userultra.socials.php:595
 msgid "Sender"
 msgstr "Absender"
 
@@ -3918,8 +3919,8 @@ msgstr "Absender"
 #: ../xooclasses/xoo.userultra.mymessage.php:936
 #: ../xooclasses/xoo.userultra.mymessage.php:959
 #: ../xooclasses/xoo.userultra.payment.paypal.php:794
-#: ../xooclasses/xoo.userultra.socials.php:496
-#: ../xooclasses/xoo.userultra.socials.php:603
+#: ../xooclasses/xoo.userultra.socials.php:491
+#: ../xooclasses/xoo.userultra.socials.php:597
 #: ../xooclasses/xoo.userultra.user.php:664
 #: ../xooclasses/xoo.userultra.user.php:735
 #: ../xooclasses/xoo.userultra.user.php:803
@@ -4088,21 +4089,21 @@ msgid "Filter by category: "
 msgstr "Nach Kategorie filtern: "
 
 #: ../xooclasses/xoo.userultra.photos.php:372
-#: ../xooclasses/xoo.userultra.user.php:4301
+#: ../xooclasses/xoo.userultra.user.php:4304
 msgid "Total found: "
 msgstr "Gesamt gefunden: "
 
 #: ../xooclasses/xoo.userultra.photos.php:650
-#: ../xooclasses/xoo.userultra.user.php:4176
-#: ../xooclasses/xoo.userultra.user.php:5004
-#: ../xooclasses/xoo.userultra.user.php:5077
+#: ../xooclasses/xoo.userultra.user.php:4179
+#: ../xooclasses/xoo.userultra.user.php:5007
+#: ../xooclasses/xoo.userultra.user.php:5080
 msgid "Previous"
 msgstr "Vorheriges"
 
 #: ../xooclasses/xoo.userultra.photos.php:651
-#: ../xooclasses/xoo.userultra.user.php:4177
-#: ../xooclasses/xoo.userultra.user.php:5005
-#: ../xooclasses/xoo.userultra.user.php:5078
+#: ../xooclasses/xoo.userultra.user.php:4180
+#: ../xooclasses/xoo.userultra.user.php:5008
+#: ../xooclasses/xoo.userultra.user.php:5081
 msgid "Next"
 msgstr "Nächstes"
 
@@ -4181,7 +4182,7 @@ msgstr "Modus"
 
 #: ../xooclasses/xoo.userultra.photos.php:2303
 #: ../xooclasses/xoo.userultra.publisher.php:1082
-#: ../xooclasses/xoo.userultra.user.php:4740
+#: ../xooclasses/xoo.userultra.user.php:4743
 msgid "Allowed Files"
 msgstr "Erlaubte Dateien"
 
@@ -4317,7 +4318,7 @@ msgid "Select Files"
 msgstr "Modus"
 
 #: ../xooclasses/xoo.userultra.publisher.php:1141
-#: ../xooclasses/xoo.userultra.user.php:4795
+#: ../xooclasses/xoo.userultra.user.php:4798
 msgid "You may only upload one image at a time!"
 msgstr "Sie dürfen nur immer ein Bild hochladen!"
 
@@ -4462,47 +4463,47 @@ msgstr "Freundschaftsanfrage senden"
 msgid "Be a Friend "
 msgstr "Freundschaftsanfrage"
 
-#: ../xooclasses/xoo.userultra.socials.php:279
-#: ../xooclasses/xoo.userultra.socials.php:286
+#: ../xooclasses/xoo.userultra.socials.php:278
+#: ../xooclasses/xoo.userultra.socials.php:285
 msgid "Request approved"
 msgstr "Antrag angenommen"
 
-#: ../xooclasses/xoo.userultra.socials.php:293
+#: ../xooclasses/xoo.userultra.socials.php:292
 msgid "Request rejected"
 msgstr "Antrag abgelehnt"
 
-#: ../xooclasses/xoo.userultra.socials.php:378
-#: ../xooclasses/xoo.userultra.socials.php:427
+#: ../xooclasses/xoo.userultra.socials.php:375
+#: ../xooclasses/xoo.userultra.socials.php:424
 msgid "Likes"
 msgstr "\"Gefällt mir!\" Angaben"
 
-#: ../xooclasses/xoo.userultra.socials.php:379
+#: ../xooclasses/xoo.userultra.socials.php:376
 msgid "Like"
 msgstr "Gefällt mir"
 
-#: ../xooclasses/xoo.userultra.socials.php:379
+#: ../xooclasses/xoo.userultra.socials.php:376
 msgid "Dislike"
 msgstr "Gefällt mir nicht"
 
-#: ../xooclasses/xoo.userultra.socials.php:484
+#: ../xooclasses/xoo.userultra.socials.php:479
 msgid "Latest Friend Requests"
 msgstr "Neusten Freundschaftsanfragen"
 
-#: ../xooclasses/xoo.userultra.socials.php:519
+#: ../xooclasses/xoo.userultra.socials.php:514
 msgid "Approve"
 msgstr "Bestätigen"
 
-#: ../xooclasses/xoo.userultra.socials.php:519
+#: ../xooclasses/xoo.userultra.socials.php:514
 #: ../xooclasses/xoo.userultra.user.php:683
 #: ../xooclasses/xoo.userultra.user.php:754
 msgid "Deny"
 msgstr "Ablehnen"
 
-#: ../xooclasses/xoo.userultra.socials.php:591
+#: ../xooclasses/xoo.userultra.socials.php:585
 msgid "All My Friends"
 msgstr "All meine Freunde"
 
-#: ../xooclasses/xoo.userultra.socials.php:626
+#: ../xooclasses/xoo.userultra.socials.php:620
 msgid "Block"
 msgstr "Block"
 
@@ -4655,96 +4656,96 @@ msgstr "Mitglied konnte nicht gefunden werden"
 msgid " A reset link has been sent to your email "
 msgstr "Ein Link zur Zurücksetzung wurde an Ihre Email Adresse gesendet."
 
-#: ../xooclasses/xoo.userultra.user.php:2119
-#: ../xooclasses/xoo.userultra.user.php:2123
+#: ../xooclasses/xoo.userultra.user.php:2122
+#: ../xooclasses/xoo.userultra.user.php:2126
 msgid "Profile"
 msgstr "Profil"
 
-#: ../xooclasses/xoo.userultra.user.php:2132
-#: ../xooclasses/xoo.userultra.user.php:2136
+#: ../xooclasses/xoo.userultra.user.php:2135
+#: ../xooclasses/xoo.userultra.user.php:2139
 msgid "Profile Customizer"
 msgstr "Profil-Anpasser"
 
-#: ../xooclasses/xoo.userultra.user.php:2174
-#: ../xooclasses/xoo.userultra.user.php:2178
+#: ../xooclasses/xoo.userultra.user.php:2177
+#: ../xooclasses/xoo.userultra.user.php:2181
 #, fuzzy
 msgid "My Purchases"
 msgstr "Mein Account"
 
-#: ../xooclasses/xoo.userultra.user.php:2206
+#: ../xooclasses/xoo.userultra.user.php:2209
 msgid "My Messages"
 msgstr "Meine Nachrichten"
 
-#: ../xooclasses/xoo.userultra.user.php:2210
+#: ../xooclasses/xoo.userultra.user.php:2213
 msgid "Messages"
 msgstr "Nachrichten"
 
-#: ../xooclasses/xoo.userultra.user.php:2216
+#: ../xooclasses/xoo.userultra.user.php:2219
 #, fuzzy
 msgid "Unread Messages"
 msgstr "Nachrichten"
 
-#: ../xooclasses/xoo.userultra.user.php:2226
-#: ../xooclasses/xoo.userultra.user.php:2230
+#: ../xooclasses/xoo.userultra.user.php:2229
+#: ../xooclasses/xoo.userultra.user.php:2233
 msgid "Photos"
 msgstr "Fotos"
 
-#: ../xooclasses/xoo.userultra.user.php:2266
+#: ../xooclasses/xoo.userultra.user.php:2269
 #, fuzzy
 msgid "Friend Requests"
 msgstr "Neusten Freundschaftsanfragen"
 
-#: ../xooclasses/xoo.userultra.user.php:2624
-#: ../xooclasses/xoo.userultra.user.php:2729
-#: ../xooclasses/xoo.userultra.user.php:4131
+#: ../xooclasses/xoo.userultra.user.php:2627
+#: ../xooclasses/xoo.userultra.user.php:2732
+#: ../xooclasses/xoo.userultra.user.php:4134
 msgid "See Profile"
 msgstr "Profil ansehen"
 
-#: ../xooclasses/xoo.userultra.user.php:3143
+#: ../xooclasses/xoo.userultra.user.php:3146
 #, fuzzy
 msgid "Free"
 msgstr ""
 "Setze 9999 um unbegrenzte Beiträge zu aktivieren. Dieser Wert gilt für freie "
 "und allgemeine Mitglieder."
 
-#: ../xooclasses/xoo.userultra.user.php:3441
+#: ../xooclasses/xoo.userultra.user.php:3444
 #, php-format
 msgid "Search %s"
 msgstr "Suche %s"
 
-#: ../xooclasses/xoo.userultra.user.php:3902
+#: ../xooclasses/xoo.userultra.user.php:3905
 #, fuzzy
 msgid "« Previous"
 msgstr "Vorheriges"
 
-#: ../xooclasses/xoo.userultra.user.php:3903
+#: ../xooclasses/xoo.userultra.user.php:3906
 #, fuzzy
 msgid "Next »"
 msgstr "Nächstes"
 
-#: ../xooclasses/xoo.userultra.user.php:4418
-#: ../xooclasses/xoo.userultra.user.php:4437
+#: ../xooclasses/xoo.userultra.user.php:4421
+#: ../xooclasses/xoo.userultra.user.php:4440
 msgid "Country not available"
 msgstr "Land nicht verfügbar"
 
-#: ../xooclasses/xoo.userultra.user.php:4464
+#: ../xooclasses/xoo.userultra.user.php:4467
 msgid "This user hasn't a description yet"
 msgstr "Dieses Mitglied hat noch keine Beschreibung"
 
-#: ../xooclasses/xoo.userultra.user.php:4704
+#: ../xooclasses/xoo.userultra.user.php:4707
 msgid "Drop Avatar here"
 msgstr "Avatar hier hereinziehen"
 
-#: ../xooclasses/xoo.userultra.user.php:4810
+#: ../xooclasses/xoo.userultra.user.php:4813
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr "Die ausgewählte Datei ist zu groß."
 
-#: ../xooclasses/xoo.userultra.user.php:5160
+#: ../xooclasses/xoo.userultra.user.php:5163
 #, fuzzy
 msgid "Pending Admin"
 msgstr "Admin -  Nachricht bei ausstehender Aktivierung"
 
-#: ../xooclasses/xoo.userultra.user.php:5164
+#: ../xooclasses/xoo.userultra.user.php:5167
 #, fuzzy
 msgid "Active"
 msgstr "Ihr Account wurde bis jetzt noch nicht aktiviert."
