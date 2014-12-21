@@ -359,6 +359,19 @@ class XooUserLogin {
 			
 		}
 		
+		
+		//linked in		
+		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="linkedin") 
+		{
+			if (!isset($_REQUEST['oauth_token']))
+			{
+				$requestlink = $xoouserultra->get_linkein_auth_link();	
+			}
+						
+			header("Location: ".$requestlink."");
+			
+		}
+		
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="yammer") 
 		{
 			$client_id = 	$xoouserultra->get_option('yammer_client_id') ;	

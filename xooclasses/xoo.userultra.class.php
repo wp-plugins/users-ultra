@@ -2740,9 +2740,11 @@ class XooUserUltra
 				
 				if (!isset($_REQUEST['oauth_token']))
 				{
-					$requestlink = $this->get_linkein_auth_link();	
+					//$requestlink = $this->get_linkein_auth_link();	
 				
 				}
+				
+				$requestlink = $web_url."?uultrasocialsignup=linkedin";
 				
 				
 				//LinkedIn
@@ -3236,6 +3238,7 @@ class XooUserUltra
 	
 	function get_linkedin_oauth_token()
 	{
+		session_start();
 		
 		require_once(xoousers_path."libs/linkedin/oauth/linkedinoauth.php");
 		$oauthstate = $this->get_linkedin_oauth_state();

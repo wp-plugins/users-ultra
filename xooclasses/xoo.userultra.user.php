@@ -574,7 +574,7 @@ class XooUserUser {
 		
 	}
 	
-		public function sync_users ()
+	public function sync_users ()
 	{
 		global $wpdb,  $xoouserultra;
 		
