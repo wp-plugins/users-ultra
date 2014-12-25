@@ -2713,10 +2713,6 @@ class XooUserUser {
             
                 <div class="info-div"> 
 				
-				
-				
-				 
-				 
 				         
 			
 				 <p class="uu-direct-name"><a class="uultra-btn-profile" href="'.$this->get_user_profile_permalink( $user_id).'">'. $this->get_display_name($user_id).' </a> <span>'.$this->get_user_country_flag($user_id).'</span></p> ';
@@ -3656,17 +3652,23 @@ class XooUserUser {
     function search_result($args) 
 	{
 
-        global $wpdb,$blog_id;
+        global $wpdb,$blog_id, $wp_query, $wp_rewrite, $paged;
+		
+		
+		require_once(ABSPATH . 'wp-includes/functions.php');
 		
 		extract($args);
 		
 		$memberlist_verified = 1;
 		
 		$blog_id = get_current_blog_id();
-
 		$page = (!empty($_GET['uultra-page'])) ? $_GET['uultra-page'] : 1;
-		$offset = ( ($page -1) * $per_page);
+		
+		$wp_query->query_vars['paged'] > 1 ? $page = $wp_query->query_vars['paged'] : $page = 1;
 
+		
+		$offset = ( ($page -1) * $per_page);
+		
 		/** QUERY ARGS BEGIN **/
 		
 		if (isset($args['exclude']))
@@ -3839,10 +3841,7 @@ class XooUserUser {
 				
 				}
 			
-			}
-			
-			
-			
+			}			
 			
 			if ($sortby) $query['orderby'] = $sortby;			
 			if ($order) $query['order'] = strtoupper($order); // asc to ASC
@@ -3886,16 +3885,19 @@ class XooUserUser {
 		
 		}
 		
-		//$wp_user_query = $this->get_cached_query( $query );
 		$wp_user_query = new WP_User_Query($query);
 		
-		remove_action( 'pre_user_query', 'uultra_query_search_displayname' );
+		
+	
+		$base_url =  get_permalink();
+		
 		
 		if (! empty( $wp_user_query->results )) 
 		{
 			$arr['total'] = $total_users;
-			$arr['paginate'] = paginate_links( array(
-					'base'         => @add_query_arg('uultra-page','%#%'),
+			$arr['paginate'] = paginate_links( array(											
+					//'base'         => @add_query_arg('emd-page','%#%'),
+					//'format'        => '',																				
 					'total'        => $total_pages,
 					'current'      => $page,
 					'show_all'     => false,
@@ -3909,16 +3911,9 @@ class XooUserUser {
 			$arr['users'] = $wp_user_query->results;
 		}
 		
-		//print_r($arr);
+		
 		
 		$this->searched_users = $arr;
-		
-		//echo "<pre>";	
-		//print_r($query);
-		//echo "</pre>";	
-		
-			
-			
 				
 		
      }

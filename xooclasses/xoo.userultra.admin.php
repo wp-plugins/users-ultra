@@ -230,7 +230,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		/*google graph*/
 		
-		wp_register_script('userultra_jsgooglapli', 'http://www.google.com/jsapi');
+		wp_register_script('userultra_jsgooglapli', 'https://www.google.com/jsapi');
 		wp_enqueue_script('userultra_jsgooglapli');
 		
 				

@@ -552,6 +552,8 @@ class XooUserUltra
 		}
 		
 		
+		//flush_rewrite_rules();
+		
 		
 	//	$this->create_rewrite_rules();
 		/* Setup query variables */
@@ -778,6 +780,7 @@ class XooUserUltra
 	{
 		$query_vars[] = 'uu_username';
 		$query_vars[] = 'searchuser';
+		$query_vars[] = 'uultra-page';
 		return $query_vars;
 	}
 	
