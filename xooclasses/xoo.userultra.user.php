@@ -3886,9 +3886,6 @@ class XooUserUser {
 		}
 		
 		$wp_user_query = new WP_User_Query($query);
-		
-		
-	
 		$base_url =  get_permalink();
 		
 		

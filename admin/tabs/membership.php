@@ -9,8 +9,7 @@ $currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
 <div class="user-ultra-sect ">
   <h3><?php _e('Paid Membership Settings','xoousers'); ?></h3>
   
-  <p><?php _e('.','xoousers'); ?></p>
-  
+  <p><?php _e('.','xoousers'); ?></p>  
   
   <table class="form-table">
 <?php 
