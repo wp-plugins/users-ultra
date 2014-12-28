@@ -92,17 +92,27 @@ class XooShortCode {
 	public function  usersultra_login_function ($atts)
 	{
 		global $xoouserultra;
-				
-		if (!is_user_logged_in()) 
+		
+		if (isset($_GET['resskey'])&& $_GET['resskey']!="") 
 		{
-			return $xoouserultra->login( $atts );
+			//users is trying to reset passowrd			
+			return $xoouserultra->password_reset( $_GET['resskey'] );		
 			
-		} else {
-			
-			//display mini profile
-			return $xoouserultra->show_minified_profile( $atts );		
-			
-			
+		
+		}else{
+				
+			if (!is_user_logged_in()) 
+			{
+				return $xoouserultra->login( $atts );
+				
+			} else {
+				
+				//display mini profile
+				return $xoouserultra->show_minified_profile( $atts );		
+				
+				
+			}
+		
 		}
 	
 	}
@@ -296,32 +306,21 @@ class XooShortCode {
 	{
 		global $xoouserultra;
 		
-		if (isset($_GET['resskey'])&& $_GET['resskey']!="") 
+		
+			
+		
+		if (!is_user_logged_in()) 
 		{
-			//users is trying to reset passowrd
+				
 			
-			return $xoouserultra->password_reset( $_GET['resskey'] );
-			
-			
-		
-		}else{	
-			
-		
-			if (!is_user_logged_in()) 
-			{
+			return $xoouserultra->login( $atts );
+				
+		}else{					
 				
 				
-				return $xoouserultra->login( $atts );
-				
-			}else{					
-				
-				
-				return $xoouserultra->show_usersultra_my_account( $atts );
-			}
-			
-		
-		
+			return $xoouserultra->show_usersultra_my_account( $atts );
 		}
+			
 		
 		
 	}

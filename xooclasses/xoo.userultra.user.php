@@ -1446,7 +1446,7 @@ class XooUserUser {
 			  $unique_key =  $xoouserultra->login->get_unique_verify_account_id();
 			  
 			  //web url
-			  $web_url = $xoouserultra->login->get_my_account_direct_link();
+			  $web_url = $xoouserultra->login->get_login_page_direct_link();
 			  
 			  $pos = strpos("page_id", $web_url);
 
