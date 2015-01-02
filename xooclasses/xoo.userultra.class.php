@@ -2496,7 +2496,14 @@ class XooUserUltra
 		$modules = array();
 		$modules  = explode(',', $disable);
 		
+	
+		//turn on output buffering to capture script output
+        ob_start();
+        //include the specified file		
 		require_once(xoousers_path.'/templates/'.xoousers_template."/dashboard.php");
+		//assign the file output to $content variable and clean buffer
+        $content = ob_get_clean();
+		return  $content;
 	}
 	
 	/**

@@ -1,6 +1,8 @@
 <h3><?php _e('Permalinks','xoousers'); ?></h3>
 <form method="post" action="">
 <input type="hidden" name="update_settings" />
+<input type="hidden" name="update_uultra_slugs"  value="uultra_slugs"/>
+
 
 <div class="user-ultra-sect ">
   <h3><?php _e('Users Ultra Pages Setting','xoousers'); ?></h3>

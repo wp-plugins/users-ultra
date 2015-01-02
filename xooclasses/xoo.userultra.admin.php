@@ -881,6 +881,11 @@ class XooUserAdmin extends XooUserUltraCommon
             $this->update_settings();
         }
 		
+		if (isset($_POST['update_uultra_slugs']) && $_POST['update_uultra_slugs']=='uultra_slugs')
+		{
+            flush_rewrite_rules();
+        }
+		
 
 		if (isset($_POST['reset-options'])) {
 			$this->reset();
@@ -1042,6 +1047,13 @@ class XooUserAdmin extends XooUserUltraCommon
 				
 		if (isset($_POST['update_settings'])) {
             $this->update_settings();
+        }
+		
+		if (isset($_POST['update_uultra_slugs']) && $_POST['update_uultra_slugs']=='uultra_slugs')
+		{
+            flush_rewrite_rules();
+			
+			 echo '<div class="updated"><p><strong>'.__('Rewrite Rules were Saved.','xoousers').'</strong></p></div>';
         }
 		
 
