@@ -215,7 +215,7 @@
                         } ,
 						
 						{
-                            text: 'Top Raged Users',
+                            text: 'Top Rated Users',
                             value: "[usersultra_users_top_rated optional_fields_to_display='friend,rating,social,country'  display_country_flag='both'] ",
                             onclick: function(e) {
                                 e.stopPropagation();
