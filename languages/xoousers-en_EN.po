@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-27 17:09-0300\n"
-"PO-Revision-Date: 2014-12-27 17:09-0300\n"
+"POT-Creation-Date: 2015-01-08 03:14-0300\n"
+"PO-Revision-Date: 2015-01-08 03:14-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../admin/tabs/customizer.php:38 ../admin/tabs/gateway.php:72
 #: ../admin/tabs/mail.php:197 ../admin/tabs/membership.php:38
-#: ../admin/tabs/permalinks.php:146 ../admin/tabs/settings.php:810
+#: ../admin/tabs/permalinks.php:148 ../admin/tabs/settings.php:810
 msgid "Save Changes"
 msgstr ""
 
@@ -814,7 +814,7 @@ msgid "Admin New User Message"
 msgstr ""
 
 #: ../admin/tabs/mail.php:104 ../admin/tabs/mail.php:105
-msgid "This message will be sent to admin."
+msgid "This message will be sent to the admin."
 msgstr ""
 
 #: ../admin/tabs/mail.php:112
@@ -822,7 +822,8 @@ msgid "Admin Pending Activation Message"
 msgstr ""
 
 #: ../admin/tabs/mail.php:113 ../admin/tabs/mail.php:114
-msgid "This message will be sent to admin if the user needs manual activation."
+msgid ""
+"This message will be sent to the admin if the user needs manual activation."
 msgstr ""
 
 #: ../admin/tabs/mail.php:122
@@ -883,7 +884,7 @@ msgid "Deny Account Activation"
 msgstr ""
 
 #: ../admin/tabs/mail.php:180 ../admin/tabs/mail.php:181
-msgid "This message is sent when the admin do not approve the user account."
+msgid "This message is sent when the admin does not approve the user account."
 msgstr ""
 
 #: ../admin/tabs/main.php:19
@@ -1185,147 +1186,147 @@ msgstr ""
 msgid "Permalinks"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:6
+#: ../admin/tabs/permalinks.php:8
 msgid "Users Ultra Pages Setting"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:8
+#: ../admin/tabs/permalinks.php:10
 msgid ""
 "The following pages are automatically created when Users Ultra Plugin\n"
 "   is activated. You can leave them as they are or change to custom pages "
 "here."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:19
+#: ../admin/tabs/permalinks.php:21
 msgid "Users Ultra My Account"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:21
+#: ../admin/tabs/permalinks.php:23
 msgid ""
 "Make sure you have the <code>[usersultra_my_account]</code> shortcode on "
 "this page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:22
+#: ../admin/tabs/permalinks.php:24
 msgid "This page is where users will view their account."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:28
+#: ../admin/tabs/permalinks.php:30
 msgid "Users Ultra Profile Page"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:30
+#: ../admin/tabs/permalinks.php:32
 msgid ""
 "Make sure you have the <code>[usersultra_profile]</code> shortcode on this "
 "page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:31
+#: ../admin/tabs/permalinks.php:33
 msgid ""
 "This page is where users will view their own profiles, or view other user "
 "profiles from the member directory if allowed."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:37
+#: ../admin/tabs/permalinks.php:39
 msgid "Users Ultra Login Page"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:39
+#: ../admin/tabs/permalinks.php:41
 msgid ""
 "If you wish to change default Users Ultra login page, you may set it here. "
 "Make sure you have the <code>[usersultra_login]</code> shortcode on this "
 "page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:40
+#: ../admin/tabs/permalinks.php:42
 msgid "The default front-end login page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:46
+#: ../admin/tabs/permalinks.php:48
 msgid "Users Ultra Registration Page"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:48
+#: ../admin/tabs/permalinks.php:50
 msgid ""
 "Make sure you have the <code>[usersultra_registration]</code> shortcode on "
 "this page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:49 ../admin/tabs/permalinks.php:58
+#: ../admin/tabs/permalinks.php:51 ../admin/tabs/permalinks.php:60
 msgid "The default front-end Registration page where new users will sign up."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:55
+#: ../admin/tabs/permalinks.php:57
 msgid "Users Ultra Directory Page"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:57
+#: ../admin/tabs/permalinks.php:59
 msgid ""
 "Make sure you have the <code>[usersultra_directory]</code> shortcode on this "
 "page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:74
+#: ../admin/tabs/permalinks.php:76
 msgid ""
 "Users Ultra offers you the ability to create a custom URL structure for the "
 "main pages of your website"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:83
+#: ../admin/tabs/permalinks.php:85
 msgid "Profile Slug"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:84 ../admin/tabs/permalinks.php:85
+#: ../admin/tabs/permalinks.php:86 ../admin/tabs/permalinks.php:87
 msgid "Enter your custom Slug for the profile page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:93
+#: ../admin/tabs/permalinks.php:95
 msgid "Profile Link Field"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:95
+#: ../admin/tabs/permalinks.php:97
 msgid "The Profile Link is built by using the User ID"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:96
+#: ../admin/tabs/permalinks.php:98
 msgid "The Profile Link is built by using the Username"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:100 ../admin/tabs/permalinks.php:101
+#: ../admin/tabs/permalinks.php:102 ../admin/tabs/permalinks.php:103
 msgid ""
 "Please note: This option is used for permalinks. You can choice what field "
 "will be used in the Users Profile Link"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:108
+#: ../admin/tabs/permalinks.php:110
 msgid "Login Slug"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:109 ../admin/tabs/permalinks.php:110
+#: ../admin/tabs/permalinks.php:111 ../admin/tabs/permalinks.php:112
 msgid "Enter your custom Slug for the Login Page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:116
+#: ../admin/tabs/permalinks.php:118
 msgid "Registration Slug"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:117 ../admin/tabs/permalinks.php:118
+#: ../admin/tabs/permalinks.php:119 ../admin/tabs/permalinks.php:120
 msgid "Enter your custom Slug for the Registration Page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:124
+#: ../admin/tabs/permalinks.php:126
 msgid "My Account Slug"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:125 ../admin/tabs/permalinks.php:126
+#: ../admin/tabs/permalinks.php:127 ../admin/tabs/permalinks.php:128
 msgid "Enter your custom Slug for the \"My Account\" Page."
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:132
+#: ../admin/tabs/permalinks.php:134
 msgid "Users Directory Slug"
 msgstr ""
 
-#: ../admin/tabs/permalinks.php:133 ../admin/tabs/permalinks.php:134
+#: ../admin/tabs/permalinks.php:135 ../admin/tabs/permalinks.php:136
 msgid "Enter your custom Slug for the Users Directory Page."
 msgstr ""
 
@@ -2956,18 +2957,22 @@ msgstr ""
 msgid "Settings saved."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:1009
+#: ../xooclasses/xoo.userultra.admin.php:1014
 msgid "Please create '"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:1096
+#: ../xooclasses/xoo.userultra.admin.php:1056
+msgid "Rewrite Rules were Saved."
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.admin.php:1108
 msgid ""
 "Please make sure that you've set the right My Account Page. Users Ultra "
 "couldn't find it and some important features such as password reset, account "
 "confirmation won't work properly."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.admin.php:1096
+#: ../xooclasses/xoo.userultra.admin.php:1108
 msgid "Click here to set the My Account Page"
 msgstr ""
 
@@ -2979,19 +2984,19 @@ msgstr ""
 msgid "Prove you're not a robot"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:290
-msgid "Enter Verification Words "
+#: ../xooclasses/xoo.userultra.captchamodules.php:304
+msgid "Enter Verification Words"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:294
+#: ../xooclasses/xoo.userultra.captchamodules.php:308
 msgid "Load Image"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:295
+#: ../xooclasses/xoo.userultra.captchamodules.php:309
 msgid "Load Audio"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:296
+#: ../xooclasses/xoo.userultra.captchamodules.php:310
 msgid "Refresh Image"
 msgstr ""
 
@@ -3360,11 +3365,11 @@ msgid "<strong>ERROR:</strong> Your account is not active."
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.login.php:1433
-#: ../xooclasses/xoo.userultra.login.php:1674
+#: ../xooclasses/xoo.userultra.login.php:1705
 msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.login.php:1691
+#: ../xooclasses/xoo.userultra.login.php:1722
 msgid ""
 "<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK "
 "PLEASE LOGIN AGAIN."

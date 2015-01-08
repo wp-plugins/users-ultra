@@ -101,8 +101,8 @@ $this->create_plugin_setting(
         'textarea',
         'messaging_welcome_email_client_admin',
         __('Admin New User Message','xoousers'),array(),
-        __('This message will be sent to admin.','xoousers'),
-        __('This message will be sent to admin.','xoousers')
+        __('This message will be sent to the admin.','xoousers'),
+        __('This message will be sent to the admin.','xoousers')
 		
 );
 
@@ -110,8 +110,8 @@ $this->create_plugin_setting(
         'textarea',
         'messaging_welcome_email_with_activation_admin',
         __('Admin Pending Activation Message','xoousers'),array(),
-        __('This message will be sent to admin if the user needs manual activation.','xoousers'),
-        __('This message will be sent to admin if the user needs manual activation.','xoousers')
+        __('This message will be sent to the admin if the user needs manual activation.','xoousers'),
+        __('This message will be sent to the admin if the user needs manual activation.','xoousers')
 		
 );
 
@@ -177,8 +177,8 @@ $this->create_plugin_setting(
         'textarea',
         'admin_account_deny_message_body',
         __('Deny Account Activation','xoousers'),array(),
-        __('This message is sent when the admin do not approve the user account.','xoousers'),
-        __('This message is sent when the admin do not approve the user account.','xoousers')
+        __('This message is sent when the admin does not approve the user account.','xoousers'),
+        __('This message is sent when the admin does not approve the user account.','xoousers')
 		
 );
 

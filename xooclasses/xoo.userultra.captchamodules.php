@@ -283,23 +283,38 @@ class XooUserCaptchaModule
     
     private function load_custom_recaptcha($public_key='')
     {
+       		
+		
+		if (is_ssl()) 
+		{
+			$url = "https://www.google.com/recaptcha/api";
+			  			
+  		}else{
+			
+			$url = "http://www.google.com/recaptcha/api";	
+		
+		}
+  
+
+
         return '<div id="recaptcha_widget">
                         <div id="recaptcha_image_holder">
                             <div id="recaptcha_image" class="uultra-captcha-img"></div>
                             <div class="recaptcha_text_box">
-                                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="text" placeholder="'.__("Enter Verification Words ",'xoousers').'" />
+                                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="text" placeholder=" '.__("Enter Verification Words",'xoousers').'" />
                             </div>
                         </div>
                         <div id="recaptcha_control_holder">
-                            <a href="javascript:Recaptcha.switch_type(\'image\');" title="'.__("Load Image",'xoousers').'" ><i class="fa fa-camera"></i></a>
+                            <a href="javascript:Recaptcha.switch_type(\'image\');" title="'.__("Load Image",'xoousers').'"><i class="fa fa-camera"></i></a>
                             <a href="javascript:Recaptcha.switch_type(\'audio\');" title="'.__("Load Audio",'xoousers').'"><i class="fa fa-volume-up"></i></a>
                             <a href="javascript:void(0);" id="recaptcha_reload_btn" onclick="Recaptcha.reload();" title="'.__("Refresh Image",'xoousers').'"><i class="fa fa-refresh"></i></a>
                         </div> 
                 </div>
 
-                 <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k='.$public_key.'"></script>
+                 <script type="text/javascript" src="'.$url.'/challenge?k='.$public_key.'"></script>
+				 
                  <noscript>
-                   <iframe src="http://www.google.com/recaptcha/api/noscript?k='.$public_key.'" height="300" width="500" frameborder="0"></iframe>
+                   <iframe src="'.$url.'/noscript?k='.$public_key.'" height="300" width="500" frameborder="0"></iframe>
                    <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
                    <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
                  </noscript>';
