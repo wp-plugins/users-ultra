@@ -85,7 +85,8 @@ class XooShortCode {
 	/**
 	* Don't auto-p wrap shortcodes that stand alone
 	*/
-	function respo_base_unautop() {
+	function respo_base_unautop() 
+	{
 		add_filter( 'the_content',  'shortcode_unautop');
 	}
 	

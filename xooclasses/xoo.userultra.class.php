@@ -2234,7 +2234,10 @@ class XooUserUltra
 							
 						case 'radio':
 						
-						$required_class = "validate[required] radio ";
+						if($required == 1 && in_array($field, $this->include_for_validation))
+						{
+								$required_class = "validate[required] radio ";
+						}
 						
 							if (isset($array[$key]['choices']))
 							{
@@ -2263,7 +2266,10 @@ class XooUserUltra
 							
 						case 'checkbox':
 						
-						$required_class = "validate[required] checkbox ";
+						if($required == 1 && in_array($field, $this->include_for_validation))
+							{
+								$required_class = "validate[required] checkbox ";
+							}	
 						
 							if (isset($array[$key]['choices'])) 
 							{
