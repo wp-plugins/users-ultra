@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2014-12-27 17:09-0300\n"
-"PO-Revision-Date: 2014-12-27 17:09-0300\n"
+"POT-Creation-Date: 2015-01-10 02:50-0300\n"
+"PO-Revision-Date: 2015-01-10 02:50-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -125,7 +125,7 @@ msgstr "Usted puede escribir  código personalizado CSS aquí"
 
 #: ../admin/tabs/customizer.php:38 ../admin/tabs/gateway.php:72
 #: ../admin/tabs/mail.php:197 ../admin/tabs/membership.php:38
-#: ../admin/tabs/permalinks.php:146 ../admin/tabs/settings.php:810
+#: ../admin/tabs/permalinks.php:148 ../admin/tabs/settings.php:810
 msgid "Save Changes"
 msgstr "Guardar los cambios"
 
@@ -895,7 +895,8 @@ msgid "Admin New User Message"
 msgstr "Admin Nuevo mensaje de usuario"
 
 #: ../admin/tabs/mail.php:104 ../admin/tabs/mail.php:105
-msgid "This message will be sent to admin."
+#, fuzzy
+msgid "This message will be sent to the admin."
 msgstr "Este mensaje será enviado al administrador."
 
 #: ../admin/tabs/mail.php:112
@@ -903,7 +904,9 @@ msgid "Admin Pending Activation Message"
 msgstr "Pendiente de Activación enviado al Administrador"
 
 #: ../admin/tabs/mail.php:113 ../admin/tabs/mail.php:114
-msgid "This message will be sent to admin if the user needs manual activation."
+#, fuzzy
+msgid ""
+"This message will be sent to the admin if the user needs manual activation."
 msgstr ""
 "Este mensaje se enviará al administrador si el usuario necesita la "
 "activación manual."
@@ -976,7 +979,8 @@ msgid "Deny Account Activation"
 msgstr "Denegar Activación de la cuenta"
 
 #: ../admin/tabs/mail.php:180 ../admin/tabs/mail.php:181
-msgid "This message is sent when the admin do not approve the user account."
+#, fuzzy
+msgid "This message is sent when the admin does not approve the user account."
 msgstr ""
 "Este mensaje se envía cuando el administrador aprueba la cuenta de usuario."
 
@@ -1279,11 +1283,11 @@ msgstr "Método"
 msgid "Permalinks"
 msgstr "Enlaces permanentes"
 
-#: ../admin/tabs/permalinks.php:6
+#: ../admin/tabs/permalinks.php:8
 msgid "Users Ultra Pages Setting"
 msgstr "Users Ultra Páginas de Configuración"
 
-#: ../admin/tabs/permalinks.php:8
+#: ../admin/tabs/permalinks.php:10
 msgid ""
 "The following pages are automatically created when Users Ultra Plugin\n"
 "   is activated. You can leave them as they are or change to custom pages "
@@ -1293,11 +1297,11 @@ msgstr ""
 "Ultra Plugin \n"
 ". Puede dejarlas como están o cambiar a páginas personalizados aquí."
 
-#: ../admin/tabs/permalinks.php:19
+#: ../admin/tabs/permalinks.php:21
 msgid "Users Ultra My Account"
 msgstr "Users Ultra Mi Cuenta"
 
-#: ../admin/tabs/permalinks.php:21
+#: ../admin/tabs/permalinks.php:23
 msgid ""
 "Make sure you have the <code>[usersultra_my_account]</code> shortcode on "
 "this page."
@@ -1305,15 +1309,15 @@ msgstr ""
 "Asegúrese de que tiene el <code>[usersultra_my_account]</code> código corto "
 "en esta página."
 
-#: ../admin/tabs/permalinks.php:22
+#: ../admin/tabs/permalinks.php:24
 msgid "This page is where users will view their account."
 msgstr "Esta página es donde los usuarios ven su cuenta."
 
-#: ../admin/tabs/permalinks.php:28
+#: ../admin/tabs/permalinks.php:30
 msgid "Users Ultra Profile Page"
 msgstr "Users Ultra Perfil de Usuario"
 
-#: ../admin/tabs/permalinks.php:30
+#: ../admin/tabs/permalinks.php:32
 msgid ""
 "Make sure you have the <code>[usersultra_profile]</code> shortcode on this "
 "page."
@@ -1321,7 +1325,7 @@ msgstr ""
 "Asegúrese de que tiene la <code>[usersultra_profile]</code> shortcode en "
 "esta página."
 
-#: ../admin/tabs/permalinks.php:31
+#: ../admin/tabs/permalinks.php:33
 msgid ""
 "This page is where users will view their own profiles, or view other user "
 "profiles from the member directory if allowed."
@@ -1329,11 +1333,11 @@ msgstr ""
 "Esta página es donde los usuarios ven sus propios perfiles, o ven otros "
 "perfiles de usuario desde el directorio de miembros si está permitido."
 
-#: ../admin/tabs/permalinks.php:37
+#: ../admin/tabs/permalinks.php:39
 msgid "Users Ultra Login Page"
 msgstr "Users Ultra Página de Acceso"
 
-#: ../admin/tabs/permalinks.php:39
+#: ../admin/tabs/permalinks.php:41
 msgid ""
 "If you wish to change default Users Ultra login page, you may set it here. "
 "Make sure you have the <code>[usersultra_login]</code> shortcode on this "
@@ -1343,15 +1347,15 @@ msgstr ""
 "predeterminada, puede configurarlo aquí. Asegúrese de que tiene la "
 "<code>[usersultra_login]</code> shortcode en esta página."
 
-#: ../admin/tabs/permalinks.php:40
+#: ../admin/tabs/permalinks.php:42
 msgid "The default front-end login page."
 msgstr "Por defecto página de inicio de sesión para el usuario por defecto."
 
-#: ../admin/tabs/permalinks.php:46
+#: ../admin/tabs/permalinks.php:48
 msgid "Users Ultra Registration Page"
 msgstr "Users Ultra Página de Registro"
 
-#: ../admin/tabs/permalinks.php:48
+#: ../admin/tabs/permalinks.php:50
 msgid ""
 "Make sure you have the <code>[usersultra_registration]</code> shortcode on "
 "this page."
@@ -1359,17 +1363,17 @@ msgstr ""
 "Asegúrese de que tiene el <code>[usersultra_registration]</code> código "
 "corto en esta página."
 
-#: ../admin/tabs/permalinks.php:49 ../admin/tabs/permalinks.php:58
+#: ../admin/tabs/permalinks.php:51 ../admin/tabs/permalinks.php:60
 msgid "The default front-end Registration page where new users will sign up."
 msgstr ""
 "La página de registro para el usuario por defecto donde los nuevos usuarios "
 "se inscriban."
 
-#: ../admin/tabs/permalinks.php:55
+#: ../admin/tabs/permalinks.php:57
 msgid "Users Ultra Directory Page"
 msgstr "Users Ultra Directorio Página"
 
-#: ../admin/tabs/permalinks.php:57
+#: ../admin/tabs/permalinks.php:59
 msgid ""
 "Make sure you have the <code>[usersultra_directory]</code> shortcode on this "
 "page."
@@ -1377,7 +1381,7 @@ msgstr ""
 "Asegúrese de que tiene el <code>[usersultra_directory]</code> código corto "
 "en esta página."
 
-#: ../admin/tabs/permalinks.php:74
+#: ../admin/tabs/permalinks.php:76
 msgid ""
 "Users Ultra offers you the ability to create a custom URL structure for the "
 "main pages of your website"
@@ -1385,27 +1389,27 @@ msgstr ""
 "Users Ultra le ofrece la posibilidad de crear una estructura de dirección "
 "URL personalizada para las páginas principales de su sitio web"
 
-#: ../admin/tabs/permalinks.php:83
+#: ../admin/tabs/permalinks.php:85
 msgid "Profile Slug"
 msgstr "Perfil Prefijo"
 
-#: ../admin/tabs/permalinks.php:84 ../admin/tabs/permalinks.php:85
+#: ../admin/tabs/permalinks.php:86 ../admin/tabs/permalinks.php:87
 msgid "Enter your custom Slug for the profile page."
 msgstr "Escriba su Slug personalizado para la página de perfil."
 
-#: ../admin/tabs/permalinks.php:93
+#: ../admin/tabs/permalinks.php:95
 msgid "Profile Link Field"
 msgstr "Campo del Formulario"
 
-#: ../admin/tabs/permalinks.php:95
+#: ../admin/tabs/permalinks.php:97
 msgid "The Profile Link is built by using the User ID"
 msgstr "El perfil de vínculo se construye utilizando el ID de usuario"
 
-#: ../admin/tabs/permalinks.php:96
+#: ../admin/tabs/permalinks.php:98
 msgid "The Profile Link is built by using the Username"
 msgstr "El perfil de vínculo se construye utilizando el nombre de usuario"
 
-#: ../admin/tabs/permalinks.php:100 ../admin/tabs/permalinks.php:101
+#: ../admin/tabs/permalinks.php:102 ../admin/tabs/permalinks.php:103
 msgid ""
 "Please note: This option is used for permalinks. You can choice what field "
 "will be used in the Users Profile Link"
@@ -1413,35 +1417,35 @@ msgstr ""
 "Nota: esta opción se utiliza para los permalinks. Puede elegir qué campo se "
 "utilizará en el Link del perfil de los usuarios"
 
-#: ../admin/tabs/permalinks.php:108
+#: ../admin/tabs/permalinks.php:110
 msgid "Login Slug"
 msgstr "Ingresar Prefijo"
 
-#: ../admin/tabs/permalinks.php:109 ../admin/tabs/permalinks.php:110
+#: ../admin/tabs/permalinks.php:111 ../admin/tabs/permalinks.php:112
 msgid "Enter your custom Slug for the Login Page."
 msgstr "Escriba su Slug personalizado para la página de entrada."
 
-#: ../admin/tabs/permalinks.php:116
+#: ../admin/tabs/permalinks.php:118
 msgid "Registration Slug"
 msgstr "Registro Prefijo"
 
-#: ../admin/tabs/permalinks.php:117 ../admin/tabs/permalinks.php:118
+#: ../admin/tabs/permalinks.php:119 ../admin/tabs/permalinks.php:120
 msgid "Enter your custom Slug for the Registration Page."
 msgstr "Escriba su Slug personalizado para la página de registro."
 
-#: ../admin/tabs/permalinks.php:124
+#: ../admin/tabs/permalinks.php:126
 msgid "My Account Slug"
 msgstr "Mi Cuenta Prefija"
 
-#: ../admin/tabs/permalinks.php:125 ../admin/tabs/permalinks.php:126
+#: ../admin/tabs/permalinks.php:127 ../admin/tabs/permalinks.php:128
 msgid "Enter your custom Slug for the \"My Account\" Page."
 msgstr "Escriba su Slug personalizado para el \"Mi Cuenta\" Page."
 
-#: ../admin/tabs/permalinks.php:132
+#: ../admin/tabs/permalinks.php:134
 msgid "Users Directory Slug"
 msgstr "Users Ultra Directorio Página"
 
-#: ../admin/tabs/permalinks.php:133 ../admin/tabs/permalinks.php:134
+#: ../admin/tabs/permalinks.php:135 ../admin/tabs/permalinks.php:136
 msgid "Enter your custom Slug for the Users Directory Page."
 msgstr "Escriba su Slug personalizado para el Directorio de Usuarios."
 
@@ -2347,7 +2351,7 @@ msgstr "LinkedIn API de Clave Pública"
 #: ../admin/tabs/settings.php:564 ../admin/tabs/settings.php:565
 #, fuzzy
 msgid "Obtained when you created your application."
-msgstr "Obtenido cuando creó su aplicación."
+msgstr "Obtenido cuando creó la aplicación de Facebook."
 
 #: ../admin/tabs/settings.php:571
 msgid "LinkedIn API Key Private"
@@ -3296,11 +3300,15 @@ msgstr "Lo sentimos, pero tu cuenta no ha sido aprobado."
 msgid "Settings saved."
 msgstr "Ajustes guardados."
 
-#: ../xooclasses/xoo.userultra.admin.php:1009
+#: ../xooclasses/xoo.userultra.admin.php:1014
 msgid "Please create '"
 msgstr "Por Favor crearse '"
 
-#: ../xooclasses/xoo.userultra.admin.php:1096
+#: ../xooclasses/xoo.userultra.admin.php:1056
+msgid "Rewrite Rules were Saved."
+msgstr ""
+
+#: ../xooclasses/xoo.userultra.admin.php:1108
 msgid ""
 "Please make sure that you've set the right My Account Page. Users Ultra "
 "couldn't find it and some important features such as password reset, account "
@@ -3311,7 +3319,7 @@ msgstr ""
 "restablecimiento de contraseña, la confirmación de cuenta no funcionará "
 "correctamente."
 
-#: ../xooclasses/xoo.userultra.admin.php:1096
+#: ../xooclasses/xoo.userultra.admin.php:1108
 msgid "Click here to set the My Account Page"
 msgstr "Haga clic aquí para configurar la página mi cuenta"
 
@@ -3323,19 +3331,21 @@ msgstr "Verificación"
 msgid "Prove you're not a robot"
 msgstr "Demuestra que no eres un robot"
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:290
-msgid "Enter Verification Words "
+#: ../xooclasses/xoo.userultra.captchamodules.php:304
+#, fuzzy
+msgid "Enter Verification Words"
 msgstr "verificación de la Cuenta"
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:294
+#: ../xooclasses/xoo.userultra.captchamodules.php:308
 msgid "Load Image"
 msgstr "Subir Imagen"
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:295
+#: ../xooclasses/xoo.userultra.captchamodules.php:309
+#, fuzzy
 msgid "Load Audio"
-msgstr ""
+msgstr "Subir Imagen"
 
-#: ../xooclasses/xoo.userultra.captchamodules.php:296
+#: ../xooclasses/xoo.userultra.captchamodules.php:310
 #, fuzzy
 msgid "Refresh Image"
 msgstr "Subir Imagen"
@@ -3558,7 +3568,7 @@ msgid "Forgot Password?"
 msgstr "¿Has olvidado tu contraseña?"
 
 #: ../xooclasses/xoo.userultra.class.php:1699
-#: ../xooclasses/xoo.userultra.class.php:2419
+#: ../xooclasses/xoo.userultra.class.php:2425
 msgid "Register"
 msgstr "Registro"
 
@@ -3667,11 +3677,11 @@ msgstr "Contratar"
 #: ../xooclasses/xoo.userultra.class.php:2194
 #: ../xooclasses/xoo.userultra.class.php:2198
 #: ../xooclasses/xoo.userultra.class.php:2221
-#: ../xooclasses/xoo.userultra.class.php:2305
+#: ../xooclasses/xoo.userultra.class.php:2311
 msgid " * This input is required!"
 msgstr "* Se requiere esta entrada!"
 
-#: ../xooclasses/xoo.userultra.class.php:2318
+#: ../xooclasses/xoo.userultra.class.php:2324
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
@@ -3679,29 +3689,29 @@ msgstr ""
 "Si desea cambiar la contraseña, escriba una nueva. De lo contrario dejarlo "
 "en blanco."
 
-#: ../xooclasses/xoo.userultra.class.php:2322
+#: ../xooclasses/xoo.userultra.class.php:2328
 msgid "Type your new password again."
 msgstr "Escriba la nueva contraseña de nuevo."
 
-#: ../xooclasses/xoo.userultra.class.php:2334
+#: ../xooclasses/xoo.userultra.class.php:2340
 #: ../xooclasses/xoo.userultra.user.php:1711
 msgid "Hide from Public"
 msgstr "Ocultar al Público"
 
-#: ../xooclasses/xoo.userultra.class.php:2355
+#: ../xooclasses/xoo.userultra.class.php:2361
 msgid "Payment Information"
 msgstr "Información sobre el pago"
 
-#: ../xooclasses/xoo.userultra.class.php:2373
+#: ../xooclasses/xoo.userultra.class.php:2379
 msgid "Receive Daily Updates"
 msgstr "Receive Daily Updates"
 
-#: ../xooclasses/xoo.userultra.class.php:2382
+#: ../xooclasses/xoo.userultra.class.php:2388
 msgid "Receive Daily Updates "
 msgstr "Recibe Actualizaciones diarias"
 
-#: ../xooclasses/xoo.userultra.class.php:2394
-#: ../xooclasses/xoo.userultra.class.php:2402
+#: ../xooclasses/xoo.userultra.class.php:2400
+#: ../xooclasses/xoo.userultra.class.php:2408
 msgid "Terms & Conditions "
 msgstr "Términos y Condiciones"
 
@@ -3731,11 +3741,11 @@ msgid "<strong>ERROR:</strong> Your account is not active."
 msgstr "<strong> ERROR: </ strong> Su cuenta no está activa."
 
 #: ../xooclasses/xoo.userultra.login.php:1433
-#: ../xooclasses/xoo.userultra.login.php:1674
+#: ../xooclasses/xoo.userultra.login.php:1705
 msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
 msgstr "<strong> ERROR: </ strong> Su cuenta aún no está activa."
 
-#: ../xooclasses/xoo.userultra.login.php:1691
+#: ../xooclasses/xoo.userultra.login.php:1722
 msgid ""
 "<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK "
 "PLEASE LOGIN AGAIN."
@@ -4151,7 +4161,7 @@ msgstr "Suelte archivos aquí"
 #: ../xooclasses/xoo.userultra.photos.php:2272
 #, fuzzy
 msgid "Select files"
-msgstr "Seleccionar Modo"
+msgstr "Seleccionar"
 
 #: ../xooclasses/xoo.userultra.photos.php:2303
 #: ../xooclasses/xoo.userultra.publisher.php:1082
@@ -4279,7 +4289,7 @@ msgstr "Soltar Imágenes Aquí"
 #: ../xooclasses/xoo.userultra.publisher.php:1046
 #, fuzzy
 msgid "Select Files"
-msgstr "Seleccionar Modo"
+msgstr "Seleccionar"
 
 #: ../xooclasses/xoo.userultra.publisher.php:1141
 #: ../xooclasses/xoo.userultra.user.php:4790

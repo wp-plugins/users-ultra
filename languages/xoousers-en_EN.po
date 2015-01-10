@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-01-08 03:14-0300\n"
-"PO-Revision-Date: 2015-01-08 03:14-0300\n"
+"POT-Creation-Date: 2015-01-10 02:50-0300\n"
+"PO-Revision-Date: 2015-01-10 02:50-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -3200,7 +3200,7 @@ msgid "Forgot Password?"
 msgstr ""
 
 #: ../xooclasses/xoo.userultra.class.php:1699
-#: ../xooclasses/xoo.userultra.class.php:2419
+#: ../xooclasses/xoo.userultra.class.php:2425
 msgid "Register"
 msgstr ""
 
@@ -3304,39 +3304,39 @@ msgstr ""
 #: ../xooclasses/xoo.userultra.class.php:2194
 #: ../xooclasses/xoo.userultra.class.php:2198
 #: ../xooclasses/xoo.userultra.class.php:2221
-#: ../xooclasses/xoo.userultra.class.php:2305
+#: ../xooclasses/xoo.userultra.class.php:2311
 msgid " * This input is required!"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2318
+#: ../xooclasses/xoo.userultra.class.php:2324
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2322
+#: ../xooclasses/xoo.userultra.class.php:2328
 msgid "Type your new password again."
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2334
+#: ../xooclasses/xoo.userultra.class.php:2340
 #: ../xooclasses/xoo.userultra.user.php:1711
 msgid "Hide from Public"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2355
+#: ../xooclasses/xoo.userultra.class.php:2361
 msgid "Payment Information"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2373
+#: ../xooclasses/xoo.userultra.class.php:2379
 msgid "Receive Daily Updates"
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2382
+#: ../xooclasses/xoo.userultra.class.php:2388
 msgid "Receive Daily Updates "
 msgstr ""
 
-#: ../xooclasses/xoo.userultra.class.php:2394
-#: ../xooclasses/xoo.userultra.class.php:2402
+#: ../xooclasses/xoo.userultra.class.php:2400
+#: ../xooclasses/xoo.userultra.class.php:2408
 msgid "Terms & Conditions "
 msgstr ""
 
