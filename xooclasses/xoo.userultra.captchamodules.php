@@ -283,6 +283,12 @@ class XooUserCaptchaModule
     
     private function load_custom_recaptcha($public_key='')
     {
+		
+		// if site is set to run on SSL, then force-enable SSL detection!
+		if (stripos(get_option('siteurl'), 'https://') === 0)
+		 {
+			$_SERVER['HTTPS'] = 'on';
+		}
        		
 		
 		if (is_ssl()) 
