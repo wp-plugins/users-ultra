@@ -157,10 +157,19 @@ class XooUserUser {
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
+		require_once(ABSPATH. 'wp-admin/includes/ms.php' );
 		
 		//close
 		$current_user = wp_get_current_user();
-		wp_delete_user( $current_user->ID );		
+		$user_id = $current_user->ID;
+		wp_delete_user( $current_user->ID );
+		
+		//delete for multisite wpmu 		
+		if(function_exists('wpmu_delete_user')) 
+		{		
+			wpmu_delete_user( $user_id );				
+		}
+		
 		wp_clear_auth_cookie();		
 		
 	
@@ -5259,6 +5268,9 @@ class XooUserUser {
 			if(!isset($show_in_widget))
 			    $show_in_widget = 1;
 				
+				
+			$can_hide = get_the_author_meta('hide_' . $meta, $user_id);
+				
 			
 			
 			/* Fieldset seperator */
@@ -5267,7 +5279,7 @@ class XooUserUser {
 				$html .= '<div class="uultra-profile-seperator">'.$name.'</div>';
 			}
 			
-			if ( $type == 'usermeta' && $deleted == 0 && $private == 0  && isset($array[$key]['show_in_register']) && $array[$key]['show_in_register'] == 1)			
+			if ( $type == 'usermeta' && $deleted == 0 && $private == 0  && isset($array[$key]['show_in_register']) && $array[$key]['show_in_register'] == 1 && $can_hide ==0)			
 			{				
 				/* Show the label */
 				if (isset($array[$key]['name']) && $name)

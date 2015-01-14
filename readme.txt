@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.16
+Stable tag: 1.4.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -257,6 +257,7 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
   <li>Swedish. Thanks to <a href='http://www.usersultra.com/support/forums/topic/custom-translations/'>€lger</a> </li>
   <li>German.</li>
   <li>Portuguese. Thanks to <a href='https://wordpress.org/support/profile/mauromascarenhas/'>mauro.mascarenhas</a></li> 
+  <li>Portuguese Brasilian. Thanks to <a href='https://wordpress.org/support/profile/mauromascarenhas/'>mauro.mascarenhas</a></li>
   <li>French. Thanks to <a href='http://usersultra.com/support/forums/topic/french-translation/'>Ben</a></li> 
   <li>Spanish.</li>   
 </ul>
@@ -333,6 +334,11 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.4.17(01-14-2015) =
+* Improvement -  delete users on network. http://usersultra.com/support/forums/topic/probleme-sur-reset-link-and-delete-user/
+* Improvement -  New Language has been added. Now UU has been translated to Brasilian and Portugues.
+* Improvement -  hide from public issue.
 
 = 1.4.16(01-11-2015) =
 * Improvement -  reCaptcha tweak for SSL. Details here http://usersultra.com/support/forums/topic/recaptcha-problem/

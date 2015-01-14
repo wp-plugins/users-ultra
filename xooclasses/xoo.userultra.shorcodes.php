@@ -4,7 +4,7 @@ class XooShortCode {
 	function __construct() 
 	{
 		
-		add_action( 'wp_head',   array(&$this,'xoousers_shortcodes'));	
+		add_action( 'init',   array(&$this,'xoousers_shortcodes'));	
 		add_action( 'init', array(&$this,'respo_base_unautop') );	
 
 	}
