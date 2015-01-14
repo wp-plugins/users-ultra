@@ -1790,6 +1790,11 @@ class XooUserUser {
                         $value = implode(', ', $value);
                     }
 					
+					if($key=="display_name")
+					{
+						wp_update_user( array( 'ID' => $user_id, 'display_name' => esc_attr($value) ) );
+					}
+					
 					//echo $key. " ";
 					update_user_meta($user_id, "hide_".$key, "");
 					update_user_meta($user_id, $key, esc_attr($value));
@@ -1884,14 +1889,8 @@ class XooUserUser {
 		
 		}elseif ($display_type == 'display_name') {
 			
-			$display_name = get_user_meta($user_id, 'display_name', true);	
-			
-			if($display_name=="")
-			{
-				$display_name =$user->display_name;
-			
-			}
-				
+						
+			$display_name =$user->display_name;				
 			
 				
 		}
