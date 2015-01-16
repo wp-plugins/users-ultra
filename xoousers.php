@@ -3,7 +3,7 @@
 Plugin Name: Users Ultra Lite
 Plugin URI: http://usersultra.com
 Description: This is a powerful user profiles plugin for WordPress.
-Version: 1.4.18
+Version: 1.4.19
 Author: Users Ultra
 Author URI: http://usersultra.com
 */
@@ -28,7 +28,24 @@ $plugin = plugin_basename(__FILE__);
 require_once (xoousers_path . 'functions/functions.php');
 
 /* Init */
-require_once (xoousers_path . 'init/init.php');
+define('uultraxoousers_pro_url','http://usersultra.com/');
+/* Load plugin text domain (localization) */
+
+function xoousers_load_textdomain() 
+{
+       $locale = apply_filters( 'plugin_locale', get_locale(), 'users-ultra' );	   
+       $mofile = xoousers_path . "languages/xoousers-$locale.mo";
+			
+		// Global + Frontend Locale
+		load_textdomain( 'xoousers', $mofile );
+		load_plugin_textdomain( 'xoousers', false, dirname(plugin_basename(__FILE__)).'/languages/' );
+}
+	
+add_action('init', 'xoousers_load_textdomain');
+add_action('init', 'xoousers_output_buffer');
+function xoousers_output_buffer() {
+		ob_start();
+}
 
 /* Master Class  */
 require_once (xoousers_path . 'xooclasses/xoo.userultra.class.php');
