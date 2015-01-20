@@ -7,33 +7,6 @@
 
 .fa-icon-none{ border-color: #FFF !important}
 .fa-none{ border-color: #FFF !important}
-/*Check box styles*/
-
-/*.xoouserultra-wrap input[type=checkbox]:not(old),
-.xoouserultra-wrap input[type=radio   ]:not(old){
-  width   : 28px !important;
-  margin  : 0 !important;
-  padding : 0 !important;
-  opacity : 0 !important;
-}
-
-.xoouserultra-wrap input[type=checkbox]:not(old) + label,
-.xoouserultra-wrap input[type=radio   ]:not(old) + label{
-  display      : inline-block !important;
-  margin-left  : -28px !important;
-  padding-left : 28px !important;
-  background   : url('../img/checks.png') no-repeat 0 0;
-  line-height  : 24px !important;
-}
-
-.xoouserultra-wrap input[type=checkbox]:not(old):checked + label{
-  background-position : 0 -24px;
-}
-
-.xoouserultra-wrap input[type=radio]:not(old):checked + label{
-  background-position : 0 -48px;
-}*/
-
 
 /*Check box styles 2 new*/
 
@@ -183,33 +156,6 @@
 /*-------------end radio styles*/
 
 
-/**/
-/*Private Profile Styles for checkboxes*/
-
-/*.usersultra-dahsboard-cont input[type=checkbox]:not(old),
-.usersultra-dahsboard-cont input[type=radio   ]:not(old){
-  width   : 28px !important;
-  margin  : 0 !important;
-  padding : 0 !important;
-  opacity : 0 !important;
-}
-
-.usersultra-dahsboard-cont input[type=checkbox]:not(old) + label,
-.usersultra-dahsboard-cont input[type=radio   ]:not(old) + label{
-  display      : inline-block !important;
-  margin-left  : -28px !important;
-  padding-left : 28px !important;
-  background   : url('../img/checks.png') no-repeat 0 0;
-  line-height  : 24px !important;
-}
-
-.usersultra-dahsboard-cont input[type=checkbox]:not(old):checked + label{
-  background-position : 0 -24px ;
-}
-
-.usersultra-dahsboard-cont input[type=radio]:not(old):checked + label{
-  background-position : 0 -48px;
-}*/
 
 /**/
 

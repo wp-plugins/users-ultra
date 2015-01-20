@@ -21,9 +21,6 @@ class XooPaypalPayment
 		
 		add_action( 'wp_ajax_package_edit_confirm', array( $this, 'package_edit_confirm' ));
 		
-		
-		
-		
 
 	}
 	
@@ -102,12 +99,6 @@ class XooPaypalPayment
 			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_packages add column package_customization text ; ';
 			$wpdb->query($sql);
 		}
-		
-		
-		
-		
-		
-		
 		
 		
 	}
@@ -252,12 +243,8 @@ class XooPaypalPayment
 			}else{
 				
 				//$xoouserultra->messaging->paypal_ipn_debug("IPN ERRORS: ".$errors);
-				
 			
 			}
-			
-			
-		
 		
 		}else{
 			

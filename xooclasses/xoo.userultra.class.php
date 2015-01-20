@@ -3395,9 +3395,7 @@ class XooUserUltra
 			return 'United States';
 			}
 		}
-	}
-	
-		
+	}	
 	
 }
 ?>
