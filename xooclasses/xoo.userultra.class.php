@@ -1231,25 +1231,25 @@ class XooUserUltra
 		wp_register_style( 'xoouserultra_font_awesome', xoousers_url.'css/css/font-awesome.min.css');
 		wp_enqueue_style('xoouserultra_font_awesome');
 		
+		
+		
 		/* Main css file */
 		wp_register_style( 'xoouserultra_css', xoousers_url.'templates/'.xoousers_template.'/css/xoouserultra.css');
-		wp_enqueue_style('xoouserultra_css');
-		
-		/* Butonize css file */
-		wp_register_style( 'buttonize3_css', xoousers_url.'css/buttonize3.min.css');
-		wp_enqueue_style('buttonize3_css');
-		
+		wp_enqueue_style('xoouserultra_css');		
+				
 		/* Custom style */		
 		wp_register_style( 'xoouserultra_style', xoousers_url.'templates/'.xoousers_template.'/css/default.css');
-		wp_enqueue_style('xoouserultra_style');
-		
+		wp_enqueue_style('xoouserultra_style');		
 		
 		/* Responsive */
 		wp_register_style( 'xoouserultra_responsive', xoousers_url.'templates/'.xoousers_template.'/css/xoouserultra-responsive.css');
 		wp_enqueue_style('xoouserultra_responsive');
 		
 		
-		/* date_picker */
+		
+		/* Butonize css file */
+		wp_register_style( 'buttonize3_css', xoousers_url.'css/buttonize3.min.css');
+		wp_enqueue_style('buttonize3_css');
 		
 		
 		
@@ -1289,7 +1289,7 @@ class XooUserUltra
 		wp_register_script( 'form-validate-lang', xoousers_url.'js/languages/jquery.validationEngine-en.js',array('jquery'));
 			
 		wp_enqueue_script('form-validate-lang');			
-		wp_register_script( 'form-validate', xoousers_url.'js/jquery.validationEngine.js',array('jquery'));
+		wp_register_script('form-validate', xoousers_url.'js/jquery.validationEngine.js',array('jquery'));
 		wp_enqueue_script('form-validate');
 		
 		
@@ -2447,7 +2447,8 @@ class XooUserUltra
 	 * This has been added to avoid the window server issues
 	 */
 	public function uultra_one_line_checkbox_on_window_fix($choices)
-	{		
+	{
+			
 		
 		if($this->uultra_if_windows_server()) //is window
 		{
