@@ -2375,9 +2375,18 @@ class XooUserUltra
 			
 			//new mailchimp field			
 			
-			$mailchimp_text = stripslashes($this->get_option('mailchimp_text'));			
+			$mailchimp_text = stripslashes($this->get_option('mailchimp_text'));
+			$mailchimp_header_text = stripslashes($this->get_option('mailchimp_header_text'));
+			
+			if($mailchimp_header_text==''){
+				
+				$mailchimp_header_text = __('Receive Daily Updates ', 'xoousers');				
+			}	
+			
+			
+						
 			//
-			 $display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__('Receive Daily Updates', 'xoousers').'</div>';
+			 $display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.$mailchimp_header_text.'</div>';
 			 
 			$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
 			$display .= '<div class="xoouserultra-clear"></div>'; 
@@ -2386,7 +2395,7 @@ class XooUserUltra
 			$display .= '<span>&nbsp;</span></label>';
 			//$display .= '</label>';
 			$display .= '<div class="xoouserultra-field-value">';
-			$display .= '<input type="checkbox"  title="'.__('Receive Daily Updates ', 'xoousers').'" name="uultra-mailchimp-confirmation"  id="uultra-mailchimp-confirmation" value="1"  > <label for="uultra-mailchimp-confirmation"><span></span>'.$mailchimp_text.'</label></div>' ;
+			$display .= '<input type="checkbox"  title="'.$mailchimp_header_text.'" name="uultra-mailchimp-confirmation"  id="uultra-mailchimp-confirmation" value="1"  > <label for="uultra-mailchimp-confirmation"><span></span>'.$mailchimp_text.'</label></div>' ;
 			
 			$display .= '<div class="xoouserultra-clear"></div>';	
 			

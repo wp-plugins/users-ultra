@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.23
+Stable tag: 1.4.24
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <strong>MULTIPLE USERS DIRECTORY LAYOUTS: </strong>
 <ul>
   <li> <a href="http://usersultra.com/uultra-testing/directory-with-tables/">Users Table With Custom Columns.</a></li>
+   <li> <a href="http://usersultra.com/uultra-testing/members-directory-minified/">Minified Users List. Twitter Syle</a></li>
   
 </ul>
 
@@ -335,6 +336,11 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.4.24(01-21-2015) =
+* Improvement -  Issue with Package name has been resolved. Details here https://wordpress.org/support/topic/payment-information-color-issues?replies=9#post-6463355
+* New Feature -  Capability to set a custom header to be used when MailChipm is activate. Check details on the following link http://usersultra.com/support/forums/topic/registration-form-mailchimp-text-receive-daily-updates/
+
 
 = 1.4.23(01-20-2015) =
 * Improvement -  Coding improvement, issue with checkbox has been fixed.

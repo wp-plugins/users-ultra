@@ -367,6 +367,15 @@ $this->create_plugin_setting(
         __('Please input the text that will appear when asking users to get periodical updates.','xoousers')
 );
 
+
+	$this->create_plugin_setting(
+        'input',
+        'mailchimp_header_text',
+        __('MailChimp Header Text','xoousers'),array(),
+        __('Please input the text that will appear as header when mailchip is active.','xoousers'),
+        __('Please input the text that will appear as header when mailchip is active.','xoousers')
+);
+
 		
 ?>
 </table>
