@@ -2,6 +2,7 @@ if(typeof $ == 'undefined'){
 	var $ = jQuery;
 }
 (function($) {
+	
     $(document).ready(function () { 
 	
 	   "use strict";
@@ -229,14 +230,14 @@ if(typeof $ == 'undefined'){
 		function reload_gallery_list ()
 		{
 			
-			var page_id_val =   $('#page_id').val(); 
-			 $.post(ajaxurl, {
+			var page_id_val =   jQuery('#page_id').val(); 
+			 jQuery.post(ajaxurl, {
 							action: 'reload_galleries', 'page_id':  page_id_val 
 									
 							}, function (response){
 									
 																
-							$("#usersultra-gallerylist").html(response);
+							jQuery("#usersultra-gallerylist").html(response);
 									
 									
 					
@@ -248,14 +249,14 @@ if(typeof $ == 'undefined'){
 		
 		function reload_photo_list (gal_id)
 		{
-			var page_id_val =   $('#page_id').val(); 	
+			var page_id_val =   jQuery('#page_id').val(); 	
 			
-			 $.post(ajaxurl, {
+			 jQuery.post(ajaxurl, {
 							action: 'reload_photos', 'gal_id':  gal_id,  'page_id':  page_id_val 
 									
 							}, function (response){									
 																
-							$("#usersultra-photolist").html(response);
+							jQuery("#usersultra-photolist").html(response);
 					
 			});
 		}
@@ -264,19 +265,19 @@ if(typeof $ == 'undefined'){
 		function reload_video_list ()
 		{
 			
-			 $.post(ajaxurl, {
+			 jQuery.post(ajaxurl, {
 									action: 'reload_videos'
 									
 									}, function (response){																
 																
-									$("#usersultra-videolist").html(response);
+									jQuery("#usersultra-videolist").html(response);
 									
 														
 							});
 		}
 		
 			
-		$(document).on("click", "a[href='#resp_del_photo']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_del_photo']", function(e) {
 			
 			e.preventDefault();
 			
@@ -305,7 +306,7 @@ if(typeof $ == 'undefined'){
 		
 		//delete account
 		
-		$('body').on('click',"#xoouserultra-close-acc-btn", function(e) {
+		jQuery('body').on('click',"#xoouserultra-close-acc-btn", function(e) {
 		
 		   
 			e.preventDefault();
@@ -317,7 +318,7 @@ if(typeof $ == 'undefined'){
 			if(doIt)
 			{
 				
-				$('#uultra-close-account').submit();
+				jQuery('#uultra-close-account').submit();
 				
 						
 			}
@@ -332,7 +333,7 @@ if(typeof $ == 'undefined'){
 		
 		//delete video
 		
-		$(document).on("click", "a[href='#resp_del_video']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_del_video']", function(e) {
 			
 			e.preventDefault();
 			
@@ -370,11 +371,11 @@ if(typeof $ == 'undefined'){
         });
 		
 		//close edit box
-		$(document).on("click", ".btn-photo-close", function(e) {
+		jQuery(document).on("click", ".btn-photo-close", function(e) {
 			
 			e.preventDefault();				
 			var photo_id =  jQuery(this).attr("data-id");						
-			$( "#photo-edit-div-"+photo_id ).slideUp();								
+			jQuery( "#photo-edit-div-"+photo_id ).slideUp();								
 			
 			
 			 // Cancel the default action
@@ -384,7 +385,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$("body").on("click", ".btn-photo-conf", function(e) {
+		jQuery("body").on("click", ".btn-photo-conf", function(e) {
 			
 			e.preventDefault();		
 			
@@ -403,7 +404,7 @@ if(typeof $ == 'undefined'){
 					success: function(data){					
 						
 												
-						$( "#photo-edit-div-"+photo_id ).slideUp();
+						jQuery( "#photo-edit-div-"+photo_id ).slideUp();
 						//reload_gallery_list();
 						
 						
@@ -419,7 +420,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		//edit photo
-		$(document).on("click", "a[href='#resp_edit_photo']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_edit_photo']", function(e) {
 			
 			e.preventDefault();
 			
@@ -435,8 +436,8 @@ if(typeof $ == 'undefined'){
 					success: function(data){
 						
 						
-						$("#photo-edit-div-"+photo_id).html(data);						
-						$( "#photo-edit-div-"+photo_id ).slideDown();
+						jQuery("#photo-edit-div-"+photo_id).html(data);						
+						jQuery( "#photo-edit-div-"+photo_id ).slideDown();
 						
 						
 						}
@@ -453,12 +454,12 @@ if(typeof $ == 'undefined'){
 		
 		
 		//close video edit box
-		$(document).on("click", ".btn-video-close-conf", function(e) {
+		jQuery(document).on("click", ".btn-video-close-conf", function(e) {
 			
 			e.preventDefault();				
 			var p_id =  jQuery(this).attr("data-id");
 									
-			$( "#video-edit-div-"+p_id ).slideUp();			
+			jQuery( "#video-edit-div-"+p_id ).slideUp();			
 			return false;
     		e.preventDefault();
 			 
@@ -467,7 +468,7 @@ if(typeof $ == 'undefined'){
 		
 		//edit video
 		
-		$(document).on("click", "a[href='#resp_edit_video']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_edit_video']", function(e) {
 			
 			e.preventDefault();
 					
@@ -482,8 +483,8 @@ if(typeof $ == 'undefined'){
 					success: function(data){
 						
 						
-						$("#video-edit-div-"+video_id).html(data);						
-						$( "#video-edit-div-"+video_id ).slideDown();
+						jQuery("#video-edit-div-"+video_id).html(data);						
+						jQuery( "#video-edit-div-"+video_id ).slideDown();
 						
 						
 						}
@@ -501,7 +502,7 @@ if(typeof $ == 'undefined'){
 		
 		
 		//edit gallery
-		$(document).on("click", "a[href='#resp_edit_gallery']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_edit_gallery']", function(e) {
 			
 			e.preventDefault();
 			
@@ -517,9 +518,9 @@ if(typeof $ == 'undefined'){
 					success: function(data){
 						
 						
-						$("#gallery-edit-div-"+gal_id).html(data);
+						jQuery("#gallery-edit-div-"+gal_id).html(data);
 						
-						$( "#gallery-edit-div-"+gal_id ).slideDown();
+						jQuery( "#gallery-edit-div-"+gal_id ).slideDown();
 						
 						
 						}
@@ -535,7 +536,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		//edit gallery confirm					
-		$(document).on("click", ".btn-gallery-conf", function(e) {
+		jQuery(document).on("click", ".btn-gallery-conf", function(e) {
 			
 			e.preventDefault();		
 			
@@ -569,12 +570,12 @@ if(typeof $ == 'undefined'){
         });
 		
 		//close gallery edit box
-		$(document).on("click", ".btn-gallery-close-conf", function(e) {
+		jQuery(document).on("click", ".btn-gallery-close-conf", function(e) {
 			
 			e.preventDefault();				
 			var p_id =  jQuery(this).attr("data-id");
 									
-			$( "#gallery-edit-div-"+p_id ).slideUp();			
+			jQuery( "#gallery-edit-div-"+p_id ).slideUp();			
 			return false;
     		e.preventDefault();
 			 
@@ -583,7 +584,7 @@ if(typeof $ == 'undefined'){
 		
 		
 		//edit gallery confirm					
-		$(document).on("click", ".btn-video-edit-conf", function(e) {
+		jQuery(document).on("click", ".btn-video-edit-conf", function(e) {
 			
 			e.preventDefault();		
 			
@@ -617,7 +618,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		
-		$(document).on("click", "a[href='#resp_del_gallery']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_del_gallery']", function(e) {
 			
 			e.preventDefault();
 			
@@ -654,7 +655,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$(document).on("click", "a[href='#resp_set_main']", function(e) {
+		jQuery(document).on("click", "a[href='#resp_set_main']", function(e) {
 		
 			
 			e.preventDefault();
@@ -683,7 +684,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		
-		$(document).on("click", "#btn-delete-user-avatar", function(e) {
+		jQuery(document).on("click", "#btn-delete-user-avatar", function(e) {
 			
 			e.preventDefault();
 			
@@ -711,10 +712,10 @@ if(typeof $ == 'undefined'){
 		function refresh_my_avatar ()
 		{
 			
-			 $.post(ajaxurl, {
+			 jQuery.post(ajaxurl, {
 							action: 'refresh_avatar'}, function (response){									
 																
-							$("#uu-backend-avatar-section").html(response);
+							jQuery("#uu-backend-avatar-section").html(response);
 									
 									
 					
@@ -737,7 +738,6 @@ function sortable_list ()
 
     itemList.sortable({
         update: function(event, ui) {
-           // $('#loading-animation').show(); // Show the animate loading gif while waiting
 
             opts = {
                 url: ajaxurl, // ajaxurl is defined by WordPress and points to /wp-admin/admin-ajax.php
@@ -804,11 +804,11 @@ function sortable_gallery_list ()
 
 jQuery(document).ready(function($) 
 { 
-   if ($('#usersultra-photolist').length > 0) {
+   if (jQuery('#usersultra-photolist').length > 0) {
 	    sortable_list();
 	}
 	
-	if ($('#usersultra-gallerylist').length > 0) {
+	if (jQuery('#usersultra-gallerylist').length > 0) {
 	    sortable_gallery_list();
 	}
   

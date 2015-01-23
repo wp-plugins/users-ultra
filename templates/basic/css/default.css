@@ -75,7 +75,6 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 	color: #aaa;
 }
 
-
 /*--------------------------------------------------
 				      LATEST PHOTOS
 ---------------------------------------------------*/
@@ -150,7 +149,6 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 	
 	
 }
-
 .uultra-latest-photos-private li img{
 	border:none;
 	
@@ -1301,7 +1299,6 @@ box-shadow: 0px ;
 }
 
 #table-3 tr {
-/*background: #F2F2F2;*/
 background:  #FBFBFB;
 }
 
@@ -1325,9 +1322,6 @@ background: #F9F9F9;
     .ui-dialog .formError { z-index: 5000; }
     .ui-dialog .formError .formErrorContent { z-index: 5001; }
     .ui-dialog .formError .formErrorArrow { z-index: 5006; }
-
-
-
 
 .inputContainer {
 	position: relative;

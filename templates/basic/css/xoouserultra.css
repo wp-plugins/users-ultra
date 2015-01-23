@@ -992,13 +992,11 @@ a.uultra-btn-delpostimg span{
 	margin:0px 10px 0px 5px;
 	text-align:left;		
 }
-
 a.uultra-btn-delpostimg  i{
 	
 	margin:0px 5px 0px 2px;
 			
 }
-
 a.uultra-btn-delpostimg { 
 		display:inline-block; 
 		height:20px;
@@ -1018,7 +1016,6 @@ a.uultra-btn-delpostimg {
 		 text-decoration:none;
 
 }
-
 a.uultra-btn-delpostimg:hover{ 
 				
 		
@@ -1028,5 +1025,4 @@ a.uultra-btn-delpostimg:hover{
 		 color: #333 !important;
 
 }
-
 .ui-datepicker{ background-color:#F3F3F3}

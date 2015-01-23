@@ -32,6 +32,9 @@ global $xoouserultra;
             </div>
             
             
+       
+            
+            
             
              <div class="uultra-col">
              <h1><?php _e('Unlimited Widgets','xoousers'); ?></h1> 
@@ -62,6 +65,11 @@ global $xoouserultra;
              <h1><?php _e('Spam Protection','xoousers'); ?></h1> 
              <p> <?php _e("Users Ultra PRO comes with a IP Blocking tool that will help you to protect your website against spam attacks. Simple way to stop fake account spam!",'xoousers'); ?></p>
             </div>  
+            
+                <div class="uultra-col">
+             <h1><?php _e('User Avatars','xoousers'); ?></h1> 
+             <p> <?php _e("Users Ultra Pro allows users to use Gravatar, Facebook Avatar or their custom avatar.",'xoousers'); ?></p>
+            </div> 
             
             <div class="uultra-col">
              <h1><?php _e('Advanced Email Features','xoousers'); ?></h1> 
@@ -186,7 +194,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.1.75</p>
+            <p>Version: 1.1.77</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              

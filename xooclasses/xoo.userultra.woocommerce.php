@@ -56,7 +56,6 @@ class XooWooCommerce {
 						$woo_meta = woocommerce_get_customer_meta_fields();
 					}				
 				}else{
-					//echo __('Woocommerce File Doesn\'t Exist','xoousers');exit;
 				}	
 				
 				$new_index = max(array_keys($fields));
@@ -159,7 +158,6 @@ class XooWooCommerce {
 				}
 				
 				update_option('usersultra_profile_fields', $fields);
-			
 				
 				}
 				
@@ -332,7 +330,6 @@ class XooWooCommerce {
 		{
 			$n = count( $msgs );
 			
-			
 			?>
 			<form action="" method="get">
 				<?php wp_nonce_field( 'usersultra-bulk-action_inbox' ); ?>
@@ -359,7 +356,6 @@ class XooWooCommerce {
 							$order_id = $loop->post->ID;
 							$order = new WC_Order($order_id);
 							
-							//print_r($order );
 							
 							?>
 						<tr>
