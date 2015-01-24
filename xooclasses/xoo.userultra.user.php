@@ -4535,7 +4535,7 @@ class XooUserUser {
 				
 				}else{
 						
-					$fields_list .= "<p>".$u_meta."</p>";
+					$fields_list .= "".$u_meta."";
 				
 				
 				

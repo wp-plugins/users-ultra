@@ -1834,6 +1834,7 @@ class XooUserUltra
 		$defaults = array(
         'use_in_sidebar' => null,
 		'form_header_text' => __('Sign Up','xoousers'),
+		'custom_text' => '',
         'redirect_to' => null
         		    
 		);
@@ -1896,9 +1897,10 @@ class XooUserUltra
 							
 						</div>
 						
-						<div class="xoouserultra-main">
+						<div class="xoouserultra-main">';
 							
-							<div class="xoouserultra-errors" style="display:none;" id="pass_err_holder">
+							$display .=  $custom_text;
+						$display .= '	<div class="xoouserultra-errors" style="display:none;" id="pass_err_holder">
 							    <span class="xoouserultra-error xoouserultra-error-block" id="pass_err_block">
 							        <i class="xoouserultra-icon-remove"></i><strong>ERROR:</strong> '.__('Please enter a username.', 'xoousers').'
 							    </span>
