@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.26
+Stable tag: 1.4.27
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,6 +87,15 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 </ul>
 
 <a href="http://usersultra.com/users-pro.html"><strong>CLICK HERE TO FIND OUT MORE ABOUT THE PRO VERSION</strong></a> <br>
+<br>
+</blockquote>
+
+<h3><strong>How To Links?:</strong></h3>
+<blockquote>
+<a href="http://doc.usersultra.com/how-to-create-a-profile-field/"><strong>Create a New Profile Field </strong></a> <br>
+<a href="http://doc.usersultra.com/how-to-activate-the-paid-membership-modules/"><strong>Activating Paid Membership Module</strong></a> <br>
+<a href="http://doc.usersultra.com/how-to-override-the-wp-registration-login-pages/"><strong>How To Override the WP Registration & Login Pages </strong></a> <br>
+<br>
 <br>
 </blockquote>
 
@@ -336,6 +345,12 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.4.27(01-26-2015) =
+* Bug Fix -  We've fixed and issue with LinkedIn sign up. The API changed a little bit so we updated the coding.
+* Bug Fix -  There were blank spaces in the WP HTML Editor Shortcodes button. This was causing some issues.
+* Improvement - Some characters were not translatables into Franch language. 
+
 
 = 1.4.26(01-23-2015) =
 * New Feature -  New option to customize the registration page have been added. check details here http://usersultra.com/support/forums/topic/question-on-customizing-registration-page/

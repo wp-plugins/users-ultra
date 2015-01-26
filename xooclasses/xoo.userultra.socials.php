@@ -6,8 +6,7 @@ class XooSocial
 	var $mDateToday ;	
 	
 	function __construct() 
-	{
-		
+	{		
 		
 		$this->ini_module();
 		$this->mDateToday =  date("Y-m-d");		
@@ -28,8 +27,6 @@ class XooSocial
 		add_action( 'wp_ajax_friend_request_action',  array( $this, 'friend_request_action' ));
 		add_action( 'wp_ajax_show_all_my_friends',  array( $this, 'show_all_my_friends' ));
 		add_action( 'wp_ajax_show_friend_request',  array( $this, 'show_friend_request' ));
-		
-		
 		
 	}
 	

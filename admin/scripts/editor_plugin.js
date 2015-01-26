@@ -15,7 +15,7 @@
                     menu: [
                         {
                             text: 'Basic Login Form',
-                            value: '[usersultra_login ]',
+                            value: '[usersultra_login]',
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -32,7 +32,7 @@
 						,
                         {
                             text: 'Logout',
-                            value: '[usersultra_logout ]',
+                            value: '[usersultra_logout]',
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -98,7 +98,7 @@
 						
 						 {
                             text: 'Directory With Search Box',
-                            value: "[usersultra_searchbox filters='country,age' ] [usersultra_directory list_per_page=6 optional_fields_to_display='social,rating,country,description' display_country_flag='both' pic_boder_type='rounded']",
+                            value: "[usersultra_searchbox filters='country,age'] [usersultra_directory list_per_page=6 optional_fields_to_display='social,rating,country,description' display_country_flag='both' pic_boder_type='rounded']",
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
