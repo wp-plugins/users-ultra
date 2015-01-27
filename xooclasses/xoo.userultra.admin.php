@@ -874,6 +874,7 @@ class XooUserAdmin extends XooUserUltraCommon
 	
 	function admin_page_membership() 
 	{
+		global $xoouserultra;
 		//handle actions
 		
 		
@@ -883,6 +884,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		if (isset($_POST['update_uultra_slugs']) && $_POST['update_uultra_slugs']=='uultra_slugs')
 		{
+			$xoouserultra->create_rewrite_rules();
             flush_rewrite_rules();
         }
 		
@@ -1051,6 +1053,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		if (isset($_POST['update_uultra_slugs']) && $_POST['update_uultra_slugs']=='uultra_slugs')
 		{
+			$xoouserultra->create_rewrite_rules();
             flush_rewrite_rules();
 			
 			 echo '<div class="updated"><p><strong>'.__('Rewrite Rules were Saved.','xoousers').'</strong></p></div>';
