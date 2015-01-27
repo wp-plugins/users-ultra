@@ -1539,7 +1539,9 @@ class XooUserUltra
 		/* Arguments */
 		$defaults = array(
 		        'use_in_sidebar' => null,
-		        'redirect_to' => $default_redirect
+		        'redirect_to' => $default_redirect,
+				'form_header_text' => __('Login','xoousers'),
+				'custom_text' => ''
 		);		
 
 		$args = wp_parse_args( $args, $defaults );
@@ -1561,12 +1563,13 @@ class XooUserUltra
 		
 		$display .= '<div class="xoouserultra-head">';
 		    $display .='<div class="xoouserultra-left">';
-		        $display .='<div class="xoouserultra-field-name xoouserultra-field-name-wide login-heading" id="login-heading-'.$this->login_code_count.'">'.__('Login','xoousers').'</div>';
+		        $display .='<div class="xoouserultra-field-name xoouserultra-field-name-wide login-heading" id="login-heading-'.$this->login_code_count.'">'.$form_header_text.'</div>';
 		    $display .='</div>';
 		    $display .='<div class="xoouserultra-right"></div><div class="xoouserultra-clear"></div>';
 		$display .= '</div>';
 						
 						$display .='<div class="xoouserultra-main">';
+						$display .=  $custom_text;
 						
 						/*Display errors*/
 						if (isset($_POST['xoouserultra-login']))
