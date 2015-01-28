@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
 "POT-Creation-Date: 2015-01-27 08:57-0300\n"
-"PO-Revision-Date: 2015-01-27 08:57-0300\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2015-01-27 13:22-0300\n"
+"Last-Translator: Mauro Mascarenhas <mauro.mascarenhas@nintersoft.ml>\n"
 "Language-Team: \n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -1566,15 +1566,16 @@ msgstr ""
 "o spam conta falsa!"
 
 #: ../admin/tabs/pro.php:70
-#, fuzzy
 msgid "User Avatars"
-msgstr "Avatar"
+msgstr "Imagem dos usuários"
 
 #: ../admin/tabs/pro.php:71
 msgid ""
 "Users Ultra Pro allows users to use Gravatar, Facebook Avatar or their "
 "custom avatar."
 msgstr ""
+"Users Ultra Pro permita que os usuários usem Gravatar, Avateres do Facebook "
+"ou um avatar personalizado."
 
 #: ../admin/tabs/pro.php:75
 msgid "Advanced Email Features"
@@ -2121,17 +2122,15 @@ msgstr ""
 "atualizações periódicas."
 
 #: ../admin/tabs/settings.php:374
-#, fuzzy
 msgid "MailChimp Header Text"
-msgstr "Texto MailChimp"
+msgstr "Texto de cabeçalho MailChimp"
 
 #: ../admin/tabs/settings.php:375 ../admin/tabs/settings.php:376
-#, fuzzy
 msgid ""
 "Please input the text that will appear as header when mailchip is active."
 msgstr ""
-"Por favor digite o texto que aparecerá ao pedir para os usuários adquirirem "
-"atualizações periódicas."
+"Por favor digite o texto que aparecerá como cabeçalho quando mailchimp "
+"estiver ativo."
 
 #: ../admin/tabs/settings.php:386
 msgid "Registration Settings"
@@ -3645,9 +3644,8 @@ msgid "Sign Up"
 msgstr "Conectar-se"
 
 #: ../xooclasses/xoo.userultra.class.php:1908
-#, fuzzy
 msgid "Please enter a username."
-msgstr "Por favor escreva um nome de usuário."
+msgstr "Por favor, digite um nome de usuário"
 
 #: ../xooclasses/xoo.userultra.class.php:1959
 msgid "Fields with (*) are required"
