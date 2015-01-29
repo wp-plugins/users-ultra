@@ -141,7 +141,6 @@ class XooPaypalPayment
 		$payment_type = $_POST['payment_type'];
 		$custom_key = $_POST['custom'];
 		
-		
 		if (strcmp ($response, "VERIFIED") == 0)		
 	    {			
 			
@@ -221,7 +220,6 @@ class XooPaypalPayment
 				/*Update Order status*/				
 				$xoouserultra->order->update_order_status($order_id,'confirmed');
 				
-				//$xoouserultra->messaging->paypal_ipn_debug("IPN order id: ".$order_id);
 				
 				/*Update Order With Payment Response*/				
 				$xoouserultra->order->update_order_payment_response($order_id,$txn_id);		
@@ -252,8 +250,6 @@ class XooPaypalPayment
 			
 			/*This is not a valid transaction*/
 		}
-		
-		
 		
 	
 	}
@@ -440,7 +436,6 @@ class XooPaypalPayment
 			
 		}
 		
-		
 	
 	}
 	
@@ -571,8 +566,6 @@ class XooPaypalPayment
 		
 	}
 	
-	
-	
 	public function package_edit_form()
 	{
 		global $wpdb,  $xoouserultra;
@@ -619,8 +612,8 @@ class XooPaypalPayment
 			 if($package->package_type=="recurring"){$rec = 'selected="selected"';} 
 			 if($package->package_type=="onetime"){$ontime = 'selected="selected"';} 
 			 
-              $html .='  <option value="recurring" '.$rec.' >Recurring</option>
-               <option value="onetime" '.$ontime.'>One-Time</option> ';
+              $html .='  <option value="recurring" '.$rec.' >'.__('Recurring','xoousers').'</option>
+               <option value="onetime" '.$ontime.'>'.__('One-Time','xoousers').'</option> ';
 			   
 			   
             $html .=' </select></td>

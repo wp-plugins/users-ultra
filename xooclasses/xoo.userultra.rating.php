@@ -127,9 +127,6 @@ class XooRating extends XooUserUltraCommon
 		}
 		
 		$guest_allowed = $xoouserultra->get_option('uultra_allow_guest_rating');
-		
-		
-		
 		if(!$rate_itself)
 		{
 			
@@ -203,7 +200,6 @@ class XooRating extends XooUserUltraCommon
 				
 				}else{
 					
-					
 					$html = __("You've already left your rate ",'xoousers');					
 				
 				}
@@ -225,8 +221,6 @@ class XooRating extends XooUserUltraCommon
 		
 		die();
     }
-
-	
 	
 	public function get_rating($id, $data_target) 
 	{

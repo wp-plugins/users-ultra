@@ -51,7 +51,6 @@ class XooStat extends XooUserUltraCommon
 		$visitor_ip = $_SERVER['REMOTE_ADDR'];
 		
 		
-		
 		if($this->check_ip($item_id, $module, $visitor_ip))
 		{
 			//first time the visitor sees the item
@@ -91,8 +90,6 @@ class XooStat extends XooUserUltraCommon
 			}
 			
 		}
-			
-		
 		
 		
     }
@@ -126,8 +123,7 @@ class XooStat extends XooUserUltraCommon
 		 $month = date("m");
 		 $year = date("Y");	
 		 
-         $sql = "SELECT  stat_id FROM " . $wpdb->prefix . "usersultra_stats_raw  WHERE stat_item_id  = '$item_id' AND stat_module = '$module' AND stat_ip = '$ip' AND DAY(stat_date) = '$day'  AND MONTH(stat_date) = '$month'  AND YEAR(stat_date) = '$year' ";	 
-		 
+         $sql = "SELECT  stat_id FROM " . $wpdb->prefix . "usersultra_stats_raw  WHERE stat_item_id  = '$item_id' AND stat_module = '$module' AND stat_ip = '$ip' AND DAY(stat_date) = '$day'  AND MONTH(stat_date) = '$month'  AND YEAR(stat_date) = '$year' ";	 		 
 		 
 		 $votes = $wpdb->get_results( $sql );
 		 

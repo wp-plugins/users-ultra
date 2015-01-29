@@ -116,10 +116,7 @@ class XooSocial
 		
 		}
 		
-		
 		die();	
-		
-		
 	}
 	
 	public function check_if_sent($friend_id) 
@@ -142,8 +139,6 @@ class XooSocial
 		
 		}
 		
-		
-	
 	}
 	
 	public function like_item()
@@ -201,7 +196,6 @@ class XooSocial
 		die();
 		
 		
-		
 	}
 	
 	public function get_friends($user_id)
@@ -243,7 +237,6 @@ class XooSocial
 	
 	
 	}
-	
 	
 	
 	

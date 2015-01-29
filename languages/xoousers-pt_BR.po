@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-01-27 08:57-0300\n"
-"PO-Revision-Date: 2015-01-27 13:22-0300\n"
+"POT-Creation-Date: 2015-01-29 10:55-0300\n"
+"PO-Revision-Date: 2015-01-29 10:55-0300\n"
 "Last-Translator: Mauro Mascarenhas <mauro.mascarenhas@nintersoft.ml>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -22,7 +22,7 @@ msgstr "Gerenciar categorias de fotos"
 
 #: ../addons/photocategories/admin/admin.php:89
 #: ../admin/tabs/membership.php:61
-#: ../xooclasses/xoo.userultra.payment.paypal.php:596
+#: ../xooclasses/xoo.userultra.payment.paypal.php:589
 msgid "Name:"
 msgstr "Nome:"
 
@@ -61,7 +61,7 @@ msgstr "Nome: "
 
 #: ../addons/photocategories/admin/panels/manage.php:24
 #: ../admin/tabs/membership.php:147
-#: ../xooclasses/xoo.userultra.payment.paypal.php:744
+#: ../xooclasses/xoo.userultra.payment.paypal.php:737
 #: ../xooclasses/xoo.userultra.user.php:692
 #: ../xooclasses/xoo.userultra.user.php:763
 #: ../xooclasses/xoo.userultra.user.php:832
@@ -75,7 +75,7 @@ msgstr "#"
 
 #: ../addons/photocategories/admin/panels/manage.php:44
 #: ../templates/basic/dashboard.php:404 ../templates/basic/dashboard.php:824
-#: ../xooclasses/xoo.userultra.payment.paypal.php:775
+#: ../xooclasses/xoo.userultra.payment.paypal.php:768
 #: ../xooclasses/xoo.userultra.photos.php:1562
 #: ../xooclasses/xoo.userultra.photos.php:1702
 #: ../xooclasses/xoo.userultra.photos.php:1823
@@ -91,14 +91,14 @@ msgstr "Ações"
 #: ../admin/tabs/fields.php:348 ../xooclasses/xoo.userultra.mymessage.php:946
 #: ../xooclasses/xoo.userultra.mymessage.php:1076
 #: ../xooclasses/xoo.userultra.mymessage.php:1128
-#: ../xooclasses/xoo.userultra.payment.paypal.php:805
+#: ../xooclasses/xoo.userultra.payment.paypal.php:798
 #: ../xooclasses/xoo.userultra.user.php:831
 msgid "Delete"
 msgstr "Deletar"
 
 #: ../addons/photocategories/admin/panels/manage.php:71
 #: ../admin/tabs/fields.php:348
-#: ../xooclasses/xoo.userultra.payment.paypal.php:805
+#: ../xooclasses/xoo.userultra.payment.paypal.php:798
 #: ../xooclasses/xoo.userultra.publisher.php:481
 msgid "Edit"
 msgstr "Editar"
@@ -174,8 +174,8 @@ msgid "Click here to restore default fields"
 msgstr "Clique aqui para restaurar os campos padrões"
 
 #: ../admin/tabs/fields.php:41 ../admin/tabs/membership.php:103
-#: ../xooclasses/xoo.userultra.payment.paypal.php:611
-#: ../xooclasses/xoo.userultra.payment.paypal.php:779
+#: ../xooclasses/xoo.userultra.payment.paypal.php:604
+#: ../xooclasses/xoo.userultra.payment.paypal.php:772
 #: ../xooclasses/xoo.userultra.photos.php:1830
 msgid "Type"
 msgstr "Tipo"
@@ -270,7 +270,7 @@ msgstr "Este campo é social"
 #: ../admin/tabs/fields.php:549 ../admin/tabs/fields.php:585
 #: ../admin/tabs/membership.php:113 ../admin/tabs/settings.php:48
 #: ../admin/tabs/settings.php:201 ../admin/tabs/settings.php:240
-#: ../xooclasses/xoo.userultra.payment.paypal.php:689
+#: ../xooclasses/xoo.userultra.payment.paypal.php:682
 msgid "No"
 msgstr "Não"
 
@@ -283,7 +283,7 @@ msgstr "Não"
 #: ../admin/tabs/fields.php:552 ../admin/tabs/fields.php:588
 #: ../admin/tabs/membership.php:112 ../admin/tabs/settings.php:49
 #: ../admin/tabs/settings.php:200 ../admin/tabs/settings.php:241
-#: ../xooclasses/xoo.userultra.payment.paypal.php:688
+#: ../xooclasses/xoo.userultra.payment.paypal.php:681
 msgid "Yes"
 msgstr "Sim"
 
@@ -384,7 +384,7 @@ msgstr "Enviar novo campo"
 #: ../admin/tabs/fields.php:265 ../admin/tabs/fields.php:664
 #: ../admin/tabs/membership.php:146 ../templates/basic/dashboard.php:415
 #: ../templates/basic/dashboard.php:850
-#: ../xooclasses/xoo.userultra.payment.paypal.php:743
+#: ../xooclasses/xoo.userultra.payment.paypal.php:736
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -1016,8 +1016,8 @@ msgstr "Últimas 5 transações"
 #: ../xooclasses/xoo.userultra.mymessage.php:1148
 #: ../xooclasses/xoo.userultra.order.php:396
 #: ../xooclasses/xoo.userultra.publisher.php:463
-#: ../xooclasses/xoo.userultra.socials.php:487
-#: ../xooclasses/xoo.userultra.socials.php:593
+#: ../xooclasses/xoo.userultra.socials.php:480
+#: ../xooclasses/xoo.userultra.socials.php:586
 #: ../xooclasses/xoo.userultra.woocommerce.php:347
 msgid "Date"
 msgstr "Data"
@@ -1137,60 +1137,62 @@ msgid "Billing Period:"
 msgstr "Período de faturação:"
 
 #: ../admin/tabs/membership.php:96
-#: ../xooclasses/xoo.userultra.payment.paypal.php:668
+#: ../xooclasses/xoo.userultra.payment.paypal.php:661
 msgid "Months"
 msgstr "Meses"
 
 #: ../admin/tabs/membership.php:97
-#: ../xooclasses/xoo.userultra.payment.paypal.php:669
+#: ../xooclasses/xoo.userultra.payment.paypal.php:662
 msgid "Weeks"
 msgstr "Semanas"
 
 #: ../admin/tabs/membership.php:98
-#: ../xooclasses/xoo.userultra.payment.paypal.php:670
+#: ../xooclasses/xoo.userultra.payment.paypal.php:663
 msgid "Days"
 msgstr "Dias"
 
 #: ../admin/tabs/membership.php:99
-#: ../xooclasses/xoo.userultra.payment.paypal.php:671
+#: ../xooclasses/xoo.userultra.payment.paypal.php:664
 msgid "Years"
 msgstr "Anos"
 
 #: ../admin/tabs/membership.php:105
+#: ../xooclasses/xoo.userultra.payment.paypal.php:615
 msgid "Recurring"
 msgstr "Periódico"
 
 #: ../admin/tabs/membership.php:106
+#: ../xooclasses/xoo.userultra.payment.paypal.php:616
 msgid "One-Time"
 msgstr "Uma vez"
 
 #: ../admin/tabs/membership.php:110
-#: ../xooclasses/xoo.userultra.payment.paypal.php:677
+#: ../xooclasses/xoo.userultra.payment.paypal.php:670
 msgid "Requires Admin Moderation:"
 msgstr "Requer moderação do administrador:"
 
 #: ../admin/tabs/membership.php:118
-#: ../xooclasses/xoo.userultra.payment.paypal.php:714
+#: ../xooclasses/xoo.userultra.payment.paypal.php:707
 msgid "Pricing Table Customization"
 msgstr "Personalização de tabela de preços"
 
 #: ../admin/tabs/membership.php:121
-#: ../xooclasses/xoo.userultra.payment.paypal.php:717
+#: ../xooclasses/xoo.userultra.payment.paypal.php:710
 msgid "Name/Price Font Color"
 msgstr "Nome / Preço cor da fonte"
 
 #: ../admin/tabs/membership.php:126
-#: ../xooclasses/xoo.userultra.payment.paypal.php:722
+#: ../xooclasses/xoo.userultra.payment.paypal.php:715
 msgid "Name/Price Background Color"
 msgstr "Nome / Preço color de fundo"
 
 #: ../admin/tabs/membership.php:132
-#: ../xooclasses/xoo.userultra.payment.paypal.php:728
+#: ../xooclasses/xoo.userultra.payment.paypal.php:721
 msgid "Sign Up Button Text Color"
 msgstr "Botão de registro cor do texto"
 
 #: ../admin/tabs/membership.php:138
-#: ../xooclasses/xoo.userultra.payment.paypal.php:734
+#: ../xooclasses/xoo.userultra.payment.paypal.php:727
 msgid "Sign Up Button Background Color"
 msgstr "Cor de fundo do botão de registro"
 
@@ -2801,8 +2803,8 @@ msgid "Add Gallery"
 msgstr "Adicionar galeria"
 
 #: ../templates/basic/dashboard.php:409
-#: ../xooclasses/xoo.userultra.payment.paypal.php:600
-#: ../xooclasses/xoo.userultra.payment.paypal.php:776
+#: ../xooclasses/xoo.userultra.payment.paypal.php:593
+#: ../xooclasses/xoo.userultra.payment.paypal.php:769
 #: ../xooclasses/xoo.userultra.photos.php:1566
 #: ../xooclasses/xoo.userultra.photos.php:1706
 msgid "Description"
@@ -3286,15 +3288,15 @@ msgstr "Sentimos muito, mas sua conta não foi aprovada."
 msgid "Settings saved."
 msgstr "Configurações salvas."
 
-#: ../xooclasses/xoo.userultra.admin.php:1014
+#: ../xooclasses/xoo.userultra.admin.php:1016
 msgid "Please create '"
 msgstr "Por favor crie '"
 
-#: ../xooclasses/xoo.userultra.admin.php:1056
+#: ../xooclasses/xoo.userultra.admin.php:1059
 msgid "Rewrite Rules were Saved."
 msgstr "Regras reescritas foram salvas."
 
-#: ../xooclasses/xoo.userultra.admin.php:1108
+#: ../xooclasses/xoo.userultra.admin.php:1111
 msgid ""
 "Please make sure that you've set the right My Account Page. Users Ultra "
 "couldn't find it and some important features such as password reset, account "
@@ -3305,7 +3307,7 @@ msgstr ""
 "importantes como redefinição de senha, confirmação de conta, etc. não "
 "funcionarão corretamente."
 
-#: ../xooclasses/xoo.userultra.admin.php:1108
+#: ../xooclasses/xoo.userultra.admin.php:1111
 msgid "Click here to set the My Account Page"
 msgstr "Clique aqui para definir a página \"minha conta\""
 
@@ -3876,8 +3878,8 @@ msgstr "Não há itens na caixa de entrada."
 #: ../xooclasses/xoo.userultra.mymessage.php:562
 #: ../xooclasses/xoo.userultra.mymessage.php:716
 #: ../xooclasses/xoo.userultra.mymessage.php:835
-#: ../xooclasses/xoo.userultra.socials.php:485
-#: ../xooclasses/xoo.userultra.socials.php:591
+#: ../xooclasses/xoo.userultra.socials.php:478
+#: ../xooclasses/xoo.userultra.socials.php:584
 msgid "Pic"
 msgstr "Foto"
 
@@ -3885,17 +3887,17 @@ msgstr "Foto"
 #: ../xooclasses/xoo.userultra.mymessage.php:836
 #: ../xooclasses/xoo.userultra.mymessage.php:1085
 #: ../xooclasses/xoo.userultra.mymessage.php:1146
-#: ../xooclasses/xoo.userultra.socials.php:486
-#: ../xooclasses/xoo.userultra.socials.php:592
+#: ../xooclasses/xoo.userultra.socials.php:479
+#: ../xooclasses/xoo.userultra.socials.php:585
 msgid "Sender"
 msgstr "Remetente"
 
 #: ../xooclasses/xoo.userultra.mymessage.php:566
 #: ../xooclasses/xoo.userultra.mymessage.php:936
 #: ../xooclasses/xoo.userultra.mymessage.php:959
-#: ../xooclasses/xoo.userultra.payment.paypal.php:781
-#: ../xooclasses/xoo.userultra.socials.php:488
-#: ../xooclasses/xoo.userultra.socials.php:594
+#: ../xooclasses/xoo.userultra.payment.paypal.php:774
+#: ../xooclasses/xoo.userultra.socials.php:481
+#: ../xooclasses/xoo.userultra.socials.php:587
 #: ../xooclasses/xoo.userultra.user.php:673
 #: ../xooclasses/xoo.userultra.user.php:744
 #: ../xooclasses/xoo.userultra.user.php:812
@@ -3987,60 +3989,60 @@ msgstr "Total"
 msgid "Package"
 msgstr "Pacote"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:461
+#: ../xooclasses/xoo.userultra.payment.paypal.php:456
 msgid "You have no packages yet."
 msgstr "Você ainda não tem pacotes."
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:592
+#: ../xooclasses/xoo.userultra.payment.paypal.php:585
 msgid "Edit Package"
 msgstr "Editar pacote"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:606
-#: ../xooclasses/xoo.userultra.payment.paypal.php:777
+#: ../xooclasses/xoo.userultra.payment.paypal.php:599
+#: ../xooclasses/xoo.userultra.payment.paypal.php:770
 msgid "Price"
 msgstr "Preço"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:631
+#: ../xooclasses/xoo.userultra.payment.paypal.php:624
 msgid "Every"
 msgstr "Cada"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:653
+#: ../xooclasses/xoo.userultra.payment.paypal.php:646
 msgid "Billing Period"
 msgstr "Período de faturação"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:774
+#: ../xooclasses/xoo.userultra.payment.paypal.php:767
 msgid "ID"
 msgstr "ID"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:778
+#: ../xooclasses/xoo.userultra.payment.paypal.php:771
 msgid "Period"
 msgstr "Período"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:791
+#: ../xooclasses/xoo.userultra.payment.paypal.php:784
 msgid " month(s)"
 msgstr " mês(es)"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:792
+#: ../xooclasses/xoo.userultra.payment.paypal.php:785
 msgid " week(s)"
 msgstr " semana(s)"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:793
+#: ../xooclasses/xoo.userultra.payment.paypal.php:786
 msgid " day(s)"
 msgstr " dia(s)"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:794
+#: ../xooclasses/xoo.userultra.payment.paypal.php:787
 msgid " year(s)"
 msgstr " ano(s)"
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:802
+#: ../xooclasses/xoo.userultra.payment.paypal.php:795
 msgid "every "
 msgstr "cada "
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:822
+#: ../xooclasses/xoo.userultra.payment.paypal.php:815
 msgid "There are no packages yet."
 msgstr "Não há pacotes ainda."
 
-#: ../xooclasses/xoo.userultra.payment.paypal.php:868
+#: ../xooclasses/xoo.userultra.payment.paypal.php:861
 msgid "The Package has been updated"
 msgstr "O pacote foi atualizado"
 
@@ -4278,47 +4280,47 @@ msgstr "Você só pode carregar uma imagem por vez!"
 msgid "The file you selected exceeds the maximum file size limit."
 msgstr "O arquivo que você selecionou excede o limite máximo de  tamanho."
 
-#: ../xooclasses/xoo.userultra.rating.php:202
+#: ../xooclasses/xoo.userultra.rating.php:199
 msgid "Thank you for your rating"
 msgstr "Obrigado por votar"
 
-#: ../xooclasses/xoo.userultra.rating.php:207
+#: ../xooclasses/xoo.userultra.rating.php:203
 msgid "You've already left your rate "
 msgstr "Você já votou "
 
-#: ../xooclasses/xoo.userultra.rating.php:215
+#: ../xooclasses/xoo.userultra.rating.php:211
 msgid "You have to be logged in to leave your rate  "
 msgstr "Você deve estar conectado para deixar seu voto  "
 
-#: ../xooclasses/xoo.userultra.rating.php:220
+#: ../xooclasses/xoo.userultra.rating.php:216
 msgid "You cannot rate yourself  "
 msgstr "Não é possível auto avaliar-se  "
 
-#: ../xooclasses/xoo.userultra.rating.php:264
+#: ../xooclasses/xoo.userultra.rating.php:258
 msgid "1 star out of 5 "
 msgstr "1 estrela de 5 "
 
-#: ../xooclasses/xoo.userultra.rating.php:265
+#: ../xooclasses/xoo.userultra.rating.php:259
 msgid "2 star out of 5  "
 msgstr "2 estrelas de 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:266
+#: ../xooclasses/xoo.userultra.rating.php:260
 msgid "3 star out of 5  "
 msgstr "3 estrelas de 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:267
+#: ../xooclasses/xoo.userultra.rating.php:261
 msgid "4 star out of 5  "
 msgstr "4 estrelas de 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:268
+#: ../xooclasses/xoo.userultra.rating.php:262
 msgid "5 star out of 5  "
 msgstr "5 estrelas de 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:270
+#: ../xooclasses/xoo.userultra.rating.php:264
 msgid "Rating: "
 msgstr "Classificação: "
 
-#: ../xooclasses/xoo.userultra.rating.php:271
+#: ../xooclasses/xoo.userultra.rating.php:265
 msgid " votes cast "
 msgstr " votos dados "
 
@@ -4383,71 +4385,71 @@ msgstr "Você deve estar conectado para enviar uma solicitação de amizade "
 msgid "Request Already Sent"
 msgstr "Solicitação já enviada"
 
-#: ../xooclasses/xoo.userultra.socials.php:186
+#: ../xooclasses/xoo.userultra.socials.php:181
 msgid "Thanks "
 msgstr "Obrigado "
 
-#: ../xooclasses/xoo.userultra.socials.php:190
+#: ../xooclasses/xoo.userultra.socials.php:185
 msgid "Please login to rate "
 msgstr "Por favor, conecte-se para votar "
 
-#: ../xooclasses/xoo.userultra.socials.php:196
+#: ../xooclasses/xoo.userultra.socials.php:191
 msgid "You've already liked it "
 msgstr "Você já curtiu isto "
 
-#: ../xooclasses/xoo.userultra.socials.php:237
+#: ../xooclasses/xoo.userultra.socials.php:231
 msgid "Friends"
 msgstr "Amigos"
 
-#: ../xooclasses/xoo.userultra.socials.php:238
+#: ../xooclasses/xoo.userultra.socials.php:232
 msgid "Send Friend Request"
 msgstr "Enviar solicitação de amizade"
 
-#: ../xooclasses/xoo.userultra.socials.php:238
+#: ../xooclasses/xoo.userultra.socials.php:232
 msgid "Be a Friend "
 msgstr "Seja um amigo "
 
+#: ../xooclasses/xoo.userultra.socials.php:268
 #: ../xooclasses/xoo.userultra.socials.php:275
-#: ../xooclasses/xoo.userultra.socials.php:282
 msgid "Request approved"
 msgstr "Solicitação aprovada"
 
-#: ../xooclasses/xoo.userultra.socials.php:289
+#: ../xooclasses/xoo.userultra.socials.php:282
 msgid "Request rejected"
 msgstr "Solicitação rejeitada"
 
-#: ../xooclasses/xoo.userultra.socials.php:372
-#: ../xooclasses/xoo.userultra.socials.php:421
+#: ../xooclasses/xoo.userultra.socials.php:365
+#: ../xooclasses/xoo.userultra.socials.php:414
 msgid "Likes"
 msgstr "Curtidas"
 
-#: ../xooclasses/xoo.userultra.socials.php:373
+#: ../xooclasses/xoo.userultra.socials.php:366
 msgid "Like"
 msgstr "Curti"
 
-#: ../xooclasses/xoo.userultra.socials.php:373
+#: ../xooclasses/xoo.userultra.socials.php:366
 msgid "Dislike"
 msgstr "Não curti"
 
-#: ../xooclasses/xoo.userultra.socials.php:476
+#: ../xooclasses/xoo.userultra.socials.php:469
 msgid "Latest Friend Requests"
 msgstr "Últimas solicitações de amizade"
 
-#: ../xooclasses/xoo.userultra.socials.php:511
+#: ../xooclasses/xoo.userultra.socials.php:504
 msgid "Approve"
 msgstr "Aprovar"
 
-#: ../xooclasses/xoo.userultra.socials.php:511
+#: ../xooclasses/xoo.userultra.socials.php:504
 #: ../xooclasses/xoo.userultra.user.php:692
 #: ../xooclasses/xoo.userultra.user.php:763
 msgid "Deny"
 msgstr "Negar"
 
-#: ../xooclasses/xoo.userultra.socials.php:582
+#: ../xooclasses/xoo.userultra.socials.php:575
 msgid "All My Friends"
 msgstr "Todos os meus amigos"
 
-#: ../xooclasses/xoo.userultra.socials.php:617
+#: ../xooclasses/xoo.userultra.socials.php:610
 msgid "Block"
 msgstr "Bloquear"
 
