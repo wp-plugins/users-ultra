@@ -113,7 +113,7 @@ class XooUserUltra
 		add_action('admin_init', array(&$this, 'xoousers_create_standard_fields'));	
 				
 		/*Create a generic profile page*/
-		add_action( 'wp_loaded', array(&$this, 'create_initial_pages'), 9);
+		add_action( 'init', array(&$this, 'create_initial_pages'), 9);
 		
 		/*Setup redirection*/
 		add_action( 'wp_loaded', array(&$this, 'xoousersultra_redirect'), 9);
