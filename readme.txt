@@ -346,7 +346,7 @@ Initial release.
 
 == Changelog ==
 = 1.4.33(01-31-2015) =
-* New Feature -  New custom feature asked by one of our clients. Now it's possible to feature certain users with particular meta fields. Details here usersultra.com/support/forums/topic/featured-by-metadata/
+* New Feature -  New custom feature asked by one of our clients. Now it's possible to feature certain users with particular meta fields. Details here http://usersultra.com/support/forums/topic/featured-by-metadata/
 * Improvement - Image proporting issue when using lightbox galleries. Click on the following link to see details http://usersultra.com/support/forums/topic/image-proportion-on-gallery-images/. Click on the following link to see the documentation http://doc.usersultra.com/featured-users/
 
 = 1.4.32(01-30-2015) =
