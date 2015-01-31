@@ -3170,7 +3170,9 @@ class XooUserUser {
 		
 		extract( shortcode_atts( array(		
 		
-		    'users_list' => '', // this is the width of each item or user in the directory				
+		    'users_list' => '', // this is the width of each item or user in the directory
+			'meta_key_to_search' => '', // 
+			'meta_keyword' => '', // 				
 			'item_width' => '21%', // this is the width of each item or user in the directory			
 			'howmany' => 10, // how many items per page
 			'pic_type' => 'avatar', // display either avatar or main picture of the user
@@ -3188,7 +3190,16 @@ class XooUserUser {
 		
 		$html = "";
 		
-		$users_list = $this->users_shortcodes_featured($users_list);
+		if($meta_key_to_search=='')
+		{
+		
+			$users_list = $this->users_shortcodes_featured($users_list);
+		
+		}else{
+			
+			$users_list = $this->users_shortcodes_featured_by_metakey( $meta_key_to_search, $meta_keyword );			
+			
+		}
 		
 		$html.='<div class="uultra-featured-users">
 			
@@ -3294,6 +3305,23 @@ class XooUserUser {
 				
 
 		$wp_user_query = new WP_User_Query(array('include' =>$users_list ));		
+		$arr['users'] = $wp_user_query->results;
+			
+		return $arr;
+	}
+	
+	function users_shortcodes_featured_by_metakey( $meta_key, $keyword )
+	{
+		global  $wpdb,  $xoouserultra;
+		
+		$query['meta_query'][] = array(
+				'key' => $meta_key,
+				'value' => $keyword,
+				'compare' => 'LIKE'
+			);
+		
+		$query['include'][] = array($users_list);
+		$wp_user_query = new WP_User_Query($query);		
 		$arr['users'] = $wp_user_query->results;
 			
 		return $arr;
