@@ -2345,7 +2345,7 @@ class XooUserUser {
 		
 		//exclude modules	
 		$modules = array();
-		$modules  = explode(',', $disable);		
+		$modules  = explode(',', $media_options_exclude);		
 		
 		$display_gallery = false;
 		if(isset($_GET["gal_id"]))
@@ -2414,7 +2414,7 @@ class XooUserUser {
 		if($user_id>0)
 		{
 			//get template
-			require_once(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");		
+			include(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");		
 				
 		}else{
 			
