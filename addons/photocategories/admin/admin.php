@@ -80,7 +80,7 @@ class UsersUltraPhotoCate {
 		if($cate_id!="")
 		{
 		
-			$res = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_photo_categories WHERE `photo_cat_id` = ' . $cate_id . '  ' );
+			$res = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_photo_categories WHERE `photo_cat_id` = ' . (int)$cate_id . '  ' );
 			
 			$html="";
 			foreach ( $res as $photo )
