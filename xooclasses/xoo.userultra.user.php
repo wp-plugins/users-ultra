@@ -2345,7 +2345,12 @@ class XooUserUser {
 		
 		//exclude modules	
 		$modules = array();
-		$modules  = explode(',', $media_options_exclude);		
+		if($media_options_exclude!='')
+		{
+		
+			$modules  = explode(',', $media_options_exclude);
+		
+		}
 		
 		$display_gallery = false;
 		if(isset($_GET["gal_id"]))
