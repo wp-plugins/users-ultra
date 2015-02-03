@@ -44,7 +44,7 @@ class UsersUltraPhotoCate {
 		global $wpdb;
 		
 		$cate_id = $_POST["cate_id"];		
-		$query = "DELETE FROM " . $wpdb->prefix ."usersultra_photo_categories  WHERE  `photo_cat_id` = '$cate_id'  ";			
+		$query = "DELETE FROM " . $wpdb->prefix ."usersultra_photo_categories  WHERE  `photo_cat_id` = '".(int)$cate_id."'  ";			
 			
 		$wpdb->query( $query );	
 		
@@ -57,7 +57,7 @@ class UsersUltraPhotoCate {
 		$cate_name= $_POST["cate_name"];
 		if($cate_id !="" &&$cate_name!="" )
 		{
-			$query = "UPDATE " . $wpdb->prefix ."usersultra_photo_categories SET `photo_cat_name` = '$cate_name'  WHERE  `photo_cat_id` = '$cate_id'  ";			
+			$query = "UPDATE " . $wpdb->prefix ."usersultra_photo_categories SET `photo_cat_name` = '$cate_name'  WHERE  `photo_cat_id` = '".(int)$cate_id."'  ";			
 			
 			$wpdb->query( $query );
 			$html = $cate_name;

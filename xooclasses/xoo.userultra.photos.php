@@ -1449,7 +1449,7 @@ class XooUserPhoto {
 					   
 					    RIGHT JOIN ' . $wpdb->prefix . 'usersultra_galleries gal ON (gal.gallery_id = photo.photo_gal_id )
 						
-					   WHERE gal.gallery_user_id = ' . $user_id . ' AND gal.gallery_id = photo.photo_gal_id  AND  photo.photo_id =  '.$photo_id.' ';
+					   WHERE gal.gallery_user_id = ' . $user_id . ' AND gal.gallery_id = photo.photo_gal_id  AND  photo.photo_id =  '.(int)$photo_id.' ';
 		
 
 		$photos = $wpdb->get_results( $sql );
@@ -1482,7 +1482,7 @@ class XooUserPhoto {
 		
 		$upload_folder =  $xoouserultra->get_option('media_uploading_folder'); 
 		
-		$photos = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_photos WHERE `photo_gal_id` = "' . $gal_id . '" AND `photo_main` = 1 ' );
+		$photos = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_photos WHERE `photo_gal_id` = "' . (int)$gal_id . '" AND `photo_main` = 1 ' );
 		
 		if ( empty( $photos ) )
 			{
@@ -1553,7 +1553,7 @@ class XooUserPhoto {
 		if($photo_id!="")
 		{
 		
-			$res = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_photos WHERE `photo_id` = ' . $photo_id . '  ' );
+			$res = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_photos WHERE `photo_id` = ' .(int)$photo_id . '  ' );
 			
 			$html="";
 			foreach ( $res as $photo )
