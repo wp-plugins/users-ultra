@@ -52,7 +52,7 @@ class XooPublisher
 		
 		$user_id = get_current_user_id();	
 		
-		$res = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND  `ID` = "'.$id.'" AND (`post_status` = "publish" OR `post_status` = "pending" ) ORDER BY `post_date` DESC' );
+		$res = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND  `ID` = "'.(int)$id.'" AND (`post_status` = "publish" OR `post_status` = "pending" ) ORDER BY `post_date` DESC' );
 		
 		
 		if ( !empty( $res ) )
@@ -425,7 +425,7 @@ class XooPublisher
 		$user_id = get_current_user_id();
 		
 	
-		$msgs = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND (`post_status` ="publish" OR `post_status` ="pending" ) ORDER BY `post_date` DESC' );
+		$msgs = $wpdb->get_results( 'SELECT `ID`, `post_author`, `post_date`, `post_title`, `post_content` , `post_status` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . (int)$user_id. '" AND (`post_status` ="publish" OR `post_status` ="pending" ) ORDER BY `post_date` DESC' );
 		
         
 		echo '<div class="tablenav_post">

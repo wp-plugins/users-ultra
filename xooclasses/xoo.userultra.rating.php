@@ -272,7 +272,7 @@ class XooRating extends XooUserUltraCommon
 	function get_all_of($id, $data_target) 	
 	{
 		global $wpdb;
-        $sql = "SELECT * FROM  " . $wpdb->prefix . "usersultra_ajaxrating_votesummary WHERE ajaxrating_votesummary_".$data_target." = '$id' ";
+        $sql = "SELECT * FROM  " . $wpdb->prefix . "usersultra_ajaxrating_votesummary WHERE ajaxrating_votesummary_".$data_target." = '".(int)$id."' ";
 		
 		$rating = $wpdb->get_results($sql);
 		

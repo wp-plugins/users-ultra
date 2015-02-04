@@ -348,6 +348,9 @@ Initial release.
 
 == Changelog ==
 
+= 1.4.38(02-04-2015) =
+* Improvement - We have improved the coding once again due some changes on WP 4.1. Thanks for you understanding, please update your plugin.
+
 = 1.4.37(02-02-2015) =
 * Improvement - More tweak in order to avoid some "possible" vulnerability.
 
