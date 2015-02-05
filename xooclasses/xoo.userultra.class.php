@@ -3394,8 +3394,7 @@ class XooUserUltra
 		}else{
 			
 		    return '';
-		}
-		    
+		}		    
 	}
 	
 	/*Post value*/

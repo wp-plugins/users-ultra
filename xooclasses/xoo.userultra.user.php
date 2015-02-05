@@ -13,8 +13,7 @@ class XooUserUser {
 
 	function __construct() 
 	{
-		$this->set_default_user_panel();
-		
+		$this->set_default_user_panel();		
 		$this->uultra_replace_default_avatar();		    
 		
 				
@@ -86,15 +85,13 @@ class XooUserUser {
 	function uultra_replace_default_avatar() 
 	{
 		
-		global  $xoouserultra;
-		
+		global  $xoouserultra;		
 		
 		if($this->get_option("uultra_override_avatar") == 'yes')
 		{
 			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);
 		
-		}
-		
+		}		
 		
 	}
 	
@@ -144,10 +141,6 @@ class XooUserUser {
 			
 		}
 	
-		
-		
-		
-		
 		
 	}
 	
