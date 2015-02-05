@@ -52,6 +52,19 @@ $this->create_plugin_setting(
 	__("If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG images using PHP's EXIF extension, immediately after they are uploaded to the server. This is implemented for iPhone rotation issues",'xoousers'),
   __("If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG images using PHP's EXIF extension, immediately after they are uploaded to the server. This is implemented for iPhone rotation issues",'xoousers')
        );
+	   
+	   $this->create_plugin_setting(
+	'select',
+	'uultra_override_avatar',
+	__('Use Users Ultra Avatar','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__('If you select "yes", Users Ultra will override the default WordPress Avatar','xoousers'),
+  __('If you select "yes", Users Ultra will override the default WordPress Avatar','xoousers')
+       );
 		
 		
 ?>

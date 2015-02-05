@@ -13,7 +13,9 @@ class XooUserUser {
 
 	function __construct() 
 	{
-		$this->set_default_user_panel();			    
+		$this->set_default_user_panel();
+		
+		$this->uultra_replace_default_avatar();		    
 		
 				
 		add_action('init', array( $this, 'handle_init' ));		
@@ -76,6 +78,75 @@ class XooUserUser {
 		$column['package'] = 'Package';
 		
    	 	return $column;
+	}
+	
+	/******************************************
+	Default WP avatar
+	******************************************/
+	function uultra_replace_default_avatar() 
+	{
+		
+		global  $xoouserultra;
+		
+		if($xoouserultra->get_option("uultra_override_avatar") == 'yes')
+		{
+			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);
+		
+		}
+		
+	}
+	
+	/* Overrides default get avatar function  */
+	function uultra_get_avatar( $avatar, $id_or_email, $size, $default, $alt='' ) 
+	{
+		global $xoouserultra;
+		
+		
+		if (isset($id_or_email->user_id))
+		{
+			$id_or_email = $id_or_email->user_id;
+			
+		} elseif (is_email($id_or_email)){
+			
+			$user = get_user_by('email', $id_or_email);
+			$id_or_email = $user->ID;
+		}
+		
+		
+		$site_url = site_url()."/";
+		 
+		
+		$pic_size = "";
+		
+		$upload_folder = $xoouserultra->get_option('media_uploading_folder');				
+		$path = $site_url.$upload_folder."/".$id_or_email."/";			
+		$author_pic = get_the_author_meta('user_pic', $id_or_email);
+		
+		//get user url
+		$user_url=$this->get_user_profile_permalink($id_or_email);
+		
+		if($author_pic!='')		
+		{
+			
+			//get user's main picture - medium size will be used to be displayed			
+			 $avatar_pic = $path.$author_pic;
+			 $avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'" class="'.$pic_boder_type.'"  id="uultra-avatar-img-'.$id.'"/></a>';
+			 
+			 return $avatar;
+			
+		}else{
+			
+			
+			return $avatar;
+			
+			
+		}
+	
+		
+		
+		
+		
+		
 	}
 	
 	function uultra_modify_user_table_row( $val, $column_name, $user_id ) 
