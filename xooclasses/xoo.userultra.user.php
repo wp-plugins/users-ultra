@@ -89,7 +89,7 @@ class XooUserUser {
 		global  $xoouserultra;
 		
 		
-		if($xoouserultra->get_option("uultra_override_avatar") == 'yes')
+		if($this->get_option("uultra_override_avatar") == 'yes')
 		{
 			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);
 		
@@ -120,7 +120,7 @@ class XooUserUser {
 		
 		$pic_size = "";
 		
-		$upload_folder = $xoouserultra->get_option('media_uploading_folder');				
+		$upload_folder = $this->get_option('media_uploading_folder');				
 		$path = $site_url.$upload_folder."/".$id_or_email."/";			
 		$author_pic = get_the_author_meta('user_pic', $id_or_email);
 		
@@ -149,6 +149,21 @@ class XooUserUser {
 		
 		
 		
+	}
+	
+		/* get setting */
+	function get_option($option) 
+	{
+		$settings = get_option('userultra_options');
+		if (isset($settings[$option])) 
+		{
+			return $settings[$option];
+			
+		}else{
+			
+		    return '';
+		}
+		    
 	}
 	
 	function uultra_modify_user_table_row( $val, $column_name, $user_id ) 
