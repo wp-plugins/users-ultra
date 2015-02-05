@@ -88,11 +88,13 @@ class XooUserUser {
 		
 		global  $xoouserultra;
 		
+		
 		if($xoouserultra->get_option("uultra_override_avatar") == 'yes')
 		{
 			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);
 		
 		}
+		
 		
 	}
 	
