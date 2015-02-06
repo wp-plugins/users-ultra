@@ -164,11 +164,11 @@ class XooPublisher
 							
                    
                                     if ( $cat_type == 'normal' ) {
-                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=category[]&id=cat&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude . '&selected=' . $selected );
+                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude . '&selected=' . $selected );
                                     } else if ( $cat_type == 'ajax' ) {
-                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=category[]&id=cat-ajax&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&depth=1&exclude=' . $exclude . '&selected=' . $selected );
+                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat-ajax&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&depth=1&exclude=' . $exclude . '&selected=' . $selected );
                                     } else {
-                                        wpuf_category_checklist( $curpost->ID, false, 'category', $exclude);
+                                        wpuf_category_checklist( $curpost->ID, false, 'uultra_category', $exclude);
                                     }
                                    
                 
@@ -330,11 +330,11 @@ class XooPublisher
                                                
                                                
                                                 if ( $cat_type == 'normal' ) {
-                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=category[]&id=cat&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude );
+                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude );
                                                 } else if ( $cat_type == 'ajax' ) {
-                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=category[]&id=cat-ajax&show_count=0&title_li=&use_desc_for_title=1&class=cat requiredField&depth=1&exclude=' . $exclude );
+                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat-ajax&show_count=0&title_li=&use_desc_for_title=1&class=cat requiredField&depth=1&exclude=' . $exclude );
                                                 } else {
-                                                    wpuf_category_checklist(0, false, 'category', $exclude);
+                                                    wpuf_category_checklist(0, false, 'uultra_category', $exclude);
                                                 }
                                               
                 
@@ -585,18 +585,18 @@ class XooPublisher
         //validate cat
      		
 			
-            if ( !isset( $_POST['category'] ) ) 
+            if ( !isset( $_POST['uultra_category'] ) ) 
 			{
 				
                 $errors[] = __( 'Please choose a category', 'xoousers' );
 				
-            } else if ( $cat_type == 'normal' && $_POST['category'][0] == '-1' ) {
+            } else if ( $cat_type == 'normal' && $_POST['uultra_category'][0] == '-1' ) {
 				
                 $errors[] = __( 'Please choose a category', 'xoousers' );
 				
             } else {
 				
-                if ( count( $_POST['category'] ) < 1 ) {
+                if ( count( $_POST['uultra_category'] ) < 1 ) {
                     $errors[] = __( 'Please choose a category', 'xoousers' );
                 }
             }
@@ -632,7 +632,7 @@ class XooPublisher
         //users are allowed to choose category
         if ( $xoouserultra->get_option( 'uultra_front_publisher_allows_category' )== 'yes' ) 
 		{
-            $post_category = $_POST['category'];
+            $post_category = $_POST['uultra_category'];
 			
         } else {
 			
@@ -784,18 +784,18 @@ class XooPublisher
 		if($xoouserultra->get_option( 'uultra_front_publisher_allows_category' )=='yes')
 	    {
 			
-            if ( !isset( $_POST['category'] ) ) 
+            if ( !isset( $_POST['uultra_category'] ) ) 
 			{
 				
                 $errors[] = __( 'Please choose a category', 'xoousers' );
 				
-            } else if ( $cat_type == 'normal' && $_POST['category'][0] == '-1' ) {
+            } else if ( $cat_type == 'normal' && $_POST['uultra_category'][0] == '-1' ) {
 				
                 $errors[] = __( 'Please choose a category', 'xoousers' );
 				
             } else {
 				
-                if ( count( $_POST['category'] ) < 1 ) {
+                if ( count( $_POST['uultra_category'] ) < 1 ) {
                     $errors[] = __( 'Please choose a category', 'xoousers' );
                 }
             }
@@ -836,7 +836,7 @@ class XooPublisher
         //users are allowed to choose category
         if ( $xoouserultra->get_option( 'uultra_front_publisher_allows_category' )== 'yes' )
 		 {
-            $post_category = $_POST['category'];
+            $post_category = $_POST['uultra_category'];
         } else {
 			//set default category			
             $post_category = array($xoouserultra->get_option( 'uultra_front_publisher_default_category' ));
@@ -1249,8 +1249,7 @@ class XooPublisher
 					 
 						
 					});
-					
-					
+								
 			
 					
 				});
