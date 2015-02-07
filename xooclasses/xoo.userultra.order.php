@@ -107,8 +107,7 @@ class XooOrder
 		$sql .= " RIGHT JOIN ".$wpdb->prefix ."users  usu ON (usu.ID = ord.order_user_id)";		
 		$sql .= " WHERE ord.order_id <> 0 AND usu.ID = ord.order_user_id ORDER BY ord.order_id desc  LIMIT $howmany";	
 			
-		$orders = $wpdb->get_results($sql );
-		
+		$orders = $wpdb->get_results($sql );		
 		return $orders ;
 		
 	
@@ -230,11 +229,9 @@ class XooOrder
 		$sql .= " ORDER BY ord.order_id DESC";		
 		
 	    if($from != "" && $to != ""){	$sql .= " LIMIT $from,$to"; }
-	 	if($from == 0 && $to != ""){	$sql .= " LIMIT $from,$to"; }
-		
+	 	if($from == 0 && $to != ""){	$sql .= " LIMIT $from,$to"; }		
 					
-		$orders = $wpdb->get_results($sql );
-		
+		$orders = $wpdb->get_results($sql );		
 		return $orders ;
 		
 	
@@ -291,8 +288,7 @@ class XooOrder
 		{
 		
 		
-		}else{
-			
+		}else{			
 			
 			foreach ( $orders as $order )
 			{
@@ -315,8 +311,7 @@ class XooOrder
 		{
 		
 		
-		}else{
-			
+		}else{			
 			
 			foreach ( $orders as $order )
 			{
@@ -338,8 +333,7 @@ class XooOrder
 		$sql .= " RIGHT JOIN ".$wpdb->users ." usu ON (usu.ID = ord.order_user_id)";		
 		$sql .= " WHERE ord.order_id <> 0 AND usu.ID = '".(int)$user_id."' ORDER BY ord.order_id desc  LIMIT $howmany";	
 			
-		$orders = $wpdb->get_results($sql );
-		
+		$orders = $wpdb->get_results($sql );		
 		return $orders ;		
 	
 	}
@@ -356,15 +350,8 @@ class XooOrder
 		require_once(ABSPATH.  'wp-includes/query.php' );	
 		
 		
-		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
-		
-		
-		$user_id = get_current_user_id();
-		
-		
-		
-		 
-		
+		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');		
+		$user_id = get_current_user_id();		
         $drOr = $this->get_latest_user($user_id,30);
 		
 		//print_r($loop );
@@ -435,8 +422,7 @@ class XooOrder
 		?>
 
 	<?php
-	}
-	
+	}	
 }
 $key = "order";
 $this->{$key} = new XooOrder();

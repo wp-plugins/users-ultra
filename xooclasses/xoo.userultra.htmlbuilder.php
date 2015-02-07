@@ -136,7 +136,6 @@ class XooHtml
         
         return $button;
     }
-
 }
 $key = "htmlbuilder";
 $this->{$key} = new XooHtml();

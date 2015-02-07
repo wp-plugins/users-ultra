@@ -11,8 +11,7 @@ class XooMessaging extends XooUserUltraCommon
 	function __construct() 
 	{
 		$this->setContentType();
-		$this->setFromEmails();
-				
+		$this->setFromEmails();				
 		$this->set_headers();	
 		
 	}
@@ -63,8 +62,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  send ($to, $subject, $message)
 	{
 		global $xoouserultra;	
-		require_once(ABSPATH . 'wp-includes/pluggable.php');	
-		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		wp_mail( $to , $subject, $message, $this->mHeader);
 					
 		
@@ -131,9 +129,7 @@ class XooMessaging extends XooUserUltraCommon
 		$template_client = str_replace("{{user_ultra_activation_url}}", $activation_link,  $template_client);
 		$template_client = str_replace("{{userultra_user_email}}", $u_email,  $template_client);
 		$template_client = str_replace("{{userultra_user_name}}", $user_login,  $template_client);
-		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);
-		
-		
+		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);		
 		$this->send($u_email, $subject, $template_client);
 		
 	}
@@ -164,8 +160,7 @@ class XooMessaging extends XooUserUltraCommon
 		//admin
 		$template_admim = str_replace("{{userultra_user_email}}", $u_email,  $template_admim);
 		$template_admim = str_replace("{{userultra_user_name}}", $user_login,  $template_admim);
-		$template_admim = str_replace("{{userultra_admin_email}}", $admin_email,  $template_admim);	
-				
+		$template_admim = str_replace("{{userultra_admin_email}}", $admin_email,  $template_admim);				
 		
 		//send user
 		$this->send($u_email, $subject, $template_client);
@@ -208,8 +203,7 @@ class XooMessaging extends XooUserUltraCommon
 		$template_admim = str_replace("{{userultra_admin_email}}", $admin_email,  $template_admim);	
 				
 		
-		$this->send($u_email, $subject, $template_client);
-		
+		$this->send($u_email, $subject, $template_client);		
 		//send to admin		
 		$this->send($admin_email, $subject_admin, $template_admim);
 		
@@ -233,15 +227,12 @@ class XooMessaging extends XooUserUltraCommon
 		
 		$login_url =site_url("/");
 		
-		$subject = __('Account Activation','xoousers');
-		
+		$subject = __('Account Activation','xoousers');		
 		
 		$template_client = str_replace("{{userl_ultra_login_url}}", $login_url,  $template_client);				
 		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);		
 		
-		$this->send($u_email, $subject, $template_client);
-		
-					
+		$this->send($u_email, $subject, $template_client);					
 		
 	}
 	
@@ -261,8 +252,7 @@ class XooMessaging extends XooUserUltraCommon
 		
 		$login_url =site_url("/");
 		
-		$subject = __('Account Verified','xoousers');
-		
+		$subject = __('Account Verified','xoousers');	
 		
 		$template_client = str_replace("{{userl_ultra_login_url}}", $login_url,  $template_client);				
 		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);		

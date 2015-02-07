@@ -7,9 +7,7 @@ class XooUserPhoto {
 		
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_styles' ));		
 		add_action( 'wp_ajax_add_new_gallery',  array( $this, 'add_new_gallery' ));
-		add_action( 'wp_ajax_add_new_video',  array( $this, 'add_new_video' ));
-		
-		
+		add_action( 'wp_ajax_add_new_video',  array( $this, 'add_new_video' ));		
 		add_action( 'wp_ajax_reload_galleries',  array( $this, 'reload_galleries' ));
 		add_action( 'wp_ajax_reload_photos',  array( $this, 'reload_photos' ));
 		add_action( 'wp_ajax_rest_set_uploaded_image', array( $this, 'ajax_upload_images' ));
@@ -2031,14 +2029,8 @@ class XooUserPhoto {
 						
 						$html .="<a href='".$xoouserultra->userpanel->public_profile_get_photo_link($photo->photo_id, $user_id)."' class='' ><img src='".$thumb."' class='rounded'/> </a>";
 					
-						
-						
 					}
 										
-					
-					
-					
-					
 					if($display_photo_rating == "yes")	
 					{
 						
@@ -2050,10 +2042,6 @@ class XooUserPhoto {
 					
 					
 					$html.= "</li>";	
-					
-					
-			
-					
 				}
 			}
 		   
@@ -2072,8 +2060,7 @@ class XooUserPhoto {
 		$error=false;	
 		
 		
-		$site_url = site_url()."/";
-		
+		$site_url = site_url()."/";		
 		$upload_folder =  $xoouserultra->get_option('media_uploading_folder'); 
 		
 		//get photo
@@ -2126,7 +2113,6 @@ class XooUserPhoto {
 			
 			
 			}
-			
 			
 				   
 		} 
