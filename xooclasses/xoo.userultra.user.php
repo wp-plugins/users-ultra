@@ -4021,8 +4021,8 @@ class XooUserUser {
 					'end_size'     => 1,
 					'mid_size'     => 2,
 					'prev_next'    => true,
-					'prev_text'    => __('« Previous','xoousers'),
-					'next_text'    => __('Next »','xoousers'),
+					'prev_text'    => __('<< Previous','xoousers'),
+					'next_text'    => __('Next >>','xoousers'),
 					'type'         => 'plain',
 				));
 			$arr['users'] = $wp_user_query->results;

@@ -96,8 +96,7 @@ class XooHtml
             }    
         }
         
-        $radio_btn.=$checked.' />';
-        
+        $radio_btn.=$checked.' />';        
         return $radio_btn;
     }
 

@@ -8,12 +8,10 @@ class XooPaypalPayment
 		
 		$this->ini_db();		
 				
-		if (isset($_POST['txn_id'])) 
-		{		
-			
-			$this->handle_paypal_ipn($_POST);		
+				
 		
-		}			
+		add_action( 'init', array($this, 'handle_init' ) );
+		
 		add_action( 'wp_ajax_package_add_new', array( $this, 'package_add_new' ));	
 		add_action( 'wp_ajax_get_packages_ajax', array( $this, 'get_packages_ajax' ));
 		add_action( 'wp_ajax_package_delete', array( $this, 'package_delete' ));
@@ -22,6 +20,17 @@ class XooPaypalPayment
 		add_action( 'wp_ajax_package_edit_confirm', array( $this, 'package_edit_confirm' ));
 		
 
+	}
+	
+	public function handle_init()
+	{
+		if (isset($_POST['txn_id'])) 
+		{		
+			
+			$this->handle_paypal_ipn($_POST);		
+		
+		}	
+	
 	}
 	
 	public function ini_db()
@@ -162,10 +171,8 @@ class XooPaypalPayment
 				
 			$order_id = $rowOrder->order_id;
 			$user_id = $rowOrder->order_user_id;		
-			$buyer_name= $rowOrder->order_name;
-				
-			$total_price = $rowOrder->order_amount;  
-				
+			$buyer_name= $rowOrder->order_name;				
+			$total_price = $rowOrder->order_amount;  				
 			$business_email = $paypal_email;		
 				
 			

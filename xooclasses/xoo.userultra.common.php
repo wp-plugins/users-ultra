@@ -788,9 +788,6 @@ class XooUserUltraCommon
 				  '99'  => '99',
 				  '100'  => '100',
 				  
-				  
-				   	  
-				  
 				  );
 				
 				

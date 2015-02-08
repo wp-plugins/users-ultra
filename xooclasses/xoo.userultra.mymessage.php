@@ -17,9 +17,7 @@ class XooUserMyMessage {
 		add_action( 'wp_ajax_send_private_message',  array( $this, 'send_private_message' ));
 		add_action( 'wp_ajax_reply_private_message',  array( $this, 'reply_private_message' ));
 		add_action( 'wp_ajax_message_change_status',  array( $this, 'message_change_status' ));
-		add_action( 'wp_ajax_message_delete',  array( $this, 'message_delete' ));
-		
-		
+		add_action( 'wp_ajax_message_delete',  array( $this, 'message_delete' ));		
 
 	}
 	
@@ -124,9 +122,7 @@ class XooUserMyMessage {
 		}
 		
 		echo "<div class='uupublic-ultra-success'>".__(" Message sent ", 'xoousers')."</div>";
-		die();
-		
-		
+		die();		
 		
 	}
 	
@@ -162,8 +158,7 @@ class XooUserMyMessage {
 		$receiver = get_user_by('id',$receiver_id);		
 		$sender = get_user_by('id',$logged_user_id);
 		
-		//store in the db
-		
+		//store in the db		
 		if($receiver->ID >0)
 		{
 			
@@ -188,12 +183,9 @@ class XooUserMyMessage {
 			
 			
 		
-		}
-		
+		}		
 		echo "<div class='uupublic-ultra-success'>".__(" Reply sent ", 'xoousers')."</div>";
 		die();
-		
-		
 		
 	}
 	
@@ -233,8 +225,6 @@ class XooUserMyMessage {
 				  var uu_subject_empty = "'.__("Please input a subject", 'xoousers').'";
 				   var uu_message_empty = "'.__("Please write a message", 'xoousers').'";
 								
-				
-                    
                  </script>';
 				
 			
@@ -365,10 +355,8 @@ class XooUserMyMessage {
 		$logged_user_id = get_current_user_id();
 		
 		//chech if this is one of my messages		
-		$message = $this->get_one($message_id, $logged_user_id);
-		
-		$message_sender_id = $message->sender;
-		
+		$message = $this->get_one($message_id, $logged_user_id);		
+		$message_sender_id = $message->sender;		
 		 $pic_boder_type = "";
 		
 				
@@ -403,8 +391,7 @@ class XooUserMyMessage {
 			
 						
 			//main message
-			$html .= '<ul class="replylist">'	;
-			
+			$html .= '<ul class="replylist">'	;		
 			
 			$html .= '<li class="rounded">'	;
 			$html .= '<span class="uultra-u-avatar">'.$xoouserultra->userpanel->get_user_pic( $message_sender_id, 80, 'avatar', $pic_boder_type, 'fixed'). '</span>'	;
@@ -466,10 +453,8 @@ class XooUserMyMessage {
 					  
 			 
 			 		 
-			 $html .='<div id="uu-message-noti-id"></div>';
-			 
-			 $html  .= '</div>';
-				  
+			 $html .='<div id="uu-message-noti-id"></div>';			 
+			 $html .= '</div>';				  
 			 $html .='<script type="text/javascript">
 					  
 					 	   var uu_message_empty = "'.__("Please write a message", 'xoousers').'";
