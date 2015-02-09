@@ -14,9 +14,8 @@ if(typeof $ == 'undefined'){
 				offset: 4
 			});
 		}     
-		
-				
-		$('.rating-s').click(function() {
+						
+		jQuery('.rating-s').click(function() {
 			
 			
 			var data_id =  jQuery(this).attr("data-id");
@@ -44,7 +43,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		
-		$('#uu-send-private-message').click(function() {
+		jQuery('#uu-send-private-message').click(function() {
 			
 			
 			$( "#uu-pm-box" ).slideDown();	
@@ -53,9 +52,9 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('#uu-close-private-message-box').click(function() {		
+		jQuery('#uu-close-private-message-box').click(function() {		
 			
-			$( "#uu-pm-box" ).slideUp();	
+			jQuery( "#uu-pm-box" ).slideUp();	
 			
 			
 			 return false;
@@ -63,7 +62,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('#uu-send-private-message').click(function() {			
+		jQuery('#uu-send-private-message').click(function() {			
 			
 			$( "#uu-upload-avatar-box" ).slideDown();	
 			 return false;
@@ -71,7 +70,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('#uu-send-private-message-confirm').click(function() {
+		jQuery('#uu-send-private-message-confirm').click(function() {
 			
 			
 			var receiver_id =  jQuery(this).attr("data-id");
@@ -108,7 +107,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('#uu-reply-private-message-confirm').click(function() {
+		jQuery('#uu-reply-private-message-confirm').click(function() {
 			
 			var message_id =  jQuery(this).attr("message-id");			
 			var uu_message =   $('#uu_message').val();
@@ -139,7 +138,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		
-		$('.uu-private-message-change-status').click(function() {
+		jQuery('.uu-private-message-change-status').click(function() {
 			
 			
 			var message_id =  jQuery(this).attr("message-id");			
@@ -170,7 +169,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$('.uu-private-message-delete').click(function() {
+		jQuery('.uu-private-message-delete').click(function() {
 			
 			
 			var message_id =  jQuery(this).attr("message-id");			
@@ -201,7 +200,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$(document).on("click", ".btn-gallery-conf", function(e) {
+		jQuery(document).on("click", ".btn-gallery-conf", function(e) {
 			
 			e.preventDefault();		
 			
@@ -234,7 +233,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$(document).on("click", "a[href='#uultra-forgot-link']", function(e) {
+		jQuery(document).on("click", "a[href='#uultra-forgot-link']", function(e) {
 		
 			
 			e.preventDefault();
@@ -276,7 +275,7 @@ if(typeof $ == 'undefined'){
 				
         });
 		
-		$(document).on("click", "#xoouserultra-forgot-pass-btn-confirm", function(e) {		
+		jQuery(document).on("click", "#xoouserultra-forgot-pass-btn-confirm", function(e) {		
 			
 			e.preventDefault();			
 		
@@ -310,7 +309,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		//send friend request				
-		$(document).on("click", "#uu-send-friend-request", function(e) {
+		jQuery(document).on("click", "#uu-send-friend-request", function(e) {
 			
 			
 			var user_id =  jQuery(this).attr("user-id");		
