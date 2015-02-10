@@ -46,7 +46,7 @@ if(typeof $ == 'undefined'){
 		jQuery('#uu-send-private-message').click(function() {
 			
 			
-			$( "#uu-pm-box" ).slideDown();	
+			jQuery( "#uu-pm-box" ).slideDown();	
 			 return false;
     		e.preventDefault();
 				
@@ -64,7 +64,7 @@ if(typeof $ == 'undefined'){
 		
 		jQuery('#uu-send-private-message').click(function() {			
 			
-			$( "#uu-upload-avatar-box" ).slideDown();	
+			jQuery( "#uu-upload-avatar-box" ).slideDown();	
 			 return false;
     		e.preventDefault();
 				
@@ -88,10 +88,10 @@ if(typeof $ == 'undefined'){
 				
 				success: function(data){
 					
-					 $('#uu_subject').val("");
-					 $('#uu_message').val("");
+					 jQuery('#uu_subject').val("");
+					 jQuery('#uu_message').val("");
 					
-					$("#uu-message-noti-id").html(data);
+					jQuery("#uu-message-noti-id").html(data);
 					jQuery("#uu-message-noti-id").slideDown();
 					setTimeout("hidde_noti('uu-message-noti-id')", 3000)	;
 					
@@ -110,7 +110,7 @@ if(typeof $ == 'undefined'){
 		jQuery('#uu-reply-private-message-confirm').click(function() {
 			
 			var message_id =  jQuery(this).attr("message-id");			
-			var uu_message =   $('#uu_message').val();
+			var uu_message =   jQuery('#uu_message').val();
 			if(uu_message==""){alert(uu_message_empty);  $('#uu_message').focus(); return;}
 
 			jQuery.ajax({
@@ -121,7 +121,7 @@ if(typeof $ == 'undefined'){
 				success: function(data){
 					
 										
-					$("#uu-message-noti-id").html(data);
+					jQuery("#uu-message-noti-id").html(data);
 					jQuery("#uu-message-noti-id").slideDown();
 					setTimeout("hidde_noti('uu-message-noti-id')", 3000)	;
 					 window.location.reload();
@@ -152,7 +152,7 @@ if(typeof $ == 'undefined'){
 				success: function(data){
 					
 										
-					$("#uu-message-noti-id").html(data);
+					jQuery("#uu-message-noti-id").html(data);
 					jQuery("#uu-message-noti-id").slideDown();
 					setTimeout("hidde_noti('uu-message-noti-id')", 3000)	;
 					window.location.reload();	
@@ -183,7 +183,7 @@ if(typeof $ == 'undefined'){
 				success: function(data){
 					
 										
-					$("#uu-message-noti-id").html(data);
+					jQuery("#uu-message-noti-id").html(data);
 					jQuery("#uu-message-noti-id").slideDown();
 					setTimeout("hidde_noti('uu-message-noti-id')", 3000)	;
 					window.location.reload();
@@ -218,7 +218,7 @@ if(typeof $ == 'undefined'){
 					success: function(data){					
 						
 												
-						$( "#gallery-edit-div-"+gal_id ).slideUp();
+						jQuery( "#gallery-edit-div-"+gal_id ).slideUp();
 						reload_gallery_list();
 						
 						
@@ -249,8 +249,8 @@ if(typeof $ == 'undefined'){
 			e.preventDefault();			
 		
 		
-				var p1= $("#preset_password").val()	;
-				var p2= $("#preset_password_2").val()	;
+				var p1= jQuery("#preset_password").val()	;
+				var p2= jQuery("#preset_password_2").val()	;
 				var u_key= $("#uultra_reset_key").val()	;
 				
 									
@@ -280,7 +280,7 @@ if(typeof $ == 'undefined'){
 			e.preventDefault();			
 		
 		
-				var email= $("#user_name_email").val()	;
+				var email= jQuery("#user_name_email").val()	;
 				
 									
 				jQuery.ajax({
@@ -371,7 +371,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		
-		$(document).on("click", "#uu-approvedeny-friend", function(e) {
+		jQuery(document).on("click", "#uu-approvedeny-friend", function(e) {
 			
 			e.preventDefault();			
 			
@@ -401,10 +401,10 @@ if(typeof $ == 'undefined'){
         });
 		
 		//reset password				
-		$(document).on("click", "#xoouserultra-backenedb-eset-password", function(e) {			
+		jQuery(document).on("click", "#xoouserultra-backenedb-eset-password", function(e) {			
 			
-			var p1 =   $('#p1').val();
-			var p2 =   $('#p2').val();		
+			var p1 =   jQuery('#p1').val();
+			var p2 =  jQuery('#p2').val();		
 			
 			jQuery.ajax({
 				type: 'POST',
@@ -413,7 +413,7 @@ if(typeof $ == 'undefined'){
 				
 				success: function(data){					
 										
-					$("#uultra-p-reset-msg").html(data);
+					jQuery("#uultra-p-reset-msg").html(data);
 					
 					
 					
@@ -428,7 +428,7 @@ if(typeof $ == 'undefined'){
         });
 		
 		//update email				
-		$(document).on("click", "#xoouserultra-backenedb-update-email", function(e) {			
+		jQuery(document).on("click", "#xoouserultra-backenedb-update-email", function(e) {			
 			
 			var email =   $('#email').val();			
 			
@@ -439,7 +439,7 @@ if(typeof $ == 'undefined'){
 				
 				success: function(data){					
 										
-					$("#uultra-p-changeemail-msg").html(data);
+					jQuery("#uultra-p-changeemail-msg").html(data);
 					
 					
 					

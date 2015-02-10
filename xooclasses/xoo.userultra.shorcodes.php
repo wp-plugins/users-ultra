@@ -2,8 +2,7 @@
 class XooShortCode {
 
 	function __construct() 
-	{
-		
+	{		
 		add_action( 'init',   array(&$this,'xoousers_shortcodes'));	
 		add_action( 'init', array(&$this,'respo_base_unautop') );	
 
@@ -344,7 +343,7 @@ class XooShortCode {
 			'plan_id' => '',
 			'per' => 'month',
 			'button_url' => '',
-			'button_text' => 'Sign up',
+			'button_text' => __('Sign up','xoousers'),
 			'button_color' => 'green',
 			'button_target' => 'self',
 			'button_rel' => 'nofollow',

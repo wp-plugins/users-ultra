@@ -238,8 +238,7 @@
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
                             }       
-                        }
-						
+                        }						
 						,						
 						{
                             text: 'Latest Users',
@@ -272,8 +271,7 @@
 						
 						
                     ]
-                },
-				
+                },				
 				//images
 			   {
                     text: 'Images',
@@ -344,8 +342,7 @@
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
                             }       
-                        } 
-						
+                        } 						
 						,						
 						{
                             text: 'Four Columns',

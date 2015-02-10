@@ -81,8 +81,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 			update_option('usersultra_profile_fields', NULL);		
 		
-		}	
-		
+		}			
 		
 	}
 	
@@ -100,9 +99,6 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		
 	}
-	
-	
-	
 	
 	
 	function get_pending_verify_requests_count()
@@ -477,8 +473,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		
 		
-		//notify admin new registration
-		
+		//notify admin new registration		
 		$email_body = __('Hi,' ,"xoousers") . $line_break.$line_break;
 		$email_body .= __("A new user has been registered.","xoousers") .  $line_break.$line_break;
 		

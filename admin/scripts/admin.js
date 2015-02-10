@@ -155,7 +155,7 @@ jQuery(document).ready(function($) {
 		
 		var key_id =  jQuery(this).attr("data-edition");	
 		
-		$('#p_name').val()		  
+		jQuery('#p_name').val()		  
 		
 		var _position = $("#uultra_" + key_id + "_position").val();		
 		var _type =  $("#uultra_" + key_id + "_type").val();
@@ -417,9 +417,9 @@ jQuery(document).ready(function($) {
 		
 		//validate
 		
-		var p_name = $('#p_name_'+p_id).val();
-		var p_desc = $('#p_desc_'+p_id).val();			
-		var p_price = $('#p_price_'+p_id).val();
+		var p_name = jQuery('#p_name_'+p_id).val();
+		var p_desc = jQuery('#p_desc_'+p_id).val();			
+		var p_price =jQuery('#p_price_'+p_id).val();
 		
 		var p_period = $('#p_period_'+p_id).val();
 		var p_every = $('#p_every_'+p_id).val();
@@ -453,7 +453,7 @@ jQuery(document).ready(function($) {
 					
 					//display message							
 					
-					$("#package-edit-noti-mess-"+p_id).html(data);
+					jQuery("#package-edit-noti-mess-"+p_id).html(data);
 					jQuery("#package-edit-noti-mess-"+p_id).slideDown();
 					setTimeout("reload_packages()", 2000);		
 				
@@ -484,7 +484,7 @@ jQuery(document).ready(function($) {
 						
 						success: function(data){					
 						
-								$("#uultra-user-acti-noti").html(data);
+								jQuery("#uultra-user-acti-noti").html(data);
 								setTimeout("reload_pending_moderation()", 2000);	
 								setTimeout("reload_pending_payment()", 2000);					
 							
@@ -515,7 +515,7 @@ jQuery(document).ready(function($) {
 						
 						success: function(data){					
 						
-								$("#uultra-user-acti-noti").html(data);
+								jQuery("#uultra-user-acti-noti").html(data);
 								setTimeout("reload_pending_activation()", 2000);	
 														
 							
@@ -542,7 +542,7 @@ jQuery(document).ready(function($) {
 						
 						success: function(data){					
 						
-								$("#uultra-user-acti-noti").html(data);
+								jQuery("#uultra-user-acti-noti").html(data);
 								setTimeout("reload_pending_moderation()", 2000);
 								setTimeout("reload_pending_payment()", 2000);						
 							
