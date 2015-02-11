@@ -42,8 +42,7 @@ class XooUserLogin {
 			session_start();
 			$_SESSION['google_token']  = NULL;
 			/* get social links */
-			$this->social_login_links_oauth();
-			
+			$this->social_login_links_oauth();			
 				
 		}
 		
@@ -467,11 +466,9 @@ class XooUserLogin {
 														
 						)
 					)
-				);
-				
+				);				
 				
 				$response = json_decode($response["body"]);
-				//print_r($response);
 				
 				//if user data get successfully
 				if (isset($response->{'access_token'}->{'user_id'}))
@@ -592,8 +589,6 @@ class XooUserLogin {
 												'user_email' => $u_email,																				
 												'user_pass' => $user_pass
 											);
-											
-																						
 														
 								// Create a new user
 								$user_id = wp_insert_user ($user_data);
@@ -628,27 +623,19 @@ class XooUserLogin {
 									$user = wp_signon( $creds, false );
 									do_action('wp_login', $user->user_login, $user);
 									
-									
 								}
 																
 								//redirect user
 								$this->login_registration_afterlogin();
 								
-								
 							}
 						}
 					}
-				
-				
-			
 			}
-		
 		
 		}
 		
-		
 	}
-	
 	
 	/******************************************
 	Google auth 
@@ -1132,8 +1119,7 @@ class XooUserLogin {
 					$user_info = $this->twitter->get('account/verify_credentials');
 					$user_info = (array)$user_info;
 					
-				//	print_r($user_info);
-					
+		
 					//if user data get successfully
 					if (isset($user_info['id'])){
 						
@@ -1193,10 +1179,6 @@ class XooUserLogin {
 							
 							} else if ($user_info['screen_name'] != '' && username_exists($user_info['screen_name'])) {	
 								
-															
-								
-								///new
-								
 								//user email exists then we have to sync								
 								$user_id = username_exists( $user_info['screen_name'] );
 								$user = get_userdata($user_id);
@@ -1229,9 +1211,6 @@ class XooUserLogin {
 							
 							} else {
 
-								///new
-								//echo "new client";
-								
 								//this is a new client we have to create the account								
 								 $u_name = $this->get_social_services_name('twitter', $user_info);													
 								 $u_email = $user_info['id'];
@@ -1355,9 +1334,7 @@ class XooUserLogin {
 			$profile_result = $to->oAuthRequest('http://api.linkedin.com/v1/people/~'.$find_person);
 			$profile_data = simplexml_load_string($profile_result);
 			
-			
-			//print htmlspecialchars(print_r($profile_data, true));
-		   
+	   
 			   
 			$profile_data = json_decode( json_encode($profile_data) , 1);
 						
@@ -1433,17 +1410,12 @@ class XooUserLogin {
 					$this->errors[] = __('<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET.','xoousers');
 					
 				}
-				
-			
 			
 			
 			}
 			
-		
-		
 		//redirect
 		$this->login_registration_afterlogin();
-		
 		
 		
 	  }
@@ -1504,8 +1476,6 @@ class XooUserLogin {
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
 		
-		//$my_account_url = "";	
-		
 		return $my_account_url;
 	
 	}
@@ -1562,9 +1532,6 @@ class XooUserLogin {
 			$my_account_slug = 	$xoouserultra->get_option('usersultra_login_slug');
 			$my_account_url = $web_url.$my_account_slug ."/";		
 		}
-		
-		
-		
 		
 		return $my_account_url;
 	
@@ -1641,9 +1608,7 @@ class XooUserLogin {
 						$verify_key = $this->get_unique_verify_account_id();					
 						update_user_meta ($user_id, 'xoouser_ultra_very_key', $verify_key);						
 						update_user_meta ($user_id, 'first_name', $u_name);
-											
-						//update_user_meta ($user_id, 'usersultra_account_status', 'active');
-						
+																
 						//set account status
 						$this->user_account_status($user_id);
 						
@@ -1670,8 +1635,6 @@ class XooUserLogin {
 						
 						//redirect user
 						$this->login_registration_afterlogin();
-						
-						
 						
 				}
 				
@@ -1709,9 +1672,6 @@ class XooUserLogin {
 				//redirect user
 				$this->login_registration_afterlogin();
 				
-			
-			
-			
 			}
 				
 			
@@ -1739,7 +1699,6 @@ class XooUserLogin {
 		}
 		
 		$this->login_registration_afterlogin();
-	
 	
 			
   }

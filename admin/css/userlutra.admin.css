@@ -8,9 +8,7 @@
 .user-ultra-btn-red{ background: #F00 !important;  color:#FFF !important}
 
 .uuultra-top-noti-admin {  margin:10px 0px 10px 0px; color:#FFF !important}
-
 .user-ultra-sect { padding:10px;}
-
 .uultra-socialconnect { padding:10px; text-align:right; position:absolute; top:10px ; right:10px; overflow:hidden;}
 
 .uultra-like{display:inline-block; width:130px}
@@ -140,11 +138,8 @@ samp {
 .user-ultra-sect .statblock h3{ font-size:20px !important; text-align:center; font-weight:bold; margin:10px 0px 10px; padding:0px}
 
 .day_amount{ color: #C30}
-
 .month_amount{ color: #060}
-
 .year_amount{ color: #C33}
-
 .alltime_amount{ color: #C30}
 
 
@@ -167,8 +162,6 @@ samp {
 
 .user-ultra-sect .statblock-social h3{ font-size:18px !important; text-align:center;  margin:15px 0px 15px; padding:0px}
 
-
-
 .user-ultra-info, .user-ultra-success, .user-ultra-warning, .user-ultra-error, .isa_error {
 
     border: 1px solid;
@@ -184,7 +177,6 @@ samp {
 -webkit-border-radius:.5em;
 
 border-radius:.5em;
-
 
 
 }
@@ -258,30 +250,10 @@ border-radius:.5em;
 
 
 .uultra-profile-fields-row .options-bar p{ margin:8px 5px 0px 5px;}
-
-
-
 .uultra-profile-fields-row .heading_title h3{ font-size:14px; margin:0px 0px 0px 10px;}
-
-
-
 .uultra-profile-fields-row  .heading_title.separator { background:#EEE;}
-
-
-
 .uultra-profile-fields-row.profile-field {width:450px; margin-left:30px; }
-
-
-
 .uultra-profile-fields-row .uultra-fields-edition{width:85%; margin:10px auto 10px auto; display:none }
-
-
-
-
-
-
-
-
 
 #uu-fields-sortable .ui-selected {    background: red;    color: white;    font-weight: bold;}
 
