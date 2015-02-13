@@ -1295,15 +1295,13 @@ class XooUserLogin {
 		global $xoouserultra ;
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
-		require_once(xoousers_path."libs/linkedin/oauth/linkedinoauth.php"); 
-		
+		require_once(xoousers_path."libs/linkedin/oauth/linkedinoauth.php"); 		
 			 
 		 //get oauttokens
 		 $temp_user_session_id = session_id();			
 				
 		 $oauthstate =  get_option('uultra_linkedin_'.$temp_user_session_id);
-		 
-		 //get access token and access token secret		 
+		 		 //get access token and access token secret		 
 		 $oauthstate = $xoouserultra->get_linkedin_access_token($oauthstate);
 		 
 	 
@@ -1316,8 +1314,7 @@ class XooUserLogin {
 		
 		
 			// We've been given some access tokens, so try and use them to make an API call, and
-			// display the results.
-			
+			// display the results.			
 			$accesstoken = $oauthstate['access_token'];
 			$accesstokensecret = $oauthstate['access_token_secret'];
 			
@@ -1332,9 +1329,7 @@ class XooUserLogin {
 			
 			$find_person = ':(first-name,last-name,email-address)';
 			$profile_result = $to->oAuthRequest('http://api.linkedin.com/v1/people/~'.$find_person);
-			$profile_data = simplexml_load_string($profile_result);
-			
-	   
+			$profile_data = simplexml_load_string($profile_result);	   
 			   
 			$profile_data = json_decode( json_encode($profile_data) , 1);
 						
@@ -1346,8 +1341,7 @@ class XooUserLogin {
 			
 			//Sanitize Login
 			 $user_login = str_replace ('.', '-', $u_user);
-			 $user_login = sanitize_user ($user_login, true);
-			 
+			 $user_login = sanitize_user ($user_login, true);			 
 			
 			//check if exists
 			
@@ -1355,8 +1349,7 @@ class XooUserLogin {
 			$exists = email_exists($u_email);
 			if(!$exists)
 			{
-				  //lets create
-				  
+				 				  
 				 //generat3 random password
 				 $user_pass = wp_generate_password( 12, false);
 				 
@@ -1395,8 +1388,7 @@ class XooUserLogin {
 				
 			}else{
 				
-				//if user already created then try to login automatically
-				
+				//if user already created then try to login automatically				
 				$user = get_user_by('login',$user_login);				
 				$user_id =$user->ID;
 				
@@ -1406,17 +1398,15 @@ class XooUserLogin {
 					wp_set_auth_cookie( $user_id, true, $secure );			
 				
 				}else{
-					
+										
 					$this->errors[] = __('<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET.','xoousers');
 					
-				}
-			
+				}			
 			
 			}
 			
 		//redirect
 		$this->login_registration_afterlogin();
-		
 		
 	  }
 	
@@ -1470,8 +1460,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
-		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
@@ -1487,8 +1476,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
-		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
@@ -1689,12 +1677,6 @@ class XooUserLogin {
 		{
 			
 			//notify client			
-			//$xoouserultra->messaging->welcome_email($u_email, $user_login, $user_pass);
-			
-			//$creds['user_login'] = sanitize_user($u_user);				
-			//$creds['user_password'] = $user_pass;
-			//$creds['remember'] = 1;				
-			//$user = wp_signon( $creds, false );
 		
 		}
 		
