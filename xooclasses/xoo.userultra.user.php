@@ -4075,7 +4075,11 @@ class XooUserUser {
 			'display_social' => 'yes', // display social
 			'display_country_flag' => 'name', // display flag, no,yes,only, both. Only won't display name
 			'display_total_found' => 'yes', // display total found
-			'display_total_found_text' => 'Users', // display total found			
+			'display_total_found_text' =>__('Users', 'xoousers'), // display total found	
+			
+			
+			
+				
 			'list_order' => 'DESC', // asc or desc ordering
 			'exclude' => '', // exclude from searching
 		), $atts ) );
@@ -4139,7 +4143,11 @@ class XooUserUser {
 			'display_social' => 'yes', // display social
 			'display_country_flag' => 'name', // display flag, no,yes,only, both. Only won't display name
 			'display_total_found' => 'yes', // display total found
-			'display_total_found_text' => 'Users', // display total found			
+			'display_total_found_text' =>__('Users', 'xoousers'), // display total found
+			
+			'display_to_logged_in_only' => '', // yes or null or empy
+			'display_to_logged_in_only_text' => __('Only logged in users can see this page', 'xoousers'),	
+					
 			'list_order' => 'DESC', // asc or desc ordering
 			'role' => '', // filter by role
 			'relation' => 'AND', // filter by role
@@ -4155,17 +4163,8 @@ class XooUserUser {
 		$args= array('per_page' => $list_per_page, 'relation' => $relation, 'role' => $role, 'exclude' => $exclude);
 		
 		$this->current_users_page = $page;
-		
-		$this->search_result($args);
-		
+				
 			
-		$users_list = $this->searched_users;
-		
-		
-		//display pages
-		$disp_array = array('total' => $users_list['total'], 'text' => $display_total_found_text);
-		
-		$total_f = $this->get_total_found($disp_array);		
 		
 		
 		$html ='';
@@ -4174,94 +4173,110 @@ class XooUserUser {
 		$html .='<div class="usersultra-front-directory-wrap">
 		       	<div class="usersultra-searcher">
 			    </div>';
-
-      
-       // $html .='<div class="usersultra-paginate top_display">'.$paginate.'</div>';
+				
 		
-		if (isset($users_list['paginate'])) {
-			
-        $html .=' <div class="usersultra-paginate top_display">'. $users_list['paginate'].'</div>';
+		//only logged in  
 		
-		 } 
-	    
-		if ($display_total_found=='yes') 
+		if($display_to_logged_in_only=='yes')
 		{
+			$html .=' <p>'. $display_to_logged_in_only_text.'</p>';
+		
+		}else{
 			
-		 	$html .=$total_f;
-		}
-    
-    	$html .='<ul class="usersultra-front-results">';
-        
-        if(count($users_list['users'])>0)
-		{
-			foreach($users_list['users'] as $user)
+			
+			$this->search_result($args);			
+			$users_list = $this->searched_users;
+			
+			
+			//display pages
+			$disp_array = array('total' => $users_list['total'], 'text' => $display_total_found_text);		
+			$total_f = $this->get_total_found($disp_array);	
+				
+			
+			if (isset($users_list['paginate'])) {
+				
+			$html .=' <div class="usersultra-paginate top_display">'. $users_list['paginate'].'</div>';
+			
+			 } 
+			
+			if ($display_total_found=='yes') 
 			{
 				
-				$user_id = $user->ID; 
-				
-				//echo "<pre>";
-				//print_r($user);
-				//echo "</pre>";
-			
-			   if($pic_boder_type=="rounded")
-			   {
-				   $class_avatar = "avatar";
-				   
-				}
-			
-			
-				
-				
-				$html .='<li class="rounded" style="width:'.$item_width.'">';               
-				$html .='<div class="xoousers-prof-photo">';
-				   
-				$html .= $xoouserultra->userpanel->get_user_pic( $user_id, $pic_size, $pic_type, $pic_boder_type, $pic_size_type);             
-				   
-				$html .=' </div> ';
-				   
-				   
-				   
-				   
-					$html .=' <div class="info-div">';		
-					$html .='<p class="uu-direct-name">'.  $xoouserultra->userpanel->get_display_name($user_id).'</p>';
-					
-					
-					$html .=' <div class="social-icon-divider">                                       
-					 
-					  </div> ';
-					
-					if ($optional_fields_to_display!="") { 
-					 
-					 
-					   $html .= $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_fields_to_display)  ;
-					 
-					 
-					
-					   }
-					
-					$html .=' </div> 
-					 
-					  <div class="uultra-view-profile-bar">';
-					  
-					  $html .='  <a class="uultra-btn-profile" href="'.$xoouserultra->userpanel->get_user_profile_permalink( $user_id).'">'.__("See Profile","xoousers").'</a>
-					  
-					  </div> ';
-				
-				
-				$html .='</li>';
-				
-				
-			}    //end for each
-       }  
-        
-       $html .=' </ul>';
-        
-        
-		if (isset($users_list['paginate'])) {
-			
-        $html .=' <div class="usersultra-paginate bottom_display">'. $users_list['paginate'].'</div>';
+				$html .=$total_f;
+			}
 		
-		 } 
+			$html .='<ul class="usersultra-front-results">';
+			
+			if(count($users_list['users'])>0)
+			{
+				foreach($users_list['users'] as $user)
+				{
+					
+					$user_id = $user->ID; 
+				
+				   if($pic_boder_type=="rounded")
+				   {
+					   $class_avatar = "avatar";
+					   
+					}
+				
+				
+					
+					
+					$html .='<li class="rounded" style="width:'.$item_width.'">';               
+					$html .='<div class="xoousers-prof-photo">';
+					   
+					$html .= $xoouserultra->userpanel->get_user_pic( $user_id, $pic_size, $pic_type, $pic_boder_type, $pic_size_type);             
+					   
+					$html .=' </div> ';
+					   
+					   
+					   
+					   
+						$html .=' <div class="info-div">';		
+						$html .='<p class="uu-direct-name">'.  $xoouserultra->userpanel->get_display_name($user_id).'</p>';
+						
+						
+						$html .=' <div class="social-icon-divider">                                       
+						 
+						  </div> ';
+						
+						if ($optional_fields_to_display!="") { 
+						 
+						 
+						   $html .= $xoouserultra->userpanel->display_optional_fields( $user_id,$display_country_flag, $optional_fields_to_display)  ;
+						 
+						 
+						
+						   }
+						
+						$html .=' </div> 
+						 
+						  <div class="uultra-view-profile-bar">';
+						  
+						  $html .='  <a class="uultra-btn-profile" href="'.$xoouserultra->userpanel->get_user_profile_permalink( $user_id).'">'.__("See Profile","xoousers").'</a>
+						  
+						  </div> ';
+					
+					
+					$html .='</li>';
+					
+					
+				}    //end for each
+		   }  
+			
+		   $html .=' </ul>';
+			
+			
+			if (isset($users_list['paginate'])) {
+				
+			$html .=' <div class="usersultra-paginate bottom_display">'. $users_list['paginate'].'</div>';
+			
+			 } 
+		 
+		 
+		 
+		 }  //end if logged in
 
  $html .='</div>';
 		

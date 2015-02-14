@@ -1287,6 +1287,24 @@ class XooUserLogin {
 		}
 	}
 	
+	 /*Auto redirect login*/
+	public function auto_redirection_on_login() 
+	{
+		global $xoouserultra, $wp_rewrite ;
+		
+		$wp_rewrite = new WP_Rewrite();
+		
+		require_once(ABSPATH . 'wp-includes/link-template.php');		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
+		$account_page_id = get_option('xoousersultra_my_account_page');
+		$my_account_url = get_permalink($account_page_id);
+		wp_redirect($my_account_url);			
+		exit;
+
+	
+	}
+	
 	 /*Handle LinkedIn Sign up*/
 	public function handle_linkedin_authorization() 
 	{

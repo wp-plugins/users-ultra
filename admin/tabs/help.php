@@ -17,12 +17,7 @@ global $xoouserultra;
    
     
      
-           <h3> <?php _e(' Looking for someone to customize Users Ultra ?','xoousers'); ?></h3>
-    
-    <p> <?php _e('We recommend the following Contributing Developers:','xoousers'); ?></p>
-    <p> <?php _e('Johan Wielsen:   ','xoousers'); ?> 
-    <a href="http://cee3.me" target="_blank">http://cee3.me</a></p>
-    
+              
    
        
    <h3> <?php _e('Common Shortcodes','xoousers'); ?></h3>

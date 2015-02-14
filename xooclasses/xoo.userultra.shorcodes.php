@@ -107,8 +107,16 @@ class XooShortCode {
 				
 			} else {
 				
-				//display mini profile
-				return $xoouserultra->show_minified_profile( $atts );		
+				
+				if($xoouserultra->get_option('uultra_auto_redirect_loggedin_user') == 'yes')
+				{
+					$xoouserultra->login->auto_redirection_on_login();
+				
+				}else{					
+				
+					return $xoouserultra->show_minified_profile( $atts );	
+				
+				}	
 				
 				
 			}
@@ -258,8 +266,16 @@ class XooShortCode {
 			
 		} else {
 			
-			//display mini profile
-			return $xoouserultra->show_minified_profile( $atts );		
+			//display mini profile					
+			if($xoouserultra->get_option('uultra_auto_redirect_loggedin_user_registration') == 'yes')
+			{
+				$xoouserultra->login->auto_redirection_on_login();
+				
+			}else{					
+				
+				return $xoouserultra->show_minified_profile( $atts );
+				
+			}			
 			
 			
 		}

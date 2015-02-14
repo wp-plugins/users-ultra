@@ -65,6 +65,32 @@ $this->create_plugin_setting(
 	__('If you select "yes", Users Ultra will override the default WordPress Avatar','xoousers'),
   __('If you select "yes", Users Ultra will override the default WordPress Avatar','xoousers')
        );
+	   
+	    $this->create_plugin_setting(
+	'select',
+	'uultra_auto_redirect_loggedin_user',
+	__('Redirect Users To My Account - Login Page','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("If you select yes, the user will be redirected to the <strong>my account</strong> page when clicking on the <strong>login link</strong>. Otherwise, the user will see the standard login box. WARNING: Do not set it to 'yes' if you are using the login shortcode in WP side widgets.",'xoousers'),
+  __("If you select yes, the user will be redirected to the my account page. Otherwise, the user will see the standard login box. WARNING: Do not set it to 'yes' if you are using the login shortcode in WP side widgets",'xoousers')
+       );
+	   
+	 $this->create_plugin_setting(
+	'select',
+	'uultra_auto_redirect_loggedin_user_registration',
+	__('Redirect Users To My Account - Registration Page','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("If you select yes, the user will be redirected to the <strong>my account</strong> page when clicking on the <strong>registration link</strong>. Otherwise, the user will see the standard login box. WARNING: Do not set it to 'yes' if you are using the registration shortcode in WP side widgets.",'xoousers'),
+  __("If you select yes, the user will be redirected to the <strong>my account</strong> page when clicking on the <strong>registration link</strong>. Otherwise, the user will see the standard login box. WARNING: Do not set it to 'yes' if you are using the registration shortcode in WP side widgets.",'xoousers')
+       );
 		
 		
 ?>
