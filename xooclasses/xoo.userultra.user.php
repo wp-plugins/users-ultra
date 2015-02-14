@@ -4177,7 +4177,7 @@ class XooUserUser {
 		
 		//only logged in  
 		
-		if($display_to_logged_in_only=='yes')
+		if($display_to_logged_in_only=='yes' && !is_user_logged_in())
 		{
 			$html .=' <p>'. $display_to_logged_in_only_text.'</p>';
 		
