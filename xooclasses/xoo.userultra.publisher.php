@@ -164,9 +164,9 @@ class XooPublisher
 							
                    
                                     if ( $cat_type == 'normal' ) {
-                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude . '&selected=' . $selected );
+                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=uultra_category&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude . '&selected=' . $selected );
                                     } else if ( $cat_type == 'ajax' ) {
-                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat-ajax&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&depth=1&exclude=' . $exclude . '&selected=' . $selected );
+                                        wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=uultra_category-ajax&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&depth=1&exclude=' . $exclude . '&selected=' . $selected );
                                     } else {
                                         wpuf_category_checklist( $curpost->ID, false, 'uultra_category', $exclude);
                                     }
@@ -330,9 +330,9 @@ class XooPublisher
                                                
                                                
                                                 if ( $cat_type == 'normal' ) {
-                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude );
+                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=uultra_category&show_count=0&title_li=&use_desc_for_title=1&class=xoouserultra-input requiredField&exclude=' . $exclude );
                                                 } else if ( $cat_type == 'ajax' ) {
-                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=cat-ajax&show_count=0&title_li=&use_desc_for_title=1&class=cat requiredField&depth=1&exclude=' . $exclude );
+                                                    wp_dropdown_categories( 'show_option_none=' . __( '-- Select --', 'xoousers' ) . '&hierarchical=1&hide_empty=0&orderby=name&name=uultra_category[]&id=uultra_category-ajax&show_count=0&title_li=&use_desc_for_title=1&class=cat requiredField&depth=1&exclude=' . $exclude );
                                                 } else {
                                                     wpuf_category_checklist(0, false, 'uultra_category', $exclude);
                                                 }
