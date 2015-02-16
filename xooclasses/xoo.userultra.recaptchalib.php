@@ -99,7 +99,6 @@ function _recaptcha_http_post($host, $path, $data, $port = 80) {
 }
 
 
-
 /**
  * Gets the challenge HTML (javascript and non-javascript version).
  * This is called from the browser, and the resulting reCAPTCHA HTML widget
@@ -303,8 +302,6 @@ function _recaptcha_mailhide_email_parts ($email) {
 }
 
 }
-
-
 /**
  * Gets html to display an email address given a public an private key.
  * to get a key, go to:

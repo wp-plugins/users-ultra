@@ -7,7 +7,7 @@ $total_common=0;
 $total_facebook= $xoouserultra->userpanel->signup_status('1');
 $total_yahoo= $xoouserultra->userpanel->signup_status('3');
 $total_google=$xoouserultra->userpanel->signup_status('4');
-$total_linkedin=$xoouserultra->userpanel->signup_status('1');
+$total_linkedin=$xoouserultra->userpanel->signup_status('2');
 $total_twitter = $xoouserultra->userpanel->signup_status('5');
 
 $howmany_latest= 10;

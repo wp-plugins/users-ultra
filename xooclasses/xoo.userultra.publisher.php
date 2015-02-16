@@ -8,8 +8,7 @@ class XooPublisher
 	function __construct() 
 	{		
 		
-		$this->mDateToday =  date("Y-m-d"); 
-		
+		$this->mDateToday =  date("Y-m-d"); 		
 		add_action( 'init', array($this, 'handle_post') );		
 		add_action( 'wp_ajax_featured_post_img_upload', array($this, 'featured_img_upload') );
 		add_action( 'wp_ajax_featured_img_delete', array($this, 'featured_img_delete') );

@@ -179,8 +179,7 @@ class XooMessaging extends XooUserUltraCommon
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
-		$admin_email =get_option('admin_email'); 
-		
+		$admin_email =get_option('admin_email'); 		
 		
 		$subject = __('Verify Your Account','xoousers');
 		$subject_admin = __('New Account To Verify','xoousers');
@@ -269,8 +268,7 @@ class XooMessaging extends XooUserUltraCommon
 		global $xoouserultra;
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
-		require_once(ABSPATH . 'wp-includes/link-template.php');
-		
+		require_once(ABSPATH . 'wp-includes/link-template.php');		
 		
 		$admin_email =get_option('admin_email'); 
 		
@@ -457,12 +455,10 @@ class XooMessaging extends XooUserUltraCommon
 		$template_client = str_replace("{{userultra_pass}}", $user_pass,  $template_client);
 		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);
 		
-		
 		$this->send($u_email, $subject, $template_client);
 		
 		
 	}
-	
 	
 	public function  paypal_ipn_debug( $message)
 	{
@@ -470,10 +466,7 @@ class XooMessaging extends XooUserUltraCommon
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
-		$admin_email =get_option('admin_email'); 
-		
-		
-		
+		$admin_email =get_option('admin_email'); 		
 		$this->send($admin_email, "IPN notification", $message);
 					
 		
