@@ -5,7 +5,6 @@ class XooShortCode {
 	{		
 		add_action( 'init',   array(&$this,'xoousers_shortcodes'));	
 		add_action( 'init', array(&$this,'respo_base_unautop') );	
-
 	}
 	
 	/**
@@ -74,8 +73,7 @@ class XooShortCode {
 	
 		add_shortcode( 'five_sixth_first',   array(&$this,'respo_base_grid_10_first'));
 		add_shortcode( 'five_sixth', array(&$this,'respo_base_grid_10'));
-		add_shortcode( 'five_sixth_last', array(&$this,'respo_base_grid_10_last') );	
-		
+		add_shortcode( 'five_sixth_last', array(&$this,'respo_base_grid_10_last') );			
 		add_shortcode( 'respo_pricing',  array(&$this,'respo_pricing_shortcode') );
 
 		
@@ -253,8 +251,7 @@ class XooShortCode {
 		}
 		
 		
-	}
-	
+	}	
 	public function  usersultra_registration_function ($atts)
 	{
 		global $xoouserultra;
@@ -520,9 +517,6 @@ class XooShortCode {
 	function respo_base_grid_10_last( $atts, $content = null ) {
 	   return '<div class="respo-sc-grid_10 omega">' . do_shortcode($content) . '</div><div class="clear"></div>';
 	}
-	
-	
-	
 
 }
 $key = "shortcode";

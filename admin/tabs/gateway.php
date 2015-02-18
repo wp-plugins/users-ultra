@@ -57,9 +57,6 @@ $this->create_plugin_setting(
   __('Select Mode','xoousers')
        );
 
-
-
-
 		
 ?>
 </table>
