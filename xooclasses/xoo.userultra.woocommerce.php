@@ -218,8 +218,7 @@ class XooWooCommerce {
 							default: $icon = 0; break;
 						}
 						
-						switch($meta) {
-							
+						switch($meta) {							
 							case 'billing_country':
 							$fields[$new_index+=10] = array(
 								'icon' => $icon, 
@@ -273,8 +272,7 @@ class XooWooCommerce {
 					
 				}
 				
-				update_option('usersultra_profile_fields', $fields);
-				
+				update_option('usersultra_profile_fields', $fields);				
 				
 				}
 					

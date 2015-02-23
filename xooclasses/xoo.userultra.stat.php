@@ -53,7 +53,6 @@ class XooStat extends XooUserUltraCommon
 		
 		if($this->check_ip($item_id, $module, $visitor_ip))
 		{
-			//first time the visitor sees the item
 			
 			//add to raw table
 			$sql = "INSERT INTO " . $wpdb->prefix . "usersultra_stats_raw (stat_item_id ,  	stat_module, stat_ip , stat_date  )						

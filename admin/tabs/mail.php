@@ -35,6 +35,22 @@ $this->create_plugin_setting(
   <table class="form-table">
 <?php 
 
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_smtp_mailing_mailer',
+	__('Mailer:','xoousers'),
+	array(
+		'mail' => __('Use the PHP mail() function to send emails','xoousers'),
+		'smtp' => __('Send all Users Ultra emails via Third-Party Plugins','xoousers'), 
+			
+		),
+		
+	__('Specify which mailer method Users Ultra should use when sending emails.','xoousers'),
+  __('Specify which mailer method Users Ultra should use when sending emails.','xoousers')
+       );
+
 $this->create_plugin_setting(
         'input',
         'messaging_send_from_name',

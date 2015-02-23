@@ -62,8 +62,23 @@ class XooMessaging extends XooUserUltraCommon
 	public function  send ($to, $subject, $message)
 	{
 		global $xoouserultra;	
-		require_once(ABSPATH . 'wp-includes/pluggable.php');		
-		wp_mail( $to , $subject, $message, $this->mHeader);
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
+		$uultra_emailer = $xoouserultra->get_option('uultra_smtp_mailing_mailer');
+		
+		if($uultra_emailer=='mail' || $uultra_emailer=='' ) //use the defaul email function
+		{	
+			wp_mail( $to , $subject, $message, $this->mHeader);
+		
+		}else{ //third-party
+		
+			if (function_exists('uultra_third_party_email_sender')) 
+			{
+				
+				uultra_third_party_email_sender($to , $subject, $message);				
+				
+			}
+		}
 					
 		
 	}

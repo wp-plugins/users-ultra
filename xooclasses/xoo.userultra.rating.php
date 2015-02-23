@@ -268,7 +268,6 @@ class XooRating extends XooUserUltraCommon
 		  
     }
 	
-	
 	function get_all_of($id, $data_target) 	
 	{
 		global $wpdb;

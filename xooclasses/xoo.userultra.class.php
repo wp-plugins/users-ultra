@@ -9,11 +9,9 @@ class XooUserUltra
 	public $allowed_inputs;
 	public $use_captcha = "no";
 	
-	
 		
 	public function __construct()
 	{
-		//$this->plugin_init();
 		
 		$this->logged_in_user = 0;
 		$this->login_code_count = 0;
@@ -49,9 +47,6 @@ class XooUserUltra
 			$this->load_classes();					
 		
 		}
-		
-		//create standard fields
-		//$this->xoousers_create_standard_fields();
 		
 		//ini settings
 		$this->intial_settings();
@@ -168,9 +163,7 @@ class XooUserUltra
 		
 		 
 		 require_once(ABSPATH . 'wp-includes/class-http.php');
-		 require_once(ABSPATH . 'wp-includes/ms-functions.php');
-
-		
+		 require_once(ABSPATH . 'wp-includes/ms-functions.php');	
 			
 		
 		$url = "http://usersultra.com/get_change_log_pro.php";	
@@ -275,65 +268,7 @@ class XooUserUltra
 	{
 		
 		global $wpdb;
-		
-		
-
-	/*	$thetable = $wpdb->prefix."usersultra_stats_raw";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_stats";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_friends";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_likes";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_ajaxrating_vote";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_ajaxrating_votesummary";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_galleries";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_photos";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_photo_categories";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_photo_cat_rel";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_videos";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_packages";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-		$thetable = $wpdb->prefix."usersultra_orders";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");			
-		
-		$thetable = $wpdb->prefix."users_ultra_pm";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");
-		
-		$thetable = $wpdb->prefix."usersultra_activity";		
-	    $wpdb->query("DROP TABLE IF EXISTS $thetable");	
-		
-				
-		//delete meta info		
-		delete_option( 'usersultra_profile_fields' );
-		delete_option( 'userultra_default_user_tabs' );
-		delete_option( 'xoousersultra_my_account_page' );
-		delete_option( 'xoousersultra_auto_page_creation' );
-		delete_option( 'userultra_options' );
-		delete_option( 'xoousersultra_already_rated_ultra' );*/
-		
-		
-			
+	
 		
 		
 	}
