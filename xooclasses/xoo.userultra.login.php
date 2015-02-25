@@ -101,6 +101,14 @@ class XooUserLogin {
 
 		}
 		
+		if( isset( $_GET['code'] ) && isset($_REQUEST['instagram']) && $_REQUEST['instagram'] == '1' ) 
+		{
+			$this->mIsSocialLogin = true;
+			
+			/* authorize yammer*/
+			$this->instagram_authorize();
+		}
+		
 		//yahooo and google
 		if (isset($_GET["openid_ns"])) 
 		{
@@ -355,6 +363,14 @@ class XooUserLogin {
 			$auth_twitter_ = $this->get_twitter_auth_url();
 			header("Location: ".$auth_twitter_."");
 			
+		}
+		
+		//instagram
+		
+		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="instagram") 
+		{		
+			$auth_instagram_ = $this->get_instagram_auth_url();
+			header("Location: ".$auth_instagram_."");
 			
 		}
 		
@@ -1956,6 +1972,227 @@ class XooUserLogin {
 		}
 			
 		
+	}
+	
+	/******************************************
+	Instagram auth 
+	******************************************/
+	function instagram_authorize()
+	{
+		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-admin/includes/user.php' );
+		
+		require_once(xoousers_path."libs/instagram/instagram.class.php");
+		
+		$YOUR_APP_KEY = $xoouserultra->get_option('instagram_client_id');
+		$YOUR_APP_SECRET = $xoouserultra->get_option('instagram_client_secret');
+		$YOUR_APP_CALLBACK = $xoouserultra->get_option('instagram_redirect_uri');
+		
+		
+		
+		
+		if ( $xoouserultra->get_option('instagram_connect') == 1 && $YOUR_APP_KEY && $YOUR_APP_SECRET && $YOUR_APP_CALLBACK ) 
+		{
+			
+			if( isset( $_GET['code'] ) && isset($_REQUEST['instagram']) && $_REQUEST['instagram'] == '1' ) {
+				
+				
+				$instagram = new Instagram(array(
+					'apiKey'      => $YOUR_APP_KEY,
+					'apiSecret'   => $YOUR_APP_SECRET,
+					'apiCallback' => $YOUR_APP_CALLBACK
+				));
+				
+				$code = $_GET['code'];
+				
+				
+				// Receive OAuth token object
+			    $data = $instagram->getOAuthToken($code);
+			  // Take a look at the API response
+				
+			$user=$data->user->username;
+			$fullname=$data->user->full_name;
+			$bio=$data->user->bio;
+			$website=$data->user->website;
+			$id=$data->user->id;				
+			$access_token=$data->access_token;
+			
+				
+				
+											
+				
+				//check access token is set or not
+				if ( !empty( $user ) ) 
+				{
+						
+					//if user data get successfully
+					if (isset($id)){
+						
+						//check if
+						$users = get_users(array(
+							'meta_key'     => 'xoouser_ultra_instagram_id',
+							'meta_value'   => $id,
+							'meta_compare' => '='
+						));
+						
+						if (isset($users[0]->ID) && is_numeric($users[0]->ID) )
+						{
+							$returning = $users[0]->ID;
+							$returning_user_login = $users[0]->user_login;
+							
+						} else {
+							
+							$returning = '';
+						}
+							
+						
+						// Authorize user
+						if (is_user_logged_in()) 
+						{
+																				
+							update_user_meta ($user_id, 'xoouser_ultra_instagram_id', $id);																						
+							$this->login_registration_afterlogin();
+						
+						
+						
+						} else {
+							
+													
+							
+							//the user is NOT logged in							
+							if ( $returning != '' ) 
+							{
+								
+							
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$returning_user_login);
+								$user_id =$user->ID;
+								
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );	
+									do_action('wp_login', $user->user_login, $user);		
+											
+								}
+								
+								
+								//redirect user
+								$this->login_registration_afterlogin();
+							
+							} else if ($user != '' && username_exists($user)) {
+								
+								//user email exists then we have to sync								
+								$user_id = username_exists( $user );
+								$user = get_userdata($user_id);
+								
+								update_user_meta ($user_id, 'xoouser_ultra_instagram_id', $id);
+								
+								$u_user = $user->user_login;
+								$noactive = false;
+								/*If alreayd exists*/
+								$user = get_user_by('login',$u_user);
+								$user_id =$user->ID;
+								
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+											
+								}
+								
+								if(!$noactive)
+								{
+									 $secure = "";		
+									//already exists then we log in
+									wp_set_auth_cookie( $user_id, true, $secure );
+									do_action('wp_login', $user->user_login, $user);
+									
+									
+								}
+								
+																								
+								//redirect user
+								$this->login_registration_afterlogin();
+						
+							
+							} else { //user is new we have to create it
+								
+								//this is a new client we have to create the account								
+								 $u_name = $this->get_social_services_name('instagram', $data->user);													
+								 $u_email = $id;
+								 
+								//generat random password
+								 $user_pass = wp_generate_password( 12, false);								 
+								
+								 $user_login = $this->unique_user('instagram', $data->user);
+								 $user_login = sanitize_user ($user_login, true);	
+								
+								 //Build user data
+								 $user_data = array (
+												'user_login' => $user_login,
+												'display_name' => $u_name,
+												'user_email' => $u_email,																				
+												'user_pass' => $user_pass
+											);
+											
+														
+								// Create a new user
+								$user_id = wp_insert_user ($user_data);
+								
+								update_user_meta ($user_id, 'xoouser_ultra_social_signup', 7);
+								update_user_meta ($user_id, 'xoouser_ultra_instagram_id', $id);
+								update_user_meta ($user_id, 'first_name', $u_name);
+								update_user_meta ($user_id, 'display_name', $u_name);
+								
+																
+								$verify_key = $this->get_unique_verify_account_id();					
+						        update_user_meta ($user_id, 'xoouser_ultra_very_key', $verify_key);	
+								
+								$this->user_account_status($user_id);	
+								
+								//notify client			
+								$xoouserultra->messaging->welcome_email($u_email, $user_login, $user_pass);
+								
+								$creds['user_login'] = sanitize_user($user_login);				
+								$creds['user_password'] = $user_pass;
+								$creds['remember'] = 1;							
+								
+								$noactive = false;
+								if(!$this->is_active($user_id) && !is_super_admin($user_id))
+								{
+									$noactive = true;
+									
+								}
+								
+								if(!$noactive)
+								{
+									$user = wp_signon( $creds, false );
+									do_action('wp_login', $user->user_login, $user);
+									
+								}
+								
+																								
+								//redirect user
+								$this->login_registration_afterlogin();
+								
+								
+							}
+						}
+					}
+					
+				}
+			
+			}
+		}
 	}
     
    /*Handle Facebook Sign up*/

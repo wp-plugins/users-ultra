@@ -2669,6 +2669,57 @@ class XooUserUltra
 					</div>';
 			}
 			
+			//instagram
+			if($this->get_option('instagram_connect')==1)
+			{
+				//instagram			
+				$auth_url_google = $web_url."?uultrasocialsignup=instagram";			
+				$atleast_one = true;			
+				
+					//Instagram
+					$display .='<div class="txt-center InstagramSignIn">	               	
+						<a href="'.$auth_url_google.'" class="btnuultra-instagram" >
+							<span class="uultra-icon-instagram"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/instagram-icon.png" ></span>'.$action_text.' with Instagram </a>
+					
+					</div>';
+				
+				
+			}
+			
+			if($this->get_option('yammer_connect')==1)
+			{
+				//google
+			
+				$auth_url_google = $web_url."?uultrasocialsignup=yammer";
+			
+				$atleast_one = true;
+				
+				
+				if($display_style=='minified')
+				{
+					
+					//Google
+					$display .='               	
+						<a href="'.$auth_url_google.'" class="btnuultramini-yammer '.$rounded_class.'" >
+							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span> </a>
+					
+					';
+					
+				
+				}else{
+					
+					//Google
+					$display .='<div class="txt-center YammerSignIn">	               	
+						<a href="'.$auth_url_google.'" class="btnuultra-yammer" >
+							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' with Yammer </a>
+					
+					</div>';
+				
+				}
+			
+				
+			}
+			
 			if($this->get_option('twitter_connect')==1)
 			{
 				//google

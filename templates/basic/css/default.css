@@ -367,7 +367,7 @@ input.btnuultra {
     padding: 0 8px;
 }
 
-.btnuultra-facebook, .btnuultra-yahoo, .btnuultra-google, .btnuultra-linkedin, .btnuultra-twitter, .btnuultra-yammer {
+.btnuultra-facebook, .btnuultra-yahoo, .btnuultra-google, .btnuultra-linkedin, .btnuultra-twitter, .btnuultra-yammer,  .btnuultra-instagram {
     border: 0 none;
     box-shadow: none;
     min-width:250px;
@@ -376,6 +376,15 @@ input.btnuultra {
     font-weight: normal;
     padding: 2px 15px 0  10px;
     color:#FFF !important;
+}
+
+.btnuultra-instagram {
+    background: none repeat scroll 0 0 #6481BE;
+}
+.btnuultra-instagram:hover {
+    background-color: #314D89;
+    border: medium none;
+    box-shadow: none;
 }
 .btnuultra-facebook {
     background: none repeat scroll 0 0 #6481BE;
@@ -425,8 +434,8 @@ input.btnuultra {
     border: medium none;
     box-shadow: none;
 }
-.uultra-icon-facebook, .uultra-icon-yahoo, .uultra-icon-google, .uultra-icon-linkedin, .uultra-icon-twitter, .uultra-icon-yammer { margin-right:10px;}
-.uultra-icon-facebook img, .uultra-icon-yahoo img, .uultra-icon-google img, .uultra-icon-linkedin img, .uultra-icon-twitter img, .uultra-icon-yammer img{ vertical-align:middle;}
+.uultra-icon-facebook, .uultra-icon-yahoo, .uultra-icon-google, .uultra-icon-linkedin, .uultra-icon-twitter, .uultra-icon-yammer , .uultra-icon-instagram { margin-right:10px;}
+.uultra-icon-facebook img, .uultra-icon-yahoo img, .uultra-icon-google img, .uultra-icon-linkedin img, .uultra-icon-twitter img, .uultra-icon-yammer img , .uultra-icon-instagram img{ vertical-align:middle;}
 
 
 

@@ -663,6 +663,41 @@ $this->create_plugin_setting(
         __('Your URL should end with "?uultraplus=1". Example: http://yourdomain.com/?uultraplus=1','xoousers')
 );
 
+//instagram
+
+$this->create_plugin_setting(
+                'checkbox',
+                'instagram_connect',
+                __('Instagram Sign up','xoousers'),
+                '1',
+                __('If checked, User will be able to Sign up & Sign in through Instagram.','xoousers'),
+                __('If checked, User will be able to Sign up & Sign in through Instagram.','xoousers')
+        );
+$this->create_plugin_setting(
+        'input',
+        'instagram_client_id',
+        __('Instagram Client ID','xoousers'),array(),
+        __('Paste the client id that you got from Instagram API Console','xoousers'),
+        __('Obtained when you created your application.','xoousers')
+);  
+
+$this->create_plugin_setting(
+        'input',
+        'instagram_client_secret',
+        __('Instagram Client Secret','xoousers'),array(),
+        __('Set the client secret','xoousers'),
+        __('Obtained when you created your application.','xoousers')
+);
+
+$this->create_plugin_setting(
+        'input',
+        'instagram_redirect_uri',
+        __('Instagram Redirect URI','xoousers'),array(),
+        __('Paste the redirect URI where you given in APi Console. You will get the Client ID and Client Secret here http://instagram.com/developer/clients/register/#. <br><br> VERY IMPORTANT: Your Redirect URI should end with "?instagram=1". Example: http://yourdomain.com/?instagram=1','xoousers'),
+        __('Paste the redirect URI where you given in APi Console. You will get the Access Token here during login success. ','xoousers')
+);
+
+
 
 /// add to array
 $this->create_plugin_setting(

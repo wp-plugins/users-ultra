@@ -1,10 +1,10 @@
 === Users Ultra ===
 Contributors: UsersUltra
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members
+Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.56
+Stable tag: 1.4.57
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 	
 	 <li>bbPress Integration. Users Ultra Pro makes your forum look much more elegant.</li>
     <li>User Online/Offline Status.</li>
-    <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn)</li>
+    <li>Social Connect Buttons. (Facebook, Twitter, Google, Yahoo, LinkedIn, Instagram)</li>
 	 <li>Multisite Support.</li>
   <li>Advanced Users Management. Find your users easily. Send activation link, deny/approver users. Upgrade and Downgrade User's Membership and more. </li>
   <li>Minor Tweaks Support.</li>
@@ -354,8 +354,12 @@ Initial release.
 
 == Changelog ==
 
-= 1.4.56(02-23-2015) =
+= 1.4.57(02-25-2015) =
+* New Feature -  Instagram Login and Registration option has been added to UU Lite. http://usersultra.com/support/forums/topic/instagram-login/
 
+= 1.4.56(02-23-2015) =
+* Improvement -  Uninstall plugin hook has been removed. We ended up removing this feature due some complaints when the users ugraded to pro version. 
+* New Feature -  Option to disable UU messaging system and use a third-party email sender. Check details here http://usersultra.com/support/forums/topic/users-ultra-lite-is-conflicting-with-mail-programmes/
 * Improvement -  Uninstall plugin hook has been removed. We ended up removing this feature due some complaints when the users ugraded to pro version. 
 * New Feature -  Option to disable UU messaging system and use a third-party email sender. Check details here http://usersultra.com/support/forums/topic/users-ultra-lite-is-conflicting-with-mail-programmes/
 

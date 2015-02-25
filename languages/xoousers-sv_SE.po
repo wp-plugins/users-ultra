@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite v1.3.72\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-14 20:22-0300\n"
-"PO-Revision-Date: 2015-02-14 20:22-0300\n"
+"POT-Creation-Date: 2015-02-25 15:22-0300\n"
+"PO-Revision-Date: 2015-02-25 15:22-0300\n"
 "Last-Translator: \n"
 "Language-Team: Elger Lindgren <elger@20x.se>\n"
 "Language: sv_SE\n"
@@ -95,7 +95,7 @@ msgstr "Namn"
 
 # @ xoousers
 #: addons/photocategories/admin/panels/manage.php:49
-#: xooclasses/xoo.userultra.publisher.php:465
+#: xooclasses/xoo.userultra.publisher.php:464
 msgid "Actions"
 msgstr "Åtgärder"
 
@@ -112,7 +112,7 @@ msgstr "Radera"
 # @ xoousers
 #: addons/photocategories/admin/panels/manage.php:71 admin/tabs/fields.php:348
 #: xooclasses/xoo.userultra.payment.paypal.php:805
-#: xooclasses/xoo.userultra.publisher.php:481
+#: xooclasses/xoo.userultra.publisher.php:480
 msgid "Edit"
 msgstr "Redigera"
 
@@ -141,9 +141,9 @@ msgid "You can write some custom CSS style coding here"
 msgstr ""
 
 # @ xoousers
-#: admin/tabs/customizer.php:38 admin/tabs/gateway.php:72
-#: admin/tabs/mail.php:197 admin/tabs/membership.php:38
-#: admin/tabs/permalinks.php:148 admin/tabs/settings.php:858
+#: admin/tabs/customizer.php:38 admin/tabs/gateway.php:69
+#: admin/tabs/mail.php:213 admin/tabs/membership.php:38
+#: admin/tabs/permalinks.php:148 admin/tabs/settings.php:893
 msgid "Save Changes"
 msgstr "Spara Ändringar"
 
@@ -558,7 +558,7 @@ msgid "List of Countries"
 msgstr "Landslista"
 
 # @ xoousers
-#: admin/tabs/fields.php:625 xooclasses/xoo.userultra.class.php:959
+#: admin/tabs/fields.php:625 xooclasses/xoo.userultra.class.php:894
 msgid "Age"
 msgstr "Ålder"
 
@@ -583,7 +583,7 @@ msgid "Change Icon"
 msgstr "Ändra ikon"
 
 # @ xoousers
-#: admin/tabs/fields.php:663 xooclasses/xoo.userultra.publisher.php:213
+#: admin/tabs/fields.php:663 xooclasses/xoo.userultra.publisher.php:212
 #: xooclasses/xoo.userultra.user.php:1818
 msgid "Update"
 msgstr "Uppdatera"
@@ -734,7 +734,7 @@ msgstr "Inloggningsformulär"
 
 # @ xoousers
 #: admin/tabs/help.php:30 templates/basic/dashboard.php:676
-#: xooclasses/xoo.userultra.class.php:755
+#: xooclasses/xoo.userultra.class.php:690
 #: xooclasses/xoo.userultra.user.php:2236
 #: xooclasses/xoo.userultra.user.php:2240
 msgid "My Account"
@@ -747,7 +747,7 @@ msgid "Logout"
 msgstr "Logga ut"
 
 # @ xoousers
-#: admin/tabs/help.php:36 xooclasses/xoo.userultra.class.php:635
+#: admin/tabs/help.php:36 xooclasses/xoo.userultra.class.php:570
 msgid "Members Directory"
 msgstr "Medlemsbibliotek"
 
@@ -956,44 +956,62 @@ msgstr ""
 "Detta är det välkomnande e-post som skickas till kunden när du registrerar "
 "ett nytt konto"
 
+#: admin/tabs/mail.php:43
+msgid "Mailer:"
+msgstr ""
+
+#: admin/tabs/mail.php:45
+msgid "Use the PHP mail() function to send emails"
+msgstr ""
+
+#: admin/tabs/mail.php:46
+msgid "Send all Users Ultra emails via Third-Party Plugins"
+msgstr ""
+
 # @ xoousers
-#: admin/tabs/mail.php:41
+#: admin/tabs/mail.php:50 admin/tabs/mail.php:51
+#, fuzzy
+msgid "Specify which mailer method Users Ultra should use when sending emails."
+msgstr "Ange e-postadressen som ska användas när du skickar e-post."
+
+# @ xoousers
+#: admin/tabs/mail.php:57
 msgid "Send From Name"
 msgstr "Skicka från namn"
 
 # @ xoousers
-#: admin/tabs/mail.php:42 admin/tabs/mail.php:43
+#: admin/tabs/mail.php:58 admin/tabs/mail.php:59
 #, fuzzy
 msgid "Enter the your name or company name here."
 msgstr "Skriv ditt namn eller företagsnamn här."
 
 # @ xoousers
-#: admin/tabs/mail.php:49
+#: admin/tabs/mail.php:65
 msgid "Send From Email"
 msgstr "Skicka från e-post"
 
 # @ xoousers
-#: admin/tabs/mail.php:50 admin/tabs/mail.php:51
+#: admin/tabs/mail.php:66 admin/tabs/mail.php:67
 msgid "Enter the email address to be used when sending emails."
 msgstr "Ange e-postadressen som ska användas när du skickar e-post."
 
 # @ xoousers
-#: admin/tabs/mail.php:57
+#: admin/tabs/mail.php:73
 msgid "Client Welcome Message"
 msgstr "Välkomstmeddelande till kund"
 
 # @ xoousers
-#: admin/tabs/mail.php:58 admin/tabs/mail.php:59
+#: admin/tabs/mail.php:74 admin/tabs/mail.php:75
 msgid "This message will be sent to the user."
 msgstr "Detta meddelande kommer att sändas till användaren."
 
 # @ xoousers
-#: admin/tabs/mail.php:65
+#: admin/tabs/mail.php:81
 msgid "Account Activation Message"
 msgstr "Meddelande för kontoaktivering"
 
 # @ xoousers
-#: admin/tabs/mail.php:66 admin/tabs/mail.php:67
+#: admin/tabs/mail.php:82 admin/tabs/mail.php:83
 msgid ""
 "This message will be sent to the user if they need to activate the account "
 "by using the activation link."
@@ -1002,12 +1020,12 @@ msgstr ""
 "kontot genom att använda aktiveringslänken."
 
 # @ xoousers
-#: admin/tabs/mail.php:73
+#: admin/tabs/mail.php:89
 msgid "Resend Activation Link"
 msgstr "Skicka aktiveringslänk igen"
 
 # @ xoousers
-#: admin/tabs/mail.php:74 admin/tabs/mail.php:75
+#: admin/tabs/mail.php:90 admin/tabs/mail.php:91
 msgid ""
 "This message will be sent to the user when clicking the re-send activation "
 "option."
@@ -1016,47 +1034,47 @@ msgstr ""
 "aktiveringsalternativet skicka igen."
 
 # @ xoousers
-#: admin/tabs/mail.php:81
+#: admin/tabs/mail.php:97
 msgid "Account Verified Message"
 msgstr "Meddelande för kontobekräftelse"
 
 # @ xoousers
-#: admin/tabs/mail.php:82 admin/tabs/mail.php:83
+#: admin/tabs/mail.php:98 admin/tabs/mail.php:99
 msgid "This message will be sent to the users when they verify their accounts."
 msgstr ""
 "Detta meddelande kommer att skickas till användare när de bekräftar sina "
 "konton."
 
 # @ xoousers
-#: admin/tabs/mail.php:89
+#: admin/tabs/mail.php:105
 msgid "Password Changed Confirmation"
 msgstr "Bekräftelse vid  ändring av Lösenord"
 
 # @ xoousers
-#: admin/tabs/mail.php:90 admin/tabs/mail.php:91
+#: admin/tabs/mail.php:106 admin/tabs/mail.php:107
 msgid "This message will be sent to the user when the password has been reset."
 msgstr ""
 "Detta meddelande kommer att skickas till användaren när lösenordet har "
 "återställts."
 
 # @ xoousers
-#: admin/tabs/mail.php:103
+#: admin/tabs/mail.php:119
 msgid "Admin New User Message"
 msgstr "Admin - Meddelande om ny användare"
 
 # @ xoousers
-#: admin/tabs/mail.php:104 admin/tabs/mail.php:105
+#: admin/tabs/mail.php:120 admin/tabs/mail.php:121
 #, fuzzy
 msgid "This message will be sent to the admin."
 msgstr "Detta meddelande har skickats till en administratör."
 
 # @ xoousers
-#: admin/tabs/mail.php:112
+#: admin/tabs/mail.php:128
 msgid "Admin Pending Activation Message"
 msgstr "Meddelande till admin om väntande aktivering"
 
 # @ xoousers
-#: admin/tabs/mail.php:113 admin/tabs/mail.php:114
+#: admin/tabs/mail.php:129 admin/tabs/mail.php:130
 #, fuzzy
 msgid ""
 "This message will be sent to the admin if the user needs manual activation."
@@ -1065,12 +1083,12 @@ msgstr ""
 "aktivering."
 
 # @ xoousers
-#: admin/tabs/mail.php:122
+#: admin/tabs/mail.php:138
 msgid "Client Admin Approbation  Email"
 msgstr "Klient Admin Godkännande-mail"
 
 # @ xoousers
-#: admin/tabs/mail.php:123 admin/tabs/mail.php:124
+#: admin/tabs/mail.php:139 admin/tabs/mail.php:140
 msgid ""
 "This message will be sent to the user if the account needs to be approved by "
 "the admin."
@@ -1079,12 +1097,12 @@ msgstr ""
 "godkännas av admin."
 
 # @ xoousers
-#: admin/tabs/mail.php:129
+#: admin/tabs/mail.php:145
 msgid "Admin New User Approbation  Email"
 msgstr "Admin - Ny användare Godkännande-mail"
 
 # @ xoousers
-#: admin/tabs/mail.php:130 admin/tabs/mail.php:131
+#: admin/tabs/mail.php:146 admin/tabs/mail.php:147
 msgid ""
 "This message will be sent to the admin if an account needs to be approved "
 "manually."
@@ -1093,12 +1111,12 @@ msgstr ""
 "manuellt."
 
 # @ xoousers
-#: admin/tabs/mail.php:140
+#: admin/tabs/mail.php:156
 msgid "User Private Message"
 msgstr "Privat användarmeddelande"
 
 # @ xoousers
-#: admin/tabs/mail.php:141 admin/tabs/mail.php:142
+#: admin/tabs/mail.php:157 admin/tabs/mail.php:158
 msgid ""
 "This message will be sent to users when other users send a private message."
 msgstr ""
@@ -1106,44 +1124,44 @@ msgstr ""
 "skicka ett privat meddelande."
 
 # @ xoousers
-#: admin/tabs/mail.php:149
+#: admin/tabs/mail.php:165
 msgid "Friend Request"
 msgstr "Vänförfrågan"
 
 # @ xoousers
-#: admin/tabs/mail.php:150 admin/tabs/mail.php:151
+#: admin/tabs/mail.php:166 admin/tabs/mail.php:167
 msgid "This message is sent to the users when a friend request is sent"
 msgstr "Detta meddelande skickas till användare när en vänförfrågan skickas"
 
 # @ xoousers
-#: admin/tabs/mail.php:161 xooclasses/xoo.userultra.class.php:1438
+#: admin/tabs/mail.php:177 xooclasses/xoo.userultra.class.php:1373
 msgid "Password Reset"
 msgstr "Återställning av Lösenord"
 
 # @ xoousers
-#: admin/tabs/mail.php:162 admin/tabs/mail.php:163
+#: admin/tabs/mail.php:178 admin/tabs/mail.php:179
 msgid "This message will be sent to users when requesting a new password."
 msgstr ""
 "Detta meddelande kommer att skickas till användare när de begär ett nytt "
 "lösenord."
 
 # @ xoousers
-#: admin/tabs/mail.php:170 xooclasses/xoo.userultra.messaging.php:230
+#: admin/tabs/mail.php:186 xooclasses/xoo.userultra.messaging.php:244
 msgid "Account Activation"
 msgstr "Kontoaktivering"
 
 # @ xoousers
-#: admin/tabs/mail.php:171 admin/tabs/mail.php:172
+#: admin/tabs/mail.php:187 admin/tabs/mail.php:188
 msgid "This message is sent when the admin approves the user account."
 msgstr "Detta meddelande skickas när admin godkänner användarkontot."
 
 # @ xoousers
-#: admin/tabs/mail.php:179
+#: admin/tabs/mail.php:195
 msgid "Deny Account Activation"
 msgstr "Avslå användaraktivering"
 
 # @ xoousers
-#: admin/tabs/mail.php:180 admin/tabs/mail.php:181
+#: admin/tabs/mail.php:196 admin/tabs/mail.php:197
 #, fuzzy
 msgid "This message is sent when the admin does not approve the user account."
 msgstr "Detta meddelande skickas när admin inte godkänner användarkontot."
@@ -1202,10 +1220,10 @@ msgstr "5 senaste transaktionenra"
 #: xooclasses/xoo.userultra.mymessage.php:1072
 #: xooclasses/xoo.userultra.mymessage.php:1133
 #: xooclasses/xoo.userultra.order.php:383
-#: xooclasses/xoo.userultra.publisher.php:463
+#: xooclasses/xoo.userultra.publisher.php:462
 #: xooclasses/xoo.userultra.socials.php:480
 #: xooclasses/xoo.userultra.socials.php:586
-#: xooclasses/xoo.userultra.woocommerce.php:347
+#: xooclasses/xoo.userultra.woocommerce.php:345
 msgid "Date"
 msgstr "Datum"
 
@@ -1222,8 +1240,8 @@ msgstr "Transaktions ID"
 # @ xoousers
 #: admin/tabs/main.php:141 admin/tabs/orders.php:152
 #: xooclasses/xoo.userultra.order.php:385
-#: xooclasses/xoo.userultra.publisher.php:464
-#: xooclasses/xoo.userultra.woocommerce.php:349
+#: xooclasses/xoo.userultra.publisher.php:463
+#: xooclasses/xoo.userultra.woocommerce.php:347
 msgid "Status"
 msgstr "Status"
 
@@ -1250,8 +1268,8 @@ msgid "Avatar"
 msgstr "Avatar"
 
 # @ xoousers
-#: admin/tabs/main.php:205 xooclasses/xoo.userultra.class.php:831
-#: xooclasses/xoo.userultra.class.php:877
+#: admin/tabs/main.php:205 xooclasses/xoo.userultra.class.php:766
+#: xooclasses/xoo.userultra.class.php:812
 #: xooclasses/xoo.userultra.user.php:750 xooclasses/xoo.userultra.user.php:821
 #: xooclasses/xoo.userultra.user.php:889
 msgid "Username"
@@ -1292,7 +1310,7 @@ msgstr "Inställningar för betalande medlemmar"
 #: admin/tabs/settings.php:206 admin/tabs/settings.php:266
 #: admin/tabs/settings.php:336 admin/tabs/settings.php:370
 #: admin/tabs/settings.php:427 admin/tabs/settings.php:520
-#: admin/tabs/settings.php:565 admin/tabs/settings.php:756
+#: admin/tabs/settings.php:565 admin/tabs/settings.php:791
 msgid "."
 msgstr "."
 
@@ -1328,8 +1346,8 @@ msgid "Add New Membership Package"
 msgstr "Lägg till nytt medlemspaket"
 
 # @ xoousers
-#: admin/tabs/membership.php:65 xooclasses/xoo.userultra.publisher.php:193
-#: xooclasses/xoo.userultra.publisher.php:362
+#: admin/tabs/membership.php:65 xooclasses/xoo.userultra.publisher.php:192
+#: xooclasses/xoo.userultra.publisher.php:361
 msgid "Description:"
 msgstr "Beskrivning:"
 
@@ -2831,6 +2849,7 @@ msgstr "LinkedIn API Key Public"
 
 # @ xoousers
 #: admin/tabs/settings.php:612 admin/tabs/settings.php:613
+#: admin/tabs/settings.php:681 admin/tabs/settings.php:689
 #, fuzzy
 msgid "Obtained when you created your application."
 msgstr "Erhölls när du skapade Facebook-applikationen."
@@ -2896,7 +2915,7 @@ msgid "Google Client Secret"
 msgstr "Google Client Secret"
 
 # @ xoousers
-#: admin/tabs/settings.php:654
+#: admin/tabs/settings.php:654 admin/tabs/settings.php:688
 msgid "Set the client secret"
 msgstr "Set the client secret"
 
@@ -2936,54 +2955,113 @@ msgstr ""
 
 # @ xoousers
 #: admin/tabs/settings.php:671
+#, fuzzy
+msgid "Instagram Sign up"
+msgstr "Yammer Sign up"
+
+# @ xoousers
+#: admin/tabs/settings.php:673 admin/tabs/settings.php:674
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Instagram."
+msgstr ""
+"Om markerad, kommer användaren att kunna registrera sig och logga in via "
+"Yammer."
+
+# @ xoousers
+#: admin/tabs/settings.php:679
+#, fuzzy
+msgid "Instagram Client ID"
+msgstr "Google Client ID"
+
+# @ xoousers
+#: admin/tabs/settings.php:680
+#, fuzzy
+msgid "Paste the client id that you got from Instagram API Console"
+msgstr "Klistra in klient id som du fick från Google API konsolen"
+
+# @ xoousers
+#: admin/tabs/settings.php:687
+#, fuzzy
+msgid "Instagram Client Secret"
+msgstr "Client Secret"
+
+# @ xoousers
+#: admin/tabs/settings.php:695
+#, fuzzy
+msgid "Instagram Redirect URI"
+msgstr "Google Redirect URI"
+
+# @ xoousers
+#: admin/tabs/settings.php:696
+#, fuzzy
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Client ID and Client Secret here http://instagram.com/developer/clients/"
+"register/#. <br><br> VERY IMPORTANT: Your Redirect URI should end with \"?"
+"instagram=1\". Example: http://yourdomain.com/?instagram=1"
+msgstr ""
+"Klistra in omdirigerings URI som du gavs i API konsolen. Du kommer att få "
+"Access Token här under inloggnings-framgång. Hitta mer information här "
+"https://developers.google.com/console/help/new/#console.  <br><br> MYCKET "
+"VIKTIGT: Din URL bör avslutas med \"?uultraplus=1\". Exempel: http://"
+"dinhemsida.se/?uultraplus=1"
+
+#: admin/tabs/settings.php:697
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. "
+msgstr ""
+
+# @ xoousers
+#: admin/tabs/settings.php:706
 msgid "Twitter Sign up"
 msgstr "Twitter Sign up"
 
 # @ xoousers
-#: admin/tabs/settings.php:673 admin/tabs/settings.php:674
+#: admin/tabs/settings.php:708 admin/tabs/settings.php:709
 msgid "If checked, User will be able to Sign up & Sign in through Twitter."
 msgstr ""
 "Om markerad, kommer användaren att kunna registrera sig och logga in via "
 "Twitter."
 
 # @ xoousers
-#: admin/tabs/settings.php:681
+#: admin/tabs/settings.php:716
 msgid "Consumer Key"
 msgstr "Consumer Key"
 
 # @ xoousers
-#: admin/tabs/settings.php:682
+#: admin/tabs/settings.php:717
 msgid "Paste the Consumer Key"
 msgstr "Klistra in Consumer Key"
 
 # @ xoousers
-#: admin/tabs/settings.php:683
+#: admin/tabs/settings.php:718
 #, fuzzy
 msgid "Obtained when you created your Application at Twitter Developer Center"
 msgstr "Erhölls när du skapade din applikation på Twitter Developer Center"
 
 # @ xoousers
-#: admin/tabs/settings.php:689
+#: admin/tabs/settings.php:724
 msgid "Consumer Secret"
 msgstr "Consumer Secret"
 
 # @ xoousers
-#: admin/tabs/settings.php:690
+#: admin/tabs/settings.php:725
 msgid "Paste the Consumer Secret"
 msgstr "Klistra in Consumer Secret"
 
 # @ xoousers
-#: admin/tabs/settings.php:691
+#: admin/tabs/settings.php:726
 msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
 msgstr "Erhölls när du skapade din applikation på Twitter Developer Center"
 
 # @ xoousers
-#: admin/tabs/settings.php:697
+#: admin/tabs/settings.php:732
 msgid "Twitter Auto Post"
 msgstr "Twitter Auto Post"
 
 # @ xoousers
-#: admin/tabs/settings.php:699 admin/tabs/settings.php:700
+#: admin/tabs/settings.php:734 admin/tabs/settings.php:735
 msgid ""
 "If checked, Users Ultra will post a message automatically to the user "
 "twitter timeline when registering."
@@ -2992,66 +3070,66 @@ msgstr ""
 "twitter-tidslinje vid registreringen."
 
 # @ xoousers
-#: admin/tabs/settings.php:706 xooclasses/xoo.userultra.mymessage.php:920
+#: admin/tabs/settings.php:741 xooclasses/xoo.userultra.mymessage.php:920
 #: xooclasses/xoo.userultra.mymessage.php:943
 msgid "Message"
 msgstr "Meddelande"
 
 # @ xoousers
-#: admin/tabs/settings.php:707 admin/tabs/settings.php:708
+#: admin/tabs/settings.php:742 admin/tabs/settings.php:743
 msgid "Input the message that will be posted right after user registration"
 msgstr ""
 "Mata in meddelande som kommer att läggas ut direkt efter användarregistrering"
 
 # @ xoousers
-#: admin/tabs/settings.php:714
+#: admin/tabs/settings.php:749
 msgid "Yammer Sign up"
 msgstr "Yammer Sign up"
 
 # @ xoousers
-#: admin/tabs/settings.php:716 admin/tabs/settings.php:717
+#: admin/tabs/settings.php:751 admin/tabs/settings.php:752
 msgid "If checked, User will be able to Sign up & Sign in through Yammer."
 msgstr ""
 "Om markerad, kommer användaren att kunna registrera sig och logga in via "
 "Yammer."
 
 # @ xoousers
-#: admin/tabs/settings.php:724
+#: admin/tabs/settings.php:759
 msgid "Client Id"
 msgstr "Klient Id"
 
 # @ xoousers
-#: admin/tabs/settings.php:725
+#: admin/tabs/settings.php:760
 msgid "Paste the Yammer Client ID"
 msgstr "Klistra in Yammer Client ID"
 
 # @ xoousers
-#: admin/tabs/settings.php:726
+#: admin/tabs/settings.php:761
 msgid "The same used when you signed up."
 msgstr "Samma som användes när du registrerade dig."
 
 # @ xoousers
-#: admin/tabs/settings.php:732
+#: admin/tabs/settings.php:767
 msgid "Client Secret"
 msgstr "Client Secret"
 
 # @ xoousers
-#: admin/tabs/settings.php:733 admin/tabs/settings.php:741
+#: admin/tabs/settings.php:768 admin/tabs/settings.php:776
 msgid "Paste the Yammer Client Secret"
 msgstr "Klistra in Yammer Client Secret"
 
 # @ xoousers
-#: admin/tabs/settings.php:734
+#: admin/tabs/settings.php:769
 msgid "Obtained at Yammer developer center."
 msgstr "Erhölls vid Yammer developer center."
 
 # @ xoousers
-#: admin/tabs/settings.php:740
+#: admin/tabs/settings.php:775
 msgid "Redirect URL"
 msgstr "Omdirigerande URL"
 
 # @ xoousers
-#: admin/tabs/settings.php:742
+#: admin/tabs/settings.php:777
 msgid ""
 "<br><br> VERY IMPORTANT: Your URL should end with \"?uultryammer=1\". "
 "Example: http://yourdomain.com/?uultryammer=1"
@@ -3060,17 +3138,17 @@ msgstr ""
 "Exempel: http://dinhemsida.se/?uultryammer=1"
 
 # @ xoousers
-#: admin/tabs/settings.php:754
+#: admin/tabs/settings.php:789
 msgid "Redirect Settings"
 msgstr "Omdirigeringsinställningar"
 
 # @ xoousers
-#: admin/tabs/settings.php:765
+#: admin/tabs/settings.php:800
 msgid "Redirect Backend Profiles"
 msgstr "Omdirigera Backendprofiler"
 
 # @ xoousers
-#: admin/tabs/settings.php:767
+#: admin/tabs/settings.php:802
 msgid ""
 "If checked, non-admin users who try to access backend WP profiles will be "
 "redirected to Users Ultra Profile Page specified above."
@@ -3079,7 +3157,7 @@ msgstr ""
 "profiler att omdirigeras till Users Ultra Profilsidan som anges ovan."
 
 # @ xoousers
-#: admin/tabs/settings.php:768
+#: admin/tabs/settings.php:803
 msgid ""
 "Checking this option will send all users to the front-end Users Ultra "
 "Profile Page if they try to access the default backend profile page in wp-"
@@ -3091,12 +3169,12 @@ msgstr ""
 "sidoinställningar."
 
 # @ xoousers
-#: admin/tabs/settings.php:774
+#: admin/tabs/settings.php:809
 msgid "Redirect Backend Login"
 msgstr "Omdirigera Backend inloggning"
 
 # @ xoousers
-#: admin/tabs/settings.php:776
+#: admin/tabs/settings.php:811
 msgid ""
 "If checked, non-admin users who try to access backend login form will be "
 "redirected to the front end Users Ultra Login Page specified above."
@@ -3105,7 +3183,7 @@ msgstr ""
 "profiler att omdirigeras till Users Ultra loginsida som anges ovan."
 
 # @ xoousers
-#: admin/tabs/settings.php:777
+#: admin/tabs/settings.php:812
 msgid ""
 "Checking this option will send all users to the front-end Users Ultra Login "
 "Page if they try to access the default backend login form. The page can be "
@@ -3116,12 +3194,12 @@ msgstr ""
 "loginsidan. Sidan kan väljas i Users Ultra System sidoinställningar."
 
 # @ xoousers
-#: admin/tabs/settings.php:783
+#: admin/tabs/settings.php:818
 msgid "Redirect Backend Registrations"
 msgstr "Omdirigera Backendregistreringar"
 
 # @ xoousers
-#: admin/tabs/settings.php:785
+#: admin/tabs/settings.php:820
 msgid ""
 "If checked, non-admin users who try to access backend registration form will "
 "be redirected to the front end Users Ultra Registration Page specified above."
@@ -3131,7 +3209,7 @@ msgstr ""
 "ovan."
 
 # @ xoousers
-#: admin/tabs/settings.php:786
+#: admin/tabs/settings.php:821
 msgid ""
 "Checking this option will send all users to the front-end Users Ultra "
 "Registration Page if they try to access the default backend registraiton "
@@ -3142,12 +3220,12 @@ msgstr ""
 "registreingssidan. Sidan kan väljas i Users Ultra System sidoinställningar."
 
 # @ xoousers
-#: admin/tabs/settings.php:793
+#: admin/tabs/settings.php:828
 msgid "After Registration"
 msgstr "Efter registrering"
 
 # @ xoousers
-#: admin/tabs/settings.php:795
+#: admin/tabs/settings.php:830
 msgid ""
 "The user will be taken to this page after registration if the account "
 "activation is set to automatic "
@@ -3156,7 +3234,7 @@ msgstr ""
 "kontoaktivering är satt till automatiskt "
 
 # @ xoousers
-#: admin/tabs/settings.php:796
+#: admin/tabs/settings.php:831
 msgid ""
 "The user will be taken to this page after registration if the account "
 "activation is set to automatic"
@@ -3165,34 +3243,34 @@ msgstr ""
 "kontoaktivering är satt till automatiskt"
 
 # @ xoousers
-#: admin/tabs/settings.php:804
+#: admin/tabs/settings.php:839
 msgid "Registration Options"
 msgstr "Registreringsalternativ"
 
 # @ xoousers
-#: admin/tabs/settings.php:812
+#: admin/tabs/settings.php:847
 msgid "User Selected Passwords"
 msgstr "Användarvalt hemligt lösenord"
 
 # @ xoousers
-#: admin/tabs/settings.php:814
+#: admin/tabs/settings.php:849
 msgid "Enabled, allow users to set password"
 msgstr "Aktiverad, tillåter användare att sätta lösenord"
 
 # @ xoousers
-#: admin/tabs/settings.php:815
+#: admin/tabs/settings.php:850
 msgid "Disabled, email a random password to users"
 msgstr "Avaktiverad, Postar ett slumpmässigt lösenord till användarna"
 
 # @ xoousers
-#: admin/tabs/settings.php:816
+#: admin/tabs/settings.php:851
 msgid "Enable/disable setting a user selected password at registration"
 msgstr ""
 "Aktivera/inaktivera möjligheten att användare kan välja eget lösenord vid "
 "registrering"
 
 # @ xoousers
-#: admin/tabs/settings.php:817
+#: admin/tabs/settings.php:852
 msgid ""
 "If enabled, users can choose their own password at registration. If "
 "disabled, WordPress will email users a random password when they register."
@@ -3202,27 +3280,27 @@ msgstr ""
 "slumpmässigt lösenord när de registrerar."
 
 # @ xoousers
-#: admin/tabs/settings.php:825
+#: admin/tabs/settings.php:860
 msgid "Privacy Options"
 msgstr "Privatiseringsalternativ"
 
 # @ xoousers
-#: admin/tabs/settings.php:833
+#: admin/tabs/settings.php:868
 msgid "Logged-in user viewing of other profiles"
 msgstr "Inloggade användares visning av andras profiler"
 
 # @ xoousers
-#: admin/tabs/settings.php:835
+#: admin/tabs/settings.php:870
 msgid "Enabled, logged-in users may view other user profiles"
 msgstr "Aktiverad, inloggade användare kan se andra användares profiler"
 
 # @ xoousers
-#: admin/tabs/settings.php:836
+#: admin/tabs/settings.php:871
 msgid "Disabled, users may only view their own profile"
 msgstr "Inaktiverad, användare kan endast se sina egna profiler"
 
 # @ xoousers
-#: admin/tabs/settings.php:837
+#: admin/tabs/settings.php:872
 msgid ""
 "Enable or disable logged-in user viewing of other user profiles. Admin users "
 "can always view all profiles."
@@ -3231,7 +3309,7 @@ msgstr ""
 "användarprofiler. Admin-användare kan alltid se alla profiler."
 
 # @ xoousers
-#: admin/tabs/settings.php:838
+#: admin/tabs/settings.php:873
 #, fuzzy
 msgid ""
 "If enabled, logged-in users are allowed to view other user profiles. If "
@@ -3241,29 +3319,29 @@ msgstr ""
 "inaktiverad, kan inloggade användare bara se sin egen profil."
 
 # @ xoousers
-#: admin/tabs/settings.php:844
+#: admin/tabs/settings.php:879
 msgid "Guests viewing of profiles"
 msgstr "Gästers rätt att se profiler"
 
 # @ xoousers
-#: admin/tabs/settings.php:846
+#: admin/tabs/settings.php:881
 msgid "Enabled, make profiles publicly visible"
 msgstr "Aktiverad, gör att profiler visas offentligt"
 
 # @ xoousers
-#: admin/tabs/settings.php:847
+#: admin/tabs/settings.php:882
 msgid "Disabled, users must login to view profiles"
 msgstr "Inaktivared, användare måste logga in för att se profiler"
 
 # @ xoousers
-#: admin/tabs/settings.php:848
+#: admin/tabs/settings.php:883
 msgid "Enable or disable guest and non-logged in user viewing of profiles."
 msgstr ""
 "Aktivera eller inaktivera gäst och icke-inloggade användares visning av "
 "profiler."
 
 # @ xoousers
-#: admin/tabs/settings.php:849
+#: admin/tabs/settings.php:884
 msgid ""
 "If enabled, profiles will be publicly visible to non-logged in users. If "
 "disabled, guests must log in to view profiles."
@@ -3371,7 +3449,7 @@ msgstr "Beskrivning"
 
 # @ xoousers
 #: templates/basic/dashboard.php:416 templates/basic/dashboard.php:851
-#: xooclasses/xoo.userultra.publisher.php:380
+#: xooclasses/xoo.userultra.publisher.php:379
 msgid "Submit"
 msgstr "Skicka"
 
@@ -3702,7 +3780,7 @@ msgstr "Prenumerera på våra regelbundna uppdateringar via e-post"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.admin.php:406
-#: xooclasses/xoo.userultra.class.php:1937
+#: xooclasses/xoo.userultra.class.php:1872
 msgid "User registration is currently not allowed."
 msgstr "Användarregistrering är för närvarande inte tillåtet."
 
@@ -3999,7 +4077,7 @@ msgid "Refresh Image"
 msgstr "Ladda upp bild"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:210
+#: xooclasses/xoo.userultra.class.php:203
 msgid ""
 "Thanks for installing Users Ultra. Do you need help?. Users Ultra can create "
 "the initial pages automatically. You just need to <a href=\"#\"  id="
@@ -4012,7 +4090,7 @@ msgstr ""
 "Users Ultra. "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:240
+#: xooclasses/xoo.userultra.class.php:233
 #, fuzzy
 msgid ""
 "<h2>It's time to upgrade to Users Ultra Pro!. </h2> <p>Unique Widgetized "
@@ -4033,7 +4111,7 @@ msgstr ""
 "detta meddelande</a>"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:251
+#: xooclasses/xoo.userultra.class.php:244
 msgid ""
 "Users Ultra might be working wrong. We couldn't find the 'My Account' "
 "shortcode. Please click on settings tab and make sure that the My Account "
@@ -4044,72 +4122,72 @@ msgstr ""
 "ställts in på rätt sätt. Klicka sedan på knappen 'spara' "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:597
+#: xooclasses/xoo.userultra.class.php:532
 msgid "View Profile"
 msgstr "Visa profil"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:676
-#: xooclasses/xoo.userultra.class.php:1543
+#: xooclasses/xoo.userultra.class.php:611
+#: xooclasses/xoo.userultra.class.php:1478
 msgid "Login"
 msgstr "Logga in"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:714
-#: xooclasses/xoo.userultra.shorcodes.php:362
+#: xooclasses/xoo.userultra.class.php:649
+#: xooclasses/xoo.userultra.shorcodes.php:358
 msgid "Sign up"
 msgstr "Registrera dig"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:811
+#: xooclasses/xoo.userultra.class.php:746
 msgid "Text"
 msgstr "Text"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:812
+#: xooclasses/xoo.userultra.class.php:747
 msgid "Image Upload"
 msgstr "Ladda upp bild"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:813
+#: xooclasses/xoo.userultra.class.php:748
 msgid "Textarea"
 msgstr "Textarea"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:814
+#: xooclasses/xoo.userultra.class.php:749
 msgid "Select Dropdown"
 msgstr "Välj rullgardinslist"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:815
+#: xooclasses/xoo.userultra.class.php:750
 msgid "Radio"
 msgstr "Radioknapp"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:816
+#: xooclasses/xoo.userultra.class.php:751
 msgid "Checkbox"
 msgstr "Kryssruta"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:817
-#: xooclasses/xoo.userultra.class.php:848
-#: xooclasses/xoo.userultra.class.php:908
+#: xooclasses/xoo.userultra.class.php:752
+#: xooclasses/xoo.userultra.class.php:783
+#: xooclasses/xoo.userultra.class.php:843
 msgid "Password"
 msgstr "Lösenord"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:818
+#: xooclasses/xoo.userultra.class.php:753
 msgid "Date Picker"
 msgstr "Datumväljare"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:839
-#: xooclasses/xoo.userultra.class.php:885
+#: xooclasses/xoo.userultra.class.php:774
+#: xooclasses/xoo.userultra.class.php:820
 msgid "E-mail"
 msgstr "E-post"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:851
+#: xooclasses/xoo.userultra.class.php:786
 msgid ""
 "Password must be at least 7 characters long. To make it stronger, use upper "
 "and lower case letters, numbers and symbols."
@@ -4118,166 +4196,166 @@ msgstr ""
 "och små bokstäver, siffror och symboler."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:858
+#: xooclasses/xoo.userultra.class.php:793
 msgid "Confirm Password"
 msgstr "Bekräfta lösenord"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:861
+#: xooclasses/xoo.userultra.class.php:796
 msgid "Type your password again."
 msgstr "Skriv ditt lösenord igen."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:888
+#: xooclasses/xoo.userultra.class.php:823
 msgid "A password will be e-mailed to you."
 msgstr "Ett lösenord kommer att e-postas till dig."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:900
-#: xooclasses/xoo.userultra.class.php:1750
+#: xooclasses/xoo.userultra.class.php:835
+#: xooclasses/xoo.userultra.class.php:1685
 msgid "Username or Email"
 msgstr "Användarnamn eller Epost"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:918
+#: xooclasses/xoo.userultra.class.php:853
 msgid "Profile Info"
 msgstr "Profilinfo"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:930
+#: xooclasses/xoo.userultra.class.php:865
 msgid "First Name"
 msgstr "Förnamn"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:944
+#: xooclasses/xoo.userultra.class.php:879
 msgid "Last Name"
 msgstr "Efternamn"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:977
+#: xooclasses/xoo.userultra.class.php:912
 msgid "Display Name"
 msgstr "Visa namn"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:992
+#: xooclasses/xoo.userultra.class.php:927
 msgid "Brief Description"
 msgstr "Kortfattad beskrivning"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1007
+#: xooclasses/xoo.userultra.class.php:942
 msgid "About / Bio"
 msgstr "Om / Biografi"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1022
+#: xooclasses/xoo.userultra.class.php:957
 msgid "Country"
 msgstr "Land"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1037
+#: xooclasses/xoo.userultra.class.php:972
 msgid "Contact Info"
 msgstr "Kontaktinformation"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1050
+#: xooclasses/xoo.userultra.class.php:985
 msgid "Website"
 msgstr "Webbsida"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1062
+#: xooclasses/xoo.userultra.class.php:997
 msgid "Social Profiles"
 msgstr "Sociala profiler"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1073
+#: xooclasses/xoo.userultra.class.php:1008
 msgid "Facebook"
 msgstr "Facebook"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1080
+#: xooclasses/xoo.userultra.class.php:1015
 msgid "Connect via Facebook"
 msgstr "Koppla via Facebook"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1089
+#: xooclasses/xoo.userultra.class.php:1024
 msgid "Twitter Username"
 msgstr "Användarnamn för Twitter"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1096
+#: xooclasses/xoo.userultra.class.php:1031
 msgid "Connect via Twitter"
 msgstr "Koppla via Twitter"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1105
+#: xooclasses/xoo.userultra.class.php:1040
 msgid "Google+"
 msgstr "Google+"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1112
+#: xooclasses/xoo.userultra.class.php:1047
 msgid "Connect via Google+"
 msgstr "Koppla via Google+"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1118
-#: xooclasses/xoo.userultra.class.php:1965
+#: xooclasses/xoo.userultra.class.php:1053
+#: xooclasses/xoo.userultra.class.php:1900
 msgid "Account Info"
 msgstr "Kontoinformation"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1129
+#: xooclasses/xoo.userultra.class.php:1064
 msgid "New Password"
 msgstr "Nytt lösenord"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1458
+#: xooclasses/xoo.userultra.class.php:1393
 msgid "Oops! The link is not correct! "
 msgstr "Hoppsan! Länken är felaktig!  "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1497
+#: xooclasses/xoo.userultra.class.php:1432
 msgid "Type New Password:"
 msgstr "Skriv in nytt lösenord:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1506
+#: xooclasses/xoo.userultra.class.php:1441
 msgid "Re-type Password:"
 msgstr "Skriv lösenordet igen:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1515
+#: xooclasses/xoo.userultra.class.php:1450
 msgid "Reset Password"
 msgstr "Återställ lösenord"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1601
-#: xooclasses/xoo.userultra.class.php:1603
+#: xooclasses/xoo.userultra.class.php:1536
+#: xooclasses/xoo.userultra.class.php:1538
 msgid "Sign in "
 msgstr "Logga in "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1694
+#: xooclasses/xoo.userultra.class.php:1629
 msgid "Forgot Password?"
 msgstr "Glömt lösenordet?"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1702
-#: xooclasses/xoo.userultra.class.php:2440
+#: xooclasses/xoo.userultra.class.php:1637
+#: xooclasses/xoo.userultra.class.php:2375
 msgid "Register"
 msgstr "Registrera"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1716
+#: xooclasses/xoo.userultra.class.php:1651
 msgid "Remember me"
 msgstr "Kom ihåg mig"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1720
+#: xooclasses/xoo.userultra.class.php:1655
 msgid "Log In"
 msgstr "Logga in"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1741
+#: xooclasses/xoo.userultra.class.php:1676
 msgid ""
 " A quick access link will be sent to your email that will let you get in "
 "your account and change your password. "
@@ -4286,67 +4364,67 @@ msgstr ""
 "tillgång ditt konto och ändra ditt lösenord. "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1761
+#: xooclasses/xoo.userultra.class.php:1696
 msgid "Back to Login"
 msgstr "Gå tillbaks till inloggningen"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1767
+#: xooclasses/xoo.userultra.class.php:1702
 msgid "Send me Password"
 msgstr "Skicka mej ett lösenord"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1807
-#: xooclasses/xoo.userultra.class.php:1819
+#: xooclasses/xoo.userultra.class.php:1742
+#: xooclasses/xoo.userultra.class.php:1754
 msgid "Your password is too similar to your username."
 msgstr "Ditt lösenord är för likt ditt användarnamn."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1808
-#: xooclasses/xoo.userultra.class.php:1820
+#: xooclasses/xoo.userultra.class.php:1743
+#: xooclasses/xoo.userultra.class.php:1755
 msgid "Both passwords do not match."
 msgstr "Båda lösenorden stämmer inte överens."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1809
-#: xooclasses/xoo.userultra.class.php:1821
+#: xooclasses/xoo.userultra.class.php:1744
+#: xooclasses/xoo.userultra.class.php:1756
 msgid "Your password is too short."
 msgstr "Ditt lösenord är för kort."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1810
-#: xooclasses/xoo.userultra.class.php:1822
+#: xooclasses/xoo.userultra.class.php:1745
+#: xooclasses/xoo.userultra.class.php:1757
 msgid "Your password strength is too weak."
 msgstr "Ditt lösenord är för enkelt."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1811
-#: xooclasses/xoo.userultra.class.php:1823
+#: xooclasses/xoo.userultra.class.php:1746
+#: xooclasses/xoo.userultra.class.php:1758
 msgid "Your password strength weak."
 msgstr "Ditt lösenords styrka är svagt."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1812
+#: xooclasses/xoo.userultra.class.php:1747
 msgid "Please provide username."
 msgstr "Ange ett användarnamn."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1813
+#: xooclasses/xoo.userultra.class.php:1748
 msgid "Please provide email address."
 msgstr "Ange en e-postadress."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1814
+#: xooclasses/xoo.userultra.class.php:1749
 msgid "Please provide valid email address."
 msgstr "Ange en aktuell e-postadress."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1815
+#: xooclasses/xoo.userultra.class.php:1750
 msgid "That username is already taken, please try a different one."
 msgstr "Detta användarnamn är upptaget, försök med ett annat."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1816
+#: xooclasses/xoo.userultra.class.php:1751
 msgid ""
 "The email you entered is already registered. Please try a new email or log "
 "in to your existing account."
@@ -4355,124 +4433,124 @@ msgstr ""
 "logga in på ditt befintliga konto."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1824
+#: xooclasses/xoo.userultra.class.php:1759
 msgid "Good"
 msgstr "Mycket bra!"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1825
+#: xooclasses/xoo.userultra.class.php:1760
 msgid "Strong"
 msgstr "Strong"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1827
+#: xooclasses/xoo.userultra.class.php:1762
 msgid "ERROR"
 msgstr "FEL"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1839
+#: xooclasses/xoo.userultra.class.php:1774
 msgid "Sign Up"
 msgstr "Registrera dig"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1908
+#: xooclasses/xoo.userultra.class.php:1843
 #, fuzzy
 msgid "Please enter a username."
 msgstr "<strong>FEL:</strong> Skriv in ett användarnamn."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1959
+#: xooclasses/xoo.userultra.class.php:1894
 msgid "Fields with (*) are required"
 msgstr "Fält med (*) måste fyllas i"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:1963
+#: xooclasses/xoo.userultra.class.php:1898
 msgid "Sign up "
 msgstr "Registrera dig "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:2028
-#: xooclasses/xoo.userultra.class.php:2032
-#: xooclasses/xoo.userultra.class.php:2042
-#: xooclasses/xoo.userultra.class.php:2051
-#: xooclasses/xoo.userultra.class.php:2200
-#: xooclasses/xoo.userultra.class.php:2204
-#: xooclasses/xoo.userultra.class.php:2227
-#: xooclasses/xoo.userultra.class.php:2317
+#: xooclasses/xoo.userultra.class.php:1963
+#: xooclasses/xoo.userultra.class.php:1967
+#: xooclasses/xoo.userultra.class.php:1977
+#: xooclasses/xoo.userultra.class.php:1986
+#: xooclasses/xoo.userultra.class.php:2135
+#: xooclasses/xoo.userultra.class.php:2139
+#: xooclasses/xoo.userultra.class.php:2162
+#: xooclasses/xoo.userultra.class.php:2252
 msgid " * This input is required!"
 msgstr "* Detta fält måste fyllas i!"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:2330
+#: xooclasses/xoo.userultra.class.php:2265
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
 msgstr "Om du vill ändra lösenordet, skriv ett nytt. Annars lämna det tomt."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:2334
+#: xooclasses/xoo.userultra.class.php:2269
 msgid "Type your new password again."
 msgstr "Skriv ditt lösenord igen."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:2346
+#: xooclasses/xoo.userultra.class.php:2281
 #: xooclasses/xoo.userultra.user.php:1799
 msgid "Hide from Public"
 msgstr "Göm från publikt"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:2367
+#: xooclasses/xoo.userultra.class.php:2302
 msgid "Payment Information"
 msgstr "Betalningsinformation"
 
-#: xooclasses/xoo.userultra.class.php:2388
+#: xooclasses/xoo.userultra.class.php:2323
 msgid "Receive Daily Updates "
 msgstr ""
 
 # @ xoousers
-#: xooclasses/xoo.userultra.class.php:2415
-#: xooclasses/xoo.userultra.class.php:2423
+#: xooclasses/xoo.userultra.class.php:2350
+#: xooclasses/xoo.userultra.class.php:2358
 msgid "Terms & Conditions "
 msgstr "Regler & Villkor "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:183
+#: xooclasses/xoo.userultra.login.php:191
 msgid "<strong>ERROR:</strong> The username field is empty."
 msgstr "<strong>FEL:</strong> Användarnamn får inte vara tomt."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:191
+#: xooclasses/xoo.userultra.login.php:199
 msgid "<strong>ERROR:</strong> The password field is empty."
 msgstr "<strong>FEL:</strong> Lösenordet får inte vara tomt."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:285
+#: xooclasses/xoo.userultra.login.php:293
 msgid "<strong>ERROR:</strong> Invalid Username was entered."
 msgstr "<strong>FEL:</strong> Ogiltigt användarnamn matades in."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:288
+#: xooclasses/xoo.userultra.login.php:296
 msgid "<strong>ERROR:</strong> Incorrect password was entered."
 msgstr "<strong>FEL:</strong> Felaktigt lösenord matades in."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:292
+#: xooclasses/xoo.userultra.login.php:300
 msgid "<strong>ERROR:</strong> Please provide Password."
 msgstr "<strong>FEL:</strong> Skriv in ett lösenord."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:311
+#: xooclasses/xoo.userultra.login.php:319
 msgid "<strong>ERROR:</strong> Your account is not active."
 msgstr "<strong>FEL:</strong> Ditt användarkonto är inte aktivt."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:1420
-#: xooclasses/xoo.userultra.login.php:1674
+#: xooclasses/xoo.userultra.login.php:1436
+#: xooclasses/xoo.userultra.login.php:1690
 msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
 msgstr "<strong>FEL:</strong> DITT KONTO ÄR INTE AKTIVERAT ÄNNU."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.login.php:1688
+#: xooclasses/xoo.userultra.login.php:1704
 #, fuzzy
 msgid ""
 "<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK "
@@ -4482,79 +4560,79 @@ msgstr ""
 "FÖRSÖK IGEN."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:87
+#: xooclasses/xoo.userultra.messaging.php:102
 msgid "Registration"
 msgstr "Registrering"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:88
+#: xooclasses/xoo.userultra.messaging.php:103
 msgid "New Registration"
 msgstr "Ny registrering"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:122
-#: xooclasses/xoo.userultra.messaging.php:185
+#: xooclasses/xoo.userultra.messaging.php:137
+#: xooclasses/xoo.userultra.messaging.php:199
 msgid "Verify Your Account"
 msgstr "Bekräfta ditt konto"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:148
+#: xooclasses/xoo.userultra.messaging.php:163
 msgid "Account Verification"
 msgstr "Kontoverifiering"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:149
+#: xooclasses/xoo.userultra.messaging.php:164
 msgid "New Account To Approve"
 msgstr "Nytt konto att godkänna"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:186
+#: xooclasses/xoo.userultra.messaging.php:200
 msgid "New Account To Verify"
 msgstr "Nytt konto att bekräfta"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:255
+#: xooclasses/xoo.userultra.messaging.php:269
 msgid "Account Verified"
 msgstr "Kontot bekräftat"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:282
+#: xooclasses/xoo.userultra.messaging.php:295
 msgid "Account Activation Deny"
 msgstr "Kontoaktivering avvisad"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:308
+#: xooclasses/xoo.userultra.messaging.php:321
 msgid "Registration Information"
 msgstr "Registreringsinformation"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:309
+#: xooclasses/xoo.userultra.messaging.php:322
 #, fuzzy
 msgid "New Paid Subscription"
 msgstr "Prenumerationsstatistik"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:341
+#: xooclasses/xoo.userultra.messaging.php:354
 msgid "Registration "
 msgstr "Registrering "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:372
+#: xooclasses/xoo.userultra.messaging.php:385
 msgid "New Private Message"
 msgstr "Nytt privat meddelande"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:401
+#: xooclasses/xoo.userultra.messaging.php:414
 msgid "New Friend Request"
 msgstr "Ny fältförfrågan"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:426
+#: xooclasses/xoo.userultra.messaging.php:439
 msgid "Reset Your Password"
 msgstr "Återställ ditt lösenord"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.messaging.php:447
+#: xooclasses/xoo.userultra.messaging.php:460
 msgid "Password Reset Confirmation"
 msgstr "Bekräftelse om återställning av Lösenord"
 
@@ -4638,7 +4716,7 @@ msgstr "Skriv ditt svar här..."
 
 # @ xoousers
 #: xooclasses/xoo.userultra.mymessage.php:446
-#: xooclasses/xoo.userultra.publisher.php:139
+#: xooclasses/xoo.userultra.publisher.php:138
 msgid "Back"
 msgstr "Gå tillbaks"
 
@@ -4806,19 +4884,19 @@ msgstr "Tillämpa"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.order.php:362
-#: xooclasses/xoo.userultra.woocommerce.php:327
+#: xooclasses/xoo.userultra.woocommerce.php:325
 msgid "You have no orders."
 msgstr "Du har inga beställningar."
 
 # @ xoousers
 #: xooclasses/xoo.userultra.order.php:381
-#: xooclasses/xoo.userultra.woocommerce.php:345
+#: xooclasses/xoo.userultra.woocommerce.php:343
 msgid "Order #"
 msgstr "Sorteringsordning #"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.order.php:382
-#: xooclasses/xoo.userultra.woocommerce.php:346
+#: xooclasses/xoo.userultra.woocommerce.php:344
 msgid "Total"
 msgstr "Total"
 
@@ -5015,7 +5093,7 @@ msgstr "Släpp filer här"
 
 # @ default
 #: xooclasses/xoo.userultra.photos.php:2257
-#: xooclasses/xoo.userultra.publisher.php:1045
+#: xooclasses/xoo.userultra.publisher.php:1044
 #: xooclasses/xoo.userultra.user.php:4835
 msgctxt "Uploader: Drop files here - or - Select Files"
 msgid "or"
@@ -5029,170 +5107,170 @@ msgstr "-- Välj --"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.photos.php:2289
-#: xooclasses/xoo.userultra.publisher.php:1082
+#: xooclasses/xoo.userultra.publisher.php:1081
 #: xooclasses/xoo.userultra.user.php:4870
 msgid "Allowed Files"
 msgstr "Tillåtna filer"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:71
+#: xooclasses/xoo.userultra.publisher.php:70
 msgid "Invalid Post"
 msgstr "Ogiltigt inlägg"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:105
+#: xooclasses/xoo.userultra.publisher.php:104
 msgid "Edit Post"
 msgstr "Redigera inlägg"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:139
+#: xooclasses/xoo.userultra.publisher.php:138
 msgid "Back:"
 msgstr "Bakåt:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:145
-#: xooclasses/xoo.userultra.publisher.php:317
+#: xooclasses/xoo.userultra.publisher.php:144
+#: xooclasses/xoo.userultra.publisher.php:316
 msgid "Title:"
 msgstr "Titel:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:151
-#: xooclasses/xoo.userultra.publisher.php:325
+#: xooclasses/xoo.userultra.publisher.php:150
+#: xooclasses/xoo.userultra.publisher.php:324
 msgid "Category:"
 msgstr "Kategori:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:167
-#: xooclasses/xoo.userultra.publisher.php:169
-#: xooclasses/xoo.userultra.publisher.php:333
-#: xooclasses/xoo.userultra.publisher.php:335
+#: xooclasses/xoo.userultra.publisher.php:166
+#: xooclasses/xoo.userultra.publisher.php:168
+#: xooclasses/xoo.userultra.publisher.php:332
+#: xooclasses/xoo.userultra.publisher.php:334
 msgid "-- Select --"
 msgstr "-- Välj --"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:180
-#: xooclasses/xoo.userultra.publisher.php:348
+#: xooclasses/xoo.userultra.publisher.php:179
+#: xooclasses/xoo.userultra.publisher.php:347
 msgid "Post Photos:"
 msgstr "Inläggsbilder:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:206
-#: xooclasses/xoo.userultra.publisher.php:373
+#: xooclasses/xoo.userultra.publisher.php:205
+#: xooclasses/xoo.userultra.publisher.php:372
 msgid "Tags:"
 msgstr "Taggar:"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:276
-#: xooclasses/xoo.userultra.publisher.php:311
-#: xooclasses/xoo.userultra.publisher.php:433
+#: xooclasses/xoo.userultra.publisher.php:275
+#: xooclasses/xoo.userultra.publisher.php:310
+#: xooclasses/xoo.userultra.publisher.php:432
 msgid "Add New Post"
 msgstr "Nytt inlägg"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:287
+#: xooclasses/xoo.userultra.publisher.php:286
 msgid "Max Allowed Posts: "
 msgstr "Max antal inlägg: "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:287
+#: xooclasses/xoo.userultra.publisher.php:286
 #, fuzzy
 msgid "You have posted: "
 msgstr "Du har inga meddelanden i inboxen."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:443
+#: xooclasses/xoo.userultra.publisher.php:442
 msgid "You have no posts."
 msgstr "Du har inga inlägg."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:462
+#: xooclasses/xoo.userultra.publisher.php:461
 msgid "Title"
 msgstr "Titel"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:504
+#: xooclasses/xoo.userultra.publisher.php:503
 msgid "Live"
 msgstr "Live"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:508
+#: xooclasses/xoo.userultra.publisher.php:507
 msgid "Offline"
 msgstr "Offline"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:512
+#: xooclasses/xoo.userultra.publisher.php:511
 msgid "Awaiting Approval"
 msgstr "Väntar på godkännande"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:515
+#: xooclasses/xoo.userultra.publisher.php:514
 msgid "Scheduled"
 msgstr "Schemalagd"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:536
-#: xooclasses/xoo.userultra.publisher.php:911
+#: xooclasses/xoo.userultra.publisher.php:535
+#: xooclasses/xoo.userultra.publisher.php:910
 msgid "Delete Image"
 msgstr "Radera bild"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:577
-#: xooclasses/xoo.userultra.publisher.php:774
+#: xooclasses/xoo.userultra.publisher.php:576
+#: xooclasses/xoo.userultra.publisher.php:773
 msgid "Empty post title"
 msgstr "Tom inläggstitel"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:591
-#: xooclasses/xoo.userultra.publisher.php:595
-#: xooclasses/xoo.userultra.publisher.php:600
-#: xooclasses/xoo.userultra.publisher.php:790
-#: xooclasses/xoo.userultra.publisher.php:794
-#: xooclasses/xoo.userultra.publisher.php:799
+#: xooclasses/xoo.userultra.publisher.php:590
+#: xooclasses/xoo.userultra.publisher.php:594
+#: xooclasses/xoo.userultra.publisher.php:599
+#: xooclasses/xoo.userultra.publisher.php:789
+#: xooclasses/xoo.userultra.publisher.php:793
+#: xooclasses/xoo.userultra.publisher.php:798
 msgid "Please choose a category"
 msgstr "Välj en kategori"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:607
-#: xooclasses/xoo.userultra.publisher.php:808
+#: xooclasses/xoo.userultra.publisher.php:606
+#: xooclasses/xoo.userultra.publisher.php:807
 msgid "Empty post content"
 msgstr "Tomt inlägg"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:658
+#: xooclasses/xoo.userultra.publisher.php:657
 msgid "Post updated successfully."
 msgstr "Inlägget uppdaterades."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:858
+#: xooclasses/xoo.userultra.publisher.php:857
 msgid "You cannot add more posts "
 msgstr "Du kan inte lägga till fler inlägg "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:894
+#: xooclasses/xoo.userultra.publisher.php:893
 msgid "Post published successfully. The admin will review it soon"
 msgstr ""
 "Inlägget publicerade framgångsrikt. Administratören kommer att granska det "
 "snart"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:1043
+#: xooclasses/xoo.userultra.publisher.php:1042
 msgid "Drop Images Here"
 msgstr "släpp bild här"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:1046
+#: xooclasses/xoo.userultra.publisher.php:1045
 #, fuzzy
 msgid "Select Files"
 msgstr "-- Välj --"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:1141
+#: xooclasses/xoo.userultra.publisher.php:1140
 #: xooclasses/xoo.userultra.user.php:4925
 msgid "You may only upload one image at a time!"
 msgstr "Du kan bara ladda upp en bild åt gången!"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.publisher.php:1156
+#: xooclasses/xoo.userultra.publisher.php:1155
 #, fuzzy
 msgid "The file you selected exceeds the maximum file size limit."
 msgstr "Filen du valde överskrider den maximala filstorleken."
@@ -5712,6 +5790,6 @@ msgid "Woocommerce File Doesn't Exist"
 msgstr "Woocommerce-filen finns inte"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.woocommerce.php:348
+#: xooclasses/xoo.userultra.woocommerce.php:346
 msgid "Modified Date"
 msgstr "Modifierat datum"
