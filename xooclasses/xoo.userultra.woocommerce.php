@@ -4,9 +4,16 @@ class XooWooCommerce {
 	public $woocommerce_file_path;
 	public $woocommerce_version;
 	public $woocommerce_version_status;
+	
+	function __construct() {
+		
+		
+		add_action('init', array( $this, 'handle_init' ));
+		
+	}
 	 
 
-	function __construct() {
+	function handle_init() {
 		global $pagenow;
 
 		if('admin.php' == $pagenow && isset($_GET['page']) && ('import' == $_GET['tab']) 
