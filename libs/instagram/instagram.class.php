@@ -10,9 +10,7 @@
  * @version 1.5
  * @license BSD http://www.opensource.org/licenses/bsd-license.php
  */
-
 class Instagram {
-
   /**
    * The API base URL
    */
@@ -373,5 +371,4 @@ class Instagram {
   }
 
 }
-
 ?>

@@ -96,18 +96,27 @@ class XooUserRegister {
 		    
 		    }
 			
-			 /* Validate passowrd */
-		     if ($_POST["user_pass"]=="") 
-			 {
-				$this->errors[] = __('<strong>ERROR:</strong> Please type your password.','xoousers');           
-				
-		     }
+			//check if auto-password
+			$auto_password = $xoouserultra->get_option("set_password");	
+			
+			
+			if($auto_password =='' || $auto_password==1)
+			{
+			
+				 /* Validate passowrd */
+				 if ($_POST["user_pass"]=="") 
+				 {
+					$this->errors[] = __('<strong>ERROR:</strong> Please type your password.','xoousers');           
+					
+				 }
+				 
+				 if ($_POST["user_pass"]!= $_POST["user_pass_confirm"]) 
+				 {
+					 $this->errors[] = __('<strong>ERROR:</strong> The passwords must be identical','xoousers');           
+					
+				 }
 			 
-			 if ($_POST["user_pass"]!= $_POST["user_pass_confirm"]) 
-			 {
-				 $this->errors[] = __('<strong>ERROR:</strong> The passwords must be identical','xoousers');           
-				
-		     }
+			 }
 		    
 		   if(!is_in_post('no_captcha','yes'))
 		    {
