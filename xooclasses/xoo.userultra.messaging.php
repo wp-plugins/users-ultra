@@ -219,7 +219,7 @@ class XooMessaging extends XooUserUltraCommon
 		
 		$this->send($u_email, $subject, $template_client);		
 		//send to admin		
-		$this->send($admin_email, $subject_admin, $template_admim);
+		//$this->send($admin_email, $subject_admin, $template_admim);
 		
 		
 		
