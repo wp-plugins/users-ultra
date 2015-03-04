@@ -1,14 +1,14 @@
 === Users Ultra ===
 Contributors: UsersUltra
 Donate link: http://usersultra.com/donate.html
-Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram
+Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.60
+Stable tag: 1.4.61
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Users Ultra is the ideal plugin for creating advanced user communities & networks in few minutes. Facebook, Twitter, LinkedIn, Yahoo, Google, Instagram.
+Users Ultra is the ideal plugin for creating advanced user communities & networks in few minutes. Facebook, Twitter, LinkedIn, Yahoo, Google.
 
 == Description ==
 
@@ -196,10 +196,10 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
 
 <p><strong>Paid Membership Features</strong>.</p>
 <ul>
-  <li>Admin  has the capability to set free membership or paid memberships.</li>
-  <li>Admin  can create unlimited membership packages.</li>
-  <li>Admin  can set one-time or recurring payments.</li>
-  <li>Admin  can set the membership duration.</li>
+  <li>Admin has the capability to set free membership or paid memberships.</li>
+  <li>Admin can create unlimited membership packages.</li>
+  <li>Admin can set one-time or recurring payments.</li>
+  <li>Admin can set the membership duration.</li>
 </ul>
 <p><strong>Social One-Click Connects</strong></p>
 <ul>
@@ -207,21 +207,22 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
   <li>Google</li>
   <li>Yahoo</li>
   <li>LinkedIn</li>
+  <li>Instagram</li>
 </ul>
 <p><strong>Private Messaging System</strong>:</p>
 <ul>
-  <li>Users  can send private messages to other members.</li>
-  <li>Users  can reply messages.</li>
-  <li>Users  can delete &amp; marks as read messages.</li>
-  <li>Users  can block &ldquo;senders&rdquo;.</li>
+  <li>Users can send private messages to other members.</li>
+  <li>Users can reply messages.</li>
+  <li>Users can delete &amp; marks as read messages.</li>
+  <li>Users can block &ldquo;senders&rdquo;.</li>
 </ul>
 <p><strong>Photos &amp; Galleries</strong>:</p>
 <ul>
-  <li>Users  can create Multiple Photo Galleries.</li>
-  <li>Users  can sort galleries and photos by &ldquo;drag&amp;drop&rdquo;.</li>
-  <li>Users  can set public, non-public and private photo galleries.</li>
-  <li>Users  can set a main picture to each gallery.</li>
-  <li>Users  can set a main picture to be used in the public profile.</li>
+  <li>Users can create Multiple Photo Galleries.</li>
+  <li>Users can sort galleries and photos by &ldquo;drag&amp;drop&rdquo;.</li>
+  <li>Users can set public, non-public and private photo galleries.</li>
+  <li>Users can set a main picture to each gallery.</li>
+  <li>Users can set a main picture to be used in the public profile.</li>
 </ul>
 <p><strong>Drag &amp; Drop Multi-Uploader</strong></p>
 <ul>
@@ -354,6 +355,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.4.61(03-03-2015) =
+
+* Improvements - Friends count issue. We have tweaked the SQL sentences a little bit. There was an issue with the calcuation of the user's total friends.
 
 = 1.4.60(03-02-2015) =
 * Improvements -   Email notifications when using the "link confirmation" method has been remove. We received some complaints about the notification steps. So.. the admin won't receive an email when "Link confirmation" method is active. http://usersultra.com/support/forums/topic/having-problems-with-users-verifying-own-accounts/

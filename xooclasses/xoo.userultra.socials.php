@@ -56,9 +56,7 @@ class XooSocial
 		  PRIMARY KEY (`like_id`)
 		) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;';
 		
-		$wpdb->query( $query );
-		
-	
+		$wpdb->query( $query );	
 	
 		
 	}
@@ -182,14 +180,12 @@ class XooSocial
 				
 			}else{
 				
-				echo __("Please login to rate ", 'xoousers');
-				
+				echo __("Please login to rate ", 'xoousers');				
 			
 			}
 		}else{
 			
-			echo __("You've already liked it ", 'xoousers');
-		
+			echo __("You've already liked it ", 'xoousers');		
 		
 		}
 		
@@ -205,7 +201,15 @@ class XooSocial
 		
 		$total = 0;		
 		
-		 $sql = "SELECT count(*) as total FROM " . $wpdb->prefix . "usersultra_friends  WHERE friend_receiver_id  = '$user_id' AND 	friend_status = 1 ";	 
+		// $sql = "SELECT count(*) as total FROM " . $wpdb->prefix . "usersultra_friends  WHERE friend_receiver_id  = '$user_id' AND 	friend_status = 1 ";
+		 
+		 $sql = ' SELECT  count(DISTINCT friend.friend_sender_user_id) as total, friend.*, u.ID 
+		  
+		  FROM ' . $wpdb->prefix . 'usersultra_friends friend  ' ;		
+		$sql .= " RIGHT JOIN ".$wpdb->prefix ."users u ON ( u.ID = friend.friend_receiver_id)";
+		
+		$sql .= " WHERE u.ID = friend.friend_receiver_id  AND  friend.friend_status = 1 AND friend.friend_receiver_id = '".$user_id."'    ";
+			 
 		 
 		 $res = $wpdb->get_results( $sql );
 		 
