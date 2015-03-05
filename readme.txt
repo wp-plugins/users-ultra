@@ -78,9 +78,7 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
    </li>
    
    <li> <a href="http://usersultra.com/uultra-testing/member-directory-display-to-logged-in-users-only/">Visible to logged in users only</a>
-   </li>
-   
-   
+   </li>  
   
 </ul>
 
