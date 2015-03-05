@@ -93,7 +93,7 @@ class XooUserUltra
 		add_action( 'admin_notices', array(&$this, 'uultra_display_custom_message'));
 		add_action( 'wp_ajax_create_default_pages_auto', array( $this, 'create_default_pages_auto' ));
 		add_action( 'wp_ajax_hide_rate_message', array( $this, 'hide_rate_message' ));
-		add_action( 'wp_ajax_hide_proversion_message', array( $this, 'hide_proversion_message' ));	
+		add_action( 'wp_ajax_hide_proversion_message', array( $this, 'hide_proversion_message' ));
 				 
 				 
 		$this->include_for_validation = array('text','fileupload','textarea','select','radio','checkbox','password');	
@@ -1533,7 +1533,7 @@ class XooUserUltra
 		
 		
 		//get social sign up methods
-		$display .= $this->get_social_buttons(__("Sign in ",'xoousers' ),$args);
+		$display .= $this->get_social_buttons(__("Sign in with",'xoousers' ),$args);
 		
 		$display .='<h2>'.__("Sign in ",'xoousers' ).'</h2>';	
 
@@ -1895,7 +1895,7 @@ class XooUserUltra
 		
 		
 		//get social sign up methods
-		$display .= $this->get_social_buttons(__("Sign up ",'xoousers'), $args);		
+		$display .= $this->get_social_buttons(__("Sign up with",'xoousers'), $args);		
 		
 		$display .= '<div class="xoouserultra-field xoouserultra-seperator xoouserultra-edit xoouserultra-edit-show">'.__('Account Info','xoousers').'</div>';
 			
@@ -2068,8 +2068,10 @@ class XooUserUltra
 			
 			$required_class = '';
 			$required_text = '';
-			if($required == 1 && in_array($field, $this->include_for_validation))
+			if($array[$key]['required'] == 1 && in_array($field, $this->include_for_validation))
 			{
+			//if($required == 1 && in_array($field, $this->include_for_validation))
+			//{
 			    $required_class = 'validate[required] ';
 				$required_text = '(*)';
 			}
@@ -2632,7 +2634,7 @@ class XooUserUltra
 				
 				       	               	
 						<a href="'.$loginUrl.'" class="btnuultra-facebook" >
-							<span class="uultra-icon-facebook"> <img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/facebook.png" ></span>'.$action_text.' with Facebook </a>
+							<span class="uultra-icon-facebook"> <img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/facebook.png" ></span>'.$action_text.' Facebook </a>
 					
 					</div>';
 					
@@ -2648,7 +2650,7 @@ class XooUserUltra
 				//Yahoo
 				$display .='<div class="txt-center YahooSignIn">	               	
 							<a href="'.$auth_url_yahoo.'" class="btnuultra-yahoo" >
-							<span class="uultra-icon-yahoo"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yahoo.png" ></span>'.$action_text.' with Yahoo </a>
+							<span class="uultra-icon-yahoo"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yahoo.png" ></span>'.$action_text.' Yahoo </a>
 					
 					</div>';
 		     }
@@ -2664,7 +2666,7 @@ class XooUserUltra
 				//Google
 				$display .='<div class="txt-center GoogleSignIn">	               	
 						<a href="'.$auth_url_google.'" class="btnuultra-google" >
-							<span class="uultra-icon-google"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/googleplus.png" ></span>'.$action_text.' with Google </a>
+							<span class="uultra-icon-google"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/googleplus.png" ></span>'.$action_text.' Google </a>
 					
 					</div>';
 			}
@@ -2679,7 +2681,7 @@ class XooUserUltra
 					//Instagram
 					$display .='<div class="txt-center InstagramSignIn">	               	
 						<a href="'.$auth_url_google.'" class="btnuultra-instagram" >
-							<span class="uultra-icon-instagram"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/instagram-icon.png" ></span>'.$action_text.' with Instagram </a>
+							<span class="uultra-icon-instagram"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/instagram-icon.png" ></span>'.$action_text.' Instagram </a>
 					
 					</div>';
 				
@@ -2711,7 +2713,7 @@ class XooUserUltra
 					//Google
 					$display .='<div class="txt-center YammerSignIn">	               	
 						<a href="'.$auth_url_google.'" class="btnuultra-yammer" >
-							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' with Yammer </a>
+							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' Yammer </a>
 					
 					</div>';
 				
@@ -2731,7 +2733,7 @@ class XooUserUltra
 				//Google
 				$display .='<div class="txt-center TwitterSignIn">	               	
 						<a href="'.$auth_url_google.'" class="btnuultra-twitter" >
-							<span class="uultra-icon-twitter"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/twitter.png" ></span>'.$action_text.' with Twitter </a>
+							<span class="uultra-icon-twitter"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/twitter.png" ></span>'.$action_text.' Twitter </a>
 					
 					</div>';
 			}
@@ -2747,7 +2749,7 @@ class XooUserUltra
 				//Google
 				$display .='<div class="txt-center YammerSignIn">	               	
 						<a href="'.$auth_url_google.'" class="btnuultra-yammer" >
-							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' with Yammer </a>
+							<span class="uultra-icon-yammer"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/yammer.png" ></span>'.$action_text.' Yammer </a>
 					
 					</div>';
 			}
@@ -2768,7 +2770,7 @@ class XooUserUltra
 				//LinkedIn
 				$display .='<div class="txt-center LinkedSignIn">	               	
 							<a href="'.$requestlink.'" class="btnuultra-linkedin" >
-								<span class="uultra-icon-linkedin"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/linkedin.png" ></span>'.$action_text.' with LinkedIn </a>
+								<span class="uultra-icon-linkedin"><img src="'.xoousers_url.'templates/'.xoousers_template.'/img/socialicons/linkedin.png" ></span>'.$action_text.' LinkedIn </a>
 					
 					</div>';
 			}	

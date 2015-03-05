@@ -282,7 +282,7 @@ class XooOrder
 	{
 		global $wpdb,  $xoouserultra;
 		
-		$orders = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'usersultra_orders WHERE order_key = "'.(int)$id.'"  AND order_status="pending" ' );
+		$orders = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'usersultra_orders WHERE order_key = "'.$id.'"  AND order_status="pending" ' );
 		
 		if ( empty( $orders ) )
 		{
@@ -305,7 +305,7 @@ class XooOrder
 	{
 		global $wpdb,  $xoouserultra;
 		
-		$orders = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'usersultra_orders WHERE order_key = "'.(int)$id.'"  AND order_status="confirmed" ' );
+		$orders = $wpdb->get_results( 'SELECT * FROM ' . $wpdb->prefix . 'usersultra_orders WHERE order_key = "'.$id.'"  AND order_status="confirmed" ' );
 		
 		if ( empty( $orders ) )
 		{

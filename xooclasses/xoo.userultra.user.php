@@ -595,6 +595,11 @@ class XooUserUser {
 
 							flush();
 				}		
+				
+				
+				//create basic profile widgets
+				
+				
 							
 				
 				

@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, private, messages, user, members, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.61
+Stable tag: 1.4.62
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,14 +96,39 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 <br>
 </blockquote>
 
+<h3><strong>Common Shortcodes:</strong></h3>
+Here there are some useful shortocodes that will help you to start your online community in minutes.
+<blockquote>
+
+Registration Form:
+[usersultra_registration]
+<br>
+Login Form:
+[usersultra_login]
+<br>
+My Account:
+[usersultra_my_account]
+<br>
+Users Directory:
+[usersultra_directory]
+<br>
+User Profile:
+[usersultra_profile optional_fields_to_display='age,country,social']
+
+<br>
+<br>
+</blockquote>
+
 <h3><strong>How To Links?:</strong></h3>
 <blockquote>
 <a href="http://doc.usersultra.com/how-to-create-a-profile-field/"><strong>Create a New Profile Field </strong></a> <br>
 <a href="http://doc.usersultra.com/how-to-activate-the-paid-membership-modules/"><strong>Activating Paid Membership Module</strong></a> <br>
 <a href="http://doc.usersultra.com/how-to-override-the-wp-registration-login-pages/"><strong>How To Override the WP Registration & Login Pages </strong></a> <br>
 <a href="http://doc.usersultra.com/register-and-configure-a-facebook-application/"><strong>Facebook Login & Registration </strong></a> <br>
-<a href="http://doc.usersultra.com/instagram-login-and-registration/"><strong>Instagram Login & Registration </strong></a> <br>
+<a href="http://doc.usersultra.com/instagram-login-and-registration/"><strong>Instagram Login & Registration </strong></a> 
 <br>
+<a href="http://doc.usersultra.com/google-plus-sign-up-login-integration/"><strong>Google Plus Login & Registration </strong></a> <br>
+
 </blockquote>
 
 <strong>Creating Communities and Networking Websites: </strong><br>
@@ -356,8 +381,13 @@ Initial release.
 
 == Changelog ==
 
-= 1.4.61(03-03-2015) =
+= 1.4.62(03-05-2015) =
+* Improvements - Issue with required fileds.
+* Bug Fix - Not translatable text "with" in social media buttons.
+* Bug Fix - Paypal IPN tweak. There was an issue with the transaction # sent back to UU from paypal. Please update ASAP.
+* Improvements - All language files were updated.
 
+= 1.4.61(03-03-2015) =
 * Improvements - Friends count issue. We have tweaked the SQL sentences a little bit. There was an issue with the calcuation of the user's total friends.
 
 = 1.4.60(03-02-2015) =
