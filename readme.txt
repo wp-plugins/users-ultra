@@ -100,20 +100,20 @@ When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communi
 Here there are some useful shortocodes that will help you to start your online community in minutes.
 <blockquote>
 
-Registration Form:
-[usersultra_registration]
+Registration Form:<br>
+<strong>[usersultra_registration]</strong>
 <br>
-Login Form:
-[usersultra_login]
+Login Form:<br>
+<strong>[usersultra_login]</strong>
 <br>
-My Account:
-[usersultra_my_account]
+My Account:<br>
+<strong>[usersultra_my_account]</strong>
 <br>
-Users Directory:
-[usersultra_directory]
+Users Directory:<br>
+<strong>[usersultra_directory]</strong>
 <br>
-User Profile:
-[usersultra_profile optional_fields_to_display='age,country,social']
+User Profile:<br>
+<strong>[usersultra_profile optional_fields_to_display='age,country,social']</strong>
 
 <br>
 <br>
@@ -128,6 +128,8 @@ User Profile:
 <a href="http://doc.usersultra.com/instagram-login-and-registration/"><strong>Instagram Login & Registration </strong></a> 
 <br>
 <a href="http://doc.usersultra.com/google-plus-sign-up-login-integration/"><strong>Google Plus Login & Registration </strong></a> <br>
+
+<br>
 
 </blockquote>
 
