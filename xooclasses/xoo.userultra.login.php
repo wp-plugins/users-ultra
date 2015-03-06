@@ -1423,10 +1423,38 @@ class XooUserLogin {
 			}else{
 				
 				//if user already created then try to login automatically				
-				$user = get_user_by('login',$user_login);				
-				$user_id =$user->ID;
+				$users = get_users(array(
+							'meta_key'     => 'xoouser_linked_in_id',
+							'meta_value'   => $u_linked_in_id,
+							'meta_compare' => '='
+				));
 				
-				if(is_active($user_id))
+				
+				if (isset($users[0]->ID) && is_numeric($users[0]->ID) )
+				{
+					$returning = $users[0]->ID;
+					$user_login = $users[0]->user_login;
+					
+					$user = get_user_by('login',$user_login);				
+					$user_id =$user->ID;
+					
+					
+				} else {
+					
+					//get by using email, we already know the user exists at this point
+					$user = get_user_by('email',$u_email);				
+					$user_id =$user->ID;
+					
+					update_user_meta ($user_id, 'xoouser_ultra_social_signup', 2);
+					update_user_meta ($user_id, 'xoouser_linked_in_id', $u_linked_in_id);
+					
+					//set account status
+					$this->user_account_status($user_id);				
+					
+					$returning = '';
+				}
+				
+				if($this->is_active($user_id))
 				{
 					//is active then login
 					wp_set_auth_cookie( $user_id, true, $secure );			
@@ -1669,15 +1697,31 @@ class XooUserLogin {
 							'meta_value'   => $u_fb_id,
 							'meta_compare' => '='
 				));
-				if (isset($users[0]->ID) && is_numeric($users[0]->ID) ){
+				
+				
+				if (isset($users[0]->ID) && is_numeric($users[0]->ID) )
+				{
 					$returning = $users[0]->ID;
 					$user_login = $users[0]->user_login;
+					
+					$user = get_user_by('login',$user_login);				
+					$user_id =$user->ID;
+					
+					
 				} else {
+					
+					//get by using email, we already know the user exists at this point
+					$user = get_user_by('email',$u_email);				
+					$user_id =$user->ID;
+					
+					update_user_meta ($user_id, 'xoouser_ultra_social_signup', 1);
+					update_user_meta ($user_id, 'xoouser_ultra_facebook_id', $u_fb_id);
+					
+					//set account status
+					$this->user_account_status($user_id);				
+					
 					$returning = '';
 				}
-				
-				$user = get_user_by('login',$user_login);				
-				$user_id =$user->ID;
 				
 				if($this->is_active($user_id))
 				{
