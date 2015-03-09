@@ -40,6 +40,20 @@ $this->create_plugin_setting(
         ); 
 		
 		
+		 $this->create_plugin_setting(
+	'select',
+	'uultra_delete_plugin_info_on_unistall',
+	__('Delete Plugin Information from the Database','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("If you select 'yes', all the Users Ultra information will be deleted from the database. <strong>ATTENTION: This action can't be reverted. </strong>",'xoousers'),
+  __("f you select 'yes', all the Users Ultra information will be deleted from the database.",'xoousers')
+       );
+		
+		
 		  $this->create_plugin_setting(
 	'select',
 	'uultra_rotation_fixer',

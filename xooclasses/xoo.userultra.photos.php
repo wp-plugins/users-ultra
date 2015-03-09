@@ -2102,15 +2102,13 @@ class XooUserPhoto {
 				$html.= "</div>";
 			}	
 			
-			//add rating?
-			
+			//add rating?			
 			if($display_photo_rating == "yes")	
 			{
 				
 				$html.= "<div class='ratebox'>";
 				$html.= $xoouserultra->rating->get_rating($current_photo->photo_id,"photo_id");
-				$html.= "</div>";
-			
+				$html.= "</div>";			
 			
 			}
 			

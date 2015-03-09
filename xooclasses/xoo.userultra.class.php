@@ -152,7 +152,7 @@ class XooUserUltra
 	
 	public function hide_proversion_message () 
 	{
-		update_option('xoousersultra_pro_annuncement_113',1);
+		update_option('xoousersultra_pro_annuncement_1463',1);
 		
 	}
 	
@@ -226,12 +226,12 @@ class XooUserUltra
 		}
 		
 		//Pro major 1.1.13 message		
-		$uultra_pro_message_113  = get_option( 'xoousersultra_pro_annuncement_113' );		
+		$uultra_pro_message_113  = get_option( 'xoousersultra_pro_annuncement_1463' );		
 		if($uultra_pro_message_113=="" )
 		{
 		
-			$message = __("<h2>It's time to upgrade to Users Ultra Pro!. </h2> <p>Unique Widgetized user profile, add unlimited widgets, site-wide activity wall, add unlimited links within the user's dashboard. Integrating with third-party plugins by using shortcodes, friends, followers, following, user's wall.</p> <p> <a href='http://usersultra.com/'  target='_blank' class='button button-secondary'  >CLICK HERE TO FIND OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
-			//$this->uultra_fresh_install_message($message);	
+			$message = __("<h2>Upgrade Now to Users Ultra Pro!. </h2> <p>Unique Widgetized user profile, add unlimited widgets, site-wide activity wall, add unlimited links within the user's dashboard. Integrating with third-party plugins by using shortcodes, friends, followers, following, user's wall, multiple profile layouts and many more amazing features.</p> <p> <a href='http://usersultra.com/'  target='_blank' class='button button-secondary'  >CLICK HERE TO FIND OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
+			$this->uultra_fresh_install_message($message);	
 		
 		}
 		
@@ -268,6 +268,71 @@ class XooUserUltra
 	{
 		
 		global $wpdb;
+		
+		$delete_all_plugin_info = $this->get_option('uultra_delete_plugin_info_on_unistall');
+		
+		
+		if($delete_all_plugin_info=='yes')
+		{
+			$thetable = $wpdb->prefix."usersultra_stats_raw";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_stats";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_friends";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_likes";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_ajaxrating_vote";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_ajaxrating_votesummary";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			$thetable = $wpdb->prefix."usersultra_galleries";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			$thetable = $wpdb->prefix."usersultra_photos";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			$thetable = $wpdb->prefix."usersultra_photo_categories";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_photo_cat_rel";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			$thetable = $wpdb->prefix."usersultra_videos";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			$thetable = $wpdb->prefix."usersultra_packages";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			$thetable = $wpdb->prefix."usersultra_orders";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");			
+			
+			$thetable = $wpdb->prefix."users_ultra_pm";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			$thetable = $wpdb->prefix."usersultra_activity";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			
+			//wall
+			$thetable = $wpdb->prefix."usersultra_wall";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");	
+			$thetable = $wpdb->prefix."usersultra_wall_replies";		
+			$wpdb->query("DROP TABLE IF EXISTS $thetable");
+			
+			//delete meta info		
+			delete_option( 'usersultra_profile_fields' );
+			delete_option( 'userultra_default_user_tabs' );
+			delete_option( 'xoousersultra_my_account_page' );
+			delete_option( 'xoousersultra_auto_page_creation' );
+			delete_option( 'userultra_options' );
+		
+		}
 	
 		
 		
@@ -463,7 +528,8 @@ class XooUserUltra
 			 $slug_my_account = $this->get_option("usersultra_my_account_slug"); //My Account Slug
 			
 			 // this rule is used to display the registration page
-			 add_rewrite_rule("$slug/$slug_registration",'index.php?pagename='.$slug.'/'.$slug_registration, 'top');		
+			 add_rewrite_rule("$slug/$slug_registration",'index.php?pagename='.$slug.'/'.$slug_registration, 'top');
+			 		
 			 //this rules is for displaying the user's profiles
 			 add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
 			

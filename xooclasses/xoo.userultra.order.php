@@ -15,8 +15,7 @@ class XooOrder
 		global $wpdb;
 
 			
-		//create orders page
-		
+	
 		// Create table
 			$query = 'CREATE TABLE IF NOT EXISTS ' . $wpdb->prefix . 'usersultra_orders (
 				`order_id` bigint(20) NOT NULL auto_increment,
@@ -85,7 +84,6 @@ class XooOrder
 		
 		}else{
 			
-			
 			foreach ( $orders as $order )
 			{
 				return $order;			
@@ -105,8 +103,7 @@ class XooOrder
 		
 		$sql = 'SELECT ord.*, usu.*	 FROM ' . $wpdb->prefix . 'usersultra_orders ord  ' ;		
 		$sql .= " RIGHT JOIN ".$wpdb->prefix ."users  usu ON (usu.ID = ord.order_user_id)";		
-		$sql .= " WHERE ord.order_id <> 0 AND usu.ID = ord.order_user_id ORDER BY ord.order_id desc  LIMIT $howmany";	
-			
+		$sql .= " WHERE ord.order_id <> 0 AND usu.ID = ord.order_user_id ORDER BY ord.order_id desc  LIMIT $howmany";				
 		$orders = $wpdb->get_results($sql );		
 		return $orders ;
 		
@@ -170,9 +167,7 @@ class XooOrder
 		
 		
 		
-		if($howmany == ""){$howmany=20;}
-		
-		
+		if($howmany == ""){$howmany=30;}	
 		
 		//get total
 				

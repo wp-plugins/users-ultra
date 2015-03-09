@@ -205,8 +205,6 @@ class XooUserUltraCommon
 		   If you have a WHERE clause in your query, make sure you mirror it here.
 		*/
 		
-		
-		
 		/* Setup vars for query. */
 		//$targetpage = "filename.php"; 	//your file name  (the name of this file)
 		//$limit = 2; 								//how many items to show per page
