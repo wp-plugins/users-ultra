@@ -608,20 +608,20 @@ $meta_custom_value = "";
 					<textarea name="uultra_<?php echo $pos; ?>_choices" type="text" id="uultra_<?php echo $pos; ?>_choices" class="large-text"><?php if (isset($array['choices'])) echo trim($choices); ?></textarea>
 					<i class="uultra-icon-question-sign uultra-tooltip2"
 						title="<?php _e('Enter one choice per line please. The choices will be available for front end user to choose from.','xoousers'); ?>"></i>
-				</p> <?php if (!isset($array['predefined_loop'])) $predefined_loop = 0; ?>
+				</p> <?php if (!isset($predefined_options)) $predefined_options = 0; ?>
 
 				<p class="uultra_choices <?php echo $show_choices; ?>">
 					<label for="uultra_<?php echo $pos; ?>_predefined_options" style="display: block"><?php _e('Enable Predefined Choices','xoousers'); ?>
 					</label> 
                     <select name="uultra_<?php echo $pos; ?>_predefined_options"id="uultra_<?php echo $pos; ?>_predefined_options">
-						<option value="0" <?php selected(0, $predefined_loop); ?>>
+						<option value="0" <?php selected(0, $predefined_options); ?>>
 							<?php _e('None','xoousers'); ?>
 						</option>
-						<option value="countries" <?php selected('countries', $predefined_loop); ?>>
+						<option value="countries" <?php selected('countries', $predefined_options); ?>>
 							<?php _e('List of Countries','xoousers'); ?>
 						</option>
                         
-                        <option value="age" <?php selected('age', $predefined_loop); ?>>
+                        <option value="age" <?php selected('age', $predefined_options); ?>>
 							<?php _e('Age','xoousers'); ?>
 						</option>
 					</select> <i class="uultra-icon-question-sign uultra-tooltip2"
