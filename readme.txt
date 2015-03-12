@@ -389,7 +389,7 @@ Initial release.
 
 == Changelog ==
 
-= 1.4.67(03-11-2015) =
+= 1.4.67(03-12-2015) =
 * New Feature - New feature asked by one of our users that allow guests like other users without being logged in. https://wordpress.org/support/topic/likes-has-to-login-only-option?replies=1
 * Improvement - Issue with lightbox.  Check details here https://wordpress.org/support/topic/lightbox-layer-1?replies=2
 
