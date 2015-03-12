@@ -23,7 +23,10 @@ class XooSocial
 		add_action( 'wp_ajax_like_item',  array( $this, 'like_item' ));
 					
 		add_action( 'wp_ajax_nopriv_like_item',  array( $this, 'like_item' ));			
+		
 		add_action( 'wp_ajax_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));
+		add_action( 'wp_ajax_nopriv_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));
+		
 		add_action( 'wp_ajax_friend_request_action',  array( $this, 'friend_request_action' ));
 		add_action( 'wp_ajax_show_all_my_friends',  array( $this, 'show_all_my_friends' ));
 		add_action( 'wp_ajax_show_friend_request',  array( $this, 'show_friend_request' ));
@@ -152,12 +155,13 @@ class XooSocial
 		$vote = $_POST["vote"];
 		
 		$already_voted = $this->check_already_voted($item_id, $module, $vote);
+		$guest_allowed = $xoouserultra->get_option('uultra_allow_guest_like');
 		
-		if($already_voted==0)
-		{
+		if($already_voted==0 || $guest_allowed ==1)
+		{			
 		
 			//store in the db		
-			if(isset($logged_user_id) && $logged_user_id >0)
+			if( (isset($logged_user_id) && $logged_user_id >0) || ($guest_allowed ==1 && $item_id >0))
 			{
 				//check if already liked it				
 				$data = array(

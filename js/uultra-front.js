@@ -355,7 +355,7 @@ if(typeof $ == 'undefined'){
 										
 					$("#uu-like-sore-id-"+item_id).html(data);
 					
-					setTimeout("get_total_likes('"+item_id+"','"+module+"')", 2000)	;
+					setTimeout("get_total_likes('"+item_id+"','"+module+"')", 1500)	;
 					
 					
 					
@@ -472,7 +472,8 @@ function get_total_likes (item_id, module)
 				url: ajaxurl,
 				data: {"action": "get_item_likes_amount_only", "item_id": item_id , "module": module  },
 				
-				success: function(data){					
+				success: function(data){
+									
 										
 					jQuery("#uu-like-sore-id-"+item_id).html(data);
 					

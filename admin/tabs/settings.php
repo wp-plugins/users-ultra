@@ -40,6 +40,17 @@ $this->create_plugin_setting(
         ); 
 		
 		
+		$this->create_plugin_setting(
+                'checkbox',
+                'uultra_allow_guest_like',
+                __('Allow Guests to like other users ','xoousers'),
+                '1',
+                __('If checked, users will be able to like users without being logged in','xoousers'),
+                __('If checked, users will be able to like users without being logged in','xoousers')
+        ); 
+		
+		
+		
 		 $this->create_plugin_setting(
 	'select',
 	'uultra_delete_plugin_info_on_unistall',
