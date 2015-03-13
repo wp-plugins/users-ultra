@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.67
+Stable tag: 1.4.68
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -107,19 +107,19 @@ Here there are some useful shortocodes that will help you to start your online c
 <blockquote>
 
 Registration Form:<br>
-<strong>[usersultra_registration]</strong>
+<strong>[usersultra_registration] - This will display the registration form</strong>
 <br>
 Login Form:<br>
-<strong>[usersultra_login]</strong>
+<strong>[usersultra_login] - This will display the login form</strong>
 <br>
 My Account:<br>
-<strong>[usersultra_my_account]</strong>
+<strong>[usersultra_my_account] - This will display the user's account</strong>
 <br>
 Users Directory:<br>
-<strong>[usersultra_directory]</strong>
+<strong>[usersultra_directory] - This will display the users directory</strong>
 <br>
 User Profile:<br>
-<strong>[usersultra_profile optional_fields_to_display='age,country,social']</strong>
+<strong>[usersultra_profile optional_fields_to_display='age,country,social'] - This will display the user's profile</strong>
 
 <br>
 <br>
@@ -134,6 +134,7 @@ User Profile:<br>
 <a href="http://doc.usersultra.com/instagram-login-and-registration/"><strong>Instagram Login & Registration </strong></a> 
 <br>
 <a href="http://doc.usersultra.com/google-plus-sign-up-login-integration/"><strong>Google Plus Login & Registration </strong></a> <br>
+<a href="http://doc.usersultra.com/twitter-authentication-login-registration/"><strong>Twitter Login & Registration </strong></a> <br>
 
 <br>
 
@@ -388,6 +389,9 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.4.68(03-13-2015) =
+* Bug Fix - Country list issue. Please check details here http://usersultra.com/support/forums/topic/country-selection-list-disappears-with-each-save/#post-13432
 
 = 1.4.67(03-12-2015) =
 * New Feature - New feature asked by one of our users that allow guests like other users without being logged in. https://wordpress.org/support/topic/likes-has-to-login-only-option?replies=1

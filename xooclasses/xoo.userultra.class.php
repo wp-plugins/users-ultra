@@ -25,9 +25,7 @@ class XooUserUltra
 			$this->social_login_links_openid();
 			
 				
-		}
-		
-		
+		}		
 	  
     }
 	
@@ -49,8 +47,7 @@ class XooUserUltra
 		}
 		
 		//ini settings
-		$this->intial_settings();
-		
+		$this->intial_settings();		
 		
 	}
 	
@@ -123,8 +120,7 @@ class XooUserUltra
 	{
 		$custom_css = $this->get_option('xoousersultra_custom_css');
 		$html = "";
-		
-						
+								
 		if($custom_css!="" )
 		{
 			$html .= ' <style type="text/css">';
@@ -205,25 +201,7 @@ class XooUserUltra
 		
 		}
 		
-		/*$rating_uultra = get_option( 'xoousersultra_already_rated_ultra' );	
-		if($rating_uultra=="" )
-		{
-			$message = __("Thanks for installing Users Ultra. Please help us to keep this plugin free by leaving a 5/5 review on WordPress. It takes only 5 minutes. <a href='http://wordpress.org/plugins/users-ultra/' target='_blank' >CLICK HERE</a> to leave a rating. If you've already left your rating or you don't wish to see this message anymore <a href='#'  id='uultradmin-remove-ratingmessage'>CLICK HERE</a>  ", "xoousers");
-			
-			$this->uultra_fresh_install_message($message);		
 		
-		}*/	
-		//
-		
-		//Pro message		
-		$uultra_pro_message  = get_option( 'xoousersultra_pro_annuncement' );		
-		if($uultra_pro_message=="" )
-		{
-		
-			//$message = __("Users Ultra Pro is Ready!. VIP Support 24/7, Badges & Achievements, Amazing Customizable User Profile, Even more control over your users community and so much more. <a href='?page=userultra&tab=pro'  >CLICK HERE</a> to see why you need to go pro. <a href='#'  id='uultradmin-remove-proversionmessage'>Remove this message</a>", 'xoousers');
-			//$this->uultra_fresh_install_message($message);	
-		
-		}
 		
 		//Pro major 1.1.13 message		
 		$uultra_pro_message_113  = get_option( 'xoousersultra_pro_annuncement_1463' );		
@@ -552,11 +530,6 @@ class XooUserUltra
 		
 		}
 		
-		
-		//flush_rewrite_rules();
-		
-		
-	//	$this->create_rewrite_rules();
 		/* Setup query variables */
 		 add_filter( 'query_vars',   array(&$this, 'userultra_uid_query_var') );	
 					
@@ -580,8 +553,7 @@ class XooUserUltra
 		add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
 		
 		//this rules is for photos		
-		flush_rewrite_rules();
-	
+		flush_rewrite_rules();	
 	
 	}
 	

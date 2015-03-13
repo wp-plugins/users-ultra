@@ -148,8 +148,7 @@ class XooUserLogin {
 			$this->prepare( $_POST );
 			
 			// Setting default to false;
-			$this->errors = false;
-			
+			$this->errors = false;			
 			/* Validate, get errors, etc before we login a user */
 			$this->handle();
 
@@ -204,10 +203,7 @@ class XooUserLogin {
 		// Check captcha first
 		if(!is_in_post('no_captcha','yes'))
 		{
-		   // if(!$xoousersultra_captcha_loader->validate_captcha(post_value('captcha_plugin')))
-		   // {
-		      //  $this->errors[] = __('<strong>ERROR:</strong> Please complete Captcha Test first.','xoousers');
-		    //}
+		  
 		}
 		
 	
