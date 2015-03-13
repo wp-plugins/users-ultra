@@ -107,19 +107,23 @@ Here there are some useful shortocodes that will help you to start your online c
 <blockquote>
 
 Registration Form:<br>
-<strong>[usersultra_registration] - This will display the registration form</strong>
+<strong>[usersultra_registration]</strong> - This will display the registration form
+<br>
 <br>
 Login Form:<br>
-<strong>[usersultra_login] - This will display the login form</strong>
+<strong>[usersultra_login] </strong> - This will display the login form
+<br>
 <br>
 My Account:<br>
-<strong>[usersultra_my_account] - This will display the user's account</strong>
+<strong>[usersultra_my_account] </strong> - This will display the user's account
+<br>
 <br>
 Users Directory:<br>
-<strong>[usersultra_directory] - This will display the users directory</strong>
+<strong>[usersultra_directory]  </strong>- This will display the users directory
+<br>
 <br>
 User Profile:<br>
-<strong>[usersultra_profile optional_fields_to_display='age,country,social'] - This will display the user's profile</strong>
+<strong>[usersultra_profile optional_fields_to_display='age,country,social'] </strong> - This will display the user's profile
 
 <br>
 <br>
