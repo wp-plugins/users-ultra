@@ -10,8 +10,7 @@ class XooPaypalPayment
 				
 				
 		
-		add_action( 'init', array($this, 'handle_init' ) );
-		
+		add_action( 'init', array($this, 'handle_init' ) );		
 		add_action( 'wp_ajax_package_add_new', array( $this, 'package_add_new' ));	
 		add_action( 'wp_ajax_get_packages_ajax', array( $this, 'get_packages_ajax' ));
 		add_action( 'wp_ajax_package_delete', array( $this, 'package_delete' ));
@@ -131,9 +130,7 @@ class XooPaypalPayment
 			$req .= "&$key=$encodedvalue";
 		}
 		
-		$fullipn =$this->Array2Str(" : ", "\n", $fullipnA);
-		
-				
+		$fullipn =$this->Array2Str(" : ", "\n", $fullipnA);				
 		$response = $this->curl_call($req);
 		
 		// Assign posted variables to local variables
@@ -153,8 +150,7 @@ class XooPaypalPayment
 		if (strcmp ($response, "VERIFIED") == 0)		
 	    {			
 			
-			/*VALID TRANSACTION*/
-			
+			/*VALID TRANSACTION*/			
 			$errors = "";
 			
 			// Get Order

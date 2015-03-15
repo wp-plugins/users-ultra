@@ -105,8 +105,7 @@ class XooOrder
 		$sql .= " RIGHT JOIN ".$wpdb->prefix ."users  usu ON (usu.ID = ord.order_user_id)";		
 		$sql .= " WHERE ord.order_id <> 0 AND usu.ID = ord.order_user_id ORDER BY ord.order_id desc  LIMIT $howmany";				
 		$orders = $wpdb->get_results($sql );		
-		return $orders ;
-		
+		return $orders ;		
 	
 	}
 	
