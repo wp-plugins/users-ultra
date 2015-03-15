@@ -394,7 +394,7 @@ Initial release.
 
 == Changelog ==
 
- 1.4.69(03-14-2015) =
+= 1.4.69(03-14-2015) =
 * Improvement - Issue with Paypal IPN 
 * Improvement - All Language files were updated. 
 
