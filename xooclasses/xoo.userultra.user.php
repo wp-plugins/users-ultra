@@ -686,11 +686,9 @@ class XooUserUser {
 				$count++;
 				$user_id = $user->ID;
 				update_user_meta ($user_id, 'usersultra_account_status', 'active');
-				update_user_meta ($user_id, 'display_name', $user->display_name);
+				update_user_meta ($user_id, 'display_name', $user->display_name);				
 				
-				
-			}
-					
+			}					
 		
 		}
 		
@@ -724,9 +722,7 @@ class XooUserUser {
 			
 			return $res_total->total;
 			
-		}
-		
-	
+		}	
 	
 	}
 	
@@ -792,8 +788,7 @@ class XooUserUser {
 				
 			
 			} 
-			
-		
+					
 		echo $html;
 		die();	
 		
@@ -878,8 +873,7 @@ class XooUserUser {
 		global $wpdb,  $xoouserultra;
 		
 		
-		$users = $this->get_pending_activation($howmany);
-		
+		$users = $this->get_pending_activation($howmany);		
 		$html = '<h3>'.__('Pending Confirmation','xoousers').'</h3>';
 		
 		$html .= '<div id="uultra-user-acti-pending-noti"></div>';
@@ -946,10 +940,8 @@ class XooUserUser {
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
-		$user_id = $_POST["user_id"];
-		
-		update_user_meta ($user_id, 'usersultra_account_status', 'active');
-		
+		$user_id = $_POST["user_id"];		
+		update_user_meta ($user_id, 'usersultra_account_status', 'active');		
 		$user = get_user_by( 'id', $user_id );
 		
 	
@@ -1002,8 +994,7 @@ class XooUserUser {
 		
 		update_user_meta ($user_id, 'usersultra_account_status', 'active');
 		
-		$user = get_user_by( 'id', $user_id );
-		
+		$user = get_user_by( 'id', $user_id );	
 	
 		
 		$u_email=$user->user_email;
@@ -1164,8 +1155,6 @@ class XooUserUser {
 		 // Create the WP_User_Query object
 		$user_query = new WP_User_Query( $args );
 		 
-		// Get the results//
-		//$users = $user_query->get_results();
 		
 		$total = $user_query->get_total();
 		return $total;
@@ -1250,8 +1239,7 @@ class XooUserUser {
 				
 				}else{
 					
-					//email available
-					
+					//email available					
 				}
 				
 			
@@ -1323,8 +1311,7 @@ class XooUserUser {
 		$PASSWORD_LENGHT =7;
 		
 		$password1 = $_POST['p1'];
-		$password2 = $_POST['p2'];
-		
+		$password2 = $_POST['p2'];		
 		$html = '';
 		$validation = '';
 		
@@ -1366,8 +1353,7 @@ class XooUserUser {
 					wp_cache_delete($user_id, 'users');
 					wp_cache_delete($username, 'userlogins'); // This might be an issue for how you are doing it. Presumably you'd need to run this for the ORIGINAL user login name, not the new one.
 					wp_logout();
-					wp_signon(array('user_login' => $user_login, 'user_password' => $password1));
-					
+					wp_signon(array('user_login' => $user_login, 'user_password' => $password1));					
 														
 				}else{
 					
@@ -1394,8 +1380,7 @@ class XooUserUser {
 				
 		//check redir		
 		$account_page_id = get_option('xoousersultra_my_account_page');
-		$my_account_url = get_permalink($account_page_id);
-		
+		$my_account_url = get_permalink($account_page_id);		
 		
 		
 		$PASSWORD_LENGHT =7;
@@ -1486,8 +1471,7 @@ class XooUserUser {
 				  
 				  //user found 				  
 				   if(!$this->is_active($user_id) && !is_super_admin($user_id))
-				   {
-					   					   
+				   {					   					   
 					   //user is not active					   
 					   $html = __('Your account is not active yet.','xoousers');				   
 					   $noactive = true;
@@ -1518,8 +1502,7 @@ class XooUserUser {
 				  //user found 
 				  
 				   if(!$this->is_active($user_id) && !is_super_admin($user_id))
-				   {
-					   					   
+				   {					   					   
 					   //user is not active					   
 					   $html = __('Your account is not active yet.','xoousers');				   
 					   $noactive = true;
@@ -1590,8 +1573,7 @@ class XooUserUser {
 		{
 			
 			
-		$html .= '<div class="xoouserultra-clear"></div>';
-				
+		$html .= '<div class="xoouserultra-clear"></div>';				
 		$html .= '<form action="" method="post" id="xoouserultra-profile-edition-form">';
 
 		$array = get_option('usersultra_profile_fields');
@@ -1647,8 +1629,7 @@ class XooUserUser {
 			}
 			
 			
-			if ( $type == 'usermeta' && $deleted == 0 && $private == 0)
-			
+			if ( $type == 'usermeta' && $deleted == 0 && $private == 0)			
 			 {
 				
 				$html .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
@@ -1757,7 +1738,6 @@ class XooUserUser {
 							if (isset($array[$key]['choices']))
 							{
 								
-							  //$loop = explode(PHP_EOL, $choices);
 							   $loop = $xoouserultra->uultra_one_line_checkbox_on_window_fix($choices);
 							}
 							if (isset($loop) && $loop[0] != '') {
@@ -1771,8 +1751,6 @@ class XooUserUser {
 								  $option = trim($option);
 									$html .= '<div class="xoouserultra-checkbox"><input type="checkbox" class="'.$required_class.'" title="'.$name.'" name="'.$meta.'[]" '.$disabled.' id="uultra_multi_box_'.$meta.'_'.$counter.'" value="'.$option.'" ';
 									
-							       // if(is_array($this->get_user_meta($meta)))
-								   
 								   
 									$values = explode(', ', $this->get_user_meta($meta));
 									
@@ -2056,9 +2034,7 @@ class XooUserUser {
 			}elseif ($nice_url_type == 'display_name'){
 				
 				$formated_user_login = get_user_meta( $user_id, 'display_name', true);					
-				$formated_user_login = str_replace(' ','-',$formated_user_login);
-			
-							
+				$formated_user_login = str_replace(' ','-',$formated_user_login);							
 				
 			}
 			

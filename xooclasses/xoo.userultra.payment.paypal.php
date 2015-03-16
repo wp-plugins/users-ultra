@@ -335,8 +335,7 @@ class XooPaypalPayment
 		$package_type= $package->package_type;
 		
 		$package_period= $package->package_number_of_times;
-		$package_time_period= $package->package_time_period;
-		
+		$package_time_period= $package->package_time_period;		
 		
 		$paypalcustom = $transaction_key;
 				
