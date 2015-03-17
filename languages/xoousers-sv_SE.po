@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite v1.3.72\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-15 02:18-0300\n"
-"PO-Revision-Date: 2015-03-15 02:18-0300\n"
+"POT-Creation-Date: 2015-03-17 15:26-0300\n"
+"PO-Revision-Date: 2015-03-17 15:26-0300\n"
 "Last-Translator: \n"
 "Language-Team: Elger Lindgren <elger@20x.se>\n"
 "Language: sv_SE\n"
@@ -26,7 +26,7 @@ msgstr "Hantera Fotokategorier"
 
 # @ xoousers
 #: addons/photocategories/admin/admin.php:89 admin/tabs/membership.php:61
-#: xooclasses/xoo.userultra.payment.paypal.php:593
+#: xooclasses/xoo.userultra.payment.paypal.php:601
 msgid "Name:"
 msgstr "Namn:"
 
@@ -72,9 +72,9 @@ msgstr "Namn: "
 # @ xoousers
 #: addons/photocategories/admin/panels/manage.php:24
 #: admin/tabs/membership.php:147
-#: xooclasses/xoo.userultra.payment.paypal.php:741
-#: xooclasses/xoo.userultra.user.php:778 xooclasses/xoo.userultra.user.php:849
-#: xooclasses/xoo.userultra.user.php:918
+#: xooclasses/xoo.userultra.payment.paypal.php:749
+#: xooclasses/xoo.userultra.user.php:774 xooclasses/xoo.userultra.user.php:844
+#: xooclasses/xoo.userultra.user.php:912
 msgid "Confirm"
 msgstr "Bekräfta"
 
@@ -86,7 +86,7 @@ msgstr "#"
 # @ xoousers
 #: addons/photocategories/admin/panels/manage.php:44
 #: templates/basic/dashboard.php:404 templates/basic/dashboard.php:824
-#: xooclasses/xoo.userultra.payment.paypal.php:772
+#: xooclasses/xoo.userultra.payment.paypal.php:780
 #: xooclasses/xoo.userultra.photos.php:1560
 #: xooclasses/xoo.userultra.photos.php:1700
 #: xooclasses/xoo.userultra.photos.php:1821
@@ -104,14 +104,14 @@ msgstr "Åtgärder"
 #: xooclasses/xoo.userultra.mymessage.php:931
 #: xooclasses/xoo.userultra.mymessage.php:1061
 #: xooclasses/xoo.userultra.mymessage.php:1113
-#: xooclasses/xoo.userultra.payment.paypal.php:802
-#: xooclasses/xoo.userultra.user.php:917
+#: xooclasses/xoo.userultra.payment.paypal.php:810
+#: xooclasses/xoo.userultra.user.php:911
 msgid "Delete"
 msgstr "Radera"
 
 # @ xoousers
 #: addons/photocategories/admin/panels/manage.php:71 admin/tabs/fields.php:348
-#: xooclasses/xoo.userultra.payment.paypal.php:802
+#: xooclasses/xoo.userultra.payment.paypal.php:810
 #: xooclasses/xoo.userultra.publisher.php:480
 msgid "Edit"
 msgstr "Redigera"
@@ -141,7 +141,7 @@ msgid "You can write some custom CSS style coding here"
 msgstr ""
 
 # @ xoousers
-#: admin/tabs/customizer.php:38 admin/tabs/gateway.php:69
+#: admin/tabs/customizer.php:38 admin/tabs/gateway.php:83
 #: admin/tabs/mail.php:213 admin/tabs/membership.php:38
 #: admin/tabs/permalinks.php:148 admin/tabs/settings.php:918
 msgid "Save Changes"
@@ -200,8 +200,8 @@ msgstr "Klicka här för att åteskapa förinställda fält"
 
 # @ xoousers
 #: admin/tabs/fields.php:41 admin/tabs/membership.php:103
-#: xooclasses/xoo.userultra.payment.paypal.php:608
-#: xooclasses/xoo.userultra.payment.paypal.php:776
+#: xooclasses/xoo.userultra.payment.paypal.php:616
+#: xooclasses/xoo.userultra.payment.paypal.php:784
 #: xooclasses/xoo.userultra.photos.php:1828
 msgid "Type"
 msgstr "Typ"
@@ -310,11 +310,11 @@ msgstr "Fältet är social"
 #: admin/tabs/fields.php:488 admin/tabs/fields.php:500
 #: admin/tabs/fields.php:520 admin/tabs/fields.php:533
 #: admin/tabs/fields.php:549 admin/tabs/fields.php:585
-#: admin/tabs/membership.php:113 admin/tabs/settings.php:59
-#: admin/tabs/settings.php:73 admin/tabs/settings.php:86
-#: admin/tabs/settings.php:99 admin/tabs/settings.php:112
-#: admin/tabs/settings.php:265 admin/tabs/settings.php:304
-#: xooclasses/xoo.userultra.payment.paypal.php:686
+#: admin/tabs/gateway.php:29 admin/tabs/membership.php:113
+#: admin/tabs/settings.php:59 admin/tabs/settings.php:73
+#: admin/tabs/settings.php:86 admin/tabs/settings.php:99
+#: admin/tabs/settings.php:112 admin/tabs/settings.php:265
+#: admin/tabs/settings.php:304 xooclasses/xoo.userultra.payment.paypal.php:694
 msgid "No"
 msgstr "Nej"
 
@@ -326,11 +326,11 @@ msgstr "Nej"
 #: admin/tabs/fields.php:485 admin/tabs/fields.php:503
 #: admin/tabs/fields.php:517 admin/tabs/fields.php:536
 #: admin/tabs/fields.php:552 admin/tabs/fields.php:588
-#: admin/tabs/membership.php:112 admin/tabs/settings.php:60
-#: admin/tabs/settings.php:74 admin/tabs/settings.php:87
-#: admin/tabs/settings.php:100 admin/tabs/settings.php:113
-#: admin/tabs/settings.php:264 admin/tabs/settings.php:305
-#: xooclasses/xoo.userultra.payment.paypal.php:685
+#: admin/tabs/gateway.php:30 admin/tabs/membership.php:112
+#: admin/tabs/settings.php:60 admin/tabs/settings.php:74
+#: admin/tabs/settings.php:87 admin/tabs/settings.php:100
+#: admin/tabs/settings.php:113 admin/tabs/settings.php:264
+#: admin/tabs/settings.php:305 xooclasses/xoo.userultra.payment.paypal.php:693
 msgid "Yes"
 msgstr "Ja"
 
@@ -447,7 +447,7 @@ msgstr "Sätt in nytt fält"
 #: admin/tabs/fields.php:265 admin/tabs/fields.php:664
 #: admin/tabs/membership.php:146 templates/basic/dashboard.php:415
 #: templates/basic/dashboard.php:850
-#: xooclasses/xoo.userultra.payment.paypal.php:740
+#: xooclasses/xoo.userultra.payment.paypal.php:748
 msgid "Cancel"
 msgstr "Ångra"
 
@@ -586,7 +586,7 @@ msgstr "Ändra ikon"
 
 # @ xoousers
 #: admin/tabs/fields.php:663 xooclasses/xoo.userultra.publisher.php:212
-#: xooclasses/xoo.userultra.user.php:1823
+#: xooclasses/xoo.userultra.user.php:1801
 msgid "Update"
 msgstr "Uppdatera"
 
@@ -627,53 +627,65 @@ msgid "If checked, Paypal will be activated as payment method"
 msgstr "Om markerat, kommer PayPal att aktiveras som betalningsmetod"
 
 # @ xoousers
-#: admin/tabs/gateway.php:26
+#: admin/tabs/gateway.php:27
+#, fuzzy
+msgid "The Paypal IPN response will be sent to the admin"
+msgstr "Detta meddelande har skickats till en administratör."
+
+#: admin/tabs/gateway.php:33 admin/tabs/gateway.php:34
+msgid ""
+"If 'yes' the admin will receive the whole Paypal IPN response. This helps to "
+"troubleshoot issues."
+msgstr ""
+
+# @ xoousers
+#: admin/tabs/gateway.php:40
 msgid "Paypal Email Address"
 msgstr "E-postadress för PayPal"
 
 # @ xoousers
-#: admin/tabs/gateway.php:27 admin/tabs/gateway.php:28
+#: admin/tabs/gateway.php:41 admin/tabs/gateway.php:42
 msgid "Enter email address associated to your paypal account."
 msgstr "Ange e-postadressen som är kopplad till ditt PayPal-konto."
 
 # @ xoousers
-#: admin/tabs/gateway.php:34
+#: admin/tabs/gateway.php:48
 msgid "Paypal Sandbox Email Address"
 msgstr "E-postadress för PayPals Sandbox"
 
 # @ xoousers
-#: admin/tabs/gateway.php:35 admin/tabs/gateway.php:36
+#: admin/tabs/gateway.php:49 admin/tabs/gateway.php:50
 msgid "This is not used for production, you can use this email for testing."
 msgstr ""
 "Detta används inte för produktion, du kan använda denna e-post för att testa."
 
 # @ xoousers
-#: admin/tabs/gateway.php:42 admin/tabs/membership.php:20
+#: admin/tabs/gateway.php:56 admin/tabs/membership.php:20
 msgid "Currency"
 msgstr "Valuta"
 
 # @ xoousers
-#: admin/tabs/gateway.php:43 admin/tabs/gateway.php:44
+#: admin/tabs/gateway.php:57 admin/tabs/gateway.php:58
 msgid "Please enter the currency, example USD."
 msgstr "Ange valutan, exempelvis USD."
 
 # @ xoousers
-#: admin/tabs/gateway.php:50
+#: admin/tabs/gateway.php:64
 msgid "Mode"
 msgstr "Läge"
 
 # @ xoousers
-#: admin/tabs/gateway.php:52
+#: admin/tabs/gateway.php:66
 msgid "Production Mode"
 msgstr "Produktionsläge"
 
 # @ xoousers
-#: admin/tabs/gateway.php:53
+#: admin/tabs/gateway.php:67
 msgid "Test Mode (Sandbox)"
 msgstr "Testläge (Sandbox)"
 
 # @ xoousers
-#: admin/tabs/gateway.php:56 admin/tabs/gateway.php:57
+#: admin/tabs/gateway.php:70 admin/tabs/gateway.php:71
 msgid "Select Mode"
 msgstr "Välj läge"
 
@@ -737,14 +749,14 @@ msgstr "Inloggningsformulär"
 # @ xoousers
 #: admin/tabs/help.php:30 templates/basic/dashboard.php:676
 #: xooclasses/xoo.userultra.class.php:728
-#: xooclasses/xoo.userultra.user.php:2241
-#: xooclasses/xoo.userultra.user.php:2245
+#: xooclasses/xoo.userultra.user.php:2217
+#: xooclasses/xoo.userultra.user.php:2221
 msgid "My Account"
 msgstr "Mitt konto"
 
 # @ xoousers
-#: admin/tabs/help.php:33 xooclasses/xoo.userultra.user.php:2381
-#: xooclasses/xoo.userultra.user.php:2725
+#: admin/tabs/help.php:33 xooclasses/xoo.userultra.user.php:2357
+#: xooclasses/xoo.userultra.user.php:2701
 msgid "Logout"
 msgstr "Logga ut"
 
@@ -1264,16 +1276,16 @@ msgid "Latest "
 msgstr "5 senaste transaktionenra"
 
 # @ xoousers
-#: admin/tabs/main.php:204 xooclasses/xoo.userultra.user.php:754
-#: xooclasses/xoo.userultra.user.php:825 xooclasses/xoo.userultra.user.php:893
+#: admin/tabs/main.php:204 xooclasses/xoo.userultra.user.php:750
+#: xooclasses/xoo.userultra.user.php:820 xooclasses/xoo.userultra.user.php:887
 msgid "Avatar"
 msgstr "Avatar"
 
 # @ xoousers
 #: admin/tabs/main.php:205 xooclasses/xoo.userultra.class.php:804
 #: xooclasses/xoo.userultra.class.php:850
-#: xooclasses/xoo.userultra.user.php:755 xooclasses/xoo.userultra.user.php:826
-#: xooclasses/xoo.userultra.user.php:894
+#: xooclasses/xoo.userultra.user.php:751 xooclasses/xoo.userultra.user.php:821
+#: xooclasses/xoo.userultra.user.php:888
 msgid "Username"
 msgstr "Användarnamn"
 
@@ -1370,73 +1382,73 @@ msgstr "Betalningsperiod:"
 
 # @ xoousers
 #: admin/tabs/membership.php:96
-#: xooclasses/xoo.userultra.payment.paypal.php:665
+#: xooclasses/xoo.userultra.payment.paypal.php:673
 msgid "Months"
 msgstr "Månader"
 
 # @ xoousers
 #: admin/tabs/membership.php:97
-#: xooclasses/xoo.userultra.payment.paypal.php:666
+#: xooclasses/xoo.userultra.payment.paypal.php:674
 msgid "Weeks"
 msgstr "Veckor"
 
 # @ xoousers
 #: admin/tabs/membership.php:98
-#: xooclasses/xoo.userultra.payment.paypal.php:667
+#: xooclasses/xoo.userultra.payment.paypal.php:675
 msgid "Days"
 msgstr "Dagar"
 
 # @ xoousers
 #: admin/tabs/membership.php:99
-#: xooclasses/xoo.userultra.payment.paypal.php:668
+#: xooclasses/xoo.userultra.payment.paypal.php:676
 msgid "Years"
 msgstr "År"
 
 # @ xoousers
 #: admin/tabs/membership.php:105
-#: xooclasses/xoo.userultra.payment.paypal.php:619
+#: xooclasses/xoo.userultra.payment.paypal.php:627
 msgid "Recurring"
 msgstr "Återkommande"
 
 # @ xoousers
 #: admin/tabs/membership.php:106
-#: xooclasses/xoo.userultra.payment.paypal.php:620
+#: xooclasses/xoo.userultra.payment.paypal.php:628
 msgid "One-Time"
 msgstr "Engångs"
 
 # @ xoousers
 #: admin/tabs/membership.php:110
-#: xooclasses/xoo.userultra.payment.paypal.php:674
+#: xooclasses/xoo.userultra.payment.paypal.php:682
 msgid "Requires Admin Moderation:"
 msgstr "Kräver administratörsgodkännande:"
 
 # @ xoousers
 #: admin/tabs/membership.php:118
-#: xooclasses/xoo.userultra.payment.paypal.php:711
+#: xooclasses/xoo.userultra.payment.paypal.php:719
 msgid "Pricing Table Customization"
 msgstr "Anpassa pristabell"
 
 # @ xoousers
 #: admin/tabs/membership.php:121
-#: xooclasses/xoo.userultra.payment.paypal.php:714
+#: xooclasses/xoo.userultra.payment.paypal.php:722
 msgid "Name/Price Font Color"
 msgstr "Namn/Pris Typsnittsfärg"
 
 # @ xoousers
 #: admin/tabs/membership.php:126
-#: xooclasses/xoo.userultra.payment.paypal.php:719
+#: xooclasses/xoo.userultra.payment.paypal.php:727
 msgid "Name/Price Background Color"
 msgstr "Namn/Pris Bakgrunsfärg"
 
 # @ xoousers
 #: admin/tabs/membership.php:132
-#: xooclasses/xoo.userultra.payment.paypal.php:725
+#: xooclasses/xoo.userultra.payment.paypal.php:733
 msgid "Sign Up Button Text Color"
 msgstr "Registreringsknapp Textfärg"
 
 # @ xoousers
 #: admin/tabs/membership.php:138
-#: xooclasses/xoo.userultra.payment.paypal.php:731
+#: xooclasses/xoo.userultra.payment.paypal.php:739
 #, fuzzy
 msgid "Sign Up Button Background Color"
 msgstr "Registreringsknapp Bakgrunddsfärg"
@@ -2439,7 +2451,7 @@ msgid "Default Status"
 msgstr "Förvald Status"
 
 # @ xoousers
-#: admin/tabs/settings.php:251 xooclasses/xoo.userultra.user.php:5291
+#: admin/tabs/settings.php:251 xooclasses/xoo.userultra.user.php:5267
 msgid "Pending"
 msgstr "Väntande"
 
@@ -3410,8 +3422,8 @@ msgid "My Latest Photos:"
 msgstr "Senaste bilder:"
 
 # @ xoousers
-#: templates/basic/dashboard.php:192 xooclasses/xoo.userultra.user.php:2351
-#: xooclasses/xoo.userultra.user.php:2355
+#: templates/basic/dashboard.php:192 xooclasses/xoo.userultra.user.php:2327
+#: xooclasses/xoo.userultra.user.php:2331
 msgid "My Friends"
 msgstr "Mina vänner"
 
@@ -3426,8 +3438,8 @@ msgstr ""
 "begränsat innehåll"
 
 # @ xoousers
-#: templates/basic/dashboard.php:275 xooclasses/xoo.userultra.user.php:2371
-#: xooclasses/xoo.userultra.user.php:2375
+#: templates/basic/dashboard.php:275 xooclasses/xoo.userultra.user.php:2347
+#: xooclasses/xoo.userultra.user.php:2351
 msgid "My Posts"
 msgstr "Mina inlägg"
 
@@ -3438,8 +3450,8 @@ msgstr "Här kan du hantera dina inlägg. "
 
 # @ xoousers
 #: templates/basic/dashboard.php:319 templates/basic/dashboard.php:354
-#: xooclasses/xoo.userultra.user.php:2282
-#: xooclasses/xoo.userultra.user.php:2286
+#: xooclasses/xoo.userultra.user.php:2258
+#: xooclasses/xoo.userultra.user.php:2262
 msgid "My Orders"
 msgstr "Mina beställningar"
 
@@ -3471,8 +3483,8 @@ msgstr "Radera detta galleri?"
 
 # @ xoousers
 #: templates/basic/dashboard.php:409
-#: xooclasses/xoo.userultra.payment.paypal.php:597
-#: xooclasses/xoo.userultra.payment.paypal.php:773
+#: xooclasses/xoo.userultra.payment.paypal.php:605
+#: xooclasses/xoo.userultra.payment.paypal.php:781
 #: xooclasses/xoo.userultra.photos.php:1564
 #: xooclasses/xoo.userultra.photos.php:1704
 msgid "Description"
@@ -3571,8 +3583,8 @@ msgstr ""
 
 # @ xoousers
 #: templates/basic/dashboard.php:749 xooclasses/xoo.userultra.admin.php:52
-#: xooclasses/xoo.userultra.user.php:2255
-#: xooclasses/xoo.userultra.user.php:2259
+#: xooclasses/xoo.userultra.user.php:2231
+#: xooclasses/xoo.userultra.user.php:2235
 msgid "Settings"
 msgstr "Inställningar "
 
@@ -3613,8 +3625,8 @@ msgstr "KLICKA HÄR FÖR ATT UPPDATERA DIN E-POST"
 
 # @ xoousers
 #: templates/basic/dashboard.php:811 templates/basic/profile.php:174
-#: xooclasses/xoo.userultra.user.php:2334
-#: xooclasses/xoo.userultra.user.php:2338
+#: xooclasses/xoo.userultra.user.php:2310
+#: xooclasses/xoo.userultra.user.php:2314
 msgid "My Videos"
 msgstr "Mina Videor"
 
@@ -3695,8 +3707,8 @@ msgstr "Bilder endast tillgängliga för registrerade användare"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.admin.php:50
-#: xooclasses/xoo.userultra.user.php:2201
-#: xooclasses/xoo.userultra.user.php:2205
+#: xooclasses/xoo.userultra.user.php:2177
+#: xooclasses/xoo.userultra.user.php:2181
 msgid "Dashboard"
 msgstr "Instrumentbräda"
 
@@ -4532,7 +4544,7 @@ msgstr "Skriv ditt lösenord igen."
 
 # @ xoousers
 #: xooclasses/xoo.userultra.class.php:2321
-#: xooclasses/xoo.userultra.user.php:1804
+#: xooclasses/xoo.userultra.user.php:1782
 msgid "Hide from Public"
 msgstr "Göm från publikt"
 
@@ -4802,11 +4814,11 @@ msgstr "Avsändare"
 #: xooclasses/xoo.userultra.mymessage.php:551
 #: xooclasses/xoo.userultra.mymessage.php:921
 #: xooclasses/xoo.userultra.mymessage.php:944
-#: xooclasses/xoo.userultra.payment.paypal.php:778
+#: xooclasses/xoo.userultra.payment.paypal.php:786
 #: xooclasses/xoo.userultra.socials.php:489
 #: xooclasses/xoo.userultra.socials.php:595
-#: xooclasses/xoo.userultra.user.php:759 xooclasses/xoo.userultra.user.php:830
-#: xooclasses/xoo.userultra.user.php:898
+#: xooclasses/xoo.userultra.user.php:755 xooclasses/xoo.userultra.user.php:825
+#: xooclasses/xoo.userultra.user.php:892
 msgid "Action"
 msgstr "Åtgärd"
 
@@ -4944,73 +4956,73 @@ msgid "Package"
 msgstr "Paket"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:460
+#: xooclasses/xoo.userultra.payment.paypal.php:468
 msgid "You have no packages yet."
 msgstr "Du har inga paket ännu."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:589
+#: xooclasses/xoo.userultra.payment.paypal.php:597
 msgid "Edit Package"
 msgstr "Ändra paket"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:603
-#: xooclasses/xoo.userultra.payment.paypal.php:774
+#: xooclasses/xoo.userultra.payment.paypal.php:611
+#: xooclasses/xoo.userultra.payment.paypal.php:782
 msgid "Price"
 msgstr "Pris"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:628
+#: xooclasses/xoo.userultra.payment.paypal.php:636
 msgid "Every"
 msgstr "Varje"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:650
+#: xooclasses/xoo.userultra.payment.paypal.php:658
 msgid "Billing Period"
 msgstr "Betalningsperiod"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:771
+#: xooclasses/xoo.userultra.payment.paypal.php:779
 msgid "ID"
 msgstr "iD"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:775
+#: xooclasses/xoo.userultra.payment.paypal.php:783
 msgid "Period"
 msgstr "Period"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:788
+#: xooclasses/xoo.userultra.payment.paypal.php:796
 msgid " month(s)"
 msgstr "månad(er)"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:789
+#: xooclasses/xoo.userultra.payment.paypal.php:797
 msgid " week(s)"
 msgstr "vecka/veckor"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:790
+#: xooclasses/xoo.userultra.payment.paypal.php:798
 msgid " day(s)"
 msgstr "dag(ar)"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:791
+#: xooclasses/xoo.userultra.payment.paypal.php:799
 msgid " year(s)"
 msgstr "år"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:799
+#: xooclasses/xoo.userultra.payment.paypal.php:807
 msgid "every "
 msgstr "varje "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:819
+#: xooclasses/xoo.userultra.payment.paypal.php:827
 msgid "There are no packages yet."
 msgstr "Det finns inga paket ännu."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.payment.paypal.php:865
+#: xooclasses/xoo.userultra.payment.paypal.php:873
 msgid "The Package has been updated"
 msgstr "Paketet har uppdaterats"
 
@@ -5026,23 +5038,23 @@ msgstr "Filtrera enligt kategori: "
 
 # @ xoousers
 #: xooclasses/xoo.userultra.photos.php:370
-#: xooclasses/xoo.userultra.user.php:4436
+#: xooclasses/xoo.userultra.user.php:4412
 msgid "Total found: "
 msgstr "Hittade total: "
 
 # @ xoousers
 #: xooclasses/xoo.userultra.photos.php:648
-#: xooclasses/xoo.userultra.user.php:4311
-#: xooclasses/xoo.userultra.user.php:5139
-#: xooclasses/xoo.userultra.user.php:5212
+#: xooclasses/xoo.userultra.user.php:4287
+#: xooclasses/xoo.userultra.user.php:5115
+#: xooclasses/xoo.userultra.user.php:5188
 msgid "Previous"
 msgstr "Föregående"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.photos.php:649
-#: xooclasses/xoo.userultra.user.php:4312
-#: xooclasses/xoo.userultra.user.php:5140
-#: xooclasses/xoo.userultra.user.php:5213
+#: xooclasses/xoo.userultra.user.php:4288
+#: xooclasses/xoo.userultra.user.php:5116
+#: xooclasses/xoo.userultra.user.php:5189
 msgid "Next"
 msgstr "Nästa"
 
@@ -5132,7 +5144,7 @@ msgstr "Släpp filer här"
 # @ default
 #: xooclasses/xoo.userultra.photos.php:2255
 #: xooclasses/xoo.userultra.publisher.php:1044
-#: xooclasses/xoo.userultra.user.php:4840
+#: xooclasses/xoo.userultra.user.php:4816
 msgctxt "Uploader: Drop files here - or - Select Files"
 msgid "or"
 msgstr "eller"
@@ -5146,7 +5158,7 @@ msgstr "-- Välj --"
 # @ xoousers
 #: xooclasses/xoo.userultra.photos.php:2287
 #: xooclasses/xoo.userultra.publisher.php:1081
-#: xooclasses/xoo.userultra.user.php:4875
+#: xooclasses/xoo.userultra.user.php:4851
 msgid "Allowed Files"
 msgstr "Tillåtna filer"
 
@@ -5303,7 +5315,7 @@ msgstr "-- Välj --"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.publisher.php:1140
-#: xooclasses/xoo.userultra.user.php:4930
+#: xooclasses/xoo.userultra.user.php:4906
 msgid "You may only upload one image at a time!"
 msgstr "Du kan bara ladda upp en bild åt gången!"
 
@@ -5510,7 +5522,7 @@ msgstr "Godkänn"
 
 # @ xoousers
 #: xooclasses/xoo.userultra.socials.php:512
-#: xooclasses/xoo.userultra.user.php:778 xooclasses/xoo.userultra.user.php:849
+#: xooclasses/xoo.userultra.user.php:774 xooclasses/xoo.userultra.user.php:844
 msgid "Deny"
 msgstr "Neka"
 
@@ -5555,122 +5567,122 @@ msgid "--- Finished ---  "
 msgstr "--- Färdig ---  "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:697
+#: xooclasses/xoo.userultra.user.php:695
 #, fuzzy
 msgid " SUCCESS! The sync process has been finished. "
 msgstr " SUCCÉ! Synkroniseringsprocessen är klar.  användare blev uppdaterade "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:744
+#: xooclasses/xoo.userultra.user.php:740
 msgid "Pending Payment"
 msgstr "Väntande betalning"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:757 xooclasses/xoo.userultra.user.php:828
-#: xooclasses/xoo.userultra.user.php:896
+#: xooclasses/xoo.userultra.user.php:753 xooclasses/xoo.userultra.user.php:823
+#: xooclasses/xoo.userultra.user.php:890
 msgid "Email"
 msgstr "Epost"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:758 xooclasses/xoo.userultra.user.php:829
-#: xooclasses/xoo.userultra.user.php:897
+#: xooclasses/xoo.userultra.user.php:754 xooclasses/xoo.userultra.user.php:824
+#: xooclasses/xoo.userultra.user.php:891
 msgid "Registered"
 msgstr "Registrerad"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:791
+#: xooclasses/xoo.userultra.user.php:787
 msgid "There are no pending payment users."
 msgstr "Det finns inga väntande användarbetalningar."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:815
+#: xooclasses/xoo.userultra.user.php:810
 msgid "Pending Moderation"
 msgstr "Avvaktar moderering"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:862
+#: xooclasses/xoo.userultra.user.php:857
 msgid "There are no pending moderation users."
 msgstr "Det finns inga väntande användarmodereringar."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:883
+#: xooclasses/xoo.userultra.user.php:877
 msgid "Pending Confirmation"
 msgstr "Väntande godkännanden"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:917
+#: xooclasses/xoo.userultra.user.php:911
 msgid "Send Link"
 msgstr "Skicka länk"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:930
+#: xooclasses/xoo.userultra.user.php:924
 msgid "There are no pending confirmation users."
 msgstr "Det finns inga väntande användargodkännanden."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:963
-#: xooclasses/xoo.userultra.user.php:1015
+#: xooclasses/xoo.userultra.user.php:955
+#: xooclasses/xoo.userultra.user.php:1006
 msgid "User has been activated"
 msgstr "Användare har aktiverats"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:986
+#: xooclasses/xoo.userultra.user.php:978
 msgid "Activation link sent"
 msgstr "Aktiveringslänk skickad"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1041
+#: xooclasses/xoo.userultra.user.php:1032
 msgid "User has been deleted"
 msgstr "Användare har raderats"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1214
+#: xooclasses/xoo.userultra.user.php:1203
 msgid " ERROR! Please type your new email "
 msgstr "FEL! Skriv in din nya E-postadress "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1220
+#: xooclasses/xoo.userultra.user.php:1209
 msgid " ERROR! Please type a valid email address "
 msgstr "FEL! Var vänlig ange en aktuell e-postadress "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1239
+#: xooclasses/xoo.userultra.user.php:1228
 msgid " ERROR! You haven't changed your email. "
 msgstr "FEL! Du har inte ändrat din E-postadress. "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1248
+#: xooclasses/xoo.userultra.user.php:1237
 msgid " ERROR! The email is in use already "
 msgstr "FEL! E-postadressen används redan "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1288
+#: xooclasses/xoo.userultra.user.php:1276
 #, fuzzy
 msgid " Success!! Your email account has been changed to : "
 msgstr " Succé!! Ditt E-postkonto har ändrats till :   "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1335
-#: xooclasses/xoo.userultra.user.php:1414
+#: xooclasses/xoo.userultra.user.php:1322
+#: xooclasses/xoo.userultra.user.php:1399
 msgid " ERROR! Password must be identical "
 msgstr "FEL! Lösenorden måste vara lika"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1341
-#: xooclasses/xoo.userultra.user.php:1420
+#: xooclasses/xoo.userultra.user.php:1328
+#: xooclasses/xoo.userultra.user.php:1405
 msgid " ERROR! Password should contain at least 7 alphanumeric characters "
 msgstr "FEL! Lösenordet måste innehålla minst 7 alfanumeriska tecken "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1363
-#: xooclasses/xoo.userultra.user.php:1444
+#: xooclasses/xoo.userultra.user.php:1350
+#: xooclasses/xoo.userultra.user.php:1429
 #, fuzzy
 msgid " Success!! The new password has been sent to "
 msgstr ""
 "Detta meddelande kommer att skickas till användaren när lösenordet har "
 "återställts."
 
-#: xooclasses/xoo.userultra.user.php:1446
+#: xooclasses/xoo.userultra.user.php:1431
 #, fuzzy
 msgid "<a href=\""
 msgstr ""
@@ -5678,147 +5690,147 @@ msgstr ""
 "a>för att besöka Support Forumet"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1452
+#: xooclasses/xoo.userultra.user.php:1437
 msgid " ERROR! Invalid reset link "
 msgstr "FEL! Ogiltig återställningslänk "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1483
+#: xooclasses/xoo.userultra.user.php:1468
 msgid "Email not found"
 msgstr "Epost hittades inte"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1492
-#: xooclasses/xoo.userultra.user.php:1524
+#: xooclasses/xoo.userultra.user.php:1476
+#: xooclasses/xoo.userultra.user.php:1507
 msgid "Your account is not active yet."
 msgstr "Ditt konto är inte aktivt ännu."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1514
+#: xooclasses/xoo.userultra.user.php:1498
 msgid "User not found"
 msgstr "Användare hittades inte"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:1568
+#: xooclasses/xoo.userultra.user.php:1551
 msgid " A reset link has been sent to your email "
 msgstr "En återställningslänk har skickats till din e-post "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2214
-#: xooclasses/xoo.userultra.user.php:2218
+#: xooclasses/xoo.userultra.user.php:2190
+#: xooclasses/xoo.userultra.user.php:2194
 msgid "Profile"
 msgstr "Profil"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2227
-#: xooclasses/xoo.userultra.user.php:2231
+#: xooclasses/xoo.userultra.user.php:2203
+#: xooclasses/xoo.userultra.user.php:2207
 msgid "Profile Customizer"
 msgstr "Profilsanpassning"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2269
-#: xooclasses/xoo.userultra.user.php:2273
+#: xooclasses/xoo.userultra.user.php:2245
+#: xooclasses/xoo.userultra.user.php:2249
 msgid "My Purchases"
 msgstr "Mina inköp"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2301
+#: xooclasses/xoo.userultra.user.php:2277
 msgid "My Messages"
 msgstr "Mina meddelanden"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2305
+#: xooclasses/xoo.userultra.user.php:2281
 msgid "Messages"
 msgstr "Meddelanden"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2311
+#: xooclasses/xoo.userultra.user.php:2287
 msgid "Unread Messages"
 msgstr "Olästa meddelanden"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2321
-#: xooclasses/xoo.userultra.user.php:2325
+#: xooclasses/xoo.userultra.user.php:2297
+#: xooclasses/xoo.userultra.user.php:2301
 msgid "Photos"
 msgstr "Foton"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2361
+#: xooclasses/xoo.userultra.user.php:2337
 #, fuzzy
 msgid "Friend Requests"
 msgstr "Senaste vänförfrågan"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:2724
-#: xooclasses/xoo.userultra.user.php:2825
-#: xooclasses/xoo.userultra.user.php:4262
+#: xooclasses/xoo.userultra.user.php:2700
+#: xooclasses/xoo.userultra.user.php:2801
+#: xooclasses/xoo.userultra.user.php:4238
 msgid "See Profile"
 msgstr "Se profil"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:3239
+#: xooclasses/xoo.userultra.user.php:3215
 msgid "Free"
 msgstr "Gratis"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:3565
+#: xooclasses/xoo.userultra.user.php:3541
 #, php-format
 msgid "Search %s"
 msgstr "Sök %s"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4029
+#: xooclasses/xoo.userultra.user.php:4005
 #, fuzzy
 msgid "<< Previous"
 msgstr "Föregående"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4030
+#: xooclasses/xoo.userultra.user.php:4006
 #, fuzzy
 msgid "Next >>"
 msgstr "Nästa"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4083
-#: xooclasses/xoo.userultra.user.php:4151
+#: xooclasses/xoo.userultra.user.php:4059
+#: xooclasses/xoo.userultra.user.php:4127
 #, fuzzy
 msgid "Users"
 msgstr "Användare"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4154
+#: xooclasses/xoo.userultra.user.php:4130
 #, fuzzy
 msgid "Only logged in users can see this page"
 msgstr "Aktiverad, inloggade användare kan se andra användares profiler"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4553
-#: xooclasses/xoo.userultra.user.php:4572
+#: xooclasses/xoo.userultra.user.php:4529
+#: xooclasses/xoo.userultra.user.php:4548
 msgid "Country not available"
 msgstr "Land ej tillgängligt"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4599
+#: xooclasses/xoo.userultra.user.php:4575
 msgid "This user hasn't a description yet"
 msgstr "Denna användare har ingen beskrivning ännu"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4839
+#: xooclasses/xoo.userultra.user.php:4815
 msgid "Drop Avatar here"
 msgstr "Släpp Avatar här"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:4945
+#: xooclasses/xoo.userultra.user.php:4921
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr "Filen du valde överskrider den maximala filstorleken."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:5295
+#: xooclasses/xoo.userultra.user.php:5271
 msgid "Pending Admin"
 msgstr "Väntar på Admin"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.user.php:5299
+#: xooclasses/xoo.userultra.user.php:5275
 msgid "Active"
 msgstr "Aktivera"
 

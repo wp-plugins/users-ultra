@@ -19,6 +19,20 @@ $this->create_plugin_setting(
                 __('If checked, Paypal will be activated as payment method','xoousers'),
                 __('If checked, Paypal will be activated as payment method','xoousers')
         ); 
+		
+		
+$this->create_plugin_setting(
+	'select',
+	'uultra_send_ipn_to_admin',
+	__('The Paypal IPN response will be sent to the admin','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("If 'yes' the admin will receive the whole Paypal IPN response. This helps to troubleshoot issues.",'xoousers'),
+  __("If 'yes' the admin will receive the whole Paypal IPN response. This helps to troubleshoot issues.",'xoousers')
+       );
 
 $this->create_plugin_setting(
         'input',

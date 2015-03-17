@@ -221,8 +221,7 @@ class XooPaypalPayment
 			if ($errors=="")
 			{
 				/*Update Order status*/				
-				$xoouserultra->order->update_order_status($order_id,'confirmed');
-				
+				$xoouserultra->order->update_order_status($order_id,'confirmed');				
 				
 				/*Update Order With Payment Response*/				
 				$xoouserultra->order->update_order_payment_response($order_id,$txn_id);		
@@ -253,6 +252,17 @@ class XooPaypalPayment
 			
 			/*This is not a valid transaction*/
 		}
+		
+		if($xoouserultra->get_option("uultra_send_ipn_to_admin") =='yes'){
+			
+			//
+			$xoouserultra->messaging->paypal_ipn_debug("IPN OUTPUT-------: ".$fullipn);
+		
+		
+		}
+		
+		
+		
 		
 	
 	}
