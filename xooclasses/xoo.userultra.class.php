@@ -3232,7 +3232,8 @@ class XooUserUltra
 					
 			$openid_yahoo->returnUrl = $web_url;
 			$auth_url_yahoo = $openid_yahoo->authUrl();
-			header("Location: ".$auth_url_yahoo."");
+			wp_redirect($auth_url_yahoo);
+			exit;
 		}
 		
 				
