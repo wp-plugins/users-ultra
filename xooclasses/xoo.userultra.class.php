@@ -3213,6 +3213,8 @@ class XooUserUltra
 	
 	public function social_login_links_openid()
 	{
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+
 		$web_url = site_url()."/";
 		
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="yahoo") 
