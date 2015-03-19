@@ -349,7 +349,8 @@ class XooUserLogin {
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="google") 
 		{		
 			$auth_url_google = $this->get_google_auth_url();
-			header("Location: ".$auth_url_google."");
+			wp_redirect($auth_url_google);
+			exit;
 			
 			
 		}
@@ -357,7 +358,8 @@ class XooUserLogin {
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="twitter") 
 		{		
 			$auth_twitter_ = $this->get_twitter_auth_url();
-			header("Location: ".$auth_twitter_."");
+			wp_redirect($auth_twitter_);
+			exit;
 			
 		}
 		
@@ -366,7 +368,9 @@ class XooUserLogin {
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="instagram") 
 		{		
 			$auth_instagram_ = $this->get_instagram_auth_url();
-			header("Location: ".$auth_instagram_."");
+			
+			wp_redirect($auth_instagram_);
+			exit;
 			
 		}
 		
@@ -379,7 +383,8 @@ class XooUserLogin {
 				$requestlink = $xoouserultra->get_linkein_auth_link();	
 			}
 						
-			header("Location: ".$requestlink."");
+			wp_redirect($requestlink);
+			exit;
 			
 		}
 		
@@ -390,7 +395,9 @@ class XooUserLogin {
 			$redir_uri = 	$xoouserultra->get_option('yammer_redir_url') ;	
 			
 			$auth_yammer = "https://www.yammer.com/dialog/oauth?client_id=".$client_id."&redirect_uri=".$redir_uri."";
-			header("Location: ".$auth_yammer."");
+					
+			wp_redirect($auth_yammer);
+			exit;
 			
 		}
 	
