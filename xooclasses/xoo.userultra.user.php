@@ -1775,6 +1775,8 @@ class XooUserUser {
 						//get meta
 						$check_va = "";
 						$ischecked = $this->get_user_meta("hide_".$meta);
+						
+						//echo "CAN HIDE: " ."hide_".$meta;
 						 
 						 if($ischecked==1) $check_va = 'checked="checked"';
 						

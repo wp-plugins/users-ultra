@@ -342,6 +342,9 @@ class XooUserLogin {
 		//special feature for yahoo and google	
 	public function social_login_links_oauth()
 	{
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-includes/user.php');
+		
 		global  $xoouserultra, $blog_id;
 		
 		$web_url = site_url()."/";

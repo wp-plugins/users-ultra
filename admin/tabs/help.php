@@ -30,6 +30,9 @@ global $xoouserultra;
                    <strong> <?php _e('My Account','xoousers'); ?></strong>
                  <pre>[usersultra_my_account]</pre>
                  
+                   <strong> <?php _e('Disable modules for some Users','xoousers'); ?></strong>
+                 <pre>[usersultra_my_account disable_module_custom_user='messages,friends,account' disable_module_user_id='1,2']</pre>
+                 
                   <strong> <?php _e('Logout','xoousers'); ?></strong>
                  <pre>[usersultra_logout]</pre>
                  

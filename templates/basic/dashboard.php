@@ -60,39 +60,103 @@ $howmany = 5;
               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('dashboard');?></li>
               
                <?php if(!in_array("account",$modules)){?>  
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('account');?></li>
-               <?php }?>
+               
+              
+               
+               
+                	<?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "account", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('account');?></li>
+                     
+                     <?php }?>
+               
+			   
+			   <?php }?>
                
                 <?php if(!in_array("myorders",$modules)){?>  
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('myorders');?></li>
+                
+                
+                
+                 	 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "myorders", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		<li><?php echo $xoouserultra->userpanel->get_user_backend_menu('myorders');?></li>
+                     
+                     <?php }?>
+               
+               
                <?php }?>
                
-                 <?php if(!in_array("wootracker",$modules)){?>  
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('wootracker');?></li>
+                 <?php if(!in_array("wootracker",$modules)){?> 
+                 
+                 	 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "wootracker", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('wootracker');?></li>
+                     
+                     <?php }?>
+                      
+              
                <?php }?>
+               
                
                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li>             
                               
-               <?php if(!in_array("messages",$modules)){?>           
+               <?php if(!in_array("messages",$modules)){?>        
+               
+               
+               		 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "messages", $modules_custom_user, $modules_custom_user_id )){?> 
                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
+              		 		 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
+                     
+                     <?php }?>
+                        
+                
+               
                 
                 <?php }?>
                 
-				<?php if(!in_array("friends",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('friends');?></li>
+				<?php if(!in_array("friends",$modules)){?> 
+                
+                 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "messages", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		  <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
+                     
+                     <?php }?>
+                                     
+               
                 <?php }?>
                 
-                <?php if(!in_array("posts",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('posts');?></li>
+                <?php if(!in_array("posts",$modules)){?>  
+                
+                 	<?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "posts", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		  <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('posts');?></li>
+                     
+                     <?php }?>
+                                    
+               
                 <?php }?>
                 
-                <?php if(!in_array("photos",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></li>           
+                <?php if(!in_array("photos",$modules)){?>  
+                
+                
+              	  <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "photos", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		 <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></li> 
+                     
+                     <?php }?>
+                                    
+                         
                 <?php }?>
                 
                 <?php if(!in_array("videos",$modules)){?> 
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('videos');?></li>
+                
+                
+                 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "videos", $modules_custom_user, $modules_custom_user_id )){?> 
+                
+              		 		   <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('videos');?></li>
+                     
+                     <?php }?>
+             
                
                
                <?php }?>

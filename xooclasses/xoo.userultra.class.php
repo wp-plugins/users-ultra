@@ -2475,6 +2475,28 @@ class XooUserUltra
 	
 	}
 	
+	public function check_if_disabled_for_this_user($user_id, $module, $modules_custom_user, $modules_custom_user_id )
+	{
+		$res = false;
+		
+	
+		if(in_array($user_id,$modules_custom_user_id))
+		{
+			
+			//the user is in the array list.			
+			if(in_array($module,$modules_custom_user))
+			{
+			
+				$res = true;				
+			
+			}
+		
+		}
+		
+		return $res;
+	
+	}
+	
 	/**
 	 * Users Dashboard
 	 */
@@ -2485,14 +2507,25 @@ class XooUserUltra
 		
 		extract( shortcode_atts( array(	
 			
-			'disable' => ''	
+			'disable' => '',
+			'disable_module_custom_user' => '', //modules separated by commas
+			'disable_module_user_id' => ''	// users id separated by commas
 						
 			
 		), $atts ) );
 		
 		$modules = array();
-		$modules  = explode(',', $disable);
+		$modules  = explode(',', $disable);	
 		
+		//modules, custom users		
+		$modules_custom_user = array();
+		$modules_custom_user  = explode(',', $disable_module_custom_user);
+		
+		//modules, custom users	 id	
+		$modules_custom_user_id = array();
+		$modules_custom_user_id  = explode(',', $disable_module_user_id);
+		
+			
 	
 		//turn on output buffering to capture script output
         ob_start();

@@ -31,7 +31,6 @@ class XooShortCode {
 		
 		add_shortcode( 'usersultra_users_featured', array(&$this,'usersultra_featured_users') );
 		add_shortcode( 'usersultra_users_promote', array(&$this,'usersultra_promote_users') );
-		
 		add_shortcode( 'usersultra_photos_promote', array(&$this,'usersultra_promote_photos') );
 		
 		 
@@ -40,10 +39,8 @@ class XooShortCode {
 		add_shortcode( 'usersultra_users_latest', array(&$this,'usersultra_latest_users') );		
 		add_shortcode( 'usersultra_photo_latest', array(&$this,'usersultra_latest_photos') );
 		
-		add_shortcode( 'usersultra_images_grid', array(&$this,'usersultra_photo_grid') );
-		
-		add_shortcode( 'usersultra_protect_content', array(&$this,'funnction_protect_content') );
-		
+		add_shortcode( 'usersultra_images_grid', array(&$this,'usersultra_photo_grid') );		
+		add_shortcode( 'usersultra_protect_content', array(&$this,'funnction_protect_content') );		
 		add_shortcode( 'usersultra_front_publisher', array(&$this,'funnction_front_publisher') );
 		
 		//
