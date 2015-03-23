@@ -313,24 +313,18 @@ class XooShortCode {
 	
 	public function  usersultra_my_account_function ($atts)
 	{
-		global $xoouserultra;
-		
-		
+		global $xoouserultra;	
 			
 		
 		if (!is_user_logged_in()) 
-		{
-				
+		{				
 			
 			return $xoouserultra->login( $atts );
 				
-		}else{					
-				
+		}else{							
 				
 			return $xoouserultra->show_usersultra_my_account( $atts );
 		}
-			
-		
 		
 	}
 	

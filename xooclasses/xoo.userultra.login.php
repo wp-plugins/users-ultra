@@ -6,13 +6,13 @@ class XooUserLogin {
 	function __construct() 
 	{
 		
-		add_action( 'wp_login', array($this, 'uultra_handle_after_login' ),99,2 );
+		add_action( 'wp_login', array($this, 'uultra_handle_after_login' ),99);
 		add_action( 'init', array($this, 'handle_init' ) );
 		
 	}
 	
 	/*Handle after login actions*/
-	function uultra_handle_after_login($user_login, $user) 
+	function uultra_handle_after_login($user_login) 
 	{
 	    global $xoouserultra;
 	    
