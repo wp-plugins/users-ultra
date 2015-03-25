@@ -129,7 +129,7 @@ class XooUserUser {
 			
 			//get user's main picture - medium size will be used to be displayed			
 			 $avatar_pic = $path.$author_pic;
-			 $avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'" class="'.$pic_boder_type.'"  id="uultra-avatar-img-'.$id.'"/></a>';
+			 $avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'"  id="uultra-avatar-img-'.$id_or_email.'"/></a>';
 			 
 			 return $avatar;
 			
@@ -4060,8 +4060,6 @@ class XooUserUser {
 			'display_total_found' => 'yes', // display total found
 			'display_total_found_text' =>__('Users', 'xoousers'), // display total found	
 			
-			
-			
 				
 			'list_order' => 'DESC', // asc or desc ordering
 			'exclude' => '', // exclude from searching
@@ -4787,9 +4785,21 @@ class XooUserUser {
 		}elseif($pic_type=='mainpicture'){
 			    
 				//get user's main picture - medium size will be used to be displayed
+				
+				if($author_pic!='')
+				{
+				   $avatar_pic = $path.$author_pic;
+					$avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'" class="'.$pic_boder_type.'" style="'.$pic_size.' "   id="uultra-avatar-img-'.$id.'"/></a>';
+				
+				}else{
+				
+					$avatar= '<a href="'.$user_url.'">'. get_avatar($id,$size) .'</a>';
+				
+				}
 			
-			    $avatar_pic = $path.$author_pic;
-				$avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'" class="'.$pic_boder_type.'" style="'.$pic_size.' "   id="uultra-avatar-img-'.$id.'"/></a>';
+			 
+				
+				
 		
 		
 		}
