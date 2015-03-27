@@ -2,12 +2,10 @@
 class XooSocial
 {
 	
-	
 	var $mDateToday ;	
 	
 	function __construct() 
-	{		
-		
+	{				
 		$this->ini_module();
 		$this->mDateToday =  date("Y-m-d");		
 		$this->set_ajax();		
@@ -17,16 +15,13 @@ class XooSocial
 	{
 		require_once( ABSPATH . "wp-includes/pluggable.php" );
 		add_action( 'wp_ajax_send_friend_request',  array( $this, 'send_friend_request' ));
-					
 			
-		add_action( 'wp_ajax_nopriv_send_friend_request',  array( $this, 'send_friend_request' ));			
+		add_action( 'wp_ajax_nopriv_send_friend_request',  array( $this, 'send_friend_request' ));	
 		add_action( 'wp_ajax_like_item',  array( $this, 'like_item' ));
 					
-		add_action( 'wp_ajax_nopriv_like_item',  array( $this, 'like_item' ));			
-		
+		add_action( 'wp_ajax_nopriv_like_item',  array( $this, 'like_item' ));				
 		add_action( 'wp_ajax_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));
-		add_action( 'wp_ajax_nopriv_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));
-		
+		add_action( 'wp_ajax_nopriv_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));		
 		add_action( 'wp_ajax_friend_request_action',  array( $this, 'friend_request_action' ));
 		add_action( 'wp_ajax_show_all_my_friends',  array( $this, 'show_all_my_friends' ));
 		add_action( 'wp_ajax_show_friend_request',  array( $this, 'show_friend_request' ));
@@ -91,8 +86,7 @@ class XooSocial
 							'friend_sender_user_id'   => $sender_id,
 							'friend_status'   => '0',
 							'friend_date'=> date('Y-m-d H:i:s')
-							
-							
+														
 						);
 						
 				// insert into database
@@ -222,8 +216,7 @@ class XooSocial
 			  foreach ( $res as $like )
 			 {
 				$total = $like->total;				
-			 }
-			 
+			 }			 
 		
 		  }else{
 			  
@@ -245,9 +238,7 @@ class XooSocial
 	
 	
 	}
-	
-	
-	
+
 	public function friend_request_action()
 	{
 		global $wpdb,  $xoouserultra;		

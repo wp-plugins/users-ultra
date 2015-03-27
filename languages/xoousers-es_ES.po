@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-03-22 14:10-0300\n"
-"PO-Revision-Date: 2015-03-22 14:10-0300\n"
+"POT-Creation-Date: 2015-03-27 12:34-0300\n"
+"PO-Revision-Date: 2015-03-27 12:34-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -2102,7 +2102,7 @@ msgstr ""
 msgid "Default Status"
 msgstr "Estado por Defecto"
 
-#: ../admin/tabs/settings.php:251 ../xooclasses/xoo.userultra.user.php:5269
+#: ../admin/tabs/settings.php:251 ../xooclasses/xoo.userultra.user.php:5279
 msgid "Pending"
 msgstr "Pendiente"
 
@@ -3581,7 +3581,7 @@ msgid "Login"
 msgstr "Ingresar"
 
 #: ../xooclasses/xoo.userultra.class.php:687
-#: ../xooclasses/xoo.userultra.shorcodes.php:355
+#: ../xooclasses/xoo.userultra.shorcodes.php:349
 msgid "Sign up"
 msgstr "Registrarse"
 
@@ -4259,21 +4259,21 @@ msgid "Filter by category: "
 msgstr "Filtrar por categoría:"
 
 #: ../xooclasses/xoo.userultra.photos.php:370
-#: ../xooclasses/xoo.userultra.user.php:4414
+#: ../xooclasses/xoo.userultra.user.php:4412
 msgid "Total found: "
 msgstr "Número de resultados:"
 
 #: ../xooclasses/xoo.userultra.photos.php:648
-#: ../xooclasses/xoo.userultra.user.php:4289
-#: ../xooclasses/xoo.userultra.user.php:5117
-#: ../xooclasses/xoo.userultra.user.php:5190
+#: ../xooclasses/xoo.userultra.user.php:4287
+#: ../xooclasses/xoo.userultra.user.php:5127
+#: ../xooclasses/xoo.userultra.user.php:5200
 msgid "Previous"
 msgstr "Anterior"
 
 #: ../xooclasses/xoo.userultra.photos.php:649
-#: ../xooclasses/xoo.userultra.user.php:4290
-#: ../xooclasses/xoo.userultra.user.php:5118
-#: ../xooclasses/xoo.userultra.user.php:5191
+#: ../xooclasses/xoo.userultra.user.php:4288
+#: ../xooclasses/xoo.userultra.user.php:5128
+#: ../xooclasses/xoo.userultra.user.php:5201
 msgid "Next"
 msgstr "Siguiente"
 
@@ -4351,7 +4351,7 @@ msgstr "Seleccionar"
 
 #: ../xooclasses/xoo.userultra.photos.php:2287
 #: ../xooclasses/xoo.userultra.publisher.php:1081
-#: ../xooclasses/xoo.userultra.user.php:4853
+#: ../xooclasses/xoo.userultra.user.php:4863
 msgid "Allowed Files"
 msgstr "Permitir Archivos"
 
@@ -4478,7 +4478,7 @@ msgid "Select Files"
 msgstr "Seleccionar"
 
 #: ../xooclasses/xoo.userultra.publisher.php:1140
-#: ../xooclasses/xoo.userultra.user.php:4908
+#: ../xooclasses/xoo.userultra.user.php:4918
 msgid "You may only upload one image at a time!"
 msgstr "Usted sólo puede subir una imagen a la vez!"
 
@@ -4843,7 +4843,7 @@ msgstr "Solicitudes de Amistad"
 
 #: ../xooclasses/xoo.userultra.user.php:2702
 #: ../xooclasses/xoo.userultra.user.php:2803
-#: ../xooclasses/xoo.userultra.user.php:4240
+#: ../xooclasses/xoo.userultra.user.php:4238
 msgid "See Profile"
 msgstr "Ver Perfil"
 
@@ -4867,41 +4867,41 @@ msgid "Next >>"
 msgstr "Siguiente"
 
 #: ../xooclasses/xoo.userultra.user.php:4061
-#: ../xooclasses/xoo.userultra.user.php:4129
+#: ../xooclasses/xoo.userultra.user.php:4127
 #, fuzzy
 msgid "Users"
 msgstr "Usuario"
 
-#: ../xooclasses/xoo.userultra.user.php:4132
+#: ../xooclasses/xoo.userultra.user.php:4130
 #, fuzzy
 msgid "Only logged in users can see this page"
 msgstr ""
 "Habilitado, usuarios registrados pueden ver en otros perfiles de usuario"
 
-#: ../xooclasses/xoo.userultra.user.php:4531
-#: ../xooclasses/xoo.userultra.user.php:4550
+#: ../xooclasses/xoo.userultra.user.php:4529
+#: ../xooclasses/xoo.userultra.user.php:4548
 msgid "Country not available"
 msgstr "País no disponible"
 
-#: ../xooclasses/xoo.userultra.user.php:4577
+#: ../xooclasses/xoo.userultra.user.php:4575
 msgid "This user hasn't a description yet"
 msgstr "Este usuario aún no tiene una descripción"
 
-#: ../xooclasses/xoo.userultra.user.php:4817
+#: ../xooclasses/xoo.userultra.user.php:4827
 msgid "Drop Avatar here"
 msgstr "Desplazar Avatar Aquí"
 
-#: ../xooclasses/xoo.userultra.user.php:4923
+#: ../xooclasses/xoo.userultra.user.php:4933
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr ""
 "El archivo que ha seleccionado se supera el límite de tamaño máximo de "
 "archivo."
 
-#: ../xooclasses/xoo.userultra.user.php:5273
+#: ../xooclasses/xoo.userultra.user.php:5283
 msgid "Pending Admin"
 msgstr "Pendiente de Administrador"
 
-#: ../xooclasses/xoo.userultra.user.php:5277
+#: ../xooclasses/xoo.userultra.user.php:5287
 msgid "Active"
 msgstr "Activo"
 
