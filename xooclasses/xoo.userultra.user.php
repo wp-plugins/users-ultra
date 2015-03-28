@@ -45,11 +45,9 @@ class XooUserUser {
 		add_action( 'wp_ajax_user_resend_activation_link', array( $this, 'user_resend_activation_link' ));		
 		add_action( 'wp_ajax_user_delete_account', array( $this, 'user_delete_account' ));		
 		add_action( 'wp_ajax_get_pending_activation_list', array( $this, 'get_pending_activation_list' ));
-		add_action( 'wp_ajax_get_pending_payment_list', array( $this, 'get_pending_payment_list' ));
+		add_action( 'wp_ajax_get_pending_payment_list', array( $this, 'get_pending_payment_list' ));		
 		
-		
-		add_action( 'wp_ajax_sync_users', array( $this, 'sync_users' ));
-		
+		add_action( 'wp_ajax_sync_users', array( $this, 'sync_users' ));		
 		add_action('manage_users_columns', array( $this, 'uultra_modify_user_table' ));
 		add_action('manage_users_custom_column', array( $this, 'uultra_modify_user_table_row' ),10,3);
 			
@@ -2482,8 +2480,15 @@ class XooUserUser {
 		
 		if($user_id>0)
 		{
+			//turn on output buffering to capture script output
+       		ob_start();
+       		//include the specified file			
 			//get template
-			include(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");		
+			require_once(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");			
+			$content = ob_get_clean();
+			return  $content;	
+			
+				
 				
 		}else{
 			
@@ -4074,9 +4079,14 @@ class XooUserUser {
 		
 		$total_f = $this->get_total_found($disp_array);
 		
-	
+		//turn on output buffering to capture script output
+       	ob_start();
+      	//include the specified file			
 		//get template
-		require(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");
+		require_once(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");			
+		$content = ob_get_clean();
+		return  $content;
+			
 		
 	}
 	

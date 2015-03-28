@@ -2641,7 +2641,7 @@ class XooUserUltra
 	 */
 	public function show_pulic_profile($atts)
 	{
-		 $this->userpanel->show_public_profile($atts);		
+		return $this->userpanel->show_public_profile($atts);		
 			
 	}
 	
