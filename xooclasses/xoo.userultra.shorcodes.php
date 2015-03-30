@@ -13,8 +13,7 @@ class XooShortCode {
 	function xoousers_shortcodes() 
 	{	
 	
-	    add_filter( 'the_content', 'shortcode_unautop');
-			
+	    add_filter( 'the_content', 'shortcode_unautop');			
 		add_shortcode( 'usersultra_login', array(&$this,'usersultra_login_function') );
 		add_shortcode( 'usersultra_logout', array(&$this,'usersultra_logout_function') );
 		add_shortcode( 'usersultra_registration', array(&$this,'usersultra_registration_function') );
@@ -111,8 +110,7 @@ class XooShortCode {
 				
 					return $xoouserultra->show_minified_profile( $atts );	
 				
-				}	
-				
+				}					
 				
 			}
 		
@@ -161,7 +159,6 @@ class XooShortCode {
 			return $xoouserultra->show_front_publisher( $atts );		
 			
 		}	
-
 	
 	}
 	
@@ -388,8 +385,7 @@ class XooShortCode {
 		
 		//generate url		
 		$package_url = $xoouserultra->paypal->get_package_url();
-		$button_url = $package_url."?plan_id=".$plan_id;	
-		
+		$button_url = $package_url."?plan_id=".$plan_id;			
 		
 		//custom text for free packages		
 		$free_text =  $xoouserultra->get_option('membership_display_zero');
@@ -508,7 +504,6 @@ class XooShortCode {
 	function respo_base_grid_10_last( $atts, $content = null ) {
 	   return '<div class="respo-sc-grid_10 omega">' . do_shortcode($content) . '</div><div class="clear"></div>';
 	}
-
 }
 $key = "shortcode";
 $this->{$key} = new XooShortCode();

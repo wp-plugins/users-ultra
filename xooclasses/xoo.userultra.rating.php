@@ -66,9 +66,7 @@ class XooRating extends XooUserUltraCommon
   KEY `mt_ajaxrating_votesummary_blog_id` (`ajaxrating_votesummary_photo_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;';
 	
-		$wpdb->query( $query );
-		
-		
+		$wpdb->query( $query );	
 		
 	}
 	
@@ -88,8 +86,7 @@ class XooRating extends XooUserUltraCommon
 				
 				return false;
 		 }
-     }
-	
+     }	
 	
 	public function rating_vote() 
 	{

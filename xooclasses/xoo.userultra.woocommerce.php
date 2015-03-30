@@ -78,7 +78,6 @@ class XooWooCommerce {
 							'meta' => $array['title'].'_separator'
 						);
 					}				
-					
 					foreach($array['fields'] as $meta => $label) {
 
 						if(!in_array($meta, $field_meta_array)){				
@@ -363,8 +362,7 @@ class XooWooCommerce {
 							
 							
 							?>
-						<tr>
-							                         
+						<tr>							                         
                             
 							<td>#<?php echo $order_id; ?></td>
                             <td><?php echo woocommerce_price($order->order_total);?></td>

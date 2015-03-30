@@ -2486,8 +2486,7 @@ class XooUserUser {
 			//get template
 			require_once(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");			
 			$content = ob_get_clean();
-			return  $content;	
-			
+			return  $content;				
 				
 				
 		}else{

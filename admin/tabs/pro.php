@@ -39,6 +39,11 @@ global $xoouserultra;
              <p> <?php _e("Yes, you can add as many widgets as you wish. Integrating with third-party plugins has never been easier. You can use other plugins with Users Ultra PRO.",'xoousers'); ?></p>
             </div>
             
+            <div class="uultra-col">
+             <h1><?php _e('Groups','xoousers'); ?></h1> 
+             <p> <?php _e("Users Ultra Pro comes with a powerful groups module. Protect whole pages and posts easily by using the page protection options in the groups module.",'xoousers'); ?></p>
+            </div>
+            
              <div class="uultra-col">
              <h1><?php _e('Unlimited Links','xoousers'); ?></h1> 
              <p> <?php _e("You can add unlimited links within the user's dashboard with HTML text or use a shortcode of another plugin to display custom information.",'xoousers'); ?></p>
@@ -200,7 +205,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.2.12</p>
+            <p>Version: 1.2.20</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
