@@ -2564,6 +2564,12 @@ class XooUserUser {
 		$html.='<div class="uultra-mostvisited-users">
 			
 			<ul>';
+			
+		if(empty($users_list)){
+			
+			$html .= '<p>'.__('Empy results','xoousers').'</p>';
+		
+		}else{
 		
 		foreach ( $users_list as $user )
 		{
@@ -2612,6 +2618,8 @@ class XooUserUser {
 			
 		
 		} //end foreach
+		
+		} //end if empy
 		
 		
 		$html.='</ul></div>';
