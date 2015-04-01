@@ -2567,7 +2567,7 @@ class XooUserUser {
 			
 		if(empty($users_list)){
 			
-			$html .= '<p>'.__('Empy results','xoousers').'</p>';
+			$html .= '<p>'.__('Empty results','xoousers').'</p>';
 		
 		}else{
 		
@@ -2635,15 +2635,13 @@ class XooUserUser {
 		global $wpdb, $xoouserultra;
 		
 		$sql = ' SELECT u.*, stat.stat_item_id,
-		  stat.stat_module , stat.stat_total_hits
-		  
+		  stat.stat_module , stat.stat_total_hits		  
 		  FROM ' . $wpdb->prefix . 'users u  ' ;		
 		$sql .= " RIGHT JOIN ".$wpdb->prefix ."usersultra_stats stat ON (stat.stat_item_id = u.ID)";
 				
 		$sql .= " WHERE stat.stat_item_id = u.ID AND  stat.stat_module= 'user' ORDER BY stat.stat_total_hits DESC  LIMIT $howmany";	
 			
-		$rows = $wpdb->get_results($sql);
-		
+		$rows = $wpdb->get_results($sql);		
 		return $rows;
 		
 	}
