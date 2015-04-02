@@ -4787,7 +4787,7 @@ class XooUserUser {
 			if ($author_pic  != '') 
 			{
 				$avatar_pic = $path.$author_pic;
-				$avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'" class="'.$pic_boder_type.'" style="'.$pic_size.' "   id="uultra-avatar-img-'.$id.'" /></a>';
+				$avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'" class="'.$pic_boder_type.' uultra-user-avatar" style="'.$pic_size.' "   id="uultra-avatar-img-'.$id.'" /></a>';
 				
 			} else {		
 				

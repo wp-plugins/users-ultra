@@ -1215,8 +1215,8 @@ class XooUserUltra
 		wp_enqueue_style('xoouserultra_style');		
 		
 		/* Responsive */
-		wp_register_style( 'xoouserultra_responsive', xoousers_url.'templates/'.xoousers_template.'/css/xoouserultra-responsive.css');
-		wp_enqueue_style('xoouserultra_responsive');
+	//	wp_register_style( 'xoouserultra_responsive', xoousers_url.'templates/'.xoousers_template.'/css/xoouserultra-responsive.css');
+		//wp_enqueue_style('xoouserultra_responsive');
 		
 		
 		
