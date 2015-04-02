@@ -394,7 +394,7 @@ Initial release.
 
 == Changelog ==
 
-= 1.4.83(03-02-2015) =
+= 1.4.83(04-02-2015) =
 * Improvement- Mobile version has been improved for the user's profile. Example can bee seen here http://usersultra.com/userultra/profile/ada/.
 * Improvement- Responsive styles were moved to the main style sheet, this will make UU load faster.
 * Improvement- Many users asked us to remove the old fashion shadows from the borders, now the user's profile looks much more modern.
