@@ -576,7 +576,10 @@ input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	font-size: 14px;
-	padding: 6px;
+	padding-top:6px !important;
+	padding-bottom: 6px !important;
+	padding-left: 6px !important;
+	padding-right:6px !important;
     width: 100%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
