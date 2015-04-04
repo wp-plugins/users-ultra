@@ -49,13 +49,32 @@ class XooSocial
 		  `like_liked_id` int(11) NOT NULL ,
 		  `like_liker_user_id` int(11) NOT NULL,
 		  `like_module` varchar(50) NOT NULL,	
+		  `like_ip` varchar(100) NOT NULL,
 		  `like_vote` int(2) NOT NULL,	 		 
 		  `like_date` datetime NOT NULL,
 		  PRIMARY KEY (`like_id`)
 		) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;';
 		
 		$wpdb->query( $query );	
+		
+		$this->update_table();
 	
+		
+	}
+	
+	
+	function update_table()
+	{
+		global $wpdb;
+		
+		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_likes where field="like_ip" ';		
+		$rows = $wpdb->get_results($sql);		
+		if ( empty( $rows ) )
+		{	//photo_desc
+			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_likes add column like_ip varchar (100) ; ';
+			$wpdb->query($sql);
+		}		
+		
 		
 	}
 	
@@ -148,10 +167,12 @@ class XooSocial
 		$module = $_POST["module"]; 
 		$vote = $_POST["vote"];
 		
+		$visitor_ip = $_SERVER['REMOTE_ADDR'];
+		
 		$already_voted = $this->check_already_voted($item_id, $module, $vote);
 		$guest_allowed = $xoouserultra->get_option('uultra_allow_guest_like');
 		
-		if($already_voted==0 || $guest_allowed ==1)
+		if($already_voted==0 )
 		{			
 		
 			//store in the db		
@@ -163,6 +184,7 @@ class XooSocial
 							'like_liked_id'   => $item_id,						
 							'like_liker_user_id'   => $logged_user_id,
 							'like_module'   => $module,
+							'like_ip'   => $visitor_ip,
 							'like_vote'   => $vote,
 							'like_date'=> date('Y-m-d H:i:s')
 							
@@ -421,9 +443,22 @@ class XooSocial
 		global $wpdb,  $xoouserultra;		
 		require_once(ABSPATH . 'wp-includes/formatting.php');
 		
-		$logged_user_id = get_current_user_id();
+		$logged_user_id = get_current_user_id();		
+		$guest_allowed = $xoouserultra->get_option('uultra_allow_guest_like');
+				
+		$visitor_ip = $_SERVER['REMOTE_ADDR'];
 		
-		 $sql = "SELECT count(*) as total FROM " . $wpdb->prefix . "usersultra_likes  WHERE like_liked_id  = '$item_id' AND like_module = '$module' AND like_liker_user_id = '$logged_user_id' AND like_vote = '$vote' ";	 
+		if($guest_allowed=="1")
+		{
+			
+			 $sql = "SELECT count(*) as total FROM " . $wpdb->prefix . "usersultra_likes  WHERE like_liked_id  = '$item_id' AND like_module = '$module' AND like_ip = '$visitor_ip'  AND like_vote = '$vote' ";
+		
+		}else{
+			
+			 $sql = "SELECT count(*) as total FROM " . $wpdb->prefix . "usersultra_likes  WHERE like_liked_id  = '$item_id' AND like_module = '$module' AND like_liker_user_id = '$logged_user_id' AND like_vote = '$vote' ";	 
+			 
+		}
+		
 		 
  
 		 $res = $wpdb->get_results( $sql );
@@ -433,15 +468,18 @@ class XooSocial
 			  foreach ( $res as $like )
 			 {
 				$total = $like->total;				
-			 }			 
+			 }
+			 
 		
 		  }else{
 			  
 			  $total = 0;  
 		  
 		  }		
+		
 				
 		return $total;	
+	
 	
 	}
 	
