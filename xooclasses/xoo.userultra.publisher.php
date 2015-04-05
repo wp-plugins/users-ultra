@@ -652,8 +652,8 @@ class XooPublisher
         $post_id = wp_update_post( $post_update );
 
         if ( $post_id )
-		{    
-		   
+		{
+			$this->set_custom_post_photos( $post_id);		   
 		   $this->act_message= __('Post updated successfully.', 'xoousers') ;
 
         }

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite v1.3.72\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-01 00:25-0300\n"
-"PO-Revision-Date: 2015-04-01 00:25-0300\n"
+"POT-Creation-Date: 2015-04-05 19:31-0300\n"
+"PO-Revision-Date: 2015-04-05 19:31-0300\n"
 "Last-Translator: \n"
 "Language-Team: Elger Lindgren <elger@20x.se>\n"
 "Language: sv_SE\n"
@@ -18,6 +18,136 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
+
+# @ xoousers
+#: addons/maintenance/admin/admin.php:36
+#: addons/maintenance/admin/admin.php:246
+#, fuzzy
+msgid "Maintenance"
+msgstr "Underhållsegenskaper"
+
+#: addons/maintenance/admin/admin.php:47
+msgid "Finished!!. The transients have been cleaned."
+msgstr ""
+
+# @ xoousers
+#: addons/maintenance/admin/admin.php:63
+#, fuzzy
+msgid "Finished!!. The stats have been deleted."
+msgstr "Användare har raderats"
+
+# @ xoousers
+#: addons/maintenance/admin/admin.php:79
+#, fuzzy
+msgid "Finished!!. The ratings have been deleted."
+msgstr "Användare har raderats"
+
+#: addons/maintenance/admin/admin.php:128
+msgid "Finished!! . Please refresh this window."
+msgstr ""
+
+#: addons/maintenance/admin/admin.php:328
+msgid "MAINTENANCE"
+msgstr ""
+
+# @ xoousers
+#: addons/maintenance/admin/panels/manage.php:29
+#, fuzzy
+msgid "Success "
+msgstr "Succe "
+
+#: addons/maintenance/admin/panels/manage.php:31
+msgid "WP User Meta Fields Cleaning "
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:32
+msgid ""
+"This module helps you to remove useless user meta from the wp_usermeta\n"
+"table. It's useful to fix users count issues. This fixes the wrong amount of "
+"users displayed in the Users tab as well."
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:35
+msgid ""
+"<strong>IMPORTANT:</strong> This module won't touch your Users Table but the "
+"User's Meta Table Only."
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:37
+msgid "Current Integrity Status: "
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:39
+msgid "USERS FOUND IN USERS TABLE: "
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:41
+msgid "DISTINCT USERS FOUND IN META TABLE: "
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:45
+msgid "The tables are synchronized. No action is required. "
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:52
+msgid "We recommend you optimize the tables by clicking on the button below."
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:55
+msgid "SYNC NOW"
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:73
+msgid "Are you totally sure? "
+msgstr ""
+
+# @ xoousers
+#: addons/maintenance/admin/panels/manage.php:84
+#, fuzzy
+msgid "Delete Users Ultra Transients"
+msgstr "Välkommen till Users Ultra Lite!"
+
+#: addons/maintenance/admin/panels/manage.php:86
+msgid ""
+"From time to time you will have to use this function. For example: If the "
+"Online users are not being displayed."
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:89
+msgid "CLEAN NOW"
+msgstr ""
+
+# @ xoousers
+#: addons/maintenance/admin/panels/manage.php:102
+#, fuzzy
+msgid "Clean the Users Ultra Stats"
+msgstr "Välkommen till Users Ultra Lite!"
+
+#: addons/maintenance/admin/panels/manage.php:104
+msgid ""
+"Use this function to delete all the UU stats such as: photo views, user "
+"views, galleries views, etc."
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:107
+msgid "YES, DELETE ALL STATS NOW"
+msgstr ""
+
+# @ xoousers
+#: addons/maintenance/admin/panels/manage.php:120
+#, fuzzy
+msgid "Clean the Users Ultra Ratings"
+msgstr "Välkommen till Users Ultra Lite!"
+
+#: addons/maintenance/admin/panels/manage.php:122
+msgid ""
+"Use this function to delete all the UU reviews. This option will delete all "
+"the user reviews, photo reviews, gallery reviews etc etc."
+msgstr ""
+
+#: addons/maintenance/admin/panels/manage.php:125
+msgid "YES, DELETE ALL RATINGS NOW"
+msgstr ""
 
 # @ xoousers
 #: addons/photocategories/admin/admin.php:33
@@ -1239,8 +1369,8 @@ msgstr "5 senaste transaktionenra"
 #: xooclasses/xoo.userultra.mymessage.php:1133
 #: xooclasses/xoo.userultra.order.php:377
 #: xooclasses/xoo.userultra.publisher.php:462
-#: xooclasses/xoo.userultra.socials.php:479
-#: xooclasses/xoo.userultra.socials.php:585
+#: xooclasses/xoo.userultra.socials.php:517
+#: xooclasses/xoo.userultra.socials.php:623
 #: xooclasses/xoo.userultra.woocommerce.php:351
 msgid "Date"
 msgstr "Datum"
@@ -4809,8 +4939,8 @@ msgstr[1] "Du har %d privata meddelanden (%d olästa)."
 #: xooclasses/xoo.userultra.mymessage.php:547
 #: xooclasses/xoo.userultra.mymessage.php:701
 #: xooclasses/xoo.userultra.mymessage.php:820
-#: xooclasses/xoo.userultra.socials.php:477
-#: xooclasses/xoo.userultra.socials.php:583
+#: xooclasses/xoo.userultra.socials.php:515
+#: xooclasses/xoo.userultra.socials.php:621
 msgid "Pic"
 msgstr "Pic"
 
@@ -4819,8 +4949,8 @@ msgstr "Pic"
 #: xooclasses/xoo.userultra.mymessage.php:821
 #: xooclasses/xoo.userultra.mymessage.php:1070
 #: xooclasses/xoo.userultra.mymessage.php:1131
-#: xooclasses/xoo.userultra.socials.php:478
-#: xooclasses/xoo.userultra.socials.php:584
+#: xooclasses/xoo.userultra.socials.php:516
+#: xooclasses/xoo.userultra.socials.php:622
 msgid "Sender"
 msgstr "Avsändare"
 
@@ -4829,8 +4959,8 @@ msgstr "Avsändare"
 #: xooclasses/xoo.userultra.mymessage.php:921
 #: xooclasses/xoo.userultra.mymessage.php:944
 #: xooclasses/xoo.userultra.payment.paypal.php:786
-#: xooclasses/xoo.userultra.socials.php:480
-#: xooclasses/xoo.userultra.socials.php:586
+#: xooclasses/xoo.userultra.socials.php:518
+#: xooclasses/xoo.userultra.socials.php:624
 #: xooclasses/xoo.userultra.user.php:753 xooclasses/xoo.userultra.user.php:823
 #: xooclasses/xoo.userultra.user.php:890
 msgid "Action"
@@ -5452,101 +5582,101 @@ msgid "Registration successful. Please check your email."
 msgstr "Registrering framgångsrik. Kontrollera din e-postadress."
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:98
+#: xooclasses/xoo.userultra.socials.php:117
 msgid " Friend Request Sent "
 msgstr "Vänförfrågan skickad "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:102
+#: xooclasses/xoo.userultra.socials.php:121
 msgid "You have to be logged in to send a friend request "
 msgstr "Du måste vara inloggad för att skicka en vänförfrågan "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:109
+#: xooclasses/xoo.userultra.socials.php:128
 msgid "Request Already Sent"
 msgstr "Förfrågan redan skickad"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:177
+#: xooclasses/xoo.userultra.socials.php:199
 msgid "Thanks "
 msgstr "Tack "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:181
+#: xooclasses/xoo.userultra.socials.php:203
 msgid "Please login to rate "
 msgstr "Logga in för att betygsätta "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:186
+#: xooclasses/xoo.userultra.socials.php:208
 #, fuzzy
 msgid "You've already liked it "
 msgstr "Du har redan lämnat ditt betyg "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:232
+#: xooclasses/xoo.userultra.socials.php:254
 msgid "Friends"
 msgstr "Vänner"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:233
+#: xooclasses/xoo.userultra.socials.php:255
 msgid "Send Friend Request"
 msgstr "Skicka vänförfrågan"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:233
+#: xooclasses/xoo.userultra.socials.php:255
 msgid "Be a Friend "
 msgstr "Bli vän "
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:267
-#: xooclasses/xoo.userultra.socials.php:274
+#: xooclasses/xoo.userultra.socials.php:289
+#: xooclasses/xoo.userultra.socials.php:296
 msgid "Request approved"
 msgstr "Förfrågan godkänd"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:281
+#: xooclasses/xoo.userultra.socials.php:303
 msgid "Request rejected"
 msgstr "Förfrågan avslagen"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:364
-#: xooclasses/xoo.userultra.socials.php:413
+#: xooclasses/xoo.userultra.socials.php:386
+#: xooclasses/xoo.userultra.socials.php:435
 msgid "Likes"
 msgstr "Gilla"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:365
+#: xooclasses/xoo.userultra.socials.php:387
 msgid "Like"
 msgstr "Gilla"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:365
+#: xooclasses/xoo.userultra.socials.php:387
 msgid "Dislike"
 msgstr "Ogilla"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:468
+#: xooclasses/xoo.userultra.socials.php:506
 msgid "Latest Friend Requests"
 msgstr "Senaste vänförfrågan"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:503
+#: xooclasses/xoo.userultra.socials.php:541
 msgid "Approve"
 msgstr "Godkänn"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:503
+#: xooclasses/xoo.userultra.socials.php:541
 #: xooclasses/xoo.userultra.user.php:772 xooclasses/xoo.userultra.user.php:842
 msgid "Deny"
 msgstr "Neka"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:574
+#: xooclasses/xoo.userultra.socials.php:612
 msgid "All My Friends"
 msgstr "Alla mina vänner"
 
 # @ xoousers
-#: xooclasses/xoo.userultra.socials.php:609
+#: xooclasses/xoo.userultra.socials.php:647
 msgid "Block"
 msgstr "Blockera"
 
