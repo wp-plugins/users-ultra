@@ -116,9 +116,9 @@ $howmany = 5;
                 
 				<?php if(!in_array("friends",$modules)){?> 
                 
-                 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "messages", $modules_custom_user, $modules_custom_user_id )){?> 
+                 <?php if(!$xoouserultra->check_if_disabled_for_this_user($user_id, "friends", $modules_custom_user, $modules_custom_user_id )){?> 
                 
-              		 		  <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
+              		 		  <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('friends');?></li>
                      
                      <?php }?>
                                      
