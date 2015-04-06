@@ -1025,4 +1025,46 @@ a.uultra-btn-delpostimg:hover{
 		 color: #333 !important;
 
 }
+
+a.uultra-btn-post-featured-image span{
+
+	margin:0px 10px 0px 5px;
+	text-align:left;	
+
+}
+
+
+
+a.uultra-btn-post-featured-image  i{	
+
+	margin:0px 5px 0px 2px;	
+
+}
+
+
+a.uultra-btn-post-featured-image { 
+
+		display:inline-block; 
+		height:20px;
+		width:99%;
+		padding-top:5px;
+		text-align:left;
+		font-size:12px;
+		margin-right:2%;
+		margin-top:5px;
+		border:solid 1px #E8E8E8;
+		 background: #FFAEAE; 
+
+		-moz-border-radius: 5px; 
+
+	     border-radius:5px;
+
+		 color:#333;
+
+		 text-decoration:none;
+
+
+
+}
+
 .ui-datepicker{ background-color:#F3F3F3}

@@ -12,6 +12,7 @@ class XooPublisher
 		add_action( 'init', array($this, 'handle_post') );		
 		add_action( 'wp_ajax_featured_post_img_upload', array($this, 'featured_img_upload') );
 		add_action( 'wp_ajax_featured_img_delete', array($this, 'featured_img_delete') );
+		add_action( 'wp_ajax_uultra_set_post_main_picture', array($this, 'uultra_set_post_main_picture') );	
 		
 		
 	}
@@ -38,6 +39,19 @@ class XooPublisher
 		
 		}
 		
+	}
+	
+	function uultra_set_post_main_picture() 
+	{
+		$post_id = $_POST['post_id'];
+		$attachment_id = $_POST['attach_id'];
+		set_post_thumbnail( $post_id, $attachment_id );
+		
+		//get photo list
+		$html = $this->uultra_edit_attachment($post_id);
+		echo $html;
+		die();
+	
 	}
 	
 	//edit_post
@@ -131,7 +145,7 @@ class XooPublisher
                  <form method="post" name="uultra-front-publisher-post">
                  <input type="hidden" name="uultra-conf-edition-post" value="ok" />
                  
-                 <input type="hidden" name="post_id" value="<?php echo $id?>" />
+                 <input type="hidden" name="post_id" id="post_id" value="<?php echo $id?>" />
                  
                  <div class="tablenav_post">
                 
@@ -521,8 +535,20 @@ class XooPublisher
 	function uultra_edit_attachment( $post_id )
 	{
 		$attach = $this->uultra_get_attachments( $post_id );
+		
+		//has post thum
+		
+		$has_thumb = false;
+		$post_thumbnail_id='';
+		
+		if ( has_post_thumbnail($post_id) )
+		{
+			$has_thumb = true;	
+			$post_thumbnail_id = get_post_thumbnail_id( $post_id );	
+		}
 	
-		if ( $attach ) {
+		if ( $attach ) 
+		{
 			$count = 1;
 			foreach ($attach as $a) 
 			{
@@ -534,6 +560,15 @@ class XooPublisher
 				$html .= sprintf( '<img src="%s" alt="%s" />', $a['url'], esc_attr($a['title'] ) );
 				$html .= '<a class="uultra-btn-delpostimg  uu-photopost-delete" href="#" id="" data-id="'. $attach_id.'" ><span><i class="fa fa-times"></i>'.__("Delete Image", 'xoousers').'</span></a>';
 				
+				if($attach_id==$post_thumbnail_id)
+				{					
+					$html .= '<a class="uultra-btn-post-featured-image  " href="#" id="" data-id="'. $attach_id.'" ><span><i class="fa fa-check-square-o "></i>'.__("Main Image", 'xoousers').'</span></a>';
+				
+				}else{
+					
+					$html .= '<a class="uultra-btn-delpostimg  uu-photopost-set-as-main" href="#" id="" data-id="'. $attach_id.'" ><span><i class="fa fa-image "></i>'.__("Set As Main", 'xoousers').'</span></a>';
+				}				
+				
 				$html .= '</li>';
 		
 				$count++;
@@ -541,6 +576,8 @@ class XooPublisher
 				echo $html;
 			}
 		}
+		
+		
 	}
 	
 	
@@ -666,7 +703,7 @@ class XooPublisher
 		foreach ($images as $image)
 		{
 			
-			if($i==1)
+			if($i==1 && !has_post_thumbnail($post_id))
 			{
 				set_post_thumbnail( $post_id, $image );			
 			}
@@ -1236,6 +1273,36 @@ class XooPublisher
 									//remove from list	
 									$('#attachment-'+attach_id).fadeOut();								
 									$('#attachment-'+attach_id).remove();
+														
+									
+									}
+							});
+						
+						
+						 // Cancel the default action
+						 return false;
+						e.preventDefault();
+					 
+						
+					});
+					
+						$(document).on("click", "a.uu-photopost-set-as-main", function(e) {						
+								
+						e.preventDefault();		
+											
+							var attach_id =  jQuery(this).attr("data-id");
+							var post_id =  $('#post_id').val();
+																		
+							jQuery.ajax({
+								type: 'POST',
+								url: ajaxurl,
+								data: {"action": "uultra_set_post_main_picture", "attach_id": attach_id  , "post_id": post_id },
+								
+								success: function(data){
+									
+									//remove from list	
+									$('#uuultra_filelist_uploaded ul').html(data);								
+									//$('#attachment-'+attach_id).remove();
 														
 									
 									}
