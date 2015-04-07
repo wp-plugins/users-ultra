@@ -700,24 +700,29 @@ class XooPublisher
 	{
 		$images = $_POST["uultra_featured_img"];
 		$i = 1;
-		foreach ($images as $image)
+		
+		if(isset($images) && !empty( $images ))
 		{
-			
-			if($i==1 && !has_post_thumbnail($post_id))
+			foreach ($images as $image)
 			{
-				set_post_thumbnail( $post_id, $image );			
+				
+				if($i==1 && !has_post_thumbnail($post_id))
+				{
+					set_post_thumbnail( $post_id, $image );			
+				}
+				
+				$my_post = array(
+					  'ID'           => $image,
+					  'post_parent' => $post_id
+				  );
+				
+				// Update the post into the database
+				 wp_update_post( $my_post );
+	  
+				
+				$i++;
+			
 			}
-			
-			$my_post = array(
-				  'ID'           => $image,
-				  'post_parent' => $post_id
-			  );
-			
-			// Update the post into the database
-			 wp_update_post( $my_post );
-  
-			
-			$i++;
 		
 		}
 		
