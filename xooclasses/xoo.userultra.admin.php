@@ -364,6 +364,7 @@ class XooUserAdmin extends XooUserUltraCommon
 						'profile_page_id' => '0',
 						'hide_admin_bar' => '1',
 						'registration_rules' => '1',
+						'uultra_loggedin_activated' => '',
 						
 						'media_avatar_width' => '190',
 						'media_avatar_height' => '190',
@@ -383,6 +384,13 @@ class XooUserAdmin extends XooUserUltraCommon
 						'uultra_front_publisher_allows_category' => 'yes',
 						'uultra_front_publisher_default_category' => '',
 						
+						
+						'uultra_loggedin_post_title' => __('No rights!','xoousers'),
+						'uultra_loggedin_post_content' => __('Sorry you have to be logged in to view this post!','xoousers'),
+						'uultra_loggedin_post_comment_content' => __('Sorry no rights to view comments!','xoousers'), 						
+						'uultra_loggedin_page_title' => __('No rights!','xoousers'),
+						'uultra_loggedin_page_content' => __('Sorry you have to be logged in to view this page!','xoousers'),
+						'uultra_loggedin_page_comment_content' => __('Sorry no rights to view comments!','xoousers'), 
 						
 						'usersultra_my_account_slug' => 'myaccount',						
 						'usersultra_slug' => 'profile',
@@ -853,7 +861,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		{
 	
 		
-		 $special_with_check = array('hide_admin_bar', 'disable_default_lightbox', 'uultra_allow_guest_rating', 'uultra_allow_guest_like', 'private_message_system','redirect_backend_profile','redirect_backend_registration','redirect_backend_login', 'social_media_fb_active', 'social_media_linked_active', 'instagram_connect', 'social_media_yahoo', 'social_media_google', 'twitter_connect', 'yammer_connect', 'twitter_autopost', 'mailchimp_active', 'media_allow_photo_uploading', 'membership_display_selected_only');
+		 $special_with_check = array('hide_admin_bar', 'disable_default_lightbox', 'uultra_allow_guest_rating', 'uultra_loggedin_activated', 'uultra_allow_guest_like', 'private_message_system','redirect_backend_profile','redirect_backend_registration','redirect_backend_login', 'social_media_fb_active', 'social_media_linked_active', 'instagram_connect', 'social_media_yahoo', 'social_media_google', 'twitter_connect', 'yammer_connect', 'twitter_autopost', 'mailchimp_active', 'media_allow_photo_uploading', 'membership_display_selected_only');
 		 
 		}elseif($tab=="gateway"){
 			

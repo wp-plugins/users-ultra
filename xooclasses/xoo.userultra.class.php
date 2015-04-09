@@ -9,6 +9,12 @@ class XooUserUltra
 	public $allowed_inputs;
 	public $use_captcha = "no";
 	
+	var $_aPostableTypes = array(
+        'post',
+        'page',
+        'attachment',
+    );
+	
 		
 	public function __construct()
 	{
@@ -112,8 +118,300 @@ class XooUserUltra
 		add_action( 'wp_head', array(&$this, 'pluginname_ajaxurl'));
 		add_action( 'wp_head', array(&$this, 'add_custom_css_style'));	
 		
+		$this->uultra_post_protection_logged_in();
+		
 		
 	}
+	
+	
+	// post protection by logged in users	
+	function uultra_post_protection_logged_in() 
+	{
+		if($this->get_option('uultra_loggedin_activated')=='1')
+		{			
+			
+			add_action( 'save_post',  array( &$this, 'uultra_save_post_logged_in_protect' ), 97);	
+			add_filter('the_posts', array(&$this, 'uultra_showPost'));	
+			add_filter('get_pages', array(&$this, 'uultra_showPage'));	
+			
+			add_action( 'add_meta_boxes', array(&$this, 'uultra_post_protection_add_meta_box' ));	
+		
+		
+		}
+		
+	}
+	
+	  /**
+     * The function for the get_pages filter.
+     * 
+     * @param array $aPages The pages.
+     * 
+     * @return array
+     */
+    public function uultra_showPage($aPages = array())
+    {
+		global $xoouserultra;
+		
+        $aShowPages = array();       
+       
+        foreach ($aPages as $oPage) 
+		{
+            if ($xoouserultra->get_option('uultra_loggedin_hide_complete_page') == 'yes'   ) 
+			{
+				
+               // $oPage->post_title .= $this->adminOutput( $oPage->post_type, $oPage->ID );
+                $aShowPages[] = $oPage;
+               
+				
+				
+            } else {
+				
+                if (!$this->checkAccessToPost($oPage->ID)) 
+				{
+					if ($xoouserultra->get_option('uultra_loggedin_hide_page_title') == 'yes') 
+					{
+						$oPage->post_title =$xoouserultra->get_option('uultra_loggedin_page_title');
+					}
+
+                    $oPage->post_content = $xoouserultra->get_option('uultra_loggedin_page_content');;
+                }
+
+               // $oPage->post_title .= $this->adminOutput($oPage->post_type, $oPage->ID);
+                $aShowPages[] = $oPage;
+            }
+        }
+        
+        $aPages = $aShowPages;
+        
+        return $aPages;
+    }
+	
+	 /**
+     * The function for the the_posts filter.
+     * 
+     * @param array $aPosts The posts.
+     * 
+     * @return array
+     */
+    public function uultra_showPost($aPosts = array())
+    {
+		global $xoouserultra;
+        $aShowPosts = array();		
+       
+        if (!is_feed() || ($this->get_option('uultra_loggedin_protect_feed') == 'yes'  && is_feed())) 
+		{
+			//echo "HERE ";
+            foreach ($aPosts as $iPostId)
+			 {
+                if ($iPostId !== null) 
+				{
+                    $oPost = $this->_getPost($iPostId);
+
+                    if ($oPost !== null)
+					{
+                        $aShowPosts[] = $oPost;
+                    }
+                }
+            }
+
+            $aPosts = $aShowPosts;
+        }
+        
+        return $aPosts;
+    }
+	
+	
+	 /**
+     * Modifies the content of the post by the given settings.
+     * 
+     * @param object $oPost The current post.
+     * 
+     * @return object|null
+     */
+    protected function _getPost($oPost)
+    {
+		global $xoouserultra;
+		
+       
+        $sPostType = $oPost->post_type;
+
+		if ($sPostType != 'post' && $sPostType != 'page')
+		{			
+			   $sPostType = 'post';
+			
+        } elseif ($sPostType != 'post' && $sPostType != 'page') 
+		{
+            return $oPost;
+        }
+        
+        if ($xoouserultra->get_option('uultra_loggedin_hide_complete_post') == 'yes' ) 
+		{
+          // $oPost->post_title .= $this->adminOutput($oPost->post_type, $oPost->ID);
+            return $oPost;
+            
+			
+        } else {
+			
+            if (!$this->checkAccessToPost($oPost->ID)) 
+			{
+                $oPost->isLocked = true;
+                
+                $uultraPostContent = $xoouserultra->get_option('uultra_loggedin_'.$sPostType.'_content');
+                
+                if ($xoouserultra->get_option('uultra_loggedin_hide_'.$sPostType.'_title') == 'yes') 
+				{
+                    $oPost->post_title =$xoouserultra->get_option('uultra_loggedin_'.$sPostType.'_title');
+                }
+                
+                if ($xoouserultra->get_option('uultra_loggedin_allow_'.$sPostType.'_comments') == 'no')
+				{
+                    $oPost->comment_status = 'close';
+                }
+
+                if ($xoouserultra->get_option('uultra_loggedin_post_content_before_more') == 'yes'
+                    && $sPostType == "post" && preg_match('/<!--more(.*?)?-->/', $oPost->post_content, $aMatches)
+                ) 
+				{
+                    $oPost->post_content = explode($aMatches[0], $oPost->post_content, 2);
+                    $uultraPostContent = $oPost->post_content[0] . " " . $uultraPostContent;
+                }
+
+                $oPost->post_content = stripslashes($uultraPostContent);
+            }
+
+            
+            return $oPost;
+        }
+		
+		
+        
+        return null;
+    }
+	
+	public function checkAccessToPost($post_id) 
+	{
+		global $xoouserultra;
+		
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH. 'wp-admin/includes/user.php' );
+		
+		$res = true;
+		
+		$uultra_protect_logged_in = get_post_meta( $post_id, 'uultra_protect_logged_in' , true);
+		
+		if ($uultra_protect_logged_in == 'yes' ) 
+		{
+			if(!is_user_logged_in())
+			{
+				$res = false;
+				
+			}
+			
+		}else{
+			
+				
+				$res = true;		
+		
+		}
+		
+		return $res;
+		
+	
+	}
+	
+	function uultra_save_post_logged_in_protect( $post_id ) 
+	{	
+		// If this is just a revision, don't send the email.
+		if ( wp_is_post_revision( $post_id ) || wp_is_post_autosave($post_id) )
+			return;
+			
+				 
+		 $post = get_post($post_id);
+        if($post->post_status == 'trash' ){
+                return $post_id;
+        }
+		
+		$aFormData = array();
+		
+		
+		 if (isset($_POST['uultra_update_logged_in_access'])) {
+            $aFormData = $_POST;
+			
+        } elseif (isset($_GET['uultra_update_logged_in_access'])) {
+			
+            $aFormData = $_GET;
+        }
+				
+		
+		if (isset($aFormData['uultra_update_logged_in_access']))
+		{
+			$is_protected = $aFormData['uultra_protect_logged_in'];
+			update_post_meta($post_id, 'uultra_protect_logged_in', $is_protected);		 
+						
+		}			
+	}
+	
+	function uultra_post_protection_add_meta_box() 
+	{
+		$this->_aPostableTypes = array_merge($this->_aPostableTypes, get_post_types(array('publicly_queryable' => true), 'names'));
+        $this->_aPostableTypes = array_unique($this->_aPostableTypes);
+	
+		$aPostableTypes = $this->getPostableTypes();
+                
+        foreach ($aPostableTypes as $sPostableType) 
+		{
+			add_meta_box('uultra_post_access_logged_in', 'Users Ultra Post Protection', array(&$this, 'editPostContent'), $sPostableType, 'side');
+			
+        }
+		
+	}
+	
+	public function getPostableTypes()
+    {
+        return $this->_aPostableTypes;
+    }
+	
+	public function editPostContent($oPost)
+    {
+		
+        $iObjectId = $oPost->ID;
+	   
+		if (isset($_GET['attachment_id'])) {
+				$iObjectId = $_GET['attachment_id'];
+		} elseif (!isset($iObjectId)) {
+				$iObjectId = 0;
+		}
+			
+		$oPost = get_post($iObjectId);
+		$sObjectType = $oPost->post_type;
+		
+		$uultra_protect_logged_in = get_post_meta( $iObjectId, 'uultra_protect_logged_in' , true);
+		
+		$html = '';
+		
+		$html .= '<div class="uultra-protect-group-options">	';				
+		$html .= '<input type="hidden" name="uultra_update_logged_in_access" value="true" />	';			
+			
+				 
+		if ($uultra_protect_logged_in=='yes')
+		{
+			$checked = 'checked="checked"';
+		}
+				 
+		$html .= ' <li>';				
+		$html .= '<input type="checkbox" id="uultra_protect_logged_in" value="yes" name="uultra_protect_logged_in" '.$checked.' /> ';
+                 
+       $html .= ' <label for="uultra_protect_logged_in" class="selectit" style="display:inline;" >
+            '.__('Only Logged in Users','xoousers').'
+        </label>';
+				
+		$html .= ' </li>';		
+		$html .= ' </div>';
+		
+		
+		echo $html;	
+
+    }	
 	
 	
 	public function add_custom_css_style () 

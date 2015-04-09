@@ -811,6 +811,238 @@ $this->create_plugin_setting(
 </div>
 
 <div class="user-ultra-sect ">
+  <h3><?php _e("Logged In Users Pages and Posts Protection Settings",'xoousers'); ?></h3>
+  
+  <p><?php _e("In this section you can manage Posts & Pages Protection module settings.",'xoousers'); ?></p>
+   <p><?php _e("This module will let you block pages and any post types and make them visible only to logged in users.",'xoousers'); ?></p>
+  
+  
+   <h4><?php _e("Set up the behaviour of locked posts.",'xoousers'); ?></h4>
+  <table class="form-table">
+<?php 
+
+
+$this->create_plugin_setting(
+                'checkbox',
+                'uultra_loggedin_activated',
+                __('Activate Logged in Post Protection','xoousers'),
+                '1',
+                __('If checked, You will be able to protect pages and post bassed on logged in users.','xoousers'),
+                __('If checked, You will be able to protect pages and post bassed on logged in users.','xoousers')
+        ); 
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_hide_complete_post',
+	__('Hide Complete Posts?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will hide posts if the user has no access",'xoousers'),
+  __("By selecting 'yes' will hide posts if the user has no access",'xoousers')
+       );
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_hide_post_title',
+	__('Hide Post Title?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will show the text which is defined at 'Post title' if user has no access.",'xoousers'),
+  __("By selecting 'yes' will show the text which is defined at 'Post title' if user has no access.",'xoousers')
+       );
+	   
+$this->create_plugin_setting( 
+        'input',
+        'uultra_loggedin_post_title',
+        __('Post Title:','xoousers'),array(),
+        __('This will be the displayed text as post title if user has no access.','xoousers'),
+        __('This will be the displayed text as post title if user has no access.','xoousers')
+);  
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_post_content_before_more',
+	__('Show post content before &lt;!--more--&gt; tag?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__('By selecting "Yes"  will display the post content before the &lt;!--more--&gt; tag and after that the defined text at "Post content". If no &lt;!--more--&gt;  is set he defined text at "Post content" will shown.','xoousers'),
+  __('By selecting "Yes"  will display the post content before the &lt;!--more--&gt; tag and after that the defined text at "Post content". If no &lt;!--more--&gt;  is set he defined text at "Post content" will shown.','xoousers')
+       );
+
+
+$this->create_plugin_setting(
+        'textarea',
+        'uultra_loggedin_post_content',
+        __('Post Content','xoousers'),array(),
+        __('This content will be displayed if user has no access. ','xoousers'),
+        __('This content will be displayed if user has no access. ','xoousers')
+);
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_hide_post_comments',
+	__('Hide Post Comments?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will show the text which is defined at 'Post comment text' if user has no access.",'xoousers'),
+  __("By selecting 'yes' will show the text which is defined at 'Post comment text' if user has no access.",'xoousers')
+       );
+	  
+$this->create_plugin_setting( 
+        'input',
+        'uultra_loggedin_post_comment_content',
+        __('Post Comment Text:','xoousers'),array(),
+        __('This will be displayed text as post comment text if user has no access.','xoousers'),
+        __('This will be displayed text as post comment text if user has no access.','xoousers')
+);  
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_allow_post_comments',
+	__('Allows Post Comments?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' allows users to comment on locked posts",'xoousers'),
+  __("By selecting 'yes' allows users to comment on locked posts",'xoousers')
+       );	  
+		
+?>
+</table>
+
+
+   <h4><?php _e("Set up the behaviour of locked pages.",'xoousers'); ?></h4>
+  <table class="form-table">
+<?php 
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_hide_complete_page',
+	__('Hide Complete Pages?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will hide pages if the user has no access",'xoousers'),
+  __("By selecting 'yes' will hide pages if the user has no access",'xoousers')
+       );
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_hide_page_title',
+	__('Hide Page Title?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will show the text which is defined at 'Page title' if user has no access.",'xoousers'),
+  __("By selecting 'yes' will show the text which is defined at 'Page title' if user has no access.",'xoousers')
+       );
+	   
+$this->create_plugin_setting( 
+        'input',
+        'uultra_loggedin_page_title',
+        __('Page Title:','xoousers'),array(),
+        __('This will be the displayed text as page title if user has no access.','xoousers'),
+        __('This will be the displayed text as page title if user has no access.','xoousers')
+);  
+
+
+$this->create_plugin_setting(
+        'textarea',
+        'uultra_loggedin_page_content',
+        __('Page Content','xoousers'),array(),
+        __('This content will be displayed if user has no access. ','xoousers'),
+        __('This content will be displayed if user has no access. ','xoousers')
+);
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_hide_page_comments',
+	__('Hide Page Comments?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will show the text which is defined at 'Page comment text' if user has no access.",'xoousers'),
+  __("By selecting 'yes' will show the text which is defined at 'Page comment text' if user has no access.",'xoousers')
+       );
+	  
+	  
+	  	  
+$this->create_plugin_setting( 
+        'input',
+        'uultra_loggedin_page_comment_content',
+        __('Page Comment Text:','xoousers'),array(),
+        __('This will be displayed text as page comment text if user has no access.','xoousers'),
+        __('This will be displayed text as page comment text if user has no access.','xoousers')
+);  
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_allow_page_comments',
+	__('Allows Page Comments?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' allows users to comment on locked pages",'xoousers'),
+  __("By selecting 'yes' allows users to comment on locked pages",'xoousers')
+       );	 
+  
+		
+?>
+</table>
+
+<h4><?php _e("Other Settings.",'xoousers'); ?></h4>
+  <table class="form-table">
+<?php 
+
+
+
+$this->create_plugin_setting(
+	'select',
+	'uultra_loggedin_protect_feed',
+	__('Hide Post Title?','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("By selecting 'yes' will show the text which is defined at 'Post title' if user has no access.",'xoousers'),
+  __("By selecting 'yes' will show the text which is defined at 'Post title' if user has no access.",'xoousers')
+       );
+	   
+  
+		
+?>
+</table>
+  
+</div>
+
+
+<div class="user-ultra-sect ">
  <h3><?php _e('Redirect Settings','xoousers'); ?></h3>
 
   <p><?php _e('.','xoousers'); ?></p>
