@@ -414,9 +414,11 @@ $meta_custom_value = "";
 						</option>
 						<?php
 						$current_user = wp_get_current_user();
-						if( $all_meta_for_user = get_user_meta( $current_user->ID ) ) {
+						if( $all_meta_for_user = get_user_meta( $current_user->ID ) ) 
+						{
 						    ksort($all_meta_for_user);
-						    foreach($all_meta_for_user as $user_meta => $user_meta_array) {
+						    foreach($all_meta_for_user as $user_meta => $user_meta_array) 
+							{
 
 						        ?>
 						<option value="<?php echo $user_meta; ?>"
@@ -569,7 +571,7 @@ $meta_custom_value = "";
 				    $field = '';
 
 
-				if($type == 'separator' ||  ($private != 1 && $meta != 'user_email' && $field != 'fileupload'))
+				if($type == 'separator' ||  ($private != 1 && $meta != 'user_email' ))
 				{
 				    if(!isset($show_in_register))
 				        $show_in_register= 0;

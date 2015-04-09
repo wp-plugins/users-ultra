@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.89
+Stable tag: 1.4.90
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -166,6 +166,20 @@ Users Ultra looks great on any mobile device. It has been developed by using the
 
 <h3><strong>USERS ULTRA FREE VERSION INCLUDES: </strong></h3>
 <br>
+<strong>Paypal Membership System:</strong><br>
+The plugin can be used to manage large communities of either free or paid subscribers. You can create as many packages as you wish with some limitations such as: how many photos, galleries to each package. The Users Ultra Membership module allows you to accept either one-time payments or recurring payment through Paypal.
+
+Since it uses Paypal, you could create almost any type of billing period such as: monthly, yearly, daily. We hope you enjoy this great feature to manage your Paid Membership Packages.
+
+<strong>MailChimp</strong><br>
+The MailChimp feature allows you to quickly and easily add your new subscribers in your MailChimp list without any confirmation email. 
+
+<strong>Social Connects</strong><br>
+Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter, Yammer or LinkedIn account.
+
+<strong>Protecting content based on Membership Package & Logged in:</strong><br>
+The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
+
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
 
@@ -192,20 +206,6 @@ Besides, each message will display the user's avatar and there is an "received" 
 
 <strong>Front-end Publisher</strong><br>
 Allows your users to add <strong>new posts within a category </strong>by using a "nice" publisher in the users backend. The post will keep as "pending" until the admin has approved it. 
-
-<strong>Paypal Membership System:</strong><br>
-The plugin can be used to manage large communities of either free or paid subscribers. You can create as many packages as you wish with some limitations such as: how many photos, galleries to each package. The Users Ultra Membership module allows you to accept either one-time payments or recurring payment through Paypal.
-
-Since it uses Paypal, you could create almost any type of billing period such as: monthly, yearly, daily. We hope you enjoy this great feature to manage your Paid Membership Packages.
-
-<strong>MailChimp</strong><br>
-The MailChimp feature allows you to quickly and easily add your new subscribers in your MailChimp list without any confirmation email. 
-
-<strong>Social Connects</strong><br>
-Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter, Yammer or LinkedIn account.
-
-<strong>Protecting content based on Membership Package</strong><br>
-The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
 
 <strong>Conditional Search Fields:</strong><br>
 Users Ultra allows you to place a powerful search box to filter your users by using a simple shortocode. The searching form is fully responsive and can be placed anywhere in your WordPress Theme.
@@ -393,6 +393,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.4.90(04-08-2015) =
+* Improvement. Fields Customizer Tweak. Please check details here http://usersultra.com/support/forums/topic/image-upload-doesnt-work/
+
 
 = 1.4.89(04-07-2015) =
 * Bug Fix - Front-End Publisher warning message was being displayed in the screen. We have tweaked the code. Please udpate.

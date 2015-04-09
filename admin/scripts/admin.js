@@ -231,6 +231,7 @@ jQuery(document).ready(function($) {
 		var _show_in_register = $("#uultra_show_in_register").val();
 		var _choices =  $("#uultra_choices").val();	
 		var _predefined_options =  $("#uultra_predefined_options").val();	
+		var _icon =  $('input:radio[name=uultra_icon]:checked').val();
 		
 		 
 		
@@ -245,7 +246,8 @@ jQuery(document).ready(function($) {
 						"_can_edit": _can_edit ,"_allow_html": _allow_html  ,
 						"_can_hide": _can_hide  ,"_private": _private, 
 						"_required": _required  ,"_show_in_register": _show_in_register ,
-						"_choices": _choices,  "_predefined_options": _predefined_options },
+						"_choices": _choices,  "_predefined_options": _predefined_options , 
+						 "_icon": _icon },
 						
 						success: function(data){		
 						

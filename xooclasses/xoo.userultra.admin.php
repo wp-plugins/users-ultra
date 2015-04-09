@@ -706,7 +706,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		
 		$fields[$pos] =array(
 			  'position' => $pos,
-				'icon' => 0,
+				'icon' => filter_var($_POST['_icon']),
 				'type' => filter_var($_POST['_type']),
 				'field' => filter_var($_POST['_field']),
 				'meta' => filter_var($meta),
@@ -777,9 +777,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			
 			print_r($fields);
 			
-		    update_option('usersultra_profile_fields', $fields);
-		
-         
+		    update_option('usersultra_profile_fields', $fields);         
 
 
     }
