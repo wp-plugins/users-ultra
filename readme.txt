@@ -175,7 +175,17 @@ Since it uses Paypal, you could create almost any type of billing period such as
 The MailChimp feature allows you to quickly and easily add your new subscribers in your MailChimp list without any confirmation email. 
 
 <strong>Social Connects</strong><br>
-Optional you can let users sign up & login by using their<strong> Facebook, Google, Yahoo, Twitter, Yammer or LinkedIn account.
+Optional you can let users sign up & login by using the following social media options:
+
+<ul>
+<li>Facebook</li>
+<li>Google Plus</li>
+<li>Yahoo</li>
+<li>Twitter</li>
+<li>LinkedIn</li>
+<li>Instagram</li>
+<li>Yammer</li>
+</ul>
 
 <strong>Protecting content based on Membership Package & Logged in:</strong><br>
 The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
