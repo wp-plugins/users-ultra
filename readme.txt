@@ -188,7 +188,14 @@ Optional you can let users sign up & login by using the following social media o
 </ul>
 
 <strong>Protecting content based on Membership Package & Logged in:</strong><br>
-The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members.
+The plugin comes with an easy to use shortcode that allows you to protect content based on logged in and membership packages.  <strong>This means that you can publish content that will be visible only for paid users</strong>. For example: you can publish content for gold members which will not be visible for silver members. Users Ultra allows you to protect entire pages and posts and display custom "blocking" messages to not logged in users.
+
+<ul>
+  <li>Make visible entire Pages and Posts only to logged in users.</li>
+  <li>Display partial content only to logged in user.s</li>
+  <li>Display partial content only to certain membership packages.</li>
+ 
+</ul>
 
 <strong>CSV Users Import</strong><br>
 This great feature allows you to import users into the Users Ultra System easily through a CSV file. You may also to notify users once the importing process has been finished. Besides, you can set a default status for the imported users.
