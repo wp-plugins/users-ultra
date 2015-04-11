@@ -54,6 +54,11 @@ global $xoouserultra;
             <div class="uultra-col">
              <h1><?php _e('Roles Integration','xoousers'); ?></h1> 
              <p> <?php _e("Users will be able to select a predefined role when registering and you will be able to assign a custom role to a membership package.",'xoousers'); ?></p>
+            </div> 
+            
+              <div class="uultra-col">
+             <h1><?php _e('Pages & Posts Protection','xoousers'); ?></h1> 
+             <p> <?php _e("With Users Ultra Por you can restrict content on a global or per page/post basis. You can restrict pages/posts so everyone can see the page/post or only logged in users can see the page/post ",'xoousers'); ?></p>
             </div>  
             
           
@@ -205,7 +210,7 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.2.20</p>
+            <p>Version: 1.2.28</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              

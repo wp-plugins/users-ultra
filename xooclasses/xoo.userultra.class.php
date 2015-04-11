@@ -159,7 +159,6 @@ class XooUserUltra
             if ($xoouserultra->get_option('uultra_loggedin_hide_complete_page') == 'yes'   ) 
 			{
 				
-               // $oPage->post_title .= $this->adminOutput( $oPage->post_type, $oPage->ID );
                 $aShowPages[] = $oPage;
                
 				
@@ -176,7 +175,6 @@ class XooUserUltra
                     $oPage->post_content = $xoouserultra->get_option('uultra_loggedin_page_content');;
                 }
 
-               // $oPage->post_title .= $this->adminOutput($oPage->post_type, $oPage->ID);
                 $aShowPages[] = $oPage;
             }
         }
@@ -206,7 +204,6 @@ class XooUserUltra
                 if ($iPostId !== null) 
 				{
                     $oPost = $this->_getPost($iPostId);
-
                     if ($oPost !== null)
 					{
                         $aShowPosts[] = $oPost;
@@ -230,8 +227,7 @@ class XooUserUltra
      */
     protected function _getPost($oPost)
     {
-		global $xoouserultra;
-		
+		global $xoouserultra;		
        
         $sPostType = $oPost->post_type;
 
@@ -246,9 +242,8 @@ class XooUserUltra
         
         if ($xoouserultra->get_option('uultra_loggedin_hide_complete_post') == 'yes' ) 
 		{
-          // $oPost->post_title .= $this->adminOutput($oPost->post_type, $oPost->ID);
-            return $oPost;
-            
+         
+            return $oPost;            
 			
         } else {
 			
@@ -307,8 +302,7 @@ class XooUserUltra
 				
 			}
 			
-		}else{
-			
+		}else{		
 				
 				$res = true;		
 		
