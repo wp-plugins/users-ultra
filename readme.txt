@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.92
+Stable tag: 1.4.93
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -412,15 +412,19 @@ Initial release.
 
 == Changelog ==
 
-= 1.4.92(04-102015) =
-* Improvements. The new feature to protect entire pages and posts has been improved. Please update
-* Improvements. All language files were updated.
+= 1.4.93(04-12-2015) =
+* Improvements - Issue with stats.
+* Improvements - Posts and Pages protection feature has been tweaked.
+
+= 1.4.92(04-10-2015) =
+* Improvements - The new feature to protect entire pages and posts has been improved. Please update
+* Improvements - All language files were updated.
 
 = 1.4.91(04-09-2015) =
-* New Feature. Now you can protect an entire page or post with Users Ultra. You will see the new settings on the Settings tab. The restricted page or post will be visible to logged in users only. You will see the checkbox that will let you protect the entire page in the WP HTML editor. Please note: You have to activate this feature in the Settings module. Enjoy!
+* New Feature - Now you can protect an entire page or post with Users Ultra. You will see the new settings on the Settings tab. The restricted page or post will be visible to logged in users only. You will see the checkbox that will let you protect the entire page in the WP HTML editor. Please note: You have to activate this feature in the Settings module. Enjoy!
 
 = 1.4.90(04-08-2015) =
-* Improvement. Fields Customizer Tweak. Please check details here http://usersultra.com/support/forums/topic/image-upload-doesnt-work/
+* Improvement - Fields Customizer Tweak. Please check details here http://usersultra.com/support/forums/topic/image-upload-doesnt-work/
 
 
 = 1.4.89(04-07-2015) =

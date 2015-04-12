@@ -8,8 +8,7 @@ class XooStat extends XooUserUltraCommon
 	function __construct() 
 	{
 		$this->ini_module();
-		$this->mDateToday =  date("Y-m-d"); 		
-		
+		$this->mDateToday =  date("Y-m-d"); 			
 	}
 	
 	public function ini_module()
@@ -36,8 +35,7 @@ class XooStat extends XooUserUltraCommon
 		  PRIMARY KEY (`stat_id`)
 		) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;';
 	
-		$wpdb->query( $query );
-		
+		$wpdb->query( $query );		
 	
 		
 	}
@@ -46,8 +44,7 @@ class XooStat extends XooUserUltraCommon
 	{
 		
 		 global $wpdb;
-		 
-		//check if already registered
+		 //check if already registered
 		$visitor_ip = $_SERVER['REMOTE_ADDR'];
 		
 		
@@ -88,8 +85,7 @@ class XooStat extends XooUserUltraCommon
 			
 			}
 			
-		}
-		
+		}		
 		
     }
 	
