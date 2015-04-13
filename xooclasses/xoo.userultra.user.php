@@ -314,10 +314,12 @@ class XooUserUser {
 		
 		extract( shortcode_atts( array(	
 			
-			'display_rule' => 'logged_in_based', //logged_in_based, membership_based			
+			'display_rule' => 'logged_in_based', //logged_in_based, membership_based	
+			'roles' => '', //administrator,subscriber		
 			'membership_id' => '', // the ID of the membership package separated by commas
 			'custom_message_loggedin' =>'', // custom message
 			'custom_message_membership' =>'', // custom message
+			'custom_message_role' =>'' // custom message
 						
 			
 		), $atts ) );
@@ -354,6 +356,34 @@ class XooUserUser {
 				//the users is logged in then display content
 				return do_shortcode($content);				
 				
+			}
+			
+		
+			}elseif($display_rule == "role_based"){					
+			
+			//logged in based			
+			if (!is_user_logged_in()) 
+			{
+				return  '<div class="uupublic-ultra-info">'.$custom_message_role.'</div>';
+				
+			} else {
+				
+				//the user is logged in
+				$user_id = get_current_user_id();					
+												
+				if($this->check_user_content_roles($user_id, $roles))
+				{
+					//the users is logged in then display content
+					return do_shortcode($content);
+				
+				}else{
+					
+					return  '<div class="uupublic-ultra-info">'.$custom_message_role.'</div>';
+					
+					
+				}
+				
+			
 			}	
 		
 		}elseif($display_rule == "membership_based"){
@@ -390,10 +420,50 @@ class XooUserUser {
 		
 		}
 		
-		
-		
-		
 	
+	}
+	
+	public function check_user_content_roles($user_id, $roles)
+	{
+		global $wpdb,  $xoouserultra;
+		$roles_that_can_see = array();
+		$roles_that_can_see  = explode(',', $roles);	
+		
+		foreach ($roles_that_can_see as $role)
+		{	
+			
+			if($this->uultra_is_user_in_role($user_id,$role)) // the selected user 
+			{
+				return true;
+			
+			}
+			
+		
+		}
+		
+		return false;
+	
+	}
+	
+	function uultra_is_user_in_role( $user_id, $role  )
+	{
+		return in_array( $role, $this->uultra_get_all_user_roles_array( $user_id ) );
+	}
+	
+	function uultra_get_all_user_roles_array ($user_id ) 
+	{
+		$user = new WP_User( $user_id );
+		
+		$html = array();;
+
+		if ( !empty( $user->roles ) && is_array( $user->roles ) ) 
+		{
+			foreach ( $user->roles as $role )
+				$html[]= $role;
+		}
+		
+		return $html;
+		
 	}
 	
 	public function get_user_package($user_id)
