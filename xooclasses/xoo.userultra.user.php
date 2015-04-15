@@ -378,11 +378,9 @@ class XooUserUser {
 				
 				}else{
 					
-					return  '<div class="uupublic-ultra-info">'.$custom_message_role.'</div>';
+					return  '<div class="uupublic-ultra-info">'.$custom_message_role.'</div>';					
 					
-					
-				}
-				
+				}				
 			
 			}	
 		
@@ -408,14 +406,10 @@ class XooUserUser {
 					
 					return  '<div class="uupublic-ultra-info">'.$custom_message_membership.'</div>';
 					
-				}
+				}				
+					
 				
-				//the users is logged in then display content
-								
-				
-			}
-			
-			
+			}	
 			
 		
 		}

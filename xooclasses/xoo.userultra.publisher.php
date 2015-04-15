@@ -12,8 +12,7 @@ class XooPublisher
 		add_action( 'init', array($this, 'handle_post') );		
 		add_action( 'wp_ajax_featured_post_img_upload', array($this, 'featured_img_upload') );
 		add_action( 'wp_ajax_featured_img_delete', array($this, 'featured_img_delete') );
-		add_action( 'wp_ajax_uultra_set_post_main_picture', array($this, 'uultra_set_post_main_picture') );	
-		
+		add_action( 'wp_ajax_uultra_set_post_main_picture', array($this, 'uultra_set_post_main_picture') );			
 		
 	}
 	
@@ -25,8 +24,7 @@ class XooPublisher
 			if(isset($_POST['uultra-conf-publisher-post']))
 			{			
 				//add new post
-				$this->submit_post();	
-				
+				$this->submit_post();					
 			
 			}
 			
@@ -209,7 +207,7 @@ class XooPublisher
 				
 				$editor_settings = array('media_buttons' => false , 'textarea_rows' => 15 , 'teeny' =>true); 
 				
-				$content = $post->post_content;     
+				$content = $post->post_content;    
                 
                  wp_editor( $content, $editor_id , $editor_settings);
                 
@@ -1179,8 +1177,8 @@ class XooPublisher
 						
 						// Limit to one limit:
 						if (files.length > 1){
-							alert("<?php _e('You may only upload one image at a time!', 'xoousers'); ?>");
-							return false;
+							
+							//return false;
 						}
 						
 						// Remove extra files:
