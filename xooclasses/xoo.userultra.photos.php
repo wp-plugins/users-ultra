@@ -1406,7 +1406,7 @@ class XooUserPhoto {
 		global $wpdb, $xoouserultra;
 		
 
-		$photos = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_galleries WHERE `gallery_id` = ' . $gal_id . ' ' );
+		$photos = $wpdb->get_results( 'SELECT *  FROM ' . $wpdb->prefix . 'usersultra_galleries WHERE `gallery_id` = ' . (int)$gal_id . ' ' );
 		
 		
 		foreach ( $photos as $photo )
