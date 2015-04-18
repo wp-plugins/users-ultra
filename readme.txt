@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.96
+Stable tag: 1.4.97
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,20 @@ Users Ultra is the ideal plugin for creating advanced user communities & network
 Users Ultra is the ideal tool for creating advanced user communities in few minute. Building a talents community, model agency websites, social communities and any kind of user websites is really fast. It can be intregrated in any WordPress Theme. You can <strong>add as many fields as you wish by using the Fields Customizer Tool</strong> and it comes with <strong>reCaptcha</strong>.
 
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
+
+<strong>Free Modules:</strong><br>
+The free version of Users Ulra includes the following features totally free:
+<ul>
+<li>Social Connects.</li>
+<li>MailChimp</li>
+<li>Auto Sync with WooCommerce.</li>
+<li>WooCommerce Order Status Module.</li>
+<li>Private Messages.</li>
+<li>Front-end Publisher With Multi-Photo Uploader.</li>
+<li>Post/Page Content Protection. <strong>Logged in bassed.</strong></li>
+<li>Partial Content Protection. <strong>Membership Bassed.</strong></li>
+<li>Paypal Membership System. Recurring & One-time Billing.</li>
+</ul>
 
 <h3><strong>Useful Links:</strong></h3>
 <blockquote>
@@ -412,9 +426,12 @@ Initial release.
 
 == Changelog ==
 
+= 1.4.97(04-18-2015) =
+* New Feature - Show a custom text message when users complete the registration process. This option is in Settings - Registration Tab.
+* New Feature - Show a text/HTML content under success message when users complete the registration process. This option is in Settings - Registration Tab.
+
 = 1.4.96(04-17-2015) =
 * Improvements - Security issue on user's galleries, please udpate ASAP.
-
 
 = 1.4.95(04-15-2015) =
 * Improvements - Option to protect content based on user's role shortcode has been improved. Please update.

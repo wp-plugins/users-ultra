@@ -531,6 +531,24 @@ $this->create_plugin_setting(
                         __('Enter your reCaptcha Private Key.', 'xoousers'),
                         __('Your reCaptcha kays are required to use reCaptcha. You can register your site for a free key on the Google reCaptcha page.', 'xoousers')
                 );
+				
+				 $this->create_plugin_setting(
+                        'textarea',
+                        'msg_register_success',
+                        __('Register success message', 'xoousers'),
+                        null,
+                        __('Show a text message when users complete the registration process.', 'xoousers'),
+                        __('This message will be shown to users after registration is completed.', 'xoousers')
+                );
+
+                $this->create_plugin_setting(
+                        'textarea',
+                        'html_register_success_after',
+                        __('Text/HTML below the Register Success message.', 'xoousers'),
+                        null,
+                        __('Show a text/HTML content under success message when users complete the registration process.', 'xoousers'),
+                        __('This message will be shown to users under the success message after registration is completed.', 'xoousers')
+                );
     
     
 ?>

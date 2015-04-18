@@ -597,7 +597,28 @@ class XooUserRegister {
 		} else {
 		
 			$this->registered = 1;
-			$display .= '<div class="usersultra-success"><span><i class="usersultra-icon-ok"></i>'.__('Registration successful. Please check your email.','xoousers').'</span></div>';
+			
+			
+			$uultra_settings = get_option('userultra_options');
+
+            // Display custom registraion message
+            if (isset($uultra_settings['msg_register_success']) && !empty($uultra_settings['msg_register_success']))
+			{
+                $display .= '<div class="xoouserultra-success"><span><i class="fa fa-ok"></i>' . remove_script_tags($uultra_settings['msg_register_success']) . '</span></div>';
+            
+			}else{
+				
+                $display .= '<div class="xoouserultra-success"><span><i class="fa fa-ok"></i>'.__('Registration successful. Please check your email.','xoousers').'</span></div>';
+            }
+
+            // Add text/HTML setting to be displayed after registration message
+            if (isset($uultra_settings['html_register_success_after']) && !empty($uultra_settings['html_register_success_after'])) 
+			
+			{
+                $display .= '<div class="xoouserultra-success-html">' . remove_script_tags($uultra_settings['html_register_success_after']) . '</div>';
+            }
+			
+			
 			
 			if (isset($_POST['redirect_to'])) {
 				wp_redirect( $_POST['redirect_to'] );
