@@ -44,6 +44,16 @@ if (!function_exists('is_get')) {
 
 }
 
+if (!function_exists('remove_script_tags')) {
+
+    function remove_script_tags($text) {
+        $text = str_ireplace("<script>", "", $text);
+        $text = str_ireplace("</script>", "", $text);
+
+        return $text;
+    }
+
+}
 
 if(!function_exists('uultra_default_socail_links')) {
 	
