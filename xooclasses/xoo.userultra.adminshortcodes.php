@@ -20,6 +20,9 @@ class XooUserAdminShortCode
 
 	function respo_add_shortcode_button() 
 	{
+		if(current_user_can( 'manage_options' ))
+		{
+			
 		if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') ) return;
 		if ( get_user_option('rich_editing') == 'true') :
 		
@@ -31,6 +34,8 @@ class XooUserAdminShortCode
 		
 			
 		endif;
+		
+		}
 	}
 
 	function respo_register_shortcode_button($buttons) 

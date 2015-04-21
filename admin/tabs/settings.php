@@ -124,8 +124,61 @@ $this->create_plugin_setting(
   
 </div>
 
+
 <div class="user-ultra-sect ">
-  <h3><?php _e('Membership  Settings','xoousers'); ?></h3>
+  <h3><?php _e('Password Strength Settings','xoousers'); ?></h3>
+  
+  <p><?php _e("You can help protect your users' accounts by managing and monitoring the strength of their passwords.",'xoousers'); ?></p>
+  
+  
+  <table class="form-table">
+<?php 
+
+$this->create_plugin_setting(
+        'input',
+        'uultra_password_lenght',
+        __('Minimum password length:','xoousers'),array(),
+        __('By default a Password must be at least 7 characters long','xoousers'),
+        __('By default a Password must be at least 7 characters long','xoousers')
+);
+
+   
+$this->create_plugin_setting(
+                'checkbox',
+                'uultra_password_1_letter_1_number',
+                __('Must contain at least one number and one letter','xoousers'),
+                '1',
+                __('The password must contain at least one number and one letter','xoousers'),
+                __('The password must contain at least one number and one letter','xoousers')
+        ); 
+
+$this->create_plugin_setting(
+                'checkbox',
+                'uultra_password_one_uppercase',
+                __('Must contain at least one upper case character','xoousers'),
+                '1',
+                __('The password must contain at least one upper case character','xoousers'),
+                __('The password must contain at least one upper case character','xoousers')
+        );
+
+$this->create_plugin_setting(
+                'checkbox',
+                'uultra_password_one_lowercase',
+                __('Must contain at least one lower case character','xoousers'),
+                '1',
+                __('The password must contain at least one lower case character','xoousers'),
+                __('The password must contain at least one lowercase character','xoousers')
+        );
+		
+		
+?>
+</table>
+
+  
+</div>
+
+<div class="user-ultra-sect ">
+  <h3><?php _e('Membership Settings','xoousers'); ?></h3>
   
   <p><?php _e('.','xoousers'); ?></p>
   

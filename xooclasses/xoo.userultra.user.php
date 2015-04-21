@@ -240,16 +240,22 @@ class XooUserUser {
 		
 		//close
 		$current_user = wp_get_current_user();
-		$user_id = $current_user->ID;
-		wp_delete_user( $current_user->ID );
 		
-		//delete for multisite wpmu 		
-		if(function_exists('wpmu_delete_user')) 
-		{		
-			wpmu_delete_user( $user_id );				
+		if(!is_super_admin( $current_user ))
+		{
+			
+			$user_id = $current_user->ID;
+			wp_delete_user( $current_user->ID );
+			
+			//delete for multisite wpmu 		
+			if(function_exists('wpmu_delete_user')) 
+			{		
+				wpmu_delete_user( $user_id );				
+			}
+			
+			wp_clear_auth_cookie();		
+		
 		}
-		
-		wp_clear_auth_cookie();		
 		
 	
 	}

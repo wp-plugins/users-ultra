@@ -115,6 +115,9 @@ class XooUserRegister {
 					 $this->errors[] = __('<strong>ERROR:</strong> The passwords must be identical','xoousers');           
 					
 				 }
+				 
+				 //password strenght 				 
+				 $this->uultra_check_pass_strenght($_POST["user_pass"]);
 			 
 			 }
 		    
@@ -133,6 +136,111 @@ class XooUserRegister {
 		
 		
 		
+	}
+	
+		function uultra_check_pass_strenght($password)
+	{
+		global $xoouserultra;
+		$res= true;
+		
+		$PASSWORD_LENGHT = $xoouserultra->get_option('uultra_password_lenght');
+		
+		if($PASSWORD_LENGHT==''){$PASSWORD_LENGHT=7;}
+		
+		if(strlen($password)<$PASSWORD_LENGHT)
+		{
+			 $this->errors[] = __('<strong>ERROR:</strong> The Password must be at least '.$PASSWORD_LENGHT.' characters long','xoousers');      
+		}
+		
+		////must contain at least one number and one letter		
+		$active = $xoouserultra->get_option('uultra_password_1_letter_1_number');		
+		if($active==1)
+		{
+			$ret_validate_password = $this->validate_password_numbers_letters($password);
+			if(!$ret_validate_password)
+			{
+				$this->errors[] = __('<strong>ERROR:</strong> The Password must contain at least one number and one letter','xoousers'); 
+			}
+			    
+		}
+		
+		////must contain at least one upper case character	
+		$active = $xoouserultra->get_option('uultra_password_one_uppercase');		
+		if($active==1)
+		{
+			$ret_validate_password = $this->validate_password_one_uppercase($password);
+			if(!$ret_validate_password)
+			{
+				$this->errors[] = __('<strong>ERROR:</strong> The Password must contain at least one upper case character','xoousers'); 
+			}
+			    
+		}
+		
+		////must contain at least one lower case character
+		$active = $xoouserultra->get_option('uultra_password_one_uppercase');		
+		if($active==1)
+		{
+			$ret_validate_password = $this->validate_password_one_lowerrcase($password);
+			if(!$ret_validate_password)
+			{
+				$this->errors[] = __('<strong>ERROR:</strong> The Password must contain at least one lower case character','xoousers'); 
+			}
+			    
+		}
+		
+			
+		
+		return $res;
+	
+	
+	}
+	
+	//validate password one letter and one number	
+	function validate_password_numbers_letters ($myString)
+	{
+		$ret = false;
+		
+		
+		if (preg_match('/[A-Za-z]/', $myString) && preg_match('/[0-9]/', $myString))
+		{
+			$ret = true;
+		}
+					
+		return $ret;
+	
+	
+	}
+	
+	//at least one upper case character 	
+	function validate_password_one_uppercase ($myString)
+	{	
+		
+		if( preg_match( '~[A-Z]~', $myString) ){
+   			 $ret = true;
+		} else {
+			
+			$ret = false;
+		  
+		}
+					
+		return $ret;
+	
+	}
+	
+	//at least one lower case character 	
+	function validate_password_one_lowerrcase ($myString)
+	{	
+		
+		if( preg_match( '~[a-z]~', $myString) ){
+   			 $ret = true;
+		} else {
+			
+			$ret = false;
+		  
+		}
+					
+		return $ret;	
+	
 	}
 	
 	// File upload handler:
