@@ -177,7 +177,7 @@ class XooUserRegister {
 		}
 		
 		////must contain at least one lower case character
-		$active = $xoouserultra->get_option('uultra_password_one_uppercase');		
+		$active = $xoouserultra->get_option('uultra_password_one_lowercase');		
 		if($active==1)
 		{
 			$ret_validate_password = $this->validate_password_one_lowerrcase($password);
