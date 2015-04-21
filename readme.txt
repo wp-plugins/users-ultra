@@ -189,6 +189,18 @@ Since it uses Paypal, you could create almost any type of billing period such as
 <strong>MailChimp</strong><br>
 The MailChimp feature allows you to quickly and easily add your new subscribers in your MailChimp list without any confirmation email. 
 
+
+<strong>Password Strength:</strong><br>
+You can help protect your users' accounts by managing and monitoring the strength of their passwords.
+
+<ul>
+<li>Set Minimum password length.</li>
+<li>Set if <strong>must</strong> contain at least one number and one letter.</li>
+<li>Set if <strong>must</strong> contain at least one upper case character.</li>
+<li>Set if <strong>must</strong> contain at least one lower case character</li>
+
+</ul>
+
 <strong>Social Connects</strong><br>
 Optional you can let users sign up & login by using the following social media options:
 
