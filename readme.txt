@@ -28,7 +28,10 @@ The free version of Users Ulra includes the following features totally free:
 <li>Post/Page Content Protection. <strong>Logged in Bassed.</strong></li>
 <li>Partial Content Protection. <strong>Membership Bassed.</strong></li>
 <li>Paypal Membership System. Recurring & One-time Billing.</li>
- <li>User Reviews - Allow users to rate & review each other using a 5 star rate/review system</li>
+<li>User Reviews - Allow users to rate & review each other using a 5 star rate/review system</li>
+<li>reCaptcha spam protection.</li>
+<li>Password Strength.</li> 
+ 
 </ul>
 
 <h3><strong>Demo Links:</strong></h3>
