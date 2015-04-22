@@ -31,17 +31,16 @@ The free version of Users Ulra includes the following features totally free:
  <li>User Reviews - Allow users to rate & review each other using a 5 star rate/review system</li>
 </ul>
 
-<h3><strong>Useful Links:</strong></h3>
-<blockquote>
-<a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> <br>
-<a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> <br>
-<a href="http://usersultra.com/userultra/login/"><strong>Users Login Form </strong></a> <br>
-<a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> <br>
-<a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> <br>
-<a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></a>
-<br>
-<br>
-</blockquote>
+<h3><strong>Demo Links:</strong></h3>
+<ul>
+ <li><a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> </li>
+ <li><a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> </li>
+ <li><a href="http://usersultra.com/userultra/login/"><strong>Users Login Form </strong></a> </li>
+ <li><a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> </li>
+ <li><a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> </li>
+ <li><a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></li>
+
+</ul>
 <blockquote>
 <h3><strong>USERS ULTRA PRO INCLUDES: </strong></h3>
 <ul>
