@@ -159,7 +159,12 @@ class XooUserUltra
             if ($xoouserultra->get_option('uultra_loggedin_hide_complete_page') == 'yes'   ) 
 			{
 				
-                $aShowPages[] = $oPage;
+               if ($this->checkAccessToPost($oPage->ID)) 
+				{
+					 // $oPost->post_title .= $this->adminOutput($oPost->post_type, $oPost->ID);
+					 $aShowPages[] = $oPage;
+				
+				}
                
 				
 				
@@ -243,7 +248,12 @@ class XooUserUltra
         if ($xoouserultra->get_option('uultra_loggedin_hide_complete_post') == 'yes' ) 
 		{
          
-            return $oPost;            
+           if ($this->checkAccessToPost($oPost->ID)) 
+			{
+				 // $oPost->post_title .= $this->adminOutput($oPost->post_type, $oPost->ID);
+           		 return $oPost;
+			
+			}          
 			
         } else {
 			
