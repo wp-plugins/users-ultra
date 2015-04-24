@@ -6,9 +6,7 @@ class XooPaypalPayment
 	function __construct() 
 	{
 		
-		$this->ini_db();		
-				
-				
+		$this->ini_db();				
 		
 		add_action( 'init', array($this, 'handle_init' ) );		
 		add_action( 'wp_ajax_package_add_new', array( $this, 'package_add_new' ));	
@@ -201,8 +199,6 @@ class XooPaypalPayment
 				
 			}else{
 				
-				//sucesful transaction
-				
 				// check that payment_amount is correct		
 				if ($payment_amount < $total_price)    
 				{
@@ -248,7 +244,6 @@ class XooPaypalPayment
 		
 		}else{
 			
-			//$xoouserultra->messaging->paypal_ipn_debug("IPN NOT VERIFIED: ".$fullipn);			
 			
 			/*This is not a valid transaction*/
 		}
@@ -261,10 +256,6 @@ class XooPaypalPayment
 		
 		}
 		
-		
-		
-		
-	
 	}
 	
 	public function curl_call($req)
