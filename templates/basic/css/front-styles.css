@@ -1637,7 +1637,7 @@ display: inline-block; width:85%; vertical-align:top
 	
 	text-align:center;
 	
-	border:none;
+	border:solid 1px #EFEFEF;
 	min-height:140px ;
 	min-width:180px;	
 	height:auto ;	
@@ -1673,7 +1673,7 @@ display: inline-block; width:85%; vertical-align:top
 
 .uultra-photogrid-photos ul li.shadow{
 	
-	box-shadow: 0 1px 4px rgba(105, 19, 19, 0.2);
+	/*box-shadow: 0 1px 4px rgba(105, 19, 19, 0.2);*/
 }
 
 .uultra-photogrid-photos ul li.in-line{	

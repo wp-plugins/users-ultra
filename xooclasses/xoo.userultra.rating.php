@@ -201,8 +201,7 @@ class XooRating extends XooUserUltraCommon
 				
 				}
 			
-			}else{
-				   
+			}else{				   
 				   
 				   //user is not logged in
 					$html = __("You have to be logged in to leave your rate  ",'xoousers');			

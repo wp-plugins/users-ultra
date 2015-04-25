@@ -5,13 +5,7 @@ class XooUserMyMessage {
 
 	function __construct() 
 	{
-		//handle request
-		if(isset($_GET["message_status"]) && $_GET["message_status"]>0)
-		{
-			//$this->change_message_status();
-			
-		}
-		
+				
 		$this->ini_messagingsystem();
 		
 		add_action( 'wp_ajax_send_private_message',  array( $this, 'send_private_message' ));
@@ -41,8 +35,7 @@ class XooUserMyMessage {
 	
 		// Note: deleted = 1 if message is deleted by sender, = 2 if it is deleted by recipient
 	
-		$wpdb->query( $query );
-		
+		$wpdb->query( $query );		
 		$this->update_table();
 		
 	}
@@ -68,10 +61,6 @@ class XooUserMyMessage {
 			$sql = 'Alter table  ' . $wpdb->prefix . 'users_ultra_pm add column deleted_sender tinyint (1) default 0 ; ';
 			$wpdb->query($sql);
 		}
-		
-		
-		
-		
 	}
 	
 	
@@ -277,8 +266,7 @@ class XooUserMyMessage {
 		{
 			return $message;
 							
-		}
-		
+		}		
 	
 	}
 	
@@ -289,8 +277,6 @@ class XooUserMyMessage {
 		
 		$message_id = $_POST["message_id"];
 		$logged_user_id = get_current_user_id();
-		
-		//$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `deleted` = '2' WHERE `id` = '$message_id' AND  `recipient` = '".$logged_user_id."' ";
 		
 		$sql = "UPDATE " . $wpdb->prefix . "users_ultra_pm SET `deleted` = '2' WHERE `id` = '$message_id' AND  `recipient` = '".$logged_user_id."' ";
 		
@@ -758,7 +744,6 @@ class XooUserMyMessage {
 	
 		}
 		
-
 	
 	}
 	
