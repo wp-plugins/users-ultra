@@ -2825,8 +2825,7 @@ class XooUserUltra
 		
 		//modules, custom users	 id	
 		$modules_custom_user_id = array();
-		$modules_custom_user_id  = explode(',', $disable_module_user_id);
-		
+		$modules_custom_user_id  = explode(',', $disable_module_user_id);		
 			
 	
 		//turn on output buffering to capture script output

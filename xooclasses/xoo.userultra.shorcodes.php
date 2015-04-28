@@ -349,7 +349,6 @@ class XooShortCode {
 			'button_rel' => 'nofollow',
 			'class' => '',
 		), $atts ) );
-
 		//set variables
 		$featured_pricing = ( $featured == 'yes' ) ? 'featured' : NULL;
 		

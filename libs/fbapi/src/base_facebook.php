@@ -1407,7 +1407,6 @@ abstract class BaseFacebook
    * @return mixed
    */
   abstract protected function getPersistentData($key, $default = false);
-
   /**
    * Clear the data with $key from the persistent storage
    *

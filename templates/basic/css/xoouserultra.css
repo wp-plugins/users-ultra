@@ -37,7 +37,6 @@
   background: #f8f8f8;
   border-radius: 5px;
 }
-
 /* checked mark aspect */
 .xoouserultra-wrap [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
@@ -1025,7 +1024,6 @@ a.uultra-btn-delpostimg:hover{
 		 color: #333 !important;
 
 }
-
 a.uultra-btn-post-featured-image span{
 
 	margin:0px 10px 0px 5px;
@@ -1034,13 +1032,11 @@ a.uultra-btn-post-featured-image span{
 }
 
 
-
 a.uultra-btn-post-featured-image  i{	
 
 	margin:0px 5px 0px 2px;	
 
 }
-
 
 a.uultra-btn-post-featured-image { 
 
@@ -1062,8 +1058,6 @@ a.uultra-btn-post-featured-image {
 		 color:#333;
 
 		 text-decoration:none;
-
-
 
 }
 

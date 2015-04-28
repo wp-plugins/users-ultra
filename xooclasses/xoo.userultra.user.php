@@ -29,8 +29,7 @@ class XooUserUser {
 		if (isset($_POST['uultra-conf-close-account-post'])) 
 		{
 			/* Let's Close this Account */
-			add_action('init', array( $this, 'close_user_account' ));
-				
+			add_action('init', array( $this, 'close_user_account' ));				
 		}
 		
 		add_action( 'wp_ajax_refresh_avatar', array( $this, 'refresh_avatar' ));
@@ -61,12 +60,9 @@ class XooUserUser {
             'checkbox' => 'drop_down',
             'password' => '',
             'datetime' => 'text_box'
-        );
-		
-			
+        );		
 
-	}
-	
+	}	
 	
 	function uultra_modify_user_table( $column )
 	{
@@ -89,8 +85,7 @@ class XooUserUser {
 		{
 			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);
 		
-		}		
-		
+		}			
 	}
 	
 	/* Overrides default get avatar function  */
@@ -110,8 +105,7 @@ class XooUserUser {
 		}
 		
 		
-		$site_url = site_url()."/";
-		 
+		$site_url = site_url()."/";		 
 		
 		$pic_size = "";
 		
