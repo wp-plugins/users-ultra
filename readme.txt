@@ -1062,7 +1062,7 @@ Initial release.
 
 = 1.3.43 (10-02-2014) =
 * Improvements - Country flag centering option.
-* New Feature - By default the following heading is displayed when the captcha is activate 'Prove you're not a robot'. You can set your custom heading here
+* New Feature - By default the following heading is displayed when the captcha is activate Prove you're not a robot. You can set your custom heading here
 
 = 1.3.42 (09-30-2014) =
 * Improvements - Even more css tweaks in order to make Users Ultra look better on mobile devices. Enjoy !
