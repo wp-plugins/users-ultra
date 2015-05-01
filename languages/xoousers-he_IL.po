@@ -1,0 +1,5161 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Users Ultra Lite\n"
+"POT-Creation-Date: 2015-04-24 00:55-0300\n"
+"PO-Revision-Date: 2015-04-30 14:51+0200\n"
+"Last-Translator: Ahrale <contact@atar4u.com>\n"
+"Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../addons/maintenance/admin/admin.php:36
+#: ../addons/maintenance/admin/admin.php:246
+msgid "Maintenance"
+msgstr "תחזוקה"
+
+#: ../addons/maintenance/admin/admin.php:47
+msgid "Finished!!. The transients have been cleaned."
+msgstr "סיימתי!!. הארעיים נמחקו."
+
+#: ../addons/maintenance/admin/admin.php:63
+msgid "Finished!!. The stats have been deleted."
+msgstr "סיימתי!!. הסטטיסטיקה נמחקה."
+
+#: ../addons/maintenance/admin/admin.php:79
+msgid "Finished!!. The ratings have been deleted."
+msgstr "סיימתי!!. הדירוגים נמחקו."
+
+#: ../addons/maintenance/admin/admin.php:128
+msgid "Finished!! . Please refresh this window."
+msgstr "סיימתי!! . נע לענן את העמוד."
+
+#: ../addons/maintenance/admin/admin.php:328
+msgid "MAINTENANCE"
+msgstr "<strong>מצב תחזוקה<strong/>"
+
+#: ../addons/maintenance/admin/panels/manage.php:29
+msgid "Success "
+msgstr "הצלחה"
+
+#: ../addons/maintenance/admin/panels/manage.php:31
+msgid "WP User Meta Fields Cleaning "
+msgstr "ניקוי שדות WP User Meta "
+
+#: ../addons/maintenance/admin/panels/manage.php:32
+msgid ""
+"This module helps you to remove useless user meta from the wp_usermeta\n"
+"table. It's useful to fix users count issues. This fixes the wrong amount of "
+"users displayed in the Users tab as well."
+msgstr ""
+"מודול זה עוזר להסיר מידע משתמש חסר שימוש מטבלת wp_usermeta\r\n"
+". זה שימושי כדי לתקן בעיות ספירת משתמשים. זה מתקן גם את המספר השגוי של "
+"משתמשים המוצגים בלשונית משתמשים."
+
+#: ../addons/maintenance/admin/panels/manage.php:35
+msgid ""
+"<strong>IMPORTANT:</strong> This module won't touch your Users Table but the "
+"User's Meta Table Only."
+msgstr ""
+"<strong>חשוב:</strong> מודול זה לא ייגע בטבלת Users שלך אלא רק בטבלת User's "
+"Meta."
+
+#: ../addons/maintenance/admin/panels/manage.php:37
+msgid "Current Integrity Status: "
+msgstr "מצב מכלול נוכחי:"
+
+#: ../addons/maintenance/admin/panels/manage.php:39
+msgid "USERS FOUND IN USERS TABLE: "
+msgstr "<strong>משתמשיםשנמצאו בטבלת USERS<strong/>"
+
+#: ../addons/maintenance/admin/panels/manage.php:41
+msgid "DISTINCT USERS FOUND IN META TABLE: "
+msgstr "<strong>משתמשים מובהקים נמצאו בטבלת META<strong/>"
+
+#: ../addons/maintenance/admin/panels/manage.php:45
+msgid "The tables are synchronized. No action is required. "
+msgstr "הטבלאות מסונכרנות. אין צורך בשום פעולה. "
+
+#: ../addons/maintenance/admin/panels/manage.php:52
+msgid "We recommend you optimize the tables by clicking on the button below."
+msgstr "אנו ממליצים לעשות אופטימיזציה של הטבלטות על-ידי לחיצה על הכפתור שלהלן."
+
+#: ../addons/maintenance/admin/panels/manage.php:55
+msgid "SYNC NOW"
+msgstr "<strong>לסנכרן כעת<strong/>"
+
+#: ../addons/maintenance/admin/panels/manage.php:73
+msgid "Are you totally sure? "
+msgstr "בטוח לחלוטין? "
+
+#: ../addons/maintenance/admin/panels/manage.php:84
+msgid "Delete Users Ultra Transients"
+msgstr "למחוק משתמשים ארעיים"
+
+#: ../addons/maintenance/admin/panels/manage.php:86
+msgid ""
+"From time to time you will have to use this function. For example: If the "
+"Online users are not being displayed."
+msgstr ""
+"מפעם לפעם יהיה צורך להשתמש באפשרות הזו. לדוגמה: אם המשתמשים המקוונים אינם "
+"מוצגים."
+
+#: ../addons/maintenance/admin/panels/manage.php:89
+msgid "CLEAN NOW"
+msgstr "<strong>לנקות כעת<strong/>"
+
+#: ../addons/maintenance/admin/panels/manage.php:102
+msgid "Clean the Users Ultra Stats"
+msgstr "ניקוי סטטיסטיקת המשתמשים"
+
+#: ../addons/maintenance/admin/panels/manage.php:104
+msgid ""
+"Use this function to delete all the UU stats such as: photo views, user "
+"views, galleries views, etc."
+msgstr ""
+"נא להשתמש בתכונה זו כדי למחוק את כל סטטיסטית המשתמשים, כמו: צפיות בתמונה, "
+"צפיות משתמש, צפיות בגלריה וכו'."
+
+#: ../addons/maintenance/admin/panels/manage.php:107
+msgid "YES, DELETE ALL STATS NOW"
+msgstr "<strong>כן, למחוק כעת את כל הסטטיסטיקה<strong/>"
+
+#: ../addons/maintenance/admin/panels/manage.php:120
+msgid "Clean the Users Ultra Ratings"
+msgstr "ניקוי דירוגי המשתמשים"
+
+#: ../addons/maintenance/admin/panels/manage.php:122
+msgid ""
+"Use this function to delete all the UU reviews. This option will delete all "
+"the user reviews, photo reviews, gallery reviews etc etc."
+msgstr ""
+"נא להשתמש בתכונה זו כדי למחוק את כל דירוגי המשתמשים. אפשרות זו תמחק את כל "
+"סקירות המשתמשים, סקירות תמונה, סקירות גלריה וכו'."
+
+#: ../addons/maintenance/admin/panels/manage.php:125
+msgid "YES, DELETE ALL RATINGS NOW"
+msgstr "כן, למחוק כעת את כל הדירוגים"
+
+#: ../addons/photocategories/admin/admin.php:33
+msgid "Manage Photo Categories"
+msgstr "ניהול קטגוריות תמונה"
+
+#: ../addons/photocategories/admin/admin.php:89
+#: ../admin/tabs/membership.php:61
+#: ../xooclasses/xoo.userultra.payment.paypal.php:601
+msgid "Name:"
+msgstr "שם:"
+
+#: ../addons/photocategories/admin/admin.php:94
+#: ../xooclasses/xoo.userultra.mymessage.php:218
+#: ../xooclasses/xoo.userultra.photos.php:1601
+#: ../xooclasses/xoo.userultra.photos.php:1719
+#: ../xooclasses/xoo.userultra.photos.php:1840
+msgid "Close"
+msgstr "סגירה"
+
+#: ../addons/photocategories/admin/admin.php:94
+#: ../xooclasses/xoo.userultra.photos.php:1601
+#: ../xooclasses/xoo.userultra.photos.php:1719
+#: ../xooclasses/xoo.userultra.photos.php:1840
+msgid "Save"
+msgstr "שמירה"
+
+#: ../addons/photocategories/admin/admin.php:135
+msgid "Photo Categories"
+msgstr "קטגוריות תמונה"
+
+#: ../addons/photocategories/admin/panels/manage.php:12
+#: ../admin/tabs/fields.php:262 ../admin/tabs/fields.php:660
+#: ../admin/tabs/membership.php:53 ../admin/tabs/orders.php:44
+msgid "Sucess "
+msgstr "הצלחה"
+
+#: ../addons/photocategories/admin/panels/manage.php:14
+msgid "Add New Category "
+msgstr "הוספת קטגוריה חדשה"
+
+#: ../addons/photocategories/admin/panels/manage.php:18
+msgid "Name: "
+msgstr "שם: "
+
+#: ../addons/photocategories/admin/panels/manage.php:24
+#: ../admin/tabs/membership.php:147
+#: ../xooclasses/xoo.userultra.payment.paypal.php:749
+#: ../xooclasses/xoo.userultra.user.php:842
+#: ../xooclasses/xoo.userultra.user.php:912
+#: ../xooclasses/xoo.userultra.user.php:980
+msgid "Confirm"
+msgstr "אישור"
+
+#: ../addons/photocategories/admin/panels/manage.php:43
+#: ../admin/tabs/orders.php:145
+msgid "#"
+msgstr "#"
+
+#: ../addons/photocategories/admin/panels/manage.php:44
+#: ../templates/basic/dashboard.php:468 ../templates/basic/dashboard.php:888
+#: ../xooclasses/xoo.userultra.payment.paypal.php:780
+#: ../xooclasses/xoo.userultra.photos.php:1560
+#: ../xooclasses/xoo.userultra.photos.php:1700
+#: ../xooclasses/xoo.userultra.photos.php:1821
+msgid "Name"
+msgstr "שם"
+
+#: ../addons/photocategories/admin/panels/manage.php:49
+#: ../xooclasses/xoo.userultra.publisher.php:476
+msgid "Actions"
+msgstr "פעולות"
+
+#: ../addons/photocategories/admin/panels/manage.php:70
+#: ../admin/tabs/fields.php:348 ../xooclasses/xoo.userultra.mymessage.php:931
+#: ../xooclasses/xoo.userultra.mymessage.php:1061
+#: ../xooclasses/xoo.userultra.mymessage.php:1113
+#: ../xooclasses/xoo.userultra.payment.paypal.php:810
+#: ../xooclasses/xoo.userultra.user.php:979
+msgid "Delete"
+msgstr "מחיקה"
+
+#: ../addons/photocategories/admin/panels/manage.php:71
+#: ../admin/tabs/fields.php:348
+#: ../xooclasses/xoo.userultra.payment.paypal.php:810
+#: ../xooclasses/xoo.userultra.publisher.php:492
+msgid "Edit"
+msgstr "עריכה"
+
+#: ../addons/photocategories/admin/panels/manage.php:86
+msgid "There are no categories yet."
+msgstr "אין קטגוריות עדיין."
+
+#: ../admin/tabs/customizer.php:11
+msgid "Customizer"
+msgstr "התאמת עיצוב"
+
+#: ../admin/tabs/customizer.php:13
+msgid "Use this section to add custom CSS styles."
+msgstr "להשתמש במקטע זה כדי להוסיף עיצובי CSS."
+
+#: ../admin/tabs/customizer.php:21
+msgid "Custom CSS Style"
+msgstr "התאמת עיצוב CSS"
+
+#: ../admin/tabs/customizer.php:22 ../admin/tabs/customizer.php:23
+msgid "You can write some custom CSS style coding here"
+msgstr "אפשר לכתוב כאן קוד עיצוב CSS"
+
+#: ../admin/tabs/customizer.php:38 ../admin/tabs/gateway.php:83
+#: ../admin/tabs/mail.php:213 ../admin/tabs/membership.php:38
+#: ../admin/tabs/permalinks.php:148 ../admin/tabs/settings.php:1221
+msgid "Save Changes"
+msgstr "שמירת השינויים"
+
+#: ../admin/tabs/donate.php:8
+msgid "Support Users Ultra Lite with your donation!"
+msgstr "תמיכה ב Users Ultra Lite עם התרומה שלך!"
+
+#: ../admin/tabs/donate.php:9
+msgid ""
+"If you like Users Ultra and you are satisfied with the plugin, isn't that "
+"worth a coffee or two? Please consider donating via PayPal. Any amount is "
+"appreciated. Donations help us to continue support and development of this "
+"free software!"
+msgstr ""
+"אם אהבת את Users Ultra ומרוצה מן התוסף, זה לא שווה גם קפה? נא לשקול תרומה "
+"באמצעות PayPal. כל סכום מוערך. תרומות מסייעות לנו להמשיך בפיתוח ובתמיכה של "
+"תוכנה חינמית זו!"
+
+#: ../admin/tabs/fields.php:14
+msgid "Profile Fields Customizer"
+msgstr "התאמת שדות פרופיל"
+
+#: ../admin/tabs/fields.php:17
+msgid ""
+"Organize profile fields, add custom fields to profiles, control privacy of "
+"each field, and more using the following customizer. You can drag and drop "
+"the fields to change the order in which they are displayed on profiles and "
+"the registration form."
+msgstr ""
+"ארגון שדות פרופיל, הוספת שדות לפרופיל, בקרת פרטיות עבור כל שדה, ועוד בשימוש "
+"באפשרויות ההתאמה שלהלן. ניתן לגרור ולשחרר שדות כדי לשנות את הסדר שבו הם "
+"יוצגו בפרופיל ובטופס ההרשמה."
+
+#: ../admin/tabs/fields.php:22
+msgid "Profile fields have been restored"
+msgstr "שדות הפרופיל שוחזרו"
+
+#: ../admin/tabs/fields.php:26
+msgid "Click here to add new field"
+msgstr "ללחוץ כאן כדי להוסיף שדה חדש"
+
+#: ../admin/tabs/fields.php:31
+msgid "Click here to restore default fields"
+msgstr "נא ללחוץ כאן כדי לשחזר את שדות ברירת המחדל"
+
+#: ../admin/tabs/fields.php:41 ../admin/tabs/membership.php:103
+#: ../xooclasses/xoo.userultra.payment.paypal.php:616
+#: ../xooclasses/xoo.userultra.payment.paypal.php:784
+#: ../xooclasses/xoo.userultra.photos.php:1828
+msgid "Type"
+msgstr "סוג"
+
+#: ../admin/tabs/fields.php:45 ../admin/tabs/fields.php:381
+msgid "Profile Field"
+msgstr "שדה פרופיל"
+
+#: ../admin/tabs/fields.php:48 ../admin/tabs/fields.php:384
+msgid "Separator"
+msgstr "קו מפריד"
+
+#: ../admin/tabs/fields.php:51 ../admin/tabs/fields.php:387
+msgid "You can create a separator or a usermeta (profile field)"
+msgstr "ניתן ליצור קו מפריד או תיאור משתמש (שדה פרופיל)"
+
+#: ../admin/tabs/fields.php:56
+msgid "Editor / Input Type"
+msgstr "עורך / סוג קלט"
+
+#: ../admin/tabs/fields.php:65 ../admin/tabs/fields.php:405
+msgid ""
+"When user edit profile, this field can be an input (text, textarea, image "
+"upload, etc.)"
+msgstr ""
+"כאשר משתמש עורך פרופיל, שדה זה יכול להיות קלט (טקסט, אזור טקסט, תמונה העלאה, "
+"וכו'.)"
+
+#: ../admin/tabs/fields.php:70
+msgid "Existing Meta Key / Field"
+msgstr "מפתח תיאור / שדה קיים"
+
+#: ../admin/tabs/fields.php:74
+msgid "Choose a Meta Key"
+msgstr "בחירת מפתח תיאור"
+
+#: ../admin/tabs/fields.php:78 ../admin/tabs/fields.php:106
+msgid "New Custom Meta Key"
+msgstr "מפתח תיאור חדש"
+
+#: ../admin/tabs/fields.php:99 ../admin/tabs/fields.php:433
+msgid ""
+"Choose from a predefined/available list of meta fields (usermeta) or skip "
+"this to define a new custom meta key for this field below."
+msgstr ""
+"בחירה מתוך רשימת שדות תיאור מוגדרים מראש/זמינים (usermeta) או לדלג על זה כדי "
+"להגדיר מפתח תיאור מותאם אישית עבור שדה זה להלן."
+
+#: ../admin/tabs/fields.php:111 ../admin/tabs/fields.php:442
+msgid ""
+"Enter a custom meta key for this profile field if do not want to use a "
+"predefined meta field above. It is recommended to only use alphanumeric "
+"characters and underscores, for example my_custom_meta is a proper meta key."
+msgstr ""
+"נא להזין מפתח תיאור עבור שדה פרופיל זה אם אינך רוצה להשתמש בתיאור שהוגדר "
+"מראש לעיל מומלץ להשתמש רק בתווי אותיות וספרות וקו תחתון , למשל "
+"my_custom_meta הוא מפתח תיאור תקין."
+
+#: ../admin/tabs/fields.php:116
+msgid "Label"
+msgstr "תווית"
+
+#: ../admin/tabs/fields.php:122 ../admin/tabs/fields.php:450
+msgid ""
+"Enter the label / name of this field as you want it to appear in front-end "
+"(Profile edit/view)"
+msgstr "נא להזין תווית / שם שדה כפי שיוצג באתר (עריכת/תצוגת פרופיל)"
+
+#: ../admin/tabs/fields.php:127 ../admin/tabs/fields.php:457
+msgid "Tooltip Text"
+msgstr "טקסט בועה"
+
+#: ../admin/tabs/fields.php:133 ../admin/tabs/fields.php:462
+msgid "A tooltip text can be useful for social buttons on profile header."
+msgstr "טקסט בועה יכול להיות שימושי עבור כפתורים חברתיים בכותרת הפרופיל"
+
+#: ../admin/tabs/fields.php:138 ../admin/tabs/fields.php:467
+msgid "This field is social"
+msgstr "זהו שדה חברתי"
+
+#: ../admin/tabs/fields.php:142 ../admin/tabs/fields.php:160
+#: ../admin/tabs/fields.php:172 ../admin/tabs/fields.php:190
+#: ../admin/tabs/fields.php:202 ../admin/tabs/fields.php:218
+#: ../admin/tabs/fields.php:233 ../admin/tabs/fields.php:471
+#: ../admin/tabs/fields.php:490 ../admin/tabs/fields.php:502
+#: ../admin/tabs/fields.php:522 ../admin/tabs/fields.php:535
+#: ../admin/tabs/fields.php:551 ../admin/tabs/fields.php:587
+#: ../admin/tabs/gateway.php:29 ../admin/tabs/membership.php:113
+#: ../admin/tabs/settings.php:59 ../admin/tabs/settings.php:73
+#: ../admin/tabs/settings.php:86 ../admin/tabs/settings.php:99
+#: ../admin/tabs/settings.php:112 ../admin/tabs/settings.php:318
+#: ../admin/tabs/settings.php:357 ../admin/tabs/settings.php:911
+#: ../admin/tabs/settings.php:924 ../admin/tabs/settings.php:946
+#: ../admin/tabs/settings.php:969 ../admin/tabs/settings.php:989
+#: ../admin/tabs/settings.php:1011 ../admin/tabs/settings.php:1024
+#: ../admin/tabs/settings.php:1055 ../admin/tabs/settings.php:1077
+#: ../admin/tabs/settings.php:1100
+#: ../xooclasses/xoo.userultra.payment.paypal.php:694
+msgid "No"
+msgstr "לא"
+
+#: ../admin/tabs/fields.php:145 ../admin/tabs/fields.php:157
+#: ../admin/tabs/fields.php:175 ../admin/tabs/fields.php:187
+#: ../admin/tabs/fields.php:205 ../admin/tabs/fields.php:221
+#: ../admin/tabs/fields.php:236 ../admin/tabs/fields.php:474
+#: ../admin/tabs/fields.php:487 ../admin/tabs/fields.php:505
+#: ../admin/tabs/fields.php:519 ../admin/tabs/fields.php:538
+#: ../admin/tabs/fields.php:554 ../admin/tabs/fields.php:590
+#: ../admin/tabs/gateway.php:30 ../admin/tabs/membership.php:112
+#: ../admin/tabs/settings.php:60 ../admin/tabs/settings.php:74
+#: ../admin/tabs/settings.php:87 ../admin/tabs/settings.php:100
+#: ../admin/tabs/settings.php:113 ../admin/tabs/settings.php:317
+#: ../admin/tabs/settings.php:358 ../admin/tabs/settings.php:912
+#: ../admin/tabs/settings.php:925 ../admin/tabs/settings.php:947
+#: ../admin/tabs/settings.php:970 ../admin/tabs/settings.php:990
+#: ../admin/tabs/settings.php:1012 ../admin/tabs/settings.php:1025
+#: ../admin/tabs/settings.php:1056 ../admin/tabs/settings.php:1078
+#: ../admin/tabs/settings.php:1101
+#: ../xooclasses/xoo.userultra.payment.paypal.php:693
+msgid "Yes"
+msgstr "כן"
+
+#: ../admin/tabs/fields.php:148 ../admin/tabs/fields.php:477
+msgid ""
+"A social field can show a button with your social profile in the head of "
+"your profile. Such as Facebook page, Twitter, etc."
+msgstr ""
+"שדה חברתי יכול להציג כפתור עם הפרופיל החברתי שלך בראש הפרופיל שלך. כמו למשל "
+"עמוד Facebook, Twitter, וכו'."
+
+#: ../admin/tabs/fields.php:153 ../admin/tabs/fields.php:483
+msgid "User can edit"
+msgstr "משתמש יכול לערוך"
+
+#: ../admin/tabs/fields.php:163 ../admin/tabs/fields.php:493
+msgid "Users can edit this profile field or not."
+msgstr "משתמשים יכולים או לא לערוך שדה פרופיל זה."
+
+#: ../admin/tabs/fields.php:168
+msgid "Allow HTML Content"
+msgstr "לאפשר תוכן HTML"
+
+#: ../admin/tabs/fields.php:178 ../admin/tabs/fields.php:508
+msgid "If yes, users will be able to write HTML code in this field."
+msgstr "אם כן, משתמשים יוכלו לכתוב קוד HTML בשדה זה."
+
+#: ../admin/tabs/fields.php:183 ../admin/tabs/fields.php:515
+msgid "User can hide"
+msgstr "המשתמש יכול להסתיר"
+
+#: ../admin/tabs/fields.php:193 ../admin/tabs/fields.php:525
+msgid ""
+"Allow users to hide this profile field from public viewing or not. Selecting "
+"No will cause the field to always be publicly visible if you have public "
+"viewing of profiles enabled. Selecting Yes will give the user a choice if "
+"the field should be publicy visible or not. Private fields are not affected "
+"by this option."
+msgstr ""
+"הרשה למשתמשים להסתיר את השדה הזה מהצגה לציבור. בחירת 'לא' תגרום לכך שהשדה "
+"יוצג תמיד באופן פומבי אם הופעלה האפשרות של תצוגת פרופיל ציבורי. בחירת 'כן' "
+"תתן למשתמש אפשרות לבחור אם השדה יוצג או לא בפרופיל המשתמש שלו. שדות פרטיים "
+"אינם מושפעים מאפשרות זו."
+
+#: ../admin/tabs/fields.php:198 ../admin/tabs/fields.php:531
+msgid "This field is private"
+msgstr "הפוך את השדה לפרטי. רק מנהלים יכולים לראות שדות פרטיים."
+
+#: ../admin/tabs/fields.php:208 ../admin/tabs/fields.php:541
+msgid "Make this field Private. Only admins can see private fields."
+msgstr "הפוך את השדה לפרטי. רק מנהלים יכולים לראות שדות פרטיים."
+
+#: ../admin/tabs/fields.php:214
+msgid "This field is required"
+msgstr "זהו שדה חובה"
+
+#: ../admin/tabs/fields.php:224 ../admin/tabs/fields.php:557
+msgid ""
+"Selecting yes will force user to provide a value for this field at "
+"registeration and edit profile. Registration or profile edits will not be "
+"accepted if this field is left empty."
+msgstr ""
+"בחירת 'כן' תחייב משתמש לספק ערך עבור שדה זה בהרשמה ועריכת הפרופיל. עריכות "
+"הרשמה או פרופיל לא תתקבלנה אם השדה הזה יהיה ריק."
+
+#: ../admin/tabs/fields.php:229
+msgid "Show on Registration form"
+msgstr "להציג בטופס ההרשמה"
+
+#: ../admin/tabs/fields.php:239
+msgid ""
+"Show this field on the registration form? If you choose no, this field will "
+"be shown on edit profile only and not on the registration form. Most users "
+"prefer fewer fields when registering, so use this option with care."
+msgstr ""
+"להציג את השדה בטופס ההרשמה? אם בחרת 'לא' שדה זה יוצג בעריכת הפרופיל רק בצד "
+"האחורי ולא בטופס ההרשמה. רוב המשתמשים מעדיפים פחות שדות בזמן ההרשמה, אז נא "
+"להשתמש באפשרות זו באכפתיות."
+
+#: ../admin/tabs/fields.php:248
+msgid "Icon for this field"
+msgstr "צלמית עבור שדה זה"
+
+#: ../admin/tabs/fields.php:251 ../admin/tabs/fields.php:620
+#: ../admin/tabs/fields.php:637 ../admin/tabs/fields.php:643
+#: ../admin/tabs/settings.php:546
+msgid "None"
+msgstr "ללא"
+
+#: ../admin/tabs/fields.php:263
+msgid "Submit New Field"
+msgstr "הגשת שדה חדש"
+
+#: ../admin/tabs/fields.php:265 ../admin/tabs/fields.php:666
+#: ../admin/tabs/membership.php:146 ../templates/basic/dashboard.php:479
+#: ../templates/basic/dashboard.php:914
+#: ../xooclasses/xoo.userultra.payment.paypal.php:748
+msgid "Cancel"
+msgstr "ביטול"
+
+#: ../admin/tabs/fields.php:279
+msgid "CLICK TO CONFIRM REARRANGE "
+msgstr "<strong>נא ללחוץ כדי לאשר את הסידור מחדש<strong/>"
+
+#: ../admin/tabs/fields.php:330
+msgid " - Separator"
+msgstr " - קו מפריד"
+
+#: ../admin/tabs/fields.php:333
+msgid " - Profile Field"
+msgstr " - שדה פרופיל"
+
+#: ../admin/tabs/fields.php:359
+msgid "Sucess! This field has been deleted "
+msgstr "הצלחה! השדה הזה נמחק "
+
+#: ../admin/tabs/fields.php:368
+msgid "Position"
+msgstr "מיקום"
+
+#: ../admin/tabs/fields.php:373
+msgid ""
+"Please use a unique position. Position lets you place the new field in the "
+"place you want exactly in Profile view."
+msgstr ""
+"נא להשתמש במיקום ייחודי. מיקום מאפשר לך למקם את השדה החדש במדויק בתצוגת "
+"הפרופיל."
+
+#: ../admin/tabs/fields.php:377
+msgid "Field Type"
+msgstr "סוג השדה"
+
+#: ../admin/tabs/fields.php:393
+msgid "Field Input"
+msgstr "קלט השדה"
+
+#: ../admin/tabs/fields.php:409
+msgid "Choose Meta Field"
+msgstr "בחירת שדה תיאור"
+
+#: ../admin/tabs/fields.php:413
+msgid "Choose a user field"
+msgstr "בחירת שדה משתמש"
+
+#: ../admin/tabs/fields.php:437
+msgid "Custom Meta Field"
+msgstr "שדה תיאור מותאם אישית"
+
+#: ../admin/tabs/fields.php:446
+msgid "Label / Name"
+msgstr "תווית / שם"
+
+#: ../admin/tabs/fields.php:498
+msgid "Allow HTML"
+msgstr "לאפשר HTML"
+
+#: ../admin/tabs/fields.php:547
+msgid "This field is Required"
+msgstr "השדה הזה הוא שדה חובה"
+
+#: ../admin/tabs/fields.php:583
+msgid "Show on Registration Form"
+msgstr "להציג בטופס ההרשמה"
+
+#: ../admin/tabs/fields.php:593
+msgid "Show this profile field on the registration form"
+msgstr "הצגת שדה זה בטופס ההרשמה"
+
+#: ../admin/tabs/fields.php:609
+msgid "Available Choices"
+msgstr "אפשרויות זמינות"
+
+#: ../admin/tabs/fields.php:612
+msgid ""
+"Enter one choice per line please. The choices will be available for front "
+"end user to choose from."
+msgstr ""
+"נא להזין אפשרות אחת בשורה. האפשרויות תהיינה זמינות לבחירה על-ידי המשתמש באתר."
+
+#: ../admin/tabs/fields.php:616
+msgid "Enable Predefined Choices"
+msgstr "הפעלת אפשרוית מוגדרות מראש"
+
+#: ../admin/tabs/fields.php:623
+msgid "List of Countries"
+msgstr "רשימת ארצות"
+
+#: ../admin/tabs/fields.php:627 ../xooclasses/xoo.userultra.class.php:1234
+msgid "Age"
+msgstr "גיל"
+
+#: ../admin/tabs/fields.php:630
+msgid ""
+"You can enable a predefined filter for choices. e.g. List of countries It "
+"enables country selection in profiles and saves you time to do it on your "
+"own."
+msgstr ""
+"אפשר להפעיל מסנן מוגדר מראש לאפשרויות. למשל רשימת ארצות המאפשרת בחירת ארץ "
+"בפרופיל וחוסכת לך את הזמן הדרוש לעשות זאת בעצמך."
+
+#: ../admin/tabs/fields.php:635
+msgid "Field Icon:"
+msgstr "שדה צלמית:"
+
+#: ../admin/tabs/fields.php:639
+msgid "Change Icon"
+msgstr "החלפת צלמית"
+
+#: ../admin/tabs/fields.php:665 ../xooclasses/xoo.userultra.publisher.php:224
+#: ../xooclasses/xoo.userultra.user.php:1871
+msgid "Update"
+msgstr "עדכון"
+
+#: ../admin/tabs/fields.php:687
+msgid "Are you totally sure that you want to delete this field?"
+msgstr "בטוח לחלוטין שלמחוק את החבילה הזו? "
+
+#: ../admin/tabs/fields.php:689
+msgid "Are you totally sure that you want to restore the default fields?"
+msgstr "בטוח שרוצה לשחזר את שדות ברירת המחדל?"
+
+#: ../admin/tabs/gateway.php:1
+msgid "Payment Gateways Settings"
+msgstr "הגדרות קופות תשלום"
+
+#: ../admin/tabs/gateway.php:6
+msgid "Paypal Settings"
+msgstr "הגדרות Paypal"
+
+#: ../admin/tabs/gateway.php:8
+msgid "Here you can configure Paypal if you wish to accept paid registrations"
+msgstr "כאן ניתן להגדיר את Paypal כדי לקבל הרשמות בתשלום"
+
+#: ../admin/tabs/gateway.php:17
+msgid "Activate Paypal"
+msgstr "הפעלת Paypal"
+
+#: ../admin/tabs/gateway.php:19 ../admin/tabs/gateway.php:20
+msgid "If checked, Paypal will be activated as payment method"
+msgstr "אם מסומן, Paypal יופעל לקבלת תשלום"
+
+#: ../admin/tabs/gateway.php:27
+msgid "The Paypal IPN response will be sent to the admin"
+msgstr "תגובת Paypal IPN תישלח למנהל"
+
+#: ../admin/tabs/gateway.php:33 ../admin/tabs/gateway.php:34
+msgid ""
+"If 'yes' the admin will receive the whole Paypal IPN response. This helps to "
+"troubleshoot issues."
+msgstr "אם 'כן' המנהל יקבל את כל תגובת Paypal IPN. זה עוזר לטפל בבעיות."
+
+#: ../admin/tabs/gateway.php:40
+msgid "Paypal Email Address"
+msgstr "כתובת אימייל ב Paypal"
+
+#: ../admin/tabs/gateway.php:41 ../admin/tabs/gateway.php:42
+msgid "Enter email address associated to your paypal account."
+msgstr "להזין כתובת אימייל המקושרת לחשבון שלך ב paypal."
+
+#: ../admin/tabs/gateway.php:48
+msgid "Paypal Sandbox Email Address"
+msgstr "כתובת אימייל של Paypal Sandbox"
+
+#: ../admin/tabs/gateway.php:49 ../admin/tabs/gateway.php:50
+msgid "This is not used for production, you can use this email for testing."
+msgstr "זה לא משמש להפקה, ניתן להשתמש באימייל זה לבדיקה."
+
+#: ../admin/tabs/gateway.php:56 ../admin/tabs/membership.php:20
+msgid "Currency"
+msgstr "מטבע"
+
+#: ../admin/tabs/gateway.php:57 ../admin/tabs/gateway.php:58
+msgid "Please enter the currency, example USD."
+msgstr "נא להזין מטבע, לדוגמה USD."
+
+#: ../admin/tabs/gateway.php:64
+msgid "Mode"
+msgstr "מצב"
+
+#: ../admin/tabs/gateway.php:66
+msgid "Production Mode"
+msgstr "מצב הפקה"
+
+#: ../admin/tabs/gateway.php:67
+msgid "Test Mode (Sandbox)"
+msgstr "מצב בדיקה (Sandbox)"
+
+#: ../admin/tabs/gateway.php:70 ../admin/tabs/gateway.php:71
+msgid "Select Mode"
+msgstr "בחירת מצב"
+
+#: ../admin/tabs/help.php:8
+msgid "Documentation and User Guide"
+msgstr "תיעוד ומדריך למשתמש"
+
+#: ../admin/tabs/help.php:9
+msgid ""
+"Here there are some useful shortocodes that will help you to start your "
+"online community in minutes."
+msgstr "להלן כמה קיצורי קוד שיסייעו לך לפתוח את הקהילה המקוונת שלך בתוך דקות."
+
+#: ../admin/tabs/help.php:11
+msgid ""
+"<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE  </a>to "
+"check the online documentation"
+msgstr ""
+"<a href='http://usersultra.com/doc.html' target='_blank'>ללחוץ כאן  </a>כדי "
+"לבדוק את התיעוד המקוון"
+
+#: ../admin/tabs/help.php:13
+msgid ""
+"<a href='http://www.usersultra.com/support/' target='_blank'>CLICK HERE </"
+"a>to visit Support Forum"
+msgstr ""
+"<a href='http://www.usersultra.com/support/' target='_blank'>ללחוץ כאן </"
+"a>כדי לבקר בפורום התמיכה"
+
+#: ../admin/tabs/help.php:15
+msgid ""
+"<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>CLICK "
+"HERE TO RATE IT </a>"
+msgstr ""
+"<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>נא ללחוץ "
+"כאן כדי לדרג את זה </a>"
+
+#: ../admin/tabs/help.php:23
+msgid "Common Shortcodes"
+msgstr "קיצורי קוד נפוצים"
+
+#: ../admin/tabs/help.php:25
+msgid "Registration Form"
+msgstr "טופס הרשמה"
+
+#: ../admin/tabs/help.php:27
+msgid "Login Form"
+msgstr "טופס כניסה"
+
+#: ../admin/tabs/help.php:30 ../templates/basic/dashboard.php:740
+#: ../xooclasses/xoo.userultra.class.php:1030
+#: ../xooclasses/xoo.userultra.user.php:2287
+#: ../xooclasses/xoo.userultra.user.php:2291
+msgid "My Account"
+msgstr "החשבון שלי"
+
+#: ../admin/tabs/help.php:33
+msgid "Disable modules for some Users"
+msgstr "כיבוי מודולים לחלק מן המשתמשים"
+
+#: ../admin/tabs/help.php:36 ../xooclasses/xoo.userultra.user.php:2427
+#: ../xooclasses/xoo.userultra.user.php:2783
+msgid "Logout"
+msgstr "ניתוק"
+
+#: ../admin/tabs/help.php:39 ../xooclasses/xoo.userultra.class.php:910
+msgid "Members Directory"
+msgstr "ספריית מנויים"
+
+#: ../admin/tabs/help.php:42
+msgid "Filter Users By Role  "
+msgstr "סינון משתמשים לפי תפקידים"
+
+#: ../admin/tabs/help.php:45
+msgid "Top Rated Users "
+msgstr "המשתמשים עם הדירוג הגבוה ביותר"
+
+#: ../admin/tabs/help.php:47
+msgid "Most Visited Users "
+msgstr "המשתמשים עם הכי הרבה ביקורים"
+
+#: ../admin/tabs/help.php:50
+msgid "User Spotlight  "
+msgstr "מוקד משתמש"
+
+#: ../admin/tabs/help.php:53
+msgid "User Profile  "
+msgstr "פרופיל משתמש"
+
+#: ../admin/tabs/import.php:8
+msgid "Synchronize Already Users"
+msgstr "סנכרון משתמשים קיימים"
+
+#: ../admin/tabs/import.php:9
+msgid ""
+"This feature allows you to synchronize the already users in your Wordpress "
+"website so they can be recognized by Users Ultra "
+msgstr ""
+"תכונה זו מאפשרת לסנכרן את המשתמשים הקיימים באתר הוורדפרס שלך כך שיוכרו על "
+"ידי Users Ultra"
+
+#: ../admin/tabs/import.php:13
+msgid "Start Sync Now"
+msgstr "התכל לסנכרן כעת"
+
+#: ../admin/tabs/import.php:27
+msgid "Import Users"
+msgstr "יבוא משתמשים"
+
+#: ../admin/tabs/import.php:28
+msgid ""
+"This feature lets you import users easily into the Users Ultra System. The "
+"file must be CSV format. Delimited Comma-separated Values "
+msgstr ""
+"תכונה זו מאפשרת לך לייבא בקלות משתמשים למערכת Users Ultra. הקובץ חייב להיות "
+"בפורמט CSV. ערכים מופרדים בפסיק"
+
+#: ../admin/tabs/import.php:30
+msgid ""
+"<b>IMPORTANT: </b> The CSV format should be:  \"user name\", \"email\", "
+"\"display name\", \"registration date\", \"first name\", \"last name\", \"age"
+"\", \"country\"  "
+msgstr ""
+"<b>חשוב: </b> פורמט ה CSV צריך להיות:  \"user name\", \"email\", \"display "
+"name\", \"registration date\", \"first name\", \"last name\", \"age\", "
+"\"country\"  "
+
+#: ../admin/tabs/import.php:39
+msgid "Choose File"
+msgstr "בחירת קובץ"
+
+#: ../admin/tabs/import.php:39
+msgid " <b>ONLY CSV EXTENSIONS ALLOWED: </b>  "
+msgstr " <b>רק קובץ עם סיומת CSV מותר: </b>  "
+
+#: ../admin/tabs/import.php:43
+msgid "Account Activation: "
+msgstr "הפעלת חשבון: "
+
+#: ../admin/tabs/import.php:46
+msgid "Send welcome email with new password "
+msgstr "שליחת אימייל ברוכים הבאים עם ססמה חדשה "
+
+#: ../admin/tabs/import.php:51
+msgid " Activate account automatically "
+msgstr "הפעלה אוטומטית של החשבון"
+
+#: ../admin/tabs/import.php:57
+msgid " Send Activation Link."
+msgstr "שליחת קישור הפעלה."
+
+#: ../admin/tabs/import.php:62
+msgid "Start Importing"
+msgstr "התחלת יבוא"
+
+#: ../admin/tabs/import.php:80
+msgid "Auto Sync with WooCommerce"
+msgstr "סנכרון אוטומטי עם WooCommerce"
+
+#: ../admin/tabs/import.php:83
+msgid ""
+"Syncing with WooCommerce will automatically add WooCommerce customer profile "
+"fields to your Users Ultra Plugin. A quick way to have a WooCommerce account "
+"page integrated with Users Ultra. Just click the following button and Users "
+"Ultra will do the work for you."
+msgstr ""
+"סנכרון עם WooCommerce יוסיף אוטומטית שדות פרופיל משתמש של לקוח WooCommerce "
+"לתוסף Users Ultra שלך. דרך מהירה לשילוב עמוד חשבון WooCommerce עם Users "
+"Ultra. רק ללחוץ על הכפתור שלהלן ותוסף Users Ultra יעשה עבורך את העבודה."
+
+#: ../admin/tabs/import.php:87
+msgid "Sync and keep existing fields"
+msgstr "סנכרון עם שמירת שדות קיימים"
+
+#: ../admin/tabs/import.php:88
+msgid "Sync and delete existing fields"
+msgstr "סנכרון ומחיקת שדות קיימים"
+
+#: ../admin/tabs/import.php:96
+msgid "Please install WooCommerce plugin first."
+msgstr "נא להתקין קודם את תוסף WooCommerce."
+
+#: ../admin/tabs/import.php:104 ../admin/tabs/licence.php:31
+msgid "Please wait, this process may take several minutes"
+msgstr "נא להמתין, תהליך זה יכול לקחת מספר דקות"
+
+#: ../admin/tabs/licence.php:8
+msgid "Validate your copy"
+msgstr "אימות העותק שלך"
+
+#: ../admin/tabs/licence.php:9
+msgid ""
+"Please fill out the form below with the serial number generated when you "
+"registered your domain through your account at UsersUltra.com"
+msgstr ""
+"נא למלא את הטופס שלהלן עם המספר הסידורי שנוצר כאשר רשמת את הדומיין שלך דרך "
+"החשבון שלך ב UsersUltra.com"
+
+#: ../admin/tabs/licence.php:11
+msgid "INPUT YOUR SERIAL KEY"
+msgstr "<strong>נא להזין את המספר הסידורי שלך<strong/>"
+
+#: ../admin/tabs/licence.php:16
+msgid "CLICK HERE TO VALIDATE YOUR COPY"
+msgstr "<strong>נא ללחוץ כאן כדי לאמת את העותק שלך<strong/>"
+
+#: ../admin/tabs/mail.php:1
+msgid "Notifications Settings"
+msgstr "הגדרות הודעות"
+
+#: ../admin/tabs/mail.php:6
+msgid "Custom Messages"
+msgstr "התאמת הודעות"
+
+#: ../admin/tabs/mail.php:8 ../admin/tabs/mail.php:17
+#: ../admin/tabs/mail.php:18
+msgid "This message will be displayed in the User Panel Controls"
+msgstr "הודעה זו תוצג בלוח הבקרה של המשתמש"
+
+#: ../admin/tabs/mail.php:16
+msgid "Message To Display"
+msgstr "הודעה להצגה"
+
+#: ../admin/tabs/mail.php:30
+msgid "Welcome Email Address"
+msgstr "כתובת אימייל ברוכים הבאים"
+
+#: ../admin/tabs/mail.php:32
+msgid ""
+"This is the welcome email that is sent to the client when registering a new "
+"account"
+msgstr "זהו מייל ברוכים הבאים שנשלח ללקוח שנרשם לחשבון חדש"
+
+#: ../admin/tabs/mail.php:43
+msgid "Mailer:"
+msgstr "מערכת השליחה:"
+
+#: ../admin/tabs/mail.php:45
+msgid "Use the PHP mail() function to send emails"
+msgstr "שימוש בפונקציית PHP mail() כדי לשלוח אימיילים"
+
+#: ../admin/tabs/mail.php:46
+msgid "Send all Users Ultra emails via Third-Party Plugins"
+msgstr "שליחת כל המיילים של Users Ultra באמצעות תוספי צד שלישי"
+
+#: ../admin/tabs/mail.php:50 ../admin/tabs/mail.php:51
+msgid "Specify which mailer method Users Ultra should use when sending emails."
+msgstr ""
+"נא לציין את שיטת שליחת המיילים שבה צריכה המערכת של Users Ultra להשתמש כדי "
+"לשלוח מיילים."
+
+#: ../admin/tabs/mail.php:57
+msgid "Send From Name"
+msgstr "שם השולח"
+
+#: ../admin/tabs/mail.php:58 ../admin/tabs/mail.php:59
+msgid "Enter the your name or company name here."
+msgstr "נא להזין כאן את השם שלך או שם החברה"
+
+#: ../admin/tabs/mail.php:65
+msgid "Send From Email"
+msgstr "אימייל השולח"
+
+#: ../admin/tabs/mail.php:66 ../admin/tabs/mail.php:67
+msgid "Enter the email address to be used when sending emails."
+msgstr "נא להזין את כתובת האימייל לשימוש בשליחת מיילים."
+
+#: ../admin/tabs/mail.php:73
+msgid "Client Welcome Message"
+msgstr "הודעת ברך הבא ללקוח"
+
+#: ../admin/tabs/mail.php:74 ../admin/tabs/mail.php:75
+msgid "This message will be sent to the user."
+msgstr "הודעה זו תישלח ללקוח."
+
+#: ../admin/tabs/mail.php:81
+msgid "Account Activation Message"
+msgstr "הודעת הפעלת חשבון"
+
+#: ../admin/tabs/mail.php:82 ../admin/tabs/mail.php:83
+msgid ""
+"This message will be sent to the user if they need to activate the account "
+"by using the activation link."
+msgstr ""
+"הודעה זו תישלח למשתמש שצריך להפעיל את החשבון שלו באמצעות שימוש בקישור ההפעלה."
+
+#: ../admin/tabs/mail.php:89
+msgid "Resend Activation Link"
+msgstr "שליחה מחדש של קישור ההפעלה"
+
+#: ../admin/tabs/mail.php:90 ../admin/tabs/mail.php:91
+msgid ""
+"This message will be sent to the user when clicking the re-send activation "
+"option."
+msgstr ""
+"הודעה זו תישלח למשתמש כאשר הוא מבקש אפשרות של שליחת מחדש של האקטיביזציה"
+
+#: ../admin/tabs/mail.php:97
+msgid "Account Verified Message"
+msgstr "הודעת החשבון מאומת"
+
+#: ../admin/tabs/mail.php:98 ../admin/tabs/mail.php:99
+msgid "This message will be sent to the users when they verify their accounts."
+msgstr "הודעה זו תישלח למשתמשים כאשר הם מאמתים את החשבונות שלהם."
+
+#: ../admin/tabs/mail.php:105
+msgid "Password Changed Confirmation"
+msgstr "אישור שינוי ססמה"
+
+#: ../admin/tabs/mail.php:106 ../admin/tabs/mail.php:107
+msgid "This message will be sent to the user when the password has been reset."
+msgstr "הודעה זו תישלח למשתמש כאשר הססמה אופסה."
+
+#: ../admin/tabs/mail.php:119
+msgid "Admin New User Message"
+msgstr "הודעת משתמש חדש להנהלה"
+
+#: ../admin/tabs/mail.php:120 ../admin/tabs/mail.php:121
+msgid "This message will be sent to the admin."
+msgstr "הודעה זו תישלח להנהלה."
+
+#: ../admin/tabs/mail.php:128
+msgid "Admin Pending Activation Message"
+msgstr "הודעה להנהלה על המתנה להפעלה"
+
+#: ../admin/tabs/mail.php:129 ../admin/tabs/mail.php:130
+msgid ""
+"This message will be sent to the admin if the user needs manual activation."
+msgstr "הודעה זו תישלח להנהלה אם המשתמש צריך הפעלה ידנית."
+
+#: ../admin/tabs/mail.php:138
+msgid "Client Admin Approbation  Email"
+msgstr "אימייל לקוח לאישור מנהל"
+
+#: ../admin/tabs/mail.php:139 ../admin/tabs/mail.php:140
+msgid ""
+"This message will be sent to the user if the account needs to be approved by "
+"the admin."
+msgstr "הודעה זו תישלח למשתמש אם החשבון צריך לקבל אישור הנהלה."
+
+#: ../admin/tabs/mail.php:145
+msgid "Admin New User Approbation  Email"
+msgstr "אימייל מנהל לאישור משתמש חדש"
+
+#: ../admin/tabs/mail.php:146 ../admin/tabs/mail.php:147
+msgid ""
+"This message will be sent to the admin if an account needs to be approved "
+"manually."
+msgstr "הודעה זו תישלח למנהל כאשר חשבון צריך לקבל אישור ידני."
+
+#: ../admin/tabs/mail.php:156
+msgid "User Private Message"
+msgstr "הודעה פרטית של משתמש"
+
+#: ../admin/tabs/mail.php:157 ../admin/tabs/mail.php:158
+msgid ""
+"This message will be sent to users when other users send a private message."
+msgstr "הודעה זו תישלח למשתמשים כאשר משתמשים אחרים שולחים הודעה פרטית."
+
+#: ../admin/tabs/mail.php:165
+msgid "Friend Request"
+msgstr "בקשת חברות"
+
+#: ../admin/tabs/mail.php:166 ../admin/tabs/mail.php:167
+msgid "This message is sent to the users when a friend request is sent"
+msgstr "הודעה זו נשלחת למשתמשים כאשר נשלחת בקשת חברות"
+
+#: ../admin/tabs/mail.php:177 ../xooclasses/xoo.userultra.class.php:1713
+msgid "Password Reset"
+msgstr "לכבות את האפשרות לשחזר ססמה?"
+
+#: ../admin/tabs/mail.php:178 ../admin/tabs/mail.php:179
+msgid "This message will be sent to users when requesting a new password."
+msgstr "הודעה זו תישלח למשתמשים שמבקשים ססמה חדשה."
+
+#: ../admin/tabs/mail.php:186 ../xooclasses/xoo.userultra.messaging.php:244
+msgid "Account Activation"
+msgstr "הפעלת החשבון"
+
+#: ../admin/tabs/mail.php:187 ../admin/tabs/mail.php:188
+msgid "This message is sent when the admin approves the user account."
+msgstr "הודעה זו נשלחת כאשר מנהל מאשר את חשבון המשתמש."
+
+#: ../admin/tabs/mail.php:195
+msgid "Deny Account Activation"
+msgstr "מניעת הפעלת חשבון"
+
+#: ../admin/tabs/mail.php:196 ../admin/tabs/mail.php:197
+msgid "This message is sent when the admin does not approve the user account."
+msgstr "הודעה זו נשלחת כאשר המנהל אינו מאשר את חשבון המשתמש."
+
+#: ../admin/tabs/main.php:19
+msgid "Welcome to Users Ultra Lite!"
+msgstr "ברוכים הבאים ל Users Ultra Lite!"
+
+#: ../admin/tabs/main.php:22
+msgid "Thank you very much for installing Users Ultra Lite.  "
+msgstr "תודה רבה לך על התקנת Users Ultra Lite.  "
+
+#: ../admin/tabs/main.php:32
+msgid "Social Connects Stats"
+msgstr "סטטיסטיקת התחברות עם מדיה חברתית"
+
+#: ../admin/tabs/main.php:88
+msgid "Subscription Stats"
+msgstr "סטטיסטיקת הרשמה"
+
+#: ../admin/tabs/main.php:94
+msgid "Today"
+msgstr "היום"
+
+#: ../admin/tabs/main.php:101
+msgid "This Month"
+msgstr "בחודש זה"
+
+#: ../admin/tabs/main.php:108
+msgid "This Year"
+msgstr "בשנה זו"
+
+#: ../admin/tabs/main.php:115
+msgid "All Time"
+msgstr "כל הזמן"
+
+#: ../admin/tabs/main.php:121
+msgid "Latest 5 Transactions"
+msgstr "5 ההעברות אחרונות"
+
+#: ../admin/tabs/main.php:138 ../admin/tabs/orders.php:146
+#: ../xooclasses/xoo.userultra.mymessage.php:550
+#: ../xooclasses/xoo.userultra.mymessage.php:704
+#: ../xooclasses/xoo.userultra.mymessage.php:823
+#: ../xooclasses/xoo.userultra.mymessage.php:1072
+#: ../xooclasses/xoo.userultra.mymessage.php:1133
+#: ../xooclasses/xoo.userultra.order.php:377
+#: ../xooclasses/xoo.userultra.publisher.php:474
+#: ../xooclasses/xoo.userultra.socials.php:517
+#: ../xooclasses/xoo.userultra.socials.php:623
+#: ../xooclasses/xoo.userultra.woocommerce.php:351
+msgid "Date"
+msgstr "תאריך"
+
+#: ../admin/tabs/main.php:139 ../admin/tabs/orders.php:147
+msgid "User"
+msgstr "משתמש"
+
+#: ../admin/tabs/main.php:140 ../admin/tabs/orders.php:149
+msgid "Transaction ID"
+msgstr "מזהה העברה"
+
+#: ../admin/tabs/main.php:141 ../admin/tabs/orders.php:152
+#: ../xooclasses/xoo.userultra.order.php:379
+#: ../xooclasses/xoo.userultra.publisher.php:475
+#: ../xooclasses/xoo.userultra.woocommerce.php:353
+msgid "Status"
+msgstr "מצב"
+
+#: ../admin/tabs/main.php:142 ../admin/tabs/orders.php:153
+msgid "Amount"
+msgstr "סכום"
+
+#: ../admin/tabs/main.php:168 ../admin/tabs/orders.php:183
+msgid "There are no transactions yet."
+msgstr "אין עדיין העברות."
+
+#: ../admin/tabs/main.php:189
+msgid "Latest "
+msgstr "האחרונות"
+
+#: ../admin/tabs/main.php:204 ../xooclasses/xoo.userultra.user.php:818
+#: ../xooclasses/xoo.userultra.user.php:888
+#: ../xooclasses/xoo.userultra.user.php:955
+msgid "Avatar"
+msgstr "צלמית משתמש"
+
+#: ../admin/tabs/main.php:205 ../xooclasses/xoo.userultra.class.php:1106
+#: ../xooclasses/xoo.userultra.class.php:1152
+#: ../xooclasses/xoo.userultra.user.php:819
+#: ../xooclasses/xoo.userultra.user.php:889
+#: ../xooclasses/xoo.userultra.user.php:956
+msgid "Username"
+msgstr "שם משתמש"
+
+#: ../admin/tabs/main.php:235
+msgid "There are no pending activation users."
+msgstr "אין משתמשים בהמתנה להפעלה."
+
+#: ../admin/tabs/main.php:249 ../admin/tabs/main.php:256
+#: ../admin/tabs/main.php:262 ../admin/tabs/membership.php:153
+#: ../templates/basic/dashboard.php:264 ../templates/basic/dashboard.php:272
+msgid "loading ..."
+msgstr "טוען..."
+
+#: ../admin/tabs/main.php:308
+msgid "Sign up Stats"
+msgstr "סטטיסטיקת הרשמה"
+
+#: ../admin/tabs/main.php:309
+msgid "Sign up Options "
+msgstr "אפשרויות הרשמה"
+
+#: ../admin/tabs/membership.php:10
+msgid "Paid Membership Settings"
+msgstr "הגדרות חברות בתשלום"
+
+#: ../admin/tabs/membership.php:12 ../admin/tabs/settings.php:8
+#: ../admin/tabs/settings.php:183 ../admin/tabs/settings.php:213
+#: ../admin/tabs/settings.php:284 ../admin/tabs/settings.php:344
+#: ../admin/tabs/settings.php:414 ../admin/tabs/settings.php:448
+#: ../admin/tabs/settings.php:505 ../admin/tabs/settings.php:616
+#: ../admin/tabs/settings.php:661 ../admin/tabs/settings.php:1119
+msgid "."
+msgstr "."
+
+#: ../admin/tabs/membership.php:21 ../admin/tabs/membership.php:22
+msgid "The default symbol for PayPal payments is USD"
+msgstr "סמל ברירת המחדל לתשלומי PayPal הוא USD"
+
+#: ../admin/tabs/membership.php:28
+msgid "Currency Symbol"
+msgstr "סמל מטבע"
+
+#: ../admin/tabs/membership.php:29 ../admin/tabs/membership.php:30
+msgid "Input the currency symbol: Example: $"
+msgstr "Iהזנת סמל המטבע: למשל: $"
+
+#: ../admin/tabs/membership.php:47
+msgid "Membership Packages"
+msgstr "חבילות מנויים"
+
+#: ../admin/tabs/membership.php:50
+msgid "Add New Plan"
+msgstr "הוספת חבילה חדשה"
+
+#: ../admin/tabs/membership.php:57
+msgid "Add New Membership Package"
+msgstr "הוספת חבית חברות חדשה"
+
+#: ../admin/tabs/membership.php:65
+#: ../xooclasses/xoo.userultra.publisher.php:204
+#: ../xooclasses/xoo.userultra.publisher.php:373
+msgid "Description:"
+msgstr "תיאור:"
+
+#: ../admin/tabs/membership.php:69
+msgid "Price:"
+msgstr "מחיר:"
+
+#: ../admin/tabs/membership.php:73
+msgid "Every:"
+msgstr "כל:"
+
+#: ../admin/tabs/membership.php:93
+msgid "Billing Period:"
+msgstr "תקופת חיוב:"
+
+#: ../admin/tabs/membership.php:96
+#: ../xooclasses/xoo.userultra.payment.paypal.php:673
+msgid "Months"
+msgstr "חודשים"
+
+#: ../admin/tabs/membership.php:97
+#: ../xooclasses/xoo.userultra.payment.paypal.php:674
+msgid "Weeks"
+msgstr "שבועות"
+
+#: ../admin/tabs/membership.php:98
+#: ../xooclasses/xoo.userultra.payment.paypal.php:675
+msgid "Days"
+msgstr "ימים"
+
+#: ../admin/tabs/membership.php:99
+#: ../xooclasses/xoo.userultra.payment.paypal.php:676
+msgid "Years"
+msgstr "שנים"
+
+#: ../admin/tabs/membership.php:105
+#: ../xooclasses/xoo.userultra.payment.paypal.php:627
+msgid "Recurring"
+msgstr "מחזורי"
+
+#: ../admin/tabs/membership.php:106
+#: ../xooclasses/xoo.userultra.payment.paypal.php:628
+msgid "One-Time"
+msgstr "חד פעמי"
+
+#: ../admin/tabs/membership.php:110
+#: ../xooclasses/xoo.userultra.payment.paypal.php:682
+msgid "Requires Admin Moderation:"
+msgstr "צריך אישור הנהלה:"
+
+#: ../admin/tabs/membership.php:118
+#: ../xooclasses/xoo.userultra.payment.paypal.php:719
+msgid "Pricing Table Customization"
+msgstr "עיצוב טבלת מחירים"
+
+#: ../admin/tabs/membership.php:121
+#: ../xooclasses/xoo.userultra.payment.paypal.php:722
+msgid "Name/Price Font Color"
+msgstr "צבע טקסט שם/מחיר"
+
+#: ../admin/tabs/membership.php:126
+#: ../xooclasses/xoo.userultra.payment.paypal.php:727
+msgid "Name/Price Background Color"
+msgstr "צבע רקע שם/מחיר"
+
+#: ../admin/tabs/membership.php:132
+#: ../xooclasses/xoo.userultra.payment.paypal.php:733
+msgid "Sign Up Button Text Color"
+msgstr "צבע טקסט כפתור הרשמה"
+
+#: ../admin/tabs/membership.php:138
+#: ../xooclasses/xoo.userultra.payment.paypal.php:739
+msgid "Sign Up Button Background Color"
+msgstr "צבע רקע כפתור הרשמה"
+
+#: ../admin/tabs/membership.php:166
+msgid "Please, input a name "
+msgstr "נא להזין שם"
+
+#: ../admin/tabs/membership.php:167
+msgid "Please, input a description "
+msgstr "נא להזין תיאור"
+
+#: ../admin/tabs/membership.php:168
+msgid "Please, input a price "
+msgstr "נא להזין מחיר "
+
+#: ../admin/tabs/membership.php:169
+msgid "Are you totally sure that you want to delete this package? "
+msgstr "בטוח לחלוטין שלמחוק את החבילה הזו? "
+
+#: ../admin/tabs/orders.php:36 ../xooclasses/xoo.userultra.admin.php:55
+msgid "Orders"
+msgstr "הזמנות"
+
+#: ../admin/tabs/orders.php:48
+msgid "Search Transactions "
+msgstr "חיפוש העברות"
+
+#: ../admin/tabs/orders.php:56
+msgid "Keywords: "
+msgstr "מילות מפתח: "
+
+#: ../admin/tabs/orders.php:57
+msgid "Month: "
+msgstr "חודש: "
+
+#: ../admin/tabs/orders.php:58
+msgid "Day: "
+msgstr "יום: "
+
+#: ../admin/tabs/orders.php:59
+msgid "Year:"
+msgstr "שנה:"
+
+#: ../admin/tabs/orders.php:63
+msgid "write some text here ..."
+msgstr "לכתוב כאן קצת טקסט ..."
+
+#: ../admin/tabs/orders.php:65 ../admin/tabs/orders.php:78
+#: ../admin/tabs/orders.php:91
+msgid "All"
+msgstr "הכל"
+
+#: ../admin/tabs/orders.php:109
+msgid "Filter"
+msgstr "סינון"
+
+#: ../admin/tabs/orders.php:116
+msgid "Total: "
+msgstr "סך-הכל: "
+
+#: ../admin/tabs/orders.php:116
+msgid "Displaying per page: "
+msgstr "תצוגה לעמוד: "
+
+#: ../admin/tabs/orders.php:148
+msgid "User Email"
+msgstr "אימיייל המשתמש"
+
+#: ../admin/tabs/orders.php:150
+msgid "Plan"
+msgstr "תכנית"
+
+#: ../admin/tabs/orders.php:151
+msgid "Method"
+msgstr "שיטה"
+
+#: ../admin/tabs/permalinks.php:1 ../xooclasses/xoo.userultra.admin.php:58
+msgid "Permalinks"
+msgstr "מבנה קישורים"
+
+#: ../admin/tabs/permalinks.php:8
+msgid "Users Ultra Pages Setting"
+msgstr "הגדרות עמודי Users Ultra"
+
+#: ../admin/tabs/permalinks.php:10
+msgid ""
+"The following pages are automatically created when Users Ultra Plugin\n"
+"   is activated. You can leave them as they are or change to custom pages "
+"here."
+msgstr ""
+"העמודים שלהלן נוצרים אוטומטית כאשר תוסף Users Ultra\r\n"
+"   מופעל. אפשר להשאירם כפי שהם או לשנות אותם כאן."
+
+#: ../admin/tabs/permalinks.php:21
+msgid "Users Ultra My Account"
+msgstr "עמוד החשבון שלי ב Users Ultra"
+
+#: ../admin/tabs/permalinks.php:23
+msgid ""
+"Make sure you have the <code>[usersultra_my_account]</code> shortcode on "
+"this page."
+msgstr ""
+"נא לוודא שקיצור הקוד <code>[usersultra_my_account]</code> נמצא בעמוד זה."
+
+#: ../admin/tabs/permalinks.php:24
+msgid "This page is where users will view their account."
+msgstr "בעמוד זה משתמשים יראו את החשבון שלהם."
+
+#: ../admin/tabs/permalinks.php:30
+msgid "Users Ultra Profile Page"
+msgstr "עמוד הפרופיל של Users Ultra"
+
+#: ../admin/tabs/permalinks.php:32
+msgid ""
+"Make sure you have the <code>[usersultra_profile]</code> shortcode on this "
+"page."
+msgstr "נא לוודא שקיצור הקוד <code>[usersultra_profile]</code> נמצא בעמוד זה."
+
+#: ../admin/tabs/permalinks.php:33
+msgid ""
+"This page is where users will view their own profiles, or view other user "
+"profiles from the member directory if allowed."
+msgstr ""
+"בעמוד זה המשתמשים יראו את הפרופיל של עצמם, או יראו פרופיל של משתמשים אחרים "
+"אם מותר."
+
+#: ../admin/tabs/permalinks.php:39
+msgid "Users Ultra Login Page"
+msgstr "עמוד הכניסה של Users Ultra"
+
+#: ../admin/tabs/permalinks.php:41
+msgid ""
+"If you wish to change default Users Ultra login page, you may set it here. "
+"Make sure you have the <code>[usersultra_login]</code> shortcode on this "
+"page."
+msgstr ""
+"אם ברצונך לשנות את עמוד ברירת המחדל לכניסה של  Users Ultra, ניתן לעשות זאת "
+"כאן. נא לוודא שקיצור הקוד <code>[usersultra_login]</code> נמצא בעמוד זה."
+
+#: ../admin/tabs/permalinks.php:42
+msgid "The default front-end login page."
+msgstr "עמוד ברירת המחדל לכניסה מן האתר."
+
+#: ../admin/tabs/permalinks.php:48
+msgid "Users Ultra Registration Page"
+msgstr "עמוד ההרשמה של Users Ultra"
+
+#: ../admin/tabs/permalinks.php:50
+msgid ""
+"Make sure you have the <code>[usersultra_registration]</code> shortcode on "
+"this page."
+msgstr ""
+"נא לוודא שקיצור הקוד <code>[usersultra_registration]</code> נמצא בעמוד זה."
+
+#: ../admin/tabs/permalinks.php:51 ../admin/tabs/permalinks.php:60
+msgid "The default front-end Registration page where new users will sign up."
+msgstr "עמוד ברירת המחדל להרשמה כאשר משתמשים חדשים נרשמים."
+
+#: ../admin/tabs/permalinks.php:57
+msgid "Users Ultra Directory Page"
+msgstr "עמוד ספריית Users Ultra"
+
+#: ../admin/tabs/permalinks.php:59
+msgid ""
+"Make sure you have the <code>[usersultra_directory]</code> shortcode on this "
+"page."
+msgstr ""
+"נא לוודא שיש לך את קיצור הקוד <code>[usersultra_directory]</code> בעמוד זה."
+
+#: ../admin/tabs/permalinks.php:76
+msgid ""
+"Users Ultra offers you the ability to create a custom URL structure for the "
+"main pages of your website"
+msgstr ""
+"תוסף Users Ultra מציע לך את האפשרות ליצור מבנה קישור עבור עמודים מרכזיים "
+"באתר שלך"
+
+#: ../admin/tabs/permalinks.php:85
+msgid "Profile Slug"
+msgstr "סלאג פרופיל"
+
+#: ../admin/tabs/permalinks.php:86 ../admin/tabs/permalinks.php:87
+msgid "Enter your custom Slug for the profile page."
+msgstr "להזין את הסלאג שלך עבור עמוד הפרופיל."
+
+#: ../admin/tabs/permalinks.php:95
+msgid "Profile Link Field"
+msgstr "שדה קישור הפרופיל"
+
+#: ../admin/tabs/permalinks.php:97
+msgid "The Profile Link is built by using the User ID"
+msgstr "קישור הפרופיל בנוי משימוש במזהה המשתמש"
+
+#: ../admin/tabs/permalinks.php:98
+msgid "The Profile Link is built by using the Username"
+msgstr "קישור הפרופיל בנוי עם שם המשתמש"
+
+#: ../admin/tabs/permalinks.php:102 ../admin/tabs/permalinks.php:103
+msgid ""
+"Please note: This option is used for permalinks. You can choice what field "
+"will be used in the Users Profile Link"
+msgstr ""
+"נא לשים לב: אפשרות זו משמשת למבנה קישורים. ניתן לבחור איזה שדה ישמש בקישור "
+"פרופיל משתמש"
+
+#: ../admin/tabs/permalinks.php:110
+msgid "Login Slug"
+msgstr "סלאג כניסה"
+
+#: ../admin/tabs/permalinks.php:111 ../admin/tabs/permalinks.php:112
+msgid "Enter your custom Slug for the Login Page."
+msgstr "להזין את הסלאג שלך עבור עמוד הכניסה."
+
+#: ../admin/tabs/permalinks.php:118
+msgid "Registration Slug"
+msgstr "סלאג הרשמה"
+
+#: ../admin/tabs/permalinks.php:119 ../admin/tabs/permalinks.php:120
+msgid "Enter your custom Slug for the Registration Page."
+msgstr "להזין את הסלאג שלך עבור עמוד ההרשמה."
+
+#: ../admin/tabs/permalinks.php:126
+msgid "My Account Slug"
+msgstr "סלאג החשבון שלי"
+
+#: ../admin/tabs/permalinks.php:127 ../admin/tabs/permalinks.php:128
+msgid "Enter your custom Slug for the \"My Account\" Page."
+msgstr "הזנת הסלאג שלך לעמוד \"החשבון שלי\"."
+
+#: ../admin/tabs/permalinks.php:134
+msgid "Users Directory Slug"
+msgstr "סלאג ספריית המשתמשים"
+
+#: ../admin/tabs/permalinks.php:135 ../admin/tabs/permalinks.php:136
+msgid "Enter your custom Slug for the Users Directory Page."
+msgstr "להזין את הסלאג שלך עבור עמוד ספריית המשתמשים."
+
+#: ../admin/tabs/pro.php:8
+msgid "Why Go Users Ultra Pro?"
+msgstr "למה לעבור ל Users Ultra Pro?"
+
+#: ../admin/tabs/pro.php:11
+msgid ""
+"What we are doing with Users Ultra Pro is adding some ground breaking "
+"features that nobody else, to this date, has offered. We are starting off "
+"with our EXCLUSIVE 'Profile Customizer'. This feature actually is a drag and "
+"drop, widgetized, profile customization for members of your site."
+msgstr ""
+"מה שאנו עושים עם Users Ultra Pro זה הוספת תכונות פורצות דרך, שף אחד אחר לא "
+"מציע בשלב זה. החל בהתאמת הפרופיל המתקדמת והייחודית שלנו. תכונה זו למעשה "
+"כוללת גרירה ושחרור, וידג'טים, התאמת פרופיל למנויים באתר."
+
+#: ../admin/tabs/pro.php:13
+msgid ""
+"Users Ultra Pro allows you to add unlimited widgets, add unlimited links "
+"within the user's dashboard. Integrating with third-party plugins by using "
+"shortcodes, friends, followers, following, user's wall."
+msgstr ""
+"Users Ultra Pro מאפשר לך להוסיף וידג'טים ללא הגבלה, להוסיף קישורים ללא הגבלה "
+"בלוח הניהול של המשתמש. שילוב עם תוספי צד ג' באמצעות קיצרי קוד, חברים, "
+"עוקבים, לעקוב, קיר משתמש."
+
+#: ../admin/tabs/pro.php:22
+msgid "Tons of Great Features"
+msgstr "המון תכונות נהדרות"
+
+#: ../admin/tabs/pro.php:23
+msgid "Changelog"
+msgstr "יומן שינויים"
+
+#: ../admin/tabs/pro.php:32
+msgid "Appearance & Customization"
+msgstr "עיצוב והתאמה"
+
+#: ../admin/tabs/pro.php:33
+msgid ""
+"Users Ultra PRO allows you to adapt the user's profile to any WordPress "
+"Theme through the admin section. Change the look of the profile in just few "
+"clicks."
+msgstr ""
+"Users Ultra PRO מאפשר לך לאמץ את פרופיל המשתמש של וורדפרס לכל ערכת נושא דרך "
+"לוח הניהול. שינוי מראה הפרופיל בכמה לחיצות בודדות."
+
+#: ../admin/tabs/pro.php:38
+msgid "Unlimited Widgets"
+msgstr "וידג'טים ללא הגבלה"
+
+#: ../admin/tabs/pro.php:39
+msgid ""
+"Yes, you can add as many widgets as you wish. Integrating with third-party "
+"plugins has never been easier. You can use other plugins with Users Ultra "
+"PRO."
+msgstr ""
+"כן, אפשר להוסיף כמה וידג'טים שרוצים, שילובים עם תוספי צד שלישי מעולם לא היו "
+"קלים יותר. אפשר להשתמש בתוספים אחרים עם Users Ultra PRO."
+
+#: ../admin/tabs/pro.php:43
+msgid "Groups"
+msgstr "קבוצות"
+
+#: ../admin/tabs/pro.php:44
+msgid ""
+"Users Ultra Pro comes with a powerful groups module. Protect whole pages and "
+"posts easily by using the page protection options in the groups module."
+msgstr ""
+"Users Ultra Pro מגיע עם מודול קבוצות עצמתי. ניתן להגן על עמודים שלמים "
+"ופוסטים בקלות באמצעות אפשרויות ההגנה במודול הקבוצות."
+
+#: ../admin/tabs/pro.php:48
+msgid "Unlimited Links"
+msgstr "קישורים ללא הגבלה"
+
+#: ../admin/tabs/pro.php:49
+msgid ""
+"You can add unlimited links within the user's dashboard with HTML text or "
+"use a shortcode of another plugin to display custom information."
+msgstr ""
+"אפשר להוסיף קישורים ללא הגבלה בלוח הבקרה של המשתמש עם HTML טקסט או שימוש "
+"בקיצור קוד של תוסף אחר להצגת מידע מותאם אישית."
+
+#: ../admin/tabs/pro.php:55
+msgid "Roles Integration"
+msgstr "שילוב תפקידים"
+
+#: ../admin/tabs/pro.php:56
+msgid ""
+"Users will be able to select a predefined role when registering and you will "
+"be able to assign a custom role to a membership package."
+msgstr ""
+"משתמשים יוכלו לבחור בהרשמה תפקיד שהוגדר מראש  ואפשר להקצות תפקיד מותאם אישית "
+"לחבילת מנוי.."
+
+#: ../admin/tabs/pro.php:60
+msgid "Pages & Posts Protection"
+msgstr "הגנת עמודים ופוסטים"
+
+#: ../admin/tabs/pro.php:61
+msgid ""
+"With Users Ultra Por you can restrict content on a global or per page/post "
+"basis. You can restrict pages/posts so everyone can see the page/post or "
+"only logged in users can see the page/post "
+msgstr ""
+"עם Users Ultra Pro ניתן להגביל תוכן באופן גלובלי או על בסיס עמוד/פוסט. ניתן "
+"להגביל עמודים/פוסטים כך שכולם יוכלו לראות אותם או רק משתמשים מחוברים "
+
+#: ../admin/tabs/pro.php:66
+msgid "bbPress Integration"
+msgstr "שילוב bbPress"
+
+#: ../admin/tabs/pro.php:67
+msgid ""
+"Your forum may look much more elegant by using Users Ultra Pro. Display "
+"badges and achievements in your forum threads and much more."
+msgstr ""
+"הפורום שלך יכול להיראות אלגנטי יותר באמצעות Users Ultra Pro. הצגת תגים "
+"והישגים בנושאי הפורום שלך והרבה יותר."
+
+#: ../admin/tabs/pro.php:71
+msgid "Spam Protection"
+msgstr "הגנת ספאם"
+
+#: ../admin/tabs/pro.php:72
+msgid ""
+"Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
+"your website against spam attacks. Simple way to stop fake account spam!"
+msgstr ""
+"Users Ultra PRO מגיע עם כלי לחסימת כתובות IP שיסייע לך להגן על האתר שלך נגד "
+"התקפות ספאם. דרך פשוטה לעצור ספאם של חשבון מזוייף!"
+
+#: ../admin/tabs/pro.php:77
+msgid "Advanced Profile Fields"
+msgstr "שדות פרופיל מתקדמים"
+
+#: ../admin/tabs/pro.php:78
+msgid ""
+"You can create fields that will only be displayed on users of the selected "
+"User Roles. Also, you can make a field editable based on User Roles."
+msgstr ""
+"אפשר ליצור שדות שיוצגו רק למשתמשים בעלי תפקיד מסוים. ניתן גם ליצור שדה הניתן "
+"לעריכה על בסיס תפקידי משתמש."
+
+#: ../admin/tabs/pro.php:83
+msgid "Customizable Profile"
+msgstr "פרופיל ניתן לעיצוב"
+
+#: ../admin/tabs/pro.php:84
+msgid ""
+"The Pro Version includes the unique and innovating Widgetized Users Profile. "
+"Let your user build their own profile by draging and droping elements."
+msgstr ""
+"גרסת ה Pro כוללת פרופיל משתמשים ייחודי בוידג'טים. ניתן לאפשר למשתמש שלך "
+"לבנות את הפרופיל שלו באמצעות גרירה ושחרור של רכיבים."
+
+#: ../admin/tabs/pro.php:90
+msgid "New Features"
+msgstr "מסד הנתונים עודכן בהצלחה. תיהנה מן התכונות החדשות!"
+
+#: ../admin/tabs/pro.php:91
+msgid ""
+"We add new features every week for the Pro version. You may alway let us "
+"know your suggestion and we will be glad to listen your opinions."
+msgstr ""
+"אנו מוסיפים כל שבוע תכונות נוספות לגרסת ה Pro. תמיד אפשר להציע לנו תכונות "
+"חדשות ונשמח להקשיב לדעותיך."
+
+#: ../admin/tabs/pro.php:95
+msgid "reCaptcha & FUNCAPTCHA"
+msgstr "reCaptcha ו FUNCAPTCHA"
+
+#: ../admin/tabs/pro.php:96
+msgid ""
+"This is a great feature to protect your website from spam and abuse. "
+"reCAPTCHA uses an advanced risk analysis engine."
+msgstr ""
+"זו תכונה מצוינת כדי להגן על האתר שלך מספאם וניצול. reCAPTCHA משתמש במנוע "
+"מתקדם לניתוח סיכון."
+
+#: ../admin/tabs/pro.php:102
+msgid "Default Role on Registration"
+msgstr "תפקיד ברירת המחדל בהרשמה"
+
+#: ../admin/tabs/pro.php:103
+msgid ""
+"Users Ultra Pro allows you to set a custom role for either the common or the "
+"social login features."
+msgstr ""
+"Users Ultra Pro יאפשר לך להגדיר תפקיד משתמש עבור תכונות רגילות או מדיה "
+"חברתית."
+
+#: ../admin/tabs/pro.php:107
+msgid "One and Two Columns Profile"
+msgstr "פרופיל עמודה אחת ושתי עמודות"
+
+#: ../admin/tabs/pro.php:108
+msgid ""
+"The new user's profile template will let you create a beautiful user's "
+"profile with one, two or three columns with just one click."
+msgstr ""
+"תבנית פרופיל המשתמש תאפשר לך ליצור פרופיל משתמש יפהפה עם עמודה אחת או שתיים "
+"או שלש בלחיצה אחת."
+
+#: ../admin/tabs/pro.php:112
+msgid "Badges & Achievement"
+msgstr "תגים והישגים"
+
+#: ../admin/tabs/pro.php:113
+msgid ""
+"Create and award badges to your users manually, or based on what they "
+"accomplish."
+msgstr "נתן ליצור ולגמול בתגים למשתמשים באופן ידני, או על סמך מה שהשיגו."
+
+#: ../admin/tabs/pro.php:117
+msgid "Users Wall"
+msgstr "קיר משתמשים"
+
+#: ../admin/tabs/pro.php:118
+msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
+msgstr "כן, בדיוק כמו Facebook תוסף Users Ultra מגיע עם קיר משתמש."
+
+#: ../admin/tabs/pro.php:123
+msgid "Social Connect Buttons"
+msgstr "כפתורי חיבור באמצעות מדיה חברתית"
+
+#: ../admin/tabs/pro.php:124
+msgid ""
+"Now you can add one or more social connect buttons to any place of your blog."
+msgstr ""
+"כעת ניתן להוסיף כפתורי חיבור אחד או יותר באמצעות מדיה חברתית בכל מקום באתר "
+"שלך."
+
+#: ../admin/tabs/pro.php:128
+msgid "Online/Offline User Status"
+msgstr "מצב משתמש מחובר/מנותק"
+
+#: ../admin/tabs/pro.php:129
+msgid ""
+"This feature is optional and you will have the capability to show the user's "
+"status to your visitors."
+msgstr "תכונה זו היא רשות ותהיה לך היכולת להציג את מצב המשתמש למבקרים שלך."
+
+#: ../admin/tabs/pro.php:133
+msgid "Custom Profile Background "
+msgstr "תמונת רקע אישית"
+
+#: ../admin/tabs/pro.php:134
+msgid ""
+"Let your users to customize their profiles by adding a custom full-screen "
+"background image easily."
+msgstr "לתת למשתמשים שלך לעצב את הפרופיל שלהם על-ידי הוספת קלה של תמונת רקע."
+
+#: ../admin/tabs/pro.php:140
+msgid "Automatic Updates"
+msgstr "עדכונים אוטומטיים"
+
+#: ../admin/tabs/pro.php:141
+msgid ""
+"Yes, Users Ultra Pro can be updated through the Plugins area in your "
+"Wordpress Admin Panel."
+msgstr ""
+"כן, תוסף Users Ultra Pro יכול להתעדכן באמצעות אזור התוספים בלוח הבקרה של "
+"וורדפרס."
+
+#: ../admin/tabs/pro.php:145
+msgid "Free Installation"
+msgstr "התקנה חינמית"
+
+#: ../admin/tabs/pro.php:146
+msgid ""
+"If you would like assistance with installing and setting up the plugin, we "
+"are glad to help. "
+msgstr "אם יש צורך בעזרה בהתקנת והגדרת התוסף, אנו שמחים לעזור. "
+
+#: ../admin/tabs/pro.php:150
+msgid "Network Activation"
+msgstr "הפעלה לכל הרשת"
+
+#: ../admin/tabs/pro.php:151
+msgid ""
+"When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
+"for the entire network of sites by just one click."
+msgstr ""
+"כאשר משתמשים ברשת אתרים - מולטיסייט - של וורדפרס, זה מאפשר לך להפעיל משתמשי "
+"Users Ultra Pro עבור כל רשת האתרים בלחיצה אחת בלבד."
+
+#: ../admin/tabs/pro.php:155
+msgid "Multiple Users Directory Templates"
+msgstr "תבניות ספריית משתמשים מרובים"
+
+#: ../admin/tabs/pro.php:156
+msgid ""
+"The Pro version includes several views for the users directory such as "
+"<strong>User Tables with custom fields </strong>and instant messaging "
+"system. "
+msgstr ""
+"גרסת ה Pro כולת כמה תצוגות לספריית המשתמשים כמו <strong>טבלאות משתמש עם שדות "
+"</strong>ומערכת הודעות מידיות. "
+
+#: ../admin/tabs/pro.php:160
+msgid "Users Management"
+msgstr "ניהול משתמשים"
+
+#: ../admin/tabs/pro.php:161
+msgid ""
+"The Pro version includes a powerful users management module. Easily approve/"
+"deny users, upgrade and downgrade user's membership. Finding a user will be "
+"super easy by using this feature."
+msgstr ""
+"גרסת ה Pro כוללת מודול מתקדם לניהול משתמשים. אישור/דחיית משתמשים בקלות, "
+"שדרוג ושנמוך רמת מנוי, מציאת משתמש קלה במיוחד."
+
+#: ../admin/tabs/pro.php:165
+msgid "Advanced Front End Publisher"
+msgstr "פרסום מתקדם מן הצד הקדמי"
+
+#: ../admin/tabs/pro.php:166
+msgid ""
+"Allows your user to post through their private area. It allows user to "
+"attach photos to the posts. This is useful for classified and real estate "
+"websites."
+msgstr ""
+"לאפשר למשתמש שלך לשלוח פוסט מהאזור הפרטי שלו. זה מאפשר למשתמש לצרף תמונות "
+"לפוסטים. זה שימושי לאתרים של סיווגים ונדל\"ן."
+
+#: ../admin/tabs/pro.php:172
+msgid "Priority Support"
+msgstr "תמיכה מועדפת"
+
+#: ../admin/tabs/pro.php:173
+msgid ""
+"We usually reply within the same day to pro users. We will go to the extra "
+"mile in order to give you a Top Quality Support."
+msgstr ""
+"אנחנו בדרך-כלל עונים באותו יום למשתמשי pro. אנו נצעד מייל נוסף כדי לתת לך "
+"שירות ברמה גבוהה."
+
+#: ../admin/tabs/pro.php:178
+msgid "Maitenance Features"
+msgstr "תכונות תחזוקה"
+
+#: ../admin/tabs/pro.php:179
+msgid "Keep your Users and User Meta table clean."
+msgstr "שמור את טבלאות Users ו User Meta נקיות."
+
+#: ../admin/tabs/pro.php:183
+msgid "User Avatars"
+msgstr "צלמיות משתמש"
+
+#: ../admin/tabs/pro.php:184
+msgid ""
+"Users Ultra Pro allows users to use Gravatar, Facebook Avatar or their "
+"custom avatar."
+msgstr ""
+"משתמשי Ultra Pro יכולים לאפשר למשתמשים להשתמש ב Gravatar, תמונות Facebook או "
+"בצלמיות משתמש אישיות."
+
+#: ../admin/tabs/pro.php:189
+msgid "Advanced Email Features"
+msgstr "תכונות אימייל מתקדמות"
+
+#: ../admin/tabs/pro.php:190
+msgid "Send emails via SMTP and Mandrill API."
+msgstr "שליחת אימיילים באמצעות SMTP וגם Mandrill API."
+
+#: ../admin/tabs/pro.php:203
+msgid "Users Ultra Pro Changelog "
+msgstr "יומן השינויים של Users Ultra Pro "
+
+#: ../admin/tabs/settings.php:1
+msgid "General Settings"
+msgstr "הגדרות כלליות"
+
+#: ../admin/tabs/settings.php:6
+msgid "Miscellaneous  Settings"
+msgstr "הגדרות שונות"
+
+#: ../admin/tabs/settings.php:17
+msgid "Hide WP Admin Tool Bar"
+msgstr "הסתרת סרגל הניהול של וורדפרס"
+
+#: ../admin/tabs/settings.php:19
+msgid "If checked, User will not see the WP Admin Tool Bar"
+msgstr "אם מסומן, המשתמש לא יראה את סרגל הניהול של וורדפרס"
+
+#: ../admin/tabs/settings.php:20 ../admin/tabs/settings.php:39
+msgid "If checked, User will not see the WP Admin Tool Bar."
+msgstr "אם מסומן, המשתמש לא יראה את סרגל הניהול של וורדפרס."
+
+#: ../admin/tabs/settings.php:26
+msgid "Disable Default Ligthbox"
+msgstr "כיבוי התיבה המרחפת של ברירת המחדל"
+
+#: ../admin/tabs/settings.php:28 ../admin/tabs/settings.php:29
+msgid ""
+"If checked, the default lightbox files included in the plugin won't be loaded"
+msgstr "אם מסומן, הקבצים הדרושים לברירת המחדל של התיבה המרחפת לא ייטענו"
+
+#: ../admin/tabs/settings.php:36
+msgid "Allow Guests to use the rating system"
+msgstr "לאפשר לאורחים להשתמש במערכת הדירוג"
+
+#: ../admin/tabs/settings.php:38
+msgid "If checked, users will be able to leave rates without being logged in"
+msgstr "אם מסומן, אורחים יוכלו לדרג מבלי להתחבר למערכת"
+
+#: ../admin/tabs/settings.php:46
+msgid "Allow Guests to like other users "
+msgstr "לאפשר לאורחים לאהוב משתמשים אחרים"
+
+#: ../admin/tabs/settings.php:48 ../admin/tabs/settings.php:49
+msgid "If checked, users will be able to like users without being logged in"
+msgstr "אם מסומן, משתמשים יוכלו לאהוב משתמשים מבלי שיהיו מחוברים"
+
+#: ../admin/tabs/settings.php:57
+msgid "Delete Plugin Information from the Database"
+msgstr "למחוק את מידע התוסף ממסד הנתונים"
+
+#: ../admin/tabs/settings.php:63
+msgid ""
+"If you select 'yes', all the Users Ultra information will be deleted from "
+"the database. <strong>ATTENTION: This action can't be reverted. </strong>"
+msgstr ""
+"אם בחרת 'כן' כל מידע משתמשי אולטרה יימחק ממסד הנתונים. <strong>לשים לב: "
+"פעולה זו אינה ניתנת לביטול. </strong>"
+
+#: ../admin/tabs/settings.php:64
+msgid ""
+"f you select 'yes', all the Users Ultra information will be deleted from the "
+"database."
+msgstr "אם בחרת 'כן' כל מידע משתמשי אולטרה יימחק ממסד הנתונים."
+
+#: ../admin/tabs/settings.php:71
+msgid "Auto Rotation Fixer"
+msgstr "תיקון סיבוב אוטומטי"
+
+#: ../admin/tabs/settings.php:77 ../admin/tabs/settings.php:78
+msgid ""
+"If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG "
+"images using PHP's EXIF extension, immediately after they are uploaded to "
+"the server. This is implemented for iPhone rotation issues"
+msgstr ""
+"אם בחרת 'כן', תוסף Users Ultra יתקן אוטומטית סיבוב תמונות JPEG המשתמשות "
+"בהרחבת PHP's EXIF, מיד לאחר ההעלאה לשרת. זה מיושם עבור בעיות סיבוב בטלפון "
+"נייד"
+
+#: ../admin/tabs/settings.php:84
+msgid "Use Users Ultra Avatar"
+msgstr "להשתמש בצלמית המשתמש של מערכת אולטרא."
+
+#: ../admin/tabs/settings.php:90 ../admin/tabs/settings.php:91
+msgid ""
+"If you select \"yes\", Users Ultra will override the default WordPress Avatar"
+msgstr "אם בחרת 'כן', תוסף Users Ultra ידרוס את צלמית המשתמש של וורדפרס"
+
+#: ../admin/tabs/settings.php:97
+msgid "Redirect Users To My Account - Login Page"
+msgstr "הפניית משתמשים לחשבון שלי - עמוד כניסה"
+
+#: ../admin/tabs/settings.php:103
+msgid ""
+"If you select yes, the user will be redirected to the <strong>my account</"
+"strong> page when clicking on the <strong>login link</strong>. Otherwise, "
+"the user will see the standard login box. WARNING: Do not set it to 'yes' if "
+"you are using the login shortcode in WP side widgets."
+msgstr ""
+"אם בחרת 'כן' המשתמש יועבר לעמוד <strong>החשבון שלי</strong> כאשר ילחץ על "
+"<strong>קישור התחברות</strong>. אחרת, המשתמש יראה את תיבת החיבור הרגילה. "
+"אזהרה: לא להגדיר 'גן' כאשר משתמשים בקיצור קוד התחברות בוידג'טים של וורדפרס."
+
+#: ../admin/tabs/settings.php:104
+msgid ""
+"If you select yes, the user will be redirected to the my account page. "
+"Otherwise, the user will see the standard login box. WARNING: Do not set it "
+"to 'yes' if you are using the login shortcode in WP side widgets"
+msgstr ""
+"אם בחרת 'כן', המשתמש יועבר לעמוד החשבון שלי. אחרת, המשתמש יראה את תיבת "
+"החיבור הרגילה. אזהרה: לא להגדיר 'כן' כאשר משתמשים בקיצור קוד הכניסה "
+"בוידג'טים של וורדפרס"
+
+#: ../admin/tabs/settings.php:110
+msgid "Redirect Users To My Account - Registration Page"
+msgstr "הפניית משתמשים לחשבון שלי - עמוד הרשמה"
+
+#: ../admin/tabs/settings.php:116 ../admin/tabs/settings.php:117
+msgid ""
+"If you select yes, the user will be redirected to the <strong>my account</"
+"strong> page when clicking on the <strong>registration link</strong>. "
+"Otherwise, the user will see the standard login box. WARNING: Do not set it "
+"to 'yes' if you are using the registration shortcode in WP side widgets."
+msgstr ""
+"אם בחרת כן, המשתמש יופנה אל עמוד <strong>החשבון שלי</strong> בלחיצה על "
+"<strong>קישור הרשמה</strong>. אחרת, המשתמש יראה את טופס ההתחברות הרגיל. "
+"אזהרה: לא להגדיר 'כן' אם נעשה שימוש בקיצור הקוד להרשמה בוידג'טים של וורדפרס."
+
+#: ../admin/tabs/settings.php:129
+msgid "Password Strength Settings"
+msgstr "הגדרות חוזק ססמה"
+
+#: ../admin/tabs/settings.php:131
+msgid ""
+"You can help protect your users' accounts by managing and monitoring the "
+"strength of their passwords."
+msgstr ""
+"ניתן לעזור להגן על חשבונות המשתמשים על-ידי ניהול ובקרת עוצמת הססמאות שלהם."
+
+#: ../admin/tabs/settings.php:140
+msgid "Minimum password length:"
+msgstr "אורך ססמה מינימלי:"
+
+#: ../admin/tabs/settings.php:141 ../admin/tabs/settings.php:142
+msgid "By default a Password must be at least 7 characters long"
+msgstr "כברירת מחדל הססמה חייבת להיות לפחות באורך של 7 תווים"
+
+#: ../admin/tabs/settings.php:149
+msgid "Must contain at least one number and one letter"
+msgstr "חובה לכלול לפחות ספרה אחת ואות אחת"
+
+#: ../admin/tabs/settings.php:151 ../admin/tabs/settings.php:152
+msgid "The password must contain at least one number and one letter"
+msgstr "הססמה חייבת לכלול לפחות ספרה אחת ואות אחת"
+
+#: ../admin/tabs/settings.php:158
+msgid "Must contain at least one upper case character"
+msgstr "חובה לכלול לפחות אות גדולה אחת"
+
+#: ../admin/tabs/settings.php:160 ../admin/tabs/settings.php:161
+msgid "The password must contain at least one upper case character"
+msgstr "הססמה חייבת לכלול לפחות אות גדולה אחת"
+
+#: ../admin/tabs/settings.php:167
+msgid "Must contain at least one lower case character"
+msgstr "חובה לכלול לפחות אות קטנה אחת"
+
+#: ../admin/tabs/settings.php:169
+msgid "The password must contain at least one lower case character"
+msgstr "הססמה חייבת לכלול לפחות אות קטנה אחת"
+
+#: ../admin/tabs/settings.php:170
+msgid "The password must contain at least one lowercase character"
+msgstr "הססמה חייבת לכלול לפחות אות קטנה אחת"
+
+#: ../admin/tabs/settings.php:181
+msgid "Membership Settings"
+msgstr "הגדרות מנוי"
+
+#: ../admin/tabs/settings.php:192
+msgid "Display Only Selected Package"
+msgstr "להציג רק את החבילה שנבחרה"
+
+#: ../admin/tabs/settings.php:194
+msgid ""
+"If checked, Only the Selected package will be displayed in the payment form. "
+"<strong>PLEASE NOTE: </strong>This setting is used only if you are using the "
+"pricing tables feature."
+msgstr ""
+"אם מסומן, רק החבילה שנבחרה תוצג בטופס התשלום. <strong>נא לשים לב: </"
+"strong>אפשרות זו נמצאת בשימוש רק כאשר יש שימוש בתכונת טבלת מחירים."
+
+#: ../admin/tabs/settings.php:195
+msgid ""
+"If checked, Only the Selected package will be displayed in the payment form"
+msgstr "אם מסומן, רק החבילה שנבחרה תוצג בטופס התשלום"
+
+#: ../admin/tabs/settings.php:200
+msgid "Text for free membership:"
+msgstr "טקסט למנויים שלא בתשלום:"
+
+#: ../admin/tabs/settings.php:201
+msgid ""
+"This text will be displayed for the free membership rather than showing "
+"<strong>\"$0.00\"<strong>. Please input some text like: \"Free\""
+msgstr ""
+"טקסט זה יוצג למנוי חינמי במקום <strong>\"$0.00\"<strong>. נא להזין טקסט כמו: "
+"\"חינם\""
+
+#: ../admin/tabs/settings.php:202
+msgid ""
+"This text will be displayed for the free membership rather than showing "
+"<strong>\"$0.00\"<strong>. Please input some text like:"
+msgstr ""
+"טקסט זה יוצג למנוי חינמי במקום <strong>\"$0.00\"<strong>. נא להזין טקסט כמו:"
+
+#: ../admin/tabs/settings.php:211
+msgid "Media Settings"
+msgstr "הגדרות מדיה"
+
+#: ../admin/tabs/settings.php:222
+msgid "Upload Folder:"
+msgstr "תיקיית העלאה:"
+
+#: ../admin/tabs/settings.php:223 ../admin/tabs/settings.php:224
+msgid ""
+"This is the folder where the user photos will be stored in. Please make sure "
+"to assign 755 privileges to it. The default folder is <strong>wp-content/"
+"usersultramedia</strong>"
+msgstr ""
+"זו התיקייה שבה יישמרו תמונות המשתמש. נא לוודא שמוקצות לה הרשאות 755 . תיקיית "
+"ברירת המחדל היא <strong>wp-content/usersultramedia</strong>"
+
+#: ../admin/tabs/settings.php:230
+msgid "Mini Thumbnail Width"
+msgstr "הגדרת רוחב מיני תמונה ממוזערת"
+
+#: ../admin/tabs/settings.php:231 ../admin/tabs/settings.php:232
+#: ../admin/tabs/settings.php:425 ../admin/tabs/settings.php:426
+msgid "Set width in pixels"
+msgstr "הגדרת הרוחב בפיקסלים"
+
+#: ../admin/tabs/settings.php:238
+msgid "Mini Thumbnail Height"
+msgstr "גובה מיני תמונה ממוזערת"
+
+#: ../admin/tabs/settings.php:239 ../admin/tabs/settings.php:240
+#: ../admin/tabs/settings.php:255 ../admin/tabs/settings.php:256
+#: ../admin/tabs/settings.php:271 ../admin/tabs/settings.php:272
+#: ../admin/tabs/settings.php:433 ../admin/tabs/settings.php:434
+msgid "Set Height in pixels"
+msgstr "הגדרת הגובה בפיקסלים"
+
+#: ../admin/tabs/settings.php:246
+msgid "Thumbnail Width"
+msgstr "רוחב תמונה ממוזערת"
+
+#: ../admin/tabs/settings.php:247 ../admin/tabs/settings.php:248
+#: ../admin/tabs/settings.php:263 ../admin/tabs/settings.php:264
+msgid "Set Width in pixels"
+msgstr "הגדרת רוחב בפיקסלים"
+
+#: ../admin/tabs/settings.php:254
+msgid "Thumbnail Height"
+msgstr "גובה תמונה ממוזערת"
+
+#: ../admin/tabs/settings.php:262
+msgid "Large Photo Max Width"
+msgstr "רוחב מרבי של תמונה גדולה"
+
+#: ../admin/tabs/settings.php:270
+msgid "Large Photo Max Height"
+msgstr "גובה מרבי של תמונה גדולה"
+
+#: ../admin/tabs/settings.php:282
+msgid "Frontend Publishing  Settings"
+msgstr "הגדרות פרסום צד קדמי"
+
+#: ../admin/tabs/settings.php:294
+msgid "Max Posts Per User:"
+msgstr "מספר פוסטים מרבי למשתמש:"
+
+#: ../admin/tabs/settings.php:295 ../admin/tabs/settings.php:296
+msgid ""
+"Please set 9999 for unlimited posts. This value is used for free and general "
+"users"
+msgstr "נא להגדיר 9999 לפוסטים ללא הגבלה. ערך זה משמש למשתמשים חינמיים וכלליים"
+
+#: ../admin/tabs/settings.php:302
+msgid "Default Status"
+msgstr "מצב ברירת המחדל"
+
+#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5364
+msgid "Pending"
+msgstr "בהמתנה"
+
+#: ../admin/tabs/settings.php:305
+msgid "Publish"
+msgstr "פרסום"
+
+#: ../admin/tabs/settings.php:308 ../admin/tabs/settings.php:309
+msgid ""
+"This is the status of the post when the users submit new posts through Users "
+"Ultra."
+msgstr "זהו מצב הפוסט כאשר משתמשים שולחים פוסטים חדשים באמצעות Users Ultra."
+
+#: ../admin/tabs/settings.php:315
+msgid "Alows users to select category"
+msgstr "מאפשר למשתמשים לבחור קטגוריה"
+
+#: ../admin/tabs/settings.php:321 ../admin/tabs/settings.php:322
+msgid ""
+"If \"yes\" authors will be able to select the category, if \"no\" is set the "
+"default category will be used to save the post."
+msgstr ""
+"אם 'כן' מחברים יוכלו לבחור את הקטגוריה, אם הוגדר 'לא'קטגוריית ברירת המחדל "
+"תשמש לשמירת הפוסט."
+
+#: ../admin/tabs/settings.php:328
+msgid "Default Category"
+msgstr "קטגוריית ברירת המחדל"
+
+#: ../admin/tabs/settings.php:330 ../admin/tabs/settings.php:331
+msgid "The category if authors are not allowed to select a custom category."
+msgstr "הקטגוריה כאשר מחברים אינם רשאים לבחור קטגוריה."
+
+#: ../admin/tabs/settings.php:342
+msgid "Terms & Conditions"
+msgstr "תנאי שימוש"
+
+#: ../admin/tabs/settings.php:355
+msgid "Allows Terms & Conditions Text Before Registration"
+msgstr "להפעיל טקסט תנאי השימוש לפני ההרשמה"
+
+#: ../admin/tabs/settings.php:361 ../admin/tabs/settings.php:362
+msgid ""
+"If you select \"yes\", users will have to accept terms and conditions when "
+"registering."
+msgstr "אם בחרת 'כן', משתמשים יצטרכו להסכים לתנאי השימוש בעת ההרשמה."
+
+#: ../admin/tabs/settings.php:369
+msgid "Terms & Conditions Text/HTML"
+msgstr "תנאי השימוש טקסט/HTML"
+
+#: ../admin/tabs/settings.php:370 ../admin/tabs/settings.php:371
+#: ../admin/tabs/settings.php:380 ../admin/tabs/settings.php:381
+#: ../admin/tabs/settings.php:387 ../admin/tabs/settings.php:388
+#: ../admin/tabs/settings.php:395 ../admin/tabs/settings.php:396
+msgid "Enter text to display, example \"I agree to the Terms & Conditions\"."
+msgstr "הזנת טקסט להצגה, לדוגמה \"אני מסכים לתנאי השימוש\"."
+
+#: ../admin/tabs/settings.php:379
+msgid "Terms & Conditions Text/HTML 2"
+msgstr "תנאי שימוש טקסט/HTML 2"
+
+#: ../admin/tabs/settings.php:386
+msgid "Terms & Conditions Text/HTML 3"
+msgstr "תנאי שימוש טקסט/HTML 3"
+
+#: ../admin/tabs/settings.php:394
+msgid "Terms & Conditions Text/HTML 4"
+msgstr "תנאי שימוש טקסט/HTML 4"
+
+#: ../admin/tabs/settings.php:412
+msgid "Avatar Settings"
+msgstr "הגדרות צלמית משתמש"
+
+#: ../admin/tabs/settings.php:424
+msgid "Avatar Width:"
+msgstr "רוחב צלמית המשתמש:"
+
+#: ../admin/tabs/settings.php:432
+msgid "Avatar Height"
+msgstr "גובה צלמית המשתמש"
+
+#: ../admin/tabs/settings.php:446
+msgid "Mailchimp Settings"
+msgstr "הגדרות Mailchimp"
+
+#: ../admin/tabs/settings.php:458
+msgid "MailChimp API Key"
+msgstr "מפתח API של MailChimp"
+
+#: ../admin/tabs/settings.php:459 ../admin/tabs/settings.php:460
+msgid ""
+"Fill out this field with your MailChimp API key here to allow integration "
+"with MailChimp subscription."
+msgstr ""
+"נא למלא שדה זה במפתח ה API של MailChimp כדי לאפשר שילוב עם הרשמת MailChimp."
+
+#: ../admin/tabs/settings.php:466
+msgid "MailChimp List ID"
+msgstr "מזהה רשימת MailChimp"
+
+#: ../admin/tabs/settings.php:467 ../admin/tabs/settings.php:468
+msgid "Fill out this field your list ID."
+msgstr "נא למלא את שדה המזהה ברשימה שלך."
+
+#: ../admin/tabs/settings.php:474
+msgid "Activate/Deactivate Mailchimp"
+msgstr "הפעלת/כיבוי Mailchimp"
+
+#: ../admin/tabs/settings.php:476 ../admin/tabs/settings.php:477
+msgid "If checked, Users will be asked to subscribe through mailchimp"
+msgstr "אם מסומן, משתמשים יתבקשו להירשם באמצעות mailchimp"
+
+#: ../admin/tabs/settings.php:482
+msgid "MailChimp Text"
+msgstr "טקסט MailChimp"
+
+#: ../admin/tabs/settings.php:483 ../admin/tabs/settings.php:484
+msgid ""
+"Please input the text that will appear when asking users to get periodical "
+"updates."
+msgstr "נא להזין את הטקסט שיוצג כאשר משתמשים מתבקשים לקבל עדכונים תקופתיים."
+
+#: ../admin/tabs/settings.php:491
+msgid "MailChimp Header Text"
+msgstr "טקסט כותרת MailChimp"
+
+#: ../admin/tabs/settings.php:492 ../admin/tabs/settings.php:493
+msgid ""
+"Please input the text that will appear as header when mailchip is active."
+msgstr "נא להזין את הטקסט שיוצג ככותרת כאשר mailchip פעיל."
+
+#: ../admin/tabs/settings.php:503
+msgid "Registration Settings"
+msgstr "הגדרות הרשמה"
+
+#: ../admin/tabs/settings.php:514
+msgid "Registration Type"
+msgstr "סוג הרשמה"
+
+#: ../admin/tabs/settings.php:516
+msgid "Login automatically after registration"
+msgstr "התחברות אוטומטית לאחר ההרשמה"
+
+#: ../admin/tabs/settings.php:517
+msgid "E-mail Activation -  An confirmation link is sent to the user email"
+msgstr "הפעלה במייל - קישור הפעלה נשלח במייל אל המשתמש"
+
+#: ../admin/tabs/settings.php:518
+msgid "Manually Activation - The admin approves the accounts manually"
+msgstr "הפעלה ידנית - המנהל מאשר באופן ידני את החשבונות"
+
+#: ../admin/tabs/settings.php:519
+msgid "Paid Activation - Enables the Membership Features"
+msgstr "הפעלה בתשלום - מאפשר תכונות מנויים"
+
+#: ../admin/tabs/settings.php:521 ../admin/tabs/settings.php:522
+msgid ""
+"Please note: Paid Activation does not work with social connects at this "
+"moment."
+msgstr "נא לשים לב: לעת עתה, הפעלה בתשלום אינה עובדת עם חיבור מדיה חברתית.."
+
+#: ../admin/tabs/settings.php:529
+msgid "Activate Accounts When Using Social"
+msgstr "הפעלת חשבונות כאשר משתמשים במדיה חברתית"
+
+#: ../admin/tabs/settings.php:531
+msgid "YES"
+msgstr "<strong>כן<strong/>"
+
+#: ../admin/tabs/settings.php:532
+msgid "NO"
+msgstr "<strong>לא<strong/>"
+
+#: ../admin/tabs/settings.php:535 ../admin/tabs/settings.php:536
+msgid ""
+"If YES, the account will be activated automatically when using social login "
+"options. "
+msgstr ""
+"אם 'כן' החשבון יופעל אוטומטית כאשר משתמשים באפשרויות של חיבור באמצעות מדיה "
+"חברתית. "
+
+#: ../admin/tabs/settings.php:544
+msgid "Captcha Plugin"
+msgstr "תוסף קוד אימות"
+
+#: ../admin/tabs/settings.php:548
+msgid "reCaptcha"
+msgstr "reCaptcha"
+
+#: ../admin/tabs/settings.php:550
+msgid ""
+"By activating this setting reCaptcha will be displayed in the registration "
+"form. <br /> "
+msgstr "עם הפעלת אפשרות זו יוצג קוד אימות reCaptcha בטופס ההרשמה. <br /> "
+
+#: ../admin/tabs/settings.php:551
+msgid ""
+"If you are using a captcha that requires a plugin, you must install and "
+"activate the selected captcha plugin. Some captcha plugins require you to "
+"register a free account with them."
+msgstr ""
+"אפשר להשתמש בתוסף קוד אימות אחר שהותקן והופעל. חלק מתוספי קוד האימות מחייבים "
+"הרשמה לחשבון חינמי."
+
+#: ../admin/tabs/settings.php:559
+msgid "CAPTCHA Heading Text"
+msgstr "טקסט כותרת קוד האימות"
+
+#: ../admin/tabs/settings.php:560 ../admin/tabs/settings.php:561
+msgid ""
+"By default the following heading is displayed when the captcha is activate "
+"'Prove you're not a robot'. You can set your custom heading here"
+msgstr ""
+"כברירת מחדל הכותרת שלהלן מוצגת כאשר קוד האימות פעיל 'נא להוכיח שאינך רובוט'. "
+"ניתן לשנות כאן את הכותרת"
+
+#: ../admin/tabs/settings.php:567
+msgid "CAPTCHA Field Label"
+msgstr "תווית שדה קוד האימות"
+
+#: ../admin/tabs/settings.php:568 ../admin/tabs/settings.php:569
+msgid "Enter text which you want to show in form in front of CAPTCHA."
+msgstr "הזנת טקסט שיוצג בטופס לפני קוד האימות."
+
+#: ../admin/tabs/settings.php:575
+msgid "reCaptcha Public Key"
+msgstr "מפתח ציבורי של reCaptcha"
+
+#: ../admin/tabs/settings.php:576
+msgid ""
+"Enter your reCaptcha Public Key. You can sign up for a free reCaptcha "
+"account <a href=\"http://www.google.com/recaptcha\" title=\"Get a reCaptcha "
+"Key\" target=\"_blank\">here</a>."
+msgstr ""
+"נא להזין את המפתח הציבורי שלך ב reCaptcha. אפשר לפתוח חשבון חינמי של "
+"reCaptcha <a href=\"http://www.google.com/recaptcha\" title=\"לקבלת מפתח "
+"reCaptcha\" target=\"_blank\">כאן</a>."
+
+#: ../admin/tabs/settings.php:577
+msgid ""
+"Your reCaptcha keys are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+"המפתחות שלך ב reCaptcha הכרחיים כדי להשתמש ב reCaptcha. אפשר לרשום את האתר "
+"שלך ללא תשלום בעמוד reCaptcha של Google."
+
+#: ../admin/tabs/settings.php:583
+msgid "reCaptcha Private Key"
+msgstr "מפתח פרטי של reCaptcha"
+
+#: ../admin/tabs/settings.php:584
+msgid "Enter your reCaptcha Private Key."
+msgstr "נא להזין את המפתח הפרטי שלך ב reCaptcha."
+
+#: ../admin/tabs/settings.php:585
+msgid ""
+"Your reCaptcha kays are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+"מפתחות reCaptchaהכרחיות לשימוש ב reCaptcha. אפשר לרשום את האתר שלך ללא תשלום "
+"בעמוד reCaptcha של Google."
+
+#: ../admin/tabs/settings.php:591
+msgid "Register success message"
+msgstr "הודעת הצלחת ההרשמה"
+
+#: ../admin/tabs/settings.php:593
+msgid "Show a text message when users complete the registration process."
+msgstr "הצגת הודעת טקסט כאשר משתמשים משלימים את תהליך ההרשמה."
+
+#: ../admin/tabs/settings.php:594
+msgid "This message will be shown to users after registration is completed."
+msgstr "הודעה זו תוצג למשתמשים לאחר השלמת תהליך ההרשמה."
+
+#: ../admin/tabs/settings.php:600
+msgid "Text/HTML below the Register Success message."
+msgstr "הודעת טקסט פשוט HTML מתחת להודעת הצלחת ההרשמה."
+
+#: ../admin/tabs/settings.php:602
+msgid ""
+"Show a text/HTML content under success message when users complete the "
+"registration process."
+msgstr ""
+"הצגת הודעת טקסט או HTML מתחת להודעת ההצלחה, כאשר משתמשים השלימו את תהליך "
+"ההרשמה."
+
+#: ../admin/tabs/settings.php:603
+msgid ""
+"This message will be shown to users under the success message after "
+"registration is completed."
+msgstr "הודעה זו תוצג למשתמשים מתחת להודעת ההצלחה לאחר השלמת ההרשמה."
+
+#: ../admin/tabs/settings.php:614
+msgid "User Profiles Settings"
+msgstr "הגדרות פרופיל משתמש"
+
+#: ../admin/tabs/settings.php:625
+msgid "Profile Display Name: "
+msgstr "שם תצוגה של הפרופיל: "
+
+#: ../admin/tabs/settings.php:627
+msgid "Display User Name"
+msgstr "הצגת שם משתמש"
+
+#: ../admin/tabs/settings.php:628
+msgid "Use the Display Name set by the User in the Profile"
+msgstr "להשתמש בשם התצוגה שהוגדר על-ידי המשתמש בפרופיל"
+
+#: ../admin/tabs/settings.php:630 ../admin/tabs/settings.php:631
+msgid "Set how the users ultra will make the user name."
+msgstr "הגדרת שם המשתמש"
+
+#: ../admin/tabs/settings.php:637
+msgid "Display Photos: "
+msgstr "הצגת תמונות: "
+
+#: ../admin/tabs/settings.php:639
+msgid "Only for registered/logged in users"
+msgstr "רק עבור משתמשים רשומים/מחוברים"
+
+#: ../admin/tabs/settings.php:640
+msgid "All visitor can see the user photos without registration"
+msgstr "כל מבקר יכול לראות את תמונות המשתמש ללא הרשמה"
+
+#: ../admin/tabs/settings.php:643 ../admin/tabs/settings.php:644
+msgid "Specify if the user photos are public or private"
+msgstr "לציין אם התמונות פרטיות או ציבוריות"
+
+#: ../admin/tabs/settings.php:659
+msgid "Social Media Settings"
+msgstr "הגדרות מדיה חברתית"
+
+#: ../admin/tabs/settings.php:671
+msgid "Facebook Connect"
+msgstr "תוכן Facebook"
+
+#: ../admin/tabs/settings.php:673 ../admin/tabs/settings.php:674
+msgid "If checked, User will be able to Sign up & Sign in through Facebook."
+msgstr "אם מסומן, משתמש יוכל להירשם ולהתחבר באמצעות Facebook."
+
+#: ../admin/tabs/settings.php:680
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+#: ../admin/tabs/settings.php:681 ../admin/tabs/settings.php:682
+#: ../admin/tabs/settings.php:692
+msgid "Obtained when you created the Facebook Application."
+msgstr "קיבלת כאשר יצרת את האפליקציה ב Facebook."
+
+#: ../admin/tabs/settings.php:690
+msgid "Facebook App Secret"
+msgstr "Facebook App Secret"
+
+#: ../admin/tabs/settings.php:691
+msgid "Facebook settings"
+msgstr "הגדרות Facebook"
+
+#: ../admin/tabs/settings.php:698
+msgid "LinkedIn Connect"
+msgstr "חיבור באמצעות LinkedIn"
+
+#: ../admin/tabs/settings.php:700 ../admin/tabs/settings.php:701
+msgid "If checked, User will be able to Sign up & Sign in through LinkedIn."
+msgstr "אם מסומן, משתמשים יוכלו להתחבר באמצעות LinkedIn."
+
+#: ../admin/tabs/settings.php:707
+msgid "LinkedIn API Key Public"
+msgstr "מפתח API ציבורי של LinkedIn"
+
+#: ../admin/tabs/settings.php:708 ../admin/tabs/settings.php:709
+#: ../admin/tabs/settings.php:777 ../admin/tabs/settings.php:785
+msgid "Obtained when you created your application."
+msgstr "קיבלת כאשר יצרת את האפליקציה שלך."
+
+#: ../admin/tabs/settings.php:715
+msgid "LinkedIn API Key Private"
+msgstr "מפתח API פרטי של LinkedIn"
+
+#: ../admin/tabs/settings.php:716
+msgid ""
+"<br><br> VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?"
+"uultralinkedin=1\". Example: http://yourdomain.com/?uultralinkedin=1"
+msgstr ""
+"<br><br> חשוב מאד: להגדיר כתובת  URL של הפניה מחדש ל \"?uultralinkedin=1\". "
+"דוגמה: http://yourdomain.com/?uultralinkedin=1"
+
+#: ../admin/tabs/settings.php:717
+msgid ""
+"VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?uultralinkedin=1"
+msgstr ""
+"חשוב מאד: להגדיר את OAuth 1.0 Accept Redirect URL ל \"?uultralinkedin=1"
+
+#: ../admin/tabs/settings.php:724
+msgid "Yahoo Sign up"
+msgstr "הרשמה עם Yahoo"
+
+#: ../admin/tabs/settings.php:726 ../admin/tabs/settings.php:727
+msgid "If checked, User will be able to Sign up & Sign in through Yahoo."
+msgstr "אם מסומן, משתמשים יוכלו להירשם ולהתחבר דרך Yahoo."
+
+#: ../admin/tabs/settings.php:732
+msgid "Google Sign up"
+msgstr "הרשמה עם Google"
+
+#: ../admin/tabs/settings.php:734 ../admin/tabs/settings.php:735
+msgid "If checked, User will be able to Sign up & Sign in through Google."
+msgstr "אם מסומן, משתמשים יוכלו להירשם ולהתחבר באמצעות Google."
+
+#: ../admin/tabs/settings.php:741
+msgid "Google Client ID"
+msgstr "מזהה לקוח של Google"
+
+#: ../admin/tabs/settings.php:742 ../admin/tabs/settings.php:743
+msgid "Paste the client id that you got from google API Console"
+msgstr "להדביק את מזהה הלקוח שקיבלת מקונסולת מפתח ה API של google"
+
+#: ../admin/tabs/settings.php:749
+msgid "Google Client Secret"
+msgstr "Google Client Secret"
+
+#: ../admin/tabs/settings.php:750 ../admin/tabs/settings.php:784
+msgid "Set the client secret"
+msgstr "הגדרת client secret"
+
+#: ../admin/tabs/settings.php:751
+msgid "Obtained when you created the Google Application."
+msgstr "קיבלת כאשר יצרת את אפליקציית Google."
+
+#: ../admin/tabs/settings.php:757
+msgid "Google Redirect URI"
+msgstr "URI הפניה מחדש של Google"
+
+#: ../admin/tabs/settings.php:758
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. Find more information here https://"
+"developers.google.com/console/help/new/#console.  <br><br> VERY IMPORTANT: "
+"Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
+"uultraplus=1"
+msgstr ""
+"להדביק את ה URI שקיבלת בקונסולת ה API. אסימון הגישה יתקבל כאן במהלך כניסה "
+"מוצלחת.  אפשר למצוא מידע נוסף כאןhttps://developers.google.com/console/help/"
+"new/#console.  <br><br> חשוב מאד: כתובת הURL שלך צריכה להסתיים ב \"?"
+"uultraplus=1\". דוגמה: http://yourdomain.com/?uultraplus=1"
+
+#: ../admin/tabs/settings.php:759
+msgid ""
+"Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
+"uultraplus=1"
+msgstr ""
+"כתובת ה URL שלך צריכה להיות עם \"?uultraplus=1\". דוגמה: http://yourdomain."
+"com/?uultraplus=1"
+
+#: ../admin/tabs/settings.php:767
+msgid "Instagram Sign up"
+msgstr "הרשמה עם Instagram"
+
+#: ../admin/tabs/settings.php:769 ../admin/tabs/settings.php:770
+msgid "If checked, User will be able to Sign up & Sign in through Instagram."
+msgstr "אם מסומן, משתמשים יוכלו להירשם ולהתחבר באמצעות Instagram."
+
+#: ../admin/tabs/settings.php:775
+msgid "Instagram Client ID"
+msgstr "Instagram Client ID"
+
+#: ../admin/tabs/settings.php:776
+msgid "Paste the client id that you got from Instagram API Console"
+msgstr "הדבקת מזהה הלקוח שקיבלת מקונסולת ה API של Instagram"
+
+#: ../admin/tabs/settings.php:783
+msgid "Instagram Client Secret"
+msgstr "Instagram Client Secret"
+
+#: ../admin/tabs/settings.php:791
+msgid "Instagram Redirect URI"
+msgstr "URI הפניה מחדש של Instagram"
+
+#: ../admin/tabs/settings.php:792
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Client ID and Client Secret here http://instagram.com/developer/clients/"
+"register/#. <br><br> VERY IMPORTANT: Your Redirect URI should end with \"?"
+"instagram=1\". Example: http://yourdomain.com/?instagram=1"
+msgstr ""
+"להדביק את ה URI שקיבלת בקונסולת ה API. מזהה הלקוח וסוד הלקוח יתקבלו כאן "
+"http://instagram.com/developer/clients/r \"?instagram=1\". דוגמה: http://"
+"yourdomain.com/?instagram=1"
+
+#: ../admin/tabs/settings.php:793
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. "
+msgstr ""
+"להדביק את ה URI שקיבלת בקונסולת ה API.  אסימון הגישה יתקבל כאן במהלך התחברות "
+"מוצלחת."
+
+#: ../admin/tabs/settings.php:802
+msgid "Twitter Sign up"
+msgstr "הרשמה עם Twitter"
+
+#: ../admin/tabs/settings.php:804 ../admin/tabs/settings.php:805
+msgid "If checked, User will be able to Sign up & Sign in through Twitter."
+msgstr "אם מסומן, משתמשים יוכלו להירשם ולהתחבר באמצעות Twitter."
+
+#: ../admin/tabs/settings.php:812
+msgid "Consumer Key"
+msgstr "Consumer Key"
+
+#: ../admin/tabs/settings.php:813
+msgid "Paste the Consumer Key"
+msgstr "הדבקת מפתח Consumer Key"
+
+#: ../admin/tabs/settings.php:814
+msgid "Obtained when you created your Application at Twitter Developer Center"
+msgstr "קיבלת כאשר יצרת את האפליקציה שלך במרכז הפיתוח של Twitter"
+
+#: ../admin/tabs/settings.php:820
+msgid "Consumer Secret"
+msgstr "Consumer Secret"
+
+#: ../admin/tabs/settings.php:821
+msgid "Paste the Consumer Secret"
+msgstr "הדבקת Consumer Secret"
+
+#: ../admin/tabs/settings.php:822
+msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
+msgstr "קיבלת כאשר יצרת את האפליקציה שלך במרכז הפיתוח של Twitter"
+
+#: ../admin/tabs/settings.php:828
+msgid "Twitter Auto Post"
+msgstr "פרסופ אוטומטי של Twitter"
+
+#: ../admin/tabs/settings.php:830 ../admin/tabs/settings.php:831
+msgid ""
+"If checked, Users Ultra will post a message automatically to the user "
+"twitter timeline when registering."
+msgstr ""
+"אם מסומן, המערכת תפרסם אוטומטית הודעה לציר הזמן של המשתמש ב twitter כאשר הוא "
+"מתחבר."
+
+#: ../admin/tabs/settings.php:837
+#: ../xooclasses/xoo.userultra.mymessage.php:920
+#: ../xooclasses/xoo.userultra.mymessage.php:943
+msgid "Message"
+msgstr "הודעה"
+
+#: ../admin/tabs/settings.php:838 ../admin/tabs/settings.php:839
+msgid "Input the message that will be posted right after user registration"
+msgstr "הזנת ההודעה שתפורסם מיד לאחר שהמשתמש יתחבר"
+
+#: ../admin/tabs/settings.php:845
+msgid "Yammer Sign up"
+msgstr "הרשמה עם Yammer"
+
+#: ../admin/tabs/settings.php:847 ../admin/tabs/settings.php:848
+msgid "If checked, User will be able to Sign up & Sign in through Yammer."
+msgstr "אם מסומן, משתמשים יוכלו להירשם ולהתחבר באמצעות Yammer."
+
+#: ../admin/tabs/settings.php:855
+msgid "Client Id"
+msgstr "Client Id"
+
+#: ../admin/tabs/settings.php:856
+msgid "Paste the Yammer Client ID"
+msgstr "הדבקת Yammer Client ID"
+
+#: ../admin/tabs/settings.php:857
+msgid "The same used when you signed up."
+msgstr "מה ששימש אותך בהרשמה."
+
+#: ../admin/tabs/settings.php:863
+msgid "Client Secret"
+msgstr "Client Secret"
+
+#: ../admin/tabs/settings.php:864 ../admin/tabs/settings.php:872
+msgid "Paste the Yammer Client Secret"
+msgstr "הדבקת Yammer Client Secret"
+
+#: ../admin/tabs/settings.php:865
+msgid "Obtained at Yammer developer center."
+msgstr "קיבלת במרכז הפיתוח של Yamme."
+
+#: ../admin/tabs/settings.php:871
+msgid "Redirect URL"
+msgstr "כתובת URL להפניה מחדש"
+
+#: ../admin/tabs/settings.php:873
+msgid ""
+"<br><br> VERY IMPORTANT: Your URL should end with \"?uultryammer=1\". "
+"Example: http://yourdomain.com/?uultryammer=1"
+msgstr ""
+"<br><br> חשוב מאד: כתובת ה URL שלך חייבת להסתיים ב \"?uultryammer=1\". "
+"דוגמה: http://yourdomain.com/?uultryammer=1"
+
+#: ../admin/tabs/settings.php:885
+msgid "Logged In Users Pages and Posts Protection Settings"
+msgstr "הגדרות הגנת פוסטים ועמודים ממשתמשים מחוברים"
+
+#: ../admin/tabs/settings.php:887
+msgid ""
+"In this section you can manage Posts & Pages Protection module settings."
+msgstr "במקטע זה ניתן לנהל את הגדרות מודול הגנת פוסטים ועמודים."
+
+#: ../admin/tabs/settings.php:888
+msgid ""
+"This module will let you block pages and any post types and make them "
+"visible only to logged in users."
+msgstr ""
+"מודול זה יאפשר לך לחסום עמודים וכל סוג פוסט ולהפוך אותם לניתנים להצגה על-ידי "
+"משתמשים מחוברים בלבד."
+
+#: ../admin/tabs/settings.php:891
+msgid "Set up the behaviour of locked posts."
+msgstr "הגדרת ההתנהגות של פוסטים נעולים."
+
+#: ../admin/tabs/settings.php:899
+msgid "Activate Logged in Post Protection"
+msgstr "הפעלת הגנת פוסטים למשתמשים מחוברים"
+
+#: ../admin/tabs/settings.php:901 ../admin/tabs/settings.php:902
+msgid ""
+"If checked, You will be able to protect pages and post bassed on logged in "
+"users."
+msgstr "אם מסומן, אפשר יהיה להגן על פוסטים ועמודים על בסיס משתמשים מחוברים."
+
+#: ../admin/tabs/settings.php:909
+msgid "Hide Complete Posts?"
+msgstr "להסתיר פוסטים שלמים?"
+
+#: ../admin/tabs/settings.php:915 ../admin/tabs/settings.php:916
+msgid "By selecting 'yes' will hide posts if the user has no access"
+msgstr "בבחירת 'כן' הפוסטים יוסתרו ממשתמשים ללא הרשאת גישה"
+
+#: ../admin/tabs/settings.php:922 ../admin/tabs/settings.php:1098
+msgid "Hide Post Title?"
+msgstr "להסתיר את כותרת הפוסט?"
+
+#: ../admin/tabs/settings.php:928 ../admin/tabs/settings.php:929
+#: ../admin/tabs/settings.php:1104 ../admin/tabs/settings.php:1105
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Post title' if "
+"user has no access."
+msgstr "בבחירת 'כן' יוצג הטקסט שיוגדר כ'כותרת הפוסט' אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:935
+msgid "Post Title:"
+msgstr "כותרת הפוסט:"
+
+#: ../admin/tabs/settings.php:936 ../admin/tabs/settings.php:937
+msgid "This will be the displayed text as post title if user has no access."
+msgstr "זה יהיה הטקסט שיוצג ככותרת הפוסט אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:944
+msgid "Show post content before &lt;!--more--&gt; tag?"
+msgstr "האם להציג את תוכן הפוסט לפני תגית <!--more-->?"
+
+#: ../admin/tabs/settings.php:950 ../admin/tabs/settings.php:951
+msgid ""
+"By selecting \"Yes\"  will display the post content before the &lt;!--more--"
+"&gt; tag and after that the defined text at \"Post content\". If no &lt;!--"
+"more--&gt;  is set he defined text at \"Post content\" will shown."
+msgstr ""
+"עם בחירת \"כן\"  תוכן הפוסט יוצג לפני תגית <!--more--> ולאחריו הטקסט המוגדר "
+"כ \"תוכן הפוסט\". אם לא  תגית<!--more-->  מוגדרת  \"בתוכן הפוסט\" תוצג."
+
+#: ../admin/tabs/settings.php:958
+msgid "Post Content"
+msgstr "תוכן הפוסט"
+
+#: ../admin/tabs/settings.php:959 ../admin/tabs/settings.php:960
+#: ../admin/tabs/settings.php:1045 ../admin/tabs/settings.php:1046
+msgid "This content will be displayed if user has no access. "
+msgstr "תוכן זה יוצג אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:967
+msgid "Hide Post Comments?"
+msgstr "להסתיר את התגובות לפוסט?"
+
+#: ../admin/tabs/settings.php:973 ../admin/tabs/settings.php:974
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Post comment "
+"text' if user has no access."
+msgstr "בבחירת 'כן' יוצג הטקסט שיוגדר כ'טקסט תגובות פוסט' אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:980
+msgid "Post Comment Text:"
+msgstr "טקסט תגובות פוסט:"
+
+#: ../admin/tabs/settings.php:981 ../admin/tabs/settings.php:982
+msgid "This will be displayed text as post comment text if user has no access."
+msgstr "זה יהיה הטקסט שיוצג כתגובת פוסט אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:987
+msgid "Allows Post Comments?"
+msgstr "לאפשר תגובות פוסט?"
+
+#: ../admin/tabs/settings.php:993 ../admin/tabs/settings.php:994
+msgid "By selecting 'yes' allows users to comment on locked posts"
+msgstr "בבחירת 'כן' מאפשרים למשתמשים להגיב בפוסטים נעולים"
+
+#: ../admin/tabs/settings.php:1001
+msgid "Set up the behaviour of locked pages."
+msgstr "הגדרת ההתנהגות של עמודים נעולים."
+
+#: ../admin/tabs/settings.php:1009
+msgid "Hide Complete Pages?"
+msgstr "להסתיר עמודים שלמים?"
+
+#: ../admin/tabs/settings.php:1015 ../admin/tabs/settings.php:1016
+msgid "By selecting 'yes' will hide pages if the user has no access"
+msgstr "בבחירת 'כן' יוסתרו העמודים אם למשתמש אין גישה"
+
+#: ../admin/tabs/settings.php:1022
+msgid "Hide Page Title?"
+msgstr "להסתיר את כותרת העמוד?"
+
+#: ../admin/tabs/settings.php:1028 ../admin/tabs/settings.php:1029
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Page title' if "
+"user has no access."
+msgstr "בבחירת 'כן' יוצג הטקסט המוגדר כ'כותרת העמוד' אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:1035
+msgid "Page Title:"
+msgstr "כותרת העמוד:"
+
+#: ../admin/tabs/settings.php:1036 ../admin/tabs/settings.php:1037
+msgid "This will be the displayed text as page title if user has no access."
+msgstr "זה הטקסט שיוצג ככותרת העמוד אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:1044
+msgid "Page Content"
+msgstr "תוכן העמוד"
+
+#: ../admin/tabs/settings.php:1053
+msgid "Hide Page Comments?"
+msgstr "להסתיר תגובות עמוד?"
+
+#: ../admin/tabs/settings.php:1059 ../admin/tabs/settings.php:1060
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Page comment "
+"text' if user has no access."
+msgstr "עם בחירת 'כן' יוצג הטקסט המוגדר ב'טקסט תגובת עמוד' אם למשתמש אין גישה."
+
+#: ../admin/tabs/settings.php:1068
+msgid "Page Comment Text:"
+msgstr "טקסט תגובת עמוד:"
+
+#: ../admin/tabs/settings.php:1069 ../admin/tabs/settings.php:1070
+msgid "This will be displayed text as page comment text if user has no access."
+msgstr "זה הטקסט שיוצג כטקסט תגובה אם אין למשתמש גישה."
+
+#: ../admin/tabs/settings.php:1075
+msgid "Allows Page Comments?"
+msgstr "לאפשר תגובות לעמוד?"
+
+#: ../admin/tabs/settings.php:1081 ../admin/tabs/settings.php:1082
+msgid "By selecting 'yes' allows users to comment on locked pages"
+msgstr "עם בחירת 'כן' משתמשים יוכלו להגיב לעמודים נעולים"
+
+#: ../admin/tabs/settings.php:1089
+msgid "Other Settings."
+msgstr "הגדרות אחרות."
+
+#: ../admin/tabs/settings.php:1117
+msgid "Redirect Settings"
+msgstr "הגדרות הפניה מחדש"
+
+#: ../admin/tabs/settings.php:1128
+msgid "Redirect Backend Profiles"
+msgstr "העברת פרופיל צד אחורי"
+
+#: ../admin/tabs/settings.php:1130
+msgid ""
+"If checked, non-admin users who try to access backend WP profiles will be "
+"redirected to Users Ultra Profile Page specified above."
+msgstr ""
+"אם מסומן, משתמשים שאינם מנהלים המנסים לגשת לעמוד הפרופיל בצד האחורי של "
+"וורדפרס יועברו לעמוד הפרופיל של Users Ultra כפי שצוין לעיל."
+
+#: ../admin/tabs/settings.php:1131
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra "
+"Profile Page if they try to access the default backend profile page in wp-"
+"admin. The page can be selected in the Users Ultra System Pages settings."
+msgstr ""
+"שינוי אפשרות זו תשלח משתמשים לעמוד הפרופיל של Users Ultra באתר אם הם מנסים "
+"לגשת לעמוד הפרופיל של הצד האחורי בלוח הניהול של וורדפרס. אפשר לבחור את העמוד "
+"בהגדרות העמודים של מערכת Users Ultra."
+
+#: ../admin/tabs/settings.php:1137
+msgid "Redirect Backend Login"
+msgstr "העברת כניסה מהצד האחורי"
+
+#: ../admin/tabs/settings.php:1139
+msgid ""
+"If checked, non-admin users who try to access backend login form will be "
+"redirected to the front end Users Ultra Login Page specified above."
+msgstr ""
+"אם מסומן, משתמשים שאינם מנהלים המנסים לגשת לטופס הכניסה של הצד האחורי יועברו "
+"לעמוד הכניסה של Users Ultra באתר כפי שצוין לעיל."
+
+#: ../admin/tabs/settings.php:1140
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra Login "
+"Page if they try to access the default backend login form. The page can be "
+"selected in the Users Ultra System Pages settings."
+msgstr ""
+"סימון אפשרות זו תשלח את כל המשתמשים לעמוד הכניסה של Users Ultra אם הם מנסים "
+"לגשת לטופס חיבור ברירת המחדל של הצד האחורי. אפשר לבחור את העמוד בהגדרות "
+"העמודים של מערכת Users Ultra."
+
+#: ../admin/tabs/settings.php:1146
+msgid "Redirect Backend Registrations"
+msgstr "הפניה מחדש של הרשמה מהצד האחורי"
+
+#: ../admin/tabs/settings.php:1148
+msgid ""
+"If checked, non-admin users who try to access backend registration form will "
+"be redirected to the front end Users Ultra Registration Page specified above."
+msgstr ""
+"אם מסומן, משתמשים שאינם מנהלים המנסים לגשת לטופס ההרשמה בצד האחורי יועברו "
+"לעמוד ההרשמה של Users Ultra באתר כפי שצוין לעיל."
+
+#: ../admin/tabs/settings.php:1149
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra "
+"Registration Page if they try to access the default backend registraiton "
+"form. The page can be selected in the Users Ultra System Pages settings."
+msgstr ""
+"סימון אפשרות זו תשלח את כל המשתמשים לעמוד ההרשמה של Users Ultra אם הם מנסים "
+"לגשת לטופס ההרשמה בצד האחורי. אפשר לבחור את העמוד בהגדרות העמודים של Users "
+"Ultra."
+
+#: ../admin/tabs/settings.php:1156
+msgid "After Registration"
+msgstr "לאחר ההרשמה"
+
+#: ../admin/tabs/settings.php:1158
+msgid ""
+"The user will be taken to this page after registration if the account "
+"activation is set to automatic "
+msgstr "המשתמש יועבר לעמוד זה לאחר ההרשמה אם הפעלת החשבון כאוטומטית"
+
+#: ../admin/tabs/settings.php:1159
+msgid ""
+"The user will be taken to this page after registration if the account "
+"activation is set to automatic"
+msgstr "המשתמש יועבר לעמוד זה לאחר ההרשמה אם הפעלת החשבון כאוטומטית"
+
+#: ../admin/tabs/settings.php:1167
+msgid "Registration Options"
+msgstr "אפשרויות הרשמה"
+
+#: ../admin/tabs/settings.php:1175
+msgid "User Selected Passwords"
+msgstr "ססמאות משתמש"
+
+#: ../admin/tabs/settings.php:1177
+msgid "Enabled, allow users to set password"
+msgstr "פועל, לאפשר למשתמשים להגדיר ססמה"
+
+#: ../admin/tabs/settings.php:1178
+msgid "Disabled, email a random password to users"
+msgstr "כבוי, לשלוח למשתמש ססמה אקראית באימייל"
+
+#: ../admin/tabs/settings.php:1179
+msgid "Enable/disable setting a user selected password at registration"
+msgstr "הפעלה/כיבוי של הגדרת ססמה על-ידי המשתמש בהרשמה"
+
+#: ../admin/tabs/settings.php:1180
+msgid ""
+"If enabled, users can choose their own password at registration. If "
+"disabled, WordPress will email users a random password when they register."
+msgstr ""
+"אם מופעל, משתמשים יכולים לבחור את הססמה שלהם בהרשמה. אם כבוי, ויקבלו אימייל "
+"אם ססמה אקראית."
+
+#: ../admin/tabs/settings.php:1188
+msgid "Privacy Options"
+msgstr "אפשרויות פרטיות"
+
+#: ../admin/tabs/settings.php:1196
+msgid "Logged-in user viewing of other profiles"
+msgstr "צפיית משתמש מחובר בפרופילים אחרים"
+
+#: ../admin/tabs/settings.php:1198
+msgid "Enabled, logged-in users may view other user profiles"
+msgstr "פועל, משתמשים מחוברים יכולים לראות פרופילים של משתמשים אחרים"
+
+#: ../admin/tabs/settings.php:1199
+msgid "Disabled, users may only view their own profile"
+msgstr "כבוי, משתמשים יכולים לראות רק את הפרופיל של עצמם."
+
+#: ../admin/tabs/settings.php:1200
+msgid ""
+"Enable or disable logged-in user viewing of other user profiles. Admin users "
+"can always view all profiles."
+msgstr ""
+"הפעלה או כיבוי של תצוגת פרופילים למשתמשים מחוברים. מנהלים יכולים תמיד לראות "
+"את כל הפרופילים."
+
+#: ../admin/tabs/settings.php:1201
+msgid ""
+"If enabled, logged-in users are allowed to view other user profiles. If "
+"disabled, logged-in users may only view their own profile."
+msgstr ""
+"אם פועל, משתמשים מחוברים יכולים לצפות בפרופיל של משתמש אחר. אם כבוי, משתמשים "
+"מחוברים רשאים לצפות רק בפרופיל של עצמם."
+
+#: ../admin/tabs/settings.php:1207
+msgid "Guests viewing of profiles"
+msgstr "הצגת הפרופיל למבקרים"
+
+#: ../admin/tabs/settings.php:1209
+msgid "Enabled, make profiles publicly visible"
+msgstr "פועל, הופך את הפרופילים לזמינים לצפיית הציבור"
+
+#: ../admin/tabs/settings.php:1210
+msgid "Disabled, users must login to view profiles"
+msgstr "כבוי, משתמשים חייבים להתחבר כדי לראות פרופילים"
+
+#: ../admin/tabs/settings.php:1211
+msgid "Enable or disable guest and non-logged in user viewing of profiles."
+msgstr "הפעלה או כיבוי של תצוגת הפרופיל לאורחים ומשתמשים לא מקוונים."
+
+#: ../admin/tabs/settings.php:1212
+msgid ""
+"If enabled, profiles will be publicly visible to non-logged in users. If "
+"disabled, guests must log in to view profiles."
+msgstr ""
+"אם מופעל, הפרופיל יהיה זמין לתצוגה ציבורית גם למשתמשים שאינם מחוברים. אם "
+"כבוי, מבקרים יהיו חייבים להתחבר כדי לצפות בפרופילים."
+
+#: ../templates/basic/dashboard.php:44
+msgid "Update Profile Image"
+msgstr "עדכון תמונת הפרופיל"
+
+#: ../templates/basic/dashboard.php:194
+msgid "Hello"
+msgstr "שלום"
+
+#: ../templates/basic/dashboard.php:194
+msgid "Welcome to your dashboard"
+msgstr "ברוכים הבאים ללוח הניהול"
+
+#: ../templates/basic/dashboard.php:196
+msgid "Account Status"
+msgstr "מצב החשבון"
+
+#: ../templates/basic/dashboard.php:204
+msgid "My Latest Messages"
+msgstr "ההודעות האחרונות שלי"
+
+#: ../templates/basic/dashboard.php:225
+msgid "My Latest Photos:"
+msgstr "התמונות האחרונות שלי:"
+
+#: ../templates/basic/dashboard.php:256
+#: ../xooclasses/xoo.userultra.user.php:2397
+#: ../xooclasses/xoo.userultra.user.php:2401
+msgid "My Friends"
+msgstr "החברים שלי"
+
+#: ../templates/basic/dashboard.php:260
+msgid ""
+"Here you can manage your friends. Your friends will be able to see private/"
+"restricted content"
+msgstr "כאן ניתן לנהל את החברים שלך. החברים שלך יוכלו לראות תוכן פרטי מוגן."
+
+#: ../templates/basic/dashboard.php:339
+#: ../xooclasses/xoo.userultra.user.php:2417
+#: ../xooclasses/xoo.userultra.user.php:2421
+msgid "My Posts"
+msgstr "הפוסטים שלי"
+
+#: ../templates/basic/dashboard.php:343
+msgid "Here you can manage your posts. "
+msgstr "כאן ניתן לנהל את הפוסטים שלך."
+
+#: ../templates/basic/dashboard.php:383 ../templates/basic/dashboard.php:418
+#: ../xooclasses/xoo.userultra.user.php:2328
+#: ../xooclasses/xoo.userultra.user.php:2332
+msgid "My Orders"
+msgstr "ההזמנות שלי"
+
+#: ../templates/basic/dashboard.php:387
+msgid "Here you can check your orders. "
+msgstr "כאן ניתן לבדוק את ההזמנות שלך."
+
+#: ../templates/basic/dashboard.php:422
+msgid "Here you can track your orders. "
+msgstr "כאן ניתן לעקוב אחר ההזמנות שלך."
+
+#: ../templates/basic/dashboard.php:456
+#: ../xooclasses/xoo.userultra.user.php:293
+msgid "My Galleries"
+msgstr "הגלריות שלי"
+
+#: ../templates/basic/dashboard.php:461
+msgid "Here you can manage your galleries and photos."
+msgstr "כאן ניתן לנהל את הגלריות והתמונות שלך."
+
+#: ../templates/basic/dashboard.php:463
+msgid "Add Gallery"
+msgstr "הוספת גלריה"
+
+#: ../templates/basic/dashboard.php:473
+#: ../xooclasses/xoo.userultra.payment.paypal.php:605
+#: ../xooclasses/xoo.userultra.payment.paypal.php:781
+#: ../xooclasses/xoo.userultra.photos.php:1564
+#: ../xooclasses/xoo.userultra.photos.php:1704
+msgid "Description"
+msgstr "תיאור"
+
+#: ../templates/basic/dashboard.php:480 ../templates/basic/dashboard.php:915
+#: ../xooclasses/xoo.userultra.publisher.php:391
+msgid "Submit"
+msgstr "שליחה"
+
+#: ../templates/basic/dashboard.php:523
+msgid "Delete this gallery?"
+msgstr "מחיקת גלריה"
+
+#: ../templates/basic/dashboard.php:547
+#: ../xooclasses/xoo.userultra.user.php:286
+msgid "My Photos"
+msgstr "התמונות שלי"
+
+#: ../templates/basic/dashboard.php:552
+msgid "Here you can manage your photos."
+msgstr "כאן ניתן לנהל את התמונות שלך."
+
+#: ../templates/basic/dashboard.php:554
+msgid "Upload Files"
+msgstr "העלאת קבצים"
+
+#: ../templates/basic/dashboard.php:564
+msgid "loading photos ..."
+msgstr "טוען את התמונות..."
+
+#: ../templates/basic/dashboard.php:617
+msgid "My Profile"
+msgstr "הפרופיל שלי"
+
+#: ../templates/basic/dashboard.php:647
+msgid "Received Messages"
+msgstr "הודעות שהתקבלו"
+
+#: ../templates/basic/dashboard.php:696
+msgid "Sent Messages"
+msgstr "הודעות שנשלחו"
+
+#: ../templates/basic/dashboard.php:756
+msgid "Account ID: "
+msgstr "מזהה חשבון: "
+
+#: ../templates/basic/dashboard.php:756
+msgid "Registered Date: "
+msgstr "מועד הרשמה: "
+
+#: ../templates/basic/dashboard.php:756
+msgid "Account Type: "
+msgstr "סוג החשבון: "
+
+#: ../templates/basic/dashboard.php:769
+msgid "Close Account"
+msgstr "סגירת החשבון"
+
+#: ../templates/basic/dashboard.php:774
+msgid "Remove Account"
+msgstr "הסרת החשבון"
+
+#: ../templates/basic/dashboard.php:778
+msgid "Here you can remove your account."
+msgstr "כאן ניתן להסיר את החשבון שלך."
+
+#: ../templates/basic/dashboard.php:781
+msgid "YES, CLOSE MY ACCOUNT"
+msgstr "<strong>כן. נא לסגור את החשבון שלי<strong/>"
+
+#: ../templates/basic/dashboard.php:794 ../templates/basic/dashboard.php:854
+msgid ""
+"Are you totally sure that you want to close your account. This action cannot "
+"be reverted?"
+msgstr "בטוח שרוצה לסגור את החשבו? פעולה זו אינה ניתנת לביטול."
+
+#: ../templates/basic/dashboard.php:813
+#: ../xooclasses/xoo.userultra.admin.php:52
+#: ../xooclasses/xoo.userultra.user.php:2301
+#: ../xooclasses/xoo.userultra.user.php:2305
+msgid "Settings"
+msgstr "הגדרות"
+
+#: ../templates/basic/dashboard.php:818
+msgid "Update Password"
+msgstr "עדכון הססמה"
+
+#: ../templates/basic/dashboard.php:822
+msgid "Type your New Password"
+msgstr "נא להקליד את הססמה שלך"
+
+#: ../templates/basic/dashboard.php:825
+msgid "Re-type your New Password"
+msgstr "נא להזין שוב את הססמה"
+
+#: ../templates/basic/dashboard.php:828
+msgid "CLICK HERE TO RESET PASSWORD"
+msgstr "<strong>נא ללחוץ כאן כדי לאפס את הססמה שלך<strong/>"
+
+#: ../templates/basic/dashboard.php:833
+msgid "Update Email"
+msgstr "עדכון האימייל"
+
+#: ../templates/basic/dashboard.php:837
+msgid "Type your New Email"
+msgstr "נא להקליד את האימייל החדש שלך"
+
+#: ../templates/basic/dashboard.php:840
+msgid "CLICK HERE TO UPDATE YOUR EMAIL"
+msgstr "<strong>נא ללחוץ כאן כדי לעדכן את המייל שלך<strong/>"
+
+#: ../templates/basic/dashboard.php:875 ../templates/basic/profile.php:174
+#: ../xooclasses/xoo.userultra.user.php:2380
+#: ../xooclasses/xoo.userultra.user.php:2384
+msgid "My Videos"
+msgstr "הסרטונים שלי"
+
+#: ../templates/basic/dashboard.php:882
+msgid "Here you can manage your videos."
+msgstr "כאן ניתן לנהל את הסרטונים שלך."
+
+#: ../templates/basic/dashboard.php:884
+msgid "Add Video"
+msgstr "הוספת וידאו"
+
+#: ../templates/basic/dashboard.php:897
+#: ../xooclasses/xoo.userultra.photos.php:1825
+msgid "Video ID"
+msgstr "מזהה וידאו"
+
+#: ../templates/basic/dashboard.php:905
+msgid "Video Type"
+msgstr "סוג וידאו"
+
+#: ../templates/basic/dashboard.php:926
+msgid "please wait, loading videos ..."
+msgstr "נא להמתין, טוען את הסרטונים ..."
+
+#: ../templates/basic/dashboard.php:955
+msgid "Delete this video?"
+msgstr "למחוק את הסרטון הזה?"
+
+#: ../templates/basic/dashboard.php:956
+msgid "Please input a name"
+msgstr "נא להזין שם"
+
+#: ../templates/basic/dashboard.php:957
+msgid "Please input video ID"
+msgstr "נא להזין את מזהה הוידאו"
+
+#: ../templates/basic/directory_default.php:42
+#: ../templates/basic/directory_mini.php:42
+msgid "Search for a user..."
+msgstr "חיפוש משתמש..."
+
+#: ../templates/basic/directory_default.php:44
+#: ../templates/basic/directory_mini.php:44
+#: ../xooclasses/xoo.userultra.photos.php:354
+msgid "Search"
+msgstr "חיפוש"
+
+#: ../templates/basic/profile.php:58
+msgid "Send Message"
+msgstr "שליחת ההודעה"
+
+#: ../templates/basic/profile.php:103 ../templates/basic/profile.php:138
+msgid "Main"
+msgstr "ראשי"
+
+#: ../templates/basic/profile.php:160
+msgid "My Photo Galleries"
+msgstr "גלריות התמונות שלי"
+
+#: ../templates/basic/profile.php:195
+msgid "Photos available only for registered users"
+msgstr "תמונות הזמינות רק למשתמשים רשומים"
+
+#: ../xooclasses/xoo.userultra.admin.php:50
+#: ../xooclasses/xoo.userultra.user.php:2247
+#: ../xooclasses/xoo.userultra.user.php:2251
+msgid "Dashboard"
+msgstr "לוח הבקרה"
+
+#: ../xooclasses/xoo.userultra.admin.php:51
+msgid "Fields"
+msgstr "שדות"
+
+#: ../xooclasses/xoo.userultra.admin.php:53
+msgid "Css"
+msgstr "Css"
+
+#: ../xooclasses/xoo.userultra.admin.php:54
+msgid "Membership"
+msgstr "חברות"
+
+#: ../xooclasses/xoo.userultra.admin.php:56
+msgid "Sync & Import"
+msgstr "סנכרון ויבוא"
+
+#: ../xooclasses/xoo.userultra.admin.php:57
+msgid "Notifications"
+msgstr "הודעות"
+
+#: ../xooclasses/xoo.userultra.admin.php:59
+msgid "Gateways"
+msgstr "שערים"
+
+#: ../xooclasses/xoo.userultra.admin.php:60
+msgid "Doc"
+msgstr "מסמך"
+
+#: ../xooclasses/xoo.userultra.admin.php:61
+msgid "Go Pro!"
+msgstr "עבור ל  Pro!"
+
+#: ../xooclasses/xoo.userultra.admin.php:67
+msgid "Membership Plans"
+msgstr "תכניות חברות"
+
+#: ../xooclasses/xoo.userultra.admin.php:241
+#, php-format
+msgid "%d new manual activation requests"
+msgstr "%d בקשות הפעלה ידניות חדשות"
+
+#: ../xooclasses/xoo.userultra.admin.php:244
+#, php-format
+msgid "Users Ultra %s"
+msgstr "Users Ultra %s"
+
+#: ../xooclasses/xoo.userultra.admin.php:248
+#: ../xooclasses/xoo.userultra.admin.php:251
+msgid "Users Ultra"
+msgstr "Users Ultra"
+
+#: ../xooclasses/xoo.userultra.admin.php:254
+msgid "GO PRO!"
+msgstr "לעבור ל  PRO!"
+
+#: ../xooclasses/xoo.userultra.admin.php:254
+msgid "GO PRO !!! "
+msgstr "לעבור ל PRO !!! "
+
+#: ../xooclasses/xoo.userultra.admin.php:327
+msgid "Settings are reset to default."
+msgstr "ההגדרות אופסו לברירת המחדל."
+
+#: ../xooclasses/xoo.userultra.admin.php:333
+msgid "WooCommerce fields have been added."
+msgstr "שדות WooCommerce נוספו."
+
+#: ../xooclasses/xoo.userultra.admin.php:338
+msgid "WooCommerce fields have been removed."
+msgstr "שדות WooCommerce הוסרו."
+
+#: ../xooclasses/xoo.userultra.admin.php:356
+msgid "Please log in to view / edit your profile."
+msgstr "נא להתחבר כדי להציג / לערוך את הפרופיל שלך."
+
+#: ../xooclasses/xoo.userultra.admin.php:357
+msgid "Please log in to view user profiles."
+msgstr "נא להתחבר כדי להציג פרופילי משתמש."
+
+#: ../xooclasses/xoo.userultra.admin.php:358
+msgid "This content is for members only. You must log in to view this content."
+msgstr "זהו תוכן לחברים בלבד. חובה להתחבר כדי להציג תוכן זה."
+
+#: ../xooclasses/xoo.userultra.admin.php:388
+#: ../xooclasses/xoo.userultra.admin.php:391
+msgid "No rights!"
+msgstr "אין הרשאות!"
+
+#: ../xooclasses/xoo.userultra.admin.php:389
+msgid "Sorry you have to be logged in to view this post!"
+msgstr "מצטערים. חובה להתחבר כדי להציג את הפוסט!"
+
+#: ../xooclasses/xoo.userultra.admin.php:390
+#: ../xooclasses/xoo.userultra.admin.php:393
+msgid "Sorry no rights to view comments!"
+msgstr "מצטערים. אין הרשאה להציג את התגובות!"
+
+#: ../xooclasses/xoo.userultra.admin.php:392
+msgid "Sorry you have to be logged in to view this page!"
+msgstr "מצטערים. חובה להתחבר כדי להציג את העמוד הזה!"
+
+#: ../xooclasses/xoo.userultra.admin.php:400
+msgid "Subscribe to receive our periodic email updates"
+msgstr "הרשמה לקבלת העדכונים שלנו במייל"
+
+#: ../xooclasses/xoo.userultra.admin.php:416
+#: ../xooclasses/xoo.userultra.class.php:2212
+msgid "User registration is currently not allowed."
+msgstr "הרשמת משתמשים אינה אפשרית כעת."
+
+#: ../xooclasses/xoo.userultra.admin.php:447
+msgid "Users Ultra Plugin"
+msgstr "תוסף Users Ultra"
+
+#: ../xooclasses/xoo.userultra.admin.php:461
+#: ../xooclasses/xoo.userultra.admin.php:472
+#: ../xooclasses/xoo.userultra.admin.php:487
+#: ../xooclasses/xoo.userultra.admin.php:499
+#: ../xooclasses/xoo.userultra.admin.php:511
+#: ../xooclasses/xoo.userultra.admin.php:546
+#: ../xooclasses/xoo.userultra.admin.php:554
+#: ../xooclasses/xoo.userultra.admin.php:563
+#: ../xooclasses/xoo.userultra.admin.php:569
+#: ../xooclasses/xoo.userultra.admin.php:575
+#: ../xooclasses/xoo.userultra.admin.php:582
+#: ../xooclasses/xoo.userultra.admin.php:589
+msgid "Hi,"
+msgstr "שלום,"
+
+#: ../xooclasses/xoo.userultra.admin.php:462
+msgid "Thanks for registering. Your account is now active."
+msgstr "תודה על ההרשמה. החשבון שלך פעיל כעת."
+
+#: ../xooclasses/xoo.userultra.admin.php:463
+#: ../xooclasses/xoo.userultra.admin.php:474
+msgid "To login please visit the following URL:"
+msgstr "כדי להתחבר נאלהשתמש בכתובת ה URL שלהלן:"
+
+#: ../xooclasses/xoo.userultra.admin.php:465
+#: ../xooclasses/xoo.userultra.admin.php:476
+#: ../xooclasses/xoo.userultra.admin.php:503
+msgid "Your account e-mail: {{userultra_user_email}}"
+msgstr "כתובת האימייל של החשבון שלך: {{userultra_user_email}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:466
+#: ../xooclasses/xoo.userultra.admin.php:477
+#: ../xooclasses/xoo.userultra.admin.php:504
+msgid "Your account username: {{userultra_user_name}}"
+msgstr "שם המשתמש של החשבון שלך: {{userultra_user_name}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:467
+msgid "Your account password: (same used when registering)"
+msgstr "ססמת החשבון שלך: (כפי שרשמת בהרשמה)"
+
+#: ../xooclasses/xoo.userultra.admin.php:468
+#: ../xooclasses/xoo.userultra.admin.php:479
+#: ../xooclasses/xoo.userultra.admin.php:507
+#: ../xooclasses/xoo.userultra.admin.php:516
+msgid ""
+"If you have any problems, please contact us at {{userultra_admin_email}}."
+msgstr "אם יש לך בעיה כלשהי, נא ליצור אתנו קשר ב {{userultra_admin_email}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:469
+#: ../xooclasses/xoo.userultra.admin.php:480
+#: ../xooclasses/xoo.userultra.admin.php:493
+#: ../xooclasses/xoo.userultra.admin.php:508
+#: ../xooclasses/xoo.userultra.admin.php:517
+#: ../xooclasses/xoo.userultra.admin.php:527
+#: ../xooclasses/xoo.userultra.admin.php:536
+#: ../xooclasses/xoo.userultra.admin.php:542
+#: ../xooclasses/xoo.userultra.admin.php:551
+#: ../xooclasses/xoo.userultra.admin.php:560
+#: ../xooclasses/xoo.userultra.admin.php:566
+#: ../xooclasses/xoo.userultra.admin.php:572
+#: ../xooclasses/xoo.userultra.admin.php:579
+#: ../xooclasses/xoo.userultra.admin.php:586
+#: ../xooclasses/xoo.userultra.admin.php:592
+msgid "Best Regards!"
+msgstr "דרישת שלום!"
+
+#: ../xooclasses/xoo.userultra.admin.php:473
+msgid "Your password has been reset."
+msgstr "הססמה שלך אופסה."
+
+#: ../xooclasses/xoo.userultra.admin.php:488
+msgid "A new user has been registered."
+msgstr "נרשם משתמש חדש."
+
+#: ../xooclasses/xoo.userultra.admin.php:490
+#: ../xooclasses/xoo.userultra.admin.php:524
+#: ../xooclasses/xoo.userultra.admin.php:533
+msgid "Account e-mail: {{userultra_user_email}}"
+msgstr "אימייל החשבון: {{userultra_user_email}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:491
+#: ../xooclasses/xoo.userultra.admin.php:525
+#: ../xooclasses/xoo.userultra.admin.php:534
+msgid "Account username: {{userultra_user_name}}"
+msgstr "שם המשתמש בחשבון: {{userultra_user_name}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:492
+#: ../xooclasses/xoo.userultra.admin.php:550
+#: ../xooclasses/xoo.userultra.admin.php:559
+#: ../xooclasses/xoo.userultra.admin.php:591
+msgid "This is an automated notification. No further action is needed."
+msgstr "זו הודעה אוטומטית. אין צורך בפעולה נוספת."
+
+#: ../xooclasses/xoo.userultra.admin.php:500
+msgid "Thanks for registering. Your account needs activation."
+msgstr "תודה על ההרשמה. החשבון שלך צריך הפעלה."
+
+#: ../xooclasses/xoo.userultra.admin.php:501
+#: ../xooclasses/xoo.userultra.admin.php:513
+msgid "Please click on the link below to activate your account:"
+msgstr "נא ללחוץ על הקישור שלהלן כדי להפעיל את החשבון שלך:"
+
+#: ../xooclasses/xoo.userultra.admin.php:505
+msgid "Your account password: {{userultra_pass}}"
+msgstr "ססמת החשבון שלך: {{userultra_pass}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:512
+msgid "We are re-sending you the activation link."
+msgstr "אנו שולחים לך שוב את קישור ההפעלה."
+
+#: ../xooclasses/xoo.userultra.admin.php:521
+#: ../xooclasses/xoo.userultra.admin.php:531
+msgid "Hi Admin,"
+msgstr "שלום הנהלה,"
+
+#: ../xooclasses/xoo.userultra.admin.php:522
+msgid "An account needs activation."
+msgstr "חשבון צריך הפעלה."
+
+#: ../xooclasses/xoo.userultra.admin.php:526
+#: ../xooclasses/xoo.userultra.admin.php:535
+msgid "Please login to your admin to activate the account."
+msgstr "נא להתחבר ללוח הניהול כדי להפעיל את החשבון."
+
+#: ../xooclasses/xoo.userultra.admin.php:532
+msgid "An account needs approbation."
+msgstr "חשבון צריך היתר."
+
+#: ../xooclasses/xoo.userultra.admin.php:540
+msgid "Hi {{userultra_user_name}},"
+msgstr "שלום {{userultra_user_name}},"
+
+#: ../xooclasses/xoo.userultra.admin.php:541
+msgid "Your account will be reviewed by the admin soon."
+msgstr "החשבון שלך ייבדק בקרוב על-ידי מנהל."
+
+#: ../xooclasses/xoo.userultra.admin.php:547
+msgid ""
+"{{userultra_user_name}} has just created a new account at "
+"{{user_ultra_blog_name}}."
+msgstr ""
+"{{userultra_user_name}} יצר(ה) הרגע חשבון חדש ב {{user_ultra_blog_name}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:548
+msgid "You can check his profile via the following link:"
+msgstr "אפשר לבדוק את הפרופיל בקישור שלהלן:"
+
+#: ../xooclasses/xoo.userultra.admin.php:555
+msgid ""
+"{{userultra_user_name}} has just sent you a new private message at "
+"{{user_ultra_blog_name}}."
+msgstr ""
+"{{userultra_user_name}} שלח(ה) לך הרגע הודעה פרטית חדשה ב "
+"{{user_ultra_blog_name}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:557
+msgid "Subject: {{userultra_pm_subject}}"
+msgstr "נושא: {{userultra_pm_subject}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:558
+msgid "Message: {{userultra_pm_message}}"
+msgstr "הודעה: {{userultra_pm_message}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:564
+msgid "You have a new friend request at {{user_ultra_blog_name}}."
+msgstr "יש לך בקשת חברות חדשה ב {{user_ultra_blog_name}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:570
+msgid "Please use the following link to reset your password."
+msgstr "נא להשתמש בקישור שלהלן כדי לאפס את הססמה שלך."
+
+#: ../xooclasses/xoo.userultra.admin.php:572
+msgid "If you did not request a new password delete this email."
+msgstr "אם לא ביקשת ססמה חדשה אפשר למחוק אימייל זה."
+
+#: ../xooclasses/xoo.userultra.admin.php:576
+msgid "Your account has been activated."
+msgstr "החשבון שלך הופעל."
+
+#: ../xooclasses/xoo.userultra.admin.php:577
+#: ../xooclasses/xoo.userultra.admin.php:584
+msgid "Please use the link below to get in your account."
+msgstr "נא להשתמש בקישור שלהלן כדי להתחבר לחשבון שלך."
+
+#: ../xooclasses/xoo.userultra.admin.php:583
+msgid "Your account has been verified."
+msgstr "החשבון שלך אומת."
+
+#: ../xooclasses/xoo.userultra.admin.php:590
+msgid "We're sorry but your account has not been approved."
+msgstr "מצטערים, אבל החשבון שלך לא אושר."
+
+#: ../xooclasses/xoo.userultra.admin.php:855
+msgid "Settings saved."
+msgstr "ההגדרות נשמרו."
+
+#: ../xooclasses/xoo.userultra.admin.php:1019
+msgid "Please create '"
+msgstr "נא ליצור'"
+
+#: ../xooclasses/xoo.userultra.admin.php:1062
+msgid "Rewrite Rules were Saved."
+msgstr "כללי הכתיבה מחדש נשמרו."
+
+#: ../xooclasses/xoo.userultra.admin.php:1114
+msgid ""
+"Please make sure that you've set the right My Account Page. Users Ultra "
+"couldn't find it and some important features such as password reset, account "
+"confirmation won't work properly."
+msgstr ""
+"נא לוודא שההגדרת את עמוד החשבון שלי הנכון. Users Ultra לא הצליחה למצוא אותו "
+"וכמה תכונות חשובות כמו איפוס ססמה ואישור חשבון לא יפעלו כראוי."
+
+#: ../xooclasses/xoo.userultra.admin.php:1114
+msgid "Click here to set the My Account Page"
+msgstr "ללחוץ כאן כדי להגדיר את עמוד החשבון שלי"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:85
+msgid "Human Check"
+msgstr "בדיקת אנושיות"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:93
+msgid "Prove you're not a robot"
+msgstr "נא להוכיח שאינך רובוט"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:310
+msgid "Enter Verification Words"
+msgstr "הזנת מילות אימות"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:314
+msgid "Load Image"
+msgstr "העלאת תמונה"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:315
+msgid "Load Audio"
+msgstr "העלאת אודיו"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:316
+msgid "Refresh Image"
+msgstr "רענון התמונה"
+
+#: ../xooclasses/xoo.userultra.class.php:409
+msgid "Only Logged in Users"
+msgstr "משתמשים מחוברים בלבד"
+
+#: ../xooclasses/xoo.userultra.class.php:501
+msgid ""
+"Thanks for installing Users Ultra. Do you need help?. Users Ultra can create "
+"the initial pages automatically. You just need to <a href=\"#\"  id="
+"\"uultradmin-create-basic-fields\">CLICK HERE</a> to start using Users "
+"Ultra. "
+msgstr ""
+"תודה על התקנת Users Ultra. צריכים עזרה?. Users Ultra יכול ליצור אוטומטית את "
+"העמודים הראשונים. צריך רק <a href=\"#\"  id=\"uultradmin-create-basic-fields"
+"\">ללחוץ כאן</a> כדי להתחיל להשתמש ב Users Ultra. "
+
+#: ../xooclasses/xoo.userultra.class.php:513
+msgid ""
+"<h2>Upgrade Now to Users Ultra Pro!. </h2> <p>Unique Widgetized user "
+"profile, add unlimited widgets, site-wide activity wall, add unlimited links "
+"within the user's dashboard. Integrating with third-party plugins by using "
+"shortcodes, friends, followers, following, user's wall, multiple profile "
+"layouts and many more amazing features.</p> <p> <a href='http://usersultra."
+"com/'  target='_blank' class='button button-secondary'  >CLICK HERE TO FIND "
+"OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-"
+"proversionmessage'>Remove this message</a>"
+msgstr ""
+"<h2>לשדרג כעת ל Users Ultra Pro!. </h2> <p>פרופיל משתמש ייחודי עם וידג'טים, "
+"הוספת וידג'טים ללא הגבלה, קיר פעילות של האתר, הוספת קישורים ללא הגבלה בלוח "
+"הניהול של המשתמש . שילוב עם תוספי צד שלישי באמצעות קיצורי קוד, חברים, "
+"עוקבים, לעקוב, קיר משתמש, פריסות פרופיל מרובות ותכונות מדהימות רבות נוספות.</"
+"p> <p> <a href='http://usersultra.com/'  target='_blank' class='button "
+"button-secondary'  >ללחוץ כאן כדי לגלות עוד</a> </p> <a href='#'  "
+"id='uultradmin-remove-proversionmessage'>להסיר את ההודעה הזו</a>"
+
+#: ../xooclasses/xoo.userultra.class.php:524
+msgid ""
+"Users Ultra might be working wrong. We couldn't find the 'My Account' "
+"shortcode. Please click on settings tab and make sure that the My Account "
+"page has been set correctly. Then click on the 'save' button "
+msgstr ""
+"Users Ultra עלולה לפעול באופן לא תקין. לא הצלחנו למצוא את קיצור הקוד 'החשבון "
+"שלי'. נא ללחוץ על לשונית הגדרות ולוודא שעמוד החשבון שלי הוגדר כראוי. לאחר "
+"מכן ללחוץ על כפתור השמירה ."
+
+#: ../xooclasses/xoo.userultra.class.php:872
+msgid "View Profile"
+msgstr "הצגת הפרופיל"
+
+#: ../xooclasses/xoo.userultra.class.php:951
+#: ../xooclasses/xoo.userultra.class.php:1818
+msgid "Login"
+msgstr "חיבור"
+
+#: ../xooclasses/xoo.userultra.class.php:989
+#: ../xooclasses/xoo.userultra.shorcodes.php:346
+msgid "Sign up"
+msgstr "הרשמה"
+
+#: ../xooclasses/xoo.userultra.class.php:1086
+msgid "Text"
+msgstr "טקסט"
+
+#: ../xooclasses/xoo.userultra.class.php:1087
+msgid "Image Upload"
+msgstr "העלאת תמונה"
+
+#: ../xooclasses/xoo.userultra.class.php:1088
+msgid "Textarea"
+msgstr "אזור טקסט"
+
+#: ../xooclasses/xoo.userultra.class.php:1089
+msgid "Select Dropdown"
+msgstr "רשימה נפתחת"
+
+#: ../xooclasses/xoo.userultra.class.php:1090
+msgid "Radio"
+msgstr "כפתור רדיו"
+
+#: ../xooclasses/xoo.userultra.class.php:1091
+msgid "Checkbox"
+msgstr "תיבת סימון"
+
+#: ../xooclasses/xoo.userultra.class.php:1092
+#: ../xooclasses/xoo.userultra.class.php:1123
+#: ../xooclasses/xoo.userultra.class.php:1183
+msgid "Password"
+msgstr "ססמה"
+
+#: ../xooclasses/xoo.userultra.class.php:1093
+msgid "Date Picker"
+msgstr "בחירת תאריך"
+
+#: ../xooclasses/xoo.userultra.class.php:1114
+#: ../xooclasses/xoo.userultra.class.php:1160
+msgid "E-mail"
+msgstr "אימייל"
+
+#: ../xooclasses/xoo.userultra.class.php:1126
+msgid ""
+"Password must be at least 7 characters long. To make it stronger, use upper "
+"and lower case letters, numbers and symbols."
+msgstr ""
+"הססמה חייבת להיות לפחות באורך של 7 תווים. כדי לעשות אותה חזקה יותר, נא "
+"להשתמש באות גדולה ואות קטנה, ספרות ותווים."
+
+#: ../xooclasses/xoo.userultra.class.php:1133
+msgid "Confirm Password"
+msgstr "אישור ססמה"
+
+#: ../xooclasses/xoo.userultra.class.php:1136
+msgid "Type your password again."
+msgstr "נא להקליד שוב את הססמה."
+
+#: ../xooclasses/xoo.userultra.class.php:1163
+msgid "A password will be e-mailed to you."
+msgstr "הססמה תישלך אליך באימייל."
+
+#: ../xooclasses/xoo.userultra.class.php:1175
+#: ../xooclasses/xoo.userultra.class.php:2025
+msgid "Username or Email"
+msgstr "שם משתמש או אימייל"
+
+#: ../xooclasses/xoo.userultra.class.php:1193
+msgid "Profile Info"
+msgstr "מידע פרופיל"
+
+#: ../xooclasses/xoo.userultra.class.php:1205
+msgid "First Name"
+msgstr "שם פרטי"
+
+#: ../xooclasses/xoo.userultra.class.php:1219
+msgid "Last Name"
+msgstr "שם משפחה"
+
+#: ../xooclasses/xoo.userultra.class.php:1252
+msgid "Display Name"
+msgstr "שם תצוגה"
+
+#: ../xooclasses/xoo.userultra.class.php:1267
+msgid "Brief Description"
+msgstr "תיאור קצר"
+
+#: ../xooclasses/xoo.userultra.class.php:1282
+msgid "About / Bio"
+msgstr "אודות"
+
+#: ../xooclasses/xoo.userultra.class.php:1297
+msgid "Country"
+msgstr "ארץ"
+
+#: ../xooclasses/xoo.userultra.class.php:1312
+msgid "Contact Info"
+msgstr "פרטי יצירת קשר"
+
+#: ../xooclasses/xoo.userultra.class.php:1325
+msgid "Website"
+msgstr "אתר"
+
+#: ../xooclasses/xoo.userultra.class.php:1337
+msgid "Social Profiles"
+msgstr "פרופילים חברתיים"
+
+#: ../xooclasses/xoo.userultra.class.php:1348
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../xooclasses/xoo.userultra.class.php:1355
+msgid "Connect via Facebook"
+msgstr "חיבור באמצעות Facebook"
+
+#: ../xooclasses/xoo.userultra.class.php:1364
+msgid "Twitter Username"
+msgstr "שם המשתמש ב Twitter"
+
+#: ../xooclasses/xoo.userultra.class.php:1371
+msgid "Connect via Twitter"
+msgstr "חיבור באמצעות Twitter"
+
+#: ../xooclasses/xoo.userultra.class.php:1380
+msgid "Google+"
+msgstr "Google+"
+
+#: ../xooclasses/xoo.userultra.class.php:1387
+msgid "Connect via Google+"
+msgstr "חיבור באמצעות Google+"
+
+#: ../xooclasses/xoo.userultra.class.php:1393
+#: ../xooclasses/xoo.userultra.class.php:2240
+msgid "Account Info"
+msgstr "מידע חשבון"
+
+#: ../xooclasses/xoo.userultra.class.php:1404
+msgid "New Password"
+msgstr "ססמה חדשה"
+
+#: ../xooclasses/xoo.userultra.class.php:1733
+msgid "Oops! The link is not correct! "
+msgstr "אופס! הקישור אינו נכון! "
+
+#: ../xooclasses/xoo.userultra.class.php:1772
+msgid "Type New Password:"
+msgstr "הזנת ססמה חדשה:"
+
+#: ../xooclasses/xoo.userultra.class.php:1781
+msgid "Re-type Password:"
+msgstr "לחזור על הססמה:"
+
+#: ../xooclasses/xoo.userultra.class.php:1790
+msgid "Reset Password"
+msgstr "איפוס ססמה"
+
+#: ../xooclasses/xoo.userultra.class.php:1876
+msgid "Sign in with"
+msgstr "כניסה באמצעות"
+
+#: ../xooclasses/xoo.userultra.class.php:1878
+msgid "Sign in "
+msgstr "כניסה"
+
+#: ../xooclasses/xoo.userultra.class.php:1969
+msgid "Forgot Password?"
+msgstr "שחזור ססמה?"
+
+#: ../xooclasses/xoo.userultra.class.php:1977
+#: ../xooclasses/xoo.userultra.class.php:2717
+msgid "Register"
+msgstr "הרשמה"
+
+#: ../xooclasses/xoo.userultra.class.php:1991
+msgid "Remember me"
+msgstr "לזכור אותי"
+
+#: ../xooclasses/xoo.userultra.class.php:1995
+msgid "Log In"
+msgstr "כניסה"
+
+#: ../xooclasses/xoo.userultra.class.php:2016
+msgid ""
+" A quick access link will be sent to your email that will let you get in "
+"your account and change your password. "
+msgstr ""
+"קישור לחיבור מהיר יישלח לאימייל שלך ויאפשר לך להיכנס לחשבון שלך ולשנות את "
+"הססמה שלך. "
+
+#: ../xooclasses/xoo.userultra.class.php:2036
+msgid "Back to Login"
+msgstr "חזרה להתחברות"
+
+#: ../xooclasses/xoo.userultra.class.php:2042
+msgid "Send me Password"
+msgstr "שלחו לי ססמה"
+
+#: ../xooclasses/xoo.userultra.class.php:2082
+#: ../xooclasses/xoo.userultra.class.php:2094
+msgid "Your password is too similar to your username."
+msgstr "הססמה שלך דומה מדי לשם המשתמש."
+
+#: ../xooclasses/xoo.userultra.class.php:2083
+#: ../xooclasses/xoo.userultra.class.php:2095
+msgid "Both passwords do not match."
+msgstr "הססמאות אינן זהות."
+
+#: ../xooclasses/xoo.userultra.class.php:2084
+#: ../xooclasses/xoo.userultra.class.php:2096
+msgid "Your password is too short."
+msgstr "הססמה שלך קצרה מדי."
+
+#: ../xooclasses/xoo.userultra.class.php:2085
+#: ../xooclasses/xoo.userultra.class.php:2097
+msgid "Your password strength is too weak."
+msgstr "הססמה שלך חלשה מדי."
+
+#: ../xooclasses/xoo.userultra.class.php:2086
+#: ../xooclasses/xoo.userultra.class.php:2098
+msgid "Your password strength weak."
+msgstr "הססמה שלך חלשה."
+
+#: ../xooclasses/xoo.userultra.class.php:2087
+msgid "Please provide username."
+msgstr "נא לספק שם משתמש."
+
+#: ../xooclasses/xoo.userultra.class.php:2088
+msgid "Please provide email address."
+msgstr "נא לספק כתובת אימייל."
+
+#: ../xooclasses/xoo.userultra.class.php:2089
+msgid "Please provide valid email address."
+msgstr "נא לספק כתובת אימייל תקפה."
+
+#: ../xooclasses/xoo.userultra.class.php:2090
+msgid "That username is already taken, please try a different one."
+msgstr "שם המשתמש הזה תפוס, נא לנסות שם אחר."
+
+#: ../xooclasses/xoo.userultra.class.php:2091
+msgid ""
+"The email you entered is already registered. Please try a new email or log "
+"in to your existing account."
+msgstr ""
+"האימייל שהזנת כבר רשום. נא לנסות אימייל חדש או להתחבר לחשבון הקיים שלך."
+
+#: ../xooclasses/xoo.userultra.class.php:2099
+msgid "Good"
+msgstr "טוב"
+
+#: ../xooclasses/xoo.userultra.class.php:2100
+msgid "Strong"
+msgstr "חזק"
+
+#: ../xooclasses/xoo.userultra.class.php:2102
+msgid "ERROR"
+msgstr "<strong>שגיאה<strong/>"
+
+#: ../xooclasses/xoo.userultra.class.php:2114
+msgid "Sign Up"
+msgstr "הרשמה"
+
+#: ../xooclasses/xoo.userultra.class.php:2183
+msgid "Please enter a username."
+msgstr "נא להזין שם משתמש."
+
+#: ../xooclasses/xoo.userultra.class.php:2234
+msgid "Fields with (*) are required"
+msgstr ""
+"הן שדה <em>כתובת ה URL</em של היומן> והן שדה <em>כתובת המייל</em> הכרחיים."
+
+#: ../xooclasses/xoo.userultra.class.php:2238
+msgid "Sign up with"
+msgstr "הרשמה באמצעות"
+
+#: ../xooclasses/xoo.userultra.class.php:2303
+#: ../xooclasses/xoo.userultra.class.php:2307
+#: ../xooclasses/xoo.userultra.class.php:2317
+#: ../xooclasses/xoo.userultra.class.php:2326
+#: ../xooclasses/xoo.userultra.class.php:2477
+#: ../xooclasses/xoo.userultra.class.php:2481
+#: ../xooclasses/xoo.userultra.class.php:2504
+#: ../xooclasses/xoo.userultra.class.php:2594
+msgid " * This input is required!"
+msgstr " * זהו שדה חובה!"
+
+#: ../xooclasses/xoo.userultra.class.php:2607
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr "כדי לשנות את הססמה, נא להקליד ססמה חדשה, אחרת להשאיר ריק."
+
+#: ../xooclasses/xoo.userultra.class.php:2611
+msgid "Type your new password again."
+msgstr "נא להקליד שוב את הססמה שלך."
+
+#: ../xooclasses/xoo.userultra.class.php:2623
+#: ../xooclasses/xoo.userultra.user.php:1852
+msgid "Hide from Public"
+msgstr "להסתיר מהציבור"
+
+#: ../xooclasses/xoo.userultra.class.php:2644
+msgid "Payment Information"
+msgstr "מידע תשלום"
+
+#: ../xooclasses/xoo.userultra.class.php:2665
+msgid "Receive Daily Updates "
+msgstr "קבלת עדכונים יומיים"
+
+#: ../xooclasses/xoo.userultra.class.php:2692
+#: ../xooclasses/xoo.userultra.class.php:2700
+msgid "Terms & Conditions "
+msgstr "תנאי השימוש"
+
+#: ../xooclasses/xoo.userultra.login.php:190
+msgid "<strong>ERROR:</strong> The username field is empty."
+msgstr "<strong>שגיאה:</strong> שדה שם המשתמש ריק."
+
+#: ../xooclasses/xoo.userultra.login.php:198
+msgid "<strong>ERROR:</strong> The password field is empty."
+msgstr "<strong>שגיאה:</strong> שדה הססמה ריק."
+
+#: ../xooclasses/xoo.userultra.login.php:289
+msgid "<strong>ERROR:</strong> Invalid Username was entered."
+msgstr "<strong>שגיאה:</strong> הוזן שם משתמש שגוי."
+
+#: ../xooclasses/xoo.userultra.login.php:292
+msgid "<strong>ERROR:</strong> Incorrect password was entered."
+msgstr "<strong>שגיאה:</strong> הוזנה ססמה שגויה."
+
+#: ../xooclasses/xoo.userultra.login.php:296
+msgid "<strong>ERROR:</strong> Please provide Password."
+msgstr "<strong>שגיאה:</strong> נא לספק ססמה."
+
+#: ../xooclasses/xoo.userultra.login.php:315
+msgid "<strong>ERROR:</strong> Your account is not active."
+msgstr "<strong>שגיאה:</strong> החשבון שלך אינו פעיל."
+
+#: ../xooclasses/xoo.userultra.login.php:1470
+#: ../xooclasses/xoo.userultra.login.php:1740
+msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
+msgstr "<strong>שגיאה:</strong> החשבון שלך עדיין אינו פעיל."
+
+#: ../xooclasses/xoo.userultra.login.php:1754
+msgid ""
+"<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK "
+"PLEASE LOGIN AGAIN."
+msgstr "<strong>שגיאה:</strong> אירעה בעיה בהתחברות לפייסבוק, נא להתחבר שוב."
+
+#: ../xooclasses/xoo.userultra.messaging.php:102
+msgid "Registration"
+msgstr "הרשמה"
+
+#: ../xooclasses/xoo.userultra.messaging.php:103
+msgid "New Registration"
+msgstr "הרשמה חדשה"
+
+#: ../xooclasses/xoo.userultra.messaging.php:137
+#: ../xooclasses/xoo.userultra.messaging.php:199
+msgid "Verify Your Account"
+msgstr "אימות החשבון שלך"
+
+#: ../xooclasses/xoo.userultra.messaging.php:163
+msgid "Account Verification"
+msgstr "אימות חשבון"
+
+#: ../xooclasses/xoo.userultra.messaging.php:164
+msgid "New Account To Approve"
+msgstr "חשבון חדש לאישור"
+
+#: ../xooclasses/xoo.userultra.messaging.php:200
+msgid "New Account To Verify"
+msgstr "חשבון חדש לאימות"
+
+#: ../xooclasses/xoo.userultra.messaging.php:269
+msgid "Account Verified"
+msgstr "החשבון אומת"
+
+#: ../xooclasses/xoo.userultra.messaging.php:295
+msgid "Account Activation Deny"
+msgstr "מניעת הפעלת חשבון"
+
+#: ../xooclasses/xoo.userultra.messaging.php:321
+msgid "Registration Information"
+msgstr "מידע הרשמה"
+
+#: ../xooclasses/xoo.userultra.messaging.php:322
+msgid "New Paid Subscription"
+msgstr "הרשמה חדשה בתשלום"
+
+#: ../xooclasses/xoo.userultra.messaging.php:354
+msgid "Registration "
+msgstr "הרשמה"
+
+#: ../xooclasses/xoo.userultra.messaging.php:385
+msgid "New Private Message"
+msgstr "הודעה פרטית חדשה"
+
+#: ../xooclasses/xoo.userultra.messaging.php:414
+msgid "New Friend Request"
+msgstr "בקשת חברות חדשה"
+
+#: ../xooclasses/xoo.userultra.messaging.php:439
+msgid "Reset Your Password"
+msgstr "איפוס הססמה שלך"
+
+#: ../xooclasses/xoo.userultra.messaging.php:460
+msgid "Password Reset Confirmation"
+msgstr "אישור איפוס ססמה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:124
+msgid " Message sent "
+msgstr "ההודעה נשלחה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:143
+msgid "Reply: "
+msgstr "תשובה: "
+
+#: ../xooclasses/xoo.userultra.mymessage.php:187
+msgid " Reply sent "
+msgstr "התשובה נשלחה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:208
+msgid "You cannot send a private message to yourself"
+msgstr "לא ניתן לשלוח הודעה פרטית לעצמך"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:213
+#: ../xooclasses/xoo.userultra.mymessage.php:549
+#: ../xooclasses/xoo.userultra.mymessage.php:703
+#: ../xooclasses/xoo.userultra.mymessage.php:822
+#: ../xooclasses/xoo.userultra.mymessage.php:1071
+#: ../xooclasses/xoo.userultra.mymessage.php:1132
+msgid "Subject"
+msgstr "נושא"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:218
+msgid "Send"
+msgstr "שליחה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:225
+msgid "Please input a subject"
+msgstr "נא להזין נושא"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:226
+#: ../xooclasses/xoo.userultra.mymessage.php:460
+msgid "Please write a message"
+msgstr "נא לכתוב הודעה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:236
+msgid "You have to be logged in to send private messages"
+msgstr "חובה להתחבר כדי לשלוח הודעות פרטיות"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:299
+msgid " The message has been deleted. Please refresh your screen."
+msgstr "ההודעה נמחקה. נא לרענן את המסך."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:322
+msgid " Status has been changed"
+msgstr "המצב השתנה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:370
+#: ../xooclasses/xoo.userultra.mymessage.php:581
+msgid "Mark as Unread"
+msgstr "לסמן כלא נקרא"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:375
+#: ../xooclasses/xoo.userultra.mymessage.php:587
+msgid "Mark as Read"
+msgstr "סמן כנקרא"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:438
+msgid "Type your reply here..."
+msgstr "נא להקליד את התשובה שלך כאן..."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:446
+#: ../xooclasses/xoo.userultra.publisher.php:150
+msgid "Back"
+msgstr "חזרה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:447
+msgid "Send Reply"
+msgstr "שליחת תשובה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:516
+#: ../xooclasses/xoo.userultra.mymessage.php:791
+#: ../xooclasses/xoo.userultra.mymessage.php:1039
+msgid "You have no items in inbox."
+msgstr "אין לך פריטים בתיבת דואר יוצא."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:547
+#: ../xooclasses/xoo.userultra.mymessage.php:701
+#: ../xooclasses/xoo.userultra.mymessage.php:820
+#: ../xooclasses/xoo.userultra.socials.php:515
+#: ../xooclasses/xoo.userultra.socials.php:621
+msgid "Pic"
+msgstr "תמונה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:548
+#: ../xooclasses/xoo.userultra.mymessage.php:821
+#: ../xooclasses/xoo.userultra.mymessage.php:1070
+#: ../xooclasses/xoo.userultra.mymessage.php:1131
+#: ../xooclasses/xoo.userultra.socials.php:516
+#: ../xooclasses/xoo.userultra.socials.php:622
+msgid "Sender"
+msgstr "השולח"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:551
+#: ../xooclasses/xoo.userultra.mymessage.php:921
+#: ../xooclasses/xoo.userultra.mymessage.php:944
+#: ../xooclasses/xoo.userultra.payment.paypal.php:786
+#: ../xooclasses/xoo.userultra.socials.php:518
+#: ../xooclasses/xoo.userultra.socials.php:624
+#: ../xooclasses/xoo.userultra.user.php:823
+#: ../xooclasses/xoo.userultra.user.php:893
+#: ../xooclasses/xoo.userultra.user.php:960
+msgid "Action"
+msgstr "פעולה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:616
+#: ../xooclasses/xoo.userultra.mymessage.php:741
+#: ../xooclasses/xoo.userultra.mymessage.php:1098
+msgid "View"
+msgstr "להציג"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:621
+#: ../xooclasses/xoo.userultra.mymessage.php:935
+#: ../xooclasses/xoo.userultra.mymessage.php:1117
+msgid "Reply"
+msgstr "להשיב"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:662
+#: ../xooclasses/xoo.userultra.mymessage.php:1031
+msgid "Inbox"
+msgstr "תיבת דואר נכנס"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:672
+msgid "You have no items in sent box."
+msgstr "אין לך פריטים בתיבת דואר יוצא."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:702
+msgid "Receiver"
+msgstr "המקבל"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:913
+msgid "Inbox \\ View Message"
+msgstr "דואר נכנס \\ הצגת ההודעה"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:915
+msgid "Back to inbox"
+msgstr "חזרה לתיבת דואר נכנס"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:919
+#: ../xooclasses/xoo.userultra.mymessage.php:942
+msgid "Info"
+msgstr "מידע"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:926
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>השולח</b>: %s<br /><b>תאריך</b>: %s"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:927
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>נושא</b>: %s</p><p>%s</p>"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:976
+#: ../xooclasses/xoo.userultra.mymessage.php:1018
+msgid "Error. Please try again."
+msgstr "שגיאה. נא לנסות שוב."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:1060
+msgid "Bulk Action"
+msgstr "פעולה קבוצתית"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:1062
+#: ../xooclasses/xoo.userultra.mymessage.php:1105
+msgid "Mark As Read"
+msgstr "לסמן כנקרא"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:1063
+msgid "Apply"
+msgstr "החל"
+
+#: ../xooclasses/xoo.userultra.order.php:356
+#: ../xooclasses/xoo.userultra.woocommerce.php:331
+msgid "You have no orders."
+msgstr "אין לך הזמנות."
+
+#: ../xooclasses/xoo.userultra.order.php:375
+#: ../xooclasses/xoo.userultra.woocommerce.php:349
+msgid "Order #"
+msgstr "לפי סדר"
+
+#: ../xooclasses/xoo.userultra.order.php:376
+#: ../xooclasses/xoo.userultra.woocommerce.php:350
+msgid "Total"
+msgstr "סך הכל"
+
+#: ../xooclasses/xoo.userultra.order.php:378
+msgid "Package"
+msgstr "חבילה"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:468
+msgid "You have no packages yet."
+msgstr "אין לך עדיין חבילות."
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:597
+msgid "Edit Package"
+msgstr "עריכת החבילה"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:611
+#: ../xooclasses/xoo.userultra.payment.paypal.php:782
+msgid "Price"
+msgstr "מחיר"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:636
+msgid "Every"
+msgstr "כל"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:658
+msgid "Billing Period"
+msgstr "תקופת חיוב"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:779
+msgid "ID"
+msgstr "מזהה"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:783
+msgid "Period"
+msgstr "תקופה"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:796
+msgid " month(s)"
+msgstr "חודש(ים)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:797
+msgid " week(s)"
+msgstr "שבוע(ות)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:798
+msgid " day(s)"
+msgstr "ימים"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:799
+msgid " year(s)"
+msgstr "שנה(ים)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:807
+msgid "every "
+msgstr "כל "
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:827
+msgid "There are no packages yet."
+msgstr "אין חבילות עדיין."
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:873
+msgid "The Package has been updated"
+msgstr "החבילה עודכנה"
+
+#: ../xooclasses/xoo.userultra.photos.php:347
+msgid "Search images..."
+msgstr "חיפוש תמונות..."
+
+#: ../xooclasses/xoo.userultra.photos.php:361
+msgid "Filter by category: "
+msgstr "סינון לפי קטגוריות: "
+
+#: ../xooclasses/xoo.userultra.photos.php:370
+#: ../xooclasses/xoo.userultra.user.php:4497
+msgid "Total found: "
+msgstr "סך-הכל נמצאו: "
+
+#: ../xooclasses/xoo.userultra.photos.php:648
+#: ../xooclasses/xoo.userultra.user.php:4372
+#: ../xooclasses/xoo.userultra.user.php:5212
+#: ../xooclasses/xoo.userultra.user.php:5285
+msgid "Previous"
+msgstr "הקודם"
+
+#: ../xooclasses/xoo.userultra.photos.php:649
+#: ../xooclasses/xoo.userultra.user.php:4373
+#: ../xooclasses/xoo.userultra.user.php:5213
+#: ../xooclasses/xoo.userultra.user.php:5286
+msgid "Next"
+msgstr "הבא"
+
+#: ../xooclasses/xoo.userultra.photos.php:1099
+#: ../xooclasses/xoo.userultra.photos.php:1306
+msgid "You have no galleries yet."
+msgstr "אין לך גלריות עדיין."
+
+#: ../xooclasses/xoo.userultra.photos.php:1116
+#: ../xooclasses/xoo.userultra.photos.php:1176
+#: ../xooclasses/xoo.userultra.photos.php:1246
+msgid "delete"
+msgstr "מחיקה"
+
+#: ../xooclasses/xoo.userultra.photos.php:1118
+#: ../xooclasses/xoo.userultra.photos.php:1176
+#: ../xooclasses/xoo.userultra.photos.php:2170
+msgid "edit"
+msgstr "עריכה"
+
+#: ../xooclasses/xoo.userultra.photos.php:1131
+#: ../xooclasses/xoo.userultra.photos.php:1333
+msgid "Picture(s)"
+msgstr "תמונות"
+
+#: ../xooclasses/xoo.userultra.photos.php:1165
+msgid "You have no videos yet."
+msgstr "אין לך עדיין סרטונים."
+
+#: ../xooclasses/xoo.userultra.photos.php:1235
+msgid "The user has not added videos yet."
+msgstr "המשתמש עדיין לא הוסיף סרטונים."
+
+#: ../xooclasses/xoo.userultra.photos.php:1567
+msgid "Tags"
+msgstr "תגיות"
+
+#: ../xooclasses/xoo.userultra.photos.php:1570
+msgid "Category"
+msgstr "קטגוריה"
+
+#: ../xooclasses/xoo.userultra.photos.php:1707
+msgid "Visibility"
+msgstr "נראות"
+
+#: ../xooclasses/xoo.userultra.photos.php:2006
+#: ../xooclasses/xoo.userultra.photos.php:2148
+msgid "You have no photos in this gallery yet."
+msgstr "אין לך עדיין תמונות בגלריה."
+
+#: ../xooclasses/xoo.userultra.photos.php:2072
+msgid "You have to be logged in to see this photo."
+msgstr "חובה להתחבר כדי לראות את התמונה הזו."
+
+#: ../xooclasses/xoo.userultra.photos.php:2079
+msgid "This photo is accessible only for friends of the user."
+msgstr "תמונה זו נגישה רק לחברים של המשתמש."
+
+#: ../xooclasses/xoo.userultra.photos.php:2086
+msgid "This photo could not be displayed."
+msgstr "אי אפשר היה להציג את התמונה הזו."
+
+#: ../xooclasses/xoo.userultra.photos.php:2163
+msgid "MAIN PHOTO"
+msgstr "<strong>תמונה ראשית<strong/>"
+
+#: ../xooclasses/xoo.userultra.photos.php:2254
+msgid "Drop files here"
+msgstr "שחרר כאן קבצים"
+
+#: ../xooclasses/xoo.userultra.photos.php:2256
+msgid "Select files"
+msgstr "בחירת קבצים"
+
+#: ../xooclasses/xoo.userultra.photos.php:2287
+#: ../xooclasses/xoo.userultra.publisher.php:1121
+#: ../xooclasses/xoo.userultra.user.php:4948
+msgid "Allowed Files"
+msgstr "קבצים מותרים"
+
+#: ../xooclasses/xoo.userultra.publisher.php:82
+msgid "Invalid Post"
+msgstr "פוסט שגוי"
+
+#: ../xooclasses/xoo.userultra.publisher.php:116
+msgid "Edit Post"
+msgstr "עריכת הפוסט"
+
+#: ../xooclasses/xoo.userultra.publisher.php:150
+msgid "Back:"
+msgstr "חזרה:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:156
+#: ../xooclasses/xoo.userultra.publisher.php:328
+msgid "Title:"
+msgstr "כותרת:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:162
+#: ../xooclasses/xoo.userultra.publisher.php:336
+msgid "Category:"
+msgstr "קטגוריה:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:178
+#: ../xooclasses/xoo.userultra.publisher.php:180
+#: ../xooclasses/xoo.userultra.publisher.php:344
+#: ../xooclasses/xoo.userultra.publisher.php:346
+msgid "-- Select --"
+msgstr "-- בחירה --"
+
+#: ../xooclasses/xoo.userultra.publisher.php:191
+#: ../xooclasses/xoo.userultra.publisher.php:359
+msgid "Post Photos:"
+msgstr "תמונות פוסט:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:217
+#: ../xooclasses/xoo.userultra.publisher.php:384
+msgid "Tags:"
+msgstr "תגיות:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:287
+#: ../xooclasses/xoo.userultra.publisher.php:322
+#: ../xooclasses/xoo.userultra.publisher.php:444
+msgid "Add New Post"
+msgstr "הוספת פוסט חדש"
+
+#: ../xooclasses/xoo.userultra.publisher.php:298
+msgid "Max Allowed Posts: "
+msgstr "מספר מרבי של פוסטים מותרים:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:298
+msgid "You have posted: "
+msgstr "פרסמת: "
+
+#: ../xooclasses/xoo.userultra.publisher.php:454
+msgid "You have no posts."
+msgstr "אין לך פוסטים."
+
+#: ../xooclasses/xoo.userultra.publisher.php:473
+msgid "Title"
+msgstr "כותרת"
+
+#: ../xooclasses/xoo.userultra.publisher.php:515
+msgid "Live"
+msgstr "חי"
+
+#: ../xooclasses/xoo.userultra.publisher.php:519
+msgid "Offline"
+msgstr "לא מקוון"
+
+#: ../xooclasses/xoo.userultra.publisher.php:523
+msgid "Awaiting Approval"
+msgstr "ממתין לאישור"
+
+#: ../xooclasses/xoo.userultra.publisher.php:526
+msgid "Scheduled"
+msgstr "מתוזמן"
+
+#: ../xooclasses/xoo.userultra.publisher.php:559
+#: ../xooclasses/xoo.userultra.publisher.php:950
+msgid "Delete Image"
+msgstr "מחיקת התמונה"
+
+#: ../xooclasses/xoo.userultra.publisher.php:563
+msgid "Main Image"
+msgstr "תמונה ראשית"
+
+#: ../xooclasses/xoo.userultra.publisher.php:567
+msgid "Set As Main"
+msgstr "להגדיר כראשי"
+
+#: ../xooclasses/xoo.userultra.publisher.php:611
+#: ../xooclasses/xoo.userultra.publisher.php:813
+msgid "Empty post title"
+msgstr "כותרת פוסט ריקה"
+
+#: ../xooclasses/xoo.userultra.publisher.php:625
+#: ../xooclasses/xoo.userultra.publisher.php:629
+#: ../xooclasses/xoo.userultra.publisher.php:634
+#: ../xooclasses/xoo.userultra.publisher.php:829
+#: ../xooclasses/xoo.userultra.publisher.php:833
+#: ../xooclasses/xoo.userultra.publisher.php:838
+msgid "Please choose a category"
+msgstr "נא לבחור קטגוריה"
+
+#: ../xooclasses/xoo.userultra.publisher.php:641
+#: ../xooclasses/xoo.userultra.publisher.php:847
+msgid "Empty post content"
+msgstr "תוכן פוסט ריק"
+
+#: ../xooclasses/xoo.userultra.publisher.php:692
+msgid "Post updated successfully."
+msgstr "הפוסט עודכן בהצלחה"
+
+#: ../xooclasses/xoo.userultra.publisher.php:897
+msgid "You cannot add more posts "
+msgstr "אין לך אפשרות להוסיף עוד פוסטים "
+
+#: ../xooclasses/xoo.userultra.publisher.php:933
+msgid "Post published successfully. The admin will review it soon"
+msgstr "הפוסט פורסם בהצלחה. ההנהלה תסקור אותו בקרוב"
+
+#: ../xooclasses/xoo.userultra.publisher.php:1082
+msgid "Drop Images Here"
+msgstr "לגרור את הקבצים לכאן"
+
+#: ../xooclasses/xoo.userultra.publisher.php:1085
+msgid "Select Files"
+msgstr "בחירת קבצים"
+
+#: ../xooclasses/xoo.userultra.publisher.php:1195
+msgid "The file you selected exceeds the maximum file size limit."
+msgstr "הקובץ שבחרת חורג ממגבלת הגודל המרבי."
+
+#: ../xooclasses/xoo.userultra.rating.php:196
+msgid "Thank you for your rating"
+msgstr "תודה לך על הדירוג"
+
+#: ../xooclasses/xoo.userultra.rating.php:200
+msgid "You've already left your rate "
+msgstr "כבר דירגת "
+
+#: ../xooclasses/xoo.userultra.rating.php:208
+msgid "You have to be logged in to leave your rate  "
+msgstr "חובה להתחבר כדי לדרג "
+
+#: ../xooclasses/xoo.userultra.rating.php:213
+msgid "You cannot rate yourself  "
+msgstr "אין אפשרות לדרג את עצמך"
+
+#: ../xooclasses/xoo.userultra.rating.php:255
+msgid "1 star out of 5 "
+msgstr "כוכב אחד מתוך 5"
+
+#: ../xooclasses/xoo.userultra.rating.php:256
+msgid "2 star out of 5  "
+msgstr "2 כוכבים מתוך 5  "
+
+#: ../xooclasses/xoo.userultra.rating.php:257
+msgid "3 star out of 5  "
+msgstr "3 כוכבים מתוך 5  "
+
+#: ../xooclasses/xoo.userultra.rating.php:258
+msgid "4 star out of 5  "
+msgstr "4 כוכבים מתוך 5  "
+
+#: ../xooclasses/xoo.userultra.rating.php:259
+msgid "5 star out of 5  "
+msgstr "5 כוכבים מתוך 5  "
+
+#: ../xooclasses/xoo.userultra.rating.php:261
+msgid "Rating: "
+msgstr "דירוג: "
+
+#: ../xooclasses/xoo.userultra.rating.php:262
+msgid " votes cast "
+msgstr "הצבעה בסקר"
+
+#: ../xooclasses/xoo.userultra.register.php:76
+msgid "<strong>ERROR:</strong> Please enter a username."
+msgstr "<strong>שגיאה:</strong> נא להזין שם משתמש."
+
+#: ../xooclasses/xoo.userultra.register.php:78
+msgid ""
+"<strong>ERROR:</strong> This username is already registered. Please choose "
+"another one."
+msgstr "<strong>שגיאה:</strong> שם משתמש זה כבר רשום. נא לבחור שם אחר."
+
+#: ../xooclasses/xoo.userultra.register.php:87
+msgid "<strong>ERROR:</strong> Please type your e-mail address."
+msgstr "<strong>שגיאה:</strong> נא להזין את כתובת האימייל שלך."
+
+#: ../xooclasses/xoo.userultra.register.php:90
+msgid "<strong>ERROR:</strong> The email address isn't correct."
+msgstr "<strong>שגיאה:</strong> כתובת האימייל שגויה."
+
+#: ../xooclasses/xoo.userultra.register.php:93
+msgid ""
+"<strong>ERROR:</strong> This email is already registered, please choose "
+"another one."
+msgstr ""
+"<strong>שגיאה:</strong> כתובת אימייל זו כבר רשומה, נא לבחור כתובת אחרת."
+
+#: ../xooclasses/xoo.userultra.register.php:109
+msgid "<strong>ERROR:</strong> Please type your password."
+msgstr "<strong>שגיאה:</strong> נא להקליד את הססמה שלך."
+
+#: ../xooclasses/xoo.userultra.register.php:115
+msgid "<strong>ERROR:</strong> The passwords must be identical"
+msgstr "<strong>שגיאה:</strong> הססמאות חייבות להיות זהות"
+
+#: ../xooclasses/xoo.userultra.register.php:128
+msgid "<strong>ERROR:</strong> Please complete Captcha Test first."
+msgstr "<strong>שגיאה:</strong> נא להשלים קודם את קוד האימות."
+
+#: ../xooclasses/xoo.userultra.register.php:134
+msgid "<strong>ERROR:</strong> Registration is disabled for this site."
+msgstr "<strong>שגיאה:</strong> ההרשמה אינה פעילה עבור אתר זה."
+
+#: ../xooclasses/xoo.userultra.register.php:152
+msgid "<strong>ERROR:</strong> The Password must be at least "
+msgstr "<strong>שגיאה:</strong> הססמה חייבת לכלול לפחות "
+
+#: ../xooclasses/xoo.userultra.register.php:162
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one number and "
+"one letter"
+msgstr "<strong>שגיאה:</strong> הססמה חייבת לכלול לפחות ספרה אחת ותו אחד"
+
+#: ../xooclasses/xoo.userultra.register.php:174
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one upper case "
+"character"
+msgstr "<strong>שגיאה:</strong> הססמה חייבת לכלול לפחות אות גדולה אחת"
+
+#: ../xooclasses/xoo.userultra.register.php:186
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one lower case "
+"character"
+msgstr "<strong>שגיאה:</strong> הססמה חייבת לכלול לפחות אות קטנה אחת"
+
+#: ../xooclasses/xoo.userultra.register.php:719
+msgid "Registration successful. Please check your email."
+msgstr "ההרשמה הצליחה. נא לבדוק את המייל שלך."
+
+#: ../xooclasses/xoo.userultra.socials.php:117
+msgid " Friend Request Sent "
+msgstr "בקשת החברות נשלחה "
+
+#: ../xooclasses/xoo.userultra.socials.php:121
+msgid "You have to be logged in to send a friend request "
+msgstr "חובה להתחבר כדי לשלוח בקשת חברות"
+
+#: ../xooclasses/xoo.userultra.socials.php:128
+msgid "Request Already Sent"
+msgstr "הבקשה כבר נשלחה"
+
+#: ../xooclasses/xoo.userultra.socials.php:199
+msgid "Thanks "
+msgstr "תודה"
+
+#: ../xooclasses/xoo.userultra.socials.php:203
+msgid "Please login to rate "
+msgstr "נא להתחבר כדי לדרג"
+
+#: ../xooclasses/xoo.userultra.socials.php:208
+msgid "You've already liked it "
+msgstr "כבר אהבת את זה"
+
+#: ../xooclasses/xoo.userultra.socials.php:254
+msgid "Friends"
+msgstr "חברים"
+
+#: ../xooclasses/xoo.userultra.socials.php:255
+msgid "Send Friend Request"
+msgstr "שליחת בקשת חברות"
+
+#: ../xooclasses/xoo.userultra.socials.php:255
+msgid "Be a Friend "
+msgstr "היה חבר"
+
+#: ../xooclasses/xoo.userultra.socials.php:289
+#: ../xooclasses/xoo.userultra.socials.php:296
+msgid "Request approved"
+msgstr "הבקשה אושרה"
+
+#: ../xooclasses/xoo.userultra.socials.php:303
+msgid "Request rejected"
+msgstr "הבקשה נדחתה"
+
+#: ../xooclasses/xoo.userultra.socials.php:386
+#: ../xooclasses/xoo.userultra.socials.php:435
+msgid "Likes"
+msgstr "לייקים"
+
+#: ../xooclasses/xoo.userultra.socials.php:387
+msgid "Like"
+msgstr "אהבתי"
+
+#: ../xooclasses/xoo.userultra.socials.php:387
+msgid "Dislike"
+msgstr "לא אהבתי"
+
+#: ../xooclasses/xoo.userultra.socials.php:506
+msgid "Latest Friend Requests"
+msgstr "בקשות חברות אחרונות"
+
+#: ../xooclasses/xoo.userultra.socials.php:541
+msgid "Approve"
+msgstr "מאושר"
+
+#: ../xooclasses/xoo.userultra.socials.php:541
+#: ../xooclasses/xoo.userultra.user.php:842
+#: ../xooclasses/xoo.userultra.user.php:912
+msgid "Deny"
+msgstr "מניעה"
+
+#: ../xooclasses/xoo.userultra.socials.php:612
+msgid "All My Friends"
+msgstr "כל החברים שלי"
+
+#: ../xooclasses/xoo.userultra.socials.php:647
+msgid "Block"
+msgstr "לחסום"
+
+#: ../xooclasses/xoo.userultra.user.php:272
+msgid "Basic Information"
+msgstr "מידע בסיסי"
+
+#: ../xooclasses/xoo.userultra.user.php:279
+msgid "My Cyrcle"
+msgstr "המעגל שלי"
+
+#: ../xooclasses/xoo.userultra.user.php:300
+msgid "My Latest Posts"
+msgstr "הפוסטים האחרונים שלי"
+
+#: ../xooclasses/xoo.userultra.user.php:337
+msgid "Content visible only for registered users. "
+msgstr "תוכן נגיש למשתמשים רשומים בלבד. "
+
+#: ../xooclasses/xoo.userultra.user.php:524
+msgid "The file format is not allowed!"
+msgstr "סוג הקובץ אסור!"
+
+#: ../xooclasses/xoo.userultra.user.php:587
+msgid "--- Finished ---  "
+msgstr "--- הסתיים ---  "
+
+#: ../xooclasses/xoo.userultra.user.php:763
+msgid " SUCCESS! The sync process has been finished. "
+msgstr "הצלחה! תהליך הסנכרון הסתיים. "
+
+#: ../xooclasses/xoo.userultra.user.php:808
+msgid "Pending Payment"
+msgstr "תשלום בהמתנה"
+
+#: ../xooclasses/xoo.userultra.user.php:821
+#: ../xooclasses/xoo.userultra.user.php:891
+#: ../xooclasses/xoo.userultra.user.php:958
+msgid "Email"
+msgstr "אימייל"
+
+#: ../xooclasses/xoo.userultra.user.php:822
+#: ../xooclasses/xoo.userultra.user.php:892
+#: ../xooclasses/xoo.userultra.user.php:959
+msgid "Registered"
+msgstr "רשום"
+
+#: ../xooclasses/xoo.userultra.user.php:855
+msgid "There are no pending payment users."
+msgstr "אין משתמשים בתשלום בהמתנה."
+
+#: ../xooclasses/xoo.userultra.user.php:878
+msgid "Pending Moderation"
+msgstr "ממתינים לאישור"
+
+#: ../xooclasses/xoo.userultra.user.php:925
+msgid "There are no pending moderation users."
+msgstr "אין משתמשים הממתינים לאישור."
+
+#: ../xooclasses/xoo.userultra.user.php:945
+msgid "Pending Confirmation"
+msgstr "ממתינים לאישור"
+
+#: ../xooclasses/xoo.userultra.user.php:979
+msgid "Send Link"
+msgstr "שליחת קישור"
+
+#: ../xooclasses/xoo.userultra.user.php:992
+msgid "There are no pending confirmation users."
+msgstr "אין משתמשים הממתינים לאישור."
+
+#: ../xooclasses/xoo.userultra.user.php:1023
+#: ../xooclasses/xoo.userultra.user.php:1074
+msgid "User has been activated"
+msgstr "המשתמש הופעל"
+
+#: ../xooclasses/xoo.userultra.user.php:1046
+msgid "Activation link sent"
+msgstr "קישור הפעלה נשלח"
+
+#: ../xooclasses/xoo.userultra.user.php:1100
+msgid "User has been deleted"
+msgstr "המשתמש נמחק"
+
+#: ../xooclasses/xoo.userultra.user.php:1271
+msgid " ERROR! Please type your new email "
+msgstr " שגיאה! נא להקליד את האימייל החדש שלך "
+
+#: ../xooclasses/xoo.userultra.user.php:1277
+msgid " ERROR! Please type a valid email address "
+msgstr " שגיאה! נא להקליד כתובת אימייל תקפה "
+
+#: ../xooclasses/xoo.userultra.user.php:1296
+msgid " ERROR! You haven't changed your email. "
+msgstr " שגיאה! לא שינית את האימייל שלך. "
+
+#: ../xooclasses/xoo.userultra.user.php:1305
+msgid " ERROR! The email is in use already "
+msgstr " שגיאה! האימייל כבר בשימוש "
+
+#: ../xooclasses/xoo.userultra.user.php:1344
+msgid " Success!! Your email account has been changed to : "
+msgstr "הצלחה!! חשבון האימייל שלך השתנה ל : "
+
+#: ../xooclasses/xoo.userultra.user.php:1390
+#: ../xooclasses/xoo.userultra.user.php:1467
+msgid " ERROR! Password must be identical "
+msgstr " שגיאה! הססמה חייבת להיות זההl "
+
+#: ../xooclasses/xoo.userultra.user.php:1396
+#: ../xooclasses/xoo.userultra.user.php:1473
+msgid " ERROR! Password should contain at least 7 alphanumeric characters "
+msgstr " שגיאה! הססמה חייבת לכלול לפחות 7 תווים של אותיות וספרות "
+
+#: ../xooclasses/xoo.userultra.user.php:1418
+#: ../xooclasses/xoo.userultra.user.php:1497
+msgid " Success!! The new password has been sent to "
+msgstr "הודעה זו תישלח למשתמש כאשר הססמה אופסה."
+
+#: ../xooclasses/xoo.userultra.user.php:1499
+msgid "<a href=\""
+msgstr "<a href=\""
+
+#: ../xooclasses/xoo.userultra.user.php:1505
+msgid " ERROR! Invalid reset link "
+msgstr " שגיאה! קישור איפוס שגוי "
+
+#: ../xooclasses/xoo.userultra.user.php:1536
+msgid "Email not found"
+msgstr "האימייל לא נמצא"
+
+#: ../xooclasses/xoo.userultra.user.php:1544
+#: ../xooclasses/xoo.userultra.user.php:1575
+msgid "Your account is not active yet."
+msgstr "החשבון שלך אינו פעיל עדיין."
+
+#: ../xooclasses/xoo.userultra.user.php:1566
+msgid "User not found"
+msgstr "המשתמש לא נמצא"
+
+#: ../xooclasses/xoo.userultra.user.php:1619
+msgid " A reset link has been sent to your email "
+msgstr "איפוס נשלך לאימייל שלך"
+
+#: ../xooclasses/xoo.userultra.user.php:2260
+#: ../xooclasses/xoo.userultra.user.php:2264
+msgid "Profile"
+msgstr "פרופיל"
+
+#: ../xooclasses/xoo.userultra.user.php:2273
+#: ../xooclasses/xoo.userultra.user.php:2277
+msgid "Profile Customizer"
+msgstr "עיצוב פרופיל"
+
+#: ../xooclasses/xoo.userultra.user.php:2315
+#: ../xooclasses/xoo.userultra.user.php:2319
+msgid "My Purchases"
+msgstr "הרכישות שלי"
+
+#: ../xooclasses/xoo.userultra.user.php:2347
+msgid "My Messages"
+msgstr "ההודעות שלי"
+
+#: ../xooclasses/xoo.userultra.user.php:2351
+msgid "Messages"
+msgstr "הודעות"
+
+#: ../xooclasses/xoo.userultra.user.php:2357
+msgid "Unread Messages"
+msgstr "הודעות שלא נקראו"
+
+#: ../xooclasses/xoo.userultra.user.php:2367
+#: ../xooclasses/xoo.userultra.user.php:2371
+msgid "Photos"
+msgstr "תמונות"
+
+#: ../xooclasses/xoo.userultra.user.php:2407
+msgid "Friend Requests"
+msgstr "בקשות חברות"
+
+#: ../xooclasses/xoo.userultra.user.php:2640
+msgid "Empty results"
+msgstr "לרוקן את התוצאות"
+
+#: ../xooclasses/xoo.userultra.user.php:2782
+#: ../xooclasses/xoo.userultra.user.php:2883
+#: ../xooclasses/xoo.userultra.user.php:4323
+msgid "See Profile"
+msgstr "הצגת הפרופיל"
+
+#: ../xooclasses/xoo.userultra.user.php:3297
+msgid "Free"
+msgstr "ללא תשלום"
+
+#: ../xooclasses/xoo.userultra.user.php:3623
+#, php-format
+msgid "Search %s"
+msgstr "חיפוש %s"
+
+#: ../xooclasses/xoo.userultra.user.php:4087
+msgid "<< Previous"
+msgstr "<< הקודם"
+
+#: ../xooclasses/xoo.userultra.user.php:4088
+msgid "Next >>"
+msgstr "הבא >>"
+
+#: ../xooclasses/xoo.userultra.user.php:4141
+#: ../xooclasses/xoo.userultra.user.php:4212
+msgid "Users"
+msgstr "משתמשים"
+
+#: ../xooclasses/xoo.userultra.user.php:4215
+msgid "Only logged in users can see this page"
+msgstr "רק משתמשים מחוברים יכולים לראות את העמוד הזה"
+
+#: ../xooclasses/xoo.userultra.user.php:4614
+#: ../xooclasses/xoo.userultra.user.php:4633
+msgid "Country not available"
+msgstr "הארץ אינה זמינה"
+
+#: ../xooclasses/xoo.userultra.user.php:4660
+msgid "This user hasn't a description yet"
+msgstr "אין עדיין תיאור למשתמש זה"
+
+#: ../xooclasses/xoo.userultra.user.php:4912
+msgid "Drop Avatar here"
+msgstr "לגרור לכאן את צלמית המשתמש"
+
+#: ../xooclasses/xoo.userultra.user.php:5003
+msgid "You may only upload one image at a time!"
+msgstr "אפשר להעלות רק קובץ אחד בכל פעם!"
+
+#: ../xooclasses/xoo.userultra.user.php:5018
+msgid "The file you selected exceeds the maximum filesize limit."
+msgstr "הקובץ שבחרת חורג ממגבלת גודל הקובץ המרבי."
+
+#: ../xooclasses/xoo.userultra.user.php:5368
+msgid "Pending Admin"
+msgstr "בהמתנה להנהלה"
+
+#: ../xooclasses/xoo.userultra.user.php:5372
+msgid "Active"
+msgstr "פעיל"
+
+#: ../xooclasses/xoo.userultra.woocommerce.php:184
+msgid "Woocommerce File Doesn't Exist"
+msgstr "קובץ Woocommerce אינו קיים"
+
+#: ../xooclasses/xoo.userultra.woocommerce.php:352
+msgid "Modified Date"
+msgstr "תאריך שינוי"

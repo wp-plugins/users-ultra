@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -361,7 +361,9 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
   <li>Portuguese. Thanks to <a href='https://wordpress.org/support/profile/mauromascarenhas/'>mauro.mascarenhas</a></li> 
   <li>Portuguese Brasilian. Thanks to <a href='https://wordpress.org/support/profile/mauromascarenhas/'>mauro.mascarenhas</a></li>
   <li>French. Thanks to <a href='http://usersultra.com/support/forums/topic/french-translation/'>Ben</a></li> 
-  <li>Spanish.</li>   
+  <li>Spanish.</li> 
+  <li>Hebrew. Thanks to <a href=' https://profiles.wordpress.org/ahrale/'>Ahrale</a></li>  
+ 
 </ul>
 
 <h3>Special Thanks to:</h3>
@@ -439,6 +441,9 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.5.04(04-30-2015) =
+* New Feature - Hebrew language has been added.
 
 = 1.5.03(04-28-2015) =
 * Improvement - Please update, new tweaks for WP 4.2.
@@ -1055,7 +1060,6 @@ Initial release.
 * Improvements - Language files have been updated.
 * Improvements - Source code clean up.
 * Improvements - Several tweaks have been implemented for the JS coding. There were some plugins and themes overriding the $ variable. Now Users Ultra uses jQuery rather than "$" in multiple functions. Please update
-
 
 = 1.3.44 (10-04-2014) =
 * New Feature - Now you can display a checkbox in the registration form to display Terms & Conditions Text/HTML. The user must accept terms and conditions to continue with the registration.
