@@ -41,7 +41,10 @@ $howmany = 5;
             </div>
             
              <div class="btnupload">
-             <a class="uultra-btn-upload-avatar" href="#" id="uu-send-private-message" data-id="<?php echo $user_id?>"><span><i class="fa fa-camera fa-2x"></i></span><?php echo _e("Update Profile Image", 'xoousers')?></a>
+				<a class="uultra-btn-upload-avatar" href="#" id="uu-send-private-message" data-id="<?php echo $user_id?>">
+					<span><i class="fa fa-camera fa-2x"></i></span>
+					<p><?php echo _e("Update Image", 'xoousers')?></p>
+				</a>
              </div>
              
             
