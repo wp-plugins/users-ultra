@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
 "POT-Creation-Date: 2015-04-24 00:55-0300\n"
-"PO-Revision-Date: 2015-04-30 14:51+0200\n"
+"PO-Revision-Date: 2015-05-03 01:49+0100\n"
 "Last-Translator: Ahrale <contact@atar4u.com>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
 "Language: he\n"
@@ -3154,7 +3154,7 @@ msgstr ""
 "כבוי, מבקרים יהיו חייבים להתחבר כדי לצפות בפרופילים."
 
 #: ../templates/basic/dashboard.php:44
-msgid "Update Profile Image"
+msgid "Update Image"
 msgstr "עדכון תמונת הפרופיל"
 
 #: ../templates/basic/dashboard.php:194
