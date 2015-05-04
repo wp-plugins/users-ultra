@@ -826,3 +826,27 @@ p.uultra-off-message{ font-size:12px !important}
   
    .uultra-protect-group-options { padding:5px}
 .uultra-protect-group-options li{ list-style:none}
+
+
+/************************************************************************************
+
+MEDIA QUERIES
+
+*************************************************************************************/
+
+
+
+@media only screen and (max-width: 900px){
+
+	.user-ultra-sect .left_col{ width:99%; display:block}
+	.user-ultra-sect .right_col{ width:99%; display:block; float:none}
+	.user-ultra-sect .right_col_users { width:99%; display:block; float:none}
+	
+}
+
+
+@media only screen and (max-width: 600px){
+
+   .user-ultra-sect .uultra_template_block{width:98%; }
+
+}
