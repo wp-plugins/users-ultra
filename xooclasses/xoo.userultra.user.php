@@ -2455,7 +2455,7 @@ class XooUserUser {
 			'media_options_exclude' => '', // rating, description, tags, category
 			
 			'disable' => '', // photos, videos, messages			
-			'disable_message_free_users' => '', 
+			'block_message_free_users' => '', 
 					
 			'optional_fields_to_display' => '', // 
 			'optional_right_col_fields_to_display' => '', 
@@ -2548,7 +2548,7 @@ class XooUserUser {
 		{
 			$allow_private_messages = true;
 			
-			if($disable_message_free_users=='yes')
+			if($block_message_free_users=='yes')
 			{					
 				
 				$account_type =get_user_meta($user_id, 'usersultra_account_type', true);	
