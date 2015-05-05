@@ -2454,7 +2454,8 @@ class XooUserUser {
 			
 			'media_options_exclude' => '', // rating, description, tags, category
 			
-			'disable' => '', // photos, videos, messages	
+			'disable' => '', // photos, videos, messages			
+			'block_message_free_users' => '', 
 					
 			'optional_fields_to_display' => '', // 
 			'optional_right_col_fields_to_display' => '', 
@@ -2494,6 +2495,8 @@ class XooUserUser {
 		
 		}
 		
+		
+		
 		//check if it's a shortcode call
 		
 		if($user_id!="") // a shortocode attribute has been submited
@@ -2515,7 +2518,6 @@ class XooUserUser {
 				}
 				
 				
-			
 				
 				//check if logged in and seeing my own profile
 				if (is_user_logged_in() && $user_id=="") 
@@ -2544,6 +2546,30 @@ class XooUserUser {
 		
 		if($user_id>0)
 		{
+			$allow_private_messages = true;
+			
+			if($block_message_free_users=='yes')
+			{					
+				
+				$account_type =get_user_meta($user_id, 'usersultra_account_type', true);	
+				
+				if($account_type=='paid')
+				{					
+					$allow_private_messages = true;
+									
+				}else{
+					
+					$allow_private_messages = false;				
+				
+				}		
+				
+			}else{
+				
+				
+				
+			}
+				
+				
 			//turn on output buffering to capture script output
        		ob_start();
        		//include the specified file			
