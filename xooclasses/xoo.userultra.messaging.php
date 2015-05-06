@@ -303,7 +303,7 @@ class XooMessaging extends XooUserUltraCommon
 	}
 	
 	//--- Paid Activation	
-	public function  welcome_email_paid($u_email, $user_login, $user_pass)
+	public function  welcome_email_paid($u_email, $user_login, $user_pass, $package)
 	{
 		global $xoouserultra;
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
@@ -325,12 +325,20 @@ class XooMessaging extends XooUserUltraCommon
 		$template_client = str_replace("{{userultra_user_email}}", $u_email,  $template_client);
 		$template_client = str_replace("{{userultra_user_name}}", $user_login,  $template_client);
 		$template_client = str_replace("{{userultra_pass}}", $user_pass,  $template_client);
-		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);		
+		$template_client = str_replace("{{userultra_admin_email}}", $admin_email,  $template_client);
+		
+		//get users package 
+		
+		$user_package = $package->package_name;	
+		
+		$template_admim = str_replace("{{userultra_user_email}}", $u_email,  $template_admim);
+		$template_admim = str_replace("{{userultra_user_name}}", $user_login,  $template_admim);
+		$template_admim = str_replace("{{userultra_user_package}}", $user_package,  $template_admim);	
 		
 		$this->send($u_email, $subject, $template_client);
 		
 		//send admin email		
-		$this->send($u_email, $subject_admin, $template_admim);
+		$this->send($admin_email, $subject_admin, $template_admim);
 		
 					
 		

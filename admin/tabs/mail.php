@@ -124,6 +124,15 @@ $this->create_plugin_setting(
 
 $this->create_plugin_setting(
         'textarea',
+        'messaging_paid_email_admin',
+        __('Admin New Paid User Message','xoousers'),array(),
+        __('This message will be sent to the admin.','xoousers'),
+        __('This message will be sent to the admin.','xoousers')
+		
+);
+
+$this->create_plugin_setting(
+        'textarea',
         'messaging_welcome_email_with_activation_admin',
         __('Admin Pending Activation Message','xoousers'),array(),
         __('This message will be sent to the admin if the user needs manual activation.','xoousers'),
