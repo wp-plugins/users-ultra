@@ -167,7 +167,9 @@ class XooPaypalPayment
 			$user_id = $rowOrder->order_user_id;		
 			$buyer_name= $rowOrder->order_name;				
 			$total_price = $rowOrder->order_amount;  				
-			$business_email = $paypal_email;		
+			$business_email = $paypal_email;	
+			
+			$package_id= $rowOrder->order_package_id;	
 				
 			
 			/*Transaction Type*/
@@ -231,10 +233,12 @@ class XooPaypalPayment
 				
 				/*Notify User&Admin */
 				
+				$package = $xoouserultra->paypal->get_package($package_id);	
+				
 				$u_email=$user->user_email;
 				$user_login= $user->user_login;
 				$user_pass =get_user_meta($user_id, 'usersultra_temp_password', true);				
-				$xoouserultra->messaging->welcome_email_paid($u_email, $user_login, $user_pass);		
+				$xoouserultra->messaging->welcome_email_paid($u_email, $user_login, $user_pass, $package);		
 				
 			}else{
 				

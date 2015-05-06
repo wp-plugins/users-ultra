@@ -417,6 +417,8 @@ class XooUserAdmin extends XooUserUltraCommon
 						'messaging_welcome_email_client' => $this->get_email_template('new_account'),
 						'messaging_welcome_email_client_admin' => $this->get_email_template('new_account_noti_admin'),
 						
+						'messaging_paid_email_admin' => $this->get_email_template('new_account_noti_admin_paid'),
+						
 						
 						'messaging_welcome_email_with_activation_client' => $this->get_email_template('new_account_activation_link'),
 						
@@ -493,6 +495,17 @@ class XooUserAdmin extends XooUserUltraCommon
 		$email_body .= __('Best Regards!','xoousers');
 	    $this->notifications_email['new_account_noti_admin'] = $email_body;
 		
+		
+		//notify admin new paid registration		
+		$email_body = __('Hi,' ,"xoousers") . $line_break.$line_break;
+		$email_body .= __("A new paid user has been registered.","xoousers") .  $line_break.$line_break;
+		
+		$email_body .= __('Account e-mail: {{userultra_user_email}}','xoousers') . $line_break;
+		$email_body .= __('Account username: {{userultra_user_name}}','xoousers') . $line_break;
+		$email_body .= __('Package: {{userultra_user_package}}','xoousers') . $line_break;
+		$email_body .= __('This is an automated notification. No further action is needed.','xoousers'). $line_break.$line_break;
+		$email_body .= __('Best Regards!','xoousers');
+	    $this->notifications_email['new_account_noti_admin_paid'] = $email_body;	
 			
 		
 		
