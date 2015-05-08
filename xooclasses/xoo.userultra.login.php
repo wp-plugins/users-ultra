@@ -909,9 +909,9 @@ class XooUserLogin {
 	******************************************/
 	function clean_user($string){
 		$string = strtolower($string);
-		$string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
-		$string = preg_replace("/[\s-]+/", " ", $string);
-		$string = preg_replace("/[\s_]/", "_", $string);
+		//$string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+		//$string = preg_replace("/[\s-]+/", " ", $string);
+		//$string = preg_replace("/[\s_]/", "_", $string);
 		return $string;
 	}
 	

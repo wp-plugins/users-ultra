@@ -2554,9 +2554,15 @@ class XooUserUser {
 				$account_type =get_user_meta($user_id, 'usersultra_account_type', true);	
 				
 				if($account_type=='paid')
-				{					
-					$allow_private_messages = true;
-									
+				{
+					$package_id = get_user_meta($user_id, 'usersultra_user_package_id', true);;
+					$package = $xoouserultra->paypal->get_package($package_id);
+					$amount = $package->package_amount;
+					
+					if($amount!=0)
+					{					
+						$allow_private_messages = true;
+					}
 				}else{
 					
 					$allow_private_messages = false;				

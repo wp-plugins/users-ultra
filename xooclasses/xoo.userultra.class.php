@@ -719,18 +719,18 @@ class XooUserUltra
 		global $pagenow;
 
 		/* Not admin */
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('administrator')) {
 			
 		    $option_name = '';
-        // Check if current page is profile page
-        if('profile.php' == $pagenow)
-        {
-            // If user have selected to redirect backend profile page            
-            if($this->get_option('redirect_backend_profile') == '1')
-            {
-                $option_name = 'profile_page_id';
-            }
-        }  
+			// Check if current page is profile page
+			if('profile.php' == $pagenow)
+			{
+				// If user have selected to redirect backend profile page            
+				if($this->get_option('redirect_backend_profile') == '1')
+				{
+					$option_name = 'profile_page_id';
+				}
+			}  
             
 
         // Check if current page is login or not
