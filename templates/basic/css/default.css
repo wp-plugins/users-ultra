@@ -89,19 +89,14 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 	
 }
 
-
 .uultra-latest-photos-private ul{
-	
-	
 	width:100%;
 	list-style:none;
 	text-align:center;
 	padding-bottom:5px;
 	padding-bottom:5px;
 	
-	
 }
-
 .uultra-latest-photos-private ul li{
 	
 	width:20%;	
@@ -145,8 +140,6 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 .uultra-latest-photos-private ul li.in-line{	
 	display: inline-block;
 	
-	
-	
 }
 .uultra-latest-photos-private li img{
 	border:none;
@@ -158,8 +151,6 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 	border-radius: 3px;
 	
 }
-
-
 .xoouserultra-seperator {
 	border-bottom: 1px solid #DBDBDB;
 	margin-bottom: 30px;
@@ -202,9 +193,6 @@ background-color: #F5F5F5;
 box-shadow: inset 0 -1px 1px -1px #fff;
 padding: 4px 10px;
 }
-
-
-
 .xoouserultra-wrap a.xoouserultra-button:hover, input[type=submit].xoouserultra-button:hover, input[type=submit].xoouserultra-button:focus, input[type=button].xoouserultra-button:hover, input[type=button].xoouserultra-button:focus, .xoouserultra-wrap a.xoouserultra-button:active, input[type=submit].xoouserultra-button:active, input[type=submit].xoouserultra-button:active, input[type=button].xoouserultra-button:active, input[type=button].xoouserultra-button:active {
 	border: 1px solid #1278b2;
 	background-color: #1278b2;

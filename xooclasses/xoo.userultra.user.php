@@ -190,7 +190,7 @@ class XooUserUser {
 				}else{
 					
 					$package = $xoouserultra->paypal->get_package($package_id );
-					$package_name=$package->package_name;				
+					$package_name=$package->package_name;	
 				
 				}	
 				
@@ -236,8 +236,7 @@ class XooUserUser {
 		$current_user = wp_get_current_user();
 		
 		if(!is_super_admin( $current_user ))
-		{
-			
+		{			
 			$user_id = $current_user->ID;
 			wp_delete_user( $current_user->ID );
 			
@@ -340,8 +339,6 @@ class XooUserUser {
 		 {
 			 $package_list  = explode(',', $membership_id);					
 		 }
-		 
-		
 			
 		
 		if($display_rule == "logged_in_based")
@@ -406,11 +403,9 @@ class XooUserUser {
 					
 					return  '<div class="uupublic-ultra-info">'.$custom_message_membership.'</div>';
 					
-				}				
-					
+				}						
 				
-			}	
-			
+			}			
 		
 		}
 		
@@ -430,8 +425,7 @@ class XooUserUser {
 			{
 				return true;
 			
-			}
-			
+			}			
 		
 		}
 		
@@ -507,8 +501,7 @@ class XooUserUser {
 				$info = pathinfo($file['name']);
 				$real_name = $file['name'];
 				$ext = $info['extension'];
-				$ext=strtolower($ext);
-		
+				$ext=strtolower($ext);		
 				
 				if ($name) {
 				    
@@ -536,9 +529,7 @@ class XooUserUser {
 						
 						$row = 0;
 						if (($handle = fopen($target_path, "r")) !== FALSE) 
-						{			
-							
-							
+						{						
 	 								
 							while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
 							{
@@ -661,13 +652,6 @@ class XooUserUser {
 				
 				//create basic profile widgets
 				
-				
-							
-				
-				
-				
-							
-							
 				if($send_welcome_email)
 				{
 					//status
@@ -772,8 +756,6 @@ class XooUserUser {
 		
 		$users = $wpdb->get_results($sql );
 		
-		//echo $sql;
-		
 		$res_total = $xoouserultra->commmonmethods->fetch_result($users);
 		
 		if($res_total->total=="")
@@ -848,7 +830,6 @@ class XooUserUser {
 			
 			$html .='<p>'.__('There are no pending payment users.','xoousers').'</p>';
 				
-			
 			} 
 					
 		echo $html;
@@ -985,7 +966,6 @@ class XooUserUser {
 			
 			$html .='<p>'.__('There are no pending confirmation users.','xoousers').'</p>';
 				
-			
 			} 
 			
 		
@@ -4095,15 +4075,13 @@ class XooUserUser {
 		}
 		
 		$wp_user_query = new WP_User_Query($query);
-		$base_url =  get_permalink();
-		
+		$base_url =  get_permalink();		
 		
 		if (! empty( $wp_user_query->results )) 
 		{
 			$arr['total'] = $total_users;
 			$arr['paginate'] = paginate_links( array(											
 					//'base'         => @add_query_arg('emd-page','%#%'),
-					//'format'        => '',																				
 					'total'        => $total_pages,
 					'current'      => $page,
 					'show_all'     => false,
@@ -4117,10 +4095,7 @@ class XooUserUser {
 			$arr['users'] = $wp_user_query->results;
 		}
 		
-		
-		
 		$this->searched_users = $arr;
-				
 		
      }
 	 
