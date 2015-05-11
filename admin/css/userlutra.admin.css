@@ -12,6 +12,8 @@
 .uultra-socialconnect { padding:10px; text-align:right; position:absolute; top:10px ; right:10px; overflow:hidden;}
 
 .uultra-like{display:inline-block; width:130px}
+.uultra-rateit{ position:relative; clear:both; width:100%; text-align:right;}
+.uultra-rateit p{}
 .uultra-tw{display:inline-block;}
 .user-ultra-top-header-sect { width:100%; clear:both; background:#FFF; float:none !important; padding:0px; height:auto !important}
 .user-ultra-top-header-sect a{ text-decoration:none}
@@ -834,16 +836,12 @@ MEDIA QUERIES
 
 *************************************************************************************/
 
-
-
 @media only screen and (max-width: 900px){
 
 	.user-ultra-sect .left_col{ width:99%; display:block}
 	.user-ultra-sect .right_col{ width:99%; display:block; float:none}
-	.user-ultra-sect .right_col_users { width:99%; display:block; float:none}
-	
+	.user-ultra-sect .right_col_users { width:99%; display:block; float:none}	
 }
-
 
 @media only screen and (max-width: 600px){
 

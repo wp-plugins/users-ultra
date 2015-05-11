@@ -912,8 +912,8 @@ $this->create_plugin_setting(
 		'yes' => __('Yes','xoousers'),
 		),
 		
-	__("By selecting 'yes' will hide posts if the user has no access",'xoousers'),
-  __("By selecting 'yes' will hide posts if the user has no access",'xoousers')
+	__("By selecting 'yes' will hide posts if the user has no access. <strong>Please note: </strong> a 404 error message will be displayed since the post will be completely locked out.",'xoousers'),
+  __("By selecting 'yes' will hide posts if the user has no access. Please note: a 404 error message will be displayed since the post will be completely locked out.",'xoousers')
        );
 
 $this->create_plugin_setting(
@@ -1012,7 +1012,7 @@ $this->create_plugin_setting(
 		'yes' => __('Yes','xoousers'),
 		),
 		
-	__("By selecting 'yes' will hide pages if the user has no access",'xoousers'),
+	__("By selecting 'yes' will hide pages if the user has no access. <strong>Please note: </strong> a 404 error message will be displayed since the page will be completely locked out.",'xoousers'),
   __("By selecting 'yes' will hide pages if the user has no access",'xoousers')
        );
 

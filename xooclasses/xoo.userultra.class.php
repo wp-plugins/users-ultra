@@ -160,12 +160,14 @@ class XooUserUltra
 			{
 				
                if ($this->checkAccessToPost($oPage->ID)) 
-				{
-					 // $oPost->post_title .= $this->adminOutput($oPost->post_type, $oPost->ID);
+				{					
+				 
 					 $aShowPages[] = $oPage;
+						
 				
 				}
-               
+				
+				
 				
 				
             } else {
@@ -230,9 +232,10 @@ class XooUserUltra
      * 
      * @return object|null
      */
-    protected function _getPost($oPost)
+   protected function _getPost($oPost)
     {
-		global $xoouserultra;		
+		global $xoouserultra;
+		
        
         $sPostType = $oPost->post_type;
 
@@ -245,15 +248,18 @@ class XooUserUltra
             return $oPost;
         }
         
-        if ($xoouserultra->get_option('uultra_loggedin_hide_complete_post') == 'yes' ) 
-		{
-         
-           if ($this->checkAccessToPost($oPost->ID)) 
-			{
-				 // $oPost->post_title .= $this->adminOutput($oPost->post_type, $oPost->ID);
-           		 return $oPost;
+        if ($xoouserultra->get_option('uultra_loggedin_hide_complete_'.$sPostType.'') == 'yes' ) 
+		{         
 			
-			}          
+			if ($this->checkAccessToPost($oPost->ID)) 
+			{
+         		
+				  return $oPost;
+							
+			}
+			
+			
+            
 			
         } else {
 			
@@ -282,6 +288,7 @@ class XooUserUltra
                 }
 
                 $oPost->post_content = stripslashes($uultraPostContent);
+				//$oPost->post_content = "Check here";
             }
 
             
@@ -712,18 +719,18 @@ class XooUserUltra
 		global $pagenow;
 
 		/* Not admin */
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('administrator')) {
 			
 		    $option_name = '';
-        // Check if current page is profile page
-        if('profile.php' == $pagenow)
-        {
-            // If user have selected to redirect backend profile page            
-            if($this->get_option('redirect_backend_profile') == '1')
-            {
-                $option_name = 'profile_page_id';
-            }
-        }  
+			// Check if current page is profile page
+			if('profile.php' == $pagenow)
+			{
+				// If user have selected to redirect backend profile page            
+				if($this->get_option('redirect_backend_profile') == '1')
+				{
+					$option_name = 'profile_page_id';
+				}
+			}  
             
 
         // Check if current page is login or not
@@ -2994,7 +3001,7 @@ class XooUserUltra
 				
 				
 				$params = array(
-						  'scope' => 'read_stream, email, friends_likes',
+						  'scope' => 'read_stream, email',
 						 
 						  'redirect_uri' => $web_url
 						);

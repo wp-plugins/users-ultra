@@ -1096,7 +1096,11 @@ class XooUserAdmin extends XooUserUltraCommon
 		<div class="wrap <?php echo $this->slug; ?>-admin">
         
         
-         <div class="uultra-socialconnect"><!-- social connect--> 
+         <div class="uultra-socialconnect">
+         
+         <!-- social connect--> 
+         
+        
         
         <div class="uultra-like"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FUsers-Ultra%2F1394873024112997%3Fref%3Dhl&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
         </div>
@@ -1137,6 +1141,9 @@ class XooUserAdmin extends XooUserUltraCommon
             
            
 			<div class="<?php echo $this->slug; ?>-admin-contain">
+            
+            
+             <div class="uultra-rateit"> <p><a href='https://wordpress.org/support/view/plugin-reviews/users-ultra#postform' target='_blank'> <img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><br /><?php _e("RATE IT ",'xoousers'); ?></a></p> </div>
             
            
             
