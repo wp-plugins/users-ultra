@@ -1431,10 +1431,15 @@ class XooUserUltra
 		);
 		
 		/* Store default profile fields for the first time */
-		if (!get_option('usersultra_profile_fields'))
-		{
+		/*
+		   Fixed by ftena @ 2015/05/12.
+		   This allow update the fields - and its translations - later.
+			
+		*/
+		//if (!get_option('usersultra_profile_fields'))
+		//{
 			update_option('usersultra_profile_fields', $this->fields);
-		}	
+		//}	
 		
 		
 	}
