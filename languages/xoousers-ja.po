@@ -3355,7 +3355,7 @@ msgstr ""
 
 #: ../templates/basic/dashboard.php:44
 #, fuzzy
-msgid "Update Profile Image"
+msgid "Update Image"
 msgstr "ユーザーウルトラプロフィールページ"
 
 #: ../templates/basic/dashboard.php:194

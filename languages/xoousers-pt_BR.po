@@ -3331,8 +3331,8 @@ msgstr ""
 "Se desativado, convidados deverão conecta para ver os perfis."
 
 #: ../templates/basic/dashboard.php:44
-msgid "Update Profile Image"
-msgstr "Atualizar imagem de perfil"
+msgid "Update Image"
+msgstr "Atualizar imagem"
 
 #: ../templates/basic/dashboard.php:194
 msgid "Hello"

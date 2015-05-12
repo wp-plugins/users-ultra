@@ -2966,7 +2966,7 @@ msgid ""
 msgstr ""
 
 #: ../templates/basic/dashboard.php:44
-msgid "Update Profile Image"
+msgid "Update Image"
 msgstr ""
 
 #: ../templates/basic/dashboard.php:194

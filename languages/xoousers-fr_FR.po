@@ -3091,8 +3091,8 @@ msgid ""
 msgstr ""
 
 #: ../templates/basic/dashboard.php:44
-msgid "Update Profile Image"
-msgstr "Editez votre image de profil"
+msgid "Update Image"
+msgstr "Editez votre image"
 
 #: ../templates/basic/dashboard.php:194
 msgid "Hello"

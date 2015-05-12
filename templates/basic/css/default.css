@@ -530,10 +530,10 @@ a.uultra-btn-u-menu:active{
 /*Upload avatar button*/
 a.uultra-btn-upload-avatar{ 
 		display:inline-block; 
-		height:30px;
+		height:50px;
 		width:90%;
 		padding-top:5px;
-		text-align:left;
+		text-align:center;
 		font-size:12px;	
 		
 		border:solid 1px #E8E8E8;
@@ -565,11 +565,15 @@ a.uultra-btn-upload-avatar:active{
 }
 
 a.uultra-btn-upload-avatar span{
-	
-	margin:0px 10px 0px 5px;
-	text-align:left;		
+	text-align:center;		
 }
 
+a.uultra-btn-upload-avatar p{
+	width:90%;
+	min-width:130px;		
+	text-align:center;	
+	margin:0px 15px 0px 0px;
+}
 
 .usersultra-dahsboard-cont .usersultra-dahsboard-left .myavatar{
 	position:relative;

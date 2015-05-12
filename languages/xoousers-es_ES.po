@@ -3353,8 +3353,8 @@ msgstr ""
 "los perfiles."
 
 #: ../templates/basic/dashboard.php:44
-msgid "Update Profile Image"
-msgstr "Actualizar Imagen del perfil"
+msgid "Update Image"
+msgstr "Actualizar Imagen"
 
 #: ../templates/basic/dashboard.php:194
 msgid "Hello"

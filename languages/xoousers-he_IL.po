@@ -3177,7 +3177,7 @@ msgstr ""
 "כבוי, מבקרים יהיו חייבים להתחבר כדי לצפות בפרופילים."
 
 #: ../templates/basic/dashboard.php:44
-msgid "Update Profile Image"
+msgid "Update Image"
 msgstr "עדכון תמונת הפרופיל"
 
 #: ../templates/basic/dashboard.php:194

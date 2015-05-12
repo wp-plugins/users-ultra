@@ -3869,8 +3869,8 @@ msgstr ""
 
 # @ xoousers
 #: templates/basic/dashboard.php:44
-msgid "Update Profile Image"
-msgstr "Uppdatera profilbild"
+msgid "Update Image"
+msgstr "Uppdatera bild"
 
 #: templates/basic/dashboard.php:194
 msgid "Hello"
