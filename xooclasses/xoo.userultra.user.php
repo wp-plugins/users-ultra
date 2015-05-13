@@ -22,8 +22,7 @@ class XooUserUser {
 		if (isset($_POST['uultra-form-cvs-form-conf'])) 
 		{
 			/* Let's Update the Profile */
-			$this->process_cvs($_FILES);
-				
+			$this->process_cvs($_FILES);				
 		}
 		
 		if (isset($_POST['uultra-conf-close-account-post'])) 
@@ -48,8 +47,7 @@ class XooUserUser {
 		
 		add_action( 'wp_ajax_sync_users', array( $this, 'sync_users' ));		
 		add_action('manage_users_columns', array( $this, 'uultra_modify_user_table' ));
-		add_action('manage_users_custom_column', array( $this, 'uultra_modify_user_table_row' ),10,3);
-			
+		add_action('manage_users_custom_column', array( $this, 'uultra_modify_user_table_row' ),10,3);		
 		
 		$this->method_dect = array(
             'text' => 'text_box',
@@ -102,8 +100,7 @@ class XooUserUser {
 			
 			$user = get_user_by('email', $id_or_email);
 			$id_or_email = $user->ID;
-		}
-		
+		}		
 		
 		$site_url = site_url()."/";		 
 		
@@ -128,11 +125,9 @@ class XooUserUser {
 		}else{
 			
 			
-			return $avatar;
+			return $avatar;			
 			
-			
-		}
-	
+		}	
 		
 	}
 	
@@ -300,9 +295,7 @@ class XooUserUser {
 		{
 			
 			update_option('userultra_default_user_tabs', $tabs );
-		}
-		
-		
+		}	
 	
 	}
 	
@@ -331,8 +324,7 @@ class XooUserUser {
 					
 		 }elseif($custom_message_loggedin == "_blank"){
 			 
-			 $custom_message_loggedin =  "";		 
-		
+			 $custom_message_loggedin =  "";		
 		}
 		 
 		 if($membership_id != "")

@@ -33,15 +33,11 @@ samp {
 
 }
 
-
-
 .user-ultra-sect pre {
 
   white-space: pre-wrap;
 
 }
-
-
 
 .user-ultra-sect pre,
 
@@ -103,12 +99,7 @@ samp {
 .user-ultra-sect .right_col_users{ display:inline-block; vertical-align:top; border:#EFEFEF solid 1px; width:75%;min-height:210px;  height:auto !important; margin-left:10px; padding:0px 5px 10px 5px}
 
 
-
-
-
 .user-ultra-sect .statblock{ display:inline-block; border:#EFEFEF solid 1px; width:22%;height:80px;  margin:10px 5px 10px 5px;}
-
-
 
 .user-ultra-sect .statblock h3{ font-size:20px !important; text-align:center; font-weight:bold; margin:10px 0px 10px; padding:0px}
 
@@ -118,11 +109,7 @@ samp {
 .alltime_amount{ color: #C30}
 
 
-
 .user-ultra-sect .statblock p{ font-size:18px  !important; text-align:center; font-weight:bold; margin:0px; padding:0px}
-
-
-
 
 
 .user-ultra-sect .statblock-graph{ display:inline;  width:98%;min-height:130px; height:auto;  margin:10px 5px 10px 5px;; text-align:center}
@@ -132,8 +119,6 @@ samp {
 
 
 .user-ultra-sect .statblock-social{ display:inline-block; border:#EFEFEF solid 1px; width:17%;height:130px;  margin:10px 5px 10px 5px;; text-align:center}
-
-
 
 .user-ultra-sect .statblock-social h3{ font-size:18px !important; text-align:center;  margin:15px 0px 15px; padding:0px}
 

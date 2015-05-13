@@ -51,6 +51,7 @@
 						
                     ]
                 },
+				
                //registration form
 			   {
                     text: 'Registration Form',
@@ -62,6 +63,25 @@
                         {
                             text: 'Front-end Registration Form',
                             value: '[usersultra_registration]',
+                            onclick: function(e) {
+                                e.stopPropagation();
+                                editor.insertContent(this.value());
+                            }       
+                        } 
+                    ]
+                },
+				
+				 //my account
+			   {
+                    text: 'My Account',
+                    value: 'Text from menu item II',
+                    onclick: function() {
+                        editor.insertContent(this.value());
+                    },
+                    menu: [
+                        {
+                            text: 'Basic My Account Shortcode',
+                            value: '[usersultra_my_account]',
                             onclick: function(e) {
                                 e.stopPropagation();
                                 editor.insertContent(this.value());
@@ -193,6 +213,7 @@
                             }       
                         } 
 						
+											
 						
                     ]
                 },
