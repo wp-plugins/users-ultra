@@ -105,8 +105,7 @@ class XooUserMyMessage {
 					
 			
 			$xoouserultra->messaging->send_private_message_user($receiver ,$sender->display_name,  $uu_subject,$_POST["uu_message"]);
-			
-			
+						
 		
 		}
 		

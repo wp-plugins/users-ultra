@@ -14,8 +14,7 @@ class XooPaypalPayment
 		add_action( 'wp_ajax_package_delete', array( $this, 'package_delete' ));
 		add_action( 'wp_ajax_package_edit_form', array( $this, 'package_edit_form' ));
 		
-		add_action( 'wp_ajax_package_edit_confirm', array( $this, 'package_edit_confirm' ));
-		
+		add_action( 'wp_ajax_package_edit_confirm', array( $this, 'package_edit_confirm' ));		
 
 	}
 	
@@ -44,8 +43,7 @@ class XooPaypalPayment
 				`package_limit_photos` int(11)  NULL,
 				`package_limit_galleries` int(11) NULL,
 				`package_limit_posts` int(11) NULL,
-				`package_customization` text NOT NULL,
-				
+				`package_customization` text NOT NULL,				
 				`package_type` varchar(60) NOT NULL,
 				`package_number_of_times` varchar(60) NOT NULL,
 				`package_time_period` varchar(60) NOT NULL,
@@ -117,7 +115,6 @@ class XooPaypalPayment
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$req = 'cmd=_notify-validate';
-
 		// Read the post from PayPal system and add 'cmd'
 		$fullipnA = array();
 		foreach ($_POST as $key => $value)
@@ -193,8 +190,7 @@ class XooPaypalPayment
 			}elseif($txn_type=="failed"){
 				
 				//payment cancelled				
-				$errors .= " --- Payment Failed";
-				
+				$errors .= " --- Payment Failed";				
 				/*Update User Status*/				
 				update_user_meta ($user_id, 'usersultra_account_status', 'failed');
 						
@@ -233,8 +229,7 @@ class XooPaypalPayment
 				
 				/*Notify User&Admin */
 				
-				$package = $xoouserultra->paypal->get_package($package_id);	
-				
+				$package = $xoouserultra->paypal->get_package($package_id);					
 				$u_email=$user->user_email;
 				$user_login= $user->user_login;
 				$user_pass =get_user_meta($user_id, 'usersultra_temp_password', true);				
@@ -290,8 +285,7 @@ class XooPaypalPayment
 		curl_setopt($fp, CURLOPT_HEADER , 0); 
 		curl_setopt($fp, CURLOPT_VERBOSE, 1);
 		curl_setopt($fp, CURLOPT_SSL_VERIFYPEER, FALSE);
-		curl_setopt($fp, CURLOPT_TIMEOUT, 30);
-		
+		curl_setopt($fp, CURLOPT_TIMEOUT, 30);		
 		$response = curl_exec($fp);
 		$curl_err = curl_error($fp);
 		curl_close($fp);
@@ -332,8 +326,7 @@ class XooPaypalPayment
 		$currency_code = $xoouserultra->get_option("gateway_paypal_currency");
 		
 		//get package
-		$package = $xoouserultra->paypal->get_package($order_package_id);
-		
+		$package = $xoouserultra->paypal->get_package($order_package_id);		
 		$amount = $package->package_amount;
 		$p_name = $package->package_name;
 		$package_id = $package->package_id;
@@ -352,9 +345,7 @@ class XooPaypalPayment
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
 				
-		$sucess_url = $my_account_url."?usersultraipncall=".$transaction_key;	
-		
-				
+		$sucess_url = $my_account_url."?usersultraipncall=".$transaction_key;				
 		$mode = $xoouserultra->get_option("gateway_paypal_mode");
 		
 		if($mode==1)
@@ -382,15 +373,12 @@ class XooPaypalPayment
 			$type = "_xclick";
 			
 			$url = "https://".$mode.".paypal.com/webscr?cmd=".$type."&business=".$paypal_email."&currency_code=".$currency_code."&no_shipping=1&item_name=".$p_name."&return=".$sucess_url."&notify_url=".$notify_url."&custom=".$paypalcustom."&amount=".$amount."&p3=".$package_period."&t3=".$package_time_period."&src=1&sra=1";
-		}
+		}		
+		
+		return $url;	
 		
 		
-		return $url;
-		
-		
-		
-	}
-	
+	}	
 	function get_package_url()
 	{
 		global $wpdb,  $xoouserultra, $wp_rewrite;		
@@ -401,12 +389,10 @@ class XooPaypalPayment
 		$page_id = $xoouserultra->get_option('registration_page_id');
 		$subscrition_url = get_permalink($page_id);
 		$web_url = site_url();
-		$url = $subscrition_url;
-		
+		$url = $subscrition_url;		
 		return $url;
 	
 	}
-	
 	
 	
 	public function package_delete ()
@@ -449,10 +435,8 @@ class XooPaypalPayment
 	/*Get All Packages*/
 	public function get_packages ()
 	{
-		global $wpdb,  $xoouserultra;
-		
+		global $wpdb,  $xoouserultra;		
 		$currency_symbol =  $xoouserultra->get_option('paid_membership_symbol');
-		
 		
 		$html = "";
 		
@@ -749,8 +733,7 @@ class XooPaypalPayment
 		
 		}
 				
-		return  die($html);
-		
+		return  die($html);		
 		
 	}
 	
@@ -812,8 +795,6 @@ class XooPaypalPayment
 				    
                 </tr> ';
 				
-                
-                
                
 			}
 					
@@ -869,8 +850,6 @@ class XooPaypalPayment
 		
 		die();
 		
-		
-		
 	}
 	
 	public function package_add_new ()
@@ -908,8 +887,6 @@ class XooPaypalPayment
 		
 		 $wpdb->insert( $wpdb->prefix . 'usersultra_packages', 
 		 $new_message, array( '%d', '%s', '%s', '%s' , '%s', '%s', '%s' ,'%s', '%s', '%s' , '%s' ) ) ;	
-		 
-		 
 		
 	}
 

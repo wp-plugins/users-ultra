@@ -88,6 +88,11 @@ class XooUserRegister {
 		            } elseif (!is_email($value)) 
 					{
 		                $this->errors[] = __('<strong>ERROR:</strong> The email address isn\'t correct.','xoousers');
+						
+					} elseif ($value!=$_POST['user_email_2']) 
+					{
+		                $this->errors[] = __('<strong>ERROR:</strong> The emails are different.','xoousers');
+							
 		            } elseif (email_exists($value)) 
 					{
 		                $this->errors[] = __('<strong>ERROR:</strong> This email is already registered, please choose another one.','xoousers');

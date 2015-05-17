@@ -2360,8 +2360,32 @@ class XooUserUltra
 					
 					
 				$display .= '</div>';
-
 				$display .= '</div><div class="xoouserultra-clear"></div>';
+				
+				
+								//re-type password
+				
+				if($meta=='user_email')
+				{
+					$required_class = ' validate[required]';
+					$required_text = '(*)';
+					
+					$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
+					
+									
+					$display .= '<label class="xoouserultra-field-type" for="user_email_2">';
+					$display .= '<i class="fa fa-envelope"></i>';	
+					$display .= '<span>'.__('Re-type your email', 'xoousers').' '.$required_text.'</span></label>';
+					
+					$display .= '<div class="xoouserultra-field-value">';
+				
+					$display .= '<input type="text" class="'.$required_class.' xoouserultra-input" name="user_email_2" id="reg_user_email_2" value="'.$this->get_post_value('user_email_2').'" title="Re-type your email." data-errormessage-value-missing="'.__(' * This input is required!','xoousers').'"/>';
+					
+					
+					$display .= '</div>';
+					$display .= '</div><div class="xoouserultra-clear"></div>';
+				
+				}
 			}
 			
 								
