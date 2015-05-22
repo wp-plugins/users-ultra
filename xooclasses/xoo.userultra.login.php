@@ -406,7 +406,41 @@ class XooUserLogin {
 	
 	}
 	
-		/*This function loads basic google libraries*/
+	
+	/******************************************
+	Instagram auth url
+	******************************************/
+	function get_instagram_auth_url() {
+			
+		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
+		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		require_once(ABSPATH . 'wp-admin/includes/user.php' );
+		
+		require_once(xoousers_path."libs/instagram/instagram.class.php");
+		
+		$YOUR_APP_KEY = $xoouserultra->get_option('instagram_client_id');
+		$YOUR_APP_SECRET = $xoouserultra->get_option('instagram_client_secret');
+		$YOUR_APP_CALLBACK = $xoouserultra->get_option('instagram_redirect_uri');
+		
+		$instagram = new Instagram(array(
+			'apiKey'      => $YOUR_APP_KEY,
+			'apiSecret'   => $YOUR_APP_SECRET,
+			'apiCallback' => $YOUR_APP_CALLBACK
+		));
+		
+		// create login URL
+		$loginUrl = $instagram->getLoginUrl(array(
+		'basic',
+		'likes',
+		'relationships'
+		)); 
+		
+		return $loginUrl;	
+		
+		
+	}
+	
+	/*This function loads basic google libraries*/
 	
 	public function load_google()
 	{
