@@ -122,8 +122,7 @@ class XooUserUser {
 			 
 			 return $avatar;
 			
-		}else{
-			
+		}else{			
 			
 			return $avatar;			
 			
@@ -150,8 +149,7 @@ class XooUserUser {
 	{
 		global  $xoouserultra;
 		
-		$user = get_userdata( $user_id );
-	
+		$user = get_userdata( $user_id );	
 		switch ($column_name) {
 			case 'last_login' :
 			     
@@ -204,8 +202,7 @@ class XooUserUser {
 	
 	{
 		if (isset($_POST['xoouserultra-profile-edition-form'])) 
-		{
-			
+		{			
 			/* This prepares the array taking values from the POST */
 			$this->prepare( $_POST );
        			
@@ -301,8 +298,7 @@ class XooUserUser {
 	
 	public function show_protected_content($atts, $content)
 	{
-		global  $xoouserultra;
-		
+		global  $xoouserultra;		
 		
 		extract( shortcode_atts( array(	
 			
@@ -461,8 +457,7 @@ class XooUserUser {
 		global $wpdb,  $xoouserultra;
 		
 		/* File upload conditions */
-		$this->allowed_extensions = array("csv");
-		
+		$this->allowed_extensions = array("csv");		
 		
 		$send_welcome_email = false;
 		
@@ -540,8 +535,7 @@ class XooUserUser {
 									
 									}
 									
-									$this->messages_process .='</tr>';
-									
+									$this->messages_process .='</tr>';									
 									$columns = count($data);								
 									
 								
@@ -563,7 +557,6 @@ class XooUserUser {
 							$this->messages_process .='</table>';
 							$this->messages_process .= '<p> <strong>'.__('--- Finished ---  ', 'xoousers').'</strong></p>';
 						}
-
 						
 					}
 				}
@@ -586,10 +579,8 @@ class XooUserUser {
 		$f_name = $user[3];
 		$l_name = $user[4];
 		
-		$columns = count($user);		
-		
-		//print_r($headers);
-				
+		$columns = count($user);			
+	
 		$user_pass = wp_generate_password( 12, false);
 		
 		/* Create account, update user meta */
@@ -696,8 +687,7 @@ class XooUserUser {
 		} //end if
 		
 		
-	}
-	
+	}	
 	
 	
 	public function get_user_meta ($meta)
@@ -842,8 +832,7 @@ class XooUserUser {
 		
 		$users = $this->get_pending_moderation($howmany);
 		
-		$html = '<h3>'.__('Pending Moderation','xoousers').'</h3>';
-		
+		$html = '<h3>'.__('Pending Moderation','xoousers').'</h3>';		
 		$html .= '<div id="uultra-user-acti-noti"></div>';
 		
 		if (!empty($users))

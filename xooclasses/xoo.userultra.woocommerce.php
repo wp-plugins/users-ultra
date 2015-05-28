@@ -5,8 +5,7 @@ class XooWooCommerce {
 	public $woocommerce_version;
 	public $woocommerce_version_status;
 	
-	function __construct() {
-		
+	function __construct() {		
 		
 		add_action('init', array( $this, 'handle_init' ));
 		
@@ -168,7 +167,6 @@ class XooWooCommerce {
 				}
 				
 				if ($_REQUEST['sync'] == 'woocommerce_clean') {
-
 
 				/* Add WooCommerce profile fields */
 				$woo_meta  = array();
