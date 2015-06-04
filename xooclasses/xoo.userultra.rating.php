@@ -96,9 +96,14 @@ class XooRating extends XooUserUltraCommon
 		
 		$user_id = get_current_user_id();
 		
+		
+		
 		$data_id =  $_POST["data_id"];
 		$data_target = $_POST["data_target"];
 		$data_vote =  $_POST["data_vote"];	
+		
+		$data_target_array = array('user_id', 'photo_id', 'gallery_id');		
+		if(!in_array($data_target,$data_target_array )) {exit;}
 	
 		//logged user, the voter
 		$t_member_that_votes = get_current_user_id();		

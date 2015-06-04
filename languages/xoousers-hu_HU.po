@@ -1,0 +1,5196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Users Ultra Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-25 15:22-0300\n"
+"PO-Revision-Date: Tue May 26 2015 19:33:24 GMT+0200 (Közép-európai nyári idő "
+")\n"
+"Last-Translator: Köz-Hír Szombathely <info@koz-hir.hu>\n"
+"Language-Team: \n"
+"Language: Hungarian\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Loco-Target-Locale: hu_HU"
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:36 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.admin.php:55
+msgid "Orders"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:44 ../../plugins/users-
+#: ultra/admin/tabs/membership.php:53 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:262 ../../plugins/users-ultra/admin/tabs/fields.php:660 ../..
+#: /plugins/users-ultra/addons/photocategories/admin/panels/manage.php:12
+msgid "Sucess "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:48
+msgid "Search Transactions "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:56
+msgid "Keywords: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:57
+msgid "Month: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:58
+msgid "Day: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:59
+msgid "Year:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:63
+msgid "write some text here ..."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:65 ../../plugins/users-
+#: ultra/admin/tabs/orders.php:78 ../../plugins/users-ultra/admin/tabs/orders.php:
+#: 91
+msgid "All"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:109
+msgid "Filter"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:116
+msgid "Total: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:116
+msgid "Displaying per page: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:145 ../../plugins/users-
+#: ultra/addons/photocategories/admin/panels/manage.php:43
+msgid "#"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:146 ../../plugins/users-
+#: ultra/admin/tabs/main.php:138 ../../plugins/users-ultra/xooclasses/xoo.
+#: userultra.order.php:377 ../../plugins/users-ultra/xooclasses/xoo.userultra.
+#: publisher.php:474 ../../plugins/users-ultra/xooclasses/xoo.userultra.
+#: woocommerce.php:351 ../../plugins/users-ultra/xooclasses/xoo.userultra.
+#: mymessage.php:535 ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.
+#: php:689 ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:807 ..
+#: /../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1056 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1117 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:517 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:623
+msgid "Date"
+msgstr "Dátum"
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:147 ../../plugins/users-
+#: ultra/admin/tabs/main.php:139
+msgid "User"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:148
+msgid "User Email"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:149 ../../plugins/users-
+#: ultra/admin/tabs/main.php:140
+msgid "Transaction ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:150
+msgid "Plan"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:151
+msgid "Method"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:152 ../../plugins/users-
+#: ultra/admin/tabs/main.php:141 ../../plugins/users-ultra/xooclasses/xoo.
+#: userultra.order.php:379 ../../plugins/users-ultra/xooclasses/xoo.userultra.
+#: publisher.php:475 ../../plugins/users-ultra/xooclasses/xoo.userultra.
+#: woocommerce.php:353
+msgid "Status"
+msgstr "Státusz"
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:153 ../../plugins/users-
+#: ultra/admin/tabs/main.php:142
+msgid "Amount"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/orders.php:183 ../../plugins/users-
+#: ultra/admin/tabs/main.php:168
+msgid "There are no transactions yet."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:10
+msgid "Paid Membership Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:12 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:8 ../../plugins/users-ultra/admin/tabs/settings.
+#: php:183 ../../plugins/users-ultra/admin/tabs/settings.php:213 ../..
+#: /plugins/users-ultra/admin/tabs/settings.php:284 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:344 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:414 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:448 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:505 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:616 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:661 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1119
+msgid "."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:20 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:56
+msgid "Currency"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:21 ../../plugins/users-
+#: ultra/admin/tabs/membership.php:22
+msgid "The default symbol for PayPal payments is USD"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:28
+msgid "Currency Symbol"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:29 ../../plugins/users-
+#: ultra/admin/tabs/membership.php:30
+msgid "Input the currency symbol: Example: $"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:38 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1221 ../../plugins/users-ultra/admin/tabs/mail.
+#: php:222 ../../plugins/users-ultra/admin/tabs/customizer.php:38 ../..
+#: /plugins/users-ultra/admin/tabs/gateway.php:83 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:148
+msgid "Save Changes"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:47
+msgid "Membership Packages"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:50
+msgid "Add New Plan"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:57
+msgid "Add New Membership Package"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:61 ../../plugins/users-
+#: ultra/addons/photocategories/admin/admin.php:89 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:580
+msgid "Name:"
+msgstr "Név:"
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:65 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.publisher.php:204 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.publisher.php:373
+msgid "Description:"
+msgstr "Szöveg:"
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:69
+msgid "Price:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:73
+msgid "Every:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:93
+msgid "Billing Period:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:96 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:652
+msgid "Months"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:97 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:653
+msgid "Weeks"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:98 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:654
+msgid "Days"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:99 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:655
+msgid "Years"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:103 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:41 ../../plugins/users-ultra/xooclasses/xoo.
+#: userultra.payment.paypal.php:595 ../../plugins/users-ultra/xooclasses/xoo.
+#: userultra.payment.paypal.php:762 ../../plugins/users-ultra/xooclasses/xoo.
+#: userultra.photos.php:1828
+msgid "Type"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:105 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:606
+msgid "Recurring"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:106 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:607
+msgid "One-Time"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:110 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:661
+msgid "Requires Admin Moderation:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:112 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:60 ../../plugins/users-ultra/admin/tabs/settings.
+#: php:74 ../../plugins/users-ultra/admin/tabs/settings.php:87 ../..
+#: /plugins/users-ultra/admin/tabs/settings.php:100 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:113 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:317 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:358 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:912 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:925 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:947 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:970 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:990 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1012 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1025 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1056 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1078 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1101 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:30 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:145 ../../plugins/users-ultra/admin/tabs/fields.php:157 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:175 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:187 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:205 ../../plugins/users-ultra/admin/tabs/fields.php:221 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:236 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:474 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:487 ../../plugins/users-ultra/admin/tabs/fields.php:505 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:519 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:538 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:554 ../../plugins/users-ultra/admin/tabs/fields.php:590 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:672
+msgid "Yes"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:113 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:59 ../../plugins/users-ultra/admin/tabs/settings.
+#: php:73 ../../plugins/users-ultra/admin/tabs/settings.php:86 ../..
+#: /plugins/users-ultra/admin/tabs/settings.php:99 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:112 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:318 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:357 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:911 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:924 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:946 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:969 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:989 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1011 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1024 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1055 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1077 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1100 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:29 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:142 ../../plugins/users-ultra/admin/tabs/fields.php:160 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:172 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:190 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:202 ../../plugins/users-ultra/admin/tabs/fields.php:218 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:233 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:471 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:490 ../../plugins/users-ultra/admin/tabs/fields.php:502 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:522 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:535 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:551 ../../plugins/users-ultra/admin/tabs/fields.php:587 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:673
+msgid "No"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:118 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:698
+msgid "Pricing Table Customization"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:121 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:701
+msgid "Name/Price Font Color"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:126 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:706
+msgid "Name/Price Background Color"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:132 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:712
+msgid "Sign Up Button Text Color"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:138 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:718
+msgid "Sign Up Button Background Color"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:146 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:265 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:666 ../../plugins/users-ultra/templates/basic/dashboard.php:479 ../..
+#: /plugins/users-ultra/templates/basic/dashboard.php:914 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:727
+msgid "Cancel"
+msgstr "Mégse"
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:147 ../../plugins/users-
+#: ultra/addons/photocategories/admin/panels/manage.php:24 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:728 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:810 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:879 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:947
+msgid "Confirm"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:153 ../../plugins/users-
+#: ultra/admin/tabs/main.php:249 ../../plugins/users-ultra/admin/tabs/main.php:
+#: 256 ../../plugins/users-ultra/admin/tabs/main.php:262 ../../plugins/users-
+#: ultra/templates/basic/dashboard.php:264 ../../plugins/users-
+#: ultra/templates/basic/dashboard.php:272
+msgid "loading ..."
+msgstr "töltés ..."
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:166
+msgid "Please, input a name "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:167
+msgid "Please, input a description "
+msgstr "Kérlek írj be szöveget (törzset)"
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:168
+msgid "Please, input a price "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/membership.php:169
+msgid "Are you totally sure that you want to delete this package? "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1
+msgid "General Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:6
+msgid "Miscellaneous  Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:17
+msgid "Hide WP Admin Tool Bar"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:19
+msgid "If checked, User will not see the WP Admin Tool Bar"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:20 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:39
+msgid "If checked, User will not see the WP Admin Tool Bar."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:26
+msgid "Disable Default Ligthbox"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:28 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:29
+msgid "If checked, the default lightbox files included in the plugin won't be loaded"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:36
+msgid "Allow Guests to use the rating system"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:38
+msgid "If checked, users will be able to leave rates without being logged in"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:46
+msgid "Allow Guests to like other users "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:48 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:49
+msgid "If checked, users will be able to like users without being logged in"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:57
+msgid "Delete Plugin Information from the Database"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:63
+msgid ""
+"If you select 'yes', all the Users Ultra information will be deleted from "
+"the database. <strong>ATTENTION: This action can't be reverted. </strong>"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:64
+msgid ""
+"f you select 'yes', all the Users Ultra information will be deleted from the "
+"database."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:71
+msgid "Auto Rotation Fixer"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:77 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:78
+msgid ""
+"If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG "
+"images using PHP's EXIF extension, immediately after they are uploaded to "
+"the server. This is implemented for iPhone rotation issues"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:84
+msgid "Use Users Ultra Avatar"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:90 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:91
+msgid "If you select \"yes\", Users Ultra will override the default WordPress Avatar"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:97
+msgid "Redirect Users To My Account - Login Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:103
+msgid ""
+"If you select yes, the user will be redirected to the <strong>my "
+"account</strong> page when clicking on the <strong>login link</strong>. "
+"Otherwise, the user will see the standard login box. WARNING: Do not set it "
+"to 'yes' if you are using the login shortcode in WP side widgets."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:104
+msgid ""
+"If you select yes, the user will be redirected to the my account page. "
+"Otherwise, the user will see the standard login box. WARNING: Do not set it "
+"to 'yes' if you are using the login shortcode in WP side widgets"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:110
+msgid "Redirect Users To My Account - Registration Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:116 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:117
+msgid ""
+"If you select yes, the user will be redirected to the <strong>my "
+"account</strong> page when clicking on the <strong>registration "
+"link</strong>. Otherwise, the user will see the standard login box. WARNING: "
+"Do not set it to 'yes' if you are using the registration shortcode in WP "
+"side widgets."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:129
+msgid "Password Strength Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:131
+msgid ""
+"You can help protect your users' accounts by managing and monitoring the "
+"strength of their passwords."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:140
+msgid "Minimum password length:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:141 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:142
+msgid "By default a Password must be at least 7 characters long"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:149
+msgid "Must contain at least one number and one letter"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:151 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:152
+msgid "The password must contain at least one number and one letter"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:158
+msgid "Must contain at least one upper case character"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:160 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:161
+msgid "The password must contain at least one upper case character"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:167
+msgid "Must contain at least one lower case character"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:169
+msgid "The password must contain at least one lower case character"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:170
+msgid "The password must contain at least one lowercase character"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:181
+msgid "Membership Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:192
+msgid "Display Only Selected Package"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:194
+msgid ""
+"If checked, Only the Selected package will be displayed in the payment form. "
+"<strong>PLEASE NOTE: </strong>This setting is used only if you are using the "
+"pricing tables feature."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:195
+msgid "If checked, Only the Selected package will be displayed in the payment form"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:200
+msgid "Text for free membership:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:201
+msgid ""
+"This text will be displayed for the free membership rather than showing "
+"<strong>\"$0.00\"<strong>. Please input some text like: \"Free\""
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:202
+msgid ""
+"This text will be displayed for the free membership rather than showing "
+"<strong>\"$0.00\"<strong>. Please input some text like:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:211
+msgid "Media Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:222
+msgid "Upload Folder:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:223 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:224
+msgid ""
+"This is the folder where the user photos will be stored in. Please make sure "
+"to assign 755 privileges to it. The default folder is <strong>wp-"
+"content/usersultramedia</strong>"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:230
+msgid "Mini Thumbnail Width"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:231 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:232 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:425 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:426
+msgid "Set width in pixels"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:238
+msgid "Mini Thumbnail Height"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:239 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:240 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:255 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:256 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:271 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:272 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:433 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:434
+msgid "Set Height in pixels"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:246
+msgid "Thumbnail Width"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:247 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:248 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:263 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:264
+msgid "Set Width in pixels"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:254
+msgid "Thumbnail Height"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:262
+msgid "Large Photo Max Width"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:270
+msgid "Large Photo Max Height"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:282
+msgid "Frontend Publishing  Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:294
+msgid "Max Posts Per User:"
+msgstr "Maximális cikkek száma:"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:295 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:296
+msgid ""
+"Please set 9999 for unlimited posts. This value is used for free and general "
+"users"
+msgstr "Állítsd 9999-re. Ez az ingyenes, általános felhasználóknak kell."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:302
+msgid "Default Status"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:304 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:5357
+msgid "Pending"
+msgstr "Jóváhagyásra vár"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:305
+msgid "Publish"
+msgstr "Közzétett"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:308 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:309
+msgid ""
+"This is the status of the post when the users submit new posts through Users "
+"Ultra."
+msgstr "Ez a poszt állapota, amikor egy szerkesztő új cikket ír."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:315
+msgid "Alows users to select category"
+msgstr "Engedd a szerkesztőknek, hogy választhasson kategóriát"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:321 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:322
+msgid ""
+"If \"yes\" authors will be able to select the category, if \"no\" is set the "
+"default category will be used to save the post."
+msgstr ""
+"Igen esetén választhatók a kategóriák, nem esetén az alapértelmezett "
+"kategóriát használják."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:328
+msgid "Default Category"
+msgstr "Alapértelmezett kategória"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:330 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:331
+msgid "The category if authors are not allowed to select a custom category."
+msgstr "A kategória, ha nem engedélyezett más."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:342
+msgid "Terms & Conditions"
+msgstr "Felhasználási feltételek"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:355
+msgid "Allows Terms & Conditions Text Before Registration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:361 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:362
+msgid ""
+"If you select \"yes\", users will have to accept terms and conditions when "
+"registering."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:369
+msgid "Terms & Conditions Text/HTML"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:370 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:371 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:380 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:381 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:387 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:388 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:395 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:396
+msgid "Enter text to display, example \"I agree to the Terms & Conditions\"."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:379
+msgid "Terms & Conditions Text/HTML 2"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:386
+msgid "Terms & Conditions Text/HTML 3"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:394
+msgid "Terms & Conditions Text/HTML 4"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:412
+msgid "Avatar Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:424
+msgid "Avatar Width:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:432
+msgid "Avatar Height"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:446
+msgid "Mailchimp Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:458
+msgid "MailChimp API Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:459 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:460
+msgid ""
+"Fill out this field with your MailChimp API key here to allow integration "
+"with MailChimp subscription."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:466
+msgid "MailChimp List ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:467 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:468
+msgid "Fill out this field your list ID."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:474
+msgid "Activate/Deactivate Mailchimp"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:476 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:477
+msgid "If checked, Users will be asked to subscribe through mailchimp"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:482
+msgid "MailChimp Text"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:483 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:484
+msgid ""
+"Please input the text that will appear when asking users to get periodical "
+"updates."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:491
+msgid "MailChimp Header Text"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:492 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:493
+msgid "Please input the text that will appear as header when mailchip is active."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:503
+msgid "Registration Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:514
+msgid "Registration Type"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:516
+msgid "Login automatically after registration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:517
+msgid "E-mail Activation -  An confirmation link is sent to the user email"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:518
+msgid "Manually Activation - The admin approves the accounts manually"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:519
+msgid "Paid Activation - Enables the Membership Features"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:521 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:522
+msgid ""
+"Please note: Paid Activation does not work with social connects at this "
+"moment."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:529
+msgid "Activate Accounts When Using Social"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:531
+msgid "YES"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:532
+msgid "NO"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:535 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:536
+msgid ""
+"If YES, the account will be activated automatically when using social login "
+"options. "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:544
+msgid "Captcha Plugin"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:546 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:251 ../../plugins/users-ultra/admin/tabs/fields.
+#: php:620 ../../plugins/users-ultra/admin/tabs/fields.php:637 ../..
+#: /plugins/users-ultra/admin/tabs/fields.php:643
+msgid "None"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:548
+msgid "reCaptcha"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:550
+msgid ""
+"By activating this setting reCaptcha will be displayed in the registration "
+"form. <br /> "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:551
+msgid ""
+"If you are using a captcha that requires a plugin, you must install and "
+"activate the selected captcha plugin. Some captcha plugins require you to "
+"register a free account with them."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:559
+msgid "CAPTCHA Heading Text"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:560 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:561
+msgid ""
+"By default the following heading is displayed when the captcha is activate "
+"'Prove you're not a robot'. You can set your custom heading here"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:567
+msgid "CAPTCHA Field Label"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:568 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:569
+msgid "Enter text which you want to show in form in front of CAPTCHA."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:575
+msgid "reCaptcha Public Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:576
+msgid ""
+"Enter your reCaptcha Public Key. You can sign up for a free reCaptcha "
+"account <a href=\"http://www.google.com/recaptcha\" title=\"Get a reCaptcha "
+"Key\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:577
+msgid ""
+"Your reCaptcha keys are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:583
+msgid "reCaptcha Private Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:584
+msgid "Enter your reCaptcha Private Key."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:585
+msgid ""
+"Your reCaptcha kays are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:591
+msgid "Register success message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:593
+msgid "Show a text message when users complete the registration process."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:594
+msgid "This message will be shown to users after registration is completed."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:600
+msgid "Text/HTML below the Register Success message."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:602
+msgid ""
+"Show a text/HTML content under success message when users complete the "
+"registration process."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:603
+msgid ""
+"This message will be shown to users under the success message after "
+"registration is completed."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:614
+msgid "User Profiles Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:625
+msgid "Profile Display Name: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:627
+msgid "Display User Name"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:628
+msgid "Use the Display Name set by the User in the Profile"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:630 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:631
+msgid "Set how the users ultra will make the user name."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:637
+msgid "Display Photos: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:639
+msgid "Only for registered/logged in users"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:640
+msgid "All visitor can see the user photos without registration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:643 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:644
+msgid "Specify if the user photos are public or private"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:659
+msgid "Social Media Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:671
+msgid "Facebook Connect"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:673 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:674
+msgid "If checked, User will be able to Sign up & Sign in through Facebook."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:680
+msgid "Facebook App ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:681 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:682 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:692
+msgid "Obtained when you created the Facebook Application."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:690
+msgid "Facebook App Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:691
+msgid "Facebook settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:698
+msgid "LinkedIn Connect"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:700 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:701
+msgid "If checked, User will be able to Sign up & Sign in through LinkedIn."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:707
+msgid "LinkedIn API Key Public"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:708 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:709 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:777 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:785
+msgid "Obtained when you created your application."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:715
+msgid "LinkedIn API Key Private"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:716
+msgid ""
+"<br><br> VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?"
+"uultralinkedin=1\". Example: http://yourdomain.com/?uultralinkedin=1"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:717
+msgid "VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?uultralinkedin=1"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:724
+msgid "Yahoo Sign up"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:726 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:727
+msgid "If checked, User will be able to Sign up & Sign in through Yahoo."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:732
+msgid "Google Sign up"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:734 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:735
+msgid "If checked, User will be able to Sign up & Sign in through Google."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:741
+msgid "Google Client ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:742 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:743
+msgid "Paste the client id that you got from google API Console"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:749
+msgid "Google Client Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:750 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:784
+msgid "Set the client secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:751
+msgid "Obtained when you created the Google Application."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:757
+msgid "Google Redirect URI"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:758
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. Find more information here https:"
+"//developers.google.com/console/help/new/#console.  <br><br> VERY IMPORTANT: "
+"Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
+"uultraplus=1"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:759
+msgid ""
+"Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
+"uultraplus=1"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:767
+msgid "Instagram Sign up"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:769 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:770
+msgid "If checked, User will be able to Sign up & Sign in through Instagram."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:775
+msgid "Instagram Client ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:776
+msgid "Paste the client id that you got from Instagram API Console"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:783
+msgid "Instagram Client Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:791
+msgid "Instagram Redirect URI"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:792
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Client ID and Client Secret here http://instagram."
+"com/developer/clients/register/#. <br><br> VERY IMPORTANT: Your Redirect URI "
+"should end with \"?instagram=1\". Example: http://yourdomain.com/?instagram=1"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:793
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:802
+msgid "Twitter Sign up"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:804 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:805
+msgid "If checked, User will be able to Sign up & Sign in through Twitter."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:812
+msgid "Consumer Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:813
+msgid "Paste the Consumer Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:814
+msgid "Obtained when you created your Application at Twitter Developer Center"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:820
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:821
+msgid "Paste the Consumer Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:822
+msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:828
+msgid "Twitter Auto Post"
+msgstr "Automatikus Twitterre posztolás"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:830 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:831
+msgid ""
+"If checked, Users Ultra will post a message automatically to the user "
+"twitter timeline when registering."
+msgstr ""
+"Bejelölve a felhasználók automatikusan közzéteszik Twitteren, hogy itt "
+"vannak."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:837 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:904 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:927
+msgid "Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:838 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:839
+msgid "Input the message that will be posted right after user registration"
+msgstr "Írj ide egy szöveget, ami regisztráció után jelenjen meg"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:845
+msgid "Yammer Sign up"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:847 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:848
+msgid "If checked, User will be able to Sign up & Sign in through Yammer."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:855
+msgid "Client Id"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:856
+msgid "Paste the Yammer Client ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:857
+msgid "The same used when you signed up."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:863
+msgid "Client Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:864 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:872
+msgid "Paste the Yammer Client Secret"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:865
+msgid "Obtained at Yammer developer center."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:871
+msgid "Redirect URL"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:873
+msgid ""
+"<br><br> VERY IMPORTANT: Your URL should end with \"?uultryammer=1\". Example: "
+"http://yourdomain.com/?uultryammer=1"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:885
+msgid "Logged In Users Pages and Posts Protection Settings"
+msgstr "Bejelentkezett szerkesztők oldalai és cikkei - biztonsági beállítások"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:887
+msgid "In this section you can manage Posts & Pages Protection module settings."
+msgstr "Itt a Cikk- és Oldalbiztonságot konfigurálhatod,"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:888
+msgid ""
+"This module will let you block pages and any post types and make them "
+"visible only to logged in users."
+msgstr ""
+"Ezzel tudsz modulokat és cikktípusokat blokkolni, valamint csak "
+"bejelentkezett felhasználóknak láthatóvá tenni."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:891
+msgid "Set up the behaviour of locked posts."
+msgstr "Állítsd be, hogy viselkedjen egy zárt cikk."
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:899
+msgid "Activate Logged in Post Protection"
+msgstr "Bejelentkezettek cikkeinek védelme"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:901 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:902
+msgid ""
+"If checked, You will be able to protect pages and post bassed on logged in "
+"users."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:909
+msgid "Hide Complete Posts?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:915
+msgid ""
+"By selecting 'yes' will hide posts if the user has no access. <strong>Please "
+"note: </strong> a 404 error message will be displayed since the post will be "
+"completely locked out."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:916
+msgid ""
+"By selecting 'yes' will hide posts if the user has no access. Please note: a "
+"404 error message will be displayed since the post will be completely locked "
+"out."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:922 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1098
+msgid "Hide Post Title?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:928 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:929 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1104 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1105
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Post title' if "
+"user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:935
+msgid "Post Title:"
+msgstr "Cikk címe:"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:936 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:937
+msgid "This will be the displayed text as post title if user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:944
+msgid "Show post content before &lt;!--more--&gt; tag?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:950 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:951
+msgid ""
+"By selecting \"Yes\"  will display the post content before the &lt;!--more--"
+"&gt; tag and after that the defined text at \"Post content\". If no &lt;!--"
+"more--&gt;  is set he defined text at \"Post content\" will shown."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:958
+msgid "Post Content"
+msgstr "Cikk tartalma"
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:959 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:960 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1045 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1046
+msgid "This content will be displayed if user has no access. "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:967
+msgid "Hide Post Comments?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:973 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:974
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Post comment "
+"text' if user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:980
+msgid "Post Comment Text:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:981 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:982
+msgid "This will be displayed text as post comment text if user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:987
+msgid "Allows Post Comments?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:993 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:994
+msgid "By selecting 'yes' allows users to comment on locked posts"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1001
+msgid "Set up the behaviour of locked pages."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1009
+msgid "Hide Complete Pages?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1015
+msgid ""
+"By selecting 'yes' will hide pages if the user has no access. <strong>Please "
+"note: </strong> a 404 error message will be displayed since the page will be "
+"completely locked out."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1016
+msgid "By selecting 'yes' will hide pages if the user has no access"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1022
+msgid "Hide Page Title?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1028 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1029
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Page title' if "
+"user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1035
+msgid "Page Title:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1036 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1037
+msgid "This will be the displayed text as page title if user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1044
+msgid "Page Content"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1053
+msgid "Hide Page Comments?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1059 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1060
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Page comment "
+"text' if user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1068
+msgid "Page Comment Text:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1069 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1070
+msgid "This will be displayed text as page comment text if user has no access."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1075
+msgid "Allows Page Comments?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1081 ../../plugins/users-
+#: ultra/admin/tabs/settings.php:1082
+msgid "By selecting 'yes' allows users to comment on locked pages"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1089
+msgid "Other Settings."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1117
+msgid "Redirect Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1128
+msgid "Redirect Backend Profiles"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1130
+msgid ""
+"If checked, non-admin users who try to access backend WP profiles will be "
+"redirected to Users Ultra Profile Page specified above."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1131
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra "
+"Profile Page if they try to access the default backend profile page in wp-"
+"admin. The page can be selected in the Users Ultra System Pages settings."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1137
+msgid "Redirect Backend Login"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1139
+msgid ""
+"If checked, non-admin users who try to access backend login form will be "
+"redirected to the front end Users Ultra Login Page specified above."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1140
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra Login "
+"Page if they try to access the default backend login form. The page can be "
+"selected in the Users Ultra System Pages settings."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1146
+msgid "Redirect Backend Registrations"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1148
+msgid ""
+"If checked, non-admin users who try to access backend registration form will "
+"be redirected to the front end Users Ultra Registration Page specified above."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1149
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra "
+"Registration Page if they try to access the default backend registraiton "
+"form. The page can be selected in the Users Ultra System Pages settings."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1156
+msgid "After Registration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1158
+msgid ""
+"The user will be taken to this page after registration if the account "
+"activation is set to automatic "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1159
+msgid ""
+"The user will be taken to this page after registration if the account "
+"activation is set to automatic"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1167
+msgid "Registration Options"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1175
+msgid "User Selected Passwords"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1177
+msgid "Enabled, allow users to set password"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1178
+msgid "Disabled, email a random password to users"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1179
+msgid "Enable/disable setting a user selected password at registration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1180
+msgid ""
+"If enabled, users can choose their own password at registration. If disabled,"
+" WordPress will email users a random password when they register."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1188
+msgid "Privacy Options"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1196
+msgid "Logged-in user viewing of other profiles"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1198
+msgid "Enabled, logged-in users may view other user profiles"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1199
+msgid "Disabled, users may only view their own profile"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1200
+msgid ""
+"Enable or disable logged-in user viewing of other user profiles. Admin users "
+"can always view all profiles."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1201
+msgid ""
+"If enabled, logged-in users are allowed to view other user profiles. If "
+"disabled, logged-in users may only view their own profile."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1207
+msgid "Guests viewing of profiles"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1209
+msgid "Enabled, make profiles publicly visible"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1210
+msgid "Disabled, users must login to view profiles"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1211
+msgid "Enable or disable guest and non-logged in user viewing of profiles."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/settings.php:1212
+msgid ""
+"If enabled, profiles will be publicly visible to non-logged in users. If "
+"disabled, guests must log in to view profiles."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:1
+msgid "Notifications Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:6
+msgid "Custom Messages"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:8 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:17 ../../plugins/users-ultra/admin/tabs/mail.php:18
+msgid "This message will be displayed in the User Panel Controls"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:16
+msgid "Message To Display"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:30
+msgid "Welcome Email Address"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:32
+msgid ""
+"This is the welcome email that is sent to the client when registering a new "
+"account"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:43
+msgid "Mailer:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:45
+msgid "Use the PHP mail() function to send emails"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:46
+msgid "Send all Users Ultra emails via Third-Party Plugins"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:50 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:51
+msgid "Specify which mailer method Users Ultra should use when sending emails."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:57
+msgid "Send From Name"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:58 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:59
+msgid "Enter the your name or company name here."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:65
+msgid "Send From Email"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:66 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:67
+msgid "Enter the email address to be used when sending emails."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:73
+msgid "Client Welcome Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:74 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:75
+msgid "This message will be sent to the user."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:81
+msgid "Account Activation Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:82 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:83
+msgid ""
+"This message will be sent to the user if they need to activate the account "
+"by using the activation link."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:89
+msgid "Resend Activation Link"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:90 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:91
+msgid ""
+"This message will be sent to the user when clicking the re-send activation "
+"option."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:97
+msgid "Account Verified Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:98 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:99
+msgid "This message will be sent to the users when they verify their accounts."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:105
+msgid "Password Changed Confirmation"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:106 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:107
+msgid "This message will be sent to the user when the password has been reset."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:119
+msgid "Admin New User Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:120 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:121 ../../plugins/users-ultra/admin/tabs/mail.php:
+#: 129 ../../plugins/users-ultra/admin/tabs/mail.php:130
+msgid "This message will be sent to the admin."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:128
+msgid "Admin New Paid User Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:137
+msgid "Admin Pending Activation Message"
+msgstr "Függő aktivációs üzenet"
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:138 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:139
+msgid "This message will be sent to the admin if the user needs manual activation."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:147
+msgid "Client Admin Approbation  Email"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:148 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:149
+msgid ""
+"This message will be sent to the user if the account needs to be approved by "
+"the admin."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:154
+msgid "Admin New User Approbation  Email"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:155 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:156
+msgid ""
+"This message will be sent to the admin if an account needs to be approved "
+"manually."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:165
+msgid "User Private Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:166 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:167
+msgid "This message will be sent to users when other users send a private message."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:174
+msgid "Friend Request"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:175 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:176
+msgid "This message is sent to the users when a friend request is sent"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:186 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.class.php:1720
+msgid "Password Reset"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:187 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:188
+msgid "This message will be sent to users when requesting a new password."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:195 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.messaging.php:244
+msgid "Account Activation"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:196 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:197
+msgid "This message is sent when the admin approves the user account."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:204
+msgid "Deny Account Activation"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/mail.php:205 ../../plugins/users-
+#: ultra/admin/tabs/mail.php:206
+msgid "This message is sent when the admin does not approve the user account."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/customizer.php:11
+msgid "Customizer"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/customizer.php:13
+msgid "Use this section to add custom CSS styles."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/customizer.php:21
+msgid "Custom CSS Style"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/customizer.php:22 ../../plugins/users-
+#: ultra/admin/tabs/customizer.php:23
+msgid "You can write some custom CSS style coding here"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:19
+msgid "Welcome to Users Ultra Lite!"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:22
+msgid "Thank you very much for installing Users Ultra Lite.  "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:32
+msgid "Social Connects Stats"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:88
+msgid "Subscription Stats"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:94
+msgid "Today"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:101
+msgid "This Month"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:108
+msgid "This Year"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:115
+msgid "All Time"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:121
+msgid "Latest 5 Transactions"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:204 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:786 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:855 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:922
+msgid "Avatar"
+msgstr "Profilkép"
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:205 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:787 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:856 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:923 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.class.php:1113 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.class.php:1159
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:235
+msgid "There are no pending activation users."
+msgstr "Nincs függő felhasználó."
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:308
+msgid "Sign up Stats"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/main.php:309
+msgid "Sign up Options "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:8
+msgid "Synchronize Already Users"
+msgstr "Meglévő felhasználók szinkronizálása"
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:9
+msgid ""
+"This feature allows you to synchronize the already users in your Wordpress "
+"website so they can be recognized by Users Ultra "
+msgstr "Ezzel a meglévő felhasználóid szinkronizálhatod a szerkesztőségi felülettel."
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:13
+msgid "Start Sync Now"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:27
+msgid "Import Users"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:28
+msgid ""
+"This feature lets you import users easily into the Users Ultra System. The "
+"file must be CSV format. Delimited Comma-separated Values "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:30
+msgid ""
+"<b>IMPORTANT: </b> The CSV format should be:  \"user name\", \"email\", \"display "
+"name\", \"registration date\", \"first name\", \"last name\", \"age\", \"country\"  "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:39
+msgid "Choose File"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:39
+msgid " <b>ONLY CSV EXTENSIONS ALLOWED: </b>  "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:43
+msgid "Account Activation: "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:46
+msgid "Send welcome email with new password "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:51
+msgid " Activate account automatically "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:57
+msgid " Send Activation Link."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:62
+msgid "Start Importing"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:80
+msgid "Auto Sync with WooCommerce"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:83
+msgid ""
+"Syncing with WooCommerce will automatically add WooCommerce customer profile "
+"fields to your Users Ultra Plugin. A quick way to have a WooCommerce account "
+"page integrated with Users Ultra. Just click the following button and Users "
+"Ultra will do the work for you."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:87
+msgid "Sync and keep existing fields"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:88
+msgid "Sync and delete existing fields"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:96
+msgid "Please install WooCommerce plugin first."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/import.php:104 ../../plugins/users-
+#: ultra/admin/tabs/licence.php:31
+msgid "Please wait, this process may take several minutes"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:1
+msgid "Payment Gateways Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:6
+msgid "Paypal Settings"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:8
+msgid "Here you can configure Paypal if you wish to accept paid registrations"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:17
+msgid "Activate Paypal"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:19 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:20
+msgid "If checked, Paypal will be activated as payment method"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:27
+msgid "The Paypal IPN response will be sent to the admin"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:33 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:34
+msgid ""
+"If 'yes' the admin will receive the whole Paypal IPN response. This helps to "
+"troubleshoot issues."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:40
+msgid "Paypal Email Address"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:41 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:42
+msgid "Enter email address associated to your paypal account."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:48
+msgid "Paypal Sandbox Email Address"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:49 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:50
+msgid "This is not used for production, you can use this email for testing."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:57 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:58
+msgid "Please enter the currency, example USD."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:64
+msgid "Mode"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:66
+msgid "Production Mode"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:67
+msgid "Test Mode (Sandbox)"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/gateway.php:70 ../../plugins/users-
+#: ultra/admin/tabs/gateway.php:71
+msgid "Select Mode"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:1 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.admin.php:58
+msgid "Permalinks"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:8
+msgid "Users Ultra Pages Setting"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:10
+msgid ""
+"The following pages are automatically created when Users Ultra Plugin\n"
+"   is activated. You can leave them as they are or change to custom pages "
+"here."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:21
+msgid "Users Ultra My Account"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:23
+msgid ""
+"Make sure you have the <code>[usersultra_my_account]</code> shortcode on "
+"this page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:24
+msgid "This page is where users will view their account."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:30
+msgid "Users Ultra Profile Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:32
+msgid ""
+"Make sure you have the <code>[usersultra_profile]</code> shortcode on this "
+"page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:33
+msgid ""
+"This page is where users will view their own profiles, or view other user "
+"profiles from the member directory if allowed."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:39
+msgid "Users Ultra Login Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:41
+msgid ""
+"If you wish to change default Users Ultra login page, you may set it here. "
+"Make sure you have the <code>[usersultra_login]</code> shortcode on this "
+"page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:42
+msgid "The default front-end login page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:48
+msgid "Users Ultra Registration Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:50
+msgid ""
+"Make sure you have the <code>[usersultra_registration]</code> shortcode on "
+"this page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:51 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:60
+msgid "The default front-end Registration page where new users will sign up."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:57
+msgid "Users Ultra Directory Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:59
+msgid ""
+"Make sure you have the <code>[usersultra_directory]</code> shortcode on this "
+"page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:76
+msgid ""
+"Users Ultra offers you the ability to create a custom URL structure for the "
+"main pages of your website"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:85
+msgid "Profile Slug"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:86 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:87
+msgid "Enter your custom Slug for the profile page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:95
+msgid "Profile Link Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:97
+msgid "The Profile Link is built by using the User ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:98
+msgid "The Profile Link is built by using the Username"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:102 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:103
+msgid ""
+"Please note: This option is used for permalinks. You can choice what field "
+"will be used in the Users Profile Link"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:110
+msgid "Login Slug"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:111 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:112
+msgid "Enter your custom Slug for the Login Page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:118
+msgid "Registration Slug"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:119 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:120
+msgid "Enter your custom Slug for the Registration Page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:126
+msgid "My Account Slug"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:127 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:128
+msgid "Enter your custom Slug for the \"My Account\" Page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:134
+msgid "Users Directory Slug"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/permalinks.php:135 ../../plugins/users-
+#: ultra/admin/tabs/permalinks.php:136
+msgid "Enter your custom Slug for the Users Directory Page."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:8
+msgid "Why Go Users Ultra Pro?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:11
+msgid ""
+"What we are doing with Users Ultra Pro is adding some ground breaking "
+"features that nobody else, to this date, has offered. We are starting off "
+"with our EXCLUSIVE 'Profile Customizer'. This feature actually is a drag and "
+"drop, widgetized, profile customization for members of your site."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:13
+msgid ""
+"Users Ultra Pro allows you to add unlimited widgets, add unlimited links "
+"within the user's dashboard. Integrating with third-party plugins by using "
+"shortcodes, friends, followers, following, user's wall."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:22
+msgid "Tons of Great Features"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:23
+msgid "Changelog"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:32
+msgid "Appearance & Customization"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:33
+msgid ""
+"Users Ultra PRO allows you to adapt the user's profile to any WordPress "
+"Theme through the admin section. Change the look of the profile in just few "
+"clicks."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:38
+msgid "Unlimited Widgets"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:39
+msgid ""
+"Yes, you can add as many widgets as you wish. Integrating with third-party "
+"plugins has never been easier. You can use other plugins with Users Ultra "
+"PRO."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:43
+msgid "Groups"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:44
+msgid ""
+"Users Ultra Pro comes with a powerful groups module. Protect whole pages and "
+"posts easily by using the page protection options in the groups module."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:48
+msgid "Unlimited Links"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:49
+msgid ""
+"You can add unlimited links within the user's dashboard with HTML text or "
+"use a shortcode of another plugin to display custom information."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:55
+msgid "Roles Integration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:56
+msgid ""
+"Users will be able to select a predefined role when registering and you will "
+"be able to assign a custom role to a membership package."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:60
+msgid "Pages & Posts Protection"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:61
+msgid ""
+"With Users Ultra Por you can restrict content on a global or per page/post "
+"basis. You can restrict pages/posts so everyone can see the page/post or "
+"only logged in users can see the page/post "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:66
+msgid "bbPress Integration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:67
+msgid ""
+"Your forum may look much more elegant by using Users Ultra Pro. Display "
+"badges and achievements in your forum threads and much more."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:71
+msgid "Spam Protection"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:72
+msgid ""
+"Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
+"your website against spam attacks. Simple way to stop fake account spam!"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:77
+msgid "Advanced Profile Fields"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:78
+msgid ""
+"You can create fields that will only be displayed on users of the selected "
+"User Roles. Also, you can make a field editable based on User Roles."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:83
+msgid "Customizable Profile"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:84
+msgid ""
+"The Pro Version includes the unique and innovating Widgetized Users Profile. "
+"Let your user build their own profile by draging and droping elements."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:90
+msgid "New Features"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:91
+msgid ""
+"We add new features every week for the Pro version. You may alway let us "
+"know your suggestion and we will be glad to listen your opinions."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:95
+msgid "reCaptcha & FUNCAPTCHA"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:96
+msgid ""
+"This is a great feature to protect your website from spam and abuse. "
+"reCAPTCHA uses an advanced risk analysis engine."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:102
+msgid "Default Role on Registration"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:103
+msgid ""
+"Users Ultra Pro allows you to set a custom role for either the common or the "
+"social login features."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:107
+msgid "One and Two Columns Profile"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:108
+msgid ""
+"The new user's profile template will let you create a beautiful user's "
+"profile with one, two or three columns with just one click."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:112
+msgid "Badges & Achievement"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:113
+msgid ""
+"Create and award badges to your users manually, or based on what they "
+"accomplish."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:117
+msgid "Users Wall"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:118
+msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:123
+msgid "Social Connect Buttons"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:124
+msgid "Now you can add one or more social connect buttons to any place of your blog."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:128
+msgid "Online/Offline User Status"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:129
+msgid ""
+"This feature is optional and you will have the capability to show the user's "
+"status to your visitors."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:133
+msgid "Custom Profile Background "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:134
+msgid ""
+"Let your users to customize their profiles by adding a custom full-screen "
+"background image easily."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:140
+msgid "Automatic Updates"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:141
+msgid ""
+"Yes, Users Ultra Pro can be updated through the Plugins area in your "
+"Wordpress Admin Panel."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:145
+msgid "Free Installation"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:146
+msgid ""
+"If you would like assistance with installing and setting up the plugin, we "
+"are glad to help. "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:150
+msgid "Network Activation"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:151
+msgid ""
+"When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
+"for the entire network of sites by just one click."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:155
+msgid "Multiple Users Directory Templates"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:156
+msgid ""
+"The Pro version includes several views for the users directory such as "
+"<strong>User Tables with custom fields </strong>and instant messaging system."
+" "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:160
+msgid "Users Management"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:161
+msgid ""
+"The Pro version includes a powerful users management module. Easily "
+"approve/deny users, upgrade and downgrade user's membership. Finding a user "
+"will be super easy by using this feature."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:165
+msgid "Advanced Front End Publisher"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:166
+msgid ""
+"Allows your user to post through their private area. It allows user to "
+"attach photos to the posts. This is useful for classified and real estate "
+"websites."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:172
+msgid "Priority Support"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:173
+msgid ""
+"We usually reply within the same day to pro users. We will go to the extra "
+"mile in order to give you a Top Quality Support."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:178
+msgid "Maitenance Features"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:179
+msgid "Keep your Users and User Meta table clean."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:183
+msgid "User Avatars"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:184
+msgid ""
+"Users Ultra Pro allows users to use Gravatar, Facebook Avatar or their "
+"custom avatar."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:189
+msgid "Advanced Email Features"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:190
+msgid "Send emails via SMTP and Mandrill API."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/pro.php:203
+msgid "Users Ultra Pro Changelog "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:14
+msgid "Profile Fields Customizer"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:17
+msgid ""
+"Organize profile fields, add custom fields to profiles, control privacy of "
+"each field, and more using the following customizer. You can drag and drop "
+"the fields to change the order in which they are displayed on profiles and "
+"the registration form."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:22
+msgid "Profile fields have been restored"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:26
+msgid "Click here to add new field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:31
+msgid "Click here to restore default fields"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:45 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:381
+msgid "Profile Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:48 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:384
+msgid "Separator"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:51 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:387
+msgid "You can create a separator or a usermeta (profile field)"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:56
+msgid "Editor / Input Type"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:65 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:405
+msgid ""
+"When user edit profile, this field can be an input (text, textarea, image "
+"upload, etc.)"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:70
+msgid "Existing Meta Key / Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:74
+msgid "Choose a Meta Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:78 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:106
+msgid "New Custom Meta Key"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:99 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:433
+msgid ""
+"Choose from a predefined/available list of meta fields (usermeta) or skip "
+"this to define a new custom meta key for this field below."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:111 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:442
+msgid ""
+"Enter a custom meta key for this profile field if do not want to use a "
+"predefined meta field above. It is recommended to only use alphanumeric "
+"characters and underscores, for example my_custom_meta is a proper meta key."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:116
+msgid "Label"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:122 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:450
+msgid ""
+"Enter the label / name of this field as you want it to appear in front-end "
+"(Profile edit/view)"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:127 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:457
+msgid "Tooltip Text"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:133 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:462
+msgid "A tooltip text can be useful for social buttons on profile header."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:138 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:467
+msgid "This field is social"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:148 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:477
+msgid ""
+"A social field can show a button with your social profile in the head of "
+"your profile. Such as Facebook page, Twitter, etc."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:153 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:483
+msgid "User can edit"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:163 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:493
+msgid "Users can edit this profile field or not."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:168
+msgid "Allow HTML Content"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:178 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:508
+msgid "If yes, users will be able to write HTML code in this field."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:183 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:515
+msgid "User can hide"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:193 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:525
+msgid ""
+"Allow users to hide this profile field from public viewing or not. Selecting "
+"No will cause the field to always be publicly visible if you have public "
+"viewing of profiles enabled. Selecting Yes will give the user a choice if "
+"the field should be publicy visible or not. Private fields are not affected "
+"by this option."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:198 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:531
+msgid "This field is private"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:208 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:541
+msgid "Make this field Private. Only admins can see private fields."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:214
+msgid "This field is required"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:224 ../../plugins/users-
+#: ultra/admin/tabs/fields.php:557
+msgid ""
+"Selecting yes will force user to provide a value for this field at "
+"registeration and edit profile. Registration or profile edits will not be "
+"accepted if this field is left empty."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:229
+msgid "Show on Registration form"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:239
+msgid ""
+"Show this field on the registration form? If you choose no, this field will "
+"be shown on edit profile only and not on the registration form. Most users "
+"prefer fewer fields when registering, so use this option with care."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:248
+msgid "Icon for this field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:263
+msgid "Submit New Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:279
+msgid "CLICK TO CONFIRM REARRANGE "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:330
+msgid " - Separator"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:333
+msgid " - Profile Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:348 ../../plugins/users-
+#: ultra/addons/photocategories/admin/panels/manage.php:71 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:788 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.publisher.php:492
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:348 ../../plugins/users-
+#: ultra/addons/photocategories/admin/panels/manage.php:70 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:788 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:946 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:915 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:1045 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:1097
+msgid "Delete"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:359
+msgid "Sucess! This field has been deleted "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:368
+msgid "Position"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:373
+msgid ""
+"Please use a unique position. Position lets you place the new field in the "
+"place you want exactly in Profile view."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:377
+msgid "Field Type"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:393
+msgid "Field Input"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:409
+msgid "Choose Meta Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:413
+msgid "Choose a user field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:437
+msgid "Custom Meta Field"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:446
+msgid "Label / Name"
+msgstr "Label / Név"
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:498
+msgid "Allow HTML"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:547
+msgid "This field is Required"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:583
+msgid "Show on Registration Form"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:593
+msgid "Show this profile field on the registration form"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:609
+msgid "Available Choices"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:612
+msgid ""
+"Enter one choice per line please. The choices will be available for front "
+"end user to choose from."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:616
+msgid "Enable Predefined Choices"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:623
+msgid "List of Countries"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:627 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.class.php:1241
+msgid "Age"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:630
+msgid ""
+"You can enable a predefined filter for choices. e.g. List of countries It "
+"enables country selection in profiles and saves you time to do it on your "
+"own."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:635
+msgid "Field Icon:"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:639
+msgid "Change Icon"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:665 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.publisher.php:224 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:1837
+msgid "Update"
+msgstr "Mentés"
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:687
+msgid "Are you totally sure that you want to delete this field?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/fields.php:689
+msgid "Are you totally sure that you want to restore the default fields?"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:8
+msgid "Documentation and User Guide"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:9
+msgid ""
+"Here there are some useful shortocodes that will help you to start your "
+"online community in minutes."
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:11
+msgid ""
+"<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE  </a>to "
+"check the online documentation"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:13
+msgid ""
+"<a href='http://www.usersultra.com/support/' target='_blank'>CLICK HERE "
+"</a>to visit Support Forum"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:15
+msgid ""
+"<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>CLICK "
+"HERE TO RATE IT </a>"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:23
+msgid "Common Shortcodes"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:25
+msgid "Registration Form"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:27
+msgid "Login Form"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:30 ../../plugins/users-
+#: ultra/templates/basic/dashboard.php:740 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2253 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2257 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.class.php:1037
+msgid "My Account"
+msgstr "Státusz"
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:33
+msgid "Disable modules for some Users"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:36 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2393 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2781
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:39 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.class.php:917
+msgid "Members Directory"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:42
+msgid "Filter Users By Role  "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:45
+msgid "Top Rated Users "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:47
+msgid "Most Visited Users "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:50
+msgid "User Spotlight  "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/help.php:53
+msgid "User Profile  "
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/licence.php:8
+msgid "Validate your copy"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/licence.php:9
+msgid ""
+"Please fill out the form below with the serial number generated when you "
+"registered your domain through your account at UsersUltra.com"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/licence.php:11
+msgid "INPUT YOUR SERIAL KEY"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/licence.php:16
+msgid "CLICK HERE TO VALIDATE YOUR COPY"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/donate.php:8
+msgid "Support Users Ultra Lite with your donation!"
+msgstr ""
+
+#: ../../plugins/users-ultra/admin/tabs/donate.php:9
+msgid ""
+"If you like Users Ultra and you are satisfied with the plugin, isn't that "
+"worth a coffee or two? Please consider donating via PayPal. Any amount is "
+"appreciated. Donations help us to continue support and development of this "
+"free software!"
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/profile.php:64
+msgid "Send Message"
+msgstr "Üzenet küldése"
+
+#: ../../plugins/users-ultra/templates/basic/profile.php:112 ../../plugins/users-
+#: ultra/templates/basic/profile.php:147
+msgid "Main"
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/profile.php:169
+msgid "My Photo Galleries"
+msgstr "Galériáim"
+
+#: ../../plugins/users-ultra/templates/basic/profile.php:183 ../../plugins/users-
+#: ultra/templates/basic/dashboard.php:875 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2346 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2350
+msgid "My Videos"
+msgstr "Videóim"
+
+#: ../../plugins/users-ultra/templates/basic/profile.php:204
+msgid "Photos available only for registered users"
+msgstr "A képek kizárólag regisztrált felhasználóknak érhetők el"
+
+#: ../../plugins/users-ultra/templates/basic/directory_mini.php:42 ../..
+#: /plugins/users-ultra/templates/basic/directory_default.php:42
+msgid "Search for a user..."
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/directory_mini.php:44 ../..
+#: /plugins/users-ultra/templates/basic/directory_mini.php:44 ../../plugins/users-
+#: ultra/templates/basic/directory_default.php:44 ../../plugins/users-
+#: ultra/templates/basic/directory_default.php:44 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.photos.php:354 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.photos.php:354
+msgid "Search"
+msgstr "Keresés"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:44
+msgid "Update Profile Image"
+msgstr "Profilkép feltöltése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:194
+msgid "Hello"
+msgstr "Szia"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:194
+msgid "Welcome to your dashboard"
+msgstr "Üdv a Köz-Hír szerkesztőségi rendszerében!"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:196
+msgid "Account Status"
+msgstr "Státusz"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:204
+msgid "My Latest Messages"
+msgstr "Legutóbbi üzeneteim"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:225
+msgid "My Latest Photos:"
+msgstr "Legutóbbi képeim"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:256 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2363 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2367
+msgid "My Friends"
+msgstr "Ismerősök"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:260
+msgid ""
+"Here you can manage your friends. Your friends will be able to see "
+"private/restricted content"
+msgstr ""
+"Itt léphetsz kapcsolatba más szerkesztővel. Privát üzenet küldésére is van "
+"mód."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:339 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2383 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2387
+msgid "My Posts"
+msgstr "Cikkeim"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:343
+msgid "Here you can manage your posts. "
+msgstr "Itt kezelheted a cikkeidet."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:383 ../..
+#: /plugins/users-ultra/templates/basic/dashboard.php:418 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2294 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:2298
+msgid "My Orders"
+msgstr "Rendeléseim"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:387
+msgid "Here you can check your orders. "
+msgstr "Itt ellenőrizheted rendeléseid."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:422
+msgid "Here you can track your orders. "
+msgstr "Itt követheted rendeléseid."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:456 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:281
+msgid "My Galleries"
+msgstr "Galériáim"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:461
+msgid "Here you can manage your galleries and photos."
+msgstr "Itt kezelheted a galériáid és a képeid"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:463
+msgid "Add Gallery"
+msgstr "Galéria hozzáadása"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:468 ../..
+#: /plugins/users-ultra/templates/basic/dashboard.php:888 ../../plugins/users-
+#: ultra/addons/photocategories/admin/panels/manage.php:44 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.payment.paypal.php:758 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.photos.php:1560 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.photos.php:1700 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.photos.php:1821
+msgid "Name"
+msgstr "Név"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:473 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:584 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:759 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1564 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1704
+msgid "Description"
+msgstr "Szöveg"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:480 ../..
+#: /plugins/users-ultra/templates/basic/dashboard.php:915 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.publisher.php:391
+msgid "Submit"
+msgstr "Küldés"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:523
+msgid "Delete this gallery?"
+msgstr "Galéria törlése?"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:547 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:274
+msgid "My Photos"
+msgstr "Képeim"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:552
+msgid "Here you can manage your photos."
+msgstr "Itt kezelheted a képeid"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:554
+msgid "Upload Files"
+msgstr "File feltöltése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:564
+msgid "loading photos ..."
+msgstr "képek töltése ..."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:617
+msgid "My Profile"
+msgstr "Profilom"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:647
+msgid "Received Messages"
+msgstr "Bejövő üzenetek"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:696
+msgid "Sent Messages"
+msgstr "Elküldött üzenetek"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:756
+msgid "Account ID: "
+msgstr "Azonosítód:"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:756
+msgid "Registered Date: "
+msgstr "Regisztrációd napja:"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:756
+msgid "Account Type: "
+msgstr "Fiókod típusa:"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:769
+msgid "Close Account"
+msgstr "Fiók törlése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:774
+msgid "Remove Account"
+msgstr "Fiók végleges törlése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:778
+msgid "Here you can remove your account."
+msgstr "Az alábbi gombbal véglegesen törölheted magad rendszerünkből."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:781
+msgid "YES, CLOSE MY ACCOUNT"
+msgstr "IGEN, TÖRLÖM A FIÓKOM"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:794 ../..
+#: /plugins/users-ultra/templates/basic/dashboard.php:854
+msgid ""
+"Are you totally sure that you want to close your account. This action cannot "
+"be reverted?"
+msgstr "Biztosan törlöd? Később nem vonható vissza döntésed."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:813 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2267 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2271 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:52
+msgid "Settings"
+msgstr "Beállítások"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:818
+msgid "Update Password"
+msgstr "Jelszó frissítése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:822
+msgid "Type your New Password"
+msgstr "Írd be az új jelszavad"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:825
+msgid "Re-type your New Password"
+msgstr "Írd be újra a jelszavad"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:828
+msgid "CLICK HERE TO RESET PASSWORD"
+msgstr "Jelszó frissítése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:833
+msgid "Update Email"
+msgstr "E-mail frissítése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:837
+msgid "Type your New Email"
+msgstr "Írd be az új e-mail címed"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:840
+msgid "CLICK HERE TO UPDATE YOUR EMAIL"
+msgstr "E-mail frissítése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:882
+msgid "Here you can manage your videos."
+msgstr "Itt kezelheted videóid."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:884
+msgid "Add Video"
+msgstr "Videó feltöltése"
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:897 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1825
+msgid "Video ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:905
+msgid "Video Type"
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:926
+msgid "please wait, loading videos ..."
+msgstr "videók töltése ..."
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:955
+msgid "Delete this video?"
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:956
+msgid "Please input a name"
+msgstr ""
+
+#: ../../plugins/users-ultra/templates/basic/dashboard.php:957
+msgid "Please input video ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/admin.php:33
+msgid "Manage Photo Categories"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/admin.php:94 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:206 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1601 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1719 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1840
+msgid "Close"
+msgstr "Bezár"
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/admin.php:94 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1601 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1719 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1840
+msgid "Save"
+msgstr "Mentés"
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/admin.php:135 ../..
+#: /plugins/users-ultra/addons/photocategories/admin/admin.php:135
+msgid "Photo Categories"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/panels/manage.php:14
+msgid "Add New Category "
+msgstr "Új kategória hozzáadása"
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/panels/manage.php:18
+msgid "Name: "
+msgstr "Név:"
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/panels/manage.php:49 ..
+#: /../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:476
+msgid "Actions"
+msgstr "Szerkesztés"
+
+#: ../../plugins/users-ultra/addons/photocategories/admin/panels/manage.php:86
+msgid "There are no categories yet."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/admin.php:36 ../..
+#: /plugins/users-ultra/addons/maintenance/admin/admin.php:246 ../..
+#: /plugins/users-ultra/addons/maintenance/admin/admin.php:246
+msgid "Maintenance"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/admin.php:47
+msgid "Finished!!. The transients have been cleaned."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/admin.php:63
+msgid "Finished!!. The stats have been deleted."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/admin.php:79
+msgid "Finished!!. The ratings have been deleted."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/admin.php:128
+msgid "Finished!! . Please refresh this window."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/admin.php:328
+msgid "MAINTENANCE"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:29
+msgid "Success "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:31
+msgid "WP User Meta Fields Cleaning "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:32
+msgid ""
+"This module helps you to remove useless user meta from the wp_usermeta\n"
+"table. It's useful to fix users count issues. This fixes the wrong amount of "
+"users displayed in the Users tab as well."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:35
+msgid ""
+"<strong>IMPORTANT:</strong> This module won't touch your Users Table but the "
+"User's Meta Table Only."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:37
+msgid "Current Integrity Status: "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:39
+msgid "USERS FOUND IN USERS TABLE: "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:41
+msgid "DISTINCT USERS FOUND IN META TABLE: "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:45
+msgid "The tables are synchronized. No action is required. "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:52
+msgid "We recommend you optimize the tables by clicking on the button below."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:55
+msgid "SYNC NOW"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:73
+msgid "Are you totally sure? "
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:84
+msgid "Delete Users Ultra Transients"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:86
+msgid ""
+"From time to time you will have to use this function. For example: If the "
+"Online users are not being displayed."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:89
+msgid "CLEAN NOW"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:102
+msgid "Clean the Users Ultra Stats"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:104
+msgid ""
+"Use this function to delete all the UU stats such as: photo views, user "
+"views, galleries views, etc."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:107
+msgid "YES, DELETE ALL STATS NOW"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:120
+msgid "Clean the Users Ultra Ratings"
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:122
+msgid ""
+"Use this function to delete all the UU reviews. This option will delete all "
+"the user reviews, photo reviews, gallery reviews etc etc."
+msgstr ""
+
+#: ../../plugins/users-ultra/addons/maintenance/admin/panels/manage.php:125
+msgid "YES, DELETE ALL RATINGS NOW"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:447
+msgid "You have no packages yet."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:576
+msgid "Edit Package"
+msgstr "Csomag szerkesztése"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:590 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:760
+msgid "Price"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:615
+msgid "Every"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:637
+msgid "Billing Period"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:757
+msgid "ID"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:761
+msgid "Period"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:764 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:791 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:860 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:927 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:536 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:905 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.mymessage.php:928 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.socials.php:518 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.socials.php:624
+msgid "Action"
+msgstr "Akció"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:774
+msgid " month(s)"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:775
+msgid " week(s)"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:776
+msgid " day(s)"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:777
+msgid " year(s)"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:785
+msgid "every "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:803
+msgid "There are no packages yet."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.payment.paypal.php:849
+msgid "The Package has been updated"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.order.php:356 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.woocommerce.php:331
+msgid "You have no orders."
+msgstr "Nincs rendelésed."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.order.php:375 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.woocommerce.php:349
+msgid "Order #"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.order.php:376 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.woocommerce.php:350
+msgid "Total"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.order.php:378
+msgid "Package"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:190
+msgid "<strong>ERROR:</strong> The username field is empty."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:198
+msgid "<strong>ERROR:</strong> The password field is empty."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:289
+msgid "<strong>ERROR:</strong> Invalid Username was entered."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:292
+msgid "<strong>ERROR:</strong> Incorrect password was entered."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:296
+msgid "<strong>ERROR:</strong> Please provide Password."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:315
+msgid "<strong>ERROR:</strong> Your account is not active."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:1504 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.login.php:1774
+msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.login.php:1788
+msgid ""
+"<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK "
+"PLEASE LOGIN AGAIN."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:82
+msgid "Invalid Post"
+msgstr "Nem elfogadott cikk"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:116
+msgid "Edit Post"
+msgstr "Cikk szerkesztése"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:150 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:431
+msgid "Back"
+msgstr "Vissza"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:150
+msgid "Back:"
+msgstr "Vissza:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:156 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:328
+msgid "Title:"
+msgstr "Cím:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:162 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:336
+msgid "Category:"
+msgstr "Kategória:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:178 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:180 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:344 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:346
+msgid "-- Select --"
+msgstr "--Válassz--"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:191 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:359
+msgid "Post Photos:"
+msgstr "Cikk fényképei:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:217 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:384
+msgid "Tags:"
+msgstr "Címkék:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:287 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:322 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:444 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:444
+msgid "Add New Post"
+msgstr "Új CIKK"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:298
+msgid "Max Allowed Posts: "
+msgstr "Megengedett cikkek száma:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:454
+msgid "You have no posts."
+msgstr "Még nincs megírt cikked. Láss hozzá most. :)"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:473
+msgid "Title"
+msgstr "Cím"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:515
+msgid "Live"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:519
+msgid "Offline"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:523
+msgid "Awaiting Approval"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:526
+msgid "Scheduled"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:559 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:950
+msgid "Delete Image"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:563
+msgid "Main Image"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:567
+msgid "Set As Main"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:611 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:813
+msgid "Empty post title"
+msgstr "Üres cím"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:625 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:629 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:634 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:829 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:833 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:838
+msgid "Please choose a category"
+msgstr "Válassz egy kategóriát"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:641 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:847
+msgid "Empty post content"
+msgstr "Üres tartalom"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:692
+msgid "Post updated successfully."
+msgstr "Sikeresen frissítetted a cikked."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:897
+msgid "You cannot add more posts "
+msgstr "Nem írhatsz több cikket"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:933
+msgid "Post published successfully. The admin will review it soon"
+msgstr "Sikeres cikkírás! Valamelyik szerkesztőnk hamarosan ellenőrzi, és közzéteszi."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:1082
+msgid "Drop Images Here"
+msgstr "Húzd ide a képet"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:1084 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:4906 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2255
+msgctxt "Uploader: Drop files here - or - Select Files"
+msgid "or"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:1085 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:4907
+msgid "Select Files"
+msgstr "Fájl kijelölése"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:1121 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:4941 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2287
+msgid "Allowed Files"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.publisher.php:1195
+msgid "The file you selected exceeds the maximum file size limit."
+msgstr "A kép mérete túl nagy"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.shorcodes.php:346 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:996
+msgid "Sign up"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:102
+msgid "Registration"
+msgstr "Regisztráció"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:103
+msgid "New Registration"
+msgstr ""
+"Új \n"
+"Regisztráció"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:137 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:199
+msgid "Verify Your Account"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:163
+msgid "Account Verification"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:164
+msgid "New Account To Approve"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:200
+msgid "New Account To Verify"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:269
+msgid "Account Verified"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:295
+msgid "Account Activation Deny"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:321
+msgid "Registration Information"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:322
+msgid "New Paid Subscription"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:362
+msgid "Registration "
+msgstr "Regisztráció"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:393
+msgid "New Private Message"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:422
+msgid "New Friend Request"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:447
+msgid "Reset Your Password"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.messaging.php:468
+msgid "Password Reset Confirmation"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.woocommerce.php:184
+msgid "Woocommerce File Doesn't Exist"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.woocommerce.php:352
+msgid "Modified Date"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.captchamodules.php:85
+msgid "Human Check"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.captchamodules.php:93
+msgid "Prove you're not a robot"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.captchamodules.php:310
+msgid "Enter Verification Words"
+msgstr "Írd ide, mit látsz a képen..."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.captchamodules.php:314
+msgid "Load Image"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.captchamodules.php:315
+msgid "Load Audio"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.captchamodules.php:316
+msgid "Refresh Image"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:196
+msgid "Thank you for your rating"
+msgstr "Köszönjük az értékelést"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:200
+msgid "You've already left your rate "
+msgstr "Már szavaztál!"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:207
+msgid "You have to be logged in to leave your rate  "
+msgstr "Be kell jelentkezned, hogy szavazhass!"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:212
+msgid "You cannot rate yourself  "
+msgstr "Nem értékelheted önmagad"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:254
+msgid "1 star out of 5 "
+msgstr "1 csillag az 5-ből"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:255
+msgid "2 star out of 5  "
+msgstr "2 csillag az 5-ből"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:256
+msgid "3 star out of 5  "
+msgstr "3 csillag az 5-ből"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:257
+msgid "4 star out of 5  "
+msgstr "4 csillag az 5-ből"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:258
+msgid "5 star out of 5  "
+msgstr "5 csillag az 5-ből"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:260
+msgid "Rating: "
+msgstr "Értékelés:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.rating.php:261
+msgid " votes cast "
+msgstr "szavazat"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:260
+msgid "Basic Information"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:267
+msgid "My Cyrcle"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:288
+msgid "My Latest Posts"
+msgstr "Legutóbbi cikkek, tőlem"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:323
+msgid "Content visible only for registered users. "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:503
+msgid "The file format is not allowed!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:564
+msgid "--- Finished ---  "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:776
+msgid "Pending Payment"
+msgstr "Nem jóváhagyott fizetés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:789 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:858 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:925
+msgid "Email"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:790 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:859 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.user.php:926
+msgid "Registered"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:810 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:879 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.socials.php:541 ../../plugins/users-
+#: ultra/xooclasses/xoo.userultra.socials.php:541
+msgid "Deny"
+msgstr "Elutasít"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:823
+msgid "There are no pending payment users."
+msgstr "Nincs fizetős, függő felhasználó."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:845
+msgid "Pending Moderation"
+msgstr "Moderációra vár"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:892
+msgid "There are no pending moderation users."
+msgstr "Nincs moderációra váró felhasználó."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:912
+msgid "Pending Confirmation"
+msgstr "Függő megerősítés."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:946
+msgid "Send Link"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:959
+msgid "There are no pending confirmation users."
+msgstr "Nincs megerősítésre váró felhasználó."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:989 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:1040
+msgid "User has been activated"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1012
+msgid "Activation link sent"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1066
+msgid "User has been deleted"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1237
+msgid " ERROR! Please type your new email "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1243
+msgid " ERROR! Please type a valid email address "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1262
+msgid " ERROR! You haven't changed your email. "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1271
+msgid " ERROR! The email is in use already "
+msgstr "HIBA! Ez az e-mail cím már foglalt"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1356 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:1433
+msgid " ERROR! Password must be identical "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1362 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:1439
+msgid " ERROR! Password should contain at least 7 alphanumeric characters "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1471
+msgid " ERROR! Invalid reset link "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1502
+msgid "Email not found"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1510 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:1541
+msgid "Your account is not active yet."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1532
+msgid "User not found"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1585
+msgid " A reset link has been sent to your email "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:1818 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2654
+msgid "Hide from Public"
+msgstr "elrejtés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2213 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2217 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:50
+msgid "Dashboard"
+msgstr "Profilom"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2226 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2230
+msgid "Profile"
+msgstr "Adatok"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2239 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2243
+msgid "Profile Customizer"
+msgstr "Profil szerkesztő"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2281 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2285
+msgid "My Purchases"
+msgstr "Megrendeléseim"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2313
+msgid "My Messages"
+msgstr "Üzenetek"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2317
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2323
+msgid "Unread Messages"
+msgstr "Olvasatlan üzenetek"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2333 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2337
+msgid "Photos"
+msgstr "Képek"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2373
+msgid "Friend Requests"
+msgstr "Jelölések"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2638
+msgid "Empty results"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:2780 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2881 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:2881 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:4316
+msgid "See Profile"
+msgstr "Profil"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:3295
+msgid "Free"
+msgstr "Ingyenes"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:3621
+#, php-format
+msgid "Search %s"
+msgstr "Keresés %s"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4083
+msgid "<< Previous"
+msgstr "<< Előző"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4084
+msgid "Next >>"
+msgstr "Következő >>"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4134 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:4205
+msgid "Users"
+msgstr "Felhasználó"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4208
+msgid "Only logged in users can see this page"
+msgstr "Csak bejelentkezett felhasználók láthatják ezt az oldalt."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4365 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:5205 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:5278 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:648
+msgid "Previous"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4366 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:5206 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:5279 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:649
+msgid "Next"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4490 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:370
+msgid "Total found: "
+msgstr "Találat:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4607 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.user.php:4626
+msgid "Country not available"
+msgstr "Ország nem elérhető"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4653
+msgid "This user hasn't a description yet"
+msgstr "A felhasználó még nem töltött fel adatokat"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4905
+msgid "Drop Avatar here"
+msgstr "Húzd ide a képet"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4909
+msgid "Remove Avatar"
+msgstr "Profilkép törlése"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:4996
+msgid "You may only upload one image at a time!"
+msgstr "Egyszerre csak egy képet tölthetsz fel"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:5011
+msgid "The file you selected exceeds the maximum filesize limit."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:5361
+msgid "Pending Admin"
+msgstr "Adminra várunk"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.user.php:5365
+msgid "Active"
+msgstr "Aktív"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:112
+msgid " Message sent "
+msgstr "Üzenet elküldve"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:131
+msgid "Reply: "
+msgstr "Válasz:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:175
+msgid " Reply sent "
+msgstr "Válasz elküldve"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:196
+msgid "You cannot send a private message to yourself"
+msgstr "Nem küldhetsz magadnak üzenetet!"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:201 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:534 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:688 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:806 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1055 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1116
+msgid "Subject"
+msgstr "Tárgy"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:206
+msgid "Send"
+msgstr "Küldés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:213
+msgid "Please input a subject"
+msgstr "Kérlek add meg a tárgyat"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:214 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:445
+msgid "Please write a message"
+msgstr "Kérlek írj üzenetet!"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:224
+msgid "You have to be logged in to send private messages"
+msgstr "Be kell jelentkezned üzenetek küldéséhez."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:284
+msgid " The message has been deleted. Please refresh your screen."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:307
+msgid " Status has been changed"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:355 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:566
+msgid "Mark as Unread"
+msgstr "Megjelölés olvasatlannak"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:360 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:572
+msgid "Mark as Read"
+msgstr "Megjelölés olvasottnak"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:423
+msgid "Type your reply here..."
+msgstr "Írd a válaszod ide..."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:432
+msgid "Send Reply"
+msgstr "Válasz"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:501 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:775 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1023
+msgid "You have no items in inbox."
+msgstr "Nincs bejövő üzenet."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:516 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1036
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:532 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:686 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:804 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:515 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:621
+msgid "Pic"
+msgstr "Kép"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:533 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:805 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1054 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1115 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:516 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:622
+msgid "Sender"
+msgstr "Feladó"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:601 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:726 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1082
+msgid "View"
+msgstr "Megtekint"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:606 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:919 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1101
+msgid "Reply"
+msgstr "Válasz"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:647 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1015
+msgid "Inbox"
+msgstr "Bejövő"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:657
+msgid "You have no items in sent box."
+msgstr "Nincs kimenő üzenet."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:672
+#, php-format
+msgid "You have sent %d private message(s) "
+msgid_plural "You have sent %d private messages "
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:687
+msgid "Receiver"
+msgstr "Címzett"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:796
+#, php-format
+msgid "You have %d private message (%d unread)"
+msgid_plural "You have %d private messages (%d unread)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:897
+msgid "Inbox \\ View Message"
+msgstr "Bejövő"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:899
+msgid "Back to inbox"
+msgstr "Vissza a bejövő üzenetekhez"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:903 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:926
+msgid "Info"
+msgstr "Info"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:910
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:911
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:956
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:960 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1002
+msgid "Error. Please try again."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1006
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1044
+msgid "Bulk Action"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1046 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1089
+msgid "Mark As Read"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.mymessage.php:1047
+msgid "Apply"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:76
+msgid "<strong>ERROR:</strong> Please enter a username."
+msgstr "<strong>Hiba:</strong> Kérlek add meg a felhasználóneved."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:78
+msgid ""
+"<strong>ERROR:</strong> This username is already registered. Please choose "
+"another one."
+msgstr ""
+"<strong>ERROR:</strong> Ez a felhasználónév már foglalt. Kérlek válassz "
+"másikat."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:87
+msgid "<strong>ERROR:</strong> Please type your e-mail address."
+msgstr "<strong>ERROR:</strong> Kérlek add meg az e-mail címed."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:90
+msgid "<strong>ERROR:</strong> The email address isn't correct."
+msgstr "<strong>Hiba:</strong> Kérlek valós e-mail címet adj meg."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:94
+msgid "<strong>ERROR:</strong> The emails are different."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:98
+msgid ""
+"<strong>ERROR:</strong> This email is already registered, please choose "
+"another one."
+msgstr ""
+"<strong>Hiba:</strong> Ez az e-mail cím már regisztrálva van, kérlek válassz "
+"másikat."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:114
+msgid "<strong>ERROR:</strong> Please type your password."
+msgstr "<strong>Hiba:</strong> Kérlek add meg a jelszavad."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:120
+msgid "<strong>ERROR:</strong> The passwords must be identical"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:133
+msgid "<strong>ERROR:</strong> Please complete Captcha Test first."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:139
+msgid "<strong>ERROR:</strong> Registration is disabled for this site."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:167
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one number and "
+"one letter"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:179
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one upper case "
+"character"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:191
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one lower case "
+"character"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.register.php:724
+msgid "Registration successful. Please check your email."
+msgstr "Regisztráció sikeres. Kérlek ellenőrízd az e-mail fiókod."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:347
+msgid "Search images..."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:361
+msgid "Filter by category: "
+msgstr "Szűrés kategória szerint:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1099 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1306
+msgid "You have no galleries yet."
+msgstr " "
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1116 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1176 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1246
+msgid "delete"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1118 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1176 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2170
+msgid "edit"
+msgstr "szerkesztés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1131 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1333
+msgid "Picture(s)"
+msgstr "Kép"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1165
+msgid "You have no videos yet."
+msgstr "Nincs még videód. Nem is baj, sok helyet foglal. Inkább használj YouTube-ot."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1235
+msgid "The user has not added videos yet."
+msgstr " "
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1567
+msgid "Tags"
+msgstr "Címkék"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1570
+msgid "Category"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:1707
+msgid "Visibility"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2006 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2148
+msgid "You have no photos in this gallery yet."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2072
+msgid "You have to be logged in to see this photo."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2079
+msgid "This photo is accessible only for friends of the user."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2086
+msgid "This photo could not be displayed."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2163
+msgid "MAIN PHOTO"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2254
+msgid "Drop files here"
+msgstr "Húzd ide a képet"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.photos.php:2256
+msgid "Select files"
+msgstr "Fájl kijelölése"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:416
+msgid "Only Logged in Users"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:508
+msgid ""
+"Thanks for installing Users Ultra. Do you need help?. Users Ultra can create "
+"the initial pages automatically. You just need to <a href=\"#\"  "
+"id=\"uultradmin-create-basic-fields\">CLICK HERE</a> to start using Users "
+"Ultra. "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:520
+msgid ""
+"<h2>Upgrade Now to Users Ultra Pro!. </h2> <p>Unique Widgetized user profile,"
+" add unlimited widgets, site-wide activity wall, add unlimited links within "
+"the user's dashboard. Integrating with third-party plugins by using "
+"shortcodes, friends, followers, following, user's wall, multiple profile "
+"layouts and many more amazing features.</p> <p> <a href='http://usersultra."
+"com/'  target='_blank' class='button button-secondary'  >CLICK HERE TO FIND "
+"OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-"
+"proversionmessage'>Remove this message</a>"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:531
+msgid ""
+"Users Ultra might be working wrong. We couldn't find the 'My Account' "
+"shortcode. Please click on settings tab and make sure that the My Account "
+"page has been set correctly. Then click on the 'save' button "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:879
+msgid "View Profile"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:958 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:1825
+msgid "Login"
+msgstr " "
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1093
+msgid "Text"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1094
+msgid "Image Upload"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1095
+msgid "Textarea"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1096
+msgid "Select Dropdown"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1097
+msgid "Radio"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1098
+msgid "Checkbox"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1099 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:1130 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:1190
+msgid "Password"
+msgstr "Jelszó"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1100
+msgid "Date Picker"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1121 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:1167
+msgid "E-mail"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1133
+msgid ""
+"Password must be at least 7 characters long. To make it stronger, use upper "
+"and lower case letters, numbers and symbols."
+msgstr "A jelszónak legalább 7 karakterből kell állnia"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1140
+msgid "Confirm Password"
+msgstr "Jelszó megerősítése"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1143
+msgid "Type your password again."
+msgstr "Írd be újra a jelszavad."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1170
+msgid "A password will be e-mailed to you."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1182 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2032
+msgid "Username or Email"
+msgstr "Felhasználónév"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1200
+msgid "Profile Info"
+msgstr "Profil adatok"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1212
+msgid "First Name"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1226
+msgid "Last Name"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1259
+msgid "Display Name"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1274
+msgid "Brief Description"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1289
+msgid "About / Bio"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1304
+msgid "Country"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1319
+msgid "Contact Info"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1332
+msgid "Website"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1344
+msgid "Social Profiles"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1355
+msgid "Facebook"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1362
+msgid "Connect via Facebook"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1371
+msgid "Twitter Username"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1378
+msgid "Connect via Twitter"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1387
+msgid "Google+"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1394
+msgid "Connect via Google+"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1400 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2247
+msgid "Account Info"
+msgstr "Profil adatok"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1411
+msgid "New Password"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1740
+msgid "Oops! The link is not correct! "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1779
+msgid "Type New Password:"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1788
+msgid "Re-type Password:"
+msgstr "Írd be újra a jelszavad"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1797
+msgid "Reset Password"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1883
+msgid "Sign in with"
+msgstr "Bejelentkezés:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1885
+msgid "Sign in "
+msgstr " Bejelentkezés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1976 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:1976
+msgid "Forgot Password?"
+msgstr "Elfelejtett jelszó?"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1984 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2748
+msgid "Register"
+msgstr "Regisztráció"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:1998
+msgid "Remember me"
+msgstr "Emlékezz rám"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2002
+msgid "Log In"
+msgstr "Bejelentkezés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2023
+msgid ""
+" A quick access link will be sent to your email that will let you get in "
+"your account and change your password. "
+msgstr ""
+"Egy hozzáférési linket küldünk az e-mail címedre, amivel elérheted a "
+"profilod és megváltoztathatod a jelszavad."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2043 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2043
+msgid "Back to Login"
+msgstr "Vissza a bejelentkezéshez"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2049
+msgid "Send me Password"
+msgstr "Küldés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2089 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2101
+msgid "Your password is too similar to your username."
+msgstr "A jelszavad túlságosan hasonlít a felhasználónevedhez."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2090 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2102
+msgid "Both passwords do not match."
+msgstr "A jelszavak nem egyeznek."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2091 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2103
+msgid "Your password is too short."
+msgstr "A jelszavad túl rövid."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2092 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2104
+msgid "Your password strength is too weak."
+msgstr "A jelszavad nem elég erős."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2093 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2105
+msgid "Your password strength weak."
+msgstr "A jelszavad gyenge."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2094
+msgid "Please provide username."
+msgstr "Kérlek add meg a felhasználóneved."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2095
+msgid "Please provide email address."
+msgstr "Kérlek add meg az e-mail címed."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2096
+msgid "Please provide valid email address."
+msgstr "Kérlek valós e-mail címet adj meg."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2097
+msgid "That username is already taken, please try a different one."
+msgstr "Ez a felhasználónév már foglalt, válassz másikat."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2098
+msgid ""
+"The email you entered is already registered. Please try a new email or log "
+"in to your existing account."
+msgstr ""
+"Ez az e-mail cím már regisztrálva van. Használj másikat vagy jelentkezz be "
+"ezzel."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2106
+msgid "Good"
+msgstr "Jó"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2107
+msgid "Strong"
+msgstr "Erős"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2109
+msgid "ERROR"
+msgstr "Hiba"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2121
+msgid "Sign Up"
+msgstr " "
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2190
+msgid "Please enter a username."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2219 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:416
+msgid "User registration is currently not allowed."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2241
+msgid "Fields with (*) are required"
+msgstr "* kötelező"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2245
+msgid "Sign up with"
+msgstr "Regisztráció:"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2310 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2314 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2324 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2333 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2382 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2508 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2512 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2535 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2625
+msgid " * This input is required!"
+msgstr "* Ez a mező kötelező"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2378
+msgid "Re-type your email"
+msgstr "Írd be újra az e-mail címed"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2638
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2642
+msgid "Type your new password again."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2675
+msgid "Payment Information"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2696
+msgid "Receive Daily Updates "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.class.php:2723 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.class.php:2731
+msgid "Terms & Conditions "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:117
+msgid " Friend Request Sent "
+msgstr "Ismerősnek jelölés elküldve"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:121
+msgid "You have to be logged in to send a friend request "
+msgstr "Be kell jelentkezned, hogy lásd az ismerősnek jelöléseket."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:128
+msgid "Request Already Sent"
+msgstr "Ismerősnek jelölés már elküldve."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:199
+msgid "Thanks "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:203
+msgid "Please login to rate "
+msgstr "Kérlek jelentkezz be, hogy szavazhass."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:208
+msgid "You've already liked it "
+msgstr "Már tetszik"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:254
+msgid "Friends"
+msgstr "Ismerős"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:255
+msgid "Send Friend Request"
+msgstr "Ismerősnek jelölés"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:255
+msgid "Be a Friend "
+msgstr "Ismerős hozzáadása"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:289 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:296
+msgid "Request approved"
+msgstr "Jelölés elfogadva"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:303
+msgid "Request rejected"
+msgstr "Jelölés elutasítva"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:386 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.socials.php:435
+msgid "Likes"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:387
+msgid "Like"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:387
+msgid "Dislike"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:506
+msgid "Latest Friend Requests"
+msgstr "Ismerősnek jelölések"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:541
+msgid "Approve"
+msgstr "Elfogad"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:612
+msgid "All My Friends"
+msgstr "Összes ismerősöm"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.socials.php:647
+msgid "Block"
+msgstr "Tiltás"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:51
+msgid "Fields"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:53
+msgid "Css"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:54
+msgid "Membership"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:56
+msgid "Sync & Import"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:57
+msgid "Notifications"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:59
+msgid "Gateways"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:60
+msgid "Doc"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:61
+msgid "Go Pro!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:67
+msgid "Membership Plans"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:241
+#, php-format
+msgid "%d new manual activation requests"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:244
+#, php-format
+msgid "Users Ultra %s"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:248 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:251
+msgid "Users Ultra"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:254
+msgid "GO PRO!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:254
+msgid "GO PRO !!! "
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:327
+msgid "Settings are reset to default."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:333
+msgid "WooCommerce fields have been added."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:338
+msgid "WooCommerce fields have been removed."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:356
+msgid "Please log in to view / edit your profile."
+msgstr "Jelentkezz be, hogy szerkeszd, vagy megnézd a profilodat."
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:357
+msgid "Please log in to view user profiles."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:358
+msgid "This content is for members only. You must log in to view this content."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:388 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:391
+msgid "No rights!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:389
+msgid "Sorry you have to be logged in to view this post!"
+msgstr "Bocsi, hogy megnézd, be kell jelentkezned!"
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:390 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:393
+msgid "Sorry no rights to view comments!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:392
+msgid "Sorry you have to be logged in to view this page!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:400
+msgid "Subscribe to receive our periodic email updates"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:449
+msgid "Users Ultra Plugin"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:463 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:474 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:489 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:500 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:512 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:524 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:559 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:567 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:576 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:582 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:588 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:595 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:602
+msgid "Hi,"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:464
+msgid "Thanks for registering. Your account is now active."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:465 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:476
+msgid "To login please visit the following URL:"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:467 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:478 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:516
+msgid "Your account e-mail: {{userultra_user_email}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:468 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:479 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:517
+msgid "Your account username: {{userultra_user_name}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:469
+msgid "Your account password: (same used when registering)"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:470 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:481 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:520 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:529
+msgid "If you have any problems, please contact us at {{userultra_admin_email}}."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:471 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:482 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:495 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:507 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:521 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:530 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:540 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:549 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:555 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:564 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:573 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:579 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:585 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:592 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:599 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:605
+msgid "Best Regards!"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:475
+msgid "Your password has been reset."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:490
+msgid "A new user has been registered."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:492 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:503 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:537 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:546
+msgid "Account e-mail: {{userultra_user_email}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:493 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:504 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:538 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:547
+msgid "Account username: {{userultra_user_name}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:494 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:506 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:563 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:572 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:604
+msgid "This is an automated notification. No further action is needed."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:501
+msgid "A new paid user has been registered."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:505
+msgid "Package: {{userultra_user_package}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:513
+msgid "Thanks for registering. Your account needs activation."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:514 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:526
+msgid "Please click on the link below to activate your account:"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:518
+msgid "Your account password: {{userultra_pass}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:525
+msgid "We are re-sending you the activation link."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:534 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:544
+msgid "Hi Admin,"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:535
+msgid "An account needs activation."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:539 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:548
+msgid "Please login to your admin to activate the account."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:545
+msgid "An account needs approbation."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:553
+msgid "Hi {{userultra_user_name}},"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:554
+msgid "Your account will be reviewed by the admin soon."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:560
+msgid ""
+"{{userultra_user_name}} has just created a new account at "
+"{{user_ultra_blog_name}}."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:561
+msgid "You can check his profile via the following link:"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:568
+msgid ""
+"{{userultra_user_name}} has just sent you a new private message at "
+"{{user_ultra_blog_name}}."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:570
+msgid "Subject: {{userultra_pm_subject}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:571
+msgid "Message: {{userultra_pm_message}}"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:577
+msgid "You have a new friend request at {{user_ultra_blog_name}}."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:583
+msgid "Please use the following link to reset your password."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:585
+msgid "If you did not request a new password delete this email."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:589
+msgid "Your account has been activated."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:590 ../..
+#: /plugins/users-ultra/xooclasses/xoo.userultra.admin.php:597
+msgid "Please use the link below to get in your account."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:596
+msgid "Your account has been verified."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:603
+msgid "We're sorry but your account has not been approved."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:868
+msgid "Settings saved."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1075
+msgid "Rewrite Rules were Saved."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1131
+msgid ""
+"Please make sure that you've set the right My Account Page. Users Ultra "
+"couldn't find it and some important features such as password reset, account "
+"confirmation won't work properly."
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1131
+msgid "Click here to set the My Account Page"
+msgstr ""
+
+#: ../../plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
+msgid "RATE IT "
+msgstr ""
