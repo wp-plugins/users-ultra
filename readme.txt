@@ -444,7 +444,7 @@ Initial release.
 
 == Changelog ==
 
-= 1.5.17(06-04-2015) =
+= 1.5.17(06-07-2015) =
 * Improvement - Rusian Language.
 
 = 1.5.16(06-04-2015) =
