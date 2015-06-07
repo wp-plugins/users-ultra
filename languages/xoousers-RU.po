@@ -1,0 +1,6466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Users Ultra Lite\n"
+"POT-Creation-Date: 2015-05-31 10:46-0300\n"
+"PO-Revision-Date: 2015-06-05 18:26+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../addons/maintenance/admin/admin.php:36
+#: ../addons/maintenance/admin/admin.php:246
+#, fuzzy
+msgid "Maintenance"
+msgstr "Техническое обслуживание"
+
+#: ../addons/maintenance/admin/admin.php:47
+#, fuzzy
+msgid "Finished!!. The transients have been cleaned."
+msgstr "Закончил!!. Переходные процессы были очищены."
+
+#: ../addons/maintenance/admin/admin.php:63
+#, fuzzy
+msgid "Finished!!. The stats have been deleted."
+msgstr "Закончил!!. Статистика были удалены."
+
+#: ../addons/maintenance/admin/admin.php:79
+#, fuzzy
+msgid "Finished!!. The ratings have been deleted."
+msgstr "Закончил!!. Рейтинги были удалены."
+
+#: ../addons/maintenance/admin/admin.php:128
+#, fuzzy
+msgid "Finished!! . Please refresh this window."
+msgstr "Закончил!! . Пожалуйста, обновите окно."
+
+#: ../addons/maintenance/admin/admin.php:328
+#, fuzzy
+msgid "MAINTENANCE"
+msgstr "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ"
+
+#: ../addons/maintenance/admin/panels/manage.php:29
+#, fuzzy
+msgid "Success "
+msgstr "Успешно"
+
+#: ../addons/maintenance/admin/panels/manage.php:31
+#, fuzzy
+msgid "WP User Meta Fields Cleaning "
+msgstr "Пользовательские WP мета поля очистка"
+
+#: ../addons/maintenance/admin/panels/manage.php:32
+#, fuzzy
+msgid ""
+"This module helps you to remove useless user meta from the wp_usermeta\n"
+"table. It's useful to fix users count issues. This fixes the wrong amount of "
+"users displayed in the Users tab as well."
+msgstr ""
+"Этот модуль поможет вам удалить бесполезные пользователя мета от "
+"wp_usermeta\n"
+"table. Это полезно для устранения всего пользователей. Это исправляет "
+"неправильное количество пользователей, отображается на вкладке Пользователи, "
+"а также."
+
+#: ../addons/maintenance/admin/panels/manage.php:35
+#, fuzzy
+msgid ""
+"<strong>IMPORTANT:</strong> This module won't touch your Users Table but the "
+"User's Meta Table Only."
+msgstr ""
+"<strong>Важно:</strong> Этот модуль не коснуться пользователей таблицы но "
+"только пользователя в таблице мета."
+
+#: ../addons/maintenance/admin/panels/manage.php:37
+#, fuzzy
+msgid "Current Integrity Status: "
+msgstr "Текущее состояние целостности:"
+
+#: ../addons/maintenance/admin/panels/manage.php:39
+#, fuzzy
+msgid "USERS FOUND IN USERS TABLE: "
+msgstr "НАЙДЕНО В ТАБЛИЦЕ ПОЛЬЗОВАТЕЛЕЙ ПОЛЬЗОВАТЕЛЕЙ:"
+
+#: ../addons/maintenance/admin/panels/manage.php:41
+#, fuzzy
+msgid "DISTINCT USERS FOUND IN META TABLE: "
+msgstr "ОТДЕЛЬНЫХ ПОЛЬЗОВАТЕЛЕЙ, НАЙДЕННЫЕ В ТАБЛИЦЕ МЕТА:"
+
+#: ../addons/maintenance/admin/panels/manage.php:45
+#, fuzzy
+msgid "The tables are synchronized. No action is required. "
+msgstr "Таблицы синхронизированы. Никаких действий не требуется."
+
+#: ../addons/maintenance/admin/panels/manage.php:52
+#, fuzzy
+msgid "We recommend you optimize the tables by clicking on the button below."
+msgstr "Мы рекомендуем вам оптимизировать таблицы, нажав на кнопку ниже."
+
+#: ../addons/maintenance/admin/panels/manage.php:55
+#, fuzzy
+msgid "SYNC NOW"
+msgstr "Синхронизировать сейчас"
+
+#: ../addons/maintenance/admin/panels/manage.php:73
+#, fuzzy
+msgid "Are you totally sure? "
+msgstr "Вы полностью уверены?"
+
+#: ../addons/maintenance/admin/panels/manage.php:84
+#, fuzzy
+msgid "Delete Users Ultra Transients"
+msgstr "Удалить пользователей Ultra переходные процессы"
+
+#: ../addons/maintenance/admin/panels/manage.php:86
+#, fuzzy
+msgid ""
+"From time to time you will have to use this function. For example: If the "
+"Online users are not being displayed."
+msgstr ""
+"Время от времени вам придется использовать эту функцию. Например: если не "
+"отображаются онлайн пользователей."
+
+#: ../addons/maintenance/admin/panels/manage.php:89
+#, fuzzy
+msgid "CLEAN NOW"
+msgstr "ОЧИСТИТЬ СЕЙЧАС"
+
+#: ../addons/maintenance/admin/panels/manage.php:102
+#, fuzzy
+msgid "Clean the Users Ultra Stats"
+msgstr "Очистить Ultra статистика пользователей"
+
+#: ../addons/maintenance/admin/panels/manage.php:104
+#, fuzzy
+msgid ""
+"Use this function to delete all the UU stats such as: photo views, user "
+"views, galleries views, etc."
+msgstr ""
+"Используйте эту функцию для удаления все UU статистика, такие как: Фото, "
+"мнения, мнения пользователей, просмотров галереи и т.д."
+
+#: ../addons/maintenance/admin/panels/manage.php:107
+#, fuzzy
+msgid "YES, DELETE ALL STATS NOW"
+msgstr "ДА, ТЕПЕРЬ УДАЛИТЬ ВСЕ СТАТИСТИКА"
+
+#: ../addons/maintenance/admin/panels/manage.php:120
+#, fuzzy
+msgid "Clean the Users Ultra Ratings"
+msgstr "Очистить Ultra рейтинги пользователей"
+
+#: ../addons/maintenance/admin/panels/manage.php:122
+#, fuzzy
+msgid ""
+"Use this function to delete all the UU reviews. This option will delete all "
+"the user reviews, photo reviews, gallery reviews etc etc."
+msgstr ""
+"Используйте эту функцию для удаления все обзоры UU. Эта опция будет удалять "
+"все отзывы пользователей, Фото обзоры, Галерея обзоры и т.д. и т.п."
+
+#: ../addons/maintenance/admin/panels/manage.php:125
+#, fuzzy
+msgid "YES, DELETE ALL RATINGS NOW"
+msgstr "ДА, ТЕПЕРЬ УДАЛИТЬ ВСЕ РЕЙТИНГИ"
+
+#: ../addons/photocategories/admin/admin.php:33
+#, fuzzy
+msgid "Manage Photo Categories"
+msgstr "Управление категориями фото"
+
+#: ../addons/photocategories/admin/admin.php:89
+#: ../admin/tabs/membership.php:61
+#: ../xooclasses/xoo.userultra.payment.paypal.php:580
+#, fuzzy
+msgid "Name:"
+msgstr "Имя:"
+
+#: ../addons/photocategories/admin/admin.php:94
+#: ../xooclasses/xoo.userultra.mymessage.php:206
+#: ../xooclasses/xoo.userultra.photos.php:1601
+#: ../xooclasses/xoo.userultra.photos.php:1719
+#: ../xooclasses/xoo.userultra.photos.php:1840
+#, fuzzy
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../addons/photocategories/admin/admin.php:94
+#: ../xooclasses/xoo.userultra.photos.php:1601
+#: ../xooclasses/xoo.userultra.photos.php:1719
+#: ../xooclasses/xoo.userultra.photos.php:1840
+#, fuzzy
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../addons/photocategories/admin/admin.php:135
+#, fuzzy
+msgid "Photo Categories"
+msgstr "Фото категории"
+
+#: ../addons/photocategories/admin/panels/manage.php:12
+#: ../admin/tabs/fields.php:262 ../admin/tabs/fields.php:660
+#: ../admin/tabs/membership.php:53 ../admin/tabs/orders.php:44
+#, fuzzy
+msgid "Sucess "
+msgstr "Успеха"
+
+#: ../addons/photocategories/admin/panels/manage.php:14
+#, fuzzy
+msgid "Add New Category "
+msgstr "Добавить новую категорию"
+
+#: ../addons/photocategories/admin/panels/manage.php:18
+msgid "Name: "
+msgstr "Имя:"
+
+#: ../addons/photocategories/admin/panels/manage.php:24
+#: ../admin/tabs/membership.php:147
+#: ../xooclasses/xoo.userultra.payment.paypal.php:728
+#: ../xooclasses/xoo.userultra.user.php:800
+#: ../xooclasses/xoo.userultra.user.php:868
+#: ../xooclasses/xoo.userultra.user.php:936
+#, fuzzy
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: ../addons/photocategories/admin/panels/manage.php:43
+#: ../admin/tabs/orders.php:145
+msgid "#"
+msgstr "#"
+
+#: ../addons/photocategories/admin/panels/manage.php:44
+#: ../templates/basic/dashboard.php:468 ../templates/basic/dashboard.php:888
+#: ../xooclasses/xoo.userultra.payment.paypal.php:758
+#: ../xooclasses/xoo.userultra.photos.php:1560
+#: ../xooclasses/xoo.userultra.photos.php:1700
+#: ../xooclasses/xoo.userultra.photos.php:1821
+#, fuzzy
+msgid "Name"
+msgstr "Имя"
+
+#: ../addons/photocategories/admin/panels/manage.php:49
+#: ../xooclasses/xoo.userultra.publisher.php:476
+#, fuzzy
+msgid "Actions"
+msgstr "Действия"
+
+#: ../addons/photocategories/admin/panels/manage.php:70
+#: ../admin/tabs/fields.php:348 ../xooclasses/xoo.userultra.mymessage.php:915
+#: ../xooclasses/xoo.userultra.mymessage.php:1045
+#: ../xooclasses/xoo.userultra.mymessage.php:1097
+#: ../xooclasses/xoo.userultra.payment.paypal.php:788
+#: ../xooclasses/xoo.userultra.user.php:935
+#, fuzzy
+msgid "Delete"
+msgstr "Удалить"
+
+#: ../addons/photocategories/admin/panels/manage.php:71
+#: ../admin/tabs/fields.php:348
+#: ../xooclasses/xoo.userultra.payment.paypal.php:788
+#: ../xooclasses/xoo.userultra.publisher.php:492
+#, fuzzy
+msgid "Edit"
+msgstr "Править"
+
+#: ../addons/photocategories/admin/panels/manage.php:86
+#, fuzzy
+msgid "There are no categories yet."
+msgstr "Нет еще ни одной рубрики"
+
+#: ../admin/tabs/customizer.php:11
+#, fuzzy
+msgid "Customizer"
+msgstr "Настройщик"
+
+#: ../admin/tabs/customizer.php:13
+#, fuzzy
+msgid "Use this section to add custom CSS styles."
+msgstr "Этот раздел используется для добавления пользовательских стилей CSS."
+
+#: ../admin/tabs/customizer.php:21
+#, fuzzy
+msgid "Custom CSS Style"
+msgstr "Пользовательские CSS Style"
+
+#: ../admin/tabs/customizer.php:22 ../admin/tabs/customizer.php:23
+#, fuzzy
+msgid "You can write some custom CSS style coding here"
+msgstr ""
+"Вы можете написать некоторые пользовательские CSS стиль кодирования здесь"
+
+#: ../admin/tabs/customizer.php:38 ../admin/tabs/gateway.php:83
+#: ../admin/tabs/mail.php:222 ../admin/tabs/membership.php:38
+#: ../admin/tabs/permalinks.php:148 ../admin/tabs/settings.php:1221
+#, fuzzy
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: ../admin/tabs/donate.php:8
+#, fuzzy
+msgid "Support Users Ultra Lite with your donation!"
+msgstr "Поддержка пользователей Ultra Lite с пожертвование!"
+
+#: ../admin/tabs/donate.php:9
+#, fuzzy
+msgid ""
+"If you like Users Ultra and you are satisfied with the plugin, isn't that "
+"worth a coffee or two? Please consider donating via PayPal. Any amount is "
+"appreciated. Donations help us to continue support and development of this "
+"free software!"
+msgstr ""
+"Если вам нравится Ultra пользователей, и вы будете удовлетворены плагин, "
+"разве это не стоит кофе или два? Просьба рассмотрите пожертвование через "
+"PayPal. Приветствуется любая сумма. Пожертвования помогут нам продолжить "
+"поддержку и развитие этого свободного программного обеспечения!"
+
+#: ../admin/tabs/fields.php:14
+#, fuzzy
+msgid "Profile Fields Customizer"
+msgstr "Профиль поля настройщик"
+
+#: ../admin/tabs/fields.php:17
+#, fuzzy
+msgid ""
+"Organize profile fields, add custom fields to profiles, control privacy of "
+"each field, and more using the following customizer. You can drag and drop "
+"the fields to change the order in which they are displayed on profiles and "
+"the registration form."
+msgstr ""
+"Организация полей профиля, добавлять пользовательские поля для профилей, "
+"контролировать частную жизнь каждого поля и многое другое с помощью "
+"следующей настройщик. Вы можете перетащить поля, чтобы изменить порядок, в "
+"котором они отображаются на профилях и в регистрационной форме."
+
+#: ../admin/tabs/fields.php:22
+#, fuzzy
+msgid "Profile fields have been restored"
+msgstr "Профиль поля были восстановлены"
+
+#: ../admin/tabs/fields.php:26
+#, fuzzy
+msgid "Click here to add new field"
+msgstr "Нажмите здесь, чтобы добавить новое поле"
+
+#: ../admin/tabs/fields.php:31
+#, fuzzy
+msgid "Click here to restore default fields"
+msgstr "Нажмите здесь, чтобы восстановить поля по умолчанию"
+
+#: ../admin/tabs/fields.php:41 ../admin/tabs/membership.php:103
+#: ../xooclasses/xoo.userultra.payment.paypal.php:595
+#: ../xooclasses/xoo.userultra.payment.paypal.php:762
+#: ../xooclasses/xoo.userultra.photos.php:1828
+#, fuzzy
+msgid "Type"
+msgstr "Тип"
+
+#: ../admin/tabs/fields.php:45 ../admin/tabs/fields.php:381
+#, fuzzy
+msgid "Profile Field"
+msgstr "Профиль поле"
+
+#: ../admin/tabs/fields.php:48 ../admin/tabs/fields.php:384
+#, fuzzy
+msgid "Separator"
+msgstr "Разделитель"
+
+#: ../admin/tabs/fields.php:51 ../admin/tabs/fields.php:387
+#, fuzzy
+msgid "You can create a separator or a usermeta (profile field)"
+msgstr "Вы можете создать разделитель или usermeta (профиль поле)"
+
+#: ../admin/tabs/fields.php:56
+#, fuzzy
+msgid "Editor / Input Type"
+msgstr "Editor / Тип входа"
+
+#: ../admin/tabs/fields.php:65 ../admin/tabs/fields.php:405
+#, fuzzy
+msgid ""
+"When user edit profile, this field can be an input (text, textarea, image "
+"upload, etc.)"
+msgstr ""
+"Когда пользователь редактировать профиль, это поле может быть входным "
+"(текст, textarea, загрузки изображений и т.д.)"
+
+#: ../admin/tabs/fields.php:70
+#, fuzzy
+msgid "Existing Meta Key / Field"
+msgstr "Существующие Meta ключ / Field"
+
+#: ../admin/tabs/fields.php:74
+#, fuzzy
+msgid "Choose a Meta Key"
+msgstr "Выберите Meta ключ"
+
+#: ../admin/tabs/fields.php:78 ../admin/tabs/fields.php:106
+#, fuzzy
+msgid "New Custom Meta Key"
+msgstr "Новый пользовательский Мета Key"
+
+#: ../admin/tabs/fields.php:99 ../admin/tabs/fields.php:433
+#, fuzzy
+msgid ""
+"Choose from a predefined/available list of meta fields (usermeta) or skip "
+"this to define a new custom meta key for this field below."
+msgstr ""
+"Выберите из предопределенного / списка доступных мета полей (usermeta) или "
+"пропустить этот определить новый ключ пользовательского мета для этого поля "
+"ниже."
+
+#: ../admin/tabs/fields.php:111 ../admin/tabs/fields.php:442
+#, fuzzy
+msgid ""
+"Enter a custom meta key for this profile field if do not want to use a "
+"predefined meta field above. It is recommended to only use alphanumeric "
+"characters and underscores, for example my_custom_meta is a proper meta key."
+msgstr ""
+"Введите пользовательский ключ мета для этого поля профиля, если не хотите "
+"использовать стандартные мета поля выше. Рекомендуется использовать только "
+"алфавитно-цифровые символы и знак подчеркивания, например my_custom_meta "
+"ключ надлежащего мета."
+
+#: ../admin/tabs/fields.php:116
+#, fuzzy
+msgid "Label"
+msgstr "Ярлык"
+
+#: ../admin/tabs/fields.php:122 ../admin/tabs/fields.php:450
+#, fuzzy
+msgid ""
+"Enter the label / name of this field as you want it to appear in front-end "
+"(Profile edit/view)"
+msgstr ""
+"Введите метку / имя этого поля, как вы хотите, чтобы появиться в переднем "
+"конце (профиля редактирования / просмотра)"
+
+#: ../admin/tabs/fields.php:127 ../admin/tabs/fields.php:457
+#, fuzzy
+msgid "Tooltip Text"
+msgstr "Уровень Партнерства"
+
+#: ../admin/tabs/fields.php:133 ../admin/tabs/fields.php:462
+#, fuzzy
+msgid "A tooltip text can be useful for social buttons on profile header."
+msgstr ""
+"Подсказка текст может быть полезно для социальных кнопок в профиле заголовке."
+
+#: ../admin/tabs/fields.php:138 ../admin/tabs/fields.php:467
+#, fuzzy
+msgid "This field is social"
+msgstr "Это поле является социальная"
+
+#: ../admin/tabs/fields.php:142 ../admin/tabs/fields.php:160
+#: ../admin/tabs/fields.php:172 ../admin/tabs/fields.php:190
+#: ../admin/tabs/fields.php:202 ../admin/tabs/fields.php:218
+#: ../admin/tabs/fields.php:233 ../admin/tabs/fields.php:471
+#: ../admin/tabs/fields.php:490 ../admin/tabs/fields.php:502
+#: ../admin/tabs/fields.php:522 ../admin/tabs/fields.php:535
+#: ../admin/tabs/fields.php:551 ../admin/tabs/fields.php:587
+#: ../admin/tabs/gateway.php:29 ../admin/tabs/membership.php:113
+#: ../admin/tabs/settings.php:59 ../admin/tabs/settings.php:73
+#: ../admin/tabs/settings.php:86 ../admin/tabs/settings.php:99
+#: ../admin/tabs/settings.php:112 ../admin/tabs/settings.php:318
+#: ../admin/tabs/settings.php:357 ../admin/tabs/settings.php:911
+#: ../admin/tabs/settings.php:924 ../admin/tabs/settings.php:946
+#: ../admin/tabs/settings.php:969 ../admin/tabs/settings.php:989
+#: ../admin/tabs/settings.php:1011 ../admin/tabs/settings.php:1024
+#: ../admin/tabs/settings.php:1055 ../admin/tabs/settings.php:1077
+#: ../admin/tabs/settings.php:1100
+#: ../xooclasses/xoo.userultra.payment.paypal.php:673
+msgid "No"
+msgstr "Нет"
+
+#: ../admin/tabs/fields.php:145 ../admin/tabs/fields.php:157
+#: ../admin/tabs/fields.php:175 ../admin/tabs/fields.php:187
+#: ../admin/tabs/fields.php:205 ../admin/tabs/fields.php:221
+#: ../admin/tabs/fields.php:236 ../admin/tabs/fields.php:474
+#: ../admin/tabs/fields.php:487 ../admin/tabs/fields.php:505
+#: ../admin/tabs/fields.php:519 ../admin/tabs/fields.php:538
+#: ../admin/tabs/fields.php:554 ../admin/tabs/fields.php:590
+#: ../admin/tabs/gateway.php:30 ../admin/tabs/membership.php:112
+#: ../admin/tabs/settings.php:60 ../admin/tabs/settings.php:74
+#: ../admin/tabs/settings.php:87 ../admin/tabs/settings.php:100
+#: ../admin/tabs/settings.php:113 ../admin/tabs/settings.php:317
+#: ../admin/tabs/settings.php:358 ../admin/tabs/settings.php:912
+#: ../admin/tabs/settings.php:925 ../admin/tabs/settings.php:947
+#: ../admin/tabs/settings.php:970 ../admin/tabs/settings.php:990
+#: ../admin/tabs/settings.php:1012 ../admin/tabs/settings.php:1025
+#: ../admin/tabs/settings.php:1056 ../admin/tabs/settings.php:1078
+#: ../admin/tabs/settings.php:1101
+#: ../xooclasses/xoo.userultra.payment.paypal.php:672
+#, fuzzy
+msgid "Yes"
+msgstr "Да"
+
+#: ../admin/tabs/fields.php:148 ../admin/tabs/fields.php:477
+#, fuzzy
+msgid ""
+"A social field can show a button with your social profile in the head of "
+"your profile. Such as Facebook page, Twitter, etc."
+msgstr ""
+"Социальное поле может показать кнопку с вашей социальной профиль в голове "
+"вашего профиля. Такие, как Facebook странице, Twitter и т.д."
+
+#: ../admin/tabs/fields.php:153 ../admin/tabs/fields.php:483
+#, fuzzy
+msgid "User can edit"
+msgstr "Пользователь может редактировать"
+
+#: ../admin/tabs/fields.php:163 ../admin/tabs/fields.php:493
+#, fuzzy
+msgid "Users can edit this profile field or not."
+msgstr "Пользователи могут редактировать это поле профиля или нет."
+
+#: ../admin/tabs/fields.php:168
+#, fuzzy
+msgid "Allow HTML Content"
+msgstr "Разрешить HTML Содержимое"
+
+#: ../admin/tabs/fields.php:178 ../admin/tabs/fields.php:508
+#, fuzzy
+msgid "If yes, users will be able to write HTML code in this field."
+msgstr "Если да, то пользователи смогут написать код в этой области."
+
+#: ../admin/tabs/fields.php:183 ../admin/tabs/fields.php:515
+#, fuzzy
+msgid "User can hide"
+msgstr "Пользователь может скрыть"
+
+#: ../admin/tabs/fields.php:193 ../admin/tabs/fields.php:525
+#, fuzzy
+msgid ""
+"Allow users to hide this profile field from public viewing or not. Selecting "
+"No will cause the field to always be publicly visible if you have public "
+"viewing of profiles enabled. Selecting Yes will give the user a choice if "
+"the field should be publicy visible or not. Private fields are not affected "
+"by this option."
+msgstr ""
+"Разрешить пользователям скрывать это поле профиля для публичного показа или "
+"нет. Выбор Нет приведет поля, чтобы всегда быть общедоступными, если у вас "
+"есть публичного просмотра профилей включены. Выбор Да даст пользователю "
+"выбор, если поле должно быть publicy видимым или нет. Частные поля не "
+"зависит от этой опции."
+
+#: ../admin/tabs/fields.php:198 ../admin/tabs/fields.php:531
+msgid "This field is private"
+msgstr "Это поле является частным"
+
+#: ../admin/tabs/fields.php:208 ../admin/tabs/fields.php:541
+#, fuzzy
+msgid "Make this field Private. Only admins can see private fields."
+msgstr ""
+"Сделать это поле скрыто. Только администраторы могут видеть закрытые поля."
+
+#: ../admin/tabs/fields.php:214
+#, fuzzy
+msgid "This field is required"
+msgstr "Это обязательное поле"
+
+#: ../admin/tabs/fields.php:224 ../admin/tabs/fields.php:557
+#, fuzzy
+msgid ""
+"Selecting yes will force user to provide a value for this field at "
+"registeration and edit profile. Registration or profile edits will not be "
+"accepted if this field is left empty."
+msgstr ""
+"Выбор да будет вынуждать пользователя, чтобы обеспечить значение для этого "
+"поля в Registeration и редактирования профиля. Регистрация или профиль "
+"правки не будут приняты, если оставить это поле пустым."
+
+#: ../admin/tabs/fields.php:229
+#, fuzzy
+msgid "Show on Registration form"
+msgstr "Показать на регистрационной форме"
+
+#: ../admin/tabs/fields.php:239
+#, fuzzy
+msgid ""
+"Show this field on the registration form? If you choose no, this field will "
+"be shown on edit profile only and not on the registration form. Most users "
+"prefer fewer fields when registering, so use this option with care."
+msgstr ""
+"Показать это поле в регистрационной форме? Если вы выбираете Нет, это поле "
+"не будет показан на Редактировать профиль только и не на регистрационную "
+"форму. Большинство пользователей предпочитают меньше полей при регистрации, "
+"поэтому используйте эту опцию с осторожностью."
+
+#: ../admin/tabs/fields.php:248
+#, fuzzy
+msgid "Icon for this field"
+msgstr "Иконка для этой области"
+
+#: ../admin/tabs/fields.php:251 ../admin/tabs/fields.php:620
+#: ../admin/tabs/fields.php:637 ../admin/tabs/fields.php:643
+#: ../admin/tabs/settings.php:546
+#, fuzzy
+msgid "None"
+msgstr "Ничего"
+
+#: ../admin/tabs/fields.php:263
+#, fuzzy
+msgid "Submit New Field"
+msgstr "Отправить новое поле"
+
+#: ../admin/tabs/fields.php:265 ../admin/tabs/fields.php:666
+#: ../admin/tabs/membership.php:146 ../templates/basic/dashboard.php:479
+#: ../templates/basic/dashboard.php:914
+#: ../xooclasses/xoo.userultra.payment.paypal.php:727
+#, fuzzy
+msgid "Cancel"
+msgstr "Отменить"
+
+#: ../admin/tabs/fields.php:279
+#, fuzzy
+msgid "CLICK TO CONFIRM REARRANGE "
+msgstr "НАЖМИТЕ, ЧТОБЫ ПОДТВЕРДИТЬ ИЗМЕНЕНИЯ ПОРЯДКА"
+
+#: ../admin/tabs/fields.php:330
+msgid " - Separator"
+msgstr "Разделитель"
+
+#: ../admin/tabs/fields.php:333
+msgid " - Profile Field"
+msgstr "-Поле Профиль"
+
+#: ../admin/tabs/fields.php:359
+#, fuzzy
+msgid "Sucess! This field has been deleted "
+msgstr "Успеха! Это поле было удалено"
+
+#: ../admin/tabs/fields.php:368
+#, fuzzy
+msgid "Position"
+msgstr "Должность"
+
+#: ../admin/tabs/fields.php:373
+#, fuzzy
+msgid ""
+"Please use a unique position. Position lets you place the new field in the "
+"place you want exactly in Profile view."
+msgstr ""
+"Пожалуйста, используйте уникальное положение. Положение позволяет размещать "
+"новое поле в нужное место точно в Профилирование."
+
+#: ../admin/tabs/fields.php:377
+#, fuzzy
+msgid "Field Type"
+msgstr "Тип поля"
+
+#: ../admin/tabs/fields.php:393
+#, fuzzy
+msgid "Field Input"
+msgstr "Поле ввода"
+
+#: ../admin/tabs/fields.php:409
+#, fuzzy
+msgid "Choose Meta Field"
+msgstr "Выберите Meta поле"
+
+#: ../admin/tabs/fields.php:413
+#, fuzzy
+msgid "Choose a user field"
+msgstr "Выберите поле пользователя"
+
+#: ../admin/tabs/fields.php:437
+#, fuzzy
+msgid "Custom Meta Field"
+msgstr "Произвольное поле"
+
+#: ../admin/tabs/fields.php:446
+#, fuzzy
+msgid "Label / Name"
+msgstr "Метка названия"
+
+#: ../admin/tabs/fields.php:498
+#, fuzzy
+msgid "Allow HTML"
+msgstr "Разрешить HTML"
+
+#: ../admin/tabs/fields.php:547
+#, fuzzy
+msgid "This field is Required"
+msgstr "Это поле обязательно для заполнения."
+
+#: ../admin/tabs/fields.php:583
+msgid "Show on Registration Form"
+msgstr "Показать на регистрационной форме"
+
+#: ../admin/tabs/fields.php:593
+#, fuzzy
+msgid "Show this profile field on the registration form"
+msgstr "Показать это поле профиля в регистрационной форме"
+
+#: ../admin/tabs/fields.php:609
+#, fuzzy
+msgid "Available Choices"
+msgstr "Доступные варианты"
+
+#: ../admin/tabs/fields.php:612
+#, fuzzy
+msgid ""
+"Enter one choice per line please. The choices will be available for front "
+"end user to choose from."
+msgstr ""
+"Введите один выбор в каждой строке, пожалуйста. Выбор будет доступна для "
+"переднего конечного пользователя, чтобы выбрать из."
+
+#: ../admin/tabs/fields.php:616
+#, fuzzy
+msgid "Enable Predefined Choices"
+msgstr "Включить предложенных вариантов"
+
+#: ../admin/tabs/fields.php:623
+#, fuzzy
+msgid "List of Countries"
+msgstr "Список стран"
+
+#: ../admin/tabs/fields.php:627 ../xooclasses/xoo.userultra.class.php:1241
+#, fuzzy
+msgid "Age"
+msgstr "Возраст"
+
+#: ../admin/tabs/fields.php:630
+#, fuzzy
+msgid ""
+"You can enable a predefined filter for choices. e.g. List of countries It "
+"enables country selection in profiles and saves you time to do it on your "
+"own."
+msgstr ""
+"Вы можете включить встроенный фильтр для выбора. например в списке стран Это "
+"позволяет выбор страны в профилях и экономит ваше время, чтобы сделать это "
+"по своему усмотрению."
+
+#: ../admin/tabs/fields.php:635
+#, fuzzy
+msgid "Field Icon:"
+msgstr "Поле Icon:"
+
+#: ../admin/tabs/fields.php:639
+#, fuzzy
+msgid "Change Icon"
+msgstr "Изменить иконку"
+
+#: ../admin/tabs/fields.php:665 ../xooclasses/xoo.userultra.publisher.php:224
+#: ../xooclasses/xoo.userultra.user.php:1826
+#, fuzzy
+msgid "Update"
+msgstr "Обновить"
+
+#: ../admin/tabs/fields.php:687
+#, fuzzy
+msgid "Are you totally sure that you want to delete this field?"
+msgstr "Вы уверены, что хотите удалить это поле?"
+
+#: ../admin/tabs/fields.php:689
+#, fuzzy
+msgid "Are you totally sure that you want to restore the default fields?"
+msgstr "Вы полностью уверены, что вы хотите восстановить поля по умолчанию?"
+
+#: ../admin/tabs/gateway.php:1
+#, fuzzy
+msgid "Payment Gateways Settings"
+msgstr "Настройки платежные шлюзов"
+
+#: ../admin/tabs/gateway.php:6
+#, fuzzy
+msgid "Paypal Settings"
+msgstr "Настроки PayPal"
+
+#: ../admin/tabs/gateway.php:8
+#, fuzzy
+msgid "Here you can configure Paypal if you wish to accept paid registrations"
+msgstr ""
+"Здесь вы можете настроить Paypal, если вы хотите принять платных регистраций"
+
+#: ../admin/tabs/gateway.php:17
+#, fuzzy
+msgid "Activate Paypal"
+msgstr "Активировать PayPal?"
+
+#: ../admin/tabs/gateway.php:19 ../admin/tabs/gateway.php:20
+#, fuzzy
+msgid "If checked, Paypal will be activated as payment method"
+msgstr "Если флажок установлен, будет активирован Paypal как способ оплаты"
+
+#: ../admin/tabs/gateway.php:27
+#, fuzzy
+msgid "The Paypal IPN response will be sent to the admin"
+msgstr "Paypal IPN ответ будет отправлен в админку"
+
+#: ../admin/tabs/gateway.php:33 ../admin/tabs/gateway.php:34
+#, fuzzy
+msgid ""
+"If 'yes' the admin will receive the whole Paypal IPN response. This helps to "
+"troubleshoot issues."
+msgstr ""
+"Если «да» администратор получит весь Paypal IPN ответ. Это помогает для "
+"устранения неполадок."
+
+#: ../admin/tabs/gateway.php:40
+#, fuzzy
+msgid "Paypal Email Address"
+msgstr "Адрес эл.почты PayPal"
+
+#: ../admin/tabs/gateway.php:41 ../admin/tabs/gateway.php:42
+#, fuzzy
+msgid "Enter email address associated to your paypal account."
+msgstr "Введите адрес электронной почты на ваш счет paypal."
+
+#: ../admin/tabs/gateway.php:48
+#, fuzzy
+msgid "Paypal Sandbox Email Address"
+msgstr "Адрес электронной почты Paypal Песочница"
+
+#: ../admin/tabs/gateway.php:49 ../admin/tabs/gateway.php:50
+#, fuzzy
+msgid "This is not used for production, you can use this email for testing."
+msgstr ""
+"Не используется для производства, вы можете использовать этот адрес для "
+"тестирования."
+
+#: ../admin/tabs/gateway.php:56 ../admin/tabs/membership.php:20
+#, fuzzy
+msgid "Currency"
+msgstr "Валюта"
+
+#: ../admin/tabs/gateway.php:57 ../admin/tabs/gateway.php:58
+#, fuzzy
+msgid "Please enter the currency, example USD."
+msgstr "Укажите валюту, например USD."
+
+#: ../admin/tabs/gateway.php:64
+#, fuzzy
+msgid "Mode"
+msgstr "Режим"
+
+#: ../admin/tabs/gateway.php:66
+#, fuzzy
+msgid "Production Mode"
+msgstr "Режим LIVE."
+
+#: ../admin/tabs/gateway.php:67
+#, fuzzy
+msgid "Test Mode (Sandbox)"
+msgstr "Тестовый режим (Sandbox)"
+
+#: ../admin/tabs/gateway.php:70 ../admin/tabs/gateway.php:71
+#, fuzzy
+msgid "Select Mode"
+msgstr "Режим выбора"
+
+#: ../admin/tabs/help.php:8
+#, fuzzy
+msgid "Documentation and User Guide"
+msgstr "Документация и руководство пользователя"
+
+#: ../admin/tabs/help.php:9
+#, fuzzy
+msgid ""
+"Here there are some useful shortocodes that will help you to start your "
+"online community in minutes."
+msgstr ""
+"Здесь есть некоторые полезные shortocodes, которые помогут вам начать свой "
+"Интернет-сообщество в считанные минуты."
+
+#: ../admin/tabs/help.php:11
+#, fuzzy
+msgid ""
+"<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE  </a>to "
+"check the online documentation"
+msgstr ""
+"<a href='http://usersultra.com/doc.html' target='_blank'>Нажмите здесь, </"
+"a>чтобы проверить онлайн документация"
+
+#: ../admin/tabs/help.php:13
+#, fuzzy
+msgid ""
+"<a href='http://www.usersultra.com/support/' target='_blank'>CLICK HERE </"
+"a>to visit Support Forum"
+msgstr ""
+"<a href='http://www.usersultra.com/support/' target='_blank'>Нажмите здесь, "
+"</a>чтобы посетить форум поддержки"
+
+#: ../admin/tabs/help.php:15
+#, fuzzy
+msgid ""
+"<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>CLICK "
+"HERE TO RATE IT </a>"
+msgstr ""
+"<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>НАЖМИТЕ "
+"ЗДЕСЬ, ЧТОБЫ ОЦЕНИТЬ ЕГО</a>"
+
+#: ../admin/tabs/help.php:23
+#, fuzzy
+msgid "Common Shortcodes"
+msgstr "Короткие общие номера"
+
+#: ../admin/tabs/help.php:25
+#, fuzzy
+msgid "Registration Form"
+msgstr "Форма регистрации"
+
+#: ../admin/tabs/help.php:27
+#, fuzzy
+msgid "Login Form"
+msgstr "Форма входа"
+
+#: ../admin/tabs/help.php:30 ../templates/basic/dashboard.php:740
+#: ../xooclasses/xoo.userultra.class.php:1037
+#: ../xooclasses/xoo.userultra.user.php:2242
+#: ../xooclasses/xoo.userultra.user.php:2246
+#, fuzzy
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: ../admin/tabs/help.php:33
+#, fuzzy
+msgid "Disable modules for some Users"
+msgstr "Отключить модули для некоторых пользователей"
+
+#: ../admin/tabs/help.php:36 ../xooclasses/xoo.userultra.user.php:2382
+#: ../xooclasses/xoo.userultra.user.php:2770
+#, fuzzy
+msgid "Logout"
+msgstr "Выйти"
+
+#: ../admin/tabs/help.php:39 ../xooclasses/xoo.userultra.class.php:917
+#, fuzzy
+msgid "Members Directory"
+msgstr "Просмотреть каталог пользователей"
+
+#: ../admin/tabs/help.php:42
+#, fuzzy
+msgid "Filter Users By Role  "
+msgstr "Фильтр пользователей по ролям"
+
+#: ../admin/tabs/help.php:45
+#, fuzzy
+msgid "Top Rated Users "
+msgstr "Лучшие по рейтингу пользователей"
+
+#: ../admin/tabs/help.php:47
+#, fuzzy
+msgid "Most Visited Users "
+msgstr "Наиболее посещаемые пользователей"
+
+#: ../admin/tabs/help.php:50
+#, fuzzy
+msgid "User Spotlight  "
+msgstr "Внимания пользователя"
+
+#: ../admin/tabs/help.php:53
+#, fuzzy
+msgid "User Profile  "
+msgstr "Профиль пользователя"
+
+#: ../admin/tabs/import.php:8
+#, fuzzy
+msgid "Synchronize Already Users"
+msgstr "Синхронизация уже пользователей"
+
+#: ../admin/tabs/import.php:9
+#, fuzzy
+msgid ""
+"This feature allows you to synchronize the already users in your Wordpress "
+"website so they can be recognized by Users Ultra "
+msgstr ""
+"Эта функция позволяет синхронизировать уже пользователей на вашем сайте "
+"Wordpress, так что они могут быть признаны Ultra пользователей"
+
+#: ../admin/tabs/import.php:13
+#, fuzzy
+msgid "Start Sync Now"
+msgstr "Начать синхронизацию сейчас"
+
+#: ../admin/tabs/import.php:27
+#, fuzzy
+msgid "Import Users"
+msgstr "Импорт пользователей"
+
+#: ../admin/tabs/import.php:28
+#, fuzzy
+msgid ""
+"This feature lets you import users easily into the Users Ultra System. The "
+"file must be CSV format. Delimited Comma-separated Values "
+msgstr ""
+"Эта функция позволяет легко импортировать пользователей в системе Ultra "
+"пользователей. Файл должен быть формата CSV. Значений с разделителями-"
+"запятыми"
+
+#: ../admin/tabs/import.php:30
+#, fuzzy
+msgid ""
+"<b>IMPORTANT: </b> The CSV format should be:  \"user name\", \"email\", "
+"\"display name\", \"registration date\", \"first name\", \"last name\", \"age"
+"\", \"country\"  "
+msgstr ""
+"<b>Важно:</b> Формат CSV должен быть: «имя пользователя», «почта», "
+"«отображаемое имя», «Дата регистрации», «имя», «фамилия», «возраст», «страна»"
+
+#: ../admin/tabs/import.php:39
+#, fuzzy
+msgid "Choose File"
+msgstr "Выбрать файл"
+
+#: ../admin/tabs/import.php:39
+#, fuzzy
+msgid " <b>ONLY CSV EXTENSIONS ALLOWED: </b>  "
+msgstr "<b>ТОЛЬКО CSV РАСШИРЕНИЯ РАЗРЕШЕНЫ:</b>"
+
+#: ../admin/tabs/import.php:43
+#, fuzzy
+msgid "Account Activation: "
+msgstr "Активация аккаунта:"
+
+#: ../admin/tabs/import.php:46
+#, fuzzy
+msgid "Send welcome email with new password "
+msgstr "Отправить Добро письмо с новым паролем"
+
+#: ../admin/tabs/import.php:51
+#, fuzzy
+msgid " Activate account automatically "
+msgstr "Автоматически активировать учетную запись"
+
+#: ../admin/tabs/import.php:57
+#, fuzzy
+msgid " Send Activation Link."
+msgstr "Отправьте ссылку для активации."
+
+#: ../admin/tabs/import.php:62
+#, fuzzy
+msgid "Start Importing"
+msgstr "Начать Импорт"
+
+#: ../admin/tabs/import.php:80
+#, fuzzy
+msgid "Auto Sync with WooCommerce"
+msgstr "Автоматическая синхронизация с WooCommerce"
+
+#: ../admin/tabs/import.php:83
+#, fuzzy
+msgid ""
+"Syncing with WooCommerce will automatically add WooCommerce customer profile "
+"fields to your Users Ultra Plugin. A quick way to have a WooCommerce account "
+"page integrated with Users Ultra. Just click the following button and Users "
+"Ultra will do the work for you."
+msgstr ""
+"Синхронизация с WooCommerce будет автоматически добавить поля профиля "
+"клиента WooCommerce Ultra плагин пользователей. Быстрый способ, чтобы на "
+"странице Учетная запись WooCommerce, интегрирована с Ultra пользователей. "
+"Просто нажмите на кнопку ниже и Ultra пользователей будет делать работу за "
+"вас."
+
+#: ../admin/tabs/import.php:87
+#, fuzzy
+msgid "Sync and keep existing fields"
+msgstr "Синхронизация и сохранить существующие поля"
+
+#: ../admin/tabs/import.php:88
+#, fuzzy
+msgid "Sync and delete existing fields"
+msgstr "Sync и удалить существующие поля"
+
+#: ../admin/tabs/import.php:96
+#, fuzzy
+msgid "Please install WooCommerce plugin first."
+msgstr "Пожалуйста, сначала установите плагин WooCommerce."
+
+#: ../admin/tabs/import.php:104 ../admin/tabs/licence.php:31
+#, fuzzy
+msgid "Please wait, this process may take several minutes"
+msgstr "Пожалуйста подождите, этот процесс может занять несколько минут"
+
+#: ../admin/tabs/licence.php:8
+#, fuzzy
+msgid "Validate your copy"
+msgstr "Проверить вашу копию"
+
+#: ../admin/tabs/licence.php:9
+#, fuzzy
+msgid ""
+"Please fill out the form below with the serial number generated when you "
+"registered your domain through your account at UsersUltra.com"
+msgstr ""
+"Пожалуйста, заполните форму ниже с серийным номером, когда вы "
+"зарегистрировали ваш домен через ваш аккаунт на UsersUltra.com"
+
+#: ../admin/tabs/licence.php:11
+#, fuzzy
+msgid "INPUT YOUR SERIAL KEY"
+msgstr "ВВЕДИТЕ ВАШ СЕРИЙНЫЙ КЛЮЧ"
+
+#: ../admin/tabs/licence.php:16
+#, fuzzy
+msgid "CLICK HERE TO VALIDATE YOUR COPY"
+msgstr "НАЖМИТЕ ЗДЕСЬ ЧТОБЫ ПРОВЕРИТЬ ВАШУ КОПИЮ"
+
+#: ../admin/tabs/mail.php:1
+#, fuzzy
+msgid "Notifications Settings"
+msgstr "Уведомления Настройки"
+
+#: ../admin/tabs/mail.php:6
+#, fuzzy
+msgid "Custom Messages"
+msgstr "Пользовательские сообщения"
+
+#: ../admin/tabs/mail.php:8 ../admin/tabs/mail.php:17
+#: ../admin/tabs/mail.php:18
+#, fuzzy
+msgid "This message will be displayed in the User Panel Controls"
+msgstr ""
+"Это сообщение будет отображаться в панели элементов управления пользователя"
+
+#: ../admin/tabs/mail.php:16
+#, fuzzy
+msgid "Message To Display"
+msgstr "Сообщение для отображения"
+
+#: ../admin/tabs/mail.php:30
+#, fuzzy
+msgid "Welcome Email Address"
+msgstr "Добро пожаловать электронный адрес"
+
+#: ../admin/tabs/mail.php:32
+#, fuzzy
+msgid ""
+"This is the welcome email that is sent to the client when registering a new "
+"account"
+msgstr ""
+"Это Добро электронной почты, которое отправляется клиенту при регистрации "
+"новой учетной записи"
+
+#: ../admin/tabs/mail.php:43
+#, fuzzy
+msgid "Mailer:"
+msgstr "Клијент"
+
+#: ../admin/tabs/mail.php:45
+#, fuzzy
+msgid "Use the PHP mail() function to send emails"
+msgstr "Используйте функцию PHP mail() для отправки писем"
+
+#: ../admin/tabs/mail.php:46
+#, fuzzy
+msgid "Send all Users Ultra emails via Third-Party Plugins"
+msgstr "Отправлять всех пользователей Ultra письма через сторонних плагинов"
+
+#: ../admin/tabs/mail.php:50 ../admin/tabs/mail.php:51
+#, fuzzy
+msgid "Specify which mailer method Users Ultra should use when sending emails."
+msgstr ""
+"Укажите, какой метод mailer, Ultra пользователей следует использовать при "
+"отправке писем."
+
+#: ../admin/tabs/mail.php:57
+#, fuzzy
+msgid "Send From Name"
+msgstr "Отправить от имени"
+
+#: ../admin/tabs/mail.php:58 ../admin/tabs/mail.php:59
+#, fuzzy
+msgid "Enter the your name or company name here."
+msgstr "Введите ваше имя или название компании здесь."
+
+#: ../admin/tabs/mail.php:65
+#, fuzzy
+msgid "Send From Email"
+msgstr "Отправить с электронной почты"
+
+#: ../admin/tabs/mail.php:66 ../admin/tabs/mail.php:67
+#, fuzzy
+msgid "Enter the email address to be used when sending emails."
+msgstr "Введите адрес электронной почты для использования при отправке писем."
+
+#: ../admin/tabs/mail.php:73
+#, fuzzy
+msgid "Client Welcome Message"
+msgstr "Приветственное сообщение клиента"
+
+#: ../admin/tabs/mail.php:74 ../admin/tabs/mail.php:75
+#, fuzzy
+msgid "This message will be sent to the user."
+msgstr "Это сообщение будет отправлено пользователю."
+
+#: ../admin/tabs/mail.php:81
+#, fuzzy
+msgid "Account Activation Message"
+msgstr "Сообщение для активации учетной записи"
+
+#: ../admin/tabs/mail.php:82 ../admin/tabs/mail.php:83
+#, fuzzy
+msgid ""
+"This message will be sent to the user if they need to activate the account "
+"by using the activation link."
+msgstr ""
+"Это сообщение будет отправлено пользователю, если им нужно активировать "
+"учетную запись, используя ссылку активации."
+
+#: ../admin/tabs/mail.php:89
+#, fuzzy
+msgid "Resend Activation Link"
+msgstr "Выслать активацию повторно"
+
+#: ../admin/tabs/mail.php:90 ../admin/tabs/mail.php:91
+#, fuzzy
+msgid ""
+"This message will be sent to the user when clicking the re-send activation "
+"option."
+msgstr ""
+"Это сообщение будет отправлено пользователю при нажатии вариант активации "
+"повторно отправить."
+
+#: ../admin/tabs/mail.php:97
+#, fuzzy
+msgid "Account Verified Message"
+msgstr "Счета проверил сообщение"
+
+#: ../admin/tabs/mail.php:98 ../admin/tabs/mail.php:99
+#, fuzzy
+msgid "This message will be sent to the users when they verify their accounts."
+msgstr ""
+"Это сообщение будет отправлено пользователям, когда они проверяют свои счета."
+
+#: ../admin/tabs/mail.php:105
+#, fuzzy
+msgid "Password Changed Confirmation"
+msgstr "Изменить пароль подтверждения"
+
+#: ../admin/tabs/mail.php:106 ../admin/tabs/mail.php:107
+#, fuzzy
+msgid "This message will be sent to the user when the password has been reset."
+msgstr "Это сообщение будет отправлено пользователю при сбросе пароля."
+
+#: ../admin/tabs/mail.php:119
+#, fuzzy
+msgid "Admin New User Message"
+msgstr "Новое сообщение пользователя Admin"
+
+#: ../admin/tabs/mail.php:120 ../admin/tabs/mail.php:121
+#: ../admin/tabs/mail.php:129 ../admin/tabs/mail.php:130
+#, fuzzy
+msgid "This message will be sent to the admin."
+msgstr "Это сообщение будет отправлено в админ."
+
+#: ../admin/tabs/mail.php:128
+msgid "Admin New Paid User Message"
+msgstr "Новое сообщение пользователя Admin"
+
+#: ../admin/tabs/mail.php:137
+#, fuzzy
+msgid "Admin Pending Activation Message"
+msgstr "Администратор до активации сообщение"
+
+#: ../admin/tabs/mail.php:138 ../admin/tabs/mail.php:139
+#, fuzzy
+msgid ""
+"This message will be sent to the admin if the user needs manual activation."
+msgstr ""
+"Это сообщение будет отправлено с администратором, если пользователю "
+"требуется ручной активации."
+
+#: ../admin/tabs/mail.php:147
+#, fuzzy
+msgid "Client Admin Approbation  Email"
+msgstr "Апробация администратора в клиент электронной почты"
+
+#: ../admin/tabs/mail.php:148 ../admin/tabs/mail.php:149
+#, fuzzy
+msgid ""
+"This message will be sent to the user if the account needs to be approved by "
+"the admin."
+msgstr ""
+"Это сообщение будет отправлено пользователю, если учетной записи должен быть "
+"одобрен админ."
+
+#: ../admin/tabs/mail.php:154
+#, fuzzy
+msgid "Admin New User Approbation  Email"
+msgstr "Email апробация нового пользователя Admin"
+
+#: ../admin/tabs/mail.php:155 ../admin/tabs/mail.php:156
+#, fuzzy
+msgid ""
+"This message will be sent to the admin if an account needs to be approved "
+"manually."
+msgstr ""
+"Это сообщение будет отправлено в админку, если счет должен утверждаться "
+"вручную."
+
+#: ../admin/tabs/mail.php:165
+#, fuzzy
+msgid "User Private Message"
+msgstr "Пользователь Приватное сообщение"
+
+#: ../admin/tabs/mail.php:166 ../admin/tabs/mail.php:167
+#, fuzzy
+msgid ""
+"This message will be sent to users when other users send a private message."
+msgstr ""
+"Это сообщение будет отправлено пользователям, когда другие пользователи "
+"отправить личное сообщение."
+
+#: ../admin/tabs/mail.php:174
+#, fuzzy
+msgid "Friend Request"
+msgstr "Запрос на дружбу"
+
+#: ../admin/tabs/mail.php:175 ../admin/tabs/mail.php:176
+#, fuzzy
+msgid "This message is sent to the users when a friend request is sent"
+msgstr ""
+"Это сообщение отправляется пользователям, когда отправляется запрос на дружбу"
+
+#: ../admin/tabs/mail.php:186 ../xooclasses/xoo.userultra.class.php:1720
+#, fuzzy
+msgid "Password Reset"
+msgstr "Сброс пароля"
+
+#: ../admin/tabs/mail.php:187 ../admin/tabs/mail.php:188
+#, fuzzy
+msgid "This message will be sent to users when requesting a new password."
+msgstr "Это сообщение будет отправлено пользователям при запросе новый пароль."
+
+#: ../admin/tabs/mail.php:195 ../xooclasses/xoo.userultra.messaging.php:244
+msgid "Account Activation"
+msgstr "Активация аккаунта"
+
+#: ../admin/tabs/mail.php:196 ../admin/tabs/mail.php:197
+#, fuzzy
+msgid "This message is sent when the admin approves the user account."
+msgstr ""
+"Это сообщение отправляется, когда администратор утверждает учетную запись "
+"пользователя."
+
+#: ../admin/tabs/mail.php:204
+#, fuzzy
+msgid "Deny Account Activation"
+msgstr "Отказать в активации аккаунта"
+
+#: ../admin/tabs/mail.php:205 ../admin/tabs/mail.php:206
+#, fuzzy
+msgid "This message is sent when the admin does not approve the user account."
+msgstr ""
+"Это сообщение отправляется, когда администратор не разрешает учетной записи "
+"пользователя."
+
+#: ../admin/tabs/main.php:19
+#, fuzzy
+msgid "Welcome to Users Ultra Lite!"
+msgstr "Добро пожаловать на пользователей Ultra Lite!"
+
+#: ../admin/tabs/main.php:22
+#, fuzzy
+msgid "Thank you very much for installing Users Ultra Lite.  "
+msgstr "Спасибо вам большое за установки пользователей Ultra Lite."
+
+#: ../admin/tabs/main.php:32
+#, fuzzy
+msgid "Social Connects Stats"
+msgstr "Соединяет социальная статистика"
+
+#: ../admin/tabs/main.php:88
+#, fuzzy
+msgid "Subscription Stats"
+msgstr "Статистика подписки"
+
+#: ../admin/tabs/main.php:94
+#, fuzzy
+msgid "Today"
+msgstr "Сегодня"
+
+#: ../admin/tabs/main.php:101
+#, fuzzy
+msgid "This Month"
+msgstr "За месяц"
+
+#: ../admin/tabs/main.php:108
+#, fuzzy
+msgid "This Year"
+msgstr "В этом году"
+
+#: ../admin/tabs/main.php:115
+#, fuzzy
+msgid "All Time"
+msgstr "за все время"
+
+#: ../admin/tabs/main.php:121
+#, fuzzy
+msgid "Latest 5 Transactions"
+msgstr "Последние 5 транзакций"
+
+#: ../admin/tabs/main.php:138 ../admin/tabs/orders.php:146
+#: ../xooclasses/xoo.userultra.mymessage.php:535
+#: ../xooclasses/xoo.userultra.mymessage.php:689
+#: ../xooclasses/xoo.userultra.mymessage.php:807
+#: ../xooclasses/xoo.userultra.mymessage.php:1056
+#: ../xooclasses/xoo.userultra.mymessage.php:1117
+#: ../xooclasses/xoo.userultra.order.php:377
+#: ../xooclasses/xoo.userultra.publisher.php:474
+#: ../xooclasses/xoo.userultra.socials.php:517
+#: ../xooclasses/xoo.userultra.socials.php:623
+#: ../xooclasses/xoo.userultra.woocommerce.php:349
+#, fuzzy
+msgid "Date"
+msgstr "Дата"
+
+#: ../admin/tabs/main.php:139 ../admin/tabs/orders.php:147
+#, fuzzy
+msgid "User"
+msgstr "Пользователь"
+
+#: ../admin/tabs/main.php:140 ../admin/tabs/orders.php:149
+#, fuzzy
+msgid "Transaction ID"
+msgstr "ID транзакции"
+
+#: ../admin/tabs/main.php:141 ../admin/tabs/orders.php:152
+#: ../xooclasses/xoo.userultra.order.php:379
+#: ../xooclasses/xoo.userultra.publisher.php:475
+#: ../xooclasses/xoo.userultra.woocommerce.php:351
+#, fuzzy
+msgid "Status"
+msgstr "Статус"
+
+#: ../admin/tabs/main.php:142 ../admin/tabs/orders.php:153
+#, fuzzy
+msgid "Amount"
+msgstr "Цена"
+
+#: ../admin/tabs/main.php:168 ../admin/tabs/orders.php:183
+#, fuzzy
+msgid "There are no transactions yet."
+msgstr "Пока нет никаких транзакций."
+
+#: ../admin/tabs/main.php:189
+#, fuzzy
+msgid "Latest "
+msgstr "Новое"
+
+#: ../admin/tabs/main.php:204 ../xooclasses/xoo.userultra.user.php:776
+#: ../xooclasses/xoo.userultra.user.php:844
+#: ../xooclasses/xoo.userultra.user.php:911
+#, fuzzy
+msgid "Avatar"
+msgstr "Аватар"
+
+#: ../admin/tabs/main.php:205 ../xooclasses/xoo.userultra.class.php:1113
+#: ../xooclasses/xoo.userultra.class.php:1159
+#: ../xooclasses/xoo.userultra.user.php:777
+#: ../xooclasses/xoo.userultra.user.php:845
+#: ../xooclasses/xoo.userultra.user.php:912
+#, fuzzy
+msgid "Username"
+msgstr "Имя"
+
+#: ../admin/tabs/main.php:235
+#, fuzzy
+msgid "There are no pending activation users."
+msgstr "Есть нет пользователей ожидает активации."
+
+#: ../admin/tabs/main.php:249 ../admin/tabs/main.php:256
+#: ../admin/tabs/main.php:262 ../admin/tabs/membership.php:153
+#: ../templates/basic/dashboard.php:264 ../templates/basic/dashboard.php:272
+msgid "loading ..."
+msgstr "Загрузка..."
+
+#: ../admin/tabs/main.php:308
+#, fuzzy
+msgid "Sign up Stats"
+msgstr "Подпишите вверх статистика"
+
+#: ../admin/tabs/main.php:309
+#, fuzzy
+msgid "Sign up Options "
+msgstr "Подпишите вверх варианты"
+
+#: ../admin/tabs/membership.php:10
+#, fuzzy
+msgid "Paid Membership Settings"
+msgstr "Настройки членства"
+
+#: ../admin/tabs/membership.php:12 ../admin/tabs/settings.php:8
+#: ../admin/tabs/settings.php:183 ../admin/tabs/settings.php:213
+#: ../admin/tabs/settings.php:284 ../admin/tabs/settings.php:344
+#: ../admin/tabs/settings.php:414 ../admin/tabs/settings.php:448
+#: ../admin/tabs/settings.php:505 ../admin/tabs/settings.php:616
+#: ../admin/tabs/settings.php:661 ../admin/tabs/settings.php:1119
+msgid "."
+msgstr "."
+
+#: ../admin/tabs/membership.php:21 ../admin/tabs/membership.php:22
+#, fuzzy
+msgid "The default symbol for PayPal payments is USD"
+msgstr "Является символом по умолчанию для платежей PayPal USD"
+
+#: ../admin/tabs/membership.php:28
+#, fuzzy
+msgid "Currency Symbol"
+msgstr "Символ валюты"
+
+#: ../admin/tabs/membership.php:29 ../admin/tabs/membership.php:30
+#, fuzzy
+msgid "Input the currency symbol: Example: $"
+msgstr "Введите символ валюты: пример: $"
+
+#: ../admin/tabs/membership.php:47
+#, fuzzy
+msgid "Membership Packages"
+msgstr "Пакеты членства"
+
+#: ../admin/tabs/membership.php:50
+#, fuzzy
+msgid "Add New Plan"
+msgstr "Добавить новый тарифный план"
+
+#: ../admin/tabs/membership.php:57
+#, fuzzy
+msgid "Add New Membership Package"
+msgstr "Добавить новый пакет"
+
+#: ../admin/tabs/membership.php:65
+#: ../xooclasses/xoo.userultra.publisher.php:204
+#: ../xooclasses/xoo.userultra.publisher.php:373
+#, fuzzy
+msgid "Description:"
+msgstr "Описание:"
+
+#: ../admin/tabs/membership.php:69
+#, fuzzy
+msgid "Price:"
+msgstr "Стоимость:"
+
+#: ../admin/tabs/membership.php:73
+#, fuzzy
+msgid "Every:"
+msgstr "каждую(ый)"
+
+#: ../admin/tabs/membership.php:93
+#, fuzzy
+msgid "Billing Period:"
+msgstr "Период биллинга:"
+
+#: ../admin/tabs/membership.php:96
+#: ../xooclasses/xoo.userultra.payment.paypal.php:652
+#, fuzzy
+msgid "Months"
+msgstr "Месяцы"
+
+#: ../admin/tabs/membership.php:97
+#: ../xooclasses/xoo.userultra.payment.paypal.php:653
+#, fuzzy
+msgid "Weeks"
+msgstr "недель"
+
+#: ../admin/tabs/membership.php:98
+#: ../xooclasses/xoo.userultra.payment.paypal.php:654
+#, fuzzy
+msgid "Days"
+msgstr "дни"
+
+#: ../admin/tabs/membership.php:99
+#: ../xooclasses/xoo.userultra.payment.paypal.php:655
+#, fuzzy
+msgid "Years"
+msgstr "лет"
+
+#: ../admin/tabs/membership.php:105
+#: ../xooclasses/xoo.userultra.payment.paypal.php:606
+#, fuzzy
+msgid "Recurring"
+msgstr "Повторяющаяся"
+
+#: ../admin/tabs/membership.php:106
+#: ../xooclasses/xoo.userultra.payment.paypal.php:607
+#, fuzzy
+msgid "One-Time"
+msgstr "Ван-таймер"
+
+#: ../admin/tabs/membership.php:110
+#: ../xooclasses/xoo.userultra.payment.paypal.php:661
+#, fuzzy
+msgid "Requires Admin Moderation:"
+msgstr "Требует умеренности администратора:"
+
+#: ../admin/tabs/membership.php:118
+#: ../xooclasses/xoo.userultra.payment.paypal.php:698
+#, fuzzy
+msgid "Pricing Table Customization"
+msgstr "Цены в таблице настройки"
+
+#: ../admin/tabs/membership.php:121
+#: ../xooclasses/xoo.userultra.payment.paypal.php:701
+#, fuzzy
+msgid "Name/Price Font Color"
+msgstr "Имя/Цена цвет шрифта"
+
+#: ../admin/tabs/membership.php:126
+#: ../xooclasses/xoo.userultra.payment.paypal.php:706
+#, fuzzy
+msgid "Name/Price Background Color"
+msgstr "Имя/Цена цвет фона"
+
+#: ../admin/tabs/membership.php:132
+#: ../xooclasses/xoo.userultra.payment.paypal.php:712
+#, fuzzy
+msgid "Sign Up Button Text Color"
+msgstr "Подпишите вверх цвет текста кнопки"
+
+#: ../admin/tabs/membership.php:138
+#: ../xooclasses/xoo.userultra.payment.paypal.php:718
+#, fuzzy
+msgid "Sign Up Button Background Color"
+msgstr "Подпишите вверх цвет фона кнопки"
+
+#: ../admin/tabs/membership.php:166
+#, fuzzy
+msgid "Please, input a name "
+msgstr "Пожалуйста введите имя"
+
+#: ../admin/tabs/membership.php:167
+#, fuzzy
+msgid "Please, input a description "
+msgstr "Пожалуйста введите описание"
+
+#: ../admin/tabs/membership.php:168
+#, fuzzy
+msgid "Please, input a price "
+msgstr "Пожалуйста введите цену"
+
+#: ../admin/tabs/membership.php:169
+#, fuzzy
+msgid "Are you totally sure that you want to delete this package? "
+msgstr "Вы полностью уверены, что хотите удалить этот пакет?"
+
+#: ../admin/tabs/orders.php:36 ../xooclasses/xoo.userultra.admin.php:55
+#, fuzzy
+msgid "Orders"
+msgstr "Заказы"
+
+#: ../admin/tabs/orders.php:48
+#, fuzzy
+msgid "Search Transactions "
+msgstr "Найти транзакции"
+
+#: ../admin/tabs/orders.php:56
+#, fuzzy
+msgid "Keywords: "
+msgstr "Ключевые слова:"
+
+#: ../admin/tabs/orders.php:57
+#, fuzzy
+msgid "Month: "
+msgstr "Месяц:"
+
+#: ../admin/tabs/orders.php:58
+#, fuzzy
+msgid "Day: "
+msgstr "Число:"
+
+#: ../admin/tabs/orders.php:59
+#, fuzzy
+msgid "Year:"
+msgstr "Год:"
+
+#: ../admin/tabs/orders.php:63
+#, fuzzy
+msgid "write some text here ..."
+msgstr "Напишите текст здесь..."
+
+#: ../admin/tabs/orders.php:65 ../admin/tabs/orders.php:78
+#: ../admin/tabs/orders.php:91
+#, fuzzy
+msgid "All"
+msgstr "Все"
+
+#: ../admin/tabs/orders.php:109
+#, fuzzy
+msgid "Filter"
+msgstr "Фильтр"
+
+#: ../admin/tabs/orders.php:116
+#, fuzzy
+msgid "Total: "
+msgstr "Итого:"
+
+#: ../admin/tabs/orders.php:116
+#, fuzzy
+msgid "Displaying per page: "
+msgstr "Показано на странице:"
+
+#: ../admin/tabs/orders.php:148
+#, fuzzy
+msgid "User Email"
+msgstr "Email пользователя"
+
+#: ../admin/tabs/orders.php:150
+#, fuzzy
+msgid "Plan"
+msgstr "Тарифный план"
+
+#: ../admin/tabs/orders.php:151
+#, fuzzy
+msgid "Method"
+msgstr "Метод"
+
+#: ../admin/tabs/permalinks.php:1 ../xooclasses/xoo.userultra.admin.php:58
+#, fuzzy
+msgid "Permalinks"
+msgstr "Постоянная ссылка"
+
+#: ../admin/tabs/permalinks.php:8
+#, fuzzy
+msgid "Users Ultra Pages Setting"
+msgstr "Пользователи Ultra страницы настройки"
+
+#: ../admin/tabs/permalinks.php:10
+#, fuzzy
+msgid ""
+"The following pages are automatically created when Users Ultra Plugin\n"
+"   is activated. You can leave them as they are or change to custom pages "
+"here."
+msgstr ""
+"Следующие страницы создаются автоматически при активации Ultra Plugin\n"
+" пользователей. Вы можете оставить их как они или изменить пользовательские "
+"страницы здесь."
+
+#: ../admin/tabs/permalinks.php:21
+#, fuzzy
+msgid "Users Ultra My Account"
+msgstr "Мой аккаунт"
+
+#: ../admin/tabs/permalinks.php:23
+#, fuzzy
+msgid ""
+"Make sure you have the <code>[usersultra_my_account]</code> shortcode on "
+"this page."
+msgstr ""
+"Убедитесь, что у вас есть <code>[usersultra_my_account]</code> короткий "
+"номер на этой странице."
+
+#: ../admin/tabs/permalinks.php:24
+#, fuzzy
+msgid "This page is where users will view their account."
+msgstr ""
+"Эта страница является, где пользователи будут просматривать свои счета."
+
+#: ../admin/tabs/permalinks.php:30
+#, fuzzy
+msgid "Users Ultra Profile Page"
+msgstr "Страница профиля"
+
+#: ../admin/tabs/permalinks.php:32
+#, fuzzy
+msgid ""
+"Make sure you have the <code>[usersultra_profile]</code> shortcode on this "
+"page."
+msgstr ""
+"Убедитесь, что у вас есть <code>[usersultra_profile]</code> короткий номер "
+"на этой странице."
+
+#: ../admin/tabs/permalinks.php:33
+#, fuzzy
+msgid ""
+"This page is where users will view their own profiles, or view other user "
+"profiles from the member directory if allowed."
+msgstr ""
+"Эта страница, где пользователи будут просматривать свои собственные профили, "
+"а также просматривать профили других пользователей из каталога членов, если "
+"это разрешено."
+
+#: ../admin/tabs/permalinks.php:39
+#, fuzzy
+msgid "Users Ultra Login Page"
+msgstr "Страница входа"
+
+#: ../admin/tabs/permalinks.php:41
+#, fuzzy
+msgid ""
+"If you wish to change default Users Ultra login page, you may set it here. "
+"Make sure you have the <code>[usersultra_login]</code> shortcode on this "
+"page."
+msgstr ""
+"Если вы хотите изменить пользователей Ultra страницы входа по умолчанию, вы "
+"можете настроить здесь. Убедитесь, что у вас есть <code>[usersultra_login]</"
+"code> короткий номер на этой странице."
+
+#: ../admin/tabs/permalinks.php:42
+#, fuzzy
+msgid "The default front-end login page."
+msgstr "Передний конец Войти страницы по умолчанию."
+
+#: ../admin/tabs/permalinks.php:48
+#, fuzzy
+msgid "Users Ultra Registration Page"
+msgstr "Страница регистрации"
+
+#: ../admin/tabs/permalinks.php:50
+#, fuzzy
+msgid ""
+"Make sure you have the <code>[usersultra_registration]</code> shortcode on "
+"this page."
+msgstr ""
+"Убедитесь, что у вас есть <code>[usersultra_registration]</code> короткий "
+"номер на этой странице."
+
+#: ../admin/tabs/permalinks.php:51 ../admin/tabs/permalinks.php:60
+#, fuzzy
+msgid "The default front-end Registration page where new users will sign up."
+msgstr ""
+"Передний конец Страница регистрации по умолчанию, когда новые пользователи "
+"будут зарегистрироваться."
+
+#: ../admin/tabs/permalinks.php:57
+#, fuzzy
+msgid "Users Ultra Directory Page"
+msgstr "Страница Ultra каталог пользователей"
+
+#: ../admin/tabs/permalinks.php:59
+#, fuzzy
+msgid ""
+"Make sure you have the <code>[usersultra_directory]</code> shortcode on this "
+"page."
+msgstr ""
+"Убедитесь, что у вас есть <code>[usersultra_directory]</code> короткий номер "
+"на этой странице."
+
+#: ../admin/tabs/permalinks.php:76
+#, fuzzy
+msgid ""
+"Users Ultra offers you the ability to create a custom URL structure for the "
+"main pages of your website"
+msgstr ""
+"Пользователи Ultra предлагает вам возможность создавать пользовательские "
+"структуры URL-адресов для главных страниц веб-сайта"
+
+#: ../admin/tabs/permalinks.php:85
+#, fuzzy
+msgid "Profile Slug"
+msgstr "Профиль, крат. заголовок"
+
+#: ../admin/tabs/permalinks.php:86 ../admin/tabs/permalinks.php:87
+#, fuzzy
+msgid "Enter your custom Slug for the profile page."
+msgstr "Введите ваши пользовательские пули для страницы профиля."
+
+#: ../admin/tabs/permalinks.php:95
+#, fuzzy
+msgid "Profile Link Field"
+msgstr "Поле Ссылка профиль"
+
+#: ../admin/tabs/permalinks.php:97
+#, fuzzy
+msgid "The Profile Link is built by using the User ID"
+msgstr "На ссылку профиль построен с помощью идентификатора пользователя"
+
+#: ../admin/tabs/permalinks.php:98
+#, fuzzy
+msgid "The Profile Link is built by using the Username"
+msgstr "На ссылку профиль построен с помощью имя пользователя"
+
+#: ../admin/tabs/permalinks.php:102 ../admin/tabs/permalinks.php:103
+#, fuzzy
+msgid ""
+"Please note: This option is used for permalinks. You can choice what field "
+"will be used in the Users Profile Link"
+msgstr ""
+"Пожалуйста, обратите внимание: этот параметр используется для постоянные. Вы "
+"можете выбор, какое поле будет использоваться в ссылку профиль пользователей"
+
+#: ../admin/tabs/permalinks.php:110
+#, fuzzy
+msgid "Login Slug"
+msgstr "Логин пользователя"
+
+#: ../admin/tabs/permalinks.php:111 ../admin/tabs/permalinks.php:112
+#, fuzzy
+msgid "Enter your custom Slug for the Login Page."
+msgstr "Введите ваши пользовательские пули для страницы входа в систему."
+
+#: ../admin/tabs/permalinks.php:118
+#, fuzzy
+msgid "Registration Slug"
+msgstr "Форма регистрации"
+
+#: ../admin/tabs/permalinks.php:119 ../admin/tabs/permalinks.php:120
+#, fuzzy
+msgid "Enter your custom Slug for the Registration Page."
+msgstr "Введите ваши пользовательские пули на страницу регистрации."
+
+#: ../admin/tabs/permalinks.php:126
+#, fuzzy
+msgid "My Account Slug"
+msgstr "Мой аккаунт"
+
+#: ../admin/tabs/permalinks.php:127 ../admin/tabs/permalinks.php:128
+#, fuzzy
+msgid "Enter your custom Slug for the \"My Account\" Page."
+msgstr "Введите ваши пользовательские пули на страницу «Мой счет»."
+
+#: ../admin/tabs/permalinks.php:134
+#, fuzzy
+msgid "Users Directory Slug"
+msgstr "Просмотреть каталог пользователей"
+
+#: ../admin/tabs/permalinks.php:135 ../admin/tabs/permalinks.php:136
+#, fuzzy
+msgid "Enter your custom Slug for the Users Directory Page."
+msgstr ""
+"Введите ваши пользовательские пули для странице каталога пользователей."
+
+#: ../admin/tabs/pro.php:8
+#, fuzzy
+msgid "Why Go Users Ultra Pro?"
+msgstr "Купите версию PRO,"
+
+#: ../admin/tabs/pro.php:11
+#, fuzzy
+msgid ""
+"What we are doing with Users Ultra Pro is adding some ground breaking "
+"features that nobody else, to this date, has offered. We are starting off "
+"with our EXCLUSIVE 'Profile Customizer'. This feature actually is a drag and "
+"drop, widgetized, profile customization for members of your site."
+msgstr ""
+"Что мы делаем с пользователей Ultra Pro добавляет некоторые функции "
+"разорвать землю, которые никто, к этой дате, предложил. Мы начинаем с нашей "
+"эксклюзивной профиль настройщик. Эта функция на самом деле это перетащить и "
+"падение, виджеты, настройки профиля для членов вашего сайта."
+
+#: ../admin/tabs/pro.php:13
+#, fuzzy
+msgid ""
+"Users Ultra Pro allows you to add unlimited widgets, add unlimited links "
+"within the user's dashboard. Integrating with third-party plugins by using "
+"shortcodes, friends, followers, following, user's wall."
+msgstr ""
+"Пользователи Ultra Pro позволяет добавлять неограниченное количество "
+"виджетов, добавлять неограниченное количество ссылок в панели пользователя. "
+"Интеграция с сторонних плагинов, используя короткие номера, друзей, "
+"последователей, после, стене пользователя."
+
+#: ../admin/tabs/pro.php:22
+#, fuzzy
+msgid "Tons of Great Features"
+msgstr "Тонн большие возможности"
+
+#: ../admin/tabs/pro.php:23
+#, fuzzy
+msgid "Changelog"
+msgstr "История изменений"
+
+#: ../admin/tabs/pro.php:32
+#, fuzzy
+msgid "Appearance & Customization"
+msgstr "Внешний вид & настройки"
+
+#: ../admin/tabs/pro.php:33
+#, fuzzy
+msgid ""
+"Users Ultra PRO allows you to adapt the user's profile to any WordPress "
+"Theme through the admin section. Change the look of the profile in just few "
+"clicks."
+msgstr ""
+"Пользователи Ultra PRO позволяет адаптировать профиль пользователя для любой "
+"темы WordPress через секцию администратора. Измените внешний вид профиля "
+"всего за несколько кликов."
+
+#: ../admin/tabs/pro.php:38
+#, fuzzy
+msgid "Unlimited Widgets"
+msgstr "Неограниченное количество виджетов"
+
+#: ../admin/tabs/pro.php:39
+#, fuzzy
+msgid ""
+"Yes, you can add as many widgets as you wish. Integrating with third-party "
+"plugins has never been easier. You can use other plugins with Users Ultra "
+"PRO."
+msgstr ""
+"Да, вы можете добавить столько виджетов, сколько пожелаете. Интеграция со "
+"сторонними плагинами никогда не была проще. Можно использовать другие "
+"плагины с Ultra PRO пользователей."
+
+#: ../admin/tabs/pro.php:43
+#, fuzzy
+msgid "Groups"
+msgstr "Группы"
+
+#: ../admin/tabs/pro.php:44
+#, fuzzy
+msgid ""
+"Users Ultra Pro comes with a powerful groups module. Protect whole pages and "
+"posts easily by using the page protection options in the groups module."
+msgstr ""
+"Пользователи Ultra Pro поставляется с модулем мощных групп. Защитите целые "
+"страницы и сообщения легко с помощью страницы параметры защиты в модуле "
+"групп."
+
+#: ../admin/tabs/pro.php:48
+#, fuzzy
+msgid "Unlimited Links"
+msgstr "Неограниченное количество ссылок"
+
+#: ../admin/tabs/pro.php:49
+#, fuzzy
+msgid ""
+"You can add unlimited links within the user's dashboard with HTML text or "
+"use a shortcode of another plugin to display custom information."
+msgstr ""
+"Можно добавить неограниченное количество ссылок в панели пользователя с HTML-"
+"текст или использовать короткий номер другой плагин для отображения "
+"пользовательских сведений."
+
+#: ../admin/tabs/pro.php:55
+#, fuzzy
+msgid "Roles Integration"
+msgstr "Интеграция ролей"
+
+#: ../admin/tabs/pro.php:56
+#, fuzzy
+msgid ""
+"Users will be able to select a predefined role when registering and you will "
+"be able to assign a custom role to a membership package."
+msgstr ""
+"Пользователи смогут выбрать предопределенную роль, при регистрации, и вы "
+"будет иметь возможность назначить пользовательской роли членского пакета."
+
+#: ../admin/tabs/pro.php:60
+#, fuzzy
+msgid "Pages & Posts Protection"
+msgstr "Страниц & постов охраны"
+
+#: ../admin/tabs/pro.php:61
+#, fuzzy
+msgid ""
+"With Users Ultra Por you can restrict content on a global or per page/post "
+"basis. You can restrict pages/posts so everyone can see the page/post or "
+"only logged in users can see the page/post "
+msgstr ""
+"С Ultra Por пользователей можно ограничить содержимое на основе глобального "
+"или на странице и после. Вы можете ограничить страницы/сообщений, так что "
+"каждый может видеть страница/должность или только вошедший в систему "
+"пользователи могут видеть страница/должность"
+
+#: ../admin/tabs/pro.php:66
+#, fuzzy
+msgid "bbPress Integration"
+msgstr "bbPress интеграции"
+
+#: ../admin/tabs/pro.php:67
+#, fuzzy
+msgid ""
+"Your forum may look much more elegant by using Users Ultra Pro. Display "
+"badges and achievements in your forum threads and much more."
+msgstr ""
+"Ваш форум может выглядеть гораздо более элегантно с помощью Ultra Pro "
+"пользователей. Отображать значки и достижения в вашем форуме темы и многое "
+"другое."
+
+#: ../admin/tabs/pro.php:71
+#, fuzzy
+msgid "Spam Protection"
+msgstr "Защита от спама"
+
+#: ../admin/tabs/pro.php:72
+#, fuzzy
+msgid ""
+"Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
+"your website against spam attacks. Simple way to stop fake account spam!"
+msgstr ""
+"Пользователи Ultra PRO поставляется с IP блокировки инструмент, который "
+"поможет вам защитить свой сайт от спам-атак. Простой способ, чтобы "
+"остановить спам, фальшивый аккаунт!"
+
+#: ../admin/tabs/pro.php:77
+#, fuzzy
+msgid "Advanced Profile Fields"
+msgstr "Расширенный профиль поля"
+
+#: ../admin/tabs/pro.php:78
+#, fuzzy
+msgid ""
+"You can create fields that will only be displayed on users of the selected "
+"User Roles. Also, you can make a field editable based on User Roles."
+msgstr ""
+"Можно создавать поля, которые будут отображаться только на пользователей "
+"выбранной роли пользователя. Кроме того вы можете сделать редактируемые поля "
+"на основе ролей пользователей."
+
+#: ../admin/tabs/pro.php:83
+#, fuzzy
+msgid "Customizable Profile"
+msgstr "Настраиваемый профиль"
+
+#: ../admin/tabs/pro.php:84
+#, fuzzy
+msgid ""
+"The Pro Version includes the unique and innovating Widgetized Users Profile. "
+"Let your user build their own profile by draging and droping elements."
+msgstr ""
+"Pro версия включает в себя уникальные и инновационные Widgetized "
+"пользователей профиль. Пусть ваш пользователь построить их собственный "
+"профиль, элементы экрану и падают."
+
+#: ../admin/tabs/pro.php:90
+#, fuzzy
+msgid "New Features"
+msgstr "Новые возможности"
+
+#: ../admin/tabs/pro.php:91
+#, fuzzy
+msgid ""
+"We add new features every week for the Pro version. You may alway let us "
+"know your suggestion and we will be glad to listen your opinions."
+msgstr ""
+"Мы добавляем новые возможности каждую неделю для версии Pro. Вы всегда "
+"можете, дайте нам знать ваше предложение, и мы будем рады выслушать ваше "
+"мнение."
+
+#: ../admin/tabs/pro.php:95
+#, fuzzy
+msgid "reCaptcha & FUNCAPTCHA"
+msgstr "reCaptcha & FUNCAPTCHA"
+
+#: ../admin/tabs/pro.php:96
+#, fuzzy
+msgid ""
+"This is a great feature to protect your website from spam and abuse. "
+"reCAPTCHA uses an advanced risk analysis engine."
+msgstr ""
+"Это отличная возможность защитить свой сайт от спама и злоупотреблений. "
+"reCAPTCHA использует двигатель анализа дополнительных рисков."
+
+#: ../admin/tabs/pro.php:102
+#, fuzzy
+msgid "Default Role on Registration"
+msgstr "Роль по умолчанию на регистрации"
+
+#: ../admin/tabs/pro.php:103
+#, fuzzy
+msgid ""
+"Users Ultra Pro allows you to set a custom role for either the common or the "
+"social login features."
+msgstr ""
+"Пользователи Ultra Pro позволяет вам установить пользовательские роли для "
+"общего или логин социальной функции."
+
+#: ../admin/tabs/pro.php:107
+#, fuzzy
+msgid "One and Two Columns Profile"
+msgstr "Одна и две колонки профиль"
+
+#: ../admin/tabs/pro.php:108
+#, fuzzy
+msgid ""
+"The new user's profile template will let you create a beautiful user's "
+"profile with one, two or three columns with just one click."
+msgstr ""
+"Шаблон профиля нового пользователя позволит вам создать красивый профиль с "
+"одной, двумя или тремя колоннами одним щелчком."
+
+#: ../admin/tabs/pro.php:112
+#, fuzzy
+msgid "Badges & Achievement"
+msgstr "Значки & достижения"
+
+#: ../admin/tabs/pro.php:113
+#, fuzzy
+msgid ""
+"Create and award badges to your users manually, or based on what they "
+"accomplish."
+msgstr ""
+"Создайте и премии значки для ваших пользователей вручную, или на основании "
+"того, что они выполняют."
+
+#: ../admin/tabs/pro.php:117
+#, fuzzy
+msgid "Users Wall"
+msgstr "Стена пользователей"
+
+#: ../admin/tabs/pro.php:118
+#, fuzzy
+msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
+msgstr ""
+"Да, так же как Facebook пользователей Ultra поставляется с пользователя "
+"стены."
+
+#: ../admin/tabs/pro.php:123
+#, fuzzy
+msgid "Social Connect Buttons"
+msgstr "Социальные подключения кнопок"
+
+#: ../admin/tabs/pro.php:124
+#, fuzzy
+msgid ""
+"Now you can add one or more social connect buttons to any place of your blog."
+msgstr ""
+"Теперь вы можете добавить один или несколько социальных подключить кнопки в "
+"любое место вашего блога."
+
+#: ../admin/tabs/pro.php:128
+#, fuzzy
+msgid "Online/Offline User Status"
+msgstr "Статус пользователя в сети"
+
+#: ../admin/tabs/pro.php:129
+#, fuzzy
+msgid ""
+"This feature is optional and you will have the capability to show the user's "
+"status to your visitors."
+msgstr ""
+"Эта функция является необязательным, и вы будете иметь возможность показать "
+"статус пользователя для ваших посетителей."
+
+#: ../admin/tabs/pro.php:133
+#, fuzzy
+msgid "Custom Profile Background "
+msgstr "Фон пользовательского профиля"
+
+#: ../admin/tabs/pro.php:134
+#, fuzzy
+msgid ""
+"Let your users to customize their profiles by adding a custom full-screen "
+"background image easily."
+msgstr ""
+"Предоставьте пользователям настраивать свои профили, добавляя "
+"пользовательские полноэкранного фонового изображения легко."
+
+#: ../admin/tabs/pro.php:140
+#, fuzzy
+msgid "Automatic Updates"
+msgstr "Автоматические обновления ядра"
+
+#: ../admin/tabs/pro.php:141
+#, fuzzy
+msgid ""
+"Yes, Users Ultra Pro can be updated through the Plugins area in your "
+"Wordpress Admin Panel."
+msgstr ""
+"Да, Ultra Pro пользователи могут быть обновлены через области в панели "
+"администратора Wordpress плагины."
+
+#: ../admin/tabs/pro.php:145
+#, fuzzy
+msgid "Free Installation"
+msgstr "Бесплатная установка"
+
+#: ../admin/tabs/pro.php:146
+#, fuzzy
+msgid ""
+"If you would like assistance with installing and setting up the plugin, we "
+"are glad to help. "
+msgstr "Если вы хотите помощь в установке и настройке плагина, мы рады помочь."
+
+#: ../admin/tabs/pro.php:150
+#, fuzzy
+msgid "Network Activation"
+msgstr "Включение в сеть"
+
+#: ../admin/tabs/pro.php:151
+#, fuzzy
+msgid ""
+"When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
+"for the entire network of sites by just one click."
+msgstr ""
+"При запуске многосайтовой WordPress, она позволяет активировать Ultra Pro "
+"пользователей для всей сети в сайтов одним щелчком мыши."
+
+#: ../admin/tabs/pro.php:155
+#, fuzzy
+msgid "Multiple Users Directory Templates"
+msgstr "Шаблоны для нескольких пользователей каталога"
+
+#: ../admin/tabs/pro.php:156
+#, fuzzy
+msgid ""
+"The Pro version includes several views for the users directory such as "
+"<strong>User Tables with custom fields </strong>and instant messaging "
+"system. "
+msgstr ""
+"Версия Pro включает в себя несколько представлений для пользователей "
+"каталога например <strong>Пользовательских таблиц с настраиваемыми полями </"
+"strong>и мгновенных сообщений системы."
+
+#: ../admin/tabs/pro.php:160
+#, fuzzy
+msgid "Users Management"
+msgstr "Управление пользователями"
+
+#: ../admin/tabs/pro.php:161
+#, fuzzy
+msgid ""
+"The Pro version includes a powerful users management module. Easily approve/"
+"deny users, upgrade and downgrade user's membership. Finding a user will be "
+"super easy by using this feature."
+msgstr ""
+"Pro версия включает в себя модуль управления мощным пользователей. Легко "
+"утверждать и отрицать пользователей, обновление и понижение пользователя "
+"членства. Найти пользователя будет супер легко с помощью этой функции."
+
+#: ../admin/tabs/pro.php:165
+#, fuzzy
+msgid "Advanced Front End Publisher"
+msgstr "Расширенный передний конец издатель"
+
+#: ../admin/tabs/pro.php:166
+#, fuzzy
+msgid ""
+"Allows your user to post through their private area. It allows user to "
+"attach photos to the posts. This is useful for classified and real estate "
+"websites."
+msgstr ""
+"Позволяет пользователю размещать через их собственной области. Это позволяет "
+"пользователю вложить фотографии в должности. Это полезно для сайты "
+"классифицированы и реальной недвижимости."
+
+#: ../admin/tabs/pro.php:172
+#, fuzzy
+msgid "Priority Support"
+msgstr "Приоритетная поддержка."
+
+#: ../admin/tabs/pro.php:173
+#, fuzzy
+msgid ""
+"We usually reply within the same day to pro users. We will go to the extra "
+"mile in order to give you a Top Quality Support."
+msgstr ""
+"Обычно мы отвечаем в тот же день pro пользователям. Мы будем идти к лишнюю "
+"милю для того, чтобы дать вам поддержку качества Top."
+
+#: ../admin/tabs/pro.php:178
+#, fuzzy
+msgid "Maitenance Features"
+msgstr "Особенности головным"
+
+#: ../admin/tabs/pro.php:179
+#, fuzzy
+msgid "Keep your Users and User Meta table clean."
+msgstr "Держите ваших пользователей и пользователей Метатаблица чистой."
+
+#: ../admin/tabs/pro.php:183
+#, fuzzy
+msgid "User Avatars"
+msgstr "Аватары пользователей"
+
+#: ../admin/tabs/pro.php:184
+#, fuzzy
+msgid ""
+"Users Ultra Pro allows users to use Gravatar, Facebook Avatar or their "
+"custom avatar."
+msgstr ""
+"Пользователи Ultra Pro позволяет пользователям использовать Gravatar, "
+"Facebook аватар или их пользовательских аватар."
+
+#: ../admin/tabs/pro.php:189
+#, fuzzy
+msgid "Advanced Email Features"
+msgstr "Расширенный электронной почты функции"
+
+#: ../admin/tabs/pro.php:190
+#, fuzzy
+msgid "Send emails via SMTP and Mandrill API."
+msgstr "Отправьте электронную почту через SMTP и мандрил API."
+
+#: ../admin/tabs/pro.php:203
+#, fuzzy
+msgid "Users Ultra Pro Changelog "
+msgstr "Ultra Pro изменений пользователей"
+
+#: ../admin/tabs/settings.php:1
+#, fuzzy
+msgid "General Settings"
+msgstr "Главные настройки"
+
+#: ../admin/tabs/settings.php:6
+#, fuzzy
+msgid "Miscellaneous  Settings"
+msgstr "Прочие параметры"
+
+#: ../admin/tabs/settings.php:17
+#, fuzzy
+msgid "Hide WP Admin Tool Bar"
+msgstr "Скрыть панель инструментов WP Admin"
+
+#: ../admin/tabs/settings.php:19
+#, fuzzy
+msgid "If checked, User will not see the WP Admin Tool Bar"
+msgstr ""
+"Если флажок установлен, пользователь не будет видеть панель инструментов "
+"администратора WP"
+
+#: ../admin/tabs/settings.php:20 ../admin/tabs/settings.php:39
+#, fuzzy
+msgid "If checked, User will not see the WP Admin Tool Bar."
+msgstr ""
+"Если флажок установлен, пользователь не будет видеть панель инструментов WP "
+"администратора."
+
+#: ../admin/tabs/settings.php:26
+#, fuzzy
+msgid "Disable Default Ligthbox"
+msgstr "Отключение по умолчанию Ligthbox"
+
+#: ../admin/tabs/settings.php:28 ../admin/tabs/settings.php:29
+#, fuzzy
+msgid ""
+"If checked, the default lightbox files included in the plugin won't be loaded"
+msgstr ""
+"Если флажок установлен, файлы Лайтбокс по умолчанию включены в модуль не "
+"загружен"
+
+#: ../admin/tabs/settings.php:36
+#, fuzzy
+msgid "Allow Guests to use the rating system"
+msgstr "Гости могут пользоваться рейтинговой системы"
+
+#: ../admin/tabs/settings.php:38
+#, fuzzy
+msgid "If checked, users will be able to leave rates without being logged in"
+msgstr "Если флажок установлен, пользователи смогут оставить ставки без входа"
+
+#: ../admin/tabs/settings.php:46
+#, fuzzy
+msgid "Allow Guests to like other users "
+msgstr "Позволить гостям нравится другим пользователям"
+
+#: ../admin/tabs/settings.php:48 ../admin/tabs/settings.php:49
+#, fuzzy
+msgid "If checked, users will be able to like users without being logged in"
+msgstr ""
+"Если флажок установлен, пользователи смогут как пользователей без входа"
+
+#: ../admin/tabs/settings.php:57
+#, fuzzy
+msgid "Delete Plugin Information from the Database"
+msgstr "Удалить плагин информацию из базы данных"
+
+#: ../admin/tabs/settings.php:63
+#, fuzzy
+msgid ""
+"If you select 'yes', all the Users Ultra information will be deleted from "
+"the database. <strong>ATTENTION: This action can't be reverted. </strong>"
+msgstr ""
+"Если выбрать «Да», все пользователи Ultra информация будет удалена из базы "
+"данных. <strong>Внимание: это действие не может быть восстановлена.</strong>"
+
+#: ../admin/tabs/settings.php:64
+#, fuzzy
+msgid ""
+"f you select 'yes', all the Users Ultra information will be deleted from the "
+"database."
+msgstr ""
+"f вы выберите «Да», все пользователи Ultra информация будет удалена из базы "
+"данных."
+
+#: ../admin/tabs/settings.php:71
+#, fuzzy
+msgid "Auto Rotation Fixer"
+msgstr "Автоматическое вращение Fixer"
+
+#: ../admin/tabs/settings.php:77 ../admin/tabs/settings.php:78
+#, fuzzy
+msgid ""
+"If you select 'yes', Users Ultra will Automatically fix the rotation of JPEG "
+"images using PHP's EXIF extension, immediately after they are uploaded to "
+"the server. This is implemented for iPhone rotation issues"
+msgstr ""
+"Если выбрать «Да», Ultra пользователей будет автоматически исправить "
+"вращения с помощью расширения PHP в EXIF, сразу же после того, как они "
+"загружены на сервер изображений в формате JPEG. Это реализовано для iPhone "
+"вращения вопросы"
+
+#: ../admin/tabs/settings.php:84
+#, fuzzy
+msgid "Use Users Ultra Avatar"
+msgstr "Используйте Ultra аватар пользователей"
+
+#: ../admin/tabs/settings.php:90 ../admin/tabs/settings.php:91
+#, fuzzy
+msgid ""
+"If you select \"yes\", Users Ultra will override the default WordPress Avatar"
+msgstr ""
+"Если выбрать «Да», пользователи Ultra переопределит значение по умолчанию "
+"WordPress аватар"
+
+#: ../admin/tabs/settings.php:97
+#, fuzzy
+msgid "Redirect Users To My Account - Login Page"
+msgstr "Перенаправление пользователей на мой счет - страница входа"
+
+#: ../admin/tabs/settings.php:103
+#, fuzzy
+msgid ""
+"If you select yes, the user will be redirected to the <strong>my account</"
+"strong> page when clicking on the <strong>login link</strong>. Otherwise, "
+"the user will see the standard login box. WARNING: Do not set it to 'yes' if "
+"you are using the login shortcode in WP side widgets."
+msgstr ""
+"Если выбрано значение Да, пользователь будет перенаправлен на страницу "
+"<strong>Моя учетная запись</strong> при нажатии на <strong>ссылку Вход</"
+"strong>. В противном случае пользователь будет видеть поле стандартного "
+"входа. Предупреждение: Не кладите его «да» если вы используете короткий "
+"номер входа в сторону виджетов WP."
+
+#: ../admin/tabs/settings.php:104
+#, fuzzy
+msgid ""
+"If you select yes, the user will be redirected to the my account page. "
+"Otherwise, the user will see the standard login box. WARNING: Do not set it "
+"to 'yes' if you are using the login shortcode in WP side widgets"
+msgstr ""
+"Если выбрано значение Да, пользователь будет перенаправлен на страницу Моя "
+"учетная запись. В противном случае пользователь будет видеть поле "
+"стандартного входа. Предупреждение: Не задано значение «Да» если вы "
+"используете короткий номер входа в сторону виджетов WP"
+
+#: ../admin/tabs/settings.php:110
+#, fuzzy
+msgid "Redirect Users To My Account - Registration Page"
+msgstr "Перенаправление пользователей на мой счет - страница регистрации"
+
+#: ../admin/tabs/settings.php:116 ../admin/tabs/settings.php:117
+#, fuzzy
+msgid ""
+"If you select yes, the user will be redirected to the <strong>my account</"
+"strong> page when clicking on the <strong>registration link</strong>. "
+"Otherwise, the user will see the standard login box. WARNING: Do not set it "
+"to 'yes' if you are using the registration shortcode in WP side widgets."
+msgstr ""
+"Если выбрано значение Да, пользователь будет перенаправлен на страницу "
+"<strong>Моя учетная запись</strong> , при нажатии на <strong>ссылку "
+"регистрации</strong>. В противном случае пользователь будет видеть поле "
+"стандартного входа. Предупреждение: Не кладите его «да» если вы используете "
+"короткий номер регистрации в WP боковой виджеты."
+
+#: ../admin/tabs/settings.php:129
+msgid "Password Strength Settings"
+msgstr "Настройки сложности пароля"
+
+#: ../admin/tabs/settings.php:131
+msgid ""
+"You can help protect your users' accounts by managing and monitoring the "
+"strength of their passwords."
+msgstr ""
+"Вы можете помочь защитить учетные записи пользователей, управления и "
+"мониторинга прочность их пароли."
+
+#: ../admin/tabs/settings.php:140
+msgid "Minimum password length:"
+msgstr "Минимальная длина пароля:"
+
+#: ../admin/tabs/settings.php:141 ../admin/tabs/settings.php:142
+msgid "By default a Password must be at least 7 characters long"
+msgstr "По умолчанию пароль должен быть длиной минимум 7 символов"
+
+#: ../admin/tabs/settings.php:149
+msgid "Must contain at least one number and one letter"
+msgstr "Должен содержать по крайней мере одну цифру и одну букву"
+
+#: ../admin/tabs/settings.php:151 ../admin/tabs/settings.php:152
+msgid "The password must contain at least one number and one letter"
+msgstr "Пароль должен содержать минимум одну цифру и одну букву"
+
+#: ../admin/tabs/settings.php:158
+msgid "Must contain at least one upper case character"
+msgstr "Должен содержать по крайней мере один верхний регистр символов"
+
+#: ../admin/tabs/settings.php:160 ../admin/tabs/settings.php:161
+msgid "The password must contain at least one upper case character"
+msgstr "Пароль должен содержать по крайней мере один верхний регистр символов"
+
+#: ../admin/tabs/settings.php:167
+msgid "Must contain at least one lower case character"
+msgstr "Должен содержать по крайней мере один нижний регистр символов"
+
+#: ../admin/tabs/settings.php:169
+msgid "The password must contain at least one lower case character"
+msgstr "Пароль должен содержать по крайней мере один нижний регистр символов"
+
+#: ../admin/tabs/settings.php:170
+msgid "The password must contain at least one lowercase character"
+msgstr "Пароль должен содержать по крайней мере один символ в нижнем регистре"
+
+#: ../admin/tabs/settings.php:181
+msgid "Membership Settings"
+msgstr "Настройки членства"
+
+#: ../admin/tabs/settings.php:192
+#, fuzzy
+msgid "Display Only Selected Package"
+msgstr "Отображение только выбранных пакетов"
+
+#: ../admin/tabs/settings.php:194
+#, fuzzy
+msgid ""
+"If checked, Only the Selected package will be displayed in the payment form. "
+"<strong>PLEASE NOTE: </strong>This setting is used only if you are using the "
+"pricing tables feature."
+msgstr ""
+"Если установлен флажок, будет отображаться только выбранный пакет в форме "
+"оплаты. <strong>Пожалуйста, обратите внимание:</strong>Этот параметр "
+"используется, только если вы используете функцию цены таблицы."
+
+#: ../admin/tabs/settings.php:195
+#, fuzzy
+msgid ""
+"If checked, Only the Selected package will be displayed in the payment form"
+msgstr ""
+"Если установлен флажок, будет отображаться только выбранный пакет в форме "
+"оплаты"
+
+#: ../admin/tabs/settings.php:200
+#, fuzzy
+msgid "Text for free membership:"
+msgstr "Текст для бесплатного членства:"
+
+#: ../admin/tabs/settings.php:201
+#, fuzzy
+msgid ""
+"This text will be displayed for the free membership rather than showing "
+"<strong>\"$0.00\"<strong>. Please input some text like: \"Free\""
+msgstr ""
+"Этот текст будет отображаться для бесплатное членство показаны "
+"<strong>«$0.00»<strong>. Пожалуйста, введите текст как: «Свободная»</strong> "
+"</strong>"
+
+#: ../admin/tabs/settings.php:202
+#, fuzzy
+msgid ""
+"This text will be displayed for the free membership rather than showing "
+"<strong>\"$0.00\"<strong>. Please input some text like:"
+msgstr ""
+"Этот текст будет отображаться для бесплатное членство показаны "
+"<strong>«$0.00»<strong>. Пожалуйста, введите текст как:</strong> </strong>"
+
+#: ../admin/tabs/settings.php:211
+#, fuzzy
+msgid "Media Settings"
+msgstr "Настройки СМИ"
+
+#: ../admin/tabs/settings.php:222
+#, fuzzy
+msgid "Upload Folder:"
+msgstr "Загрузите папку:"
+
+#: ../admin/tabs/settings.php:223 ../admin/tabs/settings.php:224
+#, fuzzy
+msgid ""
+"This is the folder where the user photos will be stored in. Please make sure "
+"to assign 755 privileges to it. The default folder is <strong>wp-content/"
+"usersultramedia</strong>"
+msgstr ""
+"Это папка, где будут храниться фотографии пользователя в. Пожалуйста, "
+"убедитесь назначить 755 привилегии. Папка по умолчанию — <strong>wp "
+"содержание/usersultramedia</strong>"
+
+#: ../admin/tabs/settings.php:230
+#, fuzzy
+msgid "Mini Thumbnail Width"
+msgstr "Ширина миниатюры"
+
+#: ../admin/tabs/settings.php:231 ../admin/tabs/settings.php:232
+#: ../admin/tabs/settings.php:425 ../admin/tabs/settings.php:426
+#, fuzzy
+msgid "Set width in pixels"
+msgstr "Задать ширину в пикселях"
+
+#: ../admin/tabs/settings.php:238
+#, fuzzy
+msgid "Mini Thumbnail Height"
+msgstr "Высота миниатюры"
+
+#: ../admin/tabs/settings.php:239 ../admin/tabs/settings.php:240
+#: ../admin/tabs/settings.php:255 ../admin/tabs/settings.php:256
+#: ../admin/tabs/settings.php:271 ../admin/tabs/settings.php:272
+#: ../admin/tabs/settings.php:433 ../admin/tabs/settings.php:434
+#, fuzzy
+msgid "Set Height in pixels"
+msgstr "Высота (в рх)"
+
+#: ../admin/tabs/settings.php:246
+#, fuzzy
+msgid "Thumbnail Width"
+msgstr "Ширина миниатюры"
+
+#: ../admin/tabs/settings.php:247 ../admin/tabs/settings.php:248
+#: ../admin/tabs/settings.php:263 ../admin/tabs/settings.php:264
+msgid "Set Width in pixels"
+msgstr "Задать ширину в пикселях"
+
+#: ../admin/tabs/settings.php:254
+#, fuzzy
+msgid "Thumbnail Height"
+msgstr "Высота миниатюры"
+
+#: ../admin/tabs/settings.php:262
+#, fuzzy
+msgid "Large Photo Max Width"
+msgstr "Большие фото Макс ширина"
+
+#: ../admin/tabs/settings.php:270
+#, fuzzy
+msgid "Large Photo Max Height"
+msgstr "Большие фото Макс высота"
+
+#: ../admin/tabs/settings.php:282
+#, fuzzy
+msgid "Frontend Publishing  Settings"
+msgstr "Интерфейс публикации параметры"
+
+#: ../admin/tabs/settings.php:294
+#, fuzzy
+msgid "Max Posts Per User:"
+msgstr "Макс сообщений на пользователя:"
+
+#: ../admin/tabs/settings.php:295 ../admin/tabs/settings.php:296
+#, fuzzy
+msgid ""
+"Please set 9999 for unlimited posts. This value is used for free and general "
+"users"
+msgstr ""
+"Пожалуйста, установите 9999 за неограниченное сообщений. Это значение "
+"используется для пользователей свободного и общего"
+
+#: ../admin/tabs/settings.php:302
+#, fuzzy
+msgid "Default Status"
+msgstr "Состояние по умолчанию"
+
+#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5346
+#, fuzzy
+msgid "Pending"
+msgstr "Ожидание"
+
+#: ../admin/tabs/settings.php:305
+#, fuzzy
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: ../admin/tabs/settings.php:308 ../admin/tabs/settings.php:309
+#, fuzzy
+msgid ""
+"This is the status of the post when the users submit new posts through Users "
+"Ultra."
+msgstr ""
+"Это статус должности при отправке новых сообщений через Ultra пользователей."
+
+#: ../admin/tabs/settings.php:315
+#, fuzzy
+msgid "Alows users to select category"
+msgstr "Alows пользователей выбрать категорию"
+
+#: ../admin/tabs/settings.php:321 ../admin/tabs/settings.php:322
+#, fuzzy
+msgid ""
+"If \"yes\" authors will be able to select the category, if \"no\" is set the "
+"default category will be used to save the post."
+msgstr ""
+"Если «да» авторы будут иметь возможность выбрать категорию, если имеет "
+"значение «Нет» категории по умолчанию будет использоваться для сохранения "
+"поста."
+
+#: ../admin/tabs/settings.php:328
+#, fuzzy
+msgid "Default Category"
+msgstr "Категория поста по умолчанию"
+
+#: ../admin/tabs/settings.php:330 ../admin/tabs/settings.php:331
+#, fuzzy
+msgid "The category if authors are not allowed to select a custom category."
+msgstr ""
+"Категория, если авторы не имеют право выбрать пользовательскую категорию."
+
+#: ../admin/tabs/settings.php:342
+#, fuzzy
+msgid "Terms & Conditions"
+msgstr "Правила и условия"
+
+#: ../admin/tabs/settings.php:355
+#, fuzzy
+msgid "Allows Terms & Conditions Text Before Registration"
+msgstr "Позволяет термины & текст условия перед регистрацией"
+
+#: ../admin/tabs/settings.php:361 ../admin/tabs/settings.php:362
+#, fuzzy
+msgid ""
+"If you select \"yes\", users will have to accept terms and conditions when "
+"registering."
+msgstr ""
+"Если выбрать «Да», пользователи должны будут принять положения и условия при "
+"регистрации."
+
+#: ../admin/tabs/settings.php:369
+#, fuzzy
+msgid "Terms & Conditions Text/HTML"
+msgstr "Условия и условия Текст / HTML"
+
+#: ../admin/tabs/settings.php:370 ../admin/tabs/settings.php:371
+#: ../admin/tabs/settings.php:380 ../admin/tabs/settings.php:381
+#: ../admin/tabs/settings.php:387 ../admin/tabs/settings.php:388
+#: ../admin/tabs/settings.php:395 ../admin/tabs/settings.php:396
+#, fuzzy
+msgid "Enter text to display, example \"I agree to the Terms & Conditions\"."
+msgstr "Введите текст для отображения, например, «Я принимаю условия &»."
+
+#: ../admin/tabs/settings.php:379
+#, fuzzy
+msgid "Terms & Conditions Text/HTML 2"
+msgstr "Термины & условия текст/HTML 2"
+
+#: ../admin/tabs/settings.php:386
+#, fuzzy
+msgid "Terms & Conditions Text/HTML 3"
+msgstr "Термины & условия текст/HTML 3"
+
+#: ../admin/tabs/settings.php:394
+#, fuzzy
+msgid "Terms & Conditions Text/HTML 4"
+msgstr "Термины & условия текст/HTML 4"
+
+#: ../admin/tabs/settings.php:412
+#, fuzzy
+msgid "Avatar Settings"
+msgstr "Аватар Настройки"
+
+#: ../admin/tabs/settings.php:424
+#, fuzzy
+msgid "Avatar Width:"
+msgstr "Ширина аватара:"
+
+#: ../admin/tabs/settings.php:432
+#, fuzzy
+msgid "Avatar Height"
+msgstr "Высота аватар"
+
+#: ../admin/tabs/settings.php:446
+#, fuzzy
+msgid "Mailchimp Settings"
+msgstr "Параметры mailchimp"
+
+#: ../admin/tabs/settings.php:458
+#, fuzzy
+msgid "MailChimp API Key"
+msgstr "MailChimp API Key"
+
+#: ../admin/tabs/settings.php:459 ../admin/tabs/settings.php:460
+#, fuzzy
+msgid ""
+"Fill out this field with your MailChimp API key here to allow integration "
+"with MailChimp subscription."
+msgstr ""
+"Заполните это поле с вашим ключом MailChimp API для обеспечения интеграции с "
+"MailChimp подписки."
+
+#: ../admin/tabs/settings.php:466
+#, fuzzy
+msgid "MailChimp List ID"
+msgstr "MailChimp List ID"
+
+#: ../admin/tabs/settings.php:467 ../admin/tabs/settings.php:468
+#, fuzzy
+msgid "Fill out this field your list ID."
+msgstr "Заполните это поле Идентификатор списка"
+
+#: ../admin/tabs/settings.php:474
+#, fuzzy
+msgid "Activate/Deactivate Mailchimp"
+msgstr "Активировать и деактивировать Mailchimp"
+
+#: ../admin/tabs/settings.php:476 ../admin/tabs/settings.php:477
+#, fuzzy
+msgid "If checked, Users will be asked to subscribe through mailchimp"
+msgstr ""
+"Если флажок установлен, пользователям будет предложено подписаться через "
+"mailchimp"
+
+#: ../admin/tabs/settings.php:482
+#, fuzzy
+msgid "MailChimp Text"
+msgstr "MailChimp текст"
+
+#: ../admin/tabs/settings.php:483 ../admin/tabs/settings.php:484
+#, fuzzy
+msgid ""
+"Please input the text that will appear when asking users to get periodical "
+"updates."
+msgstr ""
+"Пожалуйста, введите текст, который появляется, когда просят пользователей "
+"для получения периодических обновлений."
+
+#: ../admin/tabs/settings.php:491
+#, fuzzy
+msgid "MailChimp Header Text"
+msgstr "Текст заголовка MailChimp"
+
+#: ../admin/tabs/settings.php:492 ../admin/tabs/settings.php:493
+#, fuzzy
+msgid ""
+"Please input the text that will appear as header when mailchip is active."
+msgstr ""
+"Пожалуйста, введите текст, который будет отображаться как заголовок при "
+"активном mailchip."
+
+#: ../admin/tabs/settings.php:503
+#, fuzzy
+msgid "Registration Settings"
+msgstr "Параметры регистрации"
+
+#: ../admin/tabs/settings.php:514
+#, fuzzy
+msgid "Registration Type"
+msgstr "Тип регистрации"
+
+#: ../admin/tabs/settings.php:516
+#, fuzzy
+msgid "Login automatically after registration"
+msgstr "Имя входа автоматически после регистрации"
+
+#: ../admin/tabs/settings.php:517
+#, fuzzy
+msgid "E-mail Activation -  An confirmation link is sent to the user email"
+msgstr ""
+"Активация электронной почты - ссылка для подтверждения отправляется на адрес "
+"электронной почты пользователя"
+
+#: ../admin/tabs/settings.php:518
+#, fuzzy
+msgid "Manually Activation - The admin approves the accounts manually"
+msgstr "Вручную активации - Администратор утверждает счета вручную"
+
+#: ../admin/tabs/settings.php:519
+#, fuzzy
+msgid "Paid Activation - Enables the Membership Features"
+msgstr "Оплаченный активации - позволяет функции членства"
+
+#: ../admin/tabs/settings.php:521 ../admin/tabs/settings.php:522
+#, fuzzy
+msgid ""
+"Please note: Paid Activation does not work with social connects at this "
+"moment."
+msgstr ""
+"Пожалуйста, обратите внимание: платной активации не работает с социальным "
+"соединяет в этот момент."
+
+#: ../admin/tabs/settings.php:529
+#, fuzzy
+msgid "Activate Accounts When Using Social"
+msgstr "Активировать учетные записи при использовании социальной"
+
+#: ../admin/tabs/settings.php:531
+#, fuzzy
+msgid "YES"
+msgstr "ДА"
+
+#: ../admin/tabs/settings.php:532
+msgid "NO"
+msgstr "НЕТ"
+
+#: ../admin/tabs/settings.php:535 ../admin/tabs/settings.php:536
+#, fuzzy
+msgid ""
+"If YES, the account will be activated automatically when using social login "
+"options. "
+msgstr ""
+"Если да, учетная запись будет активирована автоматически, при использовании "
+"параметров входа в систему социальной."
+
+#: ../admin/tabs/settings.php:544
+#, fuzzy
+msgid "Captcha Plugin"
+msgstr "Защитный код Plugin"
+
+#: ../admin/tabs/settings.php:548
+#, fuzzy
+msgid "reCaptcha"
+msgstr "reCAPTCHA"
+
+#: ../admin/tabs/settings.php:550
+#, fuzzy
+msgid ""
+"By activating this setting reCaptcha will be displayed in the registration "
+"form. <br /> "
+msgstr ""
+"Активировав этот параметр будет отображаться reCaptcha в регистрационной "
+"форме.<br>"
+
+#: ../admin/tabs/settings.php:551
+#, fuzzy
+msgid ""
+"If you are using a captcha that requires a plugin, you must install and "
+"activate the selected captcha plugin. Some captcha plugins require you to "
+"register a free account with them."
+msgstr ""
+"Если вы используете captcha, которая требует плагин, необходимо установить и "
+"активировать выбранный искаженным плагин. Некоторые плагины капчи требуют "
+"зарегистрировать бесплатную учетную запись с ними."
+
+#: ../admin/tabs/settings.php:559
+#, fuzzy
+msgid "CAPTCHA Heading Text"
+msgstr "Текст заголовка CAPTCHA"
+
+#: ../admin/tabs/settings.php:560 ../admin/tabs/settings.php:561
+#, fuzzy
+msgid ""
+"By default the following heading is displayed when the captcha is activate "
+"'Prove you're not a robot'. You can set your custom heading here"
+msgstr ""
+"По умолчанию следующий заголовок отображается когда captcha активируйте "
+"доказать, вы не робот. Можно задать пользовательский заголовок здесь"
+
+#: ../admin/tabs/settings.php:567
+#, fuzzy
+msgid "CAPTCHA Field Label"
+msgstr "CAPTCHA на поле метки"
+
+#: ../admin/tabs/settings.php:568 ../admin/tabs/settings.php:569
+#, fuzzy
+msgid "Enter text which you want to show in form in front of CAPTCHA."
+msgstr "Введите текст, который вы хотите показать в виде перед CAPTCHA."
+
+#: ../admin/tabs/settings.php:575
+#, fuzzy
+msgid "reCaptcha Public Key"
+msgstr "reCAPTCHA: публичный ключ API"
+
+#: ../admin/tabs/settings.php:576
+#, fuzzy
+msgid ""
+"Enter your reCaptcha Public Key. You can sign up for a free reCaptcha "
+"account <a href=\"http://www.google.com/recaptcha\" title=\"Get a reCaptcha "
+"Key\" target=\"_blank\">here</a>."
+msgstr ""
+"Введите ReCaptcha открытого ключа. Вы можете подписаться на бесплатный "
+"аккаунт ReCaptcha <a href=\"http://www.google.com/recaptcha\" title="
+"\"Получить ReCaptcha ключ\" target=\"_blank\">здесь</a> ."
+
+#: ../admin/tabs/settings.php:577
+#, fuzzy
+msgid ""
+"Your reCaptcha keys are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+"ReCaptcha ключей необходимо использовать reCaptcha. Вы можете "
+"зарегистрировать свой сайт на бесплатный ключ на странице Google reCaptcha."
+
+#: ../admin/tabs/settings.php:583
+#, fuzzy
+msgid "reCaptcha Private Key"
+msgstr "ReCaptcha закрытый ключ API"
+
+#: ../admin/tabs/settings.php:584
+#, fuzzy
+msgid "Enter your reCaptcha Private Key."
+msgstr "Введите ReCaptcha закрытый ключ."
+
+#: ../admin/tabs/settings.php:585
+#, fuzzy
+msgid ""
+"Your reCaptcha kays are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+"Ваши ReCaptcha Кейс обязаны использовать ReCaptcha. Вы можете "
+"зарегистрировать свой сайт на бесплатный ключ на странице Google ReCaptcha."
+
+#: ../admin/tabs/settings.php:591
+#, fuzzy
+msgid "Register success message"
+msgstr "Сообщение об успешной регистрации"
+
+#: ../admin/tabs/settings.php:593
+#, fuzzy
+msgid "Show a text message when users complete the registration process."
+msgstr ""
+"Показать текстовое сообщение, когда пользователи завершить процесс "
+"регистрации."
+
+#: ../admin/tabs/settings.php:594
+#, fuzzy
+msgid "This message will be shown to users after registration is completed."
+msgstr ""
+"Это сообщение будет отображаться для пользователей после завершения "
+"регистрации."
+
+#: ../admin/tabs/settings.php:600
+#, fuzzy
+msgid "Text/HTML below the Register Success message."
+msgstr "Текст / HTML ниже сообщения Регистрация Success."
+
+#: ../admin/tabs/settings.php:602
+#, fuzzy
+msgid ""
+"Show a text/HTML content under success message when users complete the "
+"registration process."
+msgstr ""
+"Показать содержание текста / HTML под сообщение об успешном завершении, "
+"когда пользователи завершить процесс регистрации."
+
+#: ../admin/tabs/settings.php:603
+#, fuzzy
+msgid ""
+"This message will be shown to users under the success message after "
+"registration is completed."
+msgstr ""
+"Это сообщение будет отображаться для пользователей под успех сообщение после "
+"завершения регистрации."
+
+#: ../admin/tabs/settings.php:614
+#, fuzzy
+msgid "User Profiles Settings"
+msgstr "Профили параметров пользователя"
+
+#: ../admin/tabs/settings.php:625
+#, fuzzy
+msgid "Profile Display Name: "
+msgstr "Отображаемое имя профиля:"
+
+#: ../admin/tabs/settings.php:627
+#, fuzzy
+msgid "Display User Name"
+msgstr "Отображаемое имя пользователя"
+
+#: ../admin/tabs/settings.php:628
+#, fuzzy
+msgid "Use the Display Name set by the User in the Profile"
+msgstr "Используйте отображаемое имя, заданное пользователем в профиле"
+
+#: ../admin/tabs/settings.php:630 ../admin/tabs/settings.php:631
+#, fuzzy
+msgid "Set how the users ultra will make the user name."
+msgstr "Установите, как пользователи ultra сделает имя пользователя."
+
+#: ../admin/tabs/settings.php:637
+#, fuzzy
+msgid "Display Photos: "
+msgstr "Отображение фотографий:"
+
+#: ../admin/tabs/settings.php:639
+#, fuzzy
+msgid "Only for registered/logged in users"
+msgstr "Только для зарегистрированных/войти в систему пользователей"
+
+#: ../admin/tabs/settings.php:640
+#, fuzzy
+msgid "All visitor can see the user photos without registration"
+msgstr "Все посетитель может увидеть фотографии пользователей без регистрации"
+
+#: ../admin/tabs/settings.php:643 ../admin/tabs/settings.php:644
+#, fuzzy
+msgid "Specify if the user photos are public or private"
+msgstr ""
+"Укажите, если фотографии пользователя являются государственными или частными"
+
+#: ../admin/tabs/settings.php:659
+#, fuzzy
+msgid "Social Media Settings"
+msgstr "Страница настроек социальных сред"
+
+#: ../admin/tabs/settings.php:671
+#, fuzzy
+msgid "Facebook Connect"
+msgstr "Подключиться к Facebook"
+
+#: ../admin/tabs/settings.php:673 ../admin/tabs/settings.php:674
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Facebook."
+msgstr ""
+"Если флажок установлен, пользователь будет иметь возможность "
+"зарегистрироваться & войти через Facebook."
+
+#: ../admin/tabs/settings.php:680
+#, fuzzy
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+#: ../admin/tabs/settings.php:681 ../admin/tabs/settings.php:682
+#: ../admin/tabs/settings.php:692
+#, fuzzy
+msgid "Obtained when you created the Facebook Application."
+msgstr "Полученные при создании приложения Facebook."
+
+#: ../admin/tabs/settings.php:690
+#, fuzzy
+msgid "Facebook App Secret"
+msgstr "Facebook App Secret"
+
+#: ../admin/tabs/settings.php:691
+#, fuzzy
+msgid "Facebook settings"
+msgstr "Facebook настройки"
+
+#: ../admin/tabs/settings.php:698
+#, fuzzy
+msgid "LinkedIn Connect"
+msgstr "Подключения LinkedIn"
+
+#: ../admin/tabs/settings.php:700 ../admin/tabs/settings.php:701
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through LinkedIn."
+msgstr ""
+"Если флажок установлен, пользователь сможет зарегистрироваться & вход через "
+"LinkedIn."
+
+#: ../admin/tabs/settings.php:707
+#, fuzzy
+msgid "LinkedIn API Key Public"
+msgstr "LinkedIn ключ API общественности"
+
+#: ../admin/tabs/settings.php:708 ../admin/tabs/settings.php:709
+#: ../admin/tabs/settings.php:777 ../admin/tabs/settings.php:785
+#, fuzzy
+msgid "Obtained when you created your application."
+msgstr "Полученные при создании приложения."
+
+#: ../admin/tabs/settings.php:715
+#, fuzzy
+msgid "LinkedIn API Key Private"
+msgstr "Частный ключ API LinkedIn"
+
+#: ../admin/tabs/settings.php:716
+#, fuzzy
+msgid ""
+"<br><br> VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?"
+"uultralinkedin=1\". Example: http://yourdomain.com/?uultralinkedin=1"
+msgstr ""
+"<br><br>ОЧЕНЬ важно: Установка OAuth 1.0 принять перенаправить URL-адрес для "
+"«? uultralinkedin = 1\". Пример: http://yourdomain.com/?uultralinkedin=1"
+
+#: ../admin/tabs/settings.php:717
+#, fuzzy
+msgid ""
+"VERY IMPORTANT: Set OAuth 1.0 Accept Redirect URL to \"?uultralinkedin=1"
+msgstr ""
+"ОЧЕНЬ важно: Установка OAuth 1.0 принять перенаправить URL-адрес для «? "
+"uultralinkedin = 1"
+
+#: ../admin/tabs/settings.php:724
+#, fuzzy
+msgid "Yahoo Sign up"
+msgstr "Yahoo Зарегистрируйся"
+
+#: ../admin/tabs/settings.php:726 ../admin/tabs/settings.php:727
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Yahoo."
+msgstr ""
+"Если флажок установлен, пользователь сможет зарегистрироваться & вход через "
+"Yahoo."
+
+#: ../admin/tabs/settings.php:732
+#, fuzzy
+msgid "Google Sign up"
+msgstr "Зарегистрируйся Google"
+
+#: ../admin/tabs/settings.php:734 ../admin/tabs/settings.php:735
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Google."
+msgstr ""
+"Если флажок установлен, пользователь сможет зарегистрироваться & вход через "
+"Google."
+
+#: ../admin/tabs/settings.php:741
+#, fuzzy
+msgid "Google Client ID"
+msgstr "Google Client ID"
+
+#: ../admin/tabs/settings.php:742 ../admin/tabs/settings.php:743
+#, fuzzy
+msgid "Paste the client id that you got from google API Console"
+msgstr ""
+"Вставьте идентификатор клиента, который вы получили от google API консоли"
+
+#: ../admin/tabs/settings.php:749
+#, fuzzy
+msgid "Google Client Secret"
+msgstr "Google Client Secret"
+
+#: ../admin/tabs/settings.php:750 ../admin/tabs/settings.php:784
+#, fuzzy
+msgid "Set the client secret"
+msgstr "Установите клиент секрет"
+
+#: ../admin/tabs/settings.php:751
+#, fuzzy
+msgid "Obtained when you created the Google Application."
+msgstr "Полученные при создании приложения Google."
+
+#: ../admin/tabs/settings.php:757
+#, fuzzy
+msgid "Google Redirect URI"
+msgstr "Google перенаправление Ури"
+
+#: ../admin/tabs/settings.php:758
+#, fuzzy
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. Find more information here https://"
+"developers.google.com/console/help/new/#console.  <br><br> VERY IMPORTANT: "
+"Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
+"uultraplus=1"
+msgstr ""
+"Вставьте перенаправление Ури где вы дали в APi консоли. Вы получите маркер "
+"доступа здесь во время входа успех. Найти больше информации здесь https://"
+"developers.google.com/console/help/new/#console.<br><br>ОЧЕНЬ важно: Ваш URL-"
+"адрес должен заканчиваться «? uultraplus = 1\". Пример: http://yourdomain."
+"com/?uultraplus=1"
+
+#: ../admin/tabs/settings.php:759
+#, fuzzy
+msgid ""
+"Your URL should end with \"?uultraplus=1\". Example: http://yourdomain.com/?"
+"uultraplus=1"
+msgstr ""
+"Ваш URL-адрес должен заканчиваться «? uultraplus = 1\". Пример: http://"
+"yourdomain.com/?uultraplus=1"
+
+#: ../admin/tabs/settings.php:767
+#, fuzzy
+msgid "Instagram Sign up"
+msgstr "Instagram Зарегистрируйся"
+
+#: ../admin/tabs/settings.php:769 ../admin/tabs/settings.php:770
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Instagram."
+msgstr ""
+"Если флажок установлен, пользователь сможет зарегистрироваться & вход через "
+"Instagram."
+
+#: ../admin/tabs/settings.php:775
+#, fuzzy
+msgid "Instagram Client ID"
+msgstr "Instagram Client ID"
+
+#: ../admin/tabs/settings.php:776
+#, fuzzy
+msgid "Paste the client id that you got from Instagram API Console"
+msgstr ""
+"Вставьте идентификатор клиента, который вы получили от Instagram API консоли"
+
+#: ../admin/tabs/settings.php:783
+#, fuzzy
+msgid "Instagram Client Secret"
+msgstr "Instagram Client Secret"
+
+#: ../admin/tabs/settings.php:791
+#, fuzzy
+msgid "Instagram Redirect URI"
+msgstr "Instagram перенаправление Ури"
+
+#: ../admin/tabs/settings.php:792
+#, fuzzy
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Client ID and Client Secret here http://instagram.com/developer/clients/"
+"register/#. <br><br> VERY IMPORTANT: Your Redirect URI should end with \"?"
+"instagram=1\". Example: http://yourdomain.com/?instagram=1"
+msgstr ""
+"Вставьте перенаправление Ури где вы дали в APi консоли. Вы получите ID "
+"клиента и клиент секрет здесь http://instagram.com/developer/clients/"
+"register/#.<br><br>ОЧЕНЬ важно: Перенаправление URI должен заканчиваться «? "
+"instagram = 1». Пример: http://yourdomain.com/?instagram=1"
+
+#: ../admin/tabs/settings.php:793
+#, fuzzy
+msgid ""
+"Paste the redirect URI where you given in APi Console. You will get the "
+"Access Token here during login success. "
+msgstr ""
+"Вставьте перенаправление Ури где вы дали в APi консоли. Вы получите маркер "
+"доступа здесь во время входа успех."
+
+#: ../admin/tabs/settings.php:802
+#, fuzzy
+msgid "Twitter Sign up"
+msgstr "Щебетать Зарегистрируйся"
+
+#: ../admin/tabs/settings.php:804 ../admin/tabs/settings.php:805
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Twitter."
+msgstr ""
+"Если флажок установлен, пользователь сможет зарегистрироваться & вход через "
+"Twitter."
+
+#: ../admin/tabs/settings.php:812
+#, fuzzy
+msgid "Consumer Key"
+msgstr "Основным потребителем."
+
+#: ../admin/tabs/settings.php:813
+#, fuzzy
+msgid "Paste the Consumer Key"
+msgstr "Вставьте ключ потребителя"
+
+#: ../admin/tabs/settings.php:814
+#, fuzzy
+msgid "Obtained when you created your Application at Twitter Developer Center"
+msgstr "Полученные при создании приложения в центр разработчиков Twitter"
+
+#: ../admin/tabs/settings.php:820
+#, fuzzy
+msgid "Consumer Secret"
+msgstr "Секретное слово"
+
+#: ../admin/tabs/settings.php:821
+#, fuzzy
+msgid "Paste the Consumer Secret"
+msgstr "Вставьте секрет потребителя"
+
+#: ../admin/tabs/settings.php:822
+#, fuzzy
+msgid "Obtained when you created your Applicatoin at Twitter Developer Center"
+msgstr "Когда вы создали ваш Applicatoin в центр разработчиков Twitter"
+
+#: ../admin/tabs/settings.php:828
+#, fuzzy
+msgid "Twitter Auto Post"
+msgstr "Пост щебетать авто"
+
+#: ../admin/tabs/settings.php:830 ../admin/tabs/settings.php:831
+#, fuzzy
+msgid ""
+"If checked, Users Ultra will post a message automatically to the user "
+"twitter timeline when registering."
+msgstr ""
+"Если флажок установлен, пользователи Ultra отправлю сообщение автоматически "
+"для пользователей щебетать сроки при регистрации."
+
+#: ../admin/tabs/settings.php:837
+#: ../xooclasses/xoo.userultra.mymessage.php:904
+#: ../xooclasses/xoo.userultra.mymessage.php:927
+#, fuzzy
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../admin/tabs/settings.php:838 ../admin/tabs/settings.php:839
+#, fuzzy
+msgid "Input the message that will be posted right after user registration"
+msgstr ""
+"Введите сообщение, которое будет опубликовано сразу после регистрации "
+"пользователя"
+
+#: ../admin/tabs/settings.php:845
+#, fuzzy
+msgid "Yammer Sign up"
+msgstr "Yammer Зарегистрируйся"
+
+#: ../admin/tabs/settings.php:847 ../admin/tabs/settings.php:848
+#, fuzzy
+msgid "If checked, User will be able to Sign up & Sign in through Yammer."
+msgstr ""
+"Если флажок установлен, пользователь сможет зарегистрироваться & вход через "
+"Yammer."
+
+#: ../admin/tabs/settings.php:855
+#, fuzzy
+msgid "Client Id"
+msgstr "Id клиента"
+
+#: ../admin/tabs/settings.php:856
+#, fuzzy
+msgid "Paste the Yammer Client ID"
+msgstr "Вставьте идентификатор клиента Yammer"
+
+#: ../admin/tabs/settings.php:857
+#, fuzzy
+msgid "The same used when you signed up."
+msgstr "То же самое используется при создании аккаунта."
+
+#: ../admin/tabs/settings.php:863
+#, fuzzy
+msgid "Client Secret"
+msgstr "Установите клиент секрет"
+
+#: ../admin/tabs/settings.php:864 ../admin/tabs/settings.php:872
+#, fuzzy
+msgid "Paste the Yammer Client Secret"
+msgstr "Вставьте секрет Yammer клиента"
+
+#: ../admin/tabs/settings.php:865
+#, fuzzy
+msgid "Obtained at Yammer developer center."
+msgstr "Получить в центре разработчиков Yammer."
+
+#: ../admin/tabs/settings.php:871
+#, fuzzy
+msgid "Redirect URL"
+msgstr "Ссылка, куда перенаправлять"
+
+#: ../admin/tabs/settings.php:873
+#, fuzzy
+msgid ""
+"<br><br> VERY IMPORTANT: Your URL should end with \"?uultryammer=1\". "
+"Example: http://yourdomain.com/?uultryammer=1"
+msgstr ""
+"<br><br>ОЧЕНЬ важно: Ваш URL-адрес должен заканчиваться «? uultryammer = "
+"1\". Пример: http://yourdomain.com/?uultryammer=1"
+
+#: ../admin/tabs/settings.php:885
+#, fuzzy
+msgid "Logged In Users Pages and Posts Protection Settings"
+msgstr "Вход на страницах пользователей и параметры защиты сообщений"
+
+#: ../admin/tabs/settings.php:887
+#, fuzzy
+msgid ""
+"In this section you can manage Posts & Pages Protection module settings."
+msgstr ""
+"В этом разделе можно управлять параметрами защиты сообщений & страниц модуля."
+
+#: ../admin/tabs/settings.php:888
+#, fuzzy
+msgid ""
+"This module will let you block pages and any post types and make them "
+"visible only to logged in users."
+msgstr ""
+"Этот модуль позволит вам блокировать страницы и любых типов должность и "
+"сделать их видимыми только для того, чтобы войти в пользователей."
+
+#: ../admin/tabs/settings.php:891
+#, fuzzy
+msgid "Set up the behaviour of locked posts."
+msgstr "Настройте поведение заблокированных должностей."
+
+#: ../admin/tabs/settings.php:899
+#, fuzzy
+msgid "Activate Logged in Post Protection"
+msgstr "Активировать вход в пост охраны"
+
+#: ../admin/tabs/settings.php:901 ../admin/tabs/settings.php:902
+#, fuzzy
+msgid ""
+"If checked, You will be able to protect pages and post bassed on logged in "
+"users."
+msgstr ""
+"Если флажок установлен, можно защитить страницы и после bassed на вошедший в "
+"систему пользователей."
+
+#: ../admin/tabs/settings.php:909
+#, fuzzy
+msgid "Hide Complete Posts?"
+msgstr "Скрыть полный должности?"
+
+#: ../admin/tabs/settings.php:915
+msgid ""
+"By selecting 'yes' will hide posts if the user has no access. <strong>Please "
+"note: </strong> a 404 error message will be displayed since the post will be "
+"completely locked out."
+msgstr ""
+"Выбрав «Да» будет скрыть должности, если у пользователя нет доступа. "
+"<strong>Пожалуйста, обратите внимание:</strong> будет отображаться сообщение "
+"об ошибке 404, поскольку пост будет полностью заблокирована."
+
+#: ../admin/tabs/settings.php:916
+msgid ""
+"By selecting 'yes' will hide posts if the user has no access. Please note: a "
+"404 error message will be displayed since the post will be completely locked "
+"out."
+msgstr ""
+"Выбрав «Да» будет скрыть должности, если у пользователя нет доступа. "
+"Пожалуйста, обратите внимание: будет отображаться сообщение об ошибке 404, "
+"поскольку пост будет полностью заблокирована."
+
+#: ../admin/tabs/settings.php:922 ../admin/tabs/settings.php:1098
+#, fuzzy
+msgid "Hide Post Title?"
+msgstr "Скрыть Заголовок сообщения?"
+
+#: ../admin/tabs/settings.php:928 ../admin/tabs/settings.php:929
+#: ../admin/tabs/settings.php:1104 ../admin/tabs/settings.php:1105
+#, fuzzy
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Post title' if "
+"user has no access."
+msgstr ""
+"Выбрав «Да» будет показывать текст, который определяется в «Название "
+"должности», если пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:935
+#, fuzzy
+msgid "Post Title:"
+msgstr "Название записи"
+
+#: ../admin/tabs/settings.php:936 ../admin/tabs/settings.php:937
+#, fuzzy
+msgid "This will be the displayed text as post title if user has no access."
+msgstr ""
+"Это будет текст, отображаемый как название должности, если пользователь не "
+"имеет доступа."
+
+#: ../admin/tabs/settings.php:944
+#, fuzzy
+msgid "Show post content before &lt;!--more--&gt; tag?"
+msgstr "Показать сообщение контента, до &lt;!----больше &gt; тег?"
+
+#: ../admin/tabs/settings.php:950 ../admin/tabs/settings.php:951
+#, fuzzy
+msgid ""
+"By selecting \"Yes\"  will display the post content before the &lt;!--more--"
+"&gt; tag and after that the defined text at \"Post content\". If no &lt;!--"
+"more--&gt;  is set he defined text at \"Post content\" will shown."
+msgstr ""
+"Выбрав «Да» будет отображаться содержимое поста перед &lt;!----больше &gt; "
+"тег, и после этого определенный текст, «пост контента». Если не &lt;!--more--"
+"&gt; задан, он определяет текст, «Пост содержание» будет показано."
+
+#: ../admin/tabs/settings.php:958
+#, fuzzy
+msgid "Post Content"
+msgstr "Контент записи блога"
+
+#: ../admin/tabs/settings.php:959 ../admin/tabs/settings.php:960
+#: ../admin/tabs/settings.php:1045 ../admin/tabs/settings.php:1046
+#, fuzzy
+msgid "This content will be displayed if user has no access. "
+msgstr "Это содержимое будет отображаться, если пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:967
+#, fuzzy
+msgid "Hide Post Comments?"
+msgstr "Скрыть оставлять комментарии?"
+
+#: ../admin/tabs/settings.php:973 ../admin/tabs/settings.php:974
+#, fuzzy
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Post comment "
+"text' if user has no access."
+msgstr ""
+"Выбрав «Да» будет показывать текст, который определяется в «Пост комментарий "
+"текст», если пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:980
+#, fuzzy
+msgid "Post Comment Text:"
+msgstr "Опубликовать текст комментария:"
+
+#: ../admin/tabs/settings.php:981 ../admin/tabs/settings.php:982
+#, fuzzy
+msgid "This will be displayed text as post comment text if user has no access."
+msgstr ""
+"Это будет текст, отображаемый как пост комментарий текст, если пользователь "
+"не имеет доступа."
+
+#: ../admin/tabs/settings.php:987
+#, fuzzy
+msgid "Allows Post Comments?"
+msgstr "Позволяет оставлять комментарии?"
+
+#: ../admin/tabs/settings.php:993 ../admin/tabs/settings.php:994
+#, fuzzy
+msgid "By selecting 'yes' allows users to comment on locked posts"
+msgstr ""
+"Выбрав «Да» позволяет пользователям комментировать заблокированные сообщения"
+
+#: ../admin/tabs/settings.php:1001
+#, fuzzy
+msgid "Set up the behaviour of locked pages."
+msgstr "Настройте поведение заблокированных страниц."
+
+#: ../admin/tabs/settings.php:1009
+#, fuzzy
+msgid "Hide Complete Pages?"
+msgstr "Скрыть полные страницы?"
+
+#: ../admin/tabs/settings.php:1015
+msgid ""
+"By selecting 'yes' will hide pages if the user has no access. <strong>Please "
+"note: </strong> a 404 error message will be displayed since the page will be "
+"completely locked out."
+msgstr ""
+"Выбрав «Да» будет скрыть страницы, если пользователь не имеет доступа. "
+"<strong>Пожалуйста, обратите внимание:</strong> будет отображаться сообщение "
+"об ошибке 404, поскольку страница будет полностью заблокирована."
+
+#: ../admin/tabs/settings.php:1016
+#, fuzzy
+msgid "By selecting 'yes' will hide pages if the user has no access"
+msgstr "Выбрав «Да» будет скрыть страницы, если пользователь не имеет доступа"
+
+#: ../admin/tabs/settings.php:1022
+#, fuzzy
+msgid "Hide Page Title?"
+msgstr "Скрыть заголовок"
+
+#: ../admin/tabs/settings.php:1028 ../admin/tabs/settings.php:1029
+#, fuzzy
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Page title' if "
+"user has no access."
+msgstr ""
+"Выбрав «Да» будет показывать текст, который определен в «Заголовок "
+"страницы», если пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:1035
+#, fuzzy
+msgid "Page Title:"
+msgstr "Название страницы:"
+
+#: ../admin/tabs/settings.php:1036 ../admin/tabs/settings.php:1037
+#, fuzzy
+msgid "This will be the displayed text as page title if user has no access."
+msgstr ""
+"Это будет текст как заголовок страницы, если пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:1044
+#, fuzzy
+msgid "Page Content"
+msgstr "Содержимое страницы"
+
+#: ../admin/tabs/settings.php:1053
+#, fuzzy
+msgid "Hide Page Comments?"
+msgstr "Скрыть комментарии страницы?"
+
+#: ../admin/tabs/settings.php:1059 ../admin/tabs/settings.php:1060
+#, fuzzy
+msgid ""
+"By selecting 'yes' will show the text which is defined at 'Page comment "
+"text' if user has no access."
+msgstr ""
+"Выбрав «Да» покажет текст, который определяется в «Текст комментария "
+"страница», если пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:1068
+#, fuzzy
+msgid "Page Comment Text:"
+msgstr "Текст страницы комментария:"
+
+#: ../admin/tabs/settings.php:1069 ../admin/tabs/settings.php:1070
+#, fuzzy
+msgid "This will be displayed text as page comment text if user has no access."
+msgstr ""
+"Это будет текст, отображаемый как страницы текст комментария, если "
+"пользователь не имеет доступа."
+
+#: ../admin/tabs/settings.php:1075
+#, fuzzy
+msgid "Allows Page Comments?"
+msgstr "Позволяет страницы комментарии?"
+
+#: ../admin/tabs/settings.php:1081 ../admin/tabs/settings.php:1082
+#, fuzzy
+msgid "By selecting 'yes' allows users to comment on locked pages"
+msgstr ""
+"Выбрав «Да» позволяет пользователям комментировать заблокированных страниц"
+
+#: ../admin/tabs/settings.php:1089
+#, fuzzy
+msgid "Other Settings."
+msgstr "Другие настройки"
+
+#: ../admin/tabs/settings.php:1117
+#, fuzzy
+msgid "Redirect Settings"
+msgstr "Настройки перенаправления"
+
+#: ../admin/tabs/settings.php:1128
+#, fuzzy
+msgid "Redirect Backend Profiles"
+msgstr "Перенаправление к внутренним анкеты"
+
+#: ../admin/tabs/settings.php:1130
+#, fuzzy
+msgid ""
+"If checked, non-admin users who try to access backend WP profiles will be "
+"redirected to Users Ultra Profile Page specified above."
+msgstr ""
+"Если флажок установлен, администратора пользователей, которые пытаются "
+"получить доступ к серверной WP профили перенаправляется пользователей Ultra "
+"профиля страницу, указанную выше."
+
+#: ../admin/tabs/settings.php:1131
+#, fuzzy
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra "
+"Profile Page if they try to access the default backend profile page in wp-"
+"admin. The page can be selected in the Users Ultra System Pages settings."
+msgstr ""
+"Проверка этого параметра будет отправлять всех пользователей на интерфейсных "
+"Ultra страницу профиля пользователей, если они пытаются получить доступ к "
+"странице профиля бэкэнд по умолчанию в wp-администратора. Страница может "
+"быть выбрана в настройках ультра системы страниц пользователей."
+
+#: ../admin/tabs/settings.php:1137
+#, fuzzy
+msgid "Redirect Backend Login"
+msgstr "Перенаправление к внутреннему Логин"
+
+#: ../admin/tabs/settings.php:1139
+#, fuzzy
+msgid ""
+"If checked, non-admin users who try to access backend login form will be "
+"redirected to the front end Users Ultra Login Page specified above."
+msgstr ""
+"Если флажок установлен, администратора пользователей, которые пытаются "
+"получить доступ к форме входа бэкэнд перенаправляется на фронт, конечных "
+"пользователей Ultra страница входа, указанный выше."
+
+#: ../admin/tabs/settings.php:1140
+#, fuzzy
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra Login "
+"Page if they try to access the default backend login form. The page can be "
+"selected in the Users Ultra System Pages settings."
+msgstr ""
+"Этот параметр проверки будет отправлять всех пользователей на интерфейсных "
+"Ultra страницу входа пользователей, если они пытаются получить доступ к "
+"форме входа по умолчанию бэкэнд. Страница может быть выбрана в настройках "
+"ультра системы страниц пользователей."
+
+#: ../admin/tabs/settings.php:1146
+#, fuzzy
+msgid "Redirect Backend Registrations"
+msgstr "Перенаправление к внутренним регистраций"
+
+#: ../admin/tabs/settings.php:1148
+#, fuzzy
+msgid ""
+"If checked, non-admin users who try to access backend registration form will "
+"be redirected to the front end Users Ultra Registration Page specified above."
+msgstr ""
+"Если флажок установлен, администратора пользователей, которые пытаются "
+"получить доступ к форме регистрации бэкэнд перенаправляется на фронт, "
+"которую конечные пользователи Ultra страница регистрации указанного выше."
+
+#: ../admin/tabs/settings.php:1149
+#, fuzzy
+msgid ""
+"Checking this option will send all users to the front-end Users Ultra "
+"Registration Page if they try to access the default backend registraiton "
+"form. The page can be selected in the Users Ultra System Pages settings."
+msgstr ""
+"Если они пытаются получить доступ к форме registraiton бэкэнд по умолчанию "
+"этот параметр проверки отправит всех пользователей интерфейсных Ultra "
+"страницу регистрации пользователей. Страница может быть выбрана в настройках "
+"ультра системы страниц пользователей."
+
+#: ../admin/tabs/settings.php:1156
+#, fuzzy
+msgid "After Registration"
+msgstr "После регистрации..."
+
+#: ../admin/tabs/settings.php:1158
+#, fuzzy
+msgid ""
+"The user will be taken to this page after registration if the account "
+"activation is set to automatic "
+msgstr ""
+"Пользователь будет приниматься на эту страницу после регистрации если "
+"активации учетной записи установлен автоматический"
+
+#: ../admin/tabs/settings.php:1159
+msgid ""
+"The user will be taken to this page after registration if the account "
+"activation is set to automatic"
+msgstr ""
+"Пользователь будет приниматься на эту страницу после регистрации если "
+"активации учетной записи установлен автоматический"
+
+#: ../admin/tabs/settings.php:1167
+#, fuzzy
+msgid "Registration Options"
+msgstr "Варианты регистраций"
+
+#: ../admin/tabs/settings.php:1175
+#, fuzzy
+msgid "User Selected Passwords"
+msgstr "Пользователь выбрал Пароли"
+
+#: ../admin/tabs/settings.php:1177
+#, fuzzy
+msgid "Enabled, allow users to set password"
+msgstr "Включено, чтобы пользователи могли установить пароль"
+
+#: ../admin/tabs/settings.php:1178
+#, fuzzy
+msgid "Disabled, email a random password to users"
+msgstr "Инвалидов, по электронной почте случайный пароль для пользователей"
+
+#: ../admin/tabs/settings.php:1179
+#, fuzzy
+msgid "Enable/disable setting a user selected password at registration"
+msgstr ""
+"Включить или отключить параметр выбранного пароля пользователя при "
+"регистрации"
+
+#: ../admin/tabs/settings.php:1180
+#, fuzzy
+msgid ""
+"If enabled, users can choose their own password at registration. If "
+"disabled, WordPress will email users a random password when they register."
+msgstr ""
+"Если включено, пользователи могут выбрать свой собственный пароль при "
+"регистрации. Если эта функция отключена, WordPress будет пользователей "
+"электронной почты случайный пароль при регистрации."
+
+#: ../admin/tabs/settings.php:1188
+#, fuzzy
+msgid "Privacy Options"
+msgstr "Настройки видимости"
+
+#: ../admin/tabs/settings.php:1196
+#, fuzzy
+msgid "Logged-in user viewing of other profiles"
+msgstr "Входить в просмотре пользователем других профилей"
+
+#: ../admin/tabs/settings.php:1198
+#, fuzzy
+msgid "Enabled, logged-in users may view other user profiles"
+msgstr ""
+"Включено, вошедшего в пользователи могут просматривать другие профили "
+"пользователей"
+
+#: ../admin/tabs/settings.php:1199
+#, fuzzy
+msgid "Disabled, users may only view their own profile"
+msgstr ""
+"Инвалидов, пользователи могут просматривать только свой собственный профиль"
+
+#: ../admin/tabs/settings.php:1200
+#, fuzzy
+msgid ""
+"Enable or disable logged-in user viewing of other user profiles. Admin users "
+"can always view all profiles."
+msgstr ""
+"Включить или отключить правки Просмотр пользователей других профилей "
+"пользователей. Пользователи администратора всегда сможете просмотреть все "
+"профили."
+
+#: ../admin/tabs/settings.php:1201
+#, fuzzy
+msgid ""
+"If enabled, logged-in users are allowed to view other user profiles. If "
+"disabled, logged-in users may only view their own profile."
+msgstr ""
+"Если этот параметр включен, вошедшим в систему пользователям разрешено "
+"просматривать профили других пользователей. Если отключена, вошедшие в "
+"систему пользователи могут просматривать только их собственный профиль."
+
+#: ../admin/tabs/settings.php:1207
+#, fuzzy
+msgid "Guests viewing of profiles"
+msgstr "Гости, просмотр профилей"
+
+#: ../admin/tabs/settings.php:1209
+#, fuzzy
+msgid "Enabled, make profiles publicly visible"
+msgstr "Включено, чтобы профили общедоступными"
+
+#: ../admin/tabs/settings.php:1210
+#, fuzzy
+msgid "Disabled, users must login to view profiles"
+msgstr ""
+"Инвалидов, пользователи должны авторизоваться, чтобы просматривать профили"
+
+#: ../admin/tabs/settings.php:1211
+#, fuzzy
+msgid "Enable or disable guest and non-logged in user viewing of profiles."
+msgstr ""
+"Включить или отключить гостя и не вошли в просмотре пользователем профилей."
+
+#: ../admin/tabs/settings.php:1212
+#, fuzzy
+msgid ""
+"If enabled, profiles will be publicly visible to non-logged in users. If "
+"disabled, guests must log in to view profiles."
+msgstr ""
+"Если опция включена, профили будут общедоступны для не-зарегистрированных "
+"пользователей. Если этот параметр отключен, гости должны войти, чтобы "
+"посмотреть профили."
+
+#: ../templates/basic/dashboard.php:44
+#, fuzzy
+msgid "Update Profile Image"
+msgstr "Обновить изображение профиля"
+
+#: ../templates/basic/dashboard.php:194
+#, fuzzy
+msgid "Hello"
+msgstr "Здравствуйте,"
+
+#: ../templates/basic/dashboard.php:194
+#, fuzzy
+msgid "Welcome to your dashboard"
+msgstr "Добро пожаловать на приборную панель."
+
+#: ../templates/basic/dashboard.php:196
+#, fuzzy
+msgid "Account Status"
+msgstr "Статус аккаунт"
+
+#: ../templates/basic/dashboard.php:204
+#, fuzzy
+msgid "My Latest Messages"
+msgstr "Мой последние сообщения"
+
+#: ../templates/basic/dashboard.php:225
+#, fuzzy
+msgid "My Latest Photos:"
+msgstr "Мои последние фотографии:"
+
+#: ../templates/basic/dashboard.php:256
+#: ../xooclasses/xoo.userultra.user.php:2352
+#: ../xooclasses/xoo.userultra.user.php:2356
+#, fuzzy
+msgid "My Friends"
+msgstr "Только моим друзьям"
+
+#: ../templates/basic/dashboard.php:260
+#, fuzzy
+msgid ""
+"Here you can manage your friends. Your friends will be able to see private/"
+"restricted content"
+msgstr ""
+"Здесь вы можете управлять вашим друзьям. Ваши друзья смогут увидеть частные/"
+"ограничено содержание"
+
+#: ../templates/basic/dashboard.php:339
+#: ../xooclasses/xoo.userultra.user.php:2372
+#: ../xooclasses/xoo.userultra.user.php:2376
+#, fuzzy
+msgid "My Posts"
+msgstr "Мои сообщения"
+
+#: ../templates/basic/dashboard.php:343
+#, fuzzy
+msgid "Here you can manage your posts. "
+msgstr "Здесь вы можете управлять вашей должности."
+
+#: ../templates/basic/dashboard.php:383 ../templates/basic/dashboard.php:418
+#: ../xooclasses/xoo.userultra.user.php:2283
+#: ../xooclasses/xoo.userultra.user.php:2287
+#, fuzzy
+msgid "My Orders"
+msgstr "Мои заказы"
+
+#: ../templates/basic/dashboard.php:387
+#, fuzzy
+msgid "Here you can check your orders. "
+msgstr "Здесь вы можете проверить ваши заказы."
+
+#: ../templates/basic/dashboard.php:422
+#, fuzzy
+msgid "Here you can track your orders. "
+msgstr "Здесь вы можете отслеживать ваши заказы."
+
+#: ../templates/basic/dashboard.php:456
+#: ../xooclasses/xoo.userultra.user.php:278
+#, fuzzy
+msgid "My Galleries"
+msgstr "Мои галереи"
+
+#: ../templates/basic/dashboard.php:461
+#, fuzzy
+msgid "Here you can manage your galleries and photos."
+msgstr "Здесь вы можете управлять вашей галереи и фотографии."
+
+#: ../templates/basic/dashboard.php:463
+#, fuzzy
+msgid "Add Gallery"
+msgstr "Добавить галерею"
+
+#: ../templates/basic/dashboard.php:473
+#: ../xooclasses/xoo.userultra.payment.paypal.php:584
+#: ../xooclasses/xoo.userultra.payment.paypal.php:759
+#: ../xooclasses/xoo.userultra.photos.php:1564
+#: ../xooclasses/xoo.userultra.photos.php:1704
+#, fuzzy
+msgid "Description"
+msgstr "Описание"
+
+#: ../templates/basic/dashboard.php:480 ../templates/basic/dashboard.php:915
+#: ../xooclasses/xoo.userultra.publisher.php:391
+#, fuzzy
+msgid "Submit"
+msgstr "Отправить"
+
+#: ../templates/basic/dashboard.php:523
+#, fuzzy
+msgid "Delete this gallery?"
+msgstr "Удалить галерею"
+
+#: ../templates/basic/dashboard.php:547
+#: ../xooclasses/xoo.userultra.user.php:271
+#, fuzzy
+msgid "My Photos"
+msgstr "Мои фотографии"
+
+#: ../templates/basic/dashboard.php:552
+#, fuzzy
+msgid "Here you can manage your photos."
+msgstr "Здесь вы можете управлять вашей фотографии."
+
+#: ../templates/basic/dashboard.php:554
+#, fuzzy
+msgid "Upload Files"
+msgstr "Загрузить файлы"
+
+#: ../templates/basic/dashboard.php:564
+#, fuzzy
+msgid "loading photos ..."
+msgstr "Загрузка фотографий..."
+
+#: ../templates/basic/dashboard.php:617
+#, fuzzy
+msgid "My Profile"
+msgstr "Мой профиль"
+
+#: ../templates/basic/dashboard.php:647
+#, fuzzy
+msgid "Received Messages"
+msgstr "Полученные сообщения"
+
+#: ../templates/basic/dashboard.php:696
+#, fuzzy
+msgid "Sent Messages"
+msgstr "Отправленные сообщения"
+
+#: ../templates/basic/dashboard.php:756
+#, fuzzy
+msgid "Account ID: "
+msgstr "ID аккаунта"
+
+#: ../templates/basic/dashboard.php:756
+#, fuzzy
+msgid "Registered Date: "
+msgstr "Дата регистрации"
+
+#: ../templates/basic/dashboard.php:756
+#, fuzzy
+msgid "Account Type: "
+msgstr "Тип счета"
+
+#: ../templates/basic/dashboard.php:769
+#, fuzzy
+msgid "Close Account"
+msgstr "Закрыть счет"
+
+#: ../templates/basic/dashboard.php:774
+#, fuzzy
+msgid "Remove Account"
+msgstr "Удаление учётной записи"
+
+#: ../templates/basic/dashboard.php:778
+#, fuzzy
+msgid "Here you can remove your account."
+msgstr "Здесь вы можете удалить свой аккаунт."
+
+#: ../templates/basic/dashboard.php:781
+#, fuzzy
+msgid "YES, CLOSE MY ACCOUNT"
+msgstr "ДА, ЗАКРЫТЬ МОЙ СЧЕТ"
+
+#: ../templates/basic/dashboard.php:794 ../templates/basic/dashboard.php:854
+#, fuzzy
+msgid ""
+"Are you totally sure that you want to close your account. This action cannot "
+"be reverted?"
+msgstr ""
+"Вы полностью уверены, что хотите закрыть свой аккаунт. Это действие не может "
+"быть восстановлена?"
+
+#: ../templates/basic/dashboard.php:813
+#: ../xooclasses/xoo.userultra.admin.php:52
+#: ../xooclasses/xoo.userultra.user.php:2256
+#: ../xooclasses/xoo.userultra.user.php:2260
+#, fuzzy
+msgid "Settings"
+msgstr "Настройки"
+
+#: ../templates/basic/dashboard.php:818
+#, fuzzy
+msgid "Update Password"
+msgstr "ОБНОВИТЬ ПАРОЛЬ"
+
+#: ../templates/basic/dashboard.php:822
+#, fuzzy
+msgid "Type your New Password"
+msgstr "Введите свой пароль"
+
+#: ../templates/basic/dashboard.php:825
+#, fuzzy
+msgid "Re-type your New Password"
+msgstr "Подтвердите новый пароль"
+
+#: ../templates/basic/dashboard.php:828
+#, fuzzy
+msgid "CLICK HERE TO RESET PASSWORD"
+msgstr "НАЖМИТЕ ЗДЕСЬ, ЧТОБЫ СБРОСИТЬ ПАРОЛЬ"
+
+#: ../templates/basic/dashboard.php:833
+#, fuzzy
+msgid "Update Email"
+msgstr "Обновить e-mail"
+
+#: ../templates/basic/dashboard.php:837
+#, fuzzy
+msgid "Type your New Email"
+msgstr "Введите адрес электронной почты"
+
+#: ../templates/basic/dashboard.php:840
+#, fuzzy
+msgid "CLICK HERE TO UPDATE YOUR EMAIL"
+msgstr "НАЖМИТЕ ЗДЕСЬ, ЧТОБЫ ОБНОВИТЬ ВАШ EMAIL"
+
+#: ../templates/basic/dashboard.php:875 ../templates/basic/profile.php:183
+#: ../xooclasses/xoo.userultra.user.php:2335
+#: ../xooclasses/xoo.userultra.user.php:2339
+#, fuzzy
+msgid "My Videos"
+msgstr "Мое видео"
+
+#: ../templates/basic/dashboard.php:882
+#, fuzzy
+msgid "Here you can manage your videos."
+msgstr "Здесь вы можете управлять видео."
+
+#: ../templates/basic/dashboard.php:884
+#, fuzzy
+msgid "Add Video"
+msgstr "Добавить видео"
+
+#: ../templates/basic/dashboard.php:897
+#: ../xooclasses/xoo.userultra.photos.php:1825
+#, fuzzy
+msgid "Video ID"
+msgstr "ID видео"
+
+#: ../templates/basic/dashboard.php:905
+#, fuzzy
+msgid "Video Type"
+msgstr "Видео Тип"
+
+#: ../templates/basic/dashboard.php:926
+#, fuzzy
+msgid "please wait, loading videos ..."
+msgstr "Пожалуйста, подождите, Загрузка видео..."
+
+#: ../templates/basic/dashboard.php:955
+#, fuzzy
+msgid "Delete this video?"
+msgstr "Удалить видео"
+
+#: ../templates/basic/dashboard.php:956
+#, fuzzy
+msgid "Please input a name"
+msgstr "Пожалуйста, введите имя"
+
+#: ../templates/basic/dashboard.php:957
+#, fuzzy
+msgid "Please input video ID"
+msgstr "Пожалуйста, введите ID видео"
+
+#: ../templates/basic/directory_default.php:42
+#: ../templates/basic/directory_mini.php:42
+#, fuzzy
+msgid "Search for a user..."
+msgstr "Поиск для пользователя ..."
+
+#: ../templates/basic/directory_default.php:44
+#: ../templates/basic/directory_mini.php:44
+#: ../xooclasses/xoo.userultra.photos.php:354
+#, fuzzy
+msgid "Search"
+msgstr "Поиск"
+
+#: ../templates/basic/profile.php:64
+#, fuzzy
+msgid "Send Message"
+msgstr "Отправить"
+
+#: ../templates/basic/profile.php:112 ../templates/basic/profile.php:147
+#, fuzzy
+msgid "Main"
+msgstr "Основной контент"
+
+#: ../templates/basic/profile.php:169
+#, fuzzy
+msgid "My Photo Galleries"
+msgstr "Мои фото галереи"
+
+#: ../templates/basic/profile.php:204
+#, fuzzy
+msgid "Photos available only for registered users"
+msgstr "Фотографии доступны только для зарегистрированных пользователей"
+
+#: ../xooclasses/xoo.userultra.admin.php:50
+#: ../xooclasses/xoo.userultra.user.php:2202
+#: ../xooclasses/xoo.userultra.user.php:2206
+#, fuzzy
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: ../xooclasses/xoo.userultra.admin.php:51
+#, fuzzy
+msgid "Fields"
+msgstr "Поля"
+
+#: ../xooclasses/xoo.userultra.admin.php:53
+#, fuzzy
+msgid "Css"
+msgstr "Css"
+
+#: ../xooclasses/xoo.userultra.admin.php:54
+#, fuzzy
+msgid "Membership"
+msgstr "Участие"
+
+#: ../xooclasses/xoo.userultra.admin.php:56
+#, fuzzy
+msgid "Sync & Import"
+msgstr "Импорт пользователей"
+
+#: ../xooclasses/xoo.userultra.admin.php:57
+#, fuzzy
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: ../xooclasses/xoo.userultra.admin.php:59
+#, fuzzy
+msgid "Gateways"
+msgstr "Шлюзы"
+
+#: ../xooclasses/xoo.userultra.admin.php:60
+#, fuzzy
+msgid "Doc"
+msgstr "Док"
+
+#: ../xooclasses/xoo.userultra.admin.php:61
+#, fuzzy
+msgid "Go Pro!"
+msgstr "Купите версию PRO,"
+
+#: ../xooclasses/xoo.userultra.admin.php:67
+#, fuzzy
+msgid "Membership Plans"
+msgstr "Тарифные планы"
+
+#: ../xooclasses/xoo.userultra.admin.php:241
+#, fuzzy, php-format
+msgid "%d new manual activation requests"
+msgstr "Новый ручной активации запросы %d"
+
+#: ../xooclasses/xoo.userultra.admin.php:244
+#, fuzzy, php-format
+msgid "Users Ultra %s"
+msgstr "Пользователи Ultra %s"
+
+#: ../xooclasses/xoo.userultra.admin.php:248
+#: ../xooclasses/xoo.userultra.admin.php:251
+#, fuzzy
+msgid "Users Ultra"
+msgstr "Пользователи Ultra"
+
+#: ../xooclasses/xoo.userultra.admin.php:254
+msgid "GO PRO!"
+msgstr "Купите PRO!"
+
+#: ../xooclasses/xoo.userultra.admin.php:254
+msgid "GO PRO !!! "
+msgstr "Купите PRO!"
+
+#: ../xooclasses/xoo.userultra.admin.php:327
+#, fuzzy
+msgid "Settings are reset to default."
+msgstr "Настройки восстановлены по умолчанию."
+
+#: ../xooclasses/xoo.userultra.admin.php:333
+#, fuzzy
+msgid "WooCommerce fields have been added."
+msgstr "WooCommerce поля были добавлены."
+
+#: ../xooclasses/xoo.userultra.admin.php:338
+#, fuzzy
+msgid "WooCommerce fields have been removed."
+msgstr "WooCommerce поля были удалены."
+
+#: ../xooclasses/xoo.userultra.admin.php:356
+#, fuzzy
+msgid "Please log in to view / edit your profile."
+msgstr "Пожалуйста, войдите, чтобы просмотреть / изменить свой профиль."
+
+#: ../xooclasses/xoo.userultra.admin.php:357
+#, fuzzy
+msgid "Please log in to view user profiles."
+msgstr "Пожалуйста, войдите, чтобы просмотреть профили пользователей."
+
+#: ../xooclasses/xoo.userultra.admin.php:358
+#, fuzzy
+msgid "This content is for members only. You must log in to view this content."
+msgstr ""
+"Это содержание — только для членов. Вы должны авторизоваться для просмотра "
+"этого содержания."
+
+#: ../xooclasses/xoo.userultra.admin.php:388
+#: ../xooclasses/xoo.userultra.admin.php:391
+#, fuzzy
+msgid "No rights!"
+msgstr "Никакие права!"
+
+#: ../xooclasses/xoo.userultra.admin.php:389
+#, fuzzy
+msgid "Sorry you have to be logged in to view this post!"
+msgstr "Извините, вы должны войти, чтобы просмотреть этот пост!"
+
+#: ../xooclasses/xoo.userultra.admin.php:390
+#: ../xooclasses/xoo.userultra.admin.php:393
+#, fuzzy
+msgid "Sorry no rights to view comments!"
+msgstr "Жаль нет прав для просмотра комментариев!"
+
+#: ../xooclasses/xoo.userultra.admin.php:392
+#, fuzzy
+msgid "Sorry you have to be logged in to view this page!"
+msgstr "Извините, вы должны войти в систему для просмотра этой страницы!"
+
+#: ../xooclasses/xoo.userultra.admin.php:400
+#, fuzzy
+msgid "Subscribe to receive our periodic email updates"
+msgstr "Подписаться на получение наших периодических email обновления"
+
+#: ../xooclasses/xoo.userultra.admin.php:416
+#: ../xooclasses/xoo.userultra.class.php:2219
+#, fuzzy
+msgid "User registration is currently not allowed."
+msgstr "Регистрация пользователя в настоящий момент закрыта."
+
+#: ../xooclasses/xoo.userultra.admin.php:449
+#, fuzzy
+msgid "Users Ultra Plugin"
+msgstr "Ultra плагин пользователей"
+
+#: ../xooclasses/xoo.userultra.admin.php:463
+#: ../xooclasses/xoo.userultra.admin.php:474
+#: ../xooclasses/xoo.userultra.admin.php:489
+#: ../xooclasses/xoo.userultra.admin.php:500
+#: ../xooclasses/xoo.userultra.admin.php:512
+#: ../xooclasses/xoo.userultra.admin.php:524
+#: ../xooclasses/xoo.userultra.admin.php:559
+#: ../xooclasses/xoo.userultra.admin.php:567
+#: ../xooclasses/xoo.userultra.admin.php:576
+#: ../xooclasses/xoo.userultra.admin.php:582
+#: ../xooclasses/xoo.userultra.admin.php:588
+#: ../xooclasses/xoo.userultra.admin.php:595
+#: ../xooclasses/xoo.userultra.admin.php:602
+#, fuzzy
+msgid "Hi,"
+msgstr "Здравствуйте,"
+
+#: ../xooclasses/xoo.userultra.admin.php:464
+#, fuzzy
+msgid "Thanks for registering. Your account is now active."
+msgstr "Спасибо за регистрацию. Ваша учётная запись теперь активна."
+
+#: ../xooclasses/xoo.userultra.admin.php:465
+#: ../xooclasses/xoo.userultra.admin.php:476
+#, fuzzy
+msgid "To login please visit the following URL:"
+msgstr "Чтобы войти в систему, перейдите по ссылке:"
+
+#: ../xooclasses/xoo.userultra.admin.php:467
+#: ../xooclasses/xoo.userultra.admin.php:478
+#: ../xooclasses/xoo.userultra.admin.php:516
+#, fuzzy
+msgid "Your account e-mail: {{userultra_user_email}}"
+msgstr "Ваша учетная запись электронной почты: {{userultra_user_email}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:468
+#: ../xooclasses/xoo.userultra.admin.php:479
+#: ../xooclasses/xoo.userultra.admin.php:517
+#, fuzzy
+msgid "Your account username: {{userultra_user_name}}"
+msgstr "Имя пользователя аккаунта: {{userultra_user_name}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:469
+#, fuzzy
+msgid "Your account password: (same used when registering)"
+msgstr "Пароль учетной записи: (то же самое используется при регистрации)"
+
+#: ../xooclasses/xoo.userultra.admin.php:470
+#: ../xooclasses/xoo.userultra.admin.php:481
+#: ../xooclasses/xoo.userultra.admin.php:520
+#: ../xooclasses/xoo.userultra.admin.php:529
+#, fuzzy
+msgid ""
+"If you have any problems, please contact us at {{userultra_admin_email}}."
+msgstr ""
+"Если у вас есть какие-либо проблемы, пожалуйста, свяжитесь с нами в "
+"{{userultra_admin_email}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:471
+#: ../xooclasses/xoo.userultra.admin.php:482
+#: ../xooclasses/xoo.userultra.admin.php:495
+#: ../xooclasses/xoo.userultra.admin.php:507
+#: ../xooclasses/xoo.userultra.admin.php:521
+#: ../xooclasses/xoo.userultra.admin.php:530
+#: ../xooclasses/xoo.userultra.admin.php:540
+#: ../xooclasses/xoo.userultra.admin.php:549
+#: ../xooclasses/xoo.userultra.admin.php:555
+#: ../xooclasses/xoo.userultra.admin.php:564
+#: ../xooclasses/xoo.userultra.admin.php:573
+#: ../xooclasses/xoo.userultra.admin.php:579
+#: ../xooclasses/xoo.userultra.admin.php:585
+#: ../xooclasses/xoo.userultra.admin.php:592
+#: ../xooclasses/xoo.userultra.admin.php:599
+#: ../xooclasses/xoo.userultra.admin.php:605
+#, fuzzy
+msgid "Best Regards!"
+msgstr "С наилучшими пожеланиями!"
+
+#: ../xooclasses/xoo.userultra.admin.php:475
+#, fuzzy
+msgid "Your password has been reset."
+msgstr "Ваш пароль обновлен."
+
+#: ../xooclasses/xoo.userultra.admin.php:490
+#, fuzzy
+msgid "A new user has been registered."
+msgstr "Зарегистрирован новый пользователь."
+
+#: ../xooclasses/xoo.userultra.admin.php:492
+#: ../xooclasses/xoo.userultra.admin.php:503
+#: ../xooclasses/xoo.userultra.admin.php:537
+#: ../xooclasses/xoo.userultra.admin.php:546
+msgid "Account e-mail: {{userultra_user_email}}"
+msgstr "Ваша учетная запись электронной почты: {{userultra_user_email}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:493
+#: ../xooclasses/xoo.userultra.admin.php:504
+#: ../xooclasses/xoo.userultra.admin.php:538
+#: ../xooclasses/xoo.userultra.admin.php:547
+#, fuzzy
+msgid "Account username: {{userultra_user_name}}"
+msgstr "Имя пользователя аккаунта: {{userultra_user_name}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:494
+#: ../xooclasses/xoo.userultra.admin.php:506
+#: ../xooclasses/xoo.userultra.admin.php:563
+#: ../xooclasses/xoo.userultra.admin.php:572
+#: ../xooclasses/xoo.userultra.admin.php:604
+#, fuzzy
+msgid "This is an automated notification. No further action is needed."
+msgstr ""
+"Это автоматическое уведомление. Никаких дальнейших действий не требуется."
+
+#: ../xooclasses/xoo.userultra.admin.php:501
+msgid "A new paid user has been registered."
+msgstr "Зарегистрирован новый пользователь."
+
+#: ../xooclasses/xoo.userultra.admin.php:505
+msgid "Package: {{userultra_user_package}}"
+msgstr "Пакет: {{userultra_user_package}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:513
+#, fuzzy
+msgid "Thanks for registering. Your account needs activation."
+msgstr "Спасибо за регистрацию. Ваш счет нуждается в активации."
+
+#: ../xooclasses/xoo.userultra.admin.php:514
+#: ../xooclasses/xoo.userultra.admin.php:526
+#, fuzzy
+msgid "Please click on the link below to activate your account:"
+msgstr ""
+"Пожалуйста, нажмите на ссылку ниже, чтобы активировать вашу учетную запись:"
+
+#: ../xooclasses/xoo.userultra.admin.php:518
+#, fuzzy
+msgid "Your account password: {{userultra_pass}}"
+msgstr "Пароль учетной записи: {{userultra_pass}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:525
+#, fuzzy
+msgid "We are re-sending you the activation link."
+msgstr "Мы повторно направляем Вам ссылку активации."
+
+#: ../xooclasses/xoo.userultra.admin.php:534
+#: ../xooclasses/xoo.userultra.admin.php:544
+#, fuzzy
+msgid "Hi Admin,"
+msgstr "Привет админ,"
+
+#: ../xooclasses/xoo.userultra.admin.php:535
+#, fuzzy
+msgid "An account needs activation."
+msgstr "Счет нуждается в активации."
+
+#: ../xooclasses/xoo.userultra.admin.php:539
+#: ../xooclasses/xoo.userultra.admin.php:548
+#, fuzzy
+msgid "Please login to your admin to activate the account."
+msgstr ""
+"Пожалуйста, авторизуйтесь для вашего администратора для активации учетной "
+"записи."
+
+#: ../xooclasses/xoo.userultra.admin.php:545
+#, fuzzy
+msgid "An account needs approbation."
+msgstr "Эта учетная запись нуждается в проверке электронной почты."
+
+#: ../xooclasses/xoo.userultra.admin.php:553
+#, fuzzy
+msgid "Hi {{userultra_user_name}},"
+msgstr "Привет {{userultra_user_name}},"
+
+#: ../xooclasses/xoo.userultra.admin.php:554
+#, fuzzy
+msgid "Your account will be reviewed by the admin soon."
+msgstr ""
+"Ваш аккаунт будет активирован вручную после утверждения администратором."
+"<br>Вы будете уведомлены по электронной почте, как только ваш аккаунт будет "
+"одобрен."
+
+#: ../xooclasses/xoo.userultra.admin.php:560
+#, fuzzy
+msgid ""
+"{{userultra_user_name}} has just created a new account at "
+"{{user_ultra_blog_name}}."
+msgstr ""
+"{{userultra_user_name}} только что создал новый аккаунт на "
+"{{user_ultra_blog_name}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:561
+#, fuzzy
+msgid "You can check his profile via the following link:"
+msgstr "Вы можете проверить свой профиль по следующей ссылке:"
+
+#: ../xooclasses/xoo.userultra.admin.php:568
+#, fuzzy
+msgid ""
+"{{userultra_user_name}} has just sent you a new private message at "
+"{{user_ultra_blog_name}}."
+msgstr ""
+"{{userultra_user_name}} только что отправил вам сообщение на "
+"{{user_ultra_blog_name}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:570
+#, fuzzy
+msgid "Subject: {{userultra_pm_subject}}"
+msgstr "Тема: {{userultra_pm_subject}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:571
+#, fuzzy
+msgid "Message: {{userultra_pm_message}}"
+msgstr "Сообщение: {{userultra_pm_message}}"
+
+#: ../xooclasses/xoo.userultra.admin.php:577
+#, fuzzy
+msgid "You have a new friend request at {{user_ultra_blog_name}}."
+msgstr "У вас есть новый друг запрос на {{user_ultra_blog_name}}."
+
+#: ../xooclasses/xoo.userultra.admin.php:583
+#, fuzzy
+msgid "Please use the following link to reset your password."
+msgstr "Пожалуйста, используйте следующую ссылку для сброса пароля."
+
+#: ../xooclasses/xoo.userultra.admin.php:585
+#, fuzzy
+msgid "If you did not request a new password delete this email."
+msgstr "Если вы не запрашивали новый пароль удалить это письмо."
+
+#: ../xooclasses/xoo.userultra.admin.php:589
+#, fuzzy
+msgid "Your account has been activated."
+msgstr "Ваша учетная запись была активирована."
+
+#: ../xooclasses/xoo.userultra.admin.php:590
+#: ../xooclasses/xoo.userultra.admin.php:597
+#, fuzzy
+msgid "Please use the link below to get in your account."
+msgstr "Пожалуйста, используйте ссылку ниже, чтобы получить в вашем аккаунте."
+
+#: ../xooclasses/xoo.userultra.admin.php:596
+#, fuzzy
+msgid "Your account has been verified."
+msgstr "Ваш счет был верифицирован."
+
+#: ../xooclasses/xoo.userultra.admin.php:603
+#, fuzzy
+msgid "We're sorry but your account has not been approved."
+msgstr "Извините, но ваш аккаунт не был одобрен."
+
+#: ../xooclasses/xoo.userultra.admin.php:868
+#, fuzzy
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: ../xooclasses/xoo.userultra.admin.php:1032
+#, fuzzy
+msgid "Please create '"
+msgstr "Создайте вашу"
+
+#: ../xooclasses/xoo.userultra.admin.php:1075
+#, fuzzy
+msgid "Rewrite Rules were Saved."
+msgstr "Переписать правила были сохранены."
+
+#: ../xooclasses/xoo.userultra.admin.php:1131
+#, fuzzy
+msgid ""
+"Please make sure that you've set the right My Account Page. Users Ultra "
+"couldn't find it and some important features such as password reset, account "
+"confirmation won't work properly."
+msgstr ""
+"Пожалуйста, убедитесь, что вы установили правой странице Моя учетная запись. "
+"Ultra пользователи не могли найти его и некоторые важные функции, такие как "
+"сброс пароля, учетной записи подтверждения не будет работать должным образом."
+
+#: ../xooclasses/xoo.userultra.admin.php:1131
+#, fuzzy
+msgid "Click here to set the My Account Page"
+msgstr "Нажмите здесь, чтобы установить странице Моя учетная запись"
+
+#: ../xooclasses/xoo.userultra.admin.php:1146
+msgid "RATE IT "
+msgstr "Оценить"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:85
+#, fuzzy
+msgid "Human Check"
+msgstr "Человек Проверьте"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:93
+#, fuzzy
+msgid "Prove you're not a robot"
+msgstr "Докажите, что вы не робот"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:310
+#, fuzzy
+msgid "Enter Verification Words"
+msgstr "Введите Проверка слова"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:314
+#, fuzzy
+msgid "Load Image"
+msgstr "Загрузить изображение"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:315
+#, fuzzy
+msgid "Load Audio"
+msgstr "Загрузить аудио"
+
+#: ../xooclasses/xoo.userultra.captchamodules.php:316
+#, fuzzy
+msgid "Refresh Image"
+msgstr "Показать другой код"
+
+#: ../xooclasses/xoo.userultra.class.php:416
+#, fuzzy
+msgid "Only Logged in Users"
+msgstr "Только зарегистрированным пользователям"
+
+#: ../xooclasses/xoo.userultra.class.php:508
+#, fuzzy
+msgid ""
+"Thanks for installing Users Ultra. Do you need help?. Users Ultra can create "
+"the initial pages automatically. You just need to <a href=\"#\"  id="
+"\"uultradmin-create-basic-fields\">CLICK HERE</a> to start using Users "
+"Ultra. "
+msgstr ""
+"Спасибо для установки Ultra пользователей. Нужна ли вам помощь?. "
+"Пользователи Ultra можно автоматически создать начальные страницы. Вам "
+"просто нужно <a href=\"#\" id=\"uultradmin-create-basic-fields\">Нажмите "
+"здесь,</a> чтобы начать использовать Ultra пользователей."
+
+#: ../xooclasses/xoo.userultra.class.php:520
+#, fuzzy
+msgid ""
+"<h2>Upgrade Now to Users Ultra Pro!. </h2> <p>Unique Widgetized user "
+"profile, add unlimited widgets, site-wide activity wall, add unlimited links "
+"within the user's dashboard. Integrating with third-party plugins by using "
+"shortcodes, friends, followers, following, user's wall, multiple profile "
+"layouts and many more amazing features.</p> <p> <a href='http://usersultra."
+"com/'  target='_blank' class='button button-secondary'  >CLICK HERE TO FIND "
+"OUT MORE</a> </p> <a href='#'  id='uultradmin-remove-"
+"proversionmessage'>Remove this message</a>"
+msgstr ""
+"<h2> Обновить сейчас, чтобы пользователи Ультра Pro !. </ h2> <p> Уникальный "
+"виджеты профиль пользователя, добавлять неограниченное виджеты, веб-узле "
+"активности стену, добавить неограниченное ссылки в приборной панели "
+"пользователя. Интеграция со сторонними плагинами с помощью Короткие, друзей, "
+"последователей, следуя, стены пользователя, несколько макетов профиля и "
+"множество других удивительных особенностей</p> <p> <a href='http://"
+"usersultra.com/'  target='_blank' class='button button-secondary'  >Нажмите "
+"здесь, чтобы узнать больше</a> </p> <a href='#'  id='uultradmin-remove-"
+"proversionmessage'>Удалите это сообщение,</a>"
+
+#: ../xooclasses/xoo.userultra.class.php:531
+#, fuzzy
+msgid ""
+"Users Ultra might be working wrong. We couldn't find the 'My Account' "
+"shortcode. Please click on settings tab and make sure that the My Account "
+"page has been set correctly. Then click on the 'save' button "
+msgstr ""
+"Ultra пользователи могут работать неправильно. Мы не смогли найти короткий "
+"номер «Мой счёт». Пожалуйста, нажмите на вкладку Параметры и убедитесь, что "
+"на странице Мой аккаунт был создан правильно. Затем нажмите на кнопку "
+"«Сохранить»"
+
+#: ../xooclasses/xoo.userultra.class.php:879
+#, fuzzy
+msgid "View Profile"
+msgstr "Посмотреть Личный Кабинет"
+
+#: ../xooclasses/xoo.userultra.class.php:958
+#: ../xooclasses/xoo.userultra.class.php:1825
+#, fuzzy
+msgid "Login"
+msgstr "Логин"
+
+#: ../xooclasses/xoo.userultra.class.php:996
+#: ../xooclasses/xoo.userultra.shorcodes.php:346
+#, fuzzy
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: ../xooclasses/xoo.userultra.class.php:1093
+#, fuzzy
+msgid "Text"
+msgstr "Текст"
+
+#: ../xooclasses/xoo.userultra.class.php:1094
+#, fuzzy
+msgid "Image Upload"
+msgstr "Загрузить изображение"
+
+#: ../xooclasses/xoo.userultra.class.php:1095
+#, fuzzy
+msgid "Textarea"
+msgstr "Текстовая область"
+
+#: ../xooclasses/xoo.userultra.class.php:1096
+#, fuzzy
+msgid "Select Dropdown"
+msgstr "Выберите из списка"
+
+#: ../xooclasses/xoo.userultra.class.php:1097
+#, fuzzy
+msgid "Radio"
+msgstr "Радио"
+
+#: ../xooclasses/xoo.userultra.class.php:1098
+#, fuzzy
+msgid "Checkbox"
+msgstr "Чекбокс"
+
+#: ../xooclasses/xoo.userultra.class.php:1099
+#: ../xooclasses/xoo.userultra.class.php:1130
+#: ../xooclasses/xoo.userultra.class.php:1190
+#, fuzzy
+msgid "Password"
+msgstr "Пароль"
+
+#: ../xooclasses/xoo.userultra.class.php:1100
+#, fuzzy
+msgid "Date Picker"
+msgstr "Выбор даты"
+
+#: ../xooclasses/xoo.userultra.class.php:1121
+#: ../xooclasses/xoo.userultra.class.php:1167
+#, fuzzy
+msgid "E-mail"
+msgstr "E-mail"
+
+#: ../xooclasses/xoo.userultra.class.php:1133
+#, fuzzy
+msgid ""
+"Password must be at least 7 characters long. To make it stronger, use upper "
+"and lower case letters, numbers and symbols."
+msgstr ""
+"Пароль должен быть длиной минимум 7 символов. Чтобы сделать его сильнее, "
+"используйте верхнего и нижнего регистра, цифры и символы."
+
+#: ../xooclasses/xoo.userultra.class.php:1140
+#, fuzzy
+msgid "Confirm Password"
+msgstr "Подтвердить пароль"
+
+#: ../xooclasses/xoo.userultra.class.php:1143
+#, fuzzy
+msgid "Type your password again."
+msgstr "Введите свой пароль ещё раз"
+
+#: ../xooclasses/xoo.userultra.class.php:1170
+#, fuzzy
+msgid "A password will be e-mailed to you."
+msgstr "Пароль будет вам отправлен по электронной почте."
+
+#: ../xooclasses/xoo.userultra.class.php:1182
+#: ../xooclasses/xoo.userultra.class.php:2032
+#, fuzzy
+msgid "Username or Email"
+msgstr "Логин или email"
+
+#: ../xooclasses/xoo.userultra.class.php:1200
+#, fuzzy
+msgid "Profile Info"
+msgstr "Профиль пользователя"
+
+#: ../xooclasses/xoo.userultra.class.php:1212
+#, fuzzy
+msgid "First Name"
+msgstr "Имя"
+
+#: ../xooclasses/xoo.userultra.class.php:1226
+#, fuzzy
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: ../xooclasses/xoo.userultra.class.php:1259
+#, fuzzy
+msgid "Display Name"
+msgstr "Показать имя"
+
+#: ../xooclasses/xoo.userultra.class.php:1274
+#, fuzzy
+msgid "Brief Description"
+msgstr "Краткое описание"
+
+#: ../xooclasses/xoo.userultra.class.php:1289
+#, fuzzy
+msgid "About / Bio"
+msgstr "Об авторе %s"
+
+#: ../xooclasses/xoo.userultra.class.php:1304
+#, fuzzy
+msgid "Country"
+msgstr "Страна"
+
+#: ../xooclasses/xoo.userultra.class.php:1319
+#, fuzzy
+msgid "Contact Info"
+msgstr "Контактная информация"
+
+#: ../xooclasses/xoo.userultra.class.php:1332
+#, fuzzy
+msgid "Website"
+msgstr "Сайт"
+
+#: ../xooclasses/xoo.userultra.class.php:1344
+#, fuzzy
+msgid "Social Profiles"
+msgstr "Социальные профили"
+
+#: ../xooclasses/xoo.userultra.class.php:1355
+#, fuzzy
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../xooclasses/xoo.userultra.class.php:1362
+#, fuzzy
+msgid "Connect via Facebook"
+msgstr "Подключение через Facebook"
+
+#: ../xooclasses/xoo.userultra.class.php:1371
+#, fuzzy
+msgid "Twitter Username"
+msgstr "Имя пользователя в Твиттере"
+
+#: ../xooclasses/xoo.userultra.class.php:1378
+#, fuzzy
+msgid "Connect via Twitter"
+msgstr "Подключение через Twitter"
+
+#: ../xooclasses/xoo.userultra.class.php:1387
+#, fuzzy
+msgid "Google+"
+msgstr "Google+"
+
+#: ../xooclasses/xoo.userultra.class.php:1394
+#, fuzzy
+msgid "Connect via Google+"
+msgstr "Подключение через Google"
+
+#: ../xooclasses/xoo.userultra.class.php:1400
+#: ../xooclasses/xoo.userultra.class.php:2247
+#, fuzzy
+msgid "Account Info"
+msgstr "Информация Аккаунта"
+
+#: ../xooclasses/xoo.userultra.class.php:1411
+#, fuzzy
+msgid "New Password"
+msgstr "Новый пароль"
+
+#: ../xooclasses/xoo.userultra.class.php:1740
+#, fuzzy
+msgid "Oops! The link is not correct! "
+msgstr "Oops! Ссылка не верна!"
+
+#: ../xooclasses/xoo.userultra.class.php:1779
+#, fuzzy
+msgid "Type New Password:"
+msgstr "Введите новый пароль:"
+
+#: ../xooclasses/xoo.userultra.class.php:1788
+#, fuzzy
+msgid "Re-type Password:"
+msgstr "Введите пароль еще раз"
+
+#: ../xooclasses/xoo.userultra.class.php:1797
+#, fuzzy
+msgid "Reset Password"
+msgstr "Сбросить пароль"
+
+#: ../xooclasses/xoo.userultra.class.php:1883
+#, fuzzy
+msgid "Sign in with"
+msgstr "Подпишите вверх статистика"
+
+#: ../xooclasses/xoo.userultra.class.php:1885
+#, fuzzy
+msgid "Sign in "
+msgstr "Войти"
+
+#: ../xooclasses/xoo.userultra.class.php:1976
+#, fuzzy
+msgid "Forgot Password?"
+msgstr "Забыли пароль?"
+
+#: ../xooclasses/xoo.userultra.class.php:1984
+#: ../xooclasses/xoo.userultra.class.php:2748
+#, fuzzy
+msgid "Register"
+msgstr "Регистрация"
+
+#: ../xooclasses/xoo.userultra.class.php:1998
+#, fuzzy
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+#: ../xooclasses/xoo.userultra.class.php:2002
+msgid "Log In"
+msgstr "Войти"
+
+#: ../xooclasses/xoo.userultra.class.php:2023
+#, fuzzy
+msgid ""
+" A quick access link will be sent to your email that will let you get in "
+"your account and change your password. "
+msgstr ""
+"Ссылка быстрого доступа будет отправлена на ваш электронный адрес, по "
+"которой вы сможете получить доступ к вашей учетной записи и изменить свой "
+"пароль."
+
+#: ../xooclasses/xoo.userultra.class.php:2043
+#, fuzzy
+msgid "Back to Login"
+msgstr "Вернуться на страницу логина"
+
+#: ../xooclasses/xoo.userultra.class.php:2049
+#, fuzzy
+msgid "Send me Password"
+msgstr "Отправить мне пароль"
+
+#: ../xooclasses/xoo.userultra.class.php:2089
+#: ../xooclasses/xoo.userultra.class.php:2101
+#, fuzzy
+msgid "Your password is too similar to your username."
+msgstr "Ваш пароль слишком похож на Ваше имя пользователя."
+
+#: ../xooclasses/xoo.userultra.class.php:2090
+#: ../xooclasses/xoo.userultra.class.php:2102
+#, fuzzy
+msgid "Both passwords do not match."
+msgstr "Пароли не совпадают."
+
+#: ../xooclasses/xoo.userultra.class.php:2091
+#: ../xooclasses/xoo.userultra.class.php:2103
+#, fuzzy
+msgid "Your password is too short."
+msgstr "Ваш пароль слишком короткий."
+
+#: ../xooclasses/xoo.userultra.class.php:2092
+#: ../xooclasses/xoo.userultra.class.php:2104
+#, fuzzy
+msgid "Your password strength is too weak."
+msgstr "Вашего пароля является слишком слабым."
+
+#: ../xooclasses/xoo.userultra.class.php:2093
+#: ../xooclasses/xoo.userultra.class.php:2105
+#, fuzzy
+msgid "Your password strength weak."
+msgstr "Ваш пароль сила слабых."
+
+#: ../xooclasses/xoo.userultra.class.php:2094
+#, fuzzy
+msgid "Please provide username."
+msgstr "Укажите логин"
+
+#: ../xooclasses/xoo.userultra.class.php:2095
+#, fuzzy
+msgid "Please provide email address."
+msgstr "Укажите емейл"
+
+#: ../xooclasses/xoo.userultra.class.php:2096
+#, fuzzy
+msgid "Please provide valid email address."
+msgstr "Пожалуйста, введите действительный адрес электронной почты"
+
+#: ../xooclasses/xoo.userultra.class.php:2097
+#, fuzzy
+msgid "That username is already taken, please try a different one."
+msgstr "Это имя пользователя уже занято, попробуйте другой."
+
+#: ../xooclasses/xoo.userultra.class.php:2098
+#, fuzzy
+msgid ""
+"The email you entered is already registered. Please try a new email or log "
+"in to your existing account."
+msgstr ""
+"Данный адрес электронной почты уже используется. Пожалуйста, введите новый "
+"адрес электронной почты."
+
+#: ../xooclasses/xoo.userultra.class.php:2106
+#, fuzzy
+msgid "Good"
+msgstr "Хорошо"
+
+#: ../xooclasses/xoo.userultra.class.php:2107
+#, fuzzy
+msgid "Strong"
+msgstr "Сложный"
+
+#: ../xooclasses/xoo.userultra.class.php:2109
+msgid "ERROR"
+msgstr "Ошибка"
+
+#: ../xooclasses/xoo.userultra.class.php:2121
+msgid "Sign Up"
+msgstr "Регистрация"
+
+#: ../xooclasses/xoo.userultra.class.php:2190
+#, fuzzy
+msgid "Please enter a username."
+msgstr "Введите имя пользователя."
+
+#: ../xooclasses/xoo.userultra.class.php:2241
+msgid "Fields with (*) are required"
+msgstr "* Поля обязательные для заполнения"
+
+#: ../xooclasses/xoo.userultra.class.php:2245
+#, fuzzy
+msgid "Sign up with"
+msgstr "Подпишите вверх статистика"
+
+#: ../xooclasses/xoo.userultra.class.php:2310
+#: ../xooclasses/xoo.userultra.class.php:2314
+#: ../xooclasses/xoo.userultra.class.php:2324
+#: ../xooclasses/xoo.userultra.class.php:2333
+#: ../xooclasses/xoo.userultra.class.php:2382
+#: ../xooclasses/xoo.userultra.class.php:2508
+#: ../xooclasses/xoo.userultra.class.php:2512
+#: ../xooclasses/xoo.userultra.class.php:2535
+#: ../xooclasses/xoo.userultra.class.php:2625
+#, fuzzy
+msgid " * This input is required!"
+msgstr "* Поле обязательное для заполнения!"
+
+#: ../xooclasses/xoo.userultra.class.php:2378
+msgid "Re-type your email"
+msgstr "Введите адрес электронной почты"
+
+#: ../xooclasses/xoo.userultra.class.php:2638
+#, fuzzy
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+"Если вы хотите сменить пароль, то введите здесь новые значения. В противном "
+"случе, оставьте эти поля пустыми."
+
+#: ../xooclasses/xoo.userultra.class.php:2642
+#, fuzzy
+msgid "Type your new password again."
+msgstr "Введите Ваш новый пароль ещё раз."
+
+#: ../xooclasses/xoo.userultra.class.php:2654
+#: ../xooclasses/xoo.userultra.user.php:1807
+#, fuzzy
+msgid "Hide from Public"
+msgstr "Скрыть от общественности"
+
+#: ../xooclasses/xoo.userultra.class.php:2675
+#, fuzzy
+msgid "Payment Information"
+msgstr "Платежная информация"
+
+#: ../xooclasses/xoo.userultra.class.php:2696
+#, fuzzy
+msgid "Receive Daily Updates "
+msgstr "Получать ежедневные обновления"
+
+#: ../xooclasses/xoo.userultra.class.php:2723
+#: ../xooclasses/xoo.userultra.class.php:2731
+msgid "Terms & Conditions "
+msgstr "Правила и условия"
+
+#: ../xooclasses/xoo.userultra.login.php:190
+#, fuzzy
+msgid "<strong>ERROR:</strong> The username field is empty."
+msgstr "<strong>ОШИБКА:</strong> поле имени пользователя пусто."
+
+#: ../xooclasses/xoo.userultra.login.php:198
+#, fuzzy
+msgid "<strong>ERROR:</strong> The password field is empty."
+msgstr "<strong>Ошибка</strong>: Не указан пароль."
+
+#: ../xooclasses/xoo.userultra.login.php:289
+#, fuzzy
+msgid "<strong>ERROR:</strong> Invalid Username was entered."
+msgstr "<strong>Ошибка:</strong> Было введено неверное имя пользователя."
+
+#: ../xooclasses/xoo.userultra.login.php:292
+#, fuzzy
+msgid "<strong>ERROR:</strong> Incorrect password was entered."
+msgstr "<strong>Ошибка:</strong> Был введен неверный пароль."
+
+#: ../xooclasses/xoo.userultra.login.php:296
+#, fuzzy
+msgid "<strong>ERROR:</strong> Please provide Password."
+msgstr "<strong>ОШИБКА</strong>: Пожалуйста введите пароль."
+
+#: ../xooclasses/xoo.userultra.login.php:315
+#, fuzzy
+msgid "<strong>ERROR:</strong> Your account is not active."
+msgstr "<strong>Ошибка:</strong> Ваша учетная запись не активна."
+
+#: ../xooclasses/xoo.userultra.login.php:1504
+#: ../xooclasses/xoo.userultra.login.php:1774
+#, fuzzy
+msgid "<strong>ERROR:</strong> YOUR ACCOUNT IS NOT ACTIVE YET."
+msgstr "<strong>Ошибка:</strong> ВАШ АККАУНТ НЕ АКТИВЕН ЕЩЕ."
+
+#: ../xooclasses/xoo.userultra.login.php:1788
+#, fuzzy
+msgid ""
+"<strong>ERROR:</strong> SOME PROBLEM HAPPENED WHILE CONNECTING FACEBOOK "
+"PLEASE LOGIN AGAIN."
+msgstr ""
+"<strong>Ошибка:</strong> НЕКОТОРЫЕ ПРОБЛЕМЫ ПРОИЗОШЛО В ТО ВРЕМЯ КАК "
+"FACEBOOK ПОДКЛЮЧЕНИЯ ВОЙДИТЕ СНОВА."
+
+#: ../xooclasses/xoo.userultra.messaging.php:102
+#, fuzzy
+msgid "Registration"
+msgstr "Регистрация"
+
+#: ../xooclasses/xoo.userultra.messaging.php:103
+#, fuzzy
+msgid "New Registration"
+msgstr "Новая регистрация"
+
+#: ../xooclasses/xoo.userultra.messaging.php:137
+#: ../xooclasses/xoo.userultra.messaging.php:199
+#, fuzzy
+msgid "Verify Your Account"
+msgstr "Верификация вашей учётной записи"
+
+#: ../xooclasses/xoo.userultra.messaging.php:163
+#, fuzzy
+msgid "Account Verification"
+msgstr "Проверка счета"
+
+#: ../xooclasses/xoo.userultra.messaging.php:164
+#, fuzzy
+msgid "New Account To Approve"
+msgstr "Новый аккаунт, чтобы утвердить"
+
+#: ../xooclasses/xoo.userultra.messaging.php:200
+#, fuzzy
+msgid "New Account To Verify"
+msgstr "Новая учетная запись для проверки"
+
+#: ../xooclasses/xoo.userultra.messaging.php:269
+#, fuzzy
+msgid "Account Verified"
+msgstr "Счета проверены"
+
+#: ../xooclasses/xoo.userultra.messaging.php:295
+#, fuzzy
+msgid "Account Activation Deny"
+msgstr "Отказать в активации аккаунта"
+
+#: ../xooclasses/xoo.userultra.messaging.php:321
+#, fuzzy
+msgid "Registration Information"
+msgstr "Регистрационная информация"
+
+#: ../xooclasses/xoo.userultra.messaging.php:322
+#, fuzzy
+msgid "New Paid Subscription"
+msgstr "Новая платная подписка"
+
+#: ../xooclasses/xoo.userultra.messaging.php:362
+msgid "Registration "
+msgstr "Регистрация"
+
+#: ../xooclasses/xoo.userultra.messaging.php:393
+#, fuzzy
+msgid "New Private Message"
+msgstr "Форма нового личного сообщения"
+
+#: ../xooclasses/xoo.userultra.messaging.php:422
+#, fuzzy
+msgid "New Friend Request"
+msgstr "Новый друг запрос"
+
+#: ../xooclasses/xoo.userultra.messaging.php:447
+#, fuzzy
+msgid "Reset Your Password"
+msgstr "Изменение пароля"
+
+#: ../xooclasses/xoo.userultra.messaging.php:468
+#, fuzzy
+msgid "Password Reset Confirmation"
+msgstr "Подтверждение сброса пароля"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:112
+#, fuzzy
+msgid " Message sent "
+msgstr "Сообщение отправлено"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:131
+#, fuzzy
+msgid "Reply: "
+msgstr "Ответить:"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:175
+#, fuzzy
+msgid " Reply sent "
+msgstr "Ответ отправлен"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:196
+#, fuzzy
+msgid "You cannot send a private message to yourself"
+msgstr "Нельзя отправить личное сообщение для себя"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:201
+#: ../xooclasses/xoo.userultra.mymessage.php:534
+#: ../xooclasses/xoo.userultra.mymessage.php:688
+#: ../xooclasses/xoo.userultra.mymessage.php:806
+#: ../xooclasses/xoo.userultra.mymessage.php:1055
+#: ../xooclasses/xoo.userultra.mymessage.php:1116
+#, fuzzy
+msgid "Subject"
+msgstr "Тема"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:206
+#, fuzzy
+msgid "Send"
+msgstr "Отправить"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:213
+#, fuzzy
+msgid "Please input a subject"
+msgstr "Пожалуйста, введите тему"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:214
+#: ../xooclasses/xoo.userultra.mymessage.php:445
+#, fuzzy
+msgid "Please write a message"
+msgstr "Напишите сообщение"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:224
+#, fuzzy
+msgid "You have to be logged in to send private messages"
+msgstr "Вы должны войти, чтобы отправлять личные сообщения"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:284
+#, fuzzy
+msgid " The message has been deleted. Please refresh your screen."
+msgstr "Сообщение было удалено. Пожалуйста обновите ваш экран."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:307
+#, fuzzy
+msgid " Status has been changed"
+msgstr "Был изменен статус"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:355
+#: ../xooclasses/xoo.userultra.mymessage.php:566
+#, fuzzy
+msgid "Mark as Unread"
+msgstr "Непрочитанное"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:360
+#: ../xooclasses/xoo.userultra.mymessage.php:572
+#, fuzzy
+msgid "Mark as Read"
+msgstr "Прочитанное"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:423
+#, fuzzy
+msgid "Type your reply here..."
+msgstr "Введите ответ здесь ..."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:431
+#: ../xooclasses/xoo.userultra.publisher.php:150
+#, fuzzy
+msgid "Back"
+msgstr "Назад"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:432
+#, fuzzy
+msgid "Send Reply"
+msgstr "Ответить"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:501
+#: ../xooclasses/xoo.userultra.mymessage.php:775
+#: ../xooclasses/xoo.userultra.mymessage.php:1023
+#, fuzzy
+msgid "You have no items in inbox."
+msgstr "У вас нет товаров в почтовом ящике."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:532
+#: ../xooclasses/xoo.userultra.mymessage.php:686
+#: ../xooclasses/xoo.userultra.mymessage.php:804
+#: ../xooclasses/xoo.userultra.socials.php:515
+#: ../xooclasses/xoo.userultra.socials.php:621
+#, fuzzy
+msgid "Pic"
+msgstr "Изобр."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:533
+#: ../xooclasses/xoo.userultra.mymessage.php:805
+#: ../xooclasses/xoo.userultra.mymessage.php:1054
+#: ../xooclasses/xoo.userultra.mymessage.php:1115
+#: ../xooclasses/xoo.userultra.socials.php:516
+#: ../xooclasses/xoo.userultra.socials.php:622
+#, fuzzy
+msgid "Sender"
+msgstr "Передатчик"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:536
+#: ../xooclasses/xoo.userultra.mymessage.php:905
+#: ../xooclasses/xoo.userultra.mymessage.php:928
+#: ../xooclasses/xoo.userultra.payment.paypal.php:764
+#: ../xooclasses/xoo.userultra.socials.php:518
+#: ../xooclasses/xoo.userultra.socials.php:624
+#: ../xooclasses/xoo.userultra.user.php:781
+#: ../xooclasses/xoo.userultra.user.php:849
+#: ../xooclasses/xoo.userultra.user.php:916
+#, fuzzy
+msgid "Action"
+msgstr "Действия"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:601
+#: ../xooclasses/xoo.userultra.mymessage.php:726
+#: ../xooclasses/xoo.userultra.mymessage.php:1082
+#, fuzzy
+msgid "View"
+msgstr "Просмотреть"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:606
+#: ../xooclasses/xoo.userultra.mymessage.php:919
+#: ../xooclasses/xoo.userultra.mymessage.php:1101
+#, fuzzy
+msgid "Reply"
+msgstr "Ответить"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:647
+#: ../xooclasses/xoo.userultra.mymessage.php:1015
+#, fuzzy
+msgid "Inbox"
+msgstr "Входящие"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:657
+#, fuzzy
+msgid "You have no items in sent box."
+msgstr "У вас нет товаров в папке Отправленные."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:687
+#, fuzzy
+msgid "Receiver"
+msgstr "Приёмник"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:897
+#, fuzzy
+msgid "Inbox \\ View Message"
+msgstr "Входящие \\ Посмотреть сообщение"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:899
+#, fuzzy
+msgid "Back to inbox"
+msgstr "Вернуться в почтовый ящик"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:903
+#: ../xooclasses/xoo.userultra.mymessage.php:926
+#, fuzzy
+msgid "Info"
+msgstr "Информация"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:910
+#, fuzzy, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Отправитель</b>: %s <br /> <b>Дата</b> : %s"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:911
+#, fuzzy, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Тема</b>: %s</p><p>%s</p>"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:960
+#: ../xooclasses/xoo.userultra.mymessage.php:1002
+#, fuzzy
+msgid "Error. Please try again."
+msgstr "Ошибка. Пожалуйста попробуйте снова."
+
+#: ../xooclasses/xoo.userultra.mymessage.php:1044
+#, fuzzy
+msgid "Bulk Action"
+msgstr "Массовые действия"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:1046
+#: ../xooclasses/xoo.userultra.mymessage.php:1089
+msgid "Mark As Read"
+msgstr "Пометить как прочитанное"
+
+#: ../xooclasses/xoo.userultra.mymessage.php:1047
+#, fuzzy
+msgid "Apply"
+msgstr "Применить"
+
+#: ../xooclasses/xoo.userultra.order.php:356
+#: ../xooclasses/xoo.userultra.woocommerce.php:329
+#, fuzzy
+msgid "You have no orders."
+msgstr "У вас нет заказов."
+
+#: ../xooclasses/xoo.userultra.order.php:375
+#: ../xooclasses/xoo.userultra.woocommerce.php:347
+#, fuzzy
+msgid "Order #"
+msgstr "Заказ"
+
+#: ../xooclasses/xoo.userultra.order.php:376
+#: ../xooclasses/xoo.userultra.woocommerce.php:348
+#, fuzzy
+msgid "Total"
+msgstr "Общий итог"
+
+#: ../xooclasses/xoo.userultra.order.php:378
+#, fuzzy
+msgid "Package"
+msgstr "Пакет"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:447
+#, fuzzy
+msgid "You have no packages yet."
+msgstr "У вас нет пакетов еще."
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:576
+#, fuzzy
+msgid "Edit Package"
+msgstr "Редактировать пакет"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:590
+#: ../xooclasses/xoo.userultra.payment.paypal.php:760
+#, fuzzy
+msgid "Price"
+msgstr "Цена"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:615
+#, fuzzy
+msgid "Every"
+msgstr "Каждый"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:637
+msgid "Billing Period"
+msgstr "Расчетный период"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:757
+#, fuzzy
+msgid "ID"
+msgstr "ID"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:761
+#, fuzzy
+msgid "Period"
+msgstr "Срок действия"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:774
+#, fuzzy
+msgid " month(s)"
+msgstr "Месяц(-ев)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:775
+#, fuzzy
+msgid " week(s)"
+msgstr "Неделя(ь)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:776
+#, fuzzy
+msgid " day(s)"
+msgstr "День(-ей)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:777
+#, fuzzy
+msgid " year(s)"
+msgstr "год(а)"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:785
+msgid "every "
+msgstr "каждый"
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:803
+#, fuzzy
+msgid "There are no packages yet."
+msgstr "Там нет пакетов еще."
+
+#: ../xooclasses/xoo.userultra.payment.paypal.php:849
+#, fuzzy
+msgid "The Package has been updated"
+msgstr "Пакет был обновлен"
+
+#: ../xooclasses/xoo.userultra.photos.php:347
+#, fuzzy
+msgid "Search images..."
+msgstr "Поиск изображения ..."
+
+#: ../xooclasses/xoo.userultra.photos.php:361
+#, fuzzy
+msgid "Filter by category: "
+msgstr "Фильтр по категориям"
+
+#: ../xooclasses/xoo.userultra.photos.php:370
+#: ../xooclasses/xoo.userultra.user.php:4479
+#, fuzzy
+msgid "Total found: "
+msgstr "Всего найдено:"
+
+#: ../xooclasses/xoo.userultra.photos.php:648
+#: ../xooclasses/xoo.userultra.user.php:4354
+#: ../xooclasses/xoo.userultra.user.php:5194
+#: ../xooclasses/xoo.userultra.user.php:5267
+#, fuzzy
+msgid "Previous"
+msgstr "Назад"
+
+#: ../xooclasses/xoo.userultra.photos.php:649
+#: ../xooclasses/xoo.userultra.user.php:4355
+#: ../xooclasses/xoo.userultra.user.php:5195
+#: ../xooclasses/xoo.userultra.user.php:5268
+#, fuzzy
+msgid "Next"
+msgstr "Вперед"
+
+#: ../xooclasses/xoo.userultra.photos.php:1099
+#: ../xooclasses/xoo.userultra.photos.php:1306
+#, fuzzy
+msgid "You have no galleries yet."
+msgstr "У вас нет галерей еще."
+
+#: ../xooclasses/xoo.userultra.photos.php:1116
+#: ../xooclasses/xoo.userultra.photos.php:1176
+#: ../xooclasses/xoo.userultra.photos.php:1246
+#, fuzzy
+msgid "delete"
+msgstr "удалить"
+
+#: ../xooclasses/xoo.userultra.photos.php:1118
+#: ../xooclasses/xoo.userultra.photos.php:1176
+#: ../xooclasses/xoo.userultra.photos.php:2170
+msgid "edit"
+msgstr "редактировать"
+
+#: ../xooclasses/xoo.userultra.photos.php:1131
+#: ../xooclasses/xoo.userultra.photos.php:1333
+#, fuzzy
+msgid "Picture(s)"
+msgstr "Фото (с)"
+
+#: ../xooclasses/xoo.userultra.photos.php:1165
+#, fuzzy
+msgid "You have no videos yet."
+msgstr "У вас нет видео пока."
+
+#: ../xooclasses/xoo.userultra.photos.php:1235
+#, fuzzy
+msgid "The user has not added videos yet."
+msgstr "Пользователь не добавил видео пока."
+
+#: ../xooclasses/xoo.userultra.photos.php:1567
+#, fuzzy
+msgid "Tags"
+msgstr "Метки"
+
+#: ../xooclasses/xoo.userultra.photos.php:1570
+#, fuzzy
+msgid "Category"
+msgstr "Категория"
+
+#: ../xooclasses/xoo.userultra.photos.php:1707
+#, fuzzy
+msgid "Visibility"
+msgstr "Видимость"
+
+#: ../xooclasses/xoo.userultra.photos.php:2006
+#: ../xooclasses/xoo.userultra.photos.php:2148
+#, fuzzy
+msgid "You have no photos in this gallery yet."
+msgstr "У вас нет фото галереи еще."
+
+#: ../xooclasses/xoo.userultra.photos.php:2072
+#, fuzzy
+msgid "You have to be logged in to see this photo."
+msgstr "Вы должны войти в систему, чтобы увидеть эту фотографию."
+
+#: ../xooclasses/xoo.userultra.photos.php:2079
+#, fuzzy
+msgid "This photo is accessible only for friends of the user."
+msgstr "Эта фотография доступна только для друзей пользователя."
+
+#: ../xooclasses/xoo.userultra.photos.php:2086
+#, fuzzy
+msgid "This photo could not be displayed."
+msgstr "Эта фотография не может быть отображено."
+
+#: ../xooclasses/xoo.userultra.photos.php:2163
+#, fuzzy
+msgid "MAIN PHOTO"
+msgstr "ГЛАВНАЯ ФОТО"
+
+#: ../xooclasses/xoo.userultra.photos.php:2254
+#, fuzzy
+msgid "Drop files here"
+msgstr "Перетаскивать файлы здесь"
+
+#: ../xooclasses/xoo.userultra.photos.php:2256
+#, fuzzy
+msgid "Select files"
+msgstr "Выберите файлы"
+
+#: ../xooclasses/xoo.userultra.photos.php:2287
+#: ../xooclasses/xoo.userultra.publisher.php:1121
+#: ../xooclasses/xoo.userultra.user.php:4930
+#, fuzzy
+msgid "Allowed Files"
+msgstr "Разрешенные файлы"
+
+#: ../xooclasses/xoo.userultra.publisher.php:82
+#, fuzzy
+msgid "Invalid Post"
+msgstr "Недопустимый POST"
+
+#: ../xooclasses/xoo.userultra.publisher.php:116
+#, fuzzy
+msgid "Edit Post"
+msgstr "Редактировать публикацию"
+
+#: ../xooclasses/xoo.userultra.publisher.php:150
+#, fuzzy
+msgid "Back:"
+msgstr "Назад:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:156
+#: ../xooclasses/xoo.userultra.publisher.php:328
+#, fuzzy
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:162
+#: ../xooclasses/xoo.userultra.publisher.php:336
+#, fuzzy
+msgid "Category:"
+msgstr "Категория:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:178
+#: ../xooclasses/xoo.userultra.publisher.php:180
+#: ../xooclasses/xoo.userultra.publisher.php:344
+#: ../xooclasses/xoo.userultra.publisher.php:346
+#, fuzzy
+msgid "-- Select --"
+msgstr "-- Выбрать --"
+
+#: ../xooclasses/xoo.userultra.publisher.php:191
+#: ../xooclasses/xoo.userultra.publisher.php:359
+#, fuzzy
+msgid "Post Photos:"
+msgstr "Разместить фотографии:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:217
+#: ../xooclasses/xoo.userultra.publisher.php:384
+#, fuzzy
+msgid "Tags:"
+msgstr "Метки:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:287
+#: ../xooclasses/xoo.userultra.publisher.php:322
+#: ../xooclasses/xoo.userultra.publisher.php:444
+#, fuzzy
+msgid "Add New Post"
+msgstr "Добавить новую публикацию"
+
+#: ../xooclasses/xoo.userultra.publisher.php:298
+#, fuzzy
+msgid "Max Allowed Posts: "
+msgstr "Максимально допустимый сообщения:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:298
+#, fuzzy
+msgid "You have posted: "
+msgstr "Вы опубликовали:"
+
+#: ../xooclasses/xoo.userultra.publisher.php:454
+#, fuzzy
+msgid "You have no posts."
+msgstr "У вас нет сообщения."
+
+#: ../xooclasses/xoo.userultra.publisher.php:473
+#, fuzzy
+msgid "Title"
+msgstr "Заголовок"
+
+#: ../xooclasses/xoo.userultra.publisher.php:515
+#, fuzzy
+msgid "Live"
+msgstr "Текущий"
+
+#: ../xooclasses/xoo.userultra.publisher.php:519
+#, fuzzy
+msgid "Offline"
+msgstr "Недоступно"
+
+#: ../xooclasses/xoo.userultra.publisher.php:523
+#, fuzzy
+msgid "Awaiting Approval"
+msgstr "Ожидает согласования"
+
+#: ../xooclasses/xoo.userultra.publisher.php:526
+#, fuzzy
+msgid "Scheduled"
+msgstr "Запланировано"
+
+#: ../xooclasses/xoo.userultra.publisher.php:559
+#: ../xooclasses/xoo.userultra.publisher.php:950
+#, fuzzy
+msgid "Delete Image"
+msgstr "Удалить изображение..."
+
+#: ../xooclasses/xoo.userultra.publisher.php:563
+#, fuzzy
+msgid "Main Image"
+msgstr "основное изображение"
+
+#: ../xooclasses/xoo.userultra.publisher.php:567
+#, fuzzy
+msgid "Set As Main"
+msgstr "Сделать главной"
+
+#: ../xooclasses/xoo.userultra.publisher.php:611
+#: ../xooclasses/xoo.userultra.publisher.php:813
+#, fuzzy
+msgid "Empty post title"
+msgstr "Пустой заголовок"
+
+#: ../xooclasses/xoo.userultra.publisher.php:625
+#: ../xooclasses/xoo.userultra.publisher.php:629
+#: ../xooclasses/xoo.userultra.publisher.php:634
+#: ../xooclasses/xoo.userultra.publisher.php:829
+#: ../xooclasses/xoo.userultra.publisher.php:833
+#: ../xooclasses/xoo.userultra.publisher.php:838
+#, fuzzy
+msgid "Please choose a category"
+msgstr "Пожалуйста, выберите категорию"
+
+#: ../xooclasses/xoo.userultra.publisher.php:641
+#: ../xooclasses/xoo.userultra.publisher.php:847
+#, fuzzy
+msgid "Empty post content"
+msgstr "Пустое поле  описания"
+
+#: ../xooclasses/xoo.userultra.publisher.php:692
+#, fuzzy
+msgid "Post updated successfully."
+msgstr "Пост успешно обновлен"
+
+#: ../xooclasses/xoo.userultra.publisher.php:897
+#, fuzzy
+msgid "You cannot add more posts "
+msgstr "Вы не можете добавить больше сообщения"
+
+#: ../xooclasses/xoo.userultra.publisher.php:933
+#, fuzzy
+msgid "Post published successfully. The admin will review it soon"
+msgstr "Сообщение успешно опубликовано. Админ рассмотрит его в ближайшее время"
+
+#: ../xooclasses/xoo.userultra.publisher.php:1082
+#, fuzzy
+msgid "Drop Images Here"
+msgstr "Перетащите изображения сюда"
+
+#: ../xooclasses/xoo.userultra.publisher.php:1085
+#, fuzzy
+msgid "Select Files"
+msgstr "Выберите файл"
+
+#: ../xooclasses/xoo.userultra.publisher.php:1195
+#, fuzzy
+msgid "The file you selected exceeds the maximum file size limit."
+msgstr "Выбранный вами файл превышает максимально допустимый размер файла."
+
+#: ../xooclasses/xoo.userultra.rating.php:196
+#, fuzzy
+msgid "Thank you for your rating"
+msgstr "Спасибо за оценку"
+
+#: ../xooclasses/xoo.userultra.rating.php:200
+#, fuzzy
+msgid "You've already left your rate "
+msgstr "Вы уже оставили свой курс"
+
+#: ../xooclasses/xoo.userultra.rating.php:207
+#, fuzzy
+msgid "You have to be logged in to leave your rate  "
+msgstr "Вы должны быть вошли в систему чтобы оставить свой курс"
+
+#: ../xooclasses/xoo.userultra.rating.php:212
+#, fuzzy
+msgid "You cannot rate yourself  "
+msgstr "Вы не можете оценивать себя"
+
+#: ../xooclasses/xoo.userultra.rating.php:254
+#, fuzzy
+msgid "1 star out of 5 "
+msgstr "1 звезда из 5"
+
+#: ../xooclasses/xoo.userultra.rating.php:255
+#, fuzzy
+msgid "2 star out of 5  "
+msgstr "2 звезда из 5"
+
+#: ../xooclasses/xoo.userultra.rating.php:256
+#, fuzzy
+msgid "3 star out of 5  "
+msgstr "3 звезды из 5"
+
+#: ../xooclasses/xoo.userultra.rating.php:257
+#, fuzzy
+msgid "4 star out of 5  "
+msgstr "4 звезды из 5"
+
+#: ../xooclasses/xoo.userultra.rating.php:258
+#, fuzzy
+msgid "5 star out of 5  "
+msgstr "5 звезд из 5"
+
+#: ../xooclasses/xoo.userultra.rating.php:260
+#, fuzzy
+msgid "Rating: "
+msgstr "Рейтинг:"
+
+#: ../xooclasses/xoo.userultra.rating.php:261
+#, fuzzy
+msgid " votes cast "
+msgstr "голосов"
+
+#: ../xooclasses/xoo.userultra.register.php:76
+#, fuzzy
+msgid "<strong>ERROR:</strong> Please enter a username."
+msgstr "<strong>ОШИБКА</strong>: Пожалуйста введите логин."
+
+#: ../xooclasses/xoo.userultra.register.php:78
+#, fuzzy
+msgid ""
+"<strong>ERROR:</strong> This username is already registered. Please choose "
+"another one."
+msgstr ""
+"<strong>ОШИБКА</strong>: Указанное имя пользователя уже существует. "
+"Пожалуйста выберите и введите другое имя пользователя."
+
+#: ../xooclasses/xoo.userultra.register.php:87
+#, fuzzy
+msgid "<strong>ERROR:</strong> Please type your e-mail address."
+msgstr "<strong>ОШИБКА</strong>: Пожалуйста введите адрес электронной почты."
+
+#: ../xooclasses/xoo.userultra.register.php:90
+#, fuzzy
+msgid "<strong>ERROR:</strong> The email address isn't correct."
+msgstr "<strong>ОШИБКА</strong>: Неверно введен адрес электронной почты."
+
+#: ../xooclasses/xoo.userultra.register.php:94
+#, fuzzy
+msgid "<strong>ERROR:</strong> The emails are different."
+msgstr "<strong>Ошибка:</strong> Письма являются различными."
+
+#: ../xooclasses/xoo.userultra.register.php:98
+#, fuzzy
+msgid ""
+"<strong>ERROR:</strong> This email is already registered, please choose "
+"another one."
+msgstr ""
+"<strong>Ошибка</strong>: Указанный адрес электронной почты уже существует. "
+"Пожалуйста выберите и введите другой адрес."
+
+#: ../xooclasses/xoo.userultra.register.php:114
+#, fuzzy
+msgid "<strong>ERROR:</strong> Please type your password."
+msgstr "<strong>ОШИБКА:</strong> Пожалуйста, введите ваш пароль."
+
+#: ../xooclasses/xoo.userultra.register.php:120
+#, fuzzy
+msgid "<strong>ERROR:</strong> The passwords must be identical"
+msgstr "<strong>ОШИБКА:</strong> Пароли должны быть идентичны"
+
+#: ../xooclasses/xoo.userultra.register.php:133
+#, fuzzy
+msgid "<strong>ERROR:</strong> Please complete Captcha Test first."
+msgstr "<strong>ОШИБКА:</strong> Пожалуйста, заполните Captcha тест сначала."
+
+#: ../xooclasses/xoo.userultra.register.php:139
+#, fuzzy
+msgid "<strong>ERROR:</strong> Registration is disabled for this site."
+msgstr "<strong>ОШИБКА:</strong> Регистрация отключена для этого сайта."
+
+#: ../xooclasses/xoo.userultra.register.php:157
+#, fuzzy
+msgid "<strong>ERROR:</strong> The Password must be at least "
+msgstr "<strong>Ошибка:</strong> Пароль должен быть по крайней мере"
+
+#: ../xooclasses/xoo.userultra.register.php:167
+#, fuzzy
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one number and "
+"one letter"
+msgstr ""
+"<strong>Ошибка:</strong> Пароль должен содержать минимум одну цифру и одну "
+"букву"
+
+#: ../xooclasses/xoo.userultra.register.php:179
+#, fuzzy
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one upper case "
+"character"
+msgstr ""
+"<strong>Ошибка:</strong> Пароль должен содержать по крайней мере один "
+"верхний регистр символов"
+
+#: ../xooclasses/xoo.userultra.register.php:191
+#, fuzzy
+msgid ""
+"<strong>ERROR:</strong> The Password must contain at least one lower case "
+"character"
+msgstr ""
+"<strong>Ошибка:</strong> Пароль должен содержать по крайней мере один нижний "
+"регистр символов"
+
+#: ../xooclasses/xoo.userultra.register.php:724
+#, fuzzy
+msgid "Registration successful. Please check your email."
+msgstr "Регистрация успешным. Пожалуйста, проверьте свою электронную почту."
+
+#: ../xooclasses/xoo.userultra.socials.php:117
+#, fuzzy
+msgid " Friend Request Sent "
+msgstr "Друг Запрос отправлен"
+
+#: ../xooclasses/xoo.userultra.socials.php:121
+#, fuzzy
+msgid "You have to be logged in to send a friend request "
+msgstr "Вы должны быть авторизованы, чтобы отправить запрос о дружбе"
+
+#: ../xooclasses/xoo.userultra.socials.php:128
+#, fuzzy
+msgid "Request Already Sent"
+msgstr "Запрос уже было отправлено"
+
+#: ../xooclasses/xoo.userultra.socials.php:199
+#, fuzzy
+msgid "Thanks "
+msgstr "Спасибо!"
+
+#: ../xooclasses/xoo.userultra.socials.php:203
+#, fuzzy
+msgid "Please login to rate "
+msgstr "Пожалуйста, авторизуйтесь, чтобы оценить"
+
+#: ../xooclasses/xoo.userultra.socials.php:208
+#, fuzzy
+msgid "You've already liked it "
+msgstr "Вы уже понравилось"
+
+#: ../xooclasses/xoo.userultra.socials.php:254
+#, fuzzy
+msgid "Friends"
+msgstr "С друзьями"
+
+#: ../xooclasses/xoo.userultra.socials.php:255
+#, fuzzy
+msgid "Send Friend Request"
+msgstr "Отправить другу Запрос"
+
+#: ../xooclasses/xoo.userultra.socials.php:255
+#, fuzzy
+msgid "Be a Friend "
+msgstr "Запрос на дружбу"
+
+#: ../xooclasses/xoo.userultra.socials.php:289
+#: ../xooclasses/xoo.userultra.socials.php:296
+#, fuzzy
+msgid "Request approved"
+msgstr "Просьба удовлетворена"
+
+#: ../xooclasses/xoo.userultra.socials.php:303
+#, fuzzy
+msgid "Request rejected"
+msgstr "Запрос отклонен"
+
+#: ../xooclasses/xoo.userultra.socials.php:386
+#: ../xooclasses/xoo.userultra.socials.php:435
+#, fuzzy
+msgid "Likes"
+msgstr "''Нравится''"
+
+#: ../xooclasses/xoo.userultra.socials.php:387
+#, fuzzy
+msgid "Like"
+msgstr "Мне нравится"
+
+#: ../xooclasses/xoo.userultra.socials.php:387
+#, fuzzy
+msgid "Dislike"
+msgstr "Не нравится"
+
+#: ../xooclasses/xoo.userultra.socials.php:506
+#, fuzzy
+msgid "Latest Friend Requests"
+msgstr "Последние предложения дружбы"
+
+#: ../xooclasses/xoo.userultra.socials.php:541
+#, fuzzy
+msgid "Approve"
+msgstr "Одобрить"
+
+#: ../xooclasses/xoo.userultra.socials.php:541
+#: ../xooclasses/xoo.userultra.user.php:800
+#: ../xooclasses/xoo.userultra.user.php:868
+#, fuzzy
+msgid "Deny"
+msgstr "Отказаться"
+
+#: ../xooclasses/xoo.userultra.socials.php:612
+#, fuzzy
+msgid "All My Friends"
+msgstr "Все Мои Друзья"
+
+#: ../xooclasses/xoo.userultra.socials.php:647
+#, fuzzy
+msgid "Block"
+msgstr "Блок"
+
+#: ../xooclasses/xoo.userultra.user.php:257
+#, fuzzy
+msgid "Basic Information"
+msgstr "Основная информация"
+
+#: ../xooclasses/xoo.userultra.user.php:264
+#, fuzzy
+msgid "My Cyrcle"
+msgstr "Мой Цикл статей"
+
+#: ../xooclasses/xoo.userultra.user.php:285
+#, fuzzy
+msgid "My Latest Posts"
+msgstr "Прошлые записи"
+
+#: ../xooclasses/xoo.userultra.user.php:319
+#, fuzzy
+msgid "Content visible only for registered users. "
+msgstr "Содержимое видна только для зарегистрированных пользователей."
+
+#: ../xooclasses/xoo.userultra.user.php:498
+#, fuzzy
+msgid "The file format is not allowed!"
+msgstr "Формат файла не допускается!"
+
+#: ../xooclasses/xoo.userultra.user.php:558
+#, fuzzy
+msgid "--- Finished ---  "
+msgstr "Готово"
+
+#: ../xooclasses/xoo.userultra.user.php:723
+#, fuzzy
+msgid " SUCCESS! The sync process has been finished. "
+msgstr "УСПЕХ! Процесс синхронизации была закончена."
+
+#: ../xooclasses/xoo.userultra.user.php:766
+#, fuzzy
+msgid "Pending Payment"
+msgstr "Ожидает оплаты"
+
+#: ../xooclasses/xoo.userultra.user.php:779
+#: ../xooclasses/xoo.userultra.user.php:847
+#: ../xooclasses/xoo.userultra.user.php:914
+#, fuzzy
+msgid "Email"
+msgstr "Email"
+
+#: ../xooclasses/xoo.userultra.user.php:780
+#: ../xooclasses/xoo.userultra.user.php:848
+#: ../xooclasses/xoo.userultra.user.php:915
+#, fuzzy
+msgid "Registered"
+msgstr "Зарегистрирован"
+
+#: ../xooclasses/xoo.userultra.user.php:813
+#, fuzzy
+msgid "There are no pending payment users."
+msgstr "Там нет отложенных пользователи компенсации."
+
+#: ../xooclasses/xoo.userultra.user.php:835
+#, fuzzy
+msgid "Pending Moderation"
+msgstr "До Модерация"
+
+#: ../xooclasses/xoo.userultra.user.php:881
+#, fuzzy
+msgid "There are no pending moderation users."
+msgstr "Там нет отложенных пользователи модерации."
+
+#: ../xooclasses/xoo.userultra.user.php:901
+#, fuzzy
+msgid "Pending Confirmation"
+msgstr "В ожидании подтверждения"
+
+#: ../xooclasses/xoo.userultra.user.php:935
+#, fuzzy
+msgid "Send Link"
+msgstr "Отправить ссылку в сообщении"
+
+#: ../xooclasses/xoo.userultra.user.php:948
+#, fuzzy
+msgid "There are no pending confirmation users."
+msgstr "Там нет отложенных пользователи подтверждения."
+
+#: ../xooclasses/xoo.userultra.user.php:978
+#: ../xooclasses/xoo.userultra.user.php:1029
+#, fuzzy
+msgid "User has been activated"
+msgstr "Пользователь был активирован"
+
+#: ../xooclasses/xoo.userultra.user.php:1001
+#, fuzzy
+msgid "Activation link sent"
+msgstr "Ссылку активации отправлено"
+
+#: ../xooclasses/xoo.userultra.user.php:1055
+#, fuzzy
+msgid "User has been deleted"
+msgstr "Было удалено"
+
+#: ../xooclasses/xoo.userultra.user.php:1226
+#, fuzzy
+msgid " ERROR! Please type your new email "
+msgstr "ОШИБКА! Пожалуйста, введите новый адрес электронной почты"
+
+#: ../xooclasses/xoo.userultra.user.php:1232
+#, fuzzy
+msgid " ERROR! Please type a valid email address "
+msgstr "ОШИБКА! Пожалуйста, введите действительный адрес электронной почты"
+
+#: ../xooclasses/xoo.userultra.user.php:1251
+#, fuzzy
+msgid " ERROR! You haven't changed your email. "
+msgstr "ОШИБКА! Вы не изменили вашу электронную почту."
+
+#: ../xooclasses/xoo.userultra.user.php:1260
+#, fuzzy
+msgid " ERROR! The email is in use already "
+msgstr "ОШИБКА! Электронная почта используется уже"
+
+#: ../xooclasses/xoo.userultra.user.php:1299
+#, fuzzy
+msgid " Success!! Your email account has been changed to : "
+msgstr ""
+"Успех !! Ваш адрес электронной почты учетная запись была изменена следующим "
+"образом:"
+
+#: ../xooclasses/xoo.userultra.user.php:1345
+#: ../xooclasses/xoo.userultra.user.php:1422
+#, fuzzy
+msgid " ERROR! Password must be identical "
+msgstr "ОШИБКА! Пароль должен быть идентичен"
+
+#: ../xooclasses/xoo.userultra.user.php:1351
+#: ../xooclasses/xoo.userultra.user.php:1428
+#, fuzzy
+msgid " ERROR! Password should contain at least 7 alphanumeric characters "
+msgstr "ОШИБКА! Пароль должен содержать не менее 7 буквенно-цифровых символов"
+
+#: ../xooclasses/xoo.userultra.user.php:1373
+#: ../xooclasses/xoo.userultra.user.php:1452
+#, fuzzy
+msgid " Success!! The new password has been sent to "
+msgstr "Успех !! Новый пароль был отправлен"
+
+#: ../xooclasses/xoo.userultra.user.php:1454
+#, fuzzy
+msgid "<a href=\""
+msgstr "<a href=\""
+
+#: ../xooclasses/xoo.userultra.user.php:1460
+#, fuzzy
+msgid " ERROR! Invalid reset link "
+msgstr "ОШИБКА! Неверный ссылка на страницу сброса"
+
+#: ../xooclasses/xoo.userultra.user.php:1491
+#, fuzzy
+msgid "Email not found"
+msgstr "Электронная почта не найдена"
+
+#: ../xooclasses/xoo.userultra.user.php:1499
+#: ../xooclasses/xoo.userultra.user.php:1530
+#, fuzzy
+msgid "Your account is not active yet."
+msgstr "Ваша учетная запись не активна"
+
+#: ../xooclasses/xoo.userultra.user.php:1521
+#, fuzzy
+msgid "User not found"
+msgstr "Пользователь не найден"
+
+#: ../xooclasses/xoo.userultra.user.php:1574
+#, fuzzy
+msgid " A reset link has been sent to your email "
+msgstr "Ссылка на страницу сброса был отправлен на вашу электронную почту"
+
+#: ../xooclasses/xoo.userultra.user.php:2215
+#: ../xooclasses/xoo.userultra.user.php:2219
+#, fuzzy
+msgid "Profile"
+msgstr "Профиль"
+
+#: ../xooclasses/xoo.userultra.user.php:2228
+#: ../xooclasses/xoo.userultra.user.php:2232
+#, fuzzy
+msgid "Profile Customizer"
+msgstr "Настройщика профиля"
+
+#: ../xooclasses/xoo.userultra.user.php:2270
+#: ../xooclasses/xoo.userultra.user.php:2274
+#, fuzzy
+msgid "My Purchases"
+msgstr "Мои покупки"
+
+#: ../xooclasses/xoo.userultra.user.php:2302
+#, fuzzy
+msgid "My Messages"
+msgstr "Мои сообщения"
+
+#: ../xooclasses/xoo.userultra.user.php:2306
+#, fuzzy
+msgid "Messages"
+msgstr "Сообщения"
+
+#: ../xooclasses/xoo.userultra.user.php:2312
+#, fuzzy
+msgid "Unread Messages"
+msgstr "%s Непрочитанных сообщений"
+
+#: ../xooclasses/xoo.userultra.user.php:2322
+#: ../xooclasses/xoo.userultra.user.php:2326
+#, fuzzy
+msgid "Photos"
+msgstr "Фото"
+
+#: ../xooclasses/xoo.userultra.user.php:2362
+#, fuzzy
+msgid "Friend Requests"
+msgstr "Запросы Друг"
+
+#: ../xooclasses/xoo.userultra.user.php:2627
+#, fuzzy
+msgid "Empty results"
+msgstr "Пусто результаты"
+
+#: ../xooclasses/xoo.userultra.user.php:2769
+#: ../xooclasses/xoo.userultra.user.php:2870
+#: ../xooclasses/xoo.userultra.user.php:4305
+#, fuzzy
+msgid "See Profile"
+msgstr "См профиля"
+
+#: ../xooclasses/xoo.userultra.user.php:3284
+#, fuzzy
+msgid "Free"
+msgstr "Бесплатно"
+
+#: ../xooclasses/xoo.userultra.user.php:3610
+#, fuzzy, php-format
+msgid "Search %s"
+msgstr "Поиск %s"
+
+#: ../xooclasses/xoo.userultra.user.php:4072
+#, fuzzy
+msgid "<< Previous"
+msgstr "<< Назад"
+
+#: ../xooclasses/xoo.userultra.user.php:4073
+#, fuzzy
+msgid "Next >>"
+msgstr "Вперед >>"
+
+#: ../xooclasses/xoo.userultra.user.php:4123
+#: ../xooclasses/xoo.userultra.user.php:4194
+#, fuzzy
+msgid "Users"
+msgstr "Пользователи"
+
+#: ../xooclasses/xoo.userultra.user.php:4197
+#, fuzzy
+msgid "Only logged in users can see this page"
+msgstr "Только зарегистрированные пользователи могут видеть эту страницу"
+
+#: ../xooclasses/xoo.userultra.user.php:4596
+#: ../xooclasses/xoo.userultra.user.php:4615
+#, fuzzy
+msgid "Country not available"
+msgstr "Страна не указана"
+
+#: ../xooclasses/xoo.userultra.user.php:4642
+#, fuzzy
+msgid "This user hasn't a description yet"
+msgstr "Пользователь не ввел описание."
+
+#: ../xooclasses/xoo.userultra.user.php:4894
+#, fuzzy
+msgid "Drop Avatar here"
+msgstr "Падение Аватар здесь"
+
+#: ../xooclasses/xoo.userultra.user.php:4985
+#, fuzzy
+msgid "You may only upload one image at a time!"
+msgstr "Вы можете загрузить только одно изображение за один раз!"
+
+#: ../xooclasses/xoo.userultra.user.php:5000
+#, fuzzy
+msgid "The file you selected exceeds the maximum filesize limit."
+msgstr "Выбранный вами файл превышает максимальный предел размера файла."
+
+#: ../xooclasses/xoo.userultra.user.php:5350
+#, fuzzy
+msgid "Pending Admin"
+msgstr "В ожидании Админ"
+
+#: ../xooclasses/xoo.userultra.user.php:5354
+#, fuzzy
+msgid "Active"
+msgstr "Активные"
+
+#: ../xooclasses/xoo.userultra.woocommerce.php:182
+#, fuzzy
+msgid "Woocommerce File Doesn't Exist"
+msgstr "WooCommerce файла не существует"
+
+#: ../xooclasses/xoo.userultra.woocommerce.php:350
+#, fuzzy
+msgid "Modified Date"
+msgstr "Дата изменения"

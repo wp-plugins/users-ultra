@@ -4,7 +4,7 @@ Donate link: http://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.5.16
+Stable tag: 1.5.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -363,7 +363,8 @@ Customize user registration, activation, deactivation, lostpassword etc emailsa.
   <li>French. Thanks to <a href='http://usersultra.com/support/forums/topic/french-translation/'>Ben</a></li> 
   <li>Spanish.</li> 
   <li>Hebrew. Thanks to <a href=' https://profiles.wordpress.org/ahrale/'>Ahrale</a></li>  
-    <li>Hungarian. Thanks to István.</li>  
+    <li>Hungarian. Thanks to István.</li> 
+	 <li>Rusian. Thanks to <a href=' https://wordpress.org/support/profile/bob_2222'>bob_2222</a></li> 
  
 </ul>
 
@@ -442,6 +443,9 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.5.17(06-04-2015) =
+* Improvement - Rusian Language.
 
 = 1.5.16(06-04-2015) =
 * Bug Fix - Possible  Security vulnerability on "rating" module. Please update ASAP.
