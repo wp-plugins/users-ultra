@@ -3681,7 +3681,11 @@ class XooUserUser {
                                 }
                             }
                         } else if (isset($value['choices']) && $value['choices'] != '') {
-                            $loop_default = explode(PHP_EOL, $value['choices']);
+							
+                           // $loop_default = explode(PHP_EOL, $value['choices']);
+							
+							$loop_default = $xoouserultra->uultra_one_line_checkbox_on_window_fix($value['choices'] );
+							
                             $loop[''] = $value['name'];
 
                             foreach ($loop_default as $option)
