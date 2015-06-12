@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-05-31 10:46-0300\n"
-"PO-Revision-Date: 2015-05-31 10:46-0300\n"
+"POT-Creation-Date: 2015-06-12 00:32-0300\n"
+"PO-Revision-Date: 2015-06-12 00:32-0300\n"
 "Last-Translator: Ahrale <contact@atar4u.com>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
 "Language: he\n"
@@ -2223,7 +2223,7 @@ msgstr "נא להגדיר 9999 לפוסטים ללא הגבלה. ערך זה מ�
 msgid "Default Status"
 msgstr "מצב ברירת המחדל"
 
-#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5346
+#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5350
 msgid "Pending"
 msgstr "בהמתנה"
 
@@ -4539,21 +4539,21 @@ msgid "Filter by category: "
 msgstr "סינון לפי קטגוריות: "
 
 #: ../xooclasses/xoo.userultra.photos.php:370
-#: ../xooclasses/xoo.userultra.user.php:4479
+#: ../xooclasses/xoo.userultra.user.php:4483
 msgid "Total found: "
 msgstr "סך-הכל נמצאו: "
 
 #: ../xooclasses/xoo.userultra.photos.php:648
-#: ../xooclasses/xoo.userultra.user.php:4354
-#: ../xooclasses/xoo.userultra.user.php:5194
-#: ../xooclasses/xoo.userultra.user.php:5267
+#: ../xooclasses/xoo.userultra.user.php:4358
+#: ../xooclasses/xoo.userultra.user.php:5198
+#: ../xooclasses/xoo.userultra.user.php:5271
 msgid "Previous"
 msgstr "הקודם"
 
 #: ../xooclasses/xoo.userultra.photos.php:649
-#: ../xooclasses/xoo.userultra.user.php:4355
-#: ../xooclasses/xoo.userultra.user.php:5195
-#: ../xooclasses/xoo.userultra.user.php:5268
+#: ../xooclasses/xoo.userultra.user.php:4359
+#: ../xooclasses/xoo.userultra.user.php:5199
+#: ../xooclasses/xoo.userultra.user.php:5272
 msgid "Next"
 msgstr "הבא"
 
@@ -4630,7 +4630,7 @@ msgstr "בחירת קבצים"
 
 #: ../xooclasses/xoo.userultra.photos.php:2287
 #: ../xooclasses/xoo.userultra.publisher.php:1121
-#: ../xooclasses/xoo.userultra.user.php:4930
+#: ../xooclasses/xoo.userultra.user.php:4934
 msgid "Allowed Files"
 msgstr "קבצים מותרים"
 
@@ -4767,47 +4767,47 @@ msgstr "בחירת קבצים"
 msgid "The file you selected exceeds the maximum file size limit."
 msgstr "הקובץ שבחרת חורג ממגבלת הגודל המרבי."
 
-#: ../xooclasses/xoo.userultra.rating.php:196
+#: ../xooclasses/xoo.userultra.rating.php:201
 msgid "Thank you for your rating"
 msgstr "תודה לך על הדירוג"
 
-#: ../xooclasses/xoo.userultra.rating.php:200
+#: ../xooclasses/xoo.userultra.rating.php:205
 msgid "You've already left your rate "
 msgstr "כבר דירגת "
 
-#: ../xooclasses/xoo.userultra.rating.php:207
+#: ../xooclasses/xoo.userultra.rating.php:212
 msgid "You have to be logged in to leave your rate  "
 msgstr "חובה להתחבר כדי לדרג "
 
-#: ../xooclasses/xoo.userultra.rating.php:212
+#: ../xooclasses/xoo.userultra.rating.php:217
 msgid "You cannot rate yourself  "
 msgstr "אין אפשרות לדרג את עצמך"
 
-#: ../xooclasses/xoo.userultra.rating.php:254
+#: ../xooclasses/xoo.userultra.rating.php:259
 msgid "1 star out of 5 "
 msgstr "כוכב אחד מתוך 5"
 
-#: ../xooclasses/xoo.userultra.rating.php:255
+#: ../xooclasses/xoo.userultra.rating.php:260
 msgid "2 star out of 5  "
 msgstr "2 כוכבים מתוך 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:256
+#: ../xooclasses/xoo.userultra.rating.php:261
 msgid "3 star out of 5  "
 msgstr "3 כוכבים מתוך 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:257
+#: ../xooclasses/xoo.userultra.rating.php:262
 msgid "4 star out of 5  "
 msgstr "4 כוכבים מתוך 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:258
+#: ../xooclasses/xoo.userultra.rating.php:263
 msgid "5 star out of 5  "
 msgstr "5 כוכבים מתוך 5  "
 
-#: ../xooclasses/xoo.userultra.rating.php:260
+#: ../xooclasses/xoo.userultra.rating.php:265
 msgid "Rating: "
 msgstr "דירוג: "
 
-#: ../xooclasses/xoo.userultra.rating.php:261
+#: ../xooclasses/xoo.userultra.rating.php:266
 msgid " votes cast "
 msgstr "הצבעה בסקר"
 
@@ -5146,7 +5146,7 @@ msgstr "לרוקן את התוצאות"
 
 #: ../xooclasses/xoo.userultra.user.php:2769
 #: ../xooclasses/xoo.userultra.user.php:2870
-#: ../xooclasses/xoo.userultra.user.php:4305
+#: ../xooclasses/xoo.userultra.user.php:4309
 msgid "See Profile"
 msgstr "הצגת הפרופיל"
 
@@ -5159,49 +5159,49 @@ msgstr "ללא תשלום"
 msgid "Search %s"
 msgstr "חיפוש %s"
 
-#: ../xooclasses/xoo.userultra.user.php:4072
+#: ../xooclasses/xoo.userultra.user.php:4076
 msgid "<< Previous"
 msgstr "<< הקודם"
 
-#: ../xooclasses/xoo.userultra.user.php:4073
+#: ../xooclasses/xoo.userultra.user.php:4077
 msgid "Next >>"
 msgstr "הבא >>"
 
-#: ../xooclasses/xoo.userultra.user.php:4123
-#: ../xooclasses/xoo.userultra.user.php:4194
+#: ../xooclasses/xoo.userultra.user.php:4127
+#: ../xooclasses/xoo.userultra.user.php:4198
 msgid "Users"
 msgstr "משתמשים"
 
-#: ../xooclasses/xoo.userultra.user.php:4197
+#: ../xooclasses/xoo.userultra.user.php:4201
 msgid "Only logged in users can see this page"
 msgstr "רק משתמשים מחוברים יכולים לראות את העמוד הזה"
 
-#: ../xooclasses/xoo.userultra.user.php:4596
-#: ../xooclasses/xoo.userultra.user.php:4615
+#: ../xooclasses/xoo.userultra.user.php:4600
+#: ../xooclasses/xoo.userultra.user.php:4619
 msgid "Country not available"
 msgstr "הארץ אינה זמינה"
 
-#: ../xooclasses/xoo.userultra.user.php:4642
+#: ../xooclasses/xoo.userultra.user.php:4646
 msgid "This user hasn't a description yet"
 msgstr "אין עדיין תיאור למשתמש זה"
 
-#: ../xooclasses/xoo.userultra.user.php:4894
+#: ../xooclasses/xoo.userultra.user.php:4898
 msgid "Drop Avatar here"
 msgstr "לגרור לכאן את צלמית המשתמש"
 
-#: ../xooclasses/xoo.userultra.user.php:4985
+#: ../xooclasses/xoo.userultra.user.php:4989
 msgid "You may only upload one image at a time!"
 msgstr "אפשר להעלות רק קובץ אחד בכל פעם!"
 
-#: ../xooclasses/xoo.userultra.user.php:5000
+#: ../xooclasses/xoo.userultra.user.php:5004
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr "הקובץ שבחרת חורג ממגבלת גודל הקובץ המרבי."
 
-#: ../xooclasses/xoo.userultra.user.php:5350
+#: ../xooclasses/xoo.userultra.user.php:5354
 msgid "Pending Admin"
 msgstr "בהמתנה להנהלה"
 
-#: ../xooclasses/xoo.userultra.user.php:5354
+#: ../xooclasses/xoo.userultra.user.php:5358
 msgid "Active"
 msgstr "פעיל"
 

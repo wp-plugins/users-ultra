@@ -1,10 +1,8 @@
 <?php
 class XooUserUser {
 	
-	var $messages_process;
-	
-	var $profile_order_field;
-	
+	var $messages_process;	
+	var $profile_order_field;	
 	var $profile_role;	
 	var $profile_order;	
 	var $uultra_args;

@@ -1,20 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-05-31 10:46-0300\n"
-"PO-Revision-Date: 2015-06-05 18:26+0400\n"
+"POT-Creation-Date: 2015-06-12 00:32-0300\n"
+"PO-Revision-Date: 2015-06-12 00:32-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Language: ru\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../addons/maintenance/admin/admin.php:36
@@ -2737,7 +2737,7 @@ msgstr ""
 msgid "Default Status"
 msgstr "Состояние по умолчанию"
 
-#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5346
+#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5350
 #, fuzzy
 msgid "Pending"
 msgstr "Ожидание"
@@ -5631,23 +5631,23 @@ msgid "Filter by category: "
 msgstr "Фильтр по категориям"
 
 #: ../xooclasses/xoo.userultra.photos.php:370
-#: ../xooclasses/xoo.userultra.user.php:4479
+#: ../xooclasses/xoo.userultra.user.php:4483
 #, fuzzy
 msgid "Total found: "
 msgstr "Всего найдено:"
 
 #: ../xooclasses/xoo.userultra.photos.php:648
-#: ../xooclasses/xoo.userultra.user.php:4354
-#: ../xooclasses/xoo.userultra.user.php:5194
-#: ../xooclasses/xoo.userultra.user.php:5267
+#: ../xooclasses/xoo.userultra.user.php:4358
+#: ../xooclasses/xoo.userultra.user.php:5198
+#: ../xooclasses/xoo.userultra.user.php:5271
 #, fuzzy
 msgid "Previous"
 msgstr "Назад"
 
 #: ../xooclasses/xoo.userultra.photos.php:649
-#: ../xooclasses/xoo.userultra.user.php:4355
-#: ../xooclasses/xoo.userultra.user.php:5195
-#: ../xooclasses/xoo.userultra.user.php:5268
+#: ../xooclasses/xoo.userultra.user.php:4359
+#: ../xooclasses/xoo.userultra.user.php:5199
+#: ../xooclasses/xoo.userultra.user.php:5272
 #, fuzzy
 msgid "Next"
 msgstr "Вперед"
@@ -5740,7 +5740,7 @@ msgstr "Выберите файлы"
 
 #: ../xooclasses/xoo.userultra.photos.php:2287
 #: ../xooclasses/xoo.userultra.publisher.php:1121
-#: ../xooclasses/xoo.userultra.user.php:4930
+#: ../xooclasses/xoo.userultra.user.php:4934
 #, fuzzy
 msgid "Allowed Files"
 msgstr "Разрешенные файлы"
@@ -5907,57 +5907,57 @@ msgstr "Выберите файл"
 msgid "The file you selected exceeds the maximum file size limit."
 msgstr "Выбранный вами файл превышает максимально допустимый размер файла."
 
-#: ../xooclasses/xoo.userultra.rating.php:196
+#: ../xooclasses/xoo.userultra.rating.php:201
 #, fuzzy
 msgid "Thank you for your rating"
 msgstr "Спасибо за оценку"
 
-#: ../xooclasses/xoo.userultra.rating.php:200
+#: ../xooclasses/xoo.userultra.rating.php:205
 #, fuzzy
 msgid "You've already left your rate "
 msgstr "Вы уже оставили свой курс"
 
-#: ../xooclasses/xoo.userultra.rating.php:207
+#: ../xooclasses/xoo.userultra.rating.php:212
 #, fuzzy
 msgid "You have to be logged in to leave your rate  "
 msgstr "Вы должны быть вошли в систему чтобы оставить свой курс"
 
-#: ../xooclasses/xoo.userultra.rating.php:212
+#: ../xooclasses/xoo.userultra.rating.php:217
 #, fuzzy
 msgid "You cannot rate yourself  "
 msgstr "Вы не можете оценивать себя"
 
-#: ../xooclasses/xoo.userultra.rating.php:254
+#: ../xooclasses/xoo.userultra.rating.php:259
 #, fuzzy
 msgid "1 star out of 5 "
 msgstr "1 звезда из 5"
 
-#: ../xooclasses/xoo.userultra.rating.php:255
+#: ../xooclasses/xoo.userultra.rating.php:260
 #, fuzzy
 msgid "2 star out of 5  "
 msgstr "2 звезда из 5"
 
-#: ../xooclasses/xoo.userultra.rating.php:256
+#: ../xooclasses/xoo.userultra.rating.php:261
 #, fuzzy
 msgid "3 star out of 5  "
 msgstr "3 звезды из 5"
 
-#: ../xooclasses/xoo.userultra.rating.php:257
+#: ../xooclasses/xoo.userultra.rating.php:262
 #, fuzzy
 msgid "4 star out of 5  "
 msgstr "4 звезды из 5"
 
-#: ../xooclasses/xoo.userultra.rating.php:258
+#: ../xooclasses/xoo.userultra.rating.php:263
 #, fuzzy
 msgid "5 star out of 5  "
 msgstr "5 звезд из 5"
 
-#: ../xooclasses/xoo.userultra.rating.php:260
+#: ../xooclasses/xoo.userultra.rating.php:265
 #, fuzzy
 msgid "Rating: "
 msgstr "Рейтинг:"
 
-#: ../xooclasses/xoo.userultra.rating.php:261
+#: ../xooclasses/xoo.userultra.rating.php:266
 #, fuzzy
 msgid " votes cast "
 msgstr "голосов"
@@ -6383,7 +6383,7 @@ msgstr "Пусто результаты"
 
 #: ../xooclasses/xoo.userultra.user.php:2769
 #: ../xooclasses/xoo.userultra.user.php:2870
-#: ../xooclasses/xoo.userultra.user.php:4305
+#: ../xooclasses/xoo.userultra.user.php:4309
 #, fuzzy
 msgid "See Profile"
 msgstr "См профиля"
@@ -6398,59 +6398,59 @@ msgstr "Бесплатно"
 msgid "Search %s"
 msgstr "Поиск %s"
 
-#: ../xooclasses/xoo.userultra.user.php:4072
+#: ../xooclasses/xoo.userultra.user.php:4076
 #, fuzzy
 msgid "<< Previous"
 msgstr "<< Назад"
 
-#: ../xooclasses/xoo.userultra.user.php:4073
+#: ../xooclasses/xoo.userultra.user.php:4077
 #, fuzzy
 msgid "Next >>"
 msgstr "Вперед >>"
 
-#: ../xooclasses/xoo.userultra.user.php:4123
-#: ../xooclasses/xoo.userultra.user.php:4194
+#: ../xooclasses/xoo.userultra.user.php:4127
+#: ../xooclasses/xoo.userultra.user.php:4198
 #, fuzzy
 msgid "Users"
 msgstr "Пользователи"
 
-#: ../xooclasses/xoo.userultra.user.php:4197
+#: ../xooclasses/xoo.userultra.user.php:4201
 #, fuzzy
 msgid "Only logged in users can see this page"
 msgstr "Только зарегистрированные пользователи могут видеть эту страницу"
 
-#: ../xooclasses/xoo.userultra.user.php:4596
-#: ../xooclasses/xoo.userultra.user.php:4615
+#: ../xooclasses/xoo.userultra.user.php:4600
+#: ../xooclasses/xoo.userultra.user.php:4619
 #, fuzzy
 msgid "Country not available"
 msgstr "Страна не указана"
 
-#: ../xooclasses/xoo.userultra.user.php:4642
+#: ../xooclasses/xoo.userultra.user.php:4646
 #, fuzzy
 msgid "This user hasn't a description yet"
 msgstr "Пользователь не ввел описание."
 
-#: ../xooclasses/xoo.userultra.user.php:4894
+#: ../xooclasses/xoo.userultra.user.php:4898
 #, fuzzy
 msgid "Drop Avatar here"
 msgstr "Падение Аватар здесь"
 
-#: ../xooclasses/xoo.userultra.user.php:4985
+#: ../xooclasses/xoo.userultra.user.php:4989
 #, fuzzy
 msgid "You may only upload one image at a time!"
 msgstr "Вы можете загрузить только одно изображение за один раз!"
 
-#: ../xooclasses/xoo.userultra.user.php:5000
+#: ../xooclasses/xoo.userultra.user.php:5004
 #, fuzzy
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr "Выбранный вами файл превышает максимальный предел размера файла."
 
-#: ../xooclasses/xoo.userultra.user.php:5350
+#: ../xooclasses/xoo.userultra.user.php:5354
 #, fuzzy
 msgid "Pending Admin"
 msgstr "В ожидании Админ"
 
-#: ../xooclasses/xoo.userultra.user.php:5354
+#: ../xooclasses/xoo.userultra.user.php:5358
 #, fuzzy
 msgid "Active"
 msgstr "Активные"

@@ -2770,7 +2770,6 @@ MEDIA QUERIES
 	
 	
 	
-	
 }
 
 
@@ -2809,11 +2808,6 @@ MEDIA QUERIES
 	display:block !important; 
 	margin-top:5px; 
 	}
-	
-	
-	
-
-
 
 }
 
@@ -2828,22 +2822,20 @@ MEDIA QUERIES
 	}
 	
 	
-		.usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu li{
-		
+		.usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu li{		
 		display:inline-block !important;		
 		width:18% !important;
 		margin:1% !important;
 	}
 
-	.uultra-btn-u-menu span.uultra-user-menu-text{	
+	.uultra-btn-u-menu span.uultra-user-menu-text{
 	
 		text-align:left;
 		display:none !important;		
 	
 	}
 	
-	.uultra-profile-basic-wrap .uultra-user-avatar{
-		
+	.uultra-profile-basic-wrap .uultra-user-avatar{		
 		width:60px !important}
 
 }
@@ -2851,7 +2843,6 @@ MEDIA QUERIES
 
 /* =Content Styles
 -------------------------------------------------------------- */
-
 
 /* Parallax Fix */
 @media only screen and (min-width: 1930px) {  }
