@@ -120,14 +120,11 @@ class XooUserMyMessage {
 		global $wpdb,  $xoouserultra;		
 		require_once(ABSPATH . 'wp-includes/formatting.php');
 		
-		$logged_user_id = get_current_user_id();
-				
+		$logged_user_id = get_current_user_id();				
 		
 		$message_id =  sanitize_text_field($_POST["message_id"]);				
-		$uu_message =   sanitize_text_field($_POST["uu_message"]);
-		
-		$message = $this->get_one($message_id, $logged_user_id);
-		
+		$uu_message =   sanitize_text_field($_POST["uu_message"]);		
+		$message = $this->get_one($message_id, $logged_user_id);		
 		$uu_subject =   __("Reply: ", 'xoousers')." ".$message->subject;
 		
 		//check if reply equal to sender
@@ -148,8 +145,7 @@ class XooUserMyMessage {
 		
 		//store in the db		
 		if($receiver->ID >0)
-		{
-			
+		{			
 			$new_message = array(
 						'id'        => NULL,
 						'subject'   => $uu_subject,						
@@ -181,8 +177,7 @@ class XooUserMyMessage {
 	public function get_send_form($receiver_user_id)
 	{
 		
-		global $wpdb,  $xoouserultra;
-		
+		global $wpdb,  $xoouserultra;		
 		$logged_user_id = get_current_user_id();
 		
 		$html = "";

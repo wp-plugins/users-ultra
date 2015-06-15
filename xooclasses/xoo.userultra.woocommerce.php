@@ -9,8 +9,7 @@ class XooWooCommerce {
 		
 		add_action('init', array( $this, 'handle_init' ));
 		
-	}
-	 
+	}	 
 
 	function handle_init() {
 		global $pagenow;
@@ -274,8 +273,7 @@ class XooWooCommerce {
 						
 					}
 					
-				}
-				
+				}				
 				update_option('usersultra_profile_fields', $fields);				
 				
 				}
@@ -311,8 +309,7 @@ class XooWooCommerce {
                      'field' => 'slug',
 					 'terms' => array('processing','pending','completed','cancelled')
                     
-                     )
-         )
+                     )         )
         );
  
 		
@@ -336,7 +333,6 @@ class XooWooCommerce {
 			<form action="" method="get">
 				<?php wp_nonce_field( 'usersultra-bulk-action_inbox' ); ?>
 				<input type="hidden" name="page" value="usersultra_inbox" />
-	
 				
 	
 				<table class="widefat fixed" id="table-3" cellspacing="0">
@@ -377,8 +373,7 @@ class XooWooCommerce {
 					
 				</table>
 			</form>
-			<?php
-	
+			<?php	
 		}
 		?>
 
