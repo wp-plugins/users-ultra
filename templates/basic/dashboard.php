@@ -476,8 +476,8 @@ $howmany = 5;
                             </p>
                             
                             <div class="usersultra-btn-options-bar">
-                            <a class="buttonize" href="#" id="close_add_gallery"><?php  _e('Cancel','xoousers');?></a>
-                            <a class="buttonize green"  href="#" id="new_gallery_add"><?php  _e('Submit','xoousers');?></a>
+                              <button id="close_add_gallery"> <?php  _e('Cancel','xoousers');?></button>
+                            <button id="new_gallery_add"> <?php  _e('Submit','xoousers');?></button>
                             
                             </div>
                         
