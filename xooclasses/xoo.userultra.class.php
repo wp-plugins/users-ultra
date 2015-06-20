@@ -1505,12 +1505,11 @@ class XooUserUltra
 
 		/* Font Awesome */
 		wp_register_style( 'xoouserultra_font_awesome', xoousers_url.'css/css/font-awesome.min.css');
-		wp_enqueue_style('xoouserultra_font_awesome');	
-		
+		wp_enqueue_style('xoouserultra_font_awesome');			
 		
 		/* Main css file */
-		wp_register_style( 'xoouserultra_css', xoousers_url.'templates/'.xoousers_template.'/css/xoouserultra.css');
-		wp_enqueue_style('xoouserultra_css');		
+		//wp_register_style( 'xoouserultra_css', xoousers_url.'templates/'.xoousers_template.'/css/xoouserultra.css');
+		//wp_enqueue_style('xoouserultra_css');		
 				
 		/* Custom style */		
 		wp_register_style( 'xoouserultra_style', xoousers_url.'templates/'.xoousers_template.'/css/default.css');
@@ -1527,8 +1526,7 @@ class XooUserUltra
 		
 		/*uploader*/			
 		
-		wp_enqueue_script('jquery-ui');	
-		
+		wp_enqueue_script('jquery-ui');			
 		wp_enqueue_script('plupload-all');	
 		wp_enqueue_script('jquery-ui-progressbar');				 
 		
@@ -1545,9 +1543,9 @@ class XooUserUltra
 		
 		/*Validation Engibne JS*/		
 			
-		wp_register_script( 'form-validate-lang', xoousers_url.'js/languages/jquery.validationEngine-en.js',array('jquery'));
-			
-		wp_enqueue_script('form-validate-lang');			
+		wp_register_script( 'form-validate-lang', xoousers_url.'js/languages/jquery.validationEngine-en.js',array('jquery'));			
+		wp_enqueue_script('form-validate-lang');
+					
 		wp_register_script('form-validate', xoousers_url.'js/jquery.validationEngine.js',array('jquery'));
 		wp_enqueue_script('form-validate');
 		
@@ -1556,8 +1554,8 @@ class XooUserUltra
 		
 		if (!is_admin()) 
 		{		
-			wp_register_style( 'xoouserultra_frontend_css', xoousers_url.'templates/'.xoousers_template."/css/".'front-styles.css');
-			wp_enqueue_style('xoouserultra_frontend_css');
+			//wp_register_style( 'xoouserultra_frontend_css', xoousers_url.'templates/'.xoousers_template."/css/".'front-styles.css');
+			//wp_enqueue_style('xoouserultra_frontend_css');
 			
 			//wp_register_style( 'xoouserultra_shortcoddes_css', xoousers_url.'templates/'.xoousers_template."/css/".'resp-shortcodes.css');
 			//wp_enqueue_style('xoouserultra_shortcoddes_css');
