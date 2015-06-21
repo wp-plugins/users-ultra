@@ -415,11 +415,11 @@ $howmany = 5;
        
                     <div class="commons-panel xoousersultra-shadow-borers" >
                               <div class="commons-panel-heading">
-                                      <h2> <?php  _e('My Orders','xoousers');?> </h2>
+                                      <h2> <?php  _e('My Purchases','xoousers');?> </h2>
                                </div>
                                
                                
-                               <p class="paneldesc"><?php echo _e('Here you can track your orders. ','xoousers')?></p>
+                               <p class="paneldesc"><?php echo _e('Here you can track your purchases. ','xoousers')?></p>
                              
                               <div class="commons-panel-content" >  
                               
