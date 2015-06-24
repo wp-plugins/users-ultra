@@ -98,23 +98,30 @@ class XooSocial
 		
 			if(isset($logged_user_id) && $logged_user_id >0 )
 			{
+				if($logged_user_id==$receiver_id)
+				{
+					echo __(" You can't be your own friend. ", 'xoousers');
 				
-				$data = array(
-							'friend_id'        => NULL,
-							'friend_receiver_id'   => $receiver_id,						
-							'friend_sender_user_id'   => $sender_id,
-							'friend_status'   => '0',
-							'friend_date'=> date('Y-m-d H:i:s')
-														
-						);
-						
-				// insert into database
-				$wpdb->insert( $wpdb->prefix . 'usersultra_friends', $data, array( '%d', '%s', '%s', '%s',  '%s' ));
-						
-				$xoouserultra->messaging->send_friend_request($receiver ,$sender);
+				}else{
 				
+					$data = array(
+								'friend_id'        => NULL,
+								'friend_receiver_id'   => $receiver_id,						
+								'friend_sender_user_id'   => $sender_id,
+								'friend_status'   => '0',
+								'friend_date'=> date('Y-m-d H:i:s')
+															
+							);
+							
+					// insert into database
+					$wpdb->insert( $wpdb->prefix . 'usersultra_friends', $data, array( '%d', '%s', '%s', '%s',  '%s' ));
+							
+					$xoouserultra->messaging->send_friend_request($receiver ,$sender);
+					
+					
+					echo __(" Friend Request Sent ", 'xoousers');
 				
-				echo __(" Friend Request Sent ", 'xoousers');
+				}
 				
 			}else{
 				

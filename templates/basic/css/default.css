@@ -424,7 +424,7 @@ input.btnuultra {
     border: medium none;
     box-shadow: none;
 }
-.uultra-icon-facebook, .uultra-icon-yahoo, .uultra-icon-google, .uultra-icon-linkedin, .uultra-icon-twitter, .uultra-icon-yammer , .uultra-icon-instagram { margin-right:10px;}
+.uultra-icon-facebook, .uultra-icon-yahoo, .uultra-icon-google, .uultra-icon-linkedin, .uultra-icon-twitter, .uultra-icon-yammer , .uultra-icon-instagram { margin-right:10px !important;}
 .uultra-icon-facebook img, .uultra-icon-yahoo img, .uultra-icon-google img, .uultra-icon-linkedin img, .uultra-icon-twitter img, .uultra-icon-yammer img , .uultra-icon-instagram img{ vertical-align:middle;}
 
 
