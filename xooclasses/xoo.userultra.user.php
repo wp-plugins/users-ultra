@@ -4199,6 +4199,7 @@ class XooUserUser {
 			'display_to_logged_in_only_text' => __('Only logged in users can see this page', 'xoousers'),	
 					
 			'list_order' => 'DESC', // asc or desc ordering
+			'sort_by' => 'ID', //
 			'role' => '', // filter by role
 			'relation' => 'AND', // filter by role
 			'exclude' => '', // exclude from search
@@ -4210,7 +4211,7 @@ class XooUserUser {
 		
 		$search_array = array('list_per_page' => $list_per_page, 'list_order' => $list_order);	
 		
-		$args= array('per_page' => $list_per_page, 'relation' => $relation, 'role' => $role, 'exclude' => $exclude);
+		$args= array('per_page' => $list_per_page, 'relation' => $relation, 'role' => $role, 'exclude' => $exclude,  'order' => $list_order, 'sortby' => $sort_by);
 		
 		$this->current_users_page = $page;
 				
