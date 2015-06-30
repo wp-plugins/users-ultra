@@ -12,8 +12,7 @@ class XooUserUser {
 	function __construct() 
 	{
 		$this->set_default_user_panel();		
-		$this->uultra_replace_default_avatar();		    
-		
+		$this->uultra_replace_default_avatar();			
 				
 		add_action('init', array( $this, 'handle_init' ));		
 		
@@ -79,8 +78,7 @@ class XooUserUser {
 		
 		if($this->get_option("uultra_override_avatar") == 'yes')
 		{
-			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);
-		
+			add_filter('get_avatar', array($this,'uultra_get_avatar'), 99, 5);		
 		}			
 	}
 	
@@ -112,8 +110,7 @@ class XooUserUser {
 		$user_url=$this->get_user_profile_permalink($id_or_email);
 		
 		if($author_pic!='')		
-		{
-			
+		{			
 			//get user's main picture - medium size will be used to be displayed			
 			 $avatar_pic = $path.$author_pic;
 			 $avatar= '<a href="'.$user_url.'">'. '<img src="'.$avatar_pic.'"  id="uultra-avatar-img-'.$id_or_email.'"/></a>';
@@ -220,8 +217,7 @@ class XooUserUser {
 		
 		require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
-		require_once(ABSPATH. 'wp-admin/includes/ms.php' );
-		
+		require_once(ABSPATH. 'wp-admin/includes/ms.php' );		
 		//close
 		$current_user = wp_get_current_user();
 		
@@ -367,8 +363,7 @@ class XooUserUser {
 			
 			}	
 		
-		}elseif($display_rule == "membership_based"){
-			
+		}elseif($display_rule == "membership_based"){			
 			
 			//check logged in		
 			if (!is_user_logged_in()) 
@@ -405,8 +400,7 @@ class XooUserUser {
 		$roles_that_can_see  = explode(',', $roles);	
 		
 		foreach ($roles_that_can_see as $role)
-		{	
-			
+		{				
 			if($this->uultra_is_user_in_role($user_id,$role)) // the selected user 
 			{
 				return true;
@@ -456,7 +450,6 @@ class XooUserUser {
 		
 		/* File upload conditions */
 		$this->allowed_extensions = array("csv");		
-		
 		$send_welcome_email = false;
 		
 		if(isset($_POST["uultra-send-welcome-email"] ) && $_POST["uultra-send-welcome-email"]==1)
@@ -470,8 +463,7 @@ class XooUserUser {
 		if(isset($_POST["uultra-activate-account"] ) )
 		{
 			$account_status = $_POST["uultra-activate-account"];		
-		}
-		
+		}	
 		
 							
 		if (isset($_FILES))
@@ -549,8 +541,7 @@ class XooUserUser {
 								
 							}
 							
-							fclose($handle);
-							
+							fclose($handle);							
 						
 							$this->messages_process .='</table>';
 							$this->messages_process .= '<p> <strong>'.__('--- Finished ---  ', 'xoousers').'</strong></p>';
@@ -587,8 +578,7 @@ class XooUserUser {
 		
 		
 		if(!email_exists($email))
-		{
-			
+		{			
 		
 			/* We create the New user */
 			$user_id = wp_create_user( $sanitized_user_login, $user_pass, $email);

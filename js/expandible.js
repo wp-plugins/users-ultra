@@ -358,8 +358,8 @@ if(typeof $ == 'undefined'){
 						
 						
 						}
-				});
-			
+						
+										});			
 			
 			}
 			
@@ -417,8 +417,7 @@ if(typeof $ == 'undefined'){
     		e.preventDefault();
 			 
 				
-        });
-		
+        });		
 		//edit photo
 		jQuery(document).on("click", "a[href='#resp_edit_photo']", function(e) {
 			
@@ -450,8 +449,7 @@ if(typeof $ == 'undefined'){
     		e.preventDefault();
 			 
 				
-        });
-		
+        });		
 		
 		//close video edit box
 		jQuery(document).on("click", ".btn-video-close-conf", function(e) {
@@ -464,8 +462,7 @@ if(typeof $ == 'undefined'){
     		e.preventDefault();
 			 
 				
-        });
-		
+        });		
 		//edit video
 		
 		jQuery(document).on("click", "a[href='#resp_edit_video']", function(e) {

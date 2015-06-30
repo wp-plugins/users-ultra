@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-06-12 00:32-0300\n"
-"PO-Revision-Date: 2015-06-12 00:32-0300\n"
+"POT-Creation-Date: 2015-06-30 14:05-0300\n"
+"PO-Revision-Date: 2015-06-30 14:05-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -185,7 +185,7 @@ msgid "Name:"
 msgstr "Имя:"
 
 #: ../addons/photocategories/admin/admin.php:94
-#: ../xooclasses/xoo.userultra.mymessage.php:206
+#: ../xooclasses/xoo.userultra.mymessage.php:201
 #: ../xooclasses/xoo.userultra.photos.php:1601
 #: ../xooclasses/xoo.userultra.photos.php:1719
 #: ../xooclasses/xoo.userultra.photos.php:1840
@@ -225,9 +225,9 @@ msgstr "Имя:"
 #: ../addons/photocategories/admin/panels/manage.php:24
 #: ../admin/tabs/membership.php:147
 #: ../xooclasses/xoo.userultra.payment.paypal.php:728
-#: ../xooclasses/xoo.userultra.user.php:800
-#: ../xooclasses/xoo.userultra.user.php:868
-#: ../xooclasses/xoo.userultra.user.php:936
+#: ../xooclasses/xoo.userultra.user.php:788
+#: ../xooclasses/xoo.userultra.user.php:856
+#: ../xooclasses/xoo.userultra.user.php:924
 #, fuzzy
 msgid "Confirm"
 msgstr "Подтвердить"
@@ -254,11 +254,11 @@ msgid "Actions"
 msgstr "Действия"
 
 #: ../addons/photocategories/admin/panels/manage.php:70
-#: ../admin/tabs/fields.php:348 ../xooclasses/xoo.userultra.mymessage.php:915
-#: ../xooclasses/xoo.userultra.mymessage.php:1045
-#: ../xooclasses/xoo.userultra.mymessage.php:1097
+#: ../admin/tabs/fields.php:348 ../xooclasses/xoo.userultra.mymessage.php:910
+#: ../xooclasses/xoo.userultra.mymessage.php:1040
+#: ../xooclasses/xoo.userultra.mymessage.php:1092
 #: ../xooclasses/xoo.userultra.payment.paypal.php:788
-#: ../xooclasses/xoo.userultra.user.php:935
+#: ../xooclasses/xoo.userultra.user.php:923
 #, fuzzy
 msgid "Delete"
 msgstr "Удалить"
@@ -751,7 +751,7 @@ msgid "Change Icon"
 msgstr "Изменить иконку"
 
 #: ../admin/tabs/fields.php:665 ../xooclasses/xoo.userultra.publisher.php:224
-#: ../xooclasses/xoo.userultra.user.php:1826
+#: ../xooclasses/xoo.userultra.user.php:1814
 #, fuzzy
 msgid "Update"
 msgstr "Обновить"
@@ -916,8 +916,8 @@ msgstr "Форма входа"
 
 #: ../admin/tabs/help.php:30 ../templates/basic/dashboard.php:740
 #: ../xooclasses/xoo.userultra.class.php:1037
-#: ../xooclasses/xoo.userultra.user.php:2242
-#: ../xooclasses/xoo.userultra.user.php:2246
+#: ../xooclasses/xoo.userultra.user.php:2230
+#: ../xooclasses/xoo.userultra.user.php:2234
 #, fuzzy
 msgid "My Account"
 msgstr "Мой аккаунт"
@@ -927,8 +927,8 @@ msgstr "Мой аккаунт"
 msgid "Disable modules for some Users"
 msgstr "Отключить модули для некоторых пользователей"
 
-#: ../admin/tabs/help.php:36 ../xooclasses/xoo.userultra.user.php:2382
-#: ../xooclasses/xoo.userultra.user.php:2770
+#: ../admin/tabs/help.php:36 ../xooclasses/xoo.userultra.user.php:2370
+#: ../xooclasses/xoo.userultra.user.php:2758
 #, fuzzy
 msgid "Logout"
 msgstr "Выйти"
@@ -1322,7 +1322,7 @@ msgid "This message is sent to the users when a friend request is sent"
 msgstr ""
 "Это сообщение отправляется пользователям, когда отправляется запрос на дружбу"
 
-#: ../admin/tabs/mail.php:186 ../xooclasses/xoo.userultra.class.php:1720
+#: ../admin/tabs/mail.php:186 ../xooclasses/xoo.userultra.class.php:1695
 #, fuzzy
 msgid "Password Reset"
 msgstr "Сброс пароля"
@@ -1401,16 +1401,16 @@ msgid "Latest 5 Transactions"
 msgstr "Последние 5 транзакций"
 
 #: ../admin/tabs/main.php:138 ../admin/tabs/orders.php:146
-#: ../xooclasses/xoo.userultra.mymessage.php:535
-#: ../xooclasses/xoo.userultra.mymessage.php:689
-#: ../xooclasses/xoo.userultra.mymessage.php:807
-#: ../xooclasses/xoo.userultra.mymessage.php:1056
-#: ../xooclasses/xoo.userultra.mymessage.php:1117
+#: ../xooclasses/xoo.userultra.mymessage.php:530
+#: ../xooclasses/xoo.userultra.mymessage.php:684
+#: ../xooclasses/xoo.userultra.mymessage.php:802
+#: ../xooclasses/xoo.userultra.mymessage.php:1051
+#: ../xooclasses/xoo.userultra.mymessage.php:1112
 #: ../xooclasses/xoo.userultra.order.php:377
 #: ../xooclasses/xoo.userultra.publisher.php:474
-#: ../xooclasses/xoo.userultra.socials.php:517
-#: ../xooclasses/xoo.userultra.socials.php:623
-#: ../xooclasses/xoo.userultra.woocommerce.php:349
+#: ../xooclasses/xoo.userultra.socials.php:524
+#: ../xooclasses/xoo.userultra.socials.php:630
+#: ../xooclasses/xoo.userultra.woocommerce.php:345
 #, fuzzy
 msgid "Date"
 msgstr "Дата"
@@ -1428,7 +1428,7 @@ msgstr "ID транзакции"
 #: ../admin/tabs/main.php:141 ../admin/tabs/orders.php:152
 #: ../xooclasses/xoo.userultra.order.php:379
 #: ../xooclasses/xoo.userultra.publisher.php:475
-#: ../xooclasses/xoo.userultra.woocommerce.php:351
+#: ../xooclasses/xoo.userultra.woocommerce.php:347
 #, fuzzy
 msgid "Status"
 msgstr "Статус"
@@ -1448,18 +1448,18 @@ msgstr "Пока нет никаких транзакций."
 msgid "Latest "
 msgstr "Новое"
 
-#: ../admin/tabs/main.php:204 ../xooclasses/xoo.userultra.user.php:776
-#: ../xooclasses/xoo.userultra.user.php:844
-#: ../xooclasses/xoo.userultra.user.php:911
+#: ../admin/tabs/main.php:204 ../xooclasses/xoo.userultra.user.php:764
+#: ../xooclasses/xoo.userultra.user.php:832
+#: ../xooclasses/xoo.userultra.user.php:899
 #, fuzzy
 msgid "Avatar"
 msgstr "Аватар"
 
 #: ../admin/tabs/main.php:205 ../xooclasses/xoo.userultra.class.php:1113
 #: ../xooclasses/xoo.userultra.class.php:1159
-#: ../xooclasses/xoo.userultra.user.php:777
-#: ../xooclasses/xoo.userultra.user.php:845
-#: ../xooclasses/xoo.userultra.user.php:912
+#: ../xooclasses/xoo.userultra.user.php:765
+#: ../xooclasses/xoo.userultra.user.php:833
+#: ../xooclasses/xoo.userultra.user.php:900
 #, fuzzy
 msgid "Username"
 msgstr "Имя"
@@ -1921,10 +1921,23 @@ msgstr ""
 
 #: ../admin/tabs/pro.php:8
 #, fuzzy
+msgid "Welcome to Users Ultra"
+msgstr "Добро пожаловать на пользователей Ultra Lite!"
+
+#: ../admin/tabs/pro.php:12
+msgid ""
+"Thank you very much for installing Users Ultra. This versatile plugin allows "
+"you to create user communities in a few minutes. It comes with tons of "
+"useful shortcodes which give you the capability to customize any WordPress "
+"Theme."
+msgstr ""
+
+#: ../admin/tabs/pro.php:23
+#, fuzzy
 msgid "Why Go Users Ultra Pro?"
 msgstr "Купите версию PRO,"
 
-#: ../admin/tabs/pro.php:11
+#: ../admin/tabs/pro.php:26
 #, fuzzy
 msgid ""
 "What we are doing with Users Ultra Pro is adding some ground breaking "
@@ -1937,7 +1950,7 @@ msgstr ""
 "эксклюзивной профиль настройщик. Эта функция на самом деле это перетащить и "
 "падение, виджеты, настройки профиля для членов вашего сайта."
 
-#: ../admin/tabs/pro.php:13
+#: ../admin/tabs/pro.php:28
 #, fuzzy
 msgid ""
 "Users Ultra Pro allows you to add unlimited widgets, add unlimited links "
@@ -1949,22 +1962,17 @@ msgstr ""
 "Интеграция с сторонних плагинов, используя короткие номера, друзей, "
 "последователей, после, стене пользователя."
 
-#: ../admin/tabs/pro.php:22
+#: ../admin/tabs/pro.php:37
 #, fuzzy
 msgid "Tons of Great Features"
 msgstr "Тонн большие возможности"
 
-#: ../admin/tabs/pro.php:23
-#, fuzzy
-msgid "Changelog"
-msgstr "История изменений"
-
-#: ../admin/tabs/pro.php:32
+#: ../admin/tabs/pro.php:47
 #, fuzzy
 msgid "Appearance & Customization"
 msgstr "Внешний вид & настройки"
 
-#: ../admin/tabs/pro.php:33
+#: ../admin/tabs/pro.php:48
 #, fuzzy
 msgid ""
 "Users Ultra PRO allows you to adapt the user's profile to any WordPress "
@@ -1975,12 +1983,12 @@ msgstr ""
 "темы WordPress через секцию администратора. Измените внешний вид профиля "
 "всего за несколько кликов."
 
-#: ../admin/tabs/pro.php:38
+#: ../admin/tabs/pro.php:53
 #, fuzzy
 msgid "Unlimited Widgets"
 msgstr "Неограниченное количество виджетов"
 
-#: ../admin/tabs/pro.php:39
+#: ../admin/tabs/pro.php:54
 #, fuzzy
 msgid ""
 "Yes, you can add as many widgets as you wish. Integrating with third-party "
@@ -1991,12 +1999,12 @@ msgstr ""
 "сторонними плагинами никогда не была проще. Можно использовать другие "
 "плагины с Ultra PRO пользователей."
 
-#: ../admin/tabs/pro.php:43
+#: ../admin/tabs/pro.php:58
 #, fuzzy
 msgid "Groups"
 msgstr "Группы"
 
-#: ../admin/tabs/pro.php:44
+#: ../admin/tabs/pro.php:59
 #, fuzzy
 msgid ""
 "Users Ultra Pro comes with a powerful groups module. Protect whole pages and "
@@ -2006,12 +2014,12 @@ msgstr ""
 "страницы и сообщения легко с помощью страницы параметры защиты в модуле "
 "групп."
 
-#: ../admin/tabs/pro.php:48
+#: ../admin/tabs/pro.php:63
 #, fuzzy
 msgid "Unlimited Links"
 msgstr "Неограниченное количество ссылок"
 
-#: ../admin/tabs/pro.php:49
+#: ../admin/tabs/pro.php:64
 #, fuzzy
 msgid ""
 "You can add unlimited links within the user's dashboard with HTML text or "
@@ -2021,12 +2029,12 @@ msgstr ""
 "текст или использовать короткий номер другой плагин для отображения "
 "пользовательских сведений."
 
-#: ../admin/tabs/pro.php:55
+#: ../admin/tabs/pro.php:70
 #, fuzzy
 msgid "Roles Integration"
 msgstr "Интеграция ролей"
 
-#: ../admin/tabs/pro.php:56
+#: ../admin/tabs/pro.php:71
 #, fuzzy
 msgid ""
 "Users will be able to select a predefined role when registering and you will "
@@ -2035,12 +2043,12 @@ msgstr ""
 "Пользователи смогут выбрать предопределенную роль, при регистрации, и вы "
 "будет иметь возможность назначить пользовательской роли членского пакета."
 
-#: ../admin/tabs/pro.php:60
+#: ../admin/tabs/pro.php:75
 #, fuzzy
 msgid "Pages & Posts Protection"
 msgstr "Страниц & постов охраны"
 
-#: ../admin/tabs/pro.php:61
+#: ../admin/tabs/pro.php:76
 #, fuzzy
 msgid ""
 "With Users Ultra Por you can restrict content on a global or per page/post "
@@ -2052,12 +2060,12 @@ msgstr ""
 "каждый может видеть страница/должность или только вошедший в систему "
 "пользователи могут видеть страница/должность"
 
-#: ../admin/tabs/pro.php:66
+#: ../admin/tabs/pro.php:81
 #, fuzzy
 msgid "bbPress Integration"
 msgstr "bbPress интеграции"
 
-#: ../admin/tabs/pro.php:67
+#: ../admin/tabs/pro.php:82
 #, fuzzy
 msgid ""
 "Your forum may look much more elegant by using Users Ultra Pro. Display "
@@ -2067,12 +2075,12 @@ msgstr ""
 "пользователей. Отображать значки и достижения в вашем форуме темы и многое "
 "другое."
 
-#: ../admin/tabs/pro.php:71
+#: ../admin/tabs/pro.php:86
 #, fuzzy
 msgid "Spam Protection"
 msgstr "Защита от спама"
 
-#: ../admin/tabs/pro.php:72
+#: ../admin/tabs/pro.php:87
 #, fuzzy
 msgid ""
 "Users Ultra PRO comes with a IP Blocking tool that will help you to protect "
@@ -2082,12 +2090,12 @@ msgstr ""
 "поможет вам защитить свой сайт от спам-атак. Простой способ, чтобы "
 "остановить спам, фальшивый аккаунт!"
 
-#: ../admin/tabs/pro.php:77
+#: ../admin/tabs/pro.php:92
 #, fuzzy
 msgid "Advanced Profile Fields"
 msgstr "Расширенный профиль поля"
 
-#: ../admin/tabs/pro.php:78
+#: ../admin/tabs/pro.php:93
 #, fuzzy
 msgid ""
 "You can create fields that will only be displayed on users of the selected "
@@ -2097,12 +2105,12 @@ msgstr ""
 "выбранной роли пользователя. Кроме того вы можете сделать редактируемые поля "
 "на основе ролей пользователей."
 
-#: ../admin/tabs/pro.php:83
+#: ../admin/tabs/pro.php:98
 #, fuzzy
 msgid "Customizable Profile"
 msgstr "Настраиваемый профиль"
 
-#: ../admin/tabs/pro.php:84
+#: ../admin/tabs/pro.php:99
 #, fuzzy
 msgid ""
 "The Pro Version includes the unique and innovating Widgetized Users Profile. "
@@ -2112,12 +2120,12 @@ msgstr ""
 "пользователей профиль. Пусть ваш пользователь построить их собственный "
 "профиль, элементы экрану и падают."
 
-#: ../admin/tabs/pro.php:90
+#: ../admin/tabs/pro.php:105
 #, fuzzy
 msgid "New Features"
 msgstr "Новые возможности"
 
-#: ../admin/tabs/pro.php:91
+#: ../admin/tabs/pro.php:106
 #, fuzzy
 msgid ""
 "We add new features every week for the Pro version. You may alway let us "
@@ -2127,12 +2135,12 @@ msgstr ""
 "можете, дайте нам знать ваше предложение, и мы будем рады выслушать ваше "
 "мнение."
 
-#: ../admin/tabs/pro.php:95
+#: ../admin/tabs/pro.php:110
 #, fuzzy
 msgid "reCaptcha & FUNCAPTCHA"
 msgstr "reCaptcha & FUNCAPTCHA"
 
-#: ../admin/tabs/pro.php:96
+#: ../admin/tabs/pro.php:111
 #, fuzzy
 msgid ""
 "This is a great feature to protect your website from spam and abuse. "
@@ -2141,12 +2149,12 @@ msgstr ""
 "Это отличная возможность защитить свой сайт от спама и злоупотреблений. "
 "reCAPTCHA использует двигатель анализа дополнительных рисков."
 
-#: ../admin/tabs/pro.php:102
+#: ../admin/tabs/pro.php:117
 #, fuzzy
 msgid "Default Role on Registration"
 msgstr "Роль по умолчанию на регистрации"
 
-#: ../admin/tabs/pro.php:103
+#: ../admin/tabs/pro.php:118
 #, fuzzy
 msgid ""
 "Users Ultra Pro allows you to set a custom role for either the common or the "
@@ -2155,12 +2163,12 @@ msgstr ""
 "Пользователи Ultra Pro позволяет вам установить пользовательские роли для "
 "общего или логин социальной функции."
 
-#: ../admin/tabs/pro.php:107
+#: ../admin/tabs/pro.php:122
 #, fuzzy
 msgid "One and Two Columns Profile"
 msgstr "Одна и две колонки профиль"
 
-#: ../admin/tabs/pro.php:108
+#: ../admin/tabs/pro.php:123
 #, fuzzy
 msgid ""
 "The new user's profile template will let you create a beautiful user's "
@@ -2169,12 +2177,12 @@ msgstr ""
 "Шаблон профиля нового пользователя позволит вам создать красивый профиль с "
 "одной, двумя или тремя колоннами одним щелчком."
 
-#: ../admin/tabs/pro.php:112
+#: ../admin/tabs/pro.php:127
 #, fuzzy
 msgid "Badges & Achievement"
 msgstr "Значки & достижения"
 
-#: ../admin/tabs/pro.php:113
+#: ../admin/tabs/pro.php:128
 #, fuzzy
 msgid ""
 "Create and award badges to your users manually, or based on what they "
@@ -2183,24 +2191,24 @@ msgstr ""
 "Создайте и премии значки для ваших пользователей вручную, или на основании "
 "того, что они выполняют."
 
-#: ../admin/tabs/pro.php:117
+#: ../admin/tabs/pro.php:132
 #, fuzzy
 msgid "Users Wall"
 msgstr "Стена пользователей"
 
-#: ../admin/tabs/pro.php:118
+#: ../admin/tabs/pro.php:133
 #, fuzzy
 msgid "Yes, just like Facebook Users Ultra comes with a User's Wall."
 msgstr ""
 "Да, так же как Facebook пользователей Ultra поставляется с пользователя "
 "стены."
 
-#: ../admin/tabs/pro.php:123
+#: ../admin/tabs/pro.php:138
 #, fuzzy
 msgid "Social Connect Buttons"
 msgstr "Социальные подключения кнопок"
 
-#: ../admin/tabs/pro.php:124
+#: ../admin/tabs/pro.php:139
 #, fuzzy
 msgid ""
 "Now you can add one or more social connect buttons to any place of your blog."
@@ -2208,12 +2216,12 @@ msgstr ""
 "Теперь вы можете добавить один или несколько социальных подключить кнопки в "
 "любое место вашего блога."
 
-#: ../admin/tabs/pro.php:128
+#: ../admin/tabs/pro.php:143
 #, fuzzy
 msgid "Online/Offline User Status"
 msgstr "Статус пользователя в сети"
 
-#: ../admin/tabs/pro.php:129
+#: ../admin/tabs/pro.php:144
 #, fuzzy
 msgid ""
 "This feature is optional and you will have the capability to show the user's "
@@ -2222,12 +2230,12 @@ msgstr ""
 "Эта функция является необязательным, и вы будете иметь возможность показать "
 "статус пользователя для ваших посетителей."
 
-#: ../admin/tabs/pro.php:133
+#: ../admin/tabs/pro.php:148
 #, fuzzy
 msgid "Custom Profile Background "
 msgstr "Фон пользовательского профиля"
 
-#: ../admin/tabs/pro.php:134
+#: ../admin/tabs/pro.php:149
 #, fuzzy
 msgid ""
 "Let your users to customize their profiles by adding a custom full-screen "
@@ -2236,12 +2244,12 @@ msgstr ""
 "Предоставьте пользователям настраивать свои профили, добавляя "
 "пользовательские полноэкранного фонового изображения легко."
 
-#: ../admin/tabs/pro.php:140
+#: ../admin/tabs/pro.php:155
 #, fuzzy
 msgid "Automatic Updates"
 msgstr "Автоматические обновления ядра"
 
-#: ../admin/tabs/pro.php:141
+#: ../admin/tabs/pro.php:156
 #, fuzzy
 msgid ""
 "Yes, Users Ultra Pro can be updated through the Plugins area in your "
@@ -2250,24 +2258,24 @@ msgstr ""
 "Да, Ultra Pro пользователи могут быть обновлены через области в панели "
 "администратора Wordpress плагины."
 
-#: ../admin/tabs/pro.php:145
+#: ../admin/tabs/pro.php:160
 #, fuzzy
 msgid "Free Installation"
 msgstr "Бесплатная установка"
 
-#: ../admin/tabs/pro.php:146
+#: ../admin/tabs/pro.php:161
 #, fuzzy
 msgid ""
 "If you would like assistance with installing and setting up the plugin, we "
 "are glad to help. "
 msgstr "Если вы хотите помощь в установке и настройке плагина, мы рады помочь."
 
-#: ../admin/tabs/pro.php:150
+#: ../admin/tabs/pro.php:165
 #, fuzzy
 msgid "Network Activation"
 msgstr "Включение в сеть"
 
-#: ../admin/tabs/pro.php:151
+#: ../admin/tabs/pro.php:166
 #, fuzzy
 msgid ""
 "When running WordPress MultiSite, It allows you to activate Users Ultra Pro "
@@ -2276,12 +2284,12 @@ msgstr ""
 "При запуске многосайтовой WordPress, она позволяет активировать Ultra Pro "
 "пользователей для всей сети в сайтов одним щелчком мыши."
 
-#: ../admin/tabs/pro.php:155
+#: ../admin/tabs/pro.php:170
 #, fuzzy
 msgid "Multiple Users Directory Templates"
 msgstr "Шаблоны для нескольких пользователей каталога"
 
-#: ../admin/tabs/pro.php:156
+#: ../admin/tabs/pro.php:171
 #, fuzzy
 msgid ""
 "The Pro version includes several views for the users directory such as "
@@ -2292,12 +2300,12 @@ msgstr ""
 "каталога например <strong>Пользовательских таблиц с настраиваемыми полями </"
 "strong>и мгновенных сообщений системы."
 
-#: ../admin/tabs/pro.php:160
+#: ../admin/tabs/pro.php:175
 #, fuzzy
 msgid "Users Management"
 msgstr "Управление пользователями"
 
-#: ../admin/tabs/pro.php:161
+#: ../admin/tabs/pro.php:176
 #, fuzzy
 msgid ""
 "The Pro version includes a powerful users management module. Easily approve/"
@@ -2308,12 +2316,12 @@ msgstr ""
 "утверждать и отрицать пользователей, обновление и понижение пользователя "
 "членства. Найти пользователя будет супер легко с помощью этой функции."
 
-#: ../admin/tabs/pro.php:165
+#: ../admin/tabs/pro.php:180
 #, fuzzy
 msgid "Advanced Front End Publisher"
 msgstr "Расширенный передний конец издатель"
 
-#: ../admin/tabs/pro.php:166
+#: ../admin/tabs/pro.php:181
 #, fuzzy
 msgid ""
 "Allows your user to post through their private area. It allows user to "
@@ -2324,12 +2332,12 @@ msgstr ""
 "пользователю вложить фотографии в должности. Это полезно для сайты "
 "классифицированы и реальной недвижимости."
 
-#: ../admin/tabs/pro.php:172
+#: ../admin/tabs/pro.php:187
 #, fuzzy
 msgid "Priority Support"
 msgstr "Приоритетная поддержка."
 
-#: ../admin/tabs/pro.php:173
+#: ../admin/tabs/pro.php:188
 #, fuzzy
 msgid ""
 "We usually reply within the same day to pro users. We will go to the extra "
@@ -2338,22 +2346,22 @@ msgstr ""
 "Обычно мы отвечаем в тот же день pro пользователям. Мы будем идти к лишнюю "
 "милю для того, чтобы дать вам поддержку качества Top."
 
-#: ../admin/tabs/pro.php:178
+#: ../admin/tabs/pro.php:193
 #, fuzzy
 msgid "Maitenance Features"
 msgstr "Особенности головным"
 
-#: ../admin/tabs/pro.php:179
+#: ../admin/tabs/pro.php:194
 #, fuzzy
 msgid "Keep your Users and User Meta table clean."
 msgstr "Держите ваших пользователей и пользователей Метатаблица чистой."
 
-#: ../admin/tabs/pro.php:183
+#: ../admin/tabs/pro.php:198
 #, fuzzy
 msgid "User Avatars"
 msgstr "Аватары пользователей"
 
-#: ../admin/tabs/pro.php:184
+#: ../admin/tabs/pro.php:199
 #, fuzzy
 msgid ""
 "Users Ultra Pro allows users to use Gravatar, Facebook Avatar or their "
@@ -2362,20 +2370,15 @@ msgstr ""
 "Пользователи Ultra Pro позволяет пользователям использовать Gravatar, "
 "Facebook аватар или их пользовательских аватар."
 
-#: ../admin/tabs/pro.php:189
+#: ../admin/tabs/pro.php:204
 #, fuzzy
 msgid "Advanced Email Features"
 msgstr "Расширенный электронной почты функции"
 
-#: ../admin/tabs/pro.php:190
+#: ../admin/tabs/pro.php:205
 #, fuzzy
 msgid "Send emails via SMTP and Mandrill API."
 msgstr "Отправьте электронную почту через SMTP и мандрил API."
-
-#: ../admin/tabs/pro.php:203
-#, fuzzy
-msgid "Users Ultra Pro Changelog "
-msgstr "Ultra Pro изменений пользователей"
 
 #: ../admin/tabs/settings.php:1
 #, fuzzy
@@ -2737,7 +2740,7 @@ msgstr ""
 msgid "Default Status"
 msgstr "Состояние по умолчанию"
 
-#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5350
+#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5339
 #, fuzzy
 msgid "Pending"
 msgstr "Ожидание"
@@ -3435,8 +3438,8 @@ msgstr ""
 "для пользователей щебетать сроки при регистрации."
 
 #: ../admin/tabs/settings.php:837
-#: ../xooclasses/xoo.userultra.mymessage.php:904
-#: ../xooclasses/xoo.userultra.mymessage.php:927
+#: ../xooclasses/xoo.userultra.mymessage.php:899
+#: ../xooclasses/xoo.userultra.mymessage.php:922
 #, fuzzy
 msgid "Message"
 msgstr "Сообщение"
@@ -4008,8 +4011,8 @@ msgid "My Latest Photos:"
 msgstr "Мои последние фотографии:"
 
 #: ../templates/basic/dashboard.php:256
-#: ../xooclasses/xoo.userultra.user.php:2352
-#: ../xooclasses/xoo.userultra.user.php:2356
+#: ../xooclasses/xoo.userultra.user.php:2340
+#: ../xooclasses/xoo.userultra.user.php:2344
 #, fuzzy
 msgid "My Friends"
 msgstr "Только моим друзьям"
@@ -4024,8 +4027,8 @@ msgstr ""
 "ограничено содержание"
 
 #: ../templates/basic/dashboard.php:339
-#: ../xooclasses/xoo.userultra.user.php:2372
-#: ../xooclasses/xoo.userultra.user.php:2376
+#: ../xooclasses/xoo.userultra.user.php:2360
+#: ../xooclasses/xoo.userultra.user.php:2364
 #, fuzzy
 msgid "My Posts"
 msgstr "Мои сообщения"
@@ -4035,9 +4038,9 @@ msgstr "Мои сообщения"
 msgid "Here you can manage your posts. "
 msgstr "Здесь вы можете управлять вашей должности."
 
-#: ../templates/basic/dashboard.php:383 ../templates/basic/dashboard.php:418
-#: ../xooclasses/xoo.userultra.user.php:2283
-#: ../xooclasses/xoo.userultra.user.php:2287
+#: ../templates/basic/dashboard.php:383
+#: ../xooclasses/xoo.userultra.user.php:2271
+#: ../xooclasses/xoo.userultra.user.php:2275
 #, fuzzy
 msgid "My Orders"
 msgstr "Мои заказы"
@@ -4047,13 +4050,20 @@ msgstr "Мои заказы"
 msgid "Here you can check your orders. "
 msgstr "Здесь вы можете проверить ваши заказы."
 
+#: ../templates/basic/dashboard.php:418
+#: ../xooclasses/xoo.userultra.user.php:2258
+#: ../xooclasses/xoo.userultra.user.php:2262
+#, fuzzy
+msgid "My Purchases"
+msgstr "Мои покупки"
+
 #: ../templates/basic/dashboard.php:422
 #, fuzzy
-msgid "Here you can track your orders. "
+msgid "Here you can track your purchases. "
 msgstr "Здесь вы можете отслеживать ваши заказы."
 
 #: ../templates/basic/dashboard.php:456
-#: ../xooclasses/xoo.userultra.user.php:278
+#: ../xooclasses/xoo.userultra.user.php:272
 #, fuzzy
 msgid "My Galleries"
 msgstr "Мои галереи"
@@ -4089,7 +4099,7 @@ msgid "Delete this gallery?"
 msgstr "Удалить галерею"
 
 #: ../templates/basic/dashboard.php:547
-#: ../xooclasses/xoo.userultra.user.php:271
+#: ../xooclasses/xoo.userultra.user.php:265
 #, fuzzy
 msgid "My Photos"
 msgstr "Мои фотографии"
@@ -4170,8 +4180,8 @@ msgstr ""
 
 #: ../templates/basic/dashboard.php:813
 #: ../xooclasses/xoo.userultra.admin.php:52
-#: ../xooclasses/xoo.userultra.user.php:2256
-#: ../xooclasses/xoo.userultra.user.php:2260
+#: ../xooclasses/xoo.userultra.user.php:2244
+#: ../xooclasses/xoo.userultra.user.php:2248
 #, fuzzy
 msgid "Settings"
 msgstr "Настройки"
@@ -4212,8 +4222,8 @@ msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr "НАЖМИТЕ ЗДЕСЬ, ЧТОБЫ ОБНОВИТЬ ВАШ EMAIL"
 
 #: ../templates/basic/dashboard.php:875 ../templates/basic/profile.php:183
-#: ../xooclasses/xoo.userultra.user.php:2335
-#: ../xooclasses/xoo.userultra.user.php:2339
+#: ../xooclasses/xoo.userultra.user.php:2323
+#: ../xooclasses/xoo.userultra.user.php:2327
 #, fuzzy
 msgid "My Videos"
 msgstr "Мое видео"
@@ -4293,8 +4303,8 @@ msgid "Photos available only for registered users"
 msgstr "Фотографии доступны только для зарегистрированных пользователей"
 
 #: ../xooclasses/xoo.userultra.admin.php:50
-#: ../xooclasses/xoo.userultra.user.php:2202
-#: ../xooclasses/xoo.userultra.user.php:2206
+#: ../xooclasses/xoo.userultra.user.php:2190
+#: ../xooclasses/xoo.userultra.user.php:2194
 #, fuzzy
 msgid "Dashboard"
 msgstr "Панель управления"
@@ -4428,7 +4438,7 @@ msgid "Subscribe to receive our periodic email updates"
 msgstr "Подписаться на получение наших периодических email обновления"
 
 #: ../xooclasses/xoo.userultra.admin.php:416
-#: ../xooclasses/xoo.userultra.class.php:2219
+#: ../xooclasses/xoo.userultra.class.php:2194
 #, fuzzy
 msgid "User registration is currently not allowed."
 msgstr "Регистрация пользователя в настоящий момент закрыта."
@@ -4810,7 +4820,7 @@ msgid "View Profile"
 msgstr "Посмотреть Личный Кабинет"
 
 #: ../xooclasses/xoo.userultra.class.php:958
-#: ../xooclasses/xoo.userultra.class.php:1825
+#: ../xooclasses/xoo.userultra.class.php:1800
 #, fuzzy
 msgid "Login"
 msgstr "Логин"
@@ -4894,7 +4904,7 @@ msgid "A password will be e-mailed to you."
 msgstr "Пароль будет вам отправлен по электронной почте."
 
 #: ../xooclasses/xoo.userultra.class.php:1182
-#: ../xooclasses/xoo.userultra.class.php:2032
+#: ../xooclasses/xoo.userultra.class.php:2007
 #, fuzzy
 msgid "Username or Email"
 msgstr "Логин или email"
@@ -4980,7 +4990,7 @@ msgid "Connect via Google+"
 msgstr "Подключение через Google"
 
 #: ../xooclasses/xoo.userultra.class.php:1400
-#: ../xooclasses/xoo.userultra.class.php:2247
+#: ../xooclasses/xoo.userultra.class.php:2222
 #, fuzzy
 msgid "Account Info"
 msgstr "Информация Аккаунта"
@@ -4990,57 +5000,57 @@ msgstr "Информация Аккаунта"
 msgid "New Password"
 msgstr "Новый пароль"
 
-#: ../xooclasses/xoo.userultra.class.php:1740
+#: ../xooclasses/xoo.userultra.class.php:1715
 #, fuzzy
 msgid "Oops! The link is not correct! "
 msgstr "Oops! Ссылка не верна!"
 
-#: ../xooclasses/xoo.userultra.class.php:1779
+#: ../xooclasses/xoo.userultra.class.php:1754
 #, fuzzy
 msgid "Type New Password:"
 msgstr "Введите новый пароль:"
 
-#: ../xooclasses/xoo.userultra.class.php:1788
+#: ../xooclasses/xoo.userultra.class.php:1763
 #, fuzzy
 msgid "Re-type Password:"
 msgstr "Введите пароль еще раз"
 
-#: ../xooclasses/xoo.userultra.class.php:1797
+#: ../xooclasses/xoo.userultra.class.php:1772
 #, fuzzy
 msgid "Reset Password"
 msgstr "Сбросить пароль"
 
-#: ../xooclasses/xoo.userultra.class.php:1883
+#: ../xooclasses/xoo.userultra.class.php:1858
 #, fuzzy
 msgid "Sign in with"
 msgstr "Подпишите вверх статистика"
 
-#: ../xooclasses/xoo.userultra.class.php:1885
+#: ../xooclasses/xoo.userultra.class.php:1860
 #, fuzzy
 msgid "Sign in "
 msgstr "Войти"
 
-#: ../xooclasses/xoo.userultra.class.php:1976
+#: ../xooclasses/xoo.userultra.class.php:1951
 #, fuzzy
 msgid "Forgot Password?"
 msgstr "Забыли пароль?"
 
-#: ../xooclasses/xoo.userultra.class.php:1984
-#: ../xooclasses/xoo.userultra.class.php:2748
+#: ../xooclasses/xoo.userultra.class.php:1959
+#: ../xooclasses/xoo.userultra.class.php:2723
 #, fuzzy
 msgid "Register"
 msgstr "Регистрация"
 
-#: ../xooclasses/xoo.userultra.class.php:1998
+#: ../xooclasses/xoo.userultra.class.php:1973
 #, fuzzy
 msgid "Remember me"
 msgstr "Запомнить меня"
 
-#: ../xooclasses/xoo.userultra.class.php:2002
+#: ../xooclasses/xoo.userultra.class.php:1977
 msgid "Log In"
 msgstr "Войти"
 
-#: ../xooclasses/xoo.userultra.class.php:2023
+#: ../xooclasses/xoo.userultra.class.php:1998
 #, fuzzy
 msgid ""
 " A quick access link will be sent to your email that will let you get in "
@@ -5050,67 +5060,67 @@ msgstr ""
 "которой вы сможете получить доступ к вашей учетной записи и изменить свой "
 "пароль."
 
-#: ../xooclasses/xoo.userultra.class.php:2043
+#: ../xooclasses/xoo.userultra.class.php:2018
 #, fuzzy
 msgid "Back to Login"
 msgstr "Вернуться на страницу логина"
 
-#: ../xooclasses/xoo.userultra.class.php:2049
+#: ../xooclasses/xoo.userultra.class.php:2024
 #, fuzzy
 msgid "Send me Password"
 msgstr "Отправить мне пароль"
 
-#: ../xooclasses/xoo.userultra.class.php:2089
-#: ../xooclasses/xoo.userultra.class.php:2101
+#: ../xooclasses/xoo.userultra.class.php:2064
+#: ../xooclasses/xoo.userultra.class.php:2076
 #, fuzzy
 msgid "Your password is too similar to your username."
 msgstr "Ваш пароль слишком похож на Ваше имя пользователя."
 
-#: ../xooclasses/xoo.userultra.class.php:2090
-#: ../xooclasses/xoo.userultra.class.php:2102
+#: ../xooclasses/xoo.userultra.class.php:2065
+#: ../xooclasses/xoo.userultra.class.php:2077
 #, fuzzy
 msgid "Both passwords do not match."
 msgstr "Пароли не совпадают."
 
-#: ../xooclasses/xoo.userultra.class.php:2091
-#: ../xooclasses/xoo.userultra.class.php:2103
+#: ../xooclasses/xoo.userultra.class.php:2066
+#: ../xooclasses/xoo.userultra.class.php:2078
 #, fuzzy
 msgid "Your password is too short."
 msgstr "Ваш пароль слишком короткий."
 
-#: ../xooclasses/xoo.userultra.class.php:2092
-#: ../xooclasses/xoo.userultra.class.php:2104
+#: ../xooclasses/xoo.userultra.class.php:2067
+#: ../xooclasses/xoo.userultra.class.php:2079
 #, fuzzy
 msgid "Your password strength is too weak."
 msgstr "Вашего пароля является слишком слабым."
 
-#: ../xooclasses/xoo.userultra.class.php:2093
-#: ../xooclasses/xoo.userultra.class.php:2105
+#: ../xooclasses/xoo.userultra.class.php:2068
+#: ../xooclasses/xoo.userultra.class.php:2080
 #, fuzzy
 msgid "Your password strength weak."
 msgstr "Ваш пароль сила слабых."
 
-#: ../xooclasses/xoo.userultra.class.php:2094
+#: ../xooclasses/xoo.userultra.class.php:2069
 #, fuzzy
 msgid "Please provide username."
 msgstr "Укажите логин"
 
-#: ../xooclasses/xoo.userultra.class.php:2095
+#: ../xooclasses/xoo.userultra.class.php:2070
 #, fuzzy
 msgid "Please provide email address."
 msgstr "Укажите емейл"
 
-#: ../xooclasses/xoo.userultra.class.php:2096
+#: ../xooclasses/xoo.userultra.class.php:2071
 #, fuzzy
 msgid "Please provide valid email address."
 msgstr "Пожалуйста, введите действительный адрес электронной почты"
 
-#: ../xooclasses/xoo.userultra.class.php:2097
+#: ../xooclasses/xoo.userultra.class.php:2072
 #, fuzzy
 msgid "That username is already taken, please try a different one."
 msgstr "Это имя пользователя уже занято, попробуйте другой."
 
-#: ../xooclasses/xoo.userultra.class.php:2098
+#: ../xooclasses/xoo.userultra.class.php:2073
 #, fuzzy
 msgid ""
 "The email you entered is already registered. Please try a new email or log "
@@ -5119,56 +5129,56 @@ msgstr ""
 "Данный адрес электронной почты уже используется. Пожалуйста, введите новый "
 "адрес электронной почты."
 
-#: ../xooclasses/xoo.userultra.class.php:2106
+#: ../xooclasses/xoo.userultra.class.php:2081
 #, fuzzy
 msgid "Good"
 msgstr "Хорошо"
 
-#: ../xooclasses/xoo.userultra.class.php:2107
+#: ../xooclasses/xoo.userultra.class.php:2082
 #, fuzzy
 msgid "Strong"
 msgstr "Сложный"
 
-#: ../xooclasses/xoo.userultra.class.php:2109
+#: ../xooclasses/xoo.userultra.class.php:2084
 msgid "ERROR"
 msgstr "Ошибка"
 
-#: ../xooclasses/xoo.userultra.class.php:2121
+#: ../xooclasses/xoo.userultra.class.php:2096
 msgid "Sign Up"
 msgstr "Регистрация"
 
-#: ../xooclasses/xoo.userultra.class.php:2190
+#: ../xooclasses/xoo.userultra.class.php:2165
 #, fuzzy
 msgid "Please enter a username."
 msgstr "Введите имя пользователя."
 
-#: ../xooclasses/xoo.userultra.class.php:2241
+#: ../xooclasses/xoo.userultra.class.php:2216
 msgid "Fields with (*) are required"
 msgstr "* Поля обязательные для заполнения"
 
-#: ../xooclasses/xoo.userultra.class.php:2245
+#: ../xooclasses/xoo.userultra.class.php:2220
 #, fuzzy
 msgid "Sign up with"
 msgstr "Подпишите вверх статистика"
 
-#: ../xooclasses/xoo.userultra.class.php:2310
-#: ../xooclasses/xoo.userultra.class.php:2314
-#: ../xooclasses/xoo.userultra.class.php:2324
-#: ../xooclasses/xoo.userultra.class.php:2333
-#: ../xooclasses/xoo.userultra.class.php:2382
-#: ../xooclasses/xoo.userultra.class.php:2508
-#: ../xooclasses/xoo.userultra.class.php:2512
-#: ../xooclasses/xoo.userultra.class.php:2535
-#: ../xooclasses/xoo.userultra.class.php:2625
+#: ../xooclasses/xoo.userultra.class.php:2285
+#: ../xooclasses/xoo.userultra.class.php:2289
+#: ../xooclasses/xoo.userultra.class.php:2299
+#: ../xooclasses/xoo.userultra.class.php:2308
+#: ../xooclasses/xoo.userultra.class.php:2357
+#: ../xooclasses/xoo.userultra.class.php:2483
+#: ../xooclasses/xoo.userultra.class.php:2487
+#: ../xooclasses/xoo.userultra.class.php:2510
+#: ../xooclasses/xoo.userultra.class.php:2600
 #, fuzzy
 msgid " * This input is required!"
 msgstr "* Поле обязательное для заполнения!"
 
-#: ../xooclasses/xoo.userultra.class.php:2378
+#: ../xooclasses/xoo.userultra.class.php:2353
 msgid "Re-type your email"
 msgstr "Введите адрес электронной почты"
 
-#: ../xooclasses/xoo.userultra.class.php:2638
+#: ../xooclasses/xoo.userultra.class.php:2613
 #, fuzzy
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
@@ -5177,29 +5187,29 @@ msgstr ""
 "Если вы хотите сменить пароль, то введите здесь новые значения. В противном "
 "случе, оставьте эти поля пустыми."
 
-#: ../xooclasses/xoo.userultra.class.php:2642
+#: ../xooclasses/xoo.userultra.class.php:2617
 #, fuzzy
 msgid "Type your new password again."
 msgstr "Введите Ваш новый пароль ещё раз."
 
-#: ../xooclasses/xoo.userultra.class.php:2654
-#: ../xooclasses/xoo.userultra.user.php:1807
+#: ../xooclasses/xoo.userultra.class.php:2629
+#: ../xooclasses/xoo.userultra.user.php:1795
 #, fuzzy
 msgid "Hide from Public"
 msgstr "Скрыть от общественности"
 
-#: ../xooclasses/xoo.userultra.class.php:2675
+#: ../xooclasses/xoo.userultra.class.php:2650
 #, fuzzy
 msgid "Payment Information"
 msgstr "Платежная информация"
 
-#: ../xooclasses/xoo.userultra.class.php:2696
+#: ../xooclasses/xoo.userultra.class.php:2671
 #, fuzzy
 msgid "Receive Daily Updates "
 msgstr "Получать ежедневные обновления"
 
-#: ../xooclasses/xoo.userultra.class.php:2723
-#: ../xooclasses/xoo.userultra.class.php:2731
+#: ../xooclasses/xoo.userultra.class.php:2698
+#: ../xooclasses/xoo.userultra.class.php:2706
 msgid "Terms & Conditions "
 msgstr "Правила и условия"
 
@@ -5328,220 +5338,220 @@ msgstr "Подтверждение сброса пароля"
 msgid " Message sent "
 msgstr "Сообщение отправлено"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:131
+#: ../xooclasses/xoo.userultra.mymessage.php:128
 #, fuzzy
 msgid "Reply: "
 msgstr "Ответить:"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:175
+#: ../xooclasses/xoo.userultra.mymessage.php:171
 #, fuzzy
 msgid " Reply sent "
 msgstr "Ответ отправлен"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:196
+#: ../xooclasses/xoo.userultra.mymessage.php:191
 #, fuzzy
 msgid "You cannot send a private message to yourself"
 msgstr "Нельзя отправить личное сообщение для себя"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:201
-#: ../xooclasses/xoo.userultra.mymessage.php:534
-#: ../xooclasses/xoo.userultra.mymessage.php:688
-#: ../xooclasses/xoo.userultra.mymessage.php:806
-#: ../xooclasses/xoo.userultra.mymessage.php:1055
-#: ../xooclasses/xoo.userultra.mymessage.php:1116
+#: ../xooclasses/xoo.userultra.mymessage.php:196
+#: ../xooclasses/xoo.userultra.mymessage.php:529
+#: ../xooclasses/xoo.userultra.mymessage.php:683
+#: ../xooclasses/xoo.userultra.mymessage.php:801
+#: ../xooclasses/xoo.userultra.mymessage.php:1050
+#: ../xooclasses/xoo.userultra.mymessage.php:1111
 #, fuzzy
 msgid "Subject"
 msgstr "Тема"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:206
+#: ../xooclasses/xoo.userultra.mymessage.php:201
 #, fuzzy
 msgid "Send"
 msgstr "Отправить"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:213
+#: ../xooclasses/xoo.userultra.mymessage.php:208
 #, fuzzy
 msgid "Please input a subject"
 msgstr "Пожалуйста, введите тему"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:214
-#: ../xooclasses/xoo.userultra.mymessage.php:445
+#: ../xooclasses/xoo.userultra.mymessage.php:209
+#: ../xooclasses/xoo.userultra.mymessage.php:440
 #, fuzzy
 msgid "Please write a message"
 msgstr "Напишите сообщение"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:224
+#: ../xooclasses/xoo.userultra.mymessage.php:219
 #, fuzzy
 msgid "You have to be logged in to send private messages"
 msgstr "Вы должны войти, чтобы отправлять личные сообщения"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:284
+#: ../xooclasses/xoo.userultra.mymessage.php:279
 #, fuzzy
 msgid " The message has been deleted. Please refresh your screen."
 msgstr "Сообщение было удалено. Пожалуйста обновите ваш экран."
 
-#: ../xooclasses/xoo.userultra.mymessage.php:307
+#: ../xooclasses/xoo.userultra.mymessage.php:302
 #, fuzzy
 msgid " Status has been changed"
 msgstr "Был изменен статус"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:355
-#: ../xooclasses/xoo.userultra.mymessage.php:566
+#: ../xooclasses/xoo.userultra.mymessage.php:350
+#: ../xooclasses/xoo.userultra.mymessage.php:561
 #, fuzzy
 msgid "Mark as Unread"
 msgstr "Непрочитанное"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:360
-#: ../xooclasses/xoo.userultra.mymessage.php:572
+#: ../xooclasses/xoo.userultra.mymessage.php:355
+#: ../xooclasses/xoo.userultra.mymessage.php:567
 #, fuzzy
 msgid "Mark as Read"
 msgstr "Прочитанное"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:423
+#: ../xooclasses/xoo.userultra.mymessage.php:418
 #, fuzzy
 msgid "Type your reply here..."
 msgstr "Введите ответ здесь ..."
 
-#: ../xooclasses/xoo.userultra.mymessage.php:431
+#: ../xooclasses/xoo.userultra.mymessage.php:426
 #: ../xooclasses/xoo.userultra.publisher.php:150
 #, fuzzy
 msgid "Back"
 msgstr "Назад"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:432
+#: ../xooclasses/xoo.userultra.mymessage.php:427
 #, fuzzy
 msgid "Send Reply"
 msgstr "Ответить"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:501
-#: ../xooclasses/xoo.userultra.mymessage.php:775
-#: ../xooclasses/xoo.userultra.mymessage.php:1023
+#: ../xooclasses/xoo.userultra.mymessage.php:496
+#: ../xooclasses/xoo.userultra.mymessage.php:770
+#: ../xooclasses/xoo.userultra.mymessage.php:1018
 #, fuzzy
 msgid "You have no items in inbox."
 msgstr "У вас нет товаров в почтовом ящике."
 
-#: ../xooclasses/xoo.userultra.mymessage.php:532
-#: ../xooclasses/xoo.userultra.mymessage.php:686
-#: ../xooclasses/xoo.userultra.mymessage.php:804
-#: ../xooclasses/xoo.userultra.socials.php:515
-#: ../xooclasses/xoo.userultra.socials.php:621
+#: ../xooclasses/xoo.userultra.mymessage.php:527
+#: ../xooclasses/xoo.userultra.mymessage.php:681
+#: ../xooclasses/xoo.userultra.mymessage.php:799
+#: ../xooclasses/xoo.userultra.socials.php:522
+#: ../xooclasses/xoo.userultra.socials.php:628
 #, fuzzy
 msgid "Pic"
 msgstr "Изобр."
 
-#: ../xooclasses/xoo.userultra.mymessage.php:533
-#: ../xooclasses/xoo.userultra.mymessage.php:805
-#: ../xooclasses/xoo.userultra.mymessage.php:1054
-#: ../xooclasses/xoo.userultra.mymessage.php:1115
-#: ../xooclasses/xoo.userultra.socials.php:516
-#: ../xooclasses/xoo.userultra.socials.php:622
+#: ../xooclasses/xoo.userultra.mymessage.php:528
+#: ../xooclasses/xoo.userultra.mymessage.php:800
+#: ../xooclasses/xoo.userultra.mymessage.php:1049
+#: ../xooclasses/xoo.userultra.mymessage.php:1110
+#: ../xooclasses/xoo.userultra.socials.php:523
+#: ../xooclasses/xoo.userultra.socials.php:629
 #, fuzzy
 msgid "Sender"
 msgstr "Передатчик"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:536
-#: ../xooclasses/xoo.userultra.mymessage.php:905
-#: ../xooclasses/xoo.userultra.mymessage.php:928
+#: ../xooclasses/xoo.userultra.mymessage.php:531
+#: ../xooclasses/xoo.userultra.mymessage.php:900
+#: ../xooclasses/xoo.userultra.mymessage.php:923
 #: ../xooclasses/xoo.userultra.payment.paypal.php:764
-#: ../xooclasses/xoo.userultra.socials.php:518
-#: ../xooclasses/xoo.userultra.socials.php:624
-#: ../xooclasses/xoo.userultra.user.php:781
-#: ../xooclasses/xoo.userultra.user.php:849
-#: ../xooclasses/xoo.userultra.user.php:916
+#: ../xooclasses/xoo.userultra.socials.php:525
+#: ../xooclasses/xoo.userultra.socials.php:631
+#: ../xooclasses/xoo.userultra.user.php:769
+#: ../xooclasses/xoo.userultra.user.php:837
+#: ../xooclasses/xoo.userultra.user.php:904
 #, fuzzy
 msgid "Action"
 msgstr "Действия"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:601
-#: ../xooclasses/xoo.userultra.mymessage.php:726
-#: ../xooclasses/xoo.userultra.mymessage.php:1082
+#: ../xooclasses/xoo.userultra.mymessage.php:596
+#: ../xooclasses/xoo.userultra.mymessage.php:721
+#: ../xooclasses/xoo.userultra.mymessage.php:1077
 #, fuzzy
 msgid "View"
 msgstr "Просмотреть"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:606
-#: ../xooclasses/xoo.userultra.mymessage.php:919
-#: ../xooclasses/xoo.userultra.mymessage.php:1101
+#: ../xooclasses/xoo.userultra.mymessage.php:601
+#: ../xooclasses/xoo.userultra.mymessage.php:914
+#: ../xooclasses/xoo.userultra.mymessage.php:1096
 #, fuzzy
 msgid "Reply"
 msgstr "Ответить"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:647
-#: ../xooclasses/xoo.userultra.mymessage.php:1015
+#: ../xooclasses/xoo.userultra.mymessage.php:642
+#: ../xooclasses/xoo.userultra.mymessage.php:1010
 #, fuzzy
 msgid "Inbox"
 msgstr "Входящие"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:657
+#: ../xooclasses/xoo.userultra.mymessage.php:652
 #, fuzzy
 msgid "You have no items in sent box."
 msgstr "У вас нет товаров в папке Отправленные."
 
-#: ../xooclasses/xoo.userultra.mymessage.php:687
+#: ../xooclasses/xoo.userultra.mymessage.php:682
 #, fuzzy
 msgid "Receiver"
 msgstr "Приёмник"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:897
+#: ../xooclasses/xoo.userultra.mymessage.php:892
 #, fuzzy
 msgid "Inbox \\ View Message"
 msgstr "Входящие \\ Посмотреть сообщение"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:899
+#: ../xooclasses/xoo.userultra.mymessage.php:894
 #, fuzzy
 msgid "Back to inbox"
 msgstr "Вернуться в почтовый ящик"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:903
-#: ../xooclasses/xoo.userultra.mymessage.php:926
+#: ../xooclasses/xoo.userultra.mymessage.php:898
+#: ../xooclasses/xoo.userultra.mymessage.php:921
 #, fuzzy
 msgid "Info"
 msgstr "Информация"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:910
+#: ../xooclasses/xoo.userultra.mymessage.php:905
 #, fuzzy, php-format
 msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
 msgstr "<b>Отправитель</b>: %s <br /> <b>Дата</b> : %s"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:911
+#: ../xooclasses/xoo.userultra.mymessage.php:906
 #, fuzzy, php-format
 msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
 msgstr "<p><b>Тема</b>: %s</p><p>%s</p>"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:960
-#: ../xooclasses/xoo.userultra.mymessage.php:1002
+#: ../xooclasses/xoo.userultra.mymessage.php:955
+#: ../xooclasses/xoo.userultra.mymessage.php:997
 #, fuzzy
 msgid "Error. Please try again."
 msgstr "Ошибка. Пожалуйста попробуйте снова."
 
-#: ../xooclasses/xoo.userultra.mymessage.php:1044
+#: ../xooclasses/xoo.userultra.mymessage.php:1039
 #, fuzzy
 msgid "Bulk Action"
 msgstr "Массовые действия"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:1046
-#: ../xooclasses/xoo.userultra.mymessage.php:1089
+#: ../xooclasses/xoo.userultra.mymessage.php:1041
+#: ../xooclasses/xoo.userultra.mymessage.php:1084
 msgid "Mark As Read"
 msgstr "Пометить как прочитанное"
 
-#: ../xooclasses/xoo.userultra.mymessage.php:1047
+#: ../xooclasses/xoo.userultra.mymessage.php:1042
 #, fuzzy
 msgid "Apply"
 msgstr "Применить"
 
 #: ../xooclasses/xoo.userultra.order.php:356
-#: ../xooclasses/xoo.userultra.woocommerce.php:329
+#: ../xooclasses/xoo.userultra.woocommerce.php:326
 #, fuzzy
 msgid "You have no orders."
 msgstr "У вас нет заказов."
 
 #: ../xooclasses/xoo.userultra.order.php:375
-#: ../xooclasses/xoo.userultra.woocommerce.php:347
+#: ../xooclasses/xoo.userultra.woocommerce.php:343
 #, fuzzy
 msgid "Order #"
 msgstr "Заказ"
 
 #: ../xooclasses/xoo.userultra.order.php:376
-#: ../xooclasses/xoo.userultra.woocommerce.php:348
+#: ../xooclasses/xoo.userultra.woocommerce.php:344
 #, fuzzy
 msgid "Total"
 msgstr "Общий итог"
@@ -5631,23 +5641,23 @@ msgid "Filter by category: "
 msgstr "Фильтр по категориям"
 
 #: ../xooclasses/xoo.userultra.photos.php:370
-#: ../xooclasses/xoo.userultra.user.php:4483
+#: ../xooclasses/xoo.userultra.user.php:4472
 #, fuzzy
 msgid "Total found: "
 msgstr "Всего найдено:"
 
 #: ../xooclasses/xoo.userultra.photos.php:648
-#: ../xooclasses/xoo.userultra.user.php:4358
-#: ../xooclasses/xoo.userultra.user.php:5198
-#: ../xooclasses/xoo.userultra.user.php:5271
+#: ../xooclasses/xoo.userultra.user.php:4347
+#: ../xooclasses/xoo.userultra.user.php:5187
+#: ../xooclasses/xoo.userultra.user.php:5260
 #, fuzzy
 msgid "Previous"
 msgstr "Назад"
 
 #: ../xooclasses/xoo.userultra.photos.php:649
-#: ../xooclasses/xoo.userultra.user.php:4359
-#: ../xooclasses/xoo.userultra.user.php:5199
-#: ../xooclasses/xoo.userultra.user.php:5272
+#: ../xooclasses/xoo.userultra.user.php:4348
+#: ../xooclasses/xoo.userultra.user.php:5188
+#: ../xooclasses/xoo.userultra.user.php:5261
 #, fuzzy
 msgid "Next"
 msgstr "Вперед"
@@ -5740,7 +5750,7 @@ msgstr "Выберите файлы"
 
 #: ../xooclasses/xoo.userultra.photos.php:2287
 #: ../xooclasses/xoo.userultra.publisher.php:1121
-#: ../xooclasses/xoo.userultra.user.php:4934
+#: ../xooclasses/xoo.userultra.user.php:4923
 #, fuzzy
 msgid "Allowed Files"
 msgstr "Разрешенные файлы"
@@ -6057,410 +6067,417 @@ msgstr ""
 msgid "Registration successful. Please check your email."
 msgstr "Регистрация успешным. Пожалуйста, проверьте свою электронную почту."
 
-#: ../xooclasses/xoo.userultra.socials.php:117
+#: ../xooclasses/xoo.userultra.socials.php:103
+#, fuzzy
+msgid " You can't be your own friend. "
+msgstr "Здесь вы можете проверить ваши заказы."
+
+#: ../xooclasses/xoo.userultra.socials.php:122
 #, fuzzy
 msgid " Friend Request Sent "
 msgstr "Друг Запрос отправлен"
 
-#: ../xooclasses/xoo.userultra.socials.php:121
+#: ../xooclasses/xoo.userultra.socials.php:128
 #, fuzzy
 msgid "You have to be logged in to send a friend request "
 msgstr "Вы должны быть авторизованы, чтобы отправить запрос о дружбе"
 
-#: ../xooclasses/xoo.userultra.socials.php:128
+#: ../xooclasses/xoo.userultra.socials.php:135
 #, fuzzy
 msgid "Request Already Sent"
 msgstr "Запрос уже было отправлено"
 
-#: ../xooclasses/xoo.userultra.socials.php:199
+#: ../xooclasses/xoo.userultra.socials.php:206
 #, fuzzy
 msgid "Thanks "
 msgstr "Спасибо!"
 
-#: ../xooclasses/xoo.userultra.socials.php:203
+#: ../xooclasses/xoo.userultra.socials.php:210
 #, fuzzy
 msgid "Please login to rate "
 msgstr "Пожалуйста, авторизуйтесь, чтобы оценить"
 
-#: ../xooclasses/xoo.userultra.socials.php:208
+#: ../xooclasses/xoo.userultra.socials.php:215
 #, fuzzy
 msgid "You've already liked it "
 msgstr "Вы уже понравилось"
 
-#: ../xooclasses/xoo.userultra.socials.php:254
+#: ../xooclasses/xoo.userultra.socials.php:261
 #, fuzzy
 msgid "Friends"
 msgstr "С друзьями"
 
-#: ../xooclasses/xoo.userultra.socials.php:255
+#: ../xooclasses/xoo.userultra.socials.php:262
 #, fuzzy
 msgid "Send Friend Request"
 msgstr "Отправить другу Запрос"
 
-#: ../xooclasses/xoo.userultra.socials.php:255
+#: ../xooclasses/xoo.userultra.socials.php:262
 #, fuzzy
 msgid "Be a Friend "
 msgstr "Запрос на дружбу"
 
-#: ../xooclasses/xoo.userultra.socials.php:289
 #: ../xooclasses/xoo.userultra.socials.php:296
+#: ../xooclasses/xoo.userultra.socials.php:303
 #, fuzzy
 msgid "Request approved"
 msgstr "Просьба удовлетворена"
 
-#: ../xooclasses/xoo.userultra.socials.php:303
+#: ../xooclasses/xoo.userultra.socials.php:310
 #, fuzzy
 msgid "Request rejected"
 msgstr "Запрос отклонен"
 
-#: ../xooclasses/xoo.userultra.socials.php:386
-#: ../xooclasses/xoo.userultra.socials.php:435
+#: ../xooclasses/xoo.userultra.socials.php:393
+#: ../xooclasses/xoo.userultra.socials.php:442
 #, fuzzy
 msgid "Likes"
 msgstr "''Нравится''"
 
-#: ../xooclasses/xoo.userultra.socials.php:387
+#: ../xooclasses/xoo.userultra.socials.php:394
 #, fuzzy
 msgid "Like"
 msgstr "Мне нравится"
 
-#: ../xooclasses/xoo.userultra.socials.php:387
+#: ../xooclasses/xoo.userultra.socials.php:394
 #, fuzzy
 msgid "Dislike"
 msgstr "Не нравится"
 
-#: ../xooclasses/xoo.userultra.socials.php:506
+#: ../xooclasses/xoo.userultra.socials.php:513
 #, fuzzy
 msgid "Latest Friend Requests"
 msgstr "Последние предложения дружбы"
 
-#: ../xooclasses/xoo.userultra.socials.php:541
+#: ../xooclasses/xoo.userultra.socials.php:548
 #, fuzzy
 msgid "Approve"
 msgstr "Одобрить"
 
-#: ../xooclasses/xoo.userultra.socials.php:541
-#: ../xooclasses/xoo.userultra.user.php:800
-#: ../xooclasses/xoo.userultra.user.php:868
+#: ../xooclasses/xoo.userultra.socials.php:548
+#: ../xooclasses/xoo.userultra.user.php:788
+#: ../xooclasses/xoo.userultra.user.php:856
 #, fuzzy
 msgid "Deny"
 msgstr "Отказаться"
 
-#: ../xooclasses/xoo.userultra.socials.php:612
+#: ../xooclasses/xoo.userultra.socials.php:619
 #, fuzzy
 msgid "All My Friends"
 msgstr "Все Мои Друзья"
 
-#: ../xooclasses/xoo.userultra.socials.php:647
+#: ../xooclasses/xoo.userultra.socials.php:654
 #, fuzzy
 msgid "Block"
 msgstr "Блок"
 
-#: ../xooclasses/xoo.userultra.user.php:257
+#: ../xooclasses/xoo.userultra.user.php:251
 #, fuzzy
 msgid "Basic Information"
 msgstr "Основная информация"
 
-#: ../xooclasses/xoo.userultra.user.php:264
+#: ../xooclasses/xoo.userultra.user.php:258
 #, fuzzy
 msgid "My Cyrcle"
 msgstr "Мой Цикл статей"
 
-#: ../xooclasses/xoo.userultra.user.php:285
+#: ../xooclasses/xoo.userultra.user.php:279
 #, fuzzy
 msgid "My Latest Posts"
 msgstr "Прошлые записи"
 
-#: ../xooclasses/xoo.userultra.user.php:319
+#: ../xooclasses/xoo.userultra.user.php:313
 #, fuzzy
 msgid "Content visible only for registered users. "
 msgstr "Содержимое видна только для зарегистрированных пользователей."
 
-#: ../xooclasses/xoo.userultra.user.php:498
+#: ../xooclasses/xoo.userultra.user.php:488
 #, fuzzy
 msgid "The file format is not allowed!"
 msgstr "Формат файла не допускается!"
 
-#: ../xooclasses/xoo.userultra.user.php:558
+#: ../xooclasses/xoo.userultra.user.php:547
 #, fuzzy
 msgid "--- Finished ---  "
 msgstr "Готово"
 
-#: ../xooclasses/xoo.userultra.user.php:723
+#: ../xooclasses/xoo.userultra.user.php:711
 #, fuzzy
 msgid " SUCCESS! The sync process has been finished. "
 msgstr "УСПЕХ! Процесс синхронизации была закончена."
 
-#: ../xooclasses/xoo.userultra.user.php:766
+#: ../xooclasses/xoo.userultra.user.php:754
 #, fuzzy
 msgid "Pending Payment"
 msgstr "Ожидает оплаты"
 
-#: ../xooclasses/xoo.userultra.user.php:779
-#: ../xooclasses/xoo.userultra.user.php:847
-#: ../xooclasses/xoo.userultra.user.php:914
+#: ../xooclasses/xoo.userultra.user.php:767
+#: ../xooclasses/xoo.userultra.user.php:835
+#: ../xooclasses/xoo.userultra.user.php:902
 #, fuzzy
 msgid "Email"
 msgstr "Email"
 
-#: ../xooclasses/xoo.userultra.user.php:780
-#: ../xooclasses/xoo.userultra.user.php:848
-#: ../xooclasses/xoo.userultra.user.php:915
+#: ../xooclasses/xoo.userultra.user.php:768
+#: ../xooclasses/xoo.userultra.user.php:836
+#: ../xooclasses/xoo.userultra.user.php:903
 #, fuzzy
 msgid "Registered"
 msgstr "Зарегистрирован"
 
-#: ../xooclasses/xoo.userultra.user.php:813
+#: ../xooclasses/xoo.userultra.user.php:801
 #, fuzzy
 msgid "There are no pending payment users."
 msgstr "Там нет отложенных пользователи компенсации."
 
-#: ../xooclasses/xoo.userultra.user.php:835
+#: ../xooclasses/xoo.userultra.user.php:823
 #, fuzzy
 msgid "Pending Moderation"
 msgstr "До Модерация"
 
-#: ../xooclasses/xoo.userultra.user.php:881
+#: ../xooclasses/xoo.userultra.user.php:869
 #, fuzzy
 msgid "There are no pending moderation users."
 msgstr "Там нет отложенных пользователи модерации."
 
-#: ../xooclasses/xoo.userultra.user.php:901
+#: ../xooclasses/xoo.userultra.user.php:889
 #, fuzzy
 msgid "Pending Confirmation"
 msgstr "В ожидании подтверждения"
 
-#: ../xooclasses/xoo.userultra.user.php:935
+#: ../xooclasses/xoo.userultra.user.php:923
 #, fuzzy
 msgid "Send Link"
 msgstr "Отправить ссылку в сообщении"
 
-#: ../xooclasses/xoo.userultra.user.php:948
+#: ../xooclasses/xoo.userultra.user.php:936
 #, fuzzy
 msgid "There are no pending confirmation users."
 msgstr "Там нет отложенных пользователи подтверждения."
 
-#: ../xooclasses/xoo.userultra.user.php:978
-#: ../xooclasses/xoo.userultra.user.php:1029
+#: ../xooclasses/xoo.userultra.user.php:966
+#: ../xooclasses/xoo.userultra.user.php:1017
 #, fuzzy
 msgid "User has been activated"
 msgstr "Пользователь был активирован"
 
-#: ../xooclasses/xoo.userultra.user.php:1001
+#: ../xooclasses/xoo.userultra.user.php:989
 #, fuzzy
 msgid "Activation link sent"
 msgstr "Ссылку активации отправлено"
 
-#: ../xooclasses/xoo.userultra.user.php:1055
+#: ../xooclasses/xoo.userultra.user.php:1043
 #, fuzzy
 msgid "User has been deleted"
 msgstr "Было удалено"
 
-#: ../xooclasses/xoo.userultra.user.php:1226
+#: ../xooclasses/xoo.userultra.user.php:1214
 #, fuzzy
 msgid " ERROR! Please type your new email "
 msgstr "ОШИБКА! Пожалуйста, введите новый адрес электронной почты"
 
-#: ../xooclasses/xoo.userultra.user.php:1232
+#: ../xooclasses/xoo.userultra.user.php:1220
 #, fuzzy
 msgid " ERROR! Please type a valid email address "
 msgstr "ОШИБКА! Пожалуйста, введите действительный адрес электронной почты"
 
-#: ../xooclasses/xoo.userultra.user.php:1251
+#: ../xooclasses/xoo.userultra.user.php:1239
 #, fuzzy
 msgid " ERROR! You haven't changed your email. "
 msgstr "ОШИБКА! Вы не изменили вашу электронную почту."
 
-#: ../xooclasses/xoo.userultra.user.php:1260
+#: ../xooclasses/xoo.userultra.user.php:1248
 #, fuzzy
 msgid " ERROR! The email is in use already "
 msgstr "ОШИБКА! Электронная почта используется уже"
 
-#: ../xooclasses/xoo.userultra.user.php:1299
+#: ../xooclasses/xoo.userultra.user.php:1287
 #, fuzzy
 msgid " Success!! Your email account has been changed to : "
 msgstr ""
 "Успех !! Ваш адрес электронной почты учетная запись была изменена следующим "
 "образом:"
 
-#: ../xooclasses/xoo.userultra.user.php:1345
-#: ../xooclasses/xoo.userultra.user.php:1422
+#: ../xooclasses/xoo.userultra.user.php:1333
+#: ../xooclasses/xoo.userultra.user.php:1410
 #, fuzzy
 msgid " ERROR! Password must be identical "
 msgstr "ОШИБКА! Пароль должен быть идентичен"
 
-#: ../xooclasses/xoo.userultra.user.php:1351
-#: ../xooclasses/xoo.userultra.user.php:1428
+#: ../xooclasses/xoo.userultra.user.php:1339
+#: ../xooclasses/xoo.userultra.user.php:1416
 #, fuzzy
 msgid " ERROR! Password should contain at least 7 alphanumeric characters "
 msgstr "ОШИБКА! Пароль должен содержать не менее 7 буквенно-цифровых символов"
 
-#: ../xooclasses/xoo.userultra.user.php:1373
-#: ../xooclasses/xoo.userultra.user.php:1452
+#: ../xooclasses/xoo.userultra.user.php:1361
+#: ../xooclasses/xoo.userultra.user.php:1440
 #, fuzzy
 msgid " Success!! The new password has been sent to "
 msgstr "Успех !! Новый пароль был отправлен"
 
-#: ../xooclasses/xoo.userultra.user.php:1454
+#: ../xooclasses/xoo.userultra.user.php:1442
 #, fuzzy
 msgid "<a href=\""
 msgstr "<a href=\""
 
-#: ../xooclasses/xoo.userultra.user.php:1460
+#: ../xooclasses/xoo.userultra.user.php:1448
 #, fuzzy
 msgid " ERROR! Invalid reset link "
 msgstr "ОШИБКА! Неверный ссылка на страницу сброса"
 
-#: ../xooclasses/xoo.userultra.user.php:1491
+#: ../xooclasses/xoo.userultra.user.php:1479
 #, fuzzy
 msgid "Email not found"
 msgstr "Электронная почта не найдена"
 
-#: ../xooclasses/xoo.userultra.user.php:1499
-#: ../xooclasses/xoo.userultra.user.php:1530
+#: ../xooclasses/xoo.userultra.user.php:1487
+#: ../xooclasses/xoo.userultra.user.php:1518
 #, fuzzy
 msgid "Your account is not active yet."
 msgstr "Ваша учетная запись не активна"
 
-#: ../xooclasses/xoo.userultra.user.php:1521
+#: ../xooclasses/xoo.userultra.user.php:1509
 #, fuzzy
 msgid "User not found"
 msgstr "Пользователь не найден"
 
-#: ../xooclasses/xoo.userultra.user.php:1574
+#: ../xooclasses/xoo.userultra.user.php:1562
 #, fuzzy
 msgid " A reset link has been sent to your email "
 msgstr "Ссылка на страницу сброса был отправлен на вашу электронную почту"
 
-#: ../xooclasses/xoo.userultra.user.php:2215
-#: ../xooclasses/xoo.userultra.user.php:2219
+#: ../xooclasses/xoo.userultra.user.php:2203
+#: ../xooclasses/xoo.userultra.user.php:2207
 #, fuzzy
 msgid "Profile"
 msgstr "Профиль"
 
-#: ../xooclasses/xoo.userultra.user.php:2228
-#: ../xooclasses/xoo.userultra.user.php:2232
+#: ../xooclasses/xoo.userultra.user.php:2216
+#: ../xooclasses/xoo.userultra.user.php:2220
 #, fuzzy
 msgid "Profile Customizer"
 msgstr "Настройщика профиля"
 
-#: ../xooclasses/xoo.userultra.user.php:2270
-#: ../xooclasses/xoo.userultra.user.php:2274
-#, fuzzy
-msgid "My Purchases"
-msgstr "Мои покупки"
-
-#: ../xooclasses/xoo.userultra.user.php:2302
+#: ../xooclasses/xoo.userultra.user.php:2290
 #, fuzzy
 msgid "My Messages"
 msgstr "Мои сообщения"
 
-#: ../xooclasses/xoo.userultra.user.php:2306
+#: ../xooclasses/xoo.userultra.user.php:2294
 #, fuzzy
 msgid "Messages"
 msgstr "Сообщения"
 
-#: ../xooclasses/xoo.userultra.user.php:2312
+#: ../xooclasses/xoo.userultra.user.php:2300
 #, fuzzy
 msgid "Unread Messages"
 msgstr "%s Непрочитанных сообщений"
 
-#: ../xooclasses/xoo.userultra.user.php:2322
-#: ../xooclasses/xoo.userultra.user.php:2326
+#: ../xooclasses/xoo.userultra.user.php:2310
+#: ../xooclasses/xoo.userultra.user.php:2314
 #, fuzzy
 msgid "Photos"
 msgstr "Фото"
 
-#: ../xooclasses/xoo.userultra.user.php:2362
+#: ../xooclasses/xoo.userultra.user.php:2350
 #, fuzzy
 msgid "Friend Requests"
 msgstr "Запросы Друг"
 
-#: ../xooclasses/xoo.userultra.user.php:2627
+#: ../xooclasses/xoo.userultra.user.php:2615
 #, fuzzy
 msgid "Empty results"
 msgstr "Пусто результаты"
 
-#: ../xooclasses/xoo.userultra.user.php:2769
-#: ../xooclasses/xoo.userultra.user.php:2870
-#: ../xooclasses/xoo.userultra.user.php:4309
+#: ../xooclasses/xoo.userultra.user.php:2757
+#: ../xooclasses/xoo.userultra.user.php:2858
+#: ../xooclasses/xoo.userultra.user.php:4298
 #, fuzzy
 msgid "See Profile"
 msgstr "См профиля"
 
-#: ../xooclasses/xoo.userultra.user.php:3284
+#: ../xooclasses/xoo.userultra.user.php:3272
 #, fuzzy
 msgid "Free"
 msgstr "Бесплатно"
 
-#: ../xooclasses/xoo.userultra.user.php:3610
+#: ../xooclasses/xoo.userultra.user.php:3598
 #, fuzzy, php-format
 msgid "Search %s"
 msgstr "Поиск %s"
 
-#: ../xooclasses/xoo.userultra.user.php:4076
+#: ../xooclasses/xoo.userultra.user.php:4064
 #, fuzzy
 msgid "<< Previous"
 msgstr "<< Назад"
 
-#: ../xooclasses/xoo.userultra.user.php:4077
+#: ../xooclasses/xoo.userultra.user.php:4065
 #, fuzzy
 msgid "Next >>"
 msgstr "Вперед >>"
 
-#: ../xooclasses/xoo.userultra.user.php:4127
-#: ../xooclasses/xoo.userultra.user.php:4198
+#: ../xooclasses/xoo.userultra.user.php:4115
+#: ../xooclasses/xoo.userultra.user.php:4186
 #, fuzzy
 msgid "Users"
 msgstr "Пользователи"
 
-#: ../xooclasses/xoo.userultra.user.php:4201
+#: ../xooclasses/xoo.userultra.user.php:4189
 #, fuzzy
 msgid "Only logged in users can see this page"
 msgstr "Только зарегистрированные пользователи могут видеть эту страницу"
 
-#: ../xooclasses/xoo.userultra.user.php:4600
-#: ../xooclasses/xoo.userultra.user.php:4619
+#: ../xooclasses/xoo.userultra.user.php:4589
+#: ../xooclasses/xoo.userultra.user.php:4608
 #, fuzzy
 msgid "Country not available"
 msgstr "Страна не указана"
 
-#: ../xooclasses/xoo.userultra.user.php:4646
+#: ../xooclasses/xoo.userultra.user.php:4635
 #, fuzzy
 msgid "This user hasn't a description yet"
 msgstr "Пользователь не ввел описание."
 
-#: ../xooclasses/xoo.userultra.user.php:4898
+#: ../xooclasses/xoo.userultra.user.php:4887
 #, fuzzy
 msgid "Drop Avatar here"
 msgstr "Падение Аватар здесь"
 
-#: ../xooclasses/xoo.userultra.user.php:4989
+#: ../xooclasses/xoo.userultra.user.php:4978
 #, fuzzy
 msgid "You may only upload one image at a time!"
 msgstr "Вы можете загрузить только одно изображение за один раз!"
 
-#: ../xooclasses/xoo.userultra.user.php:5004
+#: ../xooclasses/xoo.userultra.user.php:4993
 #, fuzzy
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr "Выбранный вами файл превышает максимальный предел размера файла."
 
-#: ../xooclasses/xoo.userultra.user.php:5354
+#: ../xooclasses/xoo.userultra.user.php:5343
 #, fuzzy
 msgid "Pending Admin"
 msgstr "В ожидании Админ"
 
-#: ../xooclasses/xoo.userultra.user.php:5358
+#: ../xooclasses/xoo.userultra.user.php:5347
 #, fuzzy
 msgid "Active"
 msgstr "Активные"
 
-#: ../xooclasses/xoo.userultra.woocommerce.php:182
+#: ../xooclasses/xoo.userultra.woocommerce.php:181
 #, fuzzy
 msgid "Woocommerce File Doesn't Exist"
 msgstr "WooCommerce файла не существует"
 
-#: ../xooclasses/xoo.userultra.woocommerce.php:350
+#: ../xooclasses/xoo.userultra.woocommerce.php:346
 #, fuzzy
 msgid "Modified Date"
 msgstr "Дата изменения"
+
+#, fuzzy
+#~ msgid "Changelog"
+#~ msgstr "История изменений"
+
+#, fuzzy
+#~ msgid "Users Ultra Pro Changelog "
+#~ msgstr "Ultra Pro изменений пользователей"

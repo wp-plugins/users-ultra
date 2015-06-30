@@ -5,6 +5,21 @@ global $xoouserultra;
 
  <div class="user-ultra-sect-pro ">
         
+         <h1><?php _e('Welcome to Users Ultra','xoousers'); ?></h1>
+         
+           <div class="uu-sect-p">
+        	            
+            <p><?php _e("Thank you very much for installing Users Ultra. This versatile plugin allows you to create user communities in a few minutes. It comes with tons of useful shortcodes which give you the capability to customize any WordPress Theme.",'xoousers'); ?></p>
+            
+            
+            <br>
+            <br>
+            
+            
+        
+        </div>
+        
+         
         <h1><?php _e('Why Go Users Ultra Pro?','xoousers'); ?></h1>
         <div class="uu-sect-p">
         	            
@@ -20,7 +35,7 @@ global $xoouserultra;
         <div id="tabs-uultra" class="uultra-multi-tab-options">
 <ul class="nav-tab-wrapper uultra-nav-pro-features">
 <li class="nav-tab uultra-pro-li"><a href="#tabs-1"><?php _e('Tons of Great Features','xoousers'); ?></a></li>
-<li class="nav-tab uultra-pro-li"><a href="#tabs-3"><?php _e('Changelog','xoousers'); ?> </a></li>
+
 </ul>
 
 <div id="tabs-1">
@@ -199,18 +214,12 @@ global $xoouserultra;
 
 </div>
 
-<div id="tabs-3">
-<p><strong> <?php _e('Users Ultra Pro Changelog ','xoousers'); ?></strong></p>
 
-<div class="uu-sect-p">
-<?php echo $xoouserultra->get_pro_change_log();?>
-</div>
-</div>
 </div>
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.2.40</p>
+            <p>Version: 1.2.46</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
