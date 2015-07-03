@@ -3000,7 +3000,7 @@ class XooUserUltra
 				
 				
 				$params = array(
-						  'scope' => 'read_stream, email',
+						  'scope' => 'public_profile, email',
 						 
 						  'redirect_uri' => $web_url
 						);

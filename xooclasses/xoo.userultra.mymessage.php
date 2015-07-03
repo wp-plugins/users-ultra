@@ -75,8 +75,7 @@ class XooUserMyMessage {
 		
 		$receiver_id =  sanitize_text_field($_POST["receiver_id"]);
 		$uu_subject =   sanitize_text_field($_POST["uu_subject"]);
-		$uu_message =   sanitize_text_field($_POST["uu_message"]);
-		
+		$uu_message =   implode( "\n", array_map( 'sanitize_text_field', explode( "\n", $_POST["uu_message"] )) );
 		//get receiver
 		
 		$receiver = get_user_by('id',$receiver_id);		
@@ -123,7 +122,8 @@ class XooUserMyMessage {
 		$logged_user_id = get_current_user_id();				
 		
 		$message_id =  sanitize_text_field($_POST["message_id"]);				
-		$uu_message =   sanitize_text_field($_POST["uu_message"]);		
+		//$uu_message =   sanitize_text_field($_POST["uu_message"]);	
+		$uu_message =   implode( "\n", array_map( 'sanitize_text_field', explode( "\n", $_POST["uu_message"] )) );	
 		$message = $this->get_one($message_id, $logged_user_id);		
 		$uu_subject =   __("Reply: ", 'xoousers')." ".$message->subject;
 		
