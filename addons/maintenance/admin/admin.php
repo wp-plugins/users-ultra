@@ -325,7 +325,7 @@ class UsersUltraMaintenance {
 	
 		<div class="wrap <?php echo $this->slug; ?>-admin">
         
-           <h2>USERS ULTRA - <?php _e('MAINTENANCE','xoousers')?></h2>
+           <h2>USERS ULTRA PRO - <?php _e('MAINTENANCE','xoousers')?></h2>
            
            <div id="icon-users" class="icon32"></div>
 			

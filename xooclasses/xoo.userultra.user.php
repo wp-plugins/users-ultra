@@ -4663,8 +4663,7 @@ class XooUserUser {
 							$icon = $field['icon'];
 							
 							//get meta
-							$social_meta = get_user_meta($user_id, $field['meta'], true);					
-							
+							$social_meta = get_user_meta($user_id, $field['meta'], true);									
 							
 							if($social_meta!="")
 							{

@@ -72,7 +72,7 @@ class XooMessaging extends XooUserUltraCommon
 		
 		}else{ //third-party
 		
-			if (function_exists('uultra_third_party_email_sender')) 
+			if (function_exists('uultra_third_party_email_sender') && $to !='') 
 			{
 				
 				uultra_third_party_email_sender($to , $subject, $message);				
