@@ -62,7 +62,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  send ($to, $subject, $message)
 	{
 		global $xoouserultra;	
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$uultra_emailer = $xoouserultra->get_option('uultra_smtp_mailing_mailer');
 		
