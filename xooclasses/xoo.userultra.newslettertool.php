@@ -19,7 +19,7 @@ class XooNewsLetter extends XooUserUltraCommon
 	/*Subscribe to mailchimp*/
 	function mailchimp_subscribe($user_id, $list_id=null) 
 	{
-		require_once(ABSPATH . 'wp-includes/pluggable.php');		
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		require_once(xoousers_path.'/libs/mailchimp/MailChimp.php');	
 		
 		global  $xoouserultra;	
@@ -50,7 +50,7 @@ class XooNewsLetter extends XooUserUltraCommon
 	/*Unsubscribe to mailchimp*/
 	function mailchimp_unsubscribe($user_id, $list_id=null) 
 	{
-		require_once(ABSPATH . 'wp-includes/pluggable.php');		
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		require_once(xoousers_path.'/libs/mailchimp/MailChimp.php');
 		
 		global  $xoouserultra;

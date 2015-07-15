@@ -290,7 +290,7 @@ class XooWooCommerce {
 	{
 		global $wpdb, $current_user, $xoouserultra, $woocommerce; 
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
 		require_once(ABSPATH.  'wp-includes/query.php' );	
 		

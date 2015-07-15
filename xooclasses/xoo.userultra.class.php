@@ -304,7 +304,7 @@ class XooUserUltra
 	{
 		global $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
 		
 		$res = true;
@@ -660,7 +660,7 @@ class XooUserUltra
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		extract( shortcode_atts( array(	
 			
@@ -3218,7 +3218,7 @@ class XooUserUltra
 	******************************************/
 	function google_authorize()
 	{
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
 		
 		if ( $this->get_option('social_media_google') == 1 && $this->get_option('google_client_id') && $this->get_option('google_client_secret') && $this->get_option('google_redirect_uri') ) 
@@ -3553,7 +3553,7 @@ class XooUserUltra
 	
 	public function social_login_links_openid()
 	{
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 
 		$web_url = site_url()."/";
 		

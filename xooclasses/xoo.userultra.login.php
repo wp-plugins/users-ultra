@@ -16,7 +16,7 @@ class XooUserLogin {
 	{
 	    global $xoouserultra;
 	    
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+	//	require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
 		
 		//update last login
@@ -171,7 +171,7 @@ class XooUserLogin {
 	{
 	    global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;;
 	    
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
 		
 		if ( empty( $GLOBALS['wp_rewrite'] ) )
@@ -342,7 +342,7 @@ class XooUserLogin {
 		//special feature for yahoo and google	
 	public function social_login_links_oauth()
 	{
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
 		
 		global  $xoouserultra, $blog_id;
@@ -413,7 +413,7 @@ class XooUserLogin {
 	function get_instagram_auth_url() {
 			
 		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-admin/includes/user.php' );
 		
 		require_once(xoousers_path."libs/instagram/instagram.class.php");
@@ -494,7 +494,7 @@ class XooUserLogin {
 	function yammer_authorize()
 	{
 		global  $xoouserultra, $blog_id;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-admin/includes/user.php' );
 		
 		$client_id = 	$xoouserultra->get_option('yammer_client_id') ;	
@@ -699,7 +699,7 @@ class XooUserLogin {
 	function google_authorize()
 	{
 		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-admin/includes/user.php' );
 		
 		if ( $xoouserultra->get_option('social_media_google') == 1 && $xoouserultra->get_option('google_client_id') && $xoouserultra->get_option('google_client_secret') && $xoouserultra->get_option('google_redirect_uri') ) 
@@ -1026,7 +1026,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		//get user with key		
 		$key = $_GET['usersultraipncall'];
@@ -1140,7 +1140,7 @@ class XooUserLogin {
 	function twitter_authorize()
 	{		
 		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-admin/includes/user.php' );
 		
 			
@@ -1351,7 +1351,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
@@ -1368,7 +1368,7 @@ class XooUserLogin {
 		
 		global $xoouserultra ;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(xoousers_path."libs/linkedin/oauth/linkedinoauth.php"); 		
 			 
 		 //get oauttokens
@@ -1521,7 +1521,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		if (isset($_REQUEST['redirect_to']))
 		{
@@ -1562,7 +1562,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');		
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
@@ -1578,7 +1578,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');		
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');		
 		
 		$account_page_id = get_option('xoousersultra_my_account_page');
 		$my_account_url = get_permalink($account_page_id);
@@ -1605,7 +1605,7 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		
 		//$account_page_id = get_option('xoousersultra_my_account_page');
@@ -1632,7 +1632,7 @@ class XooUserLogin {
 	{
 		global $xoouserultra ;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(xoousers_path."libs/fbapi/src/facebook.php");
 		 
 		 //facebook credentials		
@@ -1881,7 +1881,7 @@ class XooUserLogin {
   {
 	  global $xoouserultra;
 	  
-	  require_once(ABSPATH . 'wp-includes/pluggable.php');
+	  //require_once(ABSPATH . 'wp-includes/pluggable.php');
 	  require_once(ABSPATH . 'wp-includes/link-template.php');
 	  
 	    //email activation link				  
@@ -1915,7 +1915,7 @@ class XooUserLogin {
   {
 	  global $xoouserultra;
 	  
-	  require_once(ABSPATH . 'wp-includes/pluggable.php');
+	 // require_once(ABSPATH . 'wp-includes/pluggable.php');
 	  require_once(ABSPATH . 'wp-includes/link-template.php');
 	  
 	  //check if login automatically
@@ -1971,7 +1971,7 @@ class XooUserLogin {
 	{
 		global $xoouserultra ;
 			
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$act_link = $_GET["act_link"];
 		
@@ -2064,7 +2064,7 @@ class XooUserLogin {
 	function instagram_authorize()
 	{
 		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-admin/includes/user.php' );
 		
 		require_once(xoousers_path."libs/instagram/instagram.class.php");
@@ -2284,7 +2284,7 @@ class XooUserLogin {
 	{
 		global $xoouserultra ;
 			
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(xoousers_path."libs/openid/openid.php");
 		
 		

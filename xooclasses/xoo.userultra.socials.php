@@ -13,7 +13,6 @@ class XooSocial
 	
 	public function set_ajax()
 	{
-		require_once( ABSPATH . "wp-includes/pluggable.php" );
 		add_action( 'wp_ajax_send_friend_request',  array( $this, 'send_friend_request' ));
 			
 		add_action( 'wp_ajax_nopriv_send_friend_request',  array( $this, 'send_friend_request' ));	

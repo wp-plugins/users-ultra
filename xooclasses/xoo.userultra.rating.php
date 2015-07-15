@@ -11,7 +11,6 @@ class XooRating extends XooUserUltraCommon
 
 	function __construct() 
 	{
-		require_once( ABSPATH . "wp-includes/pluggable.php" );
 		
 		$this->ini_module();
 		$this->mDateToday =  date("Y-m-d"); 

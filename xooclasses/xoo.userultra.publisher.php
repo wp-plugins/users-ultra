@@ -591,7 +591,7 @@ class XooPublisher
 	{
        global $wpdb, $xoouserultra;
 	   
-	   require_once(ABSPATH . 'wp-includes/pluggable.php');
+	 //  require_once(ABSPATH . 'wp-includes/pluggable.php');
 
         $errors = array();
 
@@ -766,7 +766,7 @@ class XooPublisher
 	{
 	   global $wpdb, $xoouserultra;
 	   
-	   require_once(ABSPATH . 'wp-includes/pluggable.php');
+	   //require_once(ABSPATH . 'wp-includes/pluggable.php');
 	   require_once(ABSPATH . 'wp-includes/user.php');
 	   
 	   $max_post_per_user = $this->get_max_allowed_posts();
@@ -794,7 +794,7 @@ class XooPublisher
 	{
        global $wpdb, $xoouserultra;
 	   
-	   require_once(ABSPATH . 'wp-includes/pluggable.php');
+	  // require_once(ABSPATH . 'wp-includes/pluggable.php');
 
         $errors = array();
 

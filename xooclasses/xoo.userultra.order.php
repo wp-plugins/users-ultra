@@ -339,7 +339,7 @@ class XooOrder
 	{
 		global $wpdb, $current_user, $xoouserultra; 
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
 		require_once(ABSPATH.  'wp-includes/query.php' );	
 		

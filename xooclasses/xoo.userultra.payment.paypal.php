@@ -112,7 +112,7 @@ class XooPaypalPayment
 	{
 				
 		global $wpdb,  $xoouserultra;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$req = 'cmd=_notify-validate';
 		// Read the post from PayPal system and add 'cmd'

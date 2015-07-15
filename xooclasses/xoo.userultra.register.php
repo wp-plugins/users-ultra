@@ -64,7 +64,7 @@ class XooUserRegister {
 	{
 	    global $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		if(get_option('users_can_register') == '1')
 		{
@@ -496,7 +496,7 @@ class XooUserRegister {
 		global $xoouserultra;
 		session_start();
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 			
 			/* Create profile when there is no error */
 			if (!isset($this->errors)) 

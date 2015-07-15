@@ -215,7 +215,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
 		require_once(ABSPATH. 'wp-admin/includes/ms.php' );		
 		//close
@@ -557,7 +557,7 @@ class XooUserUser {
 	public function create_user_import ($user, $headers, $send_welcome_email, $account_status, $count)
 	{
 		global $wpdb,  $xoouserultra;
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		//username, email, display name, first name and last name
 		
@@ -949,7 +949,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$user_id = $_POST["user_id"];		
 		update_user_meta ($user_id, 'usersultra_account_status', 'active');		
@@ -975,7 +975,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$user_id = $_POST["user_id"];
 		
@@ -999,7 +999,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$user_id = $_POST["user_id"];
 		
@@ -1026,7 +1026,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$user_id = $_POST["user_id"];
 		
@@ -1191,7 +1191,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra, $wp_rewrite;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/general-template.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
@@ -1303,7 +1303,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra, $wp_rewrite;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/general-template.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
@@ -1382,7 +1382,7 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra, $wp_rewrite;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/general-template.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
@@ -1460,7 +1460,7 @@ class XooUserUser {
 		session_start();
 		global $wpdb,  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$html = "";
 		
@@ -1828,7 +1828,7 @@ class XooUserUser {
 	{
 		global  $xoouserultra;
 		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 	
 		$user_id = get_current_user_id();
 		
@@ -1907,7 +1907,7 @@ class XooUserUser {
 		
 		global  $xoouserultra, $wpdb;
 	
-		require_once(ABSPATH . 'wp-includes/pluggable.php');	
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');	
 		
 		
 		
@@ -1996,7 +1996,7 @@ class XooUserUser {
 	function handle() 
 	{
 	   
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		
 	}
@@ -2020,7 +2020,7 @@ class XooUserUser {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		require_once(ABSPATH . 'wp-includes/pluggable.php');
+		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		
 				
