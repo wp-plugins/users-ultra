@@ -120,8 +120,7 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 .uultra-latest-photos-private ul li p{ 
 	
 	margin:10px 0px 10px 0px; font-size:13px;
-	text-align:center !important;
-	 
+	text-align:center !important;	 
 }
 
 .uultra-latest-photos-private ul li.rounded{
@@ -211,7 +210,6 @@ input[type=submit].xoouserultra-button:disabled, input[type=submit].xoouserultra
 	background-image: none;
 }
 
-
 .xoouserultra-errors  {
 	background: #ffdbdb;
 	border: 1px solid #ffb4b4;
@@ -279,7 +277,6 @@ color: #888;
 	margin-bottom:10px !important;
 	
 }
-
 .xoouserultra-or-divider div {
     background: none repeat scroll 0 0 #CCCCCC;
     border-radius: 50%;
@@ -5951,8 +5948,6 @@ MEDIA QUERIES
 
 
 @media only screen and (max-width: 580px) {
-
-	
 
 		
 	

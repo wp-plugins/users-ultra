@@ -215,7 +215,6 @@ class XooUserUser {
 	{
 		global $wpdb,  $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH. 'wp-admin/includes/user.php' );
 		require_once(ABSPATH. 'wp-admin/includes/ms.php' );		
 		//close

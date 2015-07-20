@@ -219,15 +219,15 @@ global $xoouserultra;
         
         <div class="uultra-badge-pro">
         	<a href="http://usersultra.com/users-pro.html" target="_blank"> <img src="<?php echo xoousers_url?>admin/images/logo.png"  class="uultra-logo"  /></a>
-            <p>Version: 1.2.46</p>
+            <p>Version: 1.2.51</p>
                        
              <p class="btn-full"><a href="http://usersultra.com/users-pro.html" target="_blank">FIND OUT MORE</a></p>
              
              
                                
-    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">NEW PROFILE</a></p>
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/profile/ali28/" target="_blank">FANCY PROFILE</a></p>
     
-    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/changelog/" target="_blank">DAILY UPDATED</a></p>
+    <p class="btn-full"><a href="http://usersultra.com/uultra-testing/changelog/" target="_blank">CONTINUOUSILY UPDATED</a></p>
     
          
         </div>  
