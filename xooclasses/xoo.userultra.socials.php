@@ -16,8 +16,7 @@ class XooSocial
 		add_action( 'wp_ajax_send_friend_request',  array( $this, 'send_friend_request' ));
 			
 		add_action( 'wp_ajax_nopriv_send_friend_request',  array( $this, 'send_friend_request' ));	
-		add_action( 'wp_ajax_like_item',  array( $this, 'like_item' ));
-					
+		add_action( 'wp_ajax_like_item',  array( $this, 'like_item' ));					
 		add_action( 'wp_ajax_nopriv_like_item',  array( $this, 'like_item' ));				
 		add_action( 'wp_ajax_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));
 		add_action( 'wp_ajax_nopriv_get_item_likes_amount_only',  array( $this, 'get_item_likes_amount_only' ));		
@@ -54,8 +53,7 @@ class XooSocial
 		  PRIMARY KEY (`like_id`)
 		) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;';
 		
-		$wpdb->query( $query );	
-		
+		$wpdb->query( $query );			
 		$this->update_table();
 	
 		
@@ -72,8 +70,7 @@ class XooSocial
 		{	//photo_desc
 			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_likes add column like_ip varchar (100) ; ';
 			$wpdb->query($sql);
-		}		
-		
+		}			
 		
 	}
 	
@@ -198,9 +195,7 @@ class XooSocial
 						);
 						
 						// insert into database
-				$wpdb->insert( $wpdb->prefix . 'usersultra_likes', $data, array( '%d', '%s', '%s', '%s', '%s',  '%s' ));
-						
-						
+				$wpdb->insert( $wpdb->prefix . 'usersultra_likes', $data, array( '%d', '%s', '%s', '%s', '%s',  '%s' ));			
 				
 				echo __("Thanks ", 'xoousers');
 				
@@ -227,8 +222,7 @@ class XooSocial
 		
 		$total = 0;		
 		
-		// $sql = "SELECT count(*) as total FROM " . $wpdb->prefix . "usersultra_friends  WHERE friend_receiver_id  = '$user_id' AND 	friend_status = 1 ";
-		 
+	 
 		 $sql = ' SELECT  count(DISTINCT friend.friend_sender_user_id) as total, friend.*, u.ID 
 		  
 		  FROM ' . $wpdb->prefix . 'usersultra_friends friend  ' ;		
@@ -316,9 +310,6 @@ class XooSocial
 		
 		die();
 		
-		
-		
-		
 	
 	}
 	
@@ -364,7 +355,6 @@ class XooSocial
 		require_once(ABSPATH . 'wp-includes/formatting.php');
 		
 		$total = 0;
-		
 		
 		 $sql = "SELECT SUM(like_vote) as total FROM " . $wpdb->prefix . "usersultra_likes  WHERE like_liked_id  = '$item_id' AND like_module = '$module'";	 
 		 

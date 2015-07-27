@@ -196,8 +196,8 @@ class XooUserAdmin extends XooUserUltraCommon
         /* Tipsy css */
         if (!wp_style_is('uultra_tipsy')) {           
 			
-			wp_register_style( 'uultra_tipsy', xoousers_url.'templates/'.xoousers_template.'/css/tipsy.css');				
-            wp_enqueue_style('uultra_tipsy');
+			//wp_register_style( 'uultra_tipsy', xoousers_url.'templates/'.xoousers_template.'/css/tipsy.css');				
+            //wp_enqueue_style('uultra_tipsy');
         }
 	
 		wp_register_style('userultra_admin', xoousers_url.'admin/css/userlutra.admin.css');
@@ -466,7 +466,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		$email_body .= "{{userl_ultra_login_url}}" . $line_break.$line_break;
 		$email_body .= __('Your account e-mail: {{userultra_user_email}}','xoousers') . $line_break;
 		$email_body .= __('Your account username: {{userultra_user_name}}','xoousers') . $line_break;
-		$email_body .= __('Your account password: (same used when registering)','xoousers') . $line_break.$line_break;
+		$email_body .= __('Your account password: {{userultra_pass}}','xoousers') . $line_break.$line_break;
 		$email_body .= __('If you have any problems, please contact us at {{userultra_admin_email}}.','xoousers') . $line_break.$line_break;
 		$email_body .= __('Best Regards!','xoousers');
 	    $this->notifications_email['new_account'] = $email_body;

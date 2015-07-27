@@ -1,5 +1,4 @@
 <?php
-//session_start();
 class XooUserUltra
 {
 	public $classes_array = array();

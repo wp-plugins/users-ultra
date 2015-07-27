@@ -17,6 +17,26 @@
 .uultra-tw{display:inline-block;}
 .user-ultra-top-header-sect { width:100%; clear:both; background:#FFF; float:none !important; padding:0px; height:auto !important}
 .user-ultra-top-header-sect a{ text-decoration:none}
+
+
+
+i.reg_tooltip {
+	float: none;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	margin: 0 14px 0 0;
+	
+	
+	border:none !important;
+	text-align: center;
+	position: relative;
+	top: auto;
+}
+
+
+
+
 /*START*/
 
 code,

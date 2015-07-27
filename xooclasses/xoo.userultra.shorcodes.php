@@ -71,7 +71,6 @@ class XooShortCode {
 		add_shortcode( 'five_sixth', array(&$this,'respo_base_grid_10'));
 		add_shortcode( 'five_sixth_last', array(&$this,'respo_base_grid_10_last') );			
 		add_shortcode( 'respo_pricing',  array(&$this,'respo_pricing_shortcode') );
-
 		
 	}
 	
@@ -99,8 +98,7 @@ class XooShortCode {
 			{
 				return $xoouserultra->login( $atts );
 				
-			} else {
-				
+			} else {				
 				
 				if($xoouserultra->get_option('uultra_auto_redirect_loggedin_user') == 'yes')
 				{
@@ -143,9 +141,7 @@ class XooShortCode {
 	{
 		global $xoouserultra;
 		return $xoouserultra->userpanel->uultra_search_form( $atts );	
-	}
-	
-	
+	}	
 	
 	//Front Publisher
 	public function  funnction_front_publisher ($atts)
@@ -210,8 +206,7 @@ class XooShortCode {
 		return $xoouserultra->show_latest_users($atts );
 			
 		
-	}
-	
+	}	
 	
 	
 	public function  usersultra_top_rated_users ($atts)
