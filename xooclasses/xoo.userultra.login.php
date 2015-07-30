@@ -279,7 +279,6 @@ class XooUserLogin {
 					$user = wp_signon( $creds, false );		
 					do_action('wp_login', $user->user_login, $user);			
 					
-						//print_r($user );	
 	
 					if ( is_wp_error($user) ) 
 					{
@@ -1521,7 +1520,6 @@ class XooUserLogin {
 		$wp_rewrite = new WP_Rewrite();
 		
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		if (isset($_REQUEST['redirect_to']))
 		{

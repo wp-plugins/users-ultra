@@ -1,10 +1,10 @@
 === Users Ultra Membership Plugin===
 Contributors: UsersUltra
-Donate link: http://usersultra.com/donate.html
+Donate link: https://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.5.32
+Stable tag: 1.5.33
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,12 +36,12 @@ The free version of Users Ulra includes the following features totally free:
 
 <h3><strong>Demo Links:</strong></h3>
 <ul>
- <li><a href="http://usersultra.com/userultra/"><strong>Check all the features </strong></a> </li>
- <li><a href="http://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> </li>
- <li><a href="http://usersultra.com/userultra/login/"><strong>Users Login Form </strong></a> </li>
- <li><a href="http://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> </li>
- <li><a href="http://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> </li>
- <li><a href="http://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></li>
+ <li><a href="https://usersultra.com/userultra/"><strong>Check all the features </strong></a> </li>
+ <li><a href="https://usersultra.com/userultra/registration/"><strong>Users Registration Form </strong></a> </li>
+ <li><a href="https://usersultra.com/userultra/login/"><strong>Users Login Form </strong></a> </li>
+ <li><a href="https://usersultra.com/userultra/directory-2/"><strong>Demo Users Directory </strong></a> </li>
+ <li><a href="https://usersultra.com/userultra/registration/"><strong>Registration Form</strong></a> </li>
+ <li><a href="https://usersultra.com/userultra/image-grid-with-lightbox-galleries/"><strong>LightBox Images Gallery</strong></li>
 
 </ul>
 <blockquote>
@@ -84,17 +84,17 @@ The free version of Users Ulra includes the following features totally free:
 <strong>SITE-WIDE ACTIVITY WALL: </strong>
 <ul>
   
-  <li> <a href="http://usersultra.com/uultra-testing/website-activity-wall/">Share posts, photos, comments and more..</a></li>  
+  <li> <a href="https://usersultra.com/uultra-testing/website-activity-wall/">Share posts, photos, comments and more..</a></li>  
  
 </ul>
 
 <strong>MULTIPLE USERS DIRECTORY LAYOUTS: </strong>
 <ul>
-  <li> <a href="http://usersultra.com/uultra-testing/directory-with-tables/">Users Table With Custom Columns.</a></li>
-   <li> <a href="http://usersultra.com/uultra-testing/members-directory-minified/">Minified Users List. Twitter Syle</a>
+  <li> <a href="https://usersultra.com/uultra-testing/directory-with-tables/">Users Table With Custom Columns.</a></li>
+   <li> <a href="https://usersultra.com/uultra-testing/members-directory-minified/">Minified Users List. Twitter Syle</a>
    </li>
    
-   <li> <a href="http://usersultra.com/uultra-testing/member-directory-display-to-logged-in-users-only/">Visible to logged in users only</a>
+   <li> <a href="https://usersultra.com/uultra-testing/member-directory-display-to-logged-in-users-only/">Visible to logged in users only</a>
    </li>  
   
 </ul>
@@ -102,15 +102,15 @@ The free version of Users Ulra includes the following features totally free:
 <strong>MULTIPLE REGISTRATION & LOGIN FORMS: </strong>
 <ul>
   
-  <li> <a href="http://usersultra.com/uultra-testing/login-minified/">Registration Form With Minified Social Buttons.</a></li>
+  <li> <a href="https://usersultra.com/uultra-testing/login-minified/">Registration Form With Minified Social Buttons.</a></li>
     
-  <li> <a href="http://usersultra.com/uultra-testing/login-minified-rounded-borders/">Registration Form With Rounded Social Buttons.</a></li>
+  <li> <a href="https://usersultra.com/uultra-testing/login-minified-rounded-borders/">Registration Form With Rounded Social Buttons.</a></li>
 </ul>
 
 <strong>ELEGANT USER POSTS LINK: </strong>
 <ul>
     
-  <li> <a href="http://usersultra.com/uultra-testing/profile/admin/?my_posts">Elegant My Posts Layout</a></li>
+  <li> <a href="https://usersultra.com/uultra-testing/profile/admin/?my_posts">Elegant My Posts Layout</a></li>
 </ul>
 
 CLICK ON THE FOLLOWING LINK TO FIND OUT MORE ABOUT <strong> <a href="http://usersultra.com/users-pro.html" alt="Users Ultra Pro" title="Users Ultra Pro">Users Ultra Pro</a> </strong><br>
@@ -443,6 +443,10 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.5.33(07-30-2015) =
+* Improvement -  Paragraphs issue on Private Message system
+* Improvement -  SSL warning messages removed.
 
 = 1.5.32(07-27-2015) =
 * Improvement - Due some complaints we ended up including the password in the welcome email when the users register. Before UU displayed "(same used when registered)".

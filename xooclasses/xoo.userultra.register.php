@@ -64,7 +64,6 @@ class XooUserRegister {
 	{
 	    global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		if(get_option('users_can_register') == '1')
 		{
@@ -102,8 +101,7 @@ class XooUserRegister {
 		    }
 			
 			//check if auto-password
-			$auto_password = $xoouserultra->get_option("set_password");	
-			
+			$auto_password = $xoouserultra->get_option("set_password");				
 			
 			if($auto_password =='' || $auto_password==1)
 			{
@@ -143,7 +141,7 @@ class XooUserRegister {
 		
 	}
 	
-		function uultra_check_pass_strenght($password)
+	function uultra_check_pass_strenght($password)
 	{
 		global $xoouserultra;
 		$res= true;

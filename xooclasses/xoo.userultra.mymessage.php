@@ -367,6 +367,7 @@ class XooUserMyMessage {
 			$orig_msg_date = date("F j, Y, g:i a", strtotime($message->date));
 						
 			$content = stripslashes($message->content);
+			$content = nl2br($content);
 			$html  = ' <div class="uu-private-messaging-backend rounded" >';
 			
 						
@@ -398,6 +399,7 @@ class XooUserMyMessage {
 				$reply_msg_date = date("F j, Y, g:i a", strtotime($reply->date));
 				
 				$content = stripslashes($reply->content);
+				$content = nl2br($content);
 				
 				$html .= '<li class="rounded replybox">'	;
 				$html .= '<span class="uultra-u-avatar">'.$xoouserultra->userpanel->get_user_pic( $sender_id, 80, 'avatar', $pic_boder_type, 'fixed'). '</span>'	;
