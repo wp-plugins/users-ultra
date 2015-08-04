@@ -1864,14 +1864,15 @@ class XooUserUltra
 			
 			if ( $type == 'usermeta') {
 				
-				$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';
-				
+				$display .= '<div class="xoouserultra-field xoouserultra-edit xoouserultra-edit-show">';			
 				
 				
 				/* Show the label */
 				$placeholder = '';
 				$icon_name = '';
 				$input_ele_class='';
+				
+				if(!isset($required_text)){$required_text='';}
 				
 				    if (isset($this->login_fields[$key]['name']) && $name) 
 					{
