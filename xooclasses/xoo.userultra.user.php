@@ -1906,9 +1906,6 @@ class XooUserUser {
 		
 		global  $xoouserultra, $wpdb;
 	
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');	
-		
-		
 		
 		$u_nick = get_query_var('uu_username');
 		

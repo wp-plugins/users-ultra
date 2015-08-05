@@ -1630,7 +1630,6 @@ class XooUserLogin {
 	{
 		global $xoouserultra ;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(xoousers_path."libs/fbapi/src/facebook.php");
 		 
 		 //facebook credentials		
@@ -1652,7 +1651,8 @@ class XooUserLogin {
 		{
 									
 		
-			 $user_profile = $facebook->api('/me','GET');
+			// $user_profile = $facebook->api('/me','GET');
+			 $user_profile = $facebook->api('/me?fields=id,name,email','GET');
 			 $fbid = $user_profile['id'];
 			// $user_picture = $facebook->api('/'.$fbid.'/picture','GET');
 			
