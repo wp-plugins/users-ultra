@@ -466,7 +466,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		$email_body .= "{{userl_ultra_login_url}}" . $line_break.$line_break;
 		$email_body .= __('Your account e-mail: {{userultra_user_email}}','xoousers') . $line_break;
 		$email_body .= __('Your account username: {{userultra_user_name}}','xoousers') . $line_break;
-		$email_body .= __('Your account password: {{userultra_pass}}','xoousers') . $line_break.$line_break;
+		$email_body .= __('Your account password: (same used on registration)','xoousers') . $line_break.$line_break;
 		$email_body .= __('If you have any problems, please contact us at {{userultra_admin_email}}.','xoousers') . $line_break.$line_break;
 		$email_body .= __('Best Regards!','xoousers');
 	    $this->notifications_email['new_account'] = $email_body;
@@ -475,8 +475,8 @@ class XooUserAdmin extends XooUserUltraCommon
 		$email_body .= __("Your password has been reset.","xoousers") .  $line_break.$line_break;
 		$email_body .= __("To login please visit the following URL:","xoousers") .  $line_break.$line_break;
 		$email_body .= "{{userl_ultra_login_url}}" . $line_break.$line_break;
-		$email_body .= __('Your account e-mail: {{userultra_user_email}}','xoousers') . $line_break;
-		$email_body .= __('Your account username: {{userultra_user_name}}','xoousers') . $line_break;
+		$email_body .= __('Your account e-mail: {{userultra_user_email}}','xoousers') . $line_break.$line_break;
+		$email_body .= __('Your account username: {{userultra_user_name}}','xoousers') . $line_break.$line_break;
 		//$email_body .= __('Your account password: {{userultra_pass}}','xoousers') . $line_break.$line_break;
 		$email_body .= __('If you have any problems, please contact us at {{userultra_admin_email}}.','xoousers') . $line_break.$line_break;
 		$email_body .= __('Best Regards!','xoousers');
