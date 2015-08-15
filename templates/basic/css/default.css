@@ -8,7 +8,6 @@
 .xoouserultra-head {
 	background: #f5f5f5;
 }
-
 .xoouserultra-wrap .xoouserultra-head img.avatar, .xoouserultra-wrap .xoouserultra-field-value img {
 	background: #fff;
 	border: 1px solid #ddd;
@@ -4824,7 +4823,6 @@ display: inline-block; width:85%; vertical-align:top
 	text-align:center !important;
 	 
 }
-
 .uultra-photogrid-photos ul li.rounded{
 	
 	border-radius: 3px;
@@ -4837,9 +4835,7 @@ display: inline-block; width:85%; vertical-align:top
 	border:none ;
 	
 	
-	
 }
-
 .uultra-photogrid-photos ul li.shadow{
 	
 	/*box-shadow: 0 1px 4px rgba(105, 19, 19, 0.2);*/
@@ -4847,9 +4843,6 @@ display: inline-block; width:85%; vertical-align:top
 
 .uultra-photogrid-photos ul li.in-line{	
 	display: inline-block;
-	
-	
-	
 }
 
 .uultra-photogrid-photos li img{
@@ -4867,9 +4860,6 @@ display: inline-block; width:85%; vertical-align:top
 	-moz-border-radius:3px;
 	
 }
-
-
-
 
 /*--------------------------------------------------
 				      TOP RATED PHOTOS
@@ -4894,7 +4884,6 @@ display: inline-block; width:85%; vertical-align:top
 	text-align:center;
 	padding-bottom:5px;
 	padding-bottom:5px;
-	
 	
 }
 
@@ -5898,8 +5887,6 @@ MEDIA QUERIES
 	
 	}
 	
-	
-	
 	.commons-panel-content .pr_col_element 
 	{
 		display:inline !important;
@@ -5939,8 +5926,6 @@ MEDIA QUERIES
 	.uultra-profile-basic-wrap .uu-left{ display:inline; float:none; width:98%}
 	.uultra-profile-basic-wrap .uu-right{ display:inline; float:none; width:98%}
 	
-	
-	
 }
 
 
@@ -5967,7 +5952,7 @@ MEDIA QUERIES
 	}
 	
 	
-	   span.data-a {
+	 span.data-a {
 	width:100% !important;
 	display: block !important	
 	}
@@ -5987,10 +5972,9 @@ MEDIA QUERIES
 	.uultra-profile-basic-wrap .uu-right .photos ul li{	
 		width:99% !important;		
 
-	}
+	}	
 	
-	
-		.usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu li{		
+	.usersultra-dahsboard-cont .usersultra-dahsboard-left ul.main_menu li{		
 		display:inline-block !important;		
 		width:18% !important;
 		margin:1% !important;

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Users Ultra Lite\n"
-"POT-Creation-Date: 2015-08-04 15:32-0300\n"
-"PO-Revision-Date: 2015-08-04 15:32-0300\n"
+"POT-Creation-Date: 2015-08-15 14:55-0300\n"
+"PO-Revision-Date: 2015-08-15 14:55-0300\n"
 "Last-Translator: Ahrale <contact@atar4u.com>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
 "Language: he\n"
@@ -759,8 +759,8 @@ msgstr "טופס כניסה"
 
 #: ../admin/tabs/help.php:30 ../templates/basic/dashboard.php:740
 #: ../xooclasses/xoo.userultra.class.php:1036
-#: ../xooclasses/xoo.userultra.user.php:2229
-#: ../xooclasses/xoo.userultra.user.php:2233
+#: ../xooclasses/xoo.userultra.user.php:2226
+#: ../xooclasses/xoo.userultra.user.php:2230
 msgid "My Account"
 msgstr "החשבון שלי"
 
@@ -768,8 +768,8 @@ msgstr "החשבון שלי"
 msgid "Disable modules for some Users"
 msgstr "כיבוי מודולים לחלק מן המשתמשים"
 
-#: ../admin/tabs/help.php:36 ../xooclasses/xoo.userultra.user.php:2369
-#: ../xooclasses/xoo.userultra.user.php:2757
+#: ../admin/tabs/help.php:36 ../xooclasses/xoo.userultra.user.php:2366
+#: ../xooclasses/xoo.userultra.user.php:2754
 msgid "Logout"
 msgstr "ניתוק"
 
@@ -1938,6 +1938,10 @@ msgstr "תכונות אימייל מתקדמות"
 msgid "Send emails via SMTP and Mandrill API."
 msgstr "שליחת אימיילים באמצעות SMTP וגם Mandrill API."
 
+#: ../admin/tabs/pro.php:222
+msgid "Version."
+msgstr ""
+
 #: ../admin/tabs/settings.php:1
 msgid "General Settings"
 msgstr "הגדרות כלליות"
@@ -2228,7 +2232,7 @@ msgstr "נא להגדיר 9999 לפוסטים ללא הגבלה. ערך זה מ�
 msgid "Default Status"
 msgstr "מצב ברירת המחדל"
 
-#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5337
+#: ../admin/tabs/settings.php:304 ../xooclasses/xoo.userultra.user.php:5334
 msgid "Pending"
 msgstr "בהמתנה"
 
@@ -3206,8 +3210,8 @@ msgid "My Latest Photos:"
 msgstr "התמונות האחרונות שלי:"
 
 #: ../templates/basic/dashboard.php:256
-#: ../xooclasses/xoo.userultra.user.php:2339
-#: ../xooclasses/xoo.userultra.user.php:2343
+#: ../xooclasses/xoo.userultra.user.php:2336
+#: ../xooclasses/xoo.userultra.user.php:2340
 msgid "My Friends"
 msgstr "החברים שלי"
 
@@ -3218,8 +3222,8 @@ msgid ""
 msgstr "כאן ניתן לנהל את החברים שלך. החברים שלך יוכלו לראות תוכן פרטי מוגן."
 
 #: ../templates/basic/dashboard.php:339
-#: ../xooclasses/xoo.userultra.user.php:2359
-#: ../xooclasses/xoo.userultra.user.php:2363
+#: ../xooclasses/xoo.userultra.user.php:2356
+#: ../xooclasses/xoo.userultra.user.php:2360
 msgid "My Posts"
 msgstr "הפוסטים שלי"
 
@@ -3228,8 +3232,8 @@ msgid "Here you can manage your posts. "
 msgstr "כאן ניתן לנהל את הפוסטים שלך."
 
 #: ../templates/basic/dashboard.php:383
-#: ../xooclasses/xoo.userultra.user.php:2270
-#: ../xooclasses/xoo.userultra.user.php:2274
+#: ../xooclasses/xoo.userultra.user.php:2267
+#: ../xooclasses/xoo.userultra.user.php:2271
 msgid "My Orders"
 msgstr "ההזמנות שלי"
 
@@ -3238,8 +3242,8 @@ msgid "Here you can check your orders. "
 msgstr "כאן ניתן לבדוק את ההזמנות שלך."
 
 #: ../templates/basic/dashboard.php:418
-#: ../xooclasses/xoo.userultra.user.php:2257
-#: ../xooclasses/xoo.userultra.user.php:2261
+#: ../xooclasses/xoo.userultra.user.php:2254
+#: ../xooclasses/xoo.userultra.user.php:2258
 msgid "My Purchases"
 msgstr "הרכישות שלי"
 
@@ -3343,8 +3347,8 @@ msgstr "בטוח שרוצה לסגור את החשבו? פעולה זו אינה
 
 #: ../templates/basic/dashboard.php:813
 #: ../xooclasses/xoo.userultra.admin.php:52
-#: ../xooclasses/xoo.userultra.user.php:2243
-#: ../xooclasses/xoo.userultra.user.php:2247
+#: ../xooclasses/xoo.userultra.user.php:2240
+#: ../xooclasses/xoo.userultra.user.php:2244
 msgid "Settings"
 msgstr "הגדרות"
 
@@ -3377,8 +3381,8 @@ msgid "CLICK HERE TO UPDATE YOUR EMAIL"
 msgstr "<strong>נא ללחוץ כאן כדי לעדכן את המייל שלך<strong/>"
 
 #: ../templates/basic/dashboard.php:875 ../templates/basic/profile.php:183
-#: ../xooclasses/xoo.userultra.user.php:2322
-#: ../xooclasses/xoo.userultra.user.php:2326
+#: ../xooclasses/xoo.userultra.user.php:2319
+#: ../xooclasses/xoo.userultra.user.php:2323
 msgid "My Videos"
 msgstr "הסרטונים שלי"
 
@@ -3443,8 +3447,8 @@ msgid "Photos available only for registered users"
 msgstr "תמונות הזמינות רק למשתמשים רשומים"
 
 #: ../xooclasses/xoo.userultra.admin.php:50
-#: ../xooclasses/xoo.userultra.user.php:2189
-#: ../xooclasses/xoo.userultra.user.php:2193
+#: ../xooclasses/xoo.userultra.user.php:2186
+#: ../xooclasses/xoo.userultra.user.php:2190
 msgid "Dashboard"
 msgstr "לוח הבקרה"
 
@@ -3600,9 +3604,9 @@ msgid "Your account username: {{userultra_user_name}}"
 msgstr "שם המשתמש של החשבון שלך: {{userultra_user_name}}"
 
 #: ../xooclasses/xoo.userultra.admin.php:469
-#: ../xooclasses/xoo.userultra.admin.php:518
-msgid "Your account password: {{userultra_pass}}"
-msgstr "ססמת החשבון שלך: {{userultra_pass}}"
+#, fuzzy
+msgid "Your account password: (same used on registration)"
+msgstr "ססמת החשבון שלך: (כפי שרשמת בהרשמה)"
 
 #: ../xooclasses/xoo.userultra.admin.php:470
 #: ../xooclasses/xoo.userultra.admin.php:481
@@ -3679,6 +3683,10 @@ msgstr "תודה על ההרשמה. החשבון שלך צריך הפעלה."
 #: ../xooclasses/xoo.userultra.admin.php:526
 msgid "Please click on the link below to activate your account:"
 msgstr "נא ללחוץ על הקישור שלהלן כדי להפעיל את החשבון שלך:"
+
+#: ../xooclasses/xoo.userultra.admin.php:518
+msgid "Your account password: {{userultra_pass}}"
+msgstr "ססמת החשבון שלך: {{userultra_pass}}"
 
 #: ../xooclasses/xoo.userultra.admin.php:525
 msgid "We are re-sending you the activation link."
@@ -4548,21 +4556,21 @@ msgid "Filter by category: "
 msgstr "סינון לפי קטגוריות: "
 
 #: ../xooclasses/xoo.userultra.photos.php:370
-#: ../xooclasses/xoo.userultra.user.php:4471
+#: ../xooclasses/xoo.userultra.user.php:4468
 msgid "Total found: "
 msgstr "סך-הכל נמצאו: "
 
 #: ../xooclasses/xoo.userultra.photos.php:648
-#: ../xooclasses/xoo.userultra.user.php:4346
-#: ../xooclasses/xoo.userultra.user.php:5185
-#: ../xooclasses/xoo.userultra.user.php:5258
+#: ../xooclasses/xoo.userultra.user.php:4343
+#: ../xooclasses/xoo.userultra.user.php:5182
+#: ../xooclasses/xoo.userultra.user.php:5255
 msgid "Previous"
 msgstr "הקודם"
 
 #: ../xooclasses/xoo.userultra.photos.php:649
-#: ../xooclasses/xoo.userultra.user.php:4347
-#: ../xooclasses/xoo.userultra.user.php:5186
-#: ../xooclasses/xoo.userultra.user.php:5259
+#: ../xooclasses/xoo.userultra.user.php:4344
+#: ../xooclasses/xoo.userultra.user.php:5183
+#: ../xooclasses/xoo.userultra.user.php:5256
 msgid "Next"
 msgstr "הבא"
 
@@ -4639,7 +4647,7 @@ msgstr "בחירת קבצים"
 
 #: ../xooclasses/xoo.userultra.photos.php:2287
 #: ../xooclasses/xoo.userultra.publisher.php:1121
-#: ../xooclasses/xoo.userultra.user.php:4921
+#: ../xooclasses/xoo.userultra.user.php:4918
 msgid "Allowed Files"
 msgstr "קבצים מותרים"
 
@@ -5118,99 +5126,99 @@ msgstr "המשתמש לא נמצא"
 msgid " A reset link has been sent to your email "
 msgstr "איפוס נשלך לאימייל שלך"
 
-#: ../xooclasses/xoo.userultra.user.php:2202
-#: ../xooclasses/xoo.userultra.user.php:2206
+#: ../xooclasses/xoo.userultra.user.php:2199
+#: ../xooclasses/xoo.userultra.user.php:2203
 msgid "Profile"
 msgstr "פרופיל"
 
-#: ../xooclasses/xoo.userultra.user.php:2215
-#: ../xooclasses/xoo.userultra.user.php:2219
+#: ../xooclasses/xoo.userultra.user.php:2212
+#: ../xooclasses/xoo.userultra.user.php:2216
 msgid "Profile Customizer"
 msgstr "עיצוב פרופיל"
 
-#: ../xooclasses/xoo.userultra.user.php:2289
+#: ../xooclasses/xoo.userultra.user.php:2286
 msgid "My Messages"
 msgstr "ההודעות שלי"
 
-#: ../xooclasses/xoo.userultra.user.php:2293
+#: ../xooclasses/xoo.userultra.user.php:2290
 msgid "Messages"
 msgstr "הודעות"
 
-#: ../xooclasses/xoo.userultra.user.php:2299
+#: ../xooclasses/xoo.userultra.user.php:2296
 msgid "Unread Messages"
 msgstr "הודעות שלא נקראו"
 
-#: ../xooclasses/xoo.userultra.user.php:2309
-#: ../xooclasses/xoo.userultra.user.php:2313
+#: ../xooclasses/xoo.userultra.user.php:2306
+#: ../xooclasses/xoo.userultra.user.php:2310
 msgid "Photos"
 msgstr "תמונות"
 
-#: ../xooclasses/xoo.userultra.user.php:2349
+#: ../xooclasses/xoo.userultra.user.php:2346
 msgid "Friend Requests"
 msgstr "בקשות חברות"
 
-#: ../xooclasses/xoo.userultra.user.php:2614
+#: ../xooclasses/xoo.userultra.user.php:2611
 msgid "Empty results"
 msgstr "לרוקן את התוצאות"
 
-#: ../xooclasses/xoo.userultra.user.php:2756
-#: ../xooclasses/xoo.userultra.user.php:2857
-#: ../xooclasses/xoo.userultra.user.php:4297
+#: ../xooclasses/xoo.userultra.user.php:2753
+#: ../xooclasses/xoo.userultra.user.php:2854
+#: ../xooclasses/xoo.userultra.user.php:4294
 msgid "See Profile"
 msgstr "הצגת הפרופיל"
 
-#: ../xooclasses/xoo.userultra.user.php:3271
+#: ../xooclasses/xoo.userultra.user.php:3268
 msgid "Free"
 msgstr "ללא תשלום"
 
-#: ../xooclasses/xoo.userultra.user.php:3597
+#: ../xooclasses/xoo.userultra.user.php:3594
 #, php-format
 msgid "Search %s"
 msgstr "חיפוש %s"
 
-#: ../xooclasses/xoo.userultra.user.php:4063
+#: ../xooclasses/xoo.userultra.user.php:4060
 msgid "<< Previous"
 msgstr "<< הקודם"
 
-#: ../xooclasses/xoo.userultra.user.php:4064
+#: ../xooclasses/xoo.userultra.user.php:4061
 msgid "Next >>"
 msgstr "הבא >>"
 
-#: ../xooclasses/xoo.userultra.user.php:4114
-#: ../xooclasses/xoo.userultra.user.php:4185
+#: ../xooclasses/xoo.userultra.user.php:4111
+#: ../xooclasses/xoo.userultra.user.php:4182
 msgid "Users"
 msgstr "משתמשים"
 
-#: ../xooclasses/xoo.userultra.user.php:4188
+#: ../xooclasses/xoo.userultra.user.php:4185
 msgid "Only logged in users can see this page"
 msgstr "רק משתמשים מחוברים יכולים לראות את העמוד הזה"
 
-#: ../xooclasses/xoo.userultra.user.php:4588
-#: ../xooclasses/xoo.userultra.user.php:4607
+#: ../xooclasses/xoo.userultra.user.php:4585
+#: ../xooclasses/xoo.userultra.user.php:4604
 msgid "Country not available"
 msgstr "הארץ אינה זמינה"
 
-#: ../xooclasses/xoo.userultra.user.php:4634
+#: ../xooclasses/xoo.userultra.user.php:4631
 msgid "This user hasn't a description yet"
 msgstr "אין עדיין תיאור למשתמש זה"
 
-#: ../xooclasses/xoo.userultra.user.php:4885
+#: ../xooclasses/xoo.userultra.user.php:4882
 msgid "Drop Avatar here"
 msgstr "לגרור לכאן את צלמית המשתמש"
 
-#: ../xooclasses/xoo.userultra.user.php:4976
+#: ../xooclasses/xoo.userultra.user.php:4973
 msgid "You may only upload one image at a time!"
 msgstr "אפשר להעלות רק קובץ אחד בכל פעם!"
 
-#: ../xooclasses/xoo.userultra.user.php:4991
+#: ../xooclasses/xoo.userultra.user.php:4988
 msgid "The file you selected exceeds the maximum filesize limit."
 msgstr "הקובץ שבחרת חורג ממגבלת גודל הקובץ המרבי."
 
-#: ../xooclasses/xoo.userultra.user.php:5341
+#: ../xooclasses/xoo.userultra.user.php:5338
 msgid "Pending Admin"
 msgstr "בהמתנה להנהלה"
 
-#: ../xooclasses/xoo.userultra.user.php:5345
+#: ../xooclasses/xoo.userultra.user.php:5342
 msgid "Active"
 msgstr "פעיל"
 
@@ -5221,9 +5229,6 @@ msgstr "קובץ Woocommerce אינו קיים"
 #: ../xooclasses/xoo.userultra.woocommerce.php:346
 msgid "Modified Date"
 msgstr "תאריך שינוי"
-
-#~ msgid "Your account password: (same used when registering)"
-#~ msgstr "ססמת החשבון שלך: (כפי שרשמת בהרשמה)"
 
 #~ msgid "Changelog"
 #~ msgstr "יומן שינויים"
