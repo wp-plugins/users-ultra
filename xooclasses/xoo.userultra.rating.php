@@ -13,8 +13,7 @@ class XooRating extends XooUserUltraCommon
 	{
 		
 		$this->ini_module();
-		$this->mDateToday =  date("Y-m-d"); 
-		
+		$this->mDateToday =  date("Y-m-d"); 		
 		
 		add_action( 'wp_ajax_rating_vote',  array( $this, 'rating_vote' ));			
 		add_action( 'wp_ajax_nopriv_rating_vote',  array( $this, 'rating_vote' ));
@@ -205,11 +204,12 @@ class XooRating extends XooUserUltraCommon
 				
 				}
 			
-			}else{				   
+			}else{			   
 				   
 				   //user is not logged in
 					$html = __("You have to be logged in to leave your rate  ",'xoousers');			
-				}	
+			}	
+			
 		}else{
 			
 			   //is trying to rate itlsef				   
@@ -278,8 +278,7 @@ class XooRating extends XooUserUltraCommon
 		
 		foreach ( $rating as $rate )
 	    {
-			return $rate;
-			
+			return $rate;			
 		}
 		
     }

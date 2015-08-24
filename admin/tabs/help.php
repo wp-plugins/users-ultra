@@ -8,9 +8,9 @@ global $xoouserultra;
         <h3><?php _e('Documentation and User Guide','xoousers'); ?></h3>
         <p><?php _e("Here there are some useful shortocodes that will help you to start your online community in minutes.",'xoousers'); ?></p>
         
-        <p><?php _e("<a href='http://usersultra.com/doc.html' target='_blank'>CLICK HERE  </a>to check the online documentation",'xoousers'); ?></p>
+        <p><?php _e("<a href='http://doc.usersultra.com/' target='_blank'>CLICK HERE  </a>to check the online documentation",'xoousers'); ?></p>
         
-         <p><?php _e("<a href='http://www.usersultra.com/support/' target='_blank'>CLICK HERE </a>to visit Support Forum",'xoousers'); ?></p>
+         <p><?php _e("<a href='https://www.usersultra.com/support/' target='_blank'>CLICK HERE </a>to visit Support Forum",'xoousers'); ?></p>
         
         <p>If you like this plugin, please don't forget to rate it <img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" />. <?php _e("<a href='http://wordpress.org/plugins/users-ultra/' target='_blank'>CLICK HERE TO RATE IT </a>",'xoousers'); ?></p>
         

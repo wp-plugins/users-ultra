@@ -52,5 +52,4 @@ class MailChimp_UUltra
 
 		return $result ? json_decode($result, true) : false;
 	}
-
 }

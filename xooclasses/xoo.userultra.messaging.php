@@ -151,7 +151,6 @@ class XooMessaging extends XooUserUltraCommon
 	{
 		global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -188,7 +187,6 @@ class XooMessaging extends XooUserUltraCommon
 	{
 		global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 		
@@ -227,7 +225,6 @@ class XooMessaging extends XooUserUltraCommon
 	{
 		global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		
@@ -252,9 +249,7 @@ class XooMessaging extends XooUserUltraCommon
 	{
 		global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
-		require_once(ABSPATH . 'wp-includes/link-template.php');
-		
+		require_once(ABSPATH . 'wp-includes/link-template.php');		
 		
 		$admin_email =get_option('admin_email'); 
 		
@@ -279,7 +274,6 @@ class XooMessaging extends XooUserUltraCommon
 	{
 		global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');		
 		
 		$admin_email =get_option('admin_email'); 
@@ -303,7 +297,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  welcome_email_paid($u_email, $user_login, $user_pass, $package)
 	{
 		global $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -345,7 +339,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  welcome_email_link_activation($u_email, $user_login, $user_pass)
 	{
 		global $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -373,7 +367,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  send_private_message_user($receiver, $sender_nick, $uu_subject, $uu_message)
 	{
 		global $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -404,7 +398,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  send_friend_request($receiver, $sender)
 	{
 		global $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -429,7 +423,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  send_reset_link($receiver, $link)
 	{
 		global $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -456,7 +450,6 @@ class XooMessaging extends XooUserUltraCommon
 	{
 		global $xoouserultra;
 		
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 
@@ -483,7 +476,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function  paypal_ipn_debug( $message)
 	{
 		global $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
+		
 		require_once(ABSPATH . 'wp-includes/link-template.php');
 		
 		$admin_email =get_option('admin_email'); 		

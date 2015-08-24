@@ -13,8 +13,6 @@ class XooOrder
 	public function ini_db()
 	{
 		global $wpdb;
-
-			
 	
 		// Create table
 			$query = 'CREATE TABLE IF NOT EXISTS ' . $wpdb->prefix . 'usersultra_orders (

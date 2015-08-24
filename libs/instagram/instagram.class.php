@@ -27,7 +27,6 @@ class Instagram {
    * The OAuth token URL
    */
   const API_OAUTH_TOKEN_URL = 'https://api.instagram.com/oauth/access_token';
-
   /**
    * The Instagram API Key
    * 
@@ -373,6 +372,5 @@ class Instagram {
   }
 
 }
-
 }
 ?>

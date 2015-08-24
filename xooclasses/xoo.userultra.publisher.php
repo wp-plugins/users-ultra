@@ -56,8 +56,7 @@ class XooPublisher
 	
 	function edit_post($id)		
 	{
-		global $wpdb, $current_user, $xoouserultra;	
-		
+		global $wpdb, $current_user, $xoouserultra;		
 	
 		require_once(ABSPATH . 'wp-includes/general-template.php');
 		

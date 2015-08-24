@@ -3,8 +3,8 @@ Contributors: UsersUltra
 Donate link: https://usersultra.com/donate.html
 Tags: users, password, users community, community, users directory, search, sign up, sign in, login, profiles, subscription, recurring, paypal, publisher, custom, customize, listing, list, drag, drop, widget, post,  wp avatar, images, lightbox, social, social network, private, messages, user, members, member, members directory, restrict content, authors, rating, stars, stars, likes, friends, facebook, yahoo, linkedin, google, access-control, user control, access, network, networking, mailchimp, email, membership, packages, csv, import, paid, artist, profile builder, custom fields, front-end users listing, conditional fields, advanced search, users searching box, meta fields, front-end users registration, custom registration page, custom login page, mailing list, users avatar, photo gallery, photo album, restricts content to registered users, premium content, woocommerce, shipping information, sync woocommerce, authentication, OAuth, OAuth for google, google plus signup, access token, twitter, login with twitter, registration with twitter, twitter sign up, twitter authentication, google sign up, google sign in, registration with google, linkedin sign up, linkedin authentication, linkedin login, pricing tables, member, yammer, member registration, member access, user tweet, email newsletter subscribers, mailchimp newsletter, wp user avatar, badges, captcha, medallions, bbpress, email, spam protection, reCaptcha, captcha, robots, models, agency, meta, user meta, fields, importing, extra user fields, front-end login, replace wp login, replace wp registration, widgets, users table, wordrpess registration, facebook avatar, gravatar, members, instagram login, instagram sign in, groups
 Requires at least: 3.0.1
-Tested up to: 4.2
-Stable tag: 1.5.37
+Tested up to: 4.3
+Stable tag: 1.5.39
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ Users Ultra is the ideal tool for creating advanced user communities in few minu
 When it comes to ease of use, Users Ultra comes in first.  <strong>Users Communities and  Social Networking Websites are incredibly simple to build</strong>. All the modules are customizable, even if you don't know how to code, and they're minimalist enough that a few minor changes make them look unique to you. <strong>Users Ultra handles One-Time and Recurrent Payments</strong>.
 
 <strong>Free Modules:</strong><br>
-The free version of Users Ulra includes the following features totally free:
+The free version of Users Ulra includes the following features:
 <ul>
 <li>Social Connects.</li>
 <li>MailChimp.</li>
@@ -25,7 +25,7 @@ The free version of Users Ulra includes the following features totally free:
 <li>WooCommerce Order Status Module.</li>
 <li>Private Messages.</li>
 <li>Front-end Publisher With Multi-Photo Uploader.</li>
-<li>Post/Page Content Protection. <strong>Logged in Bassed.</strong></li>
+<li>Post/Page Protection. <strong>Logged in Bassed.</strong></li>
 <li>Partial Content Protection. <strong>Membership Bassed.</strong></li>
 <li>Paypal Membership System. Recurring & One-time Billing.</li>
 <li>User Reviews - Allow users to rate & review each other using a 5 star rate/review system</li>
@@ -47,7 +47,6 @@ The free version of Users Ulra includes the following features totally free:
 <blockquote>
 <h3><strong>USERS ULTRA PRO INCLUDES: </strong></h3>
 <ul>
-  <li>Priority Support.</li>
    <li><strong>Display Fields by User Role Only. You can Select Roles that can see it.</strong></li>
    <li><strong>Make Fields Editable by User Role Only. You can Select Roles that can edit it.</strong></li>
   <li>New Features Every Week.</li>
@@ -113,7 +112,7 @@ The free version of Users Ulra includes the following features totally free:
   <li> <a href="https://usersultra.com/uultra-testing/profile/admin/?my_posts">Elegant My Posts Layout</a></li>
 </ul>
 
-CLICK ON THE FOLLOWING LINK TO FIND OUT MORE ABOUT <strong> <a href="http://usersultra.com/users-pro.html" alt="Users Ultra Pro" title="Users Ultra Pro">Users Ultra Pro</a> </strong><br>
+CLICK ON THE FOLLOWING LINK TO FIND OUT MORE ABOUT <strong> <a href="https://usersultra.com/" alt="Users Ultra Pro" title="Users Ultra Pro">Users Ultra Pro</a> </strong><br>
 <br>
 
 </blockquote>
@@ -418,8 +417,7 @@ These are just some of the features the pro includes:
   <li>Front End Publisher With Multiple Images.</li>
   <li>Elegant Customizable Users Profile</li>
   <li>Custom Profile Background for every profile.</li>
-   <li>Entire Posts & Pages Protection.</li>
- 
+   <li>Entire Posts & Pages Protection.</li> 
   <li>Users Wall.</li>
   <li>and so much more ...</li>
 </ul>
@@ -443,6 +441,16 @@ Initial release.
 10. Dahsboard
 
 == Changelog ==
+
+= 1.5.39(08-24-2015) =
+* Improvement - Warning messages on WP 4.3 issue. Please udpate ASAP if you're using WP 4.3
+* Improvement - Instagram API update.
+
+
+= 1.5.38(08-20-2015) =
+* Improvement - We have tweaked the plugin in order to make it compatible with WP 4.3.
+* Improvement - MailChimp API tweaks.
+* Improvement - CSS datepicker improvements.
 
 = 1.5.37(08-15-2015) =
 * Improvement - Spanish language updated

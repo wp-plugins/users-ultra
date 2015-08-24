@@ -4,8 +4,7 @@ class XooUserLogin {
 	var $mIsSocialLogin;
 	
 	function __construct() 
-	{
-		
+	{		
 		add_action( 'wp_login', array($this, 'uultra_handle_after_login' ),99);
 		add_action( 'init', array($this, 'handle_init' ) );
 		
@@ -16,7 +15,6 @@ class XooUserLogin {
 	{
 	    global $xoouserultra;
 	    
-	//	require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
 		
 		//update last login
@@ -171,7 +169,6 @@ class XooUserLogin {
 	{
 	    global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;;
 	    
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-includes/user.php');
 		
 		if ( empty( $GLOBALS['wp_rewrite'] ) )
@@ -252,8 +249,6 @@ class XooUserLogin {
 						
 					}		
 					
-								
-					
 					 		
 					if(!$this->is_active($user_id) && !is_super_admin($user_id))
 					{
@@ -306,7 +301,6 @@ class XooUserLogin {
 					
 					}
 					
-					//print_r($user );	
 				
 				}else{
 					
@@ -354,7 +348,6 @@ class XooUserLogin {
 			wp_redirect($auth_url_google);
 			exit;
 			
-			
 		}
 		
 		if (isset($_GET['uultrasocialsignup']) && $_GET['uultrasocialsignup']=="twitter") 
@@ -362,7 +355,6 @@ class XooUserLogin {
 			$auth_twitter_ = $this->get_twitter_auth_url();
 			wp_redirect($auth_twitter_);
 			exit;
-			
 		}
 		
 		//instagram
@@ -412,7 +404,6 @@ class XooUserLogin {
 	function get_instagram_auth_url() {
 			
 		global $xoousersultra_captcha_loader, $xoouserultra, $blog_id;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		require_once(ABSPATH . 'wp-admin/includes/user.php' );
 		
 		require_once(xoousers_path."libs/instagram/instagram.class.php");
