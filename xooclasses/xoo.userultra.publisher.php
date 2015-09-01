@@ -34,6 +34,14 @@ class XooPublisher
 				$this->edit_conf_post();
 			
 			}
+			
+			if(isset($_GET['uultra-delete-post']) && $_GET['uultra-delete-post']=='uultra-del-post-conf')
+			{
+				
+				//edit post
+				$this->handle_delete_post();
+			
+			}
 		
 		}
 		
@@ -461,6 +469,11 @@ class XooPublisher
 			<form action="" method="get">
 				<?php wp_nonce_field( 'usersultra-bulk-action_inbox' ); ?>
 				<input type="hidden" name="page" value="usersultra_inbox" />
+                
+                 <input type="hidden" name="module" value="posts" />                
+                
+                 <input type="hidden" name="uultra-delete-post"  id="uultra-delete-post" value="" />
+                 <input type="hidden" name="post_id"  id="post_id"  />
 	
 				
 	
@@ -488,7 +501,19 @@ class XooPublisher
 							<td> <?php echo $msg->post_date; ?></td>
 							<td><?php echo $msg->post_status; ?></td>
                             
-                            <td><a href="?module=posts&act=edit&post_id=<?php echo $msg->ID; ?>" title="<?php echo __('Edit','xoousers')?>" ><span><i class="fa fa-pencil-square-o fa-lg"></i></span> </a></td>
+                            <td><a href="?module=posts&act=edit&post_id=<?php echo $msg->ID; ?>" title="<?php echo __('Edit','xoousers')?>" ><span><i class="fa fa-pencil-square-o fa-lg"></i></span> </a>
+                            
+                            
+                             <?php
+							$can_delete = $this->uultra_can_be_deleted();
+							 if($can_delete){?>
+                            
+                            <a href="#"  title="<?php echo __('Delete','xoousers')?>" class="uultra-del-user-postlink" data-id="<?php echo $post_id ; ?>" ><span><i class="fa fa-times fa-lg"></i></span> </a>
+                            
+                            <?php }?>
+                            
+                            
+                            </td>
 						</tr>
 							<?php
 	
@@ -504,6 +529,40 @@ class XooPublisher
 		?>
 
 	<?php
+	}
+	
+	function uultra_can_be_deleted()
+	{
+		global $wpdb, $current_user, $xoouserultra;	
+		
+		//check role capability
+		$can_edit = '';
+		
+		if ( current_user_can('delete_posts') ) 
+		{
+			$can_edit = 'yes';
+			
+			$can_edit_setting = $xoouserultra->get_option('enable_post_del');
+			
+			if($can_edit_setting=='no')
+			{
+				$can_edit = 'no';			
+			
+			}
+			
+			
+		}else{
+			
+			
+			$can_edit = 'no';
+		
+		}
+		
+		
+		
+		
+		return $can_edit ;
+	
 	}
 	
 	function uultra_show_post_status( $status ) 
@@ -1056,6 +1115,66 @@ class XooPublisher
         echo json_encode( $response );
         exit;
     }
+	
+	
+	function handle_delete_post()
+	{
+		
+		global $wpdb, $current_user, $xoouserultra;				
+		require_once(ABSPATH . 'wp-includes/general-template.php');		
+		
+		$user_id = get_current_user_id();	
+		
+		if($user_id >0)
+		{
+			$post_id = $_GET["post_id"];	
+			
+			if($post_id >0)
+			{
+				
+				if($this->uultra_is_this_my_post($post_id))
+				{
+					//delete all post content					
+					wp_delete_post( $post_id);	
+					
+					$this->act_message = __('The post has been deleted!','xoousers');
+					
+				
+				}			
+			
+			}	
+			
+	
+		}
+	
+	
+	}
+	
+	
+	function uultra_is_this_my_post($post_id)		
+	{
+		global $wpdb, $current_user, $xoouserultra;				
+		require_once(ABSPATH . 'wp-includes/general-template.php');			
+		$user_id = get_current_user_id();	
+		
+		if (is_user_logged_in()) 
+		{
+			$res = $wpdb->get_results( 'SELECT `ID`, `post_author` FROM ' . $wpdb->prefix . 'posts WHERE `post_author` = "' . $user_id. '" AND  `ID` = "'.$post_id.'" ' );
+			
+			if ( empty( $res ) )
+			{
+				return false;
+			
+			}else{
+				
+				return true;
+				
+			}			
+			
+				
+		}	
+	
+	}
 	
 	public function get_post_photo_uploader() 
 	{

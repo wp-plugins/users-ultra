@@ -296,6 +296,20 @@ $this->create_plugin_setting(
         __('Please set 9999 for unlimited posts. This value is used for free and general users','xoousers')
 );
 
+
+ $this->create_plugin_setting(
+                        'select',
+                        'enable_post_del',
+                        __('User can delete post?', 'xoousers'),
+                        array(
+                            'yes' => __('YES', 'xoousers'),
+                            'no' => __('NO', 'xoousers'),
+                            
+                        ),
+                        __('Users will be able to delete their own posts.', 'xoousers'),
+                        __('Users will be able to delete their own posts.', 'xoousers')
+                );
+
 $this->create_plugin_setting(
 	'select',
 	'uultra_front_publisher_default_status',

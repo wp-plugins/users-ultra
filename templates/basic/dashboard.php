@@ -351,6 +351,12 @@ $howmany = 5;
                       
                            
                        </div>
+                       
+                       <script type="text/javascript">						
+						
+						 var post_del_confirmation_message = '<?php echo _e( 'Are you totally sure that you want to delete this '.$xoouserultra->publisher->mPostLabelSingular.'', 'xoousers' ) ?>';
+                    
+              		   </script>
                
                 <?php }?>
                

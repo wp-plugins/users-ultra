@@ -262,6 +262,37 @@ if(typeof $ == 'undefined'){
 		}
 		
 		
+		//delete post
+		$('body').on('click',".uultra-del-user-postlink", function(e) {
+		
+		   
+			e.preventDefault();
+			
+			var doIt = false;
+			
+			doIt=confirm(post_del_confirmation_message);
+		  
+			if(doIt)
+			{
+				
+				var post_id =  jQuery(this).attr("data-id");	
+				
+						
+				jQuery('#uultra-delete-post').val('uultra-del-post-conf');
+				jQuery('#post_id').val(post_id);
+				jQuery('#uultra-form-publisher').submit();				
+						
+			
+			
+			}
+			
+			 // Cancel the default action
+			 return false;
+    		e.preventDefault();
+			 
+				
+        });
+		
 		function reload_video_list ()
 		{
 			
