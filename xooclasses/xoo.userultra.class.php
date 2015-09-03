@@ -2414,7 +2414,9 @@ class XooUserUltra
 			
 			$required_class = '';
 			$required_text = '';
-			if($array[$key]['required'] == 1 && in_array($field, $this->include_for_validation))
+			//if( $array[$key]['required'] == 1 && in_array($field, $this->include_for_validation))
+			
+			if(isset($array[$key]['required']) && $array[$key]['required'] == 1 && in_array($field, $this->include_for_validation))
 			{
 			//if($required == 1 && in_array($field, $this->include_for_validation))
 			//{

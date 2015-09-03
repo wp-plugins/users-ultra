@@ -63,6 +63,8 @@ class XooUserCaptchaModule
         
         // Load captcha plugin settings based on shortcode and database values.
         $this->load_captcha_plugin_setting($captcha);
+		
+		$meta = '';
         
         if($this->load_captcha == true)
         {
