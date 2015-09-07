@@ -830,9 +830,13 @@ class XooUserUltra
 			$slug_my_account = $this->get_option("usersultra_my_account_slug"); //My Account Slug
 			
 			// this rule is used to display the registration page
-			add_rewrite_rule("$slug/$slug_registration",'index.php?pagename='.$slug.'/'.$slug_registration, 'top');		
+			add_rewrite_rule("$slug/$slug_registration",'index.php?pagename='.$slug.'/'.$slug_registration, 'top');	
+				
 			//this rules is for displaying the user's profiles
 			add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
+			
+			//this rules is for displaying the user's profiles
+			add_rewrite_rule("([^/]+)/$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[2]', 'top');
 		
 		
 		
@@ -859,6 +863,9 @@ class XooUserUltra
 		
 		//this rules is for displaying the user's profiles
 		add_rewrite_rule("$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[1]', 'top');
+		
+		//this rules is for displaying the user's profiles
+		add_rewrite_rule("([^/]+)/$slug/([^/]+)/?",'index.php?pagename='.$slug.'&uu_username=$matches[2]', 'top');
 		
 		//this rules is for photos		
 		flush_rewrite_rules();	
