@@ -112,7 +112,6 @@ class XooPaypalPayment
 	{
 				
 		global $wpdb,  $xoouserultra;
-		//require_once(ABSPATH . 'wp-includes/pluggable.php');
 		
 		$req = 'cmd=_notify-validate';
 		// Read the post from PayPal system and add 'cmd'
@@ -200,14 +199,14 @@ class XooPaypalPayment
 				// check that payment_amount is correct		
 				if ($payment_amount < $total_price)    
 				{
-					$errors .= " --- Wrong Amount: Received $payment_amount$payment_currency; Expected: $total_price$paypal_currency_code";
+					//$errors .= " --- Wrong Amount: Received $payment_amount$payment_currency; Expected: $total_price$paypal_currency_code";
 					
 				}
 				
 				// check currency						
 				if ($payment_currency != $paypal_currency_code)
 				{
-					$errors .= " --- Wrong Currency - Received: $payment_amount$payment_currency; Expected: $total_price$paypal_currency_code";
+					//$errors .= " --- Wrong Currency - Received: $payment_amount$payment_currency; Expected: $total_price$paypal_currency_code";
 					
 				}
 			}
@@ -355,7 +354,7 @@ class XooPaypalPayment
 			
 		}else{
 			
-			$mode = "sandbox";
+			$mode = "www.sandbox";
 			$paypal_email = $xoouserultra->get_option("gateway_paypal_sandbox_email");
 		
 		}
