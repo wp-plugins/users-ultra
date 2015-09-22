@@ -12,7 +12,6 @@
 	background: #fff;
 	border: 1px solid #ddd;
 }
-
 .xoouserultra-wrap .xoouserultra-social a, #mk-sidebar .widget .xoouserultra-wrap .xoouserultra-social a {
 	background: #555;
 	color: #fff;
@@ -39,7 +38,6 @@
 	color: #444;
 }
 
-
 .xoouserultra-field-type {
 	color: #888;
 }
@@ -47,7 +45,6 @@
 .xoouserultra-field-value {
 	color: #888;
 }
-
 input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input {
 	background: #fff;
 	color: #444;
@@ -79,8 +76,7 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 .uultra-latest-photos-private{
 	
 	margin:10px auto 10px auto;	
-	width:100%;
-	
+	width:100%;	
 }
 
 .uultra-latest-photos-private p{
@@ -97,10 +93,8 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 }
 .uultra-latest-photos-private ul li{
 	
-	width:20%;	
-	
-	text-align:center;
-	
+	width:20%;		
+	text-align:center;	
 	border:none;
 	min-height:140px ;
 	min-width:180px;

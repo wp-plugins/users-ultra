@@ -337,7 +337,7 @@ class XooShortCode {
 			'featured' => 'no',
 			'plan_id' => '',
 			'per' => 'month',
-			'period' => 'on', // on off
+			'period_label' => 'on', // on off
 			'button_url' => '',
 			'button_text' => __('Sign up','xoousers'),
 			'button_color' => 'green',
@@ -400,7 +400,7 @@ class XooShortCode {
 				$pricing_content .= '<h5 '. $custom_s.'>' .$p_name . '</h5>';
 				$pricing_content .= '<div class="respo-sc-pricing-cost" '. $custom_s.'>' .$amount_text . '</div>';
 			
-			if($period=='on')
+			if($period_label=='on')
 			{	
 				$pricing_content .= '<div class="respo-sc-pricing-per">' . $per . '</div>';
 			

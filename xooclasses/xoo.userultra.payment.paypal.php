@@ -12,8 +12,7 @@ class XooPaypalPayment
 		add_action( 'wp_ajax_package_add_new', array( $this, 'package_add_new' ));	
 		add_action( 'wp_ajax_get_packages_ajax', array( $this, 'get_packages_ajax' ));
 		add_action( 'wp_ajax_package_delete', array( $this, 'package_delete' ));
-		add_action( 'wp_ajax_package_edit_form', array( $this, 'package_edit_form' ));
-		
+		add_action( 'wp_ajax_package_edit_form', array( $this, 'package_edit_form' ));		
 		add_action( 'wp_ajax_package_edit_confirm', array( $this, 'package_edit_confirm' ));		
 
 	}
@@ -64,13 +63,13 @@ class XooPaypalPayment
 		global $wpdb;
 		
 							
-		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_packages where field="package_limit_photos" ';		
-		$rows = $wpdb->get_results($sql);		
-		if ( empty( $rows ) )
-		{	
-			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_packages add column package_limit_photos int (11) ; ';
-			$wpdb->query($sql);
-		}
+		//$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_packages where field="package_limit_photos" ';		
+		//$rows = $wpdb->get_results($sql);		
+	//	if ( empty( $rows ) )
+		//{	
+			//$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_packages add column package_limit_photos int (11) ; ';
+			//$wpdb->query($sql);
+		//}
 		
 		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_packages where field="package_limit_galleries" ';		
 		$rows = $wpdb->get_results($sql);		
@@ -226,8 +225,7 @@ class XooPaypalPayment
 				//get user				
 				$user = get_user_by( 'id', $user_id );
 				
-				/*Notify User&Admin */
-				
+				/*Notify User&Admin */				
 				$package = $xoouserultra->paypal->get_package($package_id);					
 				$u_email=$user->user_email;
 				$user_login= $user->user_login;
@@ -236,7 +234,6 @@ class XooPaypalPayment
 				
 			}else{
 				
-				//$xoouserultra->messaging->paypal_ipn_debug("IPN ERRORS: ".$errors);
 			
 			}
 		
