@@ -55,7 +55,6 @@ class Facebook extends BaseFacebook
       $this->initSharedSession();
     }
   }
-
   protected static $kSupportedKeys =
     array('state', 'code', 'access_token', 'user_id');
 

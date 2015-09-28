@@ -15,8 +15,7 @@ class XooUserPhoto {
 		
 		add_action( 'wp_ajax_delete_photo', array( $this, 'delete_photo' ));
 		add_action( 'wp_ajax_delete_gallery', array( $this, 'delete_gallery' ));
-		add_action( 'wp_ajax_delete_video', array( $this, 'delete_video' ));
-		
+		add_action( 'wp_ajax_delete_video', array( $this, 'delete_video' ));		
 		
 		add_action( 'wp_ajax_edit_gallery', array( $this, 'edit_gallery' ));
 		add_action( 'wp_ajax_edit_gallery_confirm', array( $this, 'edit_gallery_confirm' ));
@@ -124,23 +123,7 @@ class XooUserPhoto {
 			$wpdb->query($sql);
 		}
 		
-		$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_photos where field="photo_tags" ';		
-		$rows = $wpdb->get_results($sql);		
-		if ( empty( $rows ) )
-		{	//photo_tags
-			$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_photos add column photo_tags varchar (200) ; ';
-			$wpdb->query($sql);
-		}
 		
-		/*Tnhis has been added*/		
-	//	$sql ='SHOW columns from ' . $wpdb->prefix . 'usersultra_photo_cat_rel where field="photo_rel_id" ';		
-	//	$rows = $wpdb->get_results($sql);		
-	//	if ( empty( $rows ) )
-	//	{	//photo_gategories
-		//	$sql = 'Alter table  ' . $wpdb->prefix . 'usersultra_photo_cat_rel add column photo_rel_id bigint(20) NOT NULL AUTO_INCREMENT,  ADD PRIMARY KEY (photo_rel_id) ; ';
-			//$wpdb->query($sql);
-			
-	//	}
 	
 		
 	}
@@ -1180,8 +1163,30 @@ class XooUserPhoto {
 					$html .= '<div class="embed-container">';
 					
 					switch($video->video_type): case "youtube":
+					
+					    //check if URL given
+					 
+					 if(filter_var($video->video_unique_vid, FILTER_VALIDATE_URL, FILTER_VALIDATE_URL)) //yes URL
+					 {
+						  $url = $video->video_unique_vid;
+						 
+						  parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
+						  $video_id =  $my_array_of_vars['v']; 						  
+						  $url = 'https://www.youtube.com/embed/'.$video_id.'?autohide=1&modestbranding=1&showinfo=0';
+						  
+					   
+					 }else{ //this is not a url
+					 
+					 
+					 	 $url = 'https://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0';
+					
+					
+					 }
+
                         
-						$html .= '<iframe width="99%" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+						$html .= '<iframe width="100%" src="'.$url.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>';	
+                        
+					//$html .= '<iframe width="99%" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 							
 					 break; 
 					 
@@ -1249,9 +1254,36 @@ class XooUserPhoto {
 					
 					$html .= '<div class="embed-container">';
 					
-					switch($video->video_type): case "youtube":
+					switch($video->video_type):
+					
+					    case "youtube":
+						
+						
                         
-						$html .= '<iframe width="100%" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+						//$html .= '<iframe width="100%" src="http://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+						
+						
+						 //check if URL given
+					 
+					 if(filter_var($video->video_unique_vid, FILTER_VALIDATE_URL, FILTER_VALIDATE_URL)) //yes URL
+					 {
+						  $url = $video->video_unique_vid;
+						 
+						  parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
+						  $video_id =  $my_array_of_vars['v']; 						  
+						  $url = 'https://www.youtube.com/embed/'.$video_id.'?autohide=1&modestbranding=1&showinfo=0';
+						  
+					   
+					 }else{ //this is not a url
+					 
+					 
+					 	 $url = 'https://www.youtube.com/embed/'.$video->video_unique_vid.'?autohide=1&modestbranding=1&showinfo=0';					
+					
+					 }
+
+                        
+						$html .= '<iframe width="100%" src="'.$url.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>';	
+						
 						
 						 $html .= "<p class='social_v'><i class='fa fa-youtube-square fa-3x'></i></p> ";
 							

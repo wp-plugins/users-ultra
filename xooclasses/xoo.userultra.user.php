@@ -3566,13 +3566,17 @@ class XooUserUser {
             'exclude_fields' => null,
             'operator' => 'AND',
 			'width' => 'AND',
+			'target_page_url' => '',
             'use_in_sidebar' => null,
             'users_are_called' => 'Users',
             'combined_search_text' => 'type user name here',
             'button_text' => 'Search', 
             'reset_button_text' =>'Reset' 
         );
-
+		
+		
+		
+		
         $this->search_args = wp_parse_args($args, $defaults);
 
         $this->search_operator = $this->search_args['operator'];
@@ -3580,6 +3584,14 @@ class XooUserUser {
         if (strtolower($this->search_args['operator']) != 'and' && strtolower($this->search_args['operator']) != 'or') {
             $this->search_args['operator'] = 'AND';
         }
+		
+		$action_url = '';
+		
+		if( $this->search_args['target_page_url']!='')
+		{			
+			$action_url = "action='".$this->search_args['target_page_url']."'";			
+		}
+		
 
         // Prepare array of all fields to load
         $this->uultra_build_search_field_array();
@@ -3593,7 +3605,7 @@ class XooUserUser {
         $display.='<div class="xoouserultra-wrap xoouserultra-wrap-form uultra-search-wrap' . $sidebar_class . '">';
         $display.='<div class="xoouserultra-inner xoouserultra-clearfix">';
         $display.='<div class="xoouserultra-head">' . sprintf(__('Search %s', 'xoousers'), $this->search_args['users_are_called']) . '</div>';
-        $display.='<form action="" method="get" id="uultra_search_form" class="uultra-search-form uultra-clearfix">';
+        $display.='<form method="get" id="uultra_search_form" class="uultra-search-form uultra-clearfix" '.$action_url.'>';
 
         // Check For default fields Start
         if ($this->show_combined_search_field === true) {

@@ -1804,7 +1804,9 @@ class XooUserUltra
 		        'use_in_sidebar' => null,
 		        'redirect_to' => $default_redirect,
 				'form_header_text' => __('Login','xoousers'),
-				'custom_text' => ''
+				'custom_text' => '',
+				'custom_registration_link' => '',
+				'disable_registration_link' => 'no'
 		);		
 
 		$args = wp_parse_args( $args, $defaults );
@@ -1855,6 +1857,15 @@ class XooUserUltra
 	public function show_login_form( $sidebar_class=null, $redirect_to=null, $args) 
 	{
 		global $xoousers_login, $xoousers_captcha_loader;
+		
+		$atts = $args;
+		extract( shortcode_atts( array(
+			'custom_registration_link' => '',
+			'disable_registration_link' => 'no'		
+			
+		), $atts ) );
+		
+		
 		
 		$display = null;		
 		$display .= '<form action="" method="post" id="xoouserultra-login-form-'.$this->login_code_count.'">';
@@ -1963,7 +1974,20 @@ class XooUserUltra
 		if ($this->get_option('register_redirect') != '') 
 		    $register_link =  $this->get_option('register_redirect');
 		
-		$register_link = '<a href="'.$register_link.'" class="xoouserultra-login-register-link">'.__('Register','xoousers').'</a>';
+		//$register_link = '<a href="'.$register_link.'" class="xoouserultra-login-register-link">'.__('Register','xoousers').'</a>';
+		
+		
+		$register_link_url='';
+		if($disable_registration_link!='yes')
+		{			
+			$register_link_url = ' | <a href="'.$register_link.'" class="xoouserultra-login-register-link">'.__('Register','xoousers').'</a>';
+		}
+		
+		if($disable_registration_link!='yes' && $custom_registration_link!='')
+		{			
+			$register_link_url = ' | <a href="'.$custom_registration_link.'" class="xoouserultra-login-register-link">'.__('Register','xoousers').'</a>';
+		}
+		
     		
 		$remember_me_class = '';
 		$login_btn_class = '';
@@ -1981,7 +2005,7 @@ class XooUserUltra
 		
 		</div>
 		
-		<input type="submit" name="xoouserultra-login" class="xoouserultra-button xoouserultra-login'.$login_btn_class.'" value="'.__('Log In','xoousers').'" /><br />'.$forgot_pass.' | '.$register_link;
+		<input type="submit" name="xoouserultra-login" class="xoouserultra-button xoouserultra-login'.$login_btn_class.'" value="'.__('Log In','xoousers').'" /><br />'.$forgot_pass.$register_link;
 		
 		
 		$display .= ' </div>
