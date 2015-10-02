@@ -2005,7 +2005,7 @@ class XooUserUltra
 		
 		</div>
 		
-		<input type="submit" name="xoouserultra-login" class="xoouserultra-button xoouserultra-login'.$login_btn_class.'" value="'.__('Log In','xoousers').'" /><br />'.$forgot_pass.$register_link;
+		<input type="submit" name="xoouserultra-login" class="xoouserultra-button xoouserultra-login'.$login_btn_class.'" value="'.__('Log In','xoousers').'" /><br />'.$forgot_pass.$register_link_url;
 		
 		
 		$display .= ' </div>
