@@ -2490,7 +2490,21 @@ class XooUserUser {
 		
 		//echo "LOGGED IN: ". $user_id;
 		
-		if($user_id>0)
+		$display_inactive = $xoouserultra->get_option('uultra_display_not_confirmed_profiles');
+		
+		//validate display rule		
+		if($display_inactive==0 && !$this->is_active($user_id))
+		{
+			$display = false;
+		
+		}else{
+			
+			$display = true;		
+		
+		}
+		
+		
+		if($user_id>0 && $display)
 		{
 			$allow_private_messages = true;
 			
@@ -2529,7 +2543,15 @@ class XooUserUser {
 			require_once(xoousers_path.'/templates/'.xoousers_template."/".$template.".php");			
 			$content = ob_get_clean();
 			return  $content;				
-				
+		
+		
+		}elseif($user_id>0 && !$display){
+			
+			
+			$display_inactive = $xoouserultra->get_option('uultra_display_not_confirmed_profiles_message');		
+			$html = '<p>'.$display_inactive.'</p>';
+			return $html ;
+					
 				
 		}else{
 			

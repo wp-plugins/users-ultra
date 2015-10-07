@@ -1225,6 +1225,27 @@ $this->create_plugin_setting(
 	__('Enable or disable guest and non-logged in user viewing of profiles.','xoousers'),
   __('If enabled, profiles will be publicly visible to non-logged in users. If disabled, guests must log in to view profiles.','xoousers')
        );
+	   
+	   
+	    $this->create_plugin_setting(
+	'select',
+	'uultra_display_not_confirmed_profiles',
+	__('Display Inactive User Profiles','xoousers'),
+	array(
+		1 => __('Enabled, Yes. Display Inactive User Profils ','xoousers'), 
+		0 => __('Disabled, Do Not Display Inactive User Profiles.','xoousers')),
+	__('The user profiles are visible by default it does not matter if the user is active or not. You can switch this setting off here.','xoousers'),
+  __('The user profiles are visible by default it does not matter if the user is active or not. You can deactivate this function here.','xoousers')
+       );
+	   
+	   
+	   $this->create_plugin_setting(
+        'textarea',
+        'uultra_display_not_confirmed_profiles_message',
+        __('Custom Message:','xoousers'),array(),
+        __('This message will be displayed and a visitor is viwing an inactive profile. Example: The profile is not active, yet.','xoousers'),
+        __('This message will be displayed and a visitor is viwing an inactive profile. Example: The profile is not active, yet. ','xoousers')
+);
 
 ?>
 

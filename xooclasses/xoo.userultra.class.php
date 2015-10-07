@@ -2046,7 +2046,7 @@ class XooUserUltra
 		$forgot_pass.='<label class="xoouserultra-field-type xoouserultra-blank-lable">&nbsp;</label>';
 		$forgot_pass.='<div class="xoouserultra-field-value">';
 		$forgot_pass.='<div class="xoouserultra-back-to-login">';
-		$forgot_pass.='<a href="javascript:void(0);" title="'.__('Back to Login','xoousers').'" id="xoouserultra-back-to-login-'.$this->login_code_count.'">'.__('Back to Login','xoousers').'</a> | '.$register_link;
+		$forgot_pass.='<a href="javascript:void(0);" title="'.__('Back to Login','xoousers').'" id="xoouserultra-back-to-login-'.$this->login_code_count.'">'.__('Back to Login','xoousers').'</a> ';
 		
 		$forgot_pass.='</div>';
 		
