@@ -10,7 +10,6 @@ class XooWooCommerce {
 		add_action('init', array( $this, 'handle_init' ));
 		
 	}	 
-
 	function handle_init() {
 		global $pagenow;
 		
@@ -72,7 +71,6 @@ class XooWooCommerce {
 				}	
 				
 				$new_index = max(array_keys($fields));
-
 				foreach($woo_meta as $group => $array) {
 					
 					if(!in_array($array['title'], $separator_array)){
