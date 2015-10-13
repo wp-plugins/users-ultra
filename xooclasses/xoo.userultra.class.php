@@ -12,8 +12,7 @@ class XooUserUltra
         'post',
         'page',
         'attachment',
-    );
-	
+    );	
 		
 	public function __construct()
 	{
@@ -27,8 +26,7 @@ class XooUserUltra
 			session_start();
 			$_SESSION['google_token']  = NULL;
 			/* get social links */
-			$this->social_login_links_openid();
-			
+			$this->social_login_links_openid();			
 				
 		}		
 	  
@@ -47,10 +45,9 @@ class XooUserUltra
 		if (is_admin()) 
 		{
 			$this->set_admin_classes();
-			$this->load_classes();					
+			$this->load_classes();				
 		
-		}
-		
+		}		
 		//ini settings
 		$this->intial_settings();		
 		
@@ -131,8 +128,7 @@ class XooUserUltra
 			
 			add_action( 'save_post',  array( &$this, 'uultra_save_post_logged_in_protect' ), 97);	
 			add_filter('the_posts', array(&$this, 'uultra_showPost'));	
-			add_filter('get_pages', array(&$this, 'uultra_showPage'));	
-			
+			add_filter('get_pages', array(&$this, 'uultra_showPage'));				
 			add_action( 'add_meta_boxes', array(&$this, 'uultra_post_protection_add_meta_box' ));	
 		
 		
@@ -2999,8 +2995,7 @@ class XooUserUltra
 	
 	public function get_social_buttons ($action_text, $atts)
 	{
-		require_once(xoousers_path."libs/fbapi/src/facebook.php");
-		
+				
 		$display ="";
 		
 		extract( shortcode_atts( array(
@@ -3011,6 +3006,7 @@ class XooUserUltra
 		
 		if($this->get_option('registration_rules')!=4) // Social media is not able when using paid registrations
 		{
+			
 		
 			$FACEBOOK_APPID = $this->get_option('social_media_facebook_app_id');  
 			$FACEBOOK_SECRET = $this->get_option('social_media_facebook_secret');
@@ -3027,6 +3023,8 @@ class XooUserUltra
 			
 			if($this->get_option('social_media_fb_active')==1)
 			{
+				require_once(xoousers_path."libs/fbapi/src/facebook.php");
+				
 				$atleast_one = true;
 				$facebook = new Facebook($config);			
 				
