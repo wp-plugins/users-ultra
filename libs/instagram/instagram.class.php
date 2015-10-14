@@ -33,7 +33,6 @@ class Instagram {
    * @var string
    */
   private $_apikey;
-
   /**
    * The Instagram OAuth API secret
    * 
@@ -61,7 +60,6 @@ class Instagram {
    * @var array
    */
   private $_scopes = array('basic', 'likes', 'comments', 'relationships');
-
 
   /**
    * Default constructor
@@ -119,7 +117,6 @@ class Instagram {
     if ($id === 0 && isset($this->_accesstoken)) { $id = 'self'; $auth = true; }
     return $this->_makeCall('users/'.$id, $auth);
   }
-
   /**
    * Get user activity feed
    *
@@ -150,7 +147,6 @@ class Instagram {
   public function getUserLikes($limit = 0) {
     return $this->_makeCall('users/self/media/liked', true, array('count' => $limit));
   }
-
   /**
    * Search media by its location
    *
@@ -370,7 +366,6 @@ class Instagram {
   public function getApiCallback() {
     return $this->_callbackurl;
   }
-
 }
 }
 ?>
