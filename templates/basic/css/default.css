@@ -16,7 +16,6 @@
 	background: #555;
 	color: #fff;
 }
-
 .xoouserultra-wrap .xoouserultra-social a:hover, #mk-sidebar .widget .xoouserultra-wrap .xoouserultra-social a:hover {
 	background: #ff6000;
 	color: #fff;
@@ -29,7 +28,6 @@
 .xoouserultra-stats-i i {
 	color: #444;
 }
-
 .xoouserultra-field-name, .xoouserultra-wrap .xoouserultra-field-name a {
 	color: #444;
 }
@@ -50,7 +48,6 @@ input.xoouserultra-input, select.xoouserultra-input, textarea.xoouserultra-input
 	color: #444;
 	border: 1px solid #ccc !important;
 }
-
 input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouserultra-input:focus {
 	background: #fff;
 	color: #444;
@@ -97,15 +94,12 @@ input.xoouserultra-input:focus, select.xoouserultra-input:focus, textarea.xoouse
 	text-align:center;	
 	border:none;
 	min-height:140px ;
-	min-width:180px;
-	
+	min-width:180px;	
 	height:auto ;	
 	vertical-align:top;	
-	margin:10px 8px 10px 0px;	
-	
+	margin:10px 8px 10px 0px;		
 	padding:15px 0px 5px 0px;	
-	background-color:#FFF;
-	
+	background-color:#FFF;	
 	display: inline-block;
 	
 }
