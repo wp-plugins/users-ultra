@@ -168,20 +168,13 @@ class XooUserAdmin extends XooUserUltraCommon
 		if ($count > 0){
 			return $count;
 		}
-	}
-	
+	}	
 	
 		
 	
 	function admin_head(){
 		$screen = get_current_screen();
 		$slug = $this->slug;
-		//$icon = userultra_url . "admin/images/$slug-32.png";
-		//echo '<style type="text/css">';
-			///if (in_array( $screen->id, array( $slug ) ) || strstr($screen->id, $slug) ) {
-				//print "#icon-$slug {background: url('{$icon}') no-repeat left;}";
-		//	}
-		//echo '</style>';
 	}
 
 	function add_styles()
@@ -217,8 +210,7 @@ class XooUserAdmin extends XooUserUltraCommon
 		wp_register_script( 'userultra_admin', xoousers_url.'admin/scripts/admin.js', array( 
 			'jquery','jquery-ui-core','jquery-ui-draggable','jquery-ui-droppable',	'jquery-ui-sortable','jquery-ui-tabs'
 		), null );
-		wp_enqueue_script( 'userultra_admin' );
-		
+		wp_enqueue_script( 'userultra_admin' );		
 			
 		/* Font Awesome */
 		wp_register_style( 'xoouserultra_font_awesome', xoousers_url.'css/css/font-awesome.min.css');
@@ -251,11 +243,9 @@ class XooUserAdmin extends XooUserUltraCommon
 		add_menu_page( __('Users Ultra','xoousers'), $menu_label, 'manage_options', $this->slug, array(&$this, 'admin_page'), xoousers_url .'admin/images/small_logo_16x16.png', '159.140');
 		
 		
-		add_submenu_page( 'userultra', __('GO PRO!','xoousers'), __('GO PRO !!! ','xoousers'), 'manage_options', 'userultra&tab=pro', array(&$this, 'admin_page') );
+		add_submenu_page( 'userultra', __('GO PRO!','xoousers'), __('GO PRO !!! ','xoousers'), 'manage_options', 'userultra&tab=pro', array(&$this, 'admin_page') );		
 		
-		
-		do_action('userultra_admin_menu_hook');
-		
+		do_action('userultra_admin_menu_hook');		
 			
 	}
 	
@@ -321,7 +311,8 @@ class XooUserAdmin extends XooUserUltraCommon
 	}
 	
 	
-	function reset() {
+	function reset()
+	{
 		update_option('userultra', $this->userultra_default_options() );
 		$this->options = array_merge( $this->options, $his->userultra_default_options() );
 		echo '<div class="updated"><p><strong>'.__('Settings are reset to default.','xoousers').'</strong></p></div>';
@@ -333,12 +324,11 @@ class XooUserAdmin extends XooUserUltraCommon
 		echo '<div class="updated"><p><strong>'.__('WooCommerce fields have been added.','xoousers').'</strong></p></div>';
 	}
 	
-	function woo_sync_del(){
+	function woo_sync_del()
+	{
 		userultra_admin_woo_sync_erase();
 		echo '<div class="updated"><p><strong>'.__('WooCommerce fields have been removed.','xoousers').'</strong></p></div>';
 	}
-	
-	
 	
 	/* set a global option */
 	function userultra_set_option($option, $newvalue)
@@ -397,8 +387,7 @@ class XooUserAdmin extends XooUserUltraCommon
 						'usersultra_login_slug' => 'login',
 						'usersultra_registration_slug' => 'registration',
 						'usersultra_directory_slug' => 'directory',	
-						'mailchimp_text' => __('Subscribe to receive our periodic email updates','xoousers'),						
-														
+						'mailchimp_text' => __('Subscribe to receive our periodic email updates','xoousers'),															
 										
 						'login_page_id' => '0',
 						'registration_page_id' => '0',

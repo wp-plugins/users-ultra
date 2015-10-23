@@ -299,6 +299,20 @@ $this->create_plugin_setting(
 
  $this->create_plugin_setting(
                         'select',
+                        'enable_post_edit',
+                        __('Users can edit post?', 'xoousers'),
+                        array(
+                            'yes' => __('YES', 'xoousers'),
+                            'no' => __('NO', 'xoousers'),
+                            
+                        ),
+                        __('Users will be able to edit their own posts.', 'xoousers'),
+                        __('Users will be able to edit their own posts.', 'xoousers')
+                );
+
+
+ $this->create_plugin_setting(
+                        'select',
                         'enable_post_del',
                         __('User can delete post?', 'xoousers'),
                         array(

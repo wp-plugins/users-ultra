@@ -113,6 +113,8 @@ class XooPublisher
 		
 		$html = "";		
 		
+		$can_edit = $this->uultra_can_be_edited();
+		
 		 ?> 
          
          
@@ -132,6 +134,13 @@ class XooPublisher
                  <div class="uultra-post-publish">
                  
                  <?php
+				 
+				 
+				  if($can_edit=='no')
+				 {
+					  echo "<div class='uupublic-ultra-error'>".__("You can't edit this ".$this->mPostLabelSingular."", 'xoousers')."</div>";
+					
+				 }
                  
 				 if($this->errors!="")
 				 {
@@ -228,7 +237,14 @@ class XooPublisher
                 
                 <div class="field_row">
                     
-                     <p><input type="submit" name="xoouserultra-submit-post"  class="xoouserultra-button" value="<?php echo __('Update','xoousers')?>"></p>
+                                        
+                     
+                     <?php if($can_edit!='no')
+				 {?>
+                    
+                     <p><input type="submit" name="xoouserultra-submit-post"  class="xoouserultra-button" value="Update"></p>
+                     
+                     <?php } //end if?>
                  
                  </div>
                  
@@ -529,6 +545,41 @@ class XooPublisher
 		?>
 
 	<?php
+	}
+	
+	
+	function uultra_can_be_edited()
+	{
+		global $wpdb, $current_user, $xoouserultra;	
+		
+		//check role capability
+		$can_edit = '';
+		
+		if ( current_user_can('edit_posts') ) 
+		{
+			$can_edit = 'yes';
+			
+			$can_edit_setting = $xoouserultra->get_option('enable_post_edit');
+			
+			if($can_edit_setting=='no')
+			{
+				$can_edit = 'no';			
+			
+			}
+			
+			
+		}else{
+			
+			
+			$can_edit = 'no';
+		
+		}
+		
+		
+		
+		
+		return $can_edit ;
+	
 	}
 	
 	function uultra_can_be_deleted()

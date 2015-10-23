@@ -650,12 +650,12 @@ class XooUserUser {
 						  if ($pos === false) // this is a tweak that applies when not Friendly URL is set.
 						  {
 								//
-								$activation_link = $web_url."&act_link=".$unique_key;
+								$activation_link = $web_url."?act_link=".$unique_key;
 									
 						  } else {
 									 
 							   // found then we're using seo links					 
-							   $activation_link = $web_url."?act_link=".$unique_key;
+							   $activation_link = $web_url."&act_link=".$unique_key;
 									
 						  }
 						  
