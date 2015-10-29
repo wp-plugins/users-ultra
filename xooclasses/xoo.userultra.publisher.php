@@ -121,6 +121,17 @@ class XooPublisher
          <div class="commons-panel xoousersultra-shadow-borers" >
          
          
+         <?php 
+		 
+		  if($can_edit=='no')
+				 {
+					  echo "<div class='uupublic-ultra-error'>".__("You can't edit this ".$this->mPostLabelSingular."", 'xoousers')."</div>";
+					
+				 
+		 
+		 ?>
+         
+         
                   <div class="commons-panel-heading">
                              <h2> <?php echo  __('Edit Post','xoousers');?> </h2>
                                     
@@ -136,11 +147,7 @@ class XooPublisher
                  <?php
 				 
 				 
-				  if($can_edit=='no')
-				 {
-					  echo "<div class='uupublic-ultra-error'>".__("You can't edit this ".$this->mPostLabelSingular."", 'xoousers')."</div>";
-					
-				 }
+				 
                  
 				 if($this->errors!="")
 				 {
@@ -257,6 +264,8 @@ class XooPublisher
             
             
             </div>
+            
+             <?php } //end if post?>
         
         
          </div> <!--  End post wrapper-->
@@ -480,6 +489,8 @@ class XooPublisher
 		{
 			$n = count( $msgs );
 			
+			$can_be_edited = $this->uultra_can_be_edited();
+			
 			
 			?>
 			<form action="" method="get">
@@ -517,12 +528,28 @@ class XooPublisher
 							<td> <?php echo $msg->post_date; ?></td>
 							<td><?php echo $msg->post_status; ?></td>
                             
-                            <td><a href="?module=posts&act=edit&post_id=<?php echo $msg->ID; ?>" title="<?php echo __('Edit','xoousers')?>" ><span><i class="fa fa-pencil-square-o fa-lg"></i></span> </a>
+                            <td>
+                            
+                            <?php if($can_be_edited!='no'){?>
+                            
+                            <a href="?module=posts&act=edit&post_id=<?php echo $msg->ID; ?>" title="<?php echo __('Edit','xoousers')?>" ><span><i class="fa fa-pencil-square-o fa-lg"></i></span>
+                            
+                             </a>                   
+                             
+                            
+                             
+                               <?php }else{?>
+                               
+                               
+                                 <p><?php echo __("Access Denied",'xoousers')?></p>
+                               
+                               
+                                 <?php }?>
                             
                             
                              <?php
 							$can_delete = $this->uultra_can_be_deleted();
-							 if($can_delete){?>
+							 if($can_delete!='no'){?>
                             
                             <a href="#"  title="<?php echo __('Delete','xoousers')?>" class="uultra-del-user-postlink" data-id="<?php echo $post_id ; ?>" ><span><i class="fa fa-times fa-lg"></i></span> </a>
                             
