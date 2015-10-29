@@ -442,7 +442,7 @@ Initial release.
 
 == Changelog ==
 
-= 1.5.57(10-38-2015) =
+= 1.5.57(10-28-2015) =
 * New Feature - We've improved the Option to block the "edit" post on user's dashboard. Details here https://wordpress.org/support/topic/my-option-is-not-available-to-disable-user-edit-the-post?replies=5
 * Bug Fix - Delete post option was showing up even though when the admin deactivated it on UU Settings.
 
