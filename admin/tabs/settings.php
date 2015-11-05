@@ -50,6 +50,21 @@ $this->create_plugin_setting(
         ); 
 		
 		
+
+$this->create_plugin_setting(
+	'select',
+	'hide_user_navigator',
+	__('Hide user dashboard navigator','xoousers'),
+	array(
+		'no' => __('No','xoousers'), 
+		'yes' => __('Yes','xoousers'),
+		),
+		
+	__("If you select 'yes', the left side navigator bar on the user's dashboard will be removed",'xoousers'),
+  __("If you select 'yes', the left side navigator bar on the user's dashboard will be removed",'xoousers')
+       );
+	   
+		
 		
 		 $this->create_plugin_setting(
 	'select',
@@ -61,7 +76,7 @@ $this->create_plugin_setting(
 		),
 		
 	__("If you select 'yes', all the Users Ultra information will be deleted from the database. <strong>ATTENTION: This action can't be reverted. </strong>",'xoousers'),
-  __("f you select 'yes', all the Users Ultra information will be deleted from the database.",'xoousers')
+  __("if you select 'yes', all the Users Ultra information will be deleted from the database.",'xoousers')
        );
 		
 		

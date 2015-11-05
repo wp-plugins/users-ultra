@@ -28,6 +28,8 @@ $howmany = 5;
 ?>
 <div class="usersultra-dahsboard-cont">
 
+<?php if($xoouserultra->get_option('hide_user_navigator')!='yes'){?>
+
 	<div class="usersultra-dahsboard-left"> 
    
     
@@ -165,6 +167,8 @@ $howmany = 5;
            
            </ul>
     </div>
+    
+     <?php }?>
     
     
 	<div class="usersultra-dahsboard-center"> 

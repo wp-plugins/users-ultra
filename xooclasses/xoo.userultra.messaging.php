@@ -51,7 +51,7 @@ class XooMessaging extends XooUserUltraCommon
 	public function set_headers() {   			
 		//Make Headers aminnistrators
 		$header ="MIME-Version: 1.0\n"; 
-		$header .= "Content-type: ".$this->mEmailPlainHTML."; charset=UTF-81\n"; 	
+		$header .= "Content-type: ".$this->mEmailPlainHTML."; charset=UTF-8\n"; 	
 		$header .= "From: ".$this->mHeaderSentFromName." <".$this->mHeaderSentFromEmail.">\n";	
 		$header .= "Organization: ".$this->mCompanyName." \n";
 		$header .=" X-Mailer: PHP/". phpversion()."\n";		

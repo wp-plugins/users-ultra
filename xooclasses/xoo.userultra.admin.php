@@ -1132,8 +1132,7 @@ class XooUserAdmin extends XooUserUltraCommon
 			<div class="<?php echo $this->slug; ?>-admin-contain">
             
             
-             <div class="uultra-rateit"> <p><a href='https://wordpress.org/support/view/plugin-reviews/users-ultra#postform' target='_blank'> <img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><img src="<?php echo xoousers_url?>/admin/images/star-rating.png" width="20" height="20" /><br /><?php _e("RATE IT ",'xoousers'); ?></a></p> </div>
-            
+       
            
             
            
