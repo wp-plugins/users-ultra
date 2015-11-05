@@ -447,6 +447,7 @@ Initial release.
 * Improvement - reCaptcha Tweaks.
 * New Feature - Option to remove the sidebar on the dashboard. Details here https://wordpress.org/support/topic/remove-sidebar-from-my-account-page?replies=3
 
+
 = 1.5.57(10-28-2015) =
 * New Feature - We've improved the Option to block the "edit" post on user's dashboard. Details here https://wordpress.org/support/topic/my-option-is-not-available-to-disable-user-edit-the-post?replies=5
 * Bug Fix - Delete post option was showing up even though when the admin deactivated it on UU Settings.
@@ -455,7 +456,6 @@ Initial release.
 * Bug Fix - Issue with confirmation link when importing users via CSV.
 * Improvements - Language files update.
 * New Feature - Option to block the "edit" post on user's dashboard. Details here https://wordpress.org/support/topic/my-option-is-not-available-to-disable-user-edit-the-post?replies=5
-
 
 = 1.5.55(10-19-2015) =
 * Bug Fix - JS conflict with photo galleries.
